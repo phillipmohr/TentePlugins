@@ -1,0 +1,14 @@
+$input-box-shadow: none;
+$input-focus-box-shadow: none;
+$input-btn-focus-box-shadow: none;
+$font-family-base: 'Calibri', Helvetica, Arial, sans-serif;
+$headings-font-family: 'Calibri', Helvetica, Arial, sans-serif;
+$asset-path: '#{$sw-asset-theme-url}/bundles/nwgncytentetheme/assets' !default;
+$offcanvas-horizontal-width: 486px;
+$sw-dark-blue: #193C69;
+$sw-light-blue: #3FAFEC;
+$sw-light-gray: #EAF4FA;
+
+$container-max-widths: (
+    xl: 1640px
+) !default;

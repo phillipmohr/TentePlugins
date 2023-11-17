@@ -1,0 +1,65 @@
+{% sw_extends '@Storefront/storefront/layout/header/header.html.twig' %}
+
+{% block layout_header_logo %}
+    <div class="col-6 col-lg-auto header-logo-col">
+        {% sw_include '@Storefront/storefront/layout/header/logo.html.twig' %}
+    </div>
+    <div class="col main-navigation-col pe-0 d-none d-lg-block">
+        <div class="nav-main">{% sw_include '@Storefront/storefront/layout/navigation/navigation.html.twig' %}</div>
+    </div>
+{% endblock %}
+
+{% block layout_header_search %}
+    <div class="col-12 order-2 header-search-col">
+        <div class="row">
+            <div class="col-12">
+                {% sw_include '@Storefront/storefront/layout/header/search.html.twig' %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block layout_header_actions %}
+    <div class="col-6 col-lg-auto order-1 header-actions-col px-0">
+        <div class="container px-0">
+            <div class="row g-0 justify-content-end">
+                {% block layout_header_navigation_toggle %}
+                    <div class="col-auto order-last">
+                        <div class="menu-button d-lg-none">
+                            {% block layout_header_navigation_toggle_button %}
+                                {{ parent() }}
+                            {% endblock %}
+                        </div>
+                    </div>
+                {% endblock %}
+                {% block layout_header_search_toggle %}
+                    <div class="col-auto">
+                        <div class="search-toggle">
+                            <button class="btn header-actions-btn search-toggle-btn js-search-toggle-btn collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#searchCollapse"
+                                    aria-expanded="false"
+                                    aria-controls="searchCollapse"
+                                    aria-label="{{ "header.searchButton"|trans|striptags }}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23.57" height="23.575" viewBox="0 0 23.57 23.575" class="icon">
+                                    <path id="magnifying-glass-solid" d="M19.152,9.576a9.552,9.552,0,0,1-1.842,5.649l5.828,5.833a1.475,1.475,0,0,1-2.086,2.086L15.225,17.31a9.577,9.577,0,1,1,3.927-7.734ZM9.576,16.205A6.629,6.629,0,1,0,2.946,9.576,6.629,6.629,0,0,0,9.576,16.205Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                {% endblock %}
+                {% if config('core.cart.wishlistEnabled') %}
+                    {% block layout_header_actions_wishlist %}
+                        {{ parent() }}
+                    {% endblock %}
+                {% endif %}
+                {# Remove account menu in header #}
+                {% block layout_header_actions_account %}{% endblock %}
+                {% block layout_header_actions_cart %}
+                    {{ parent() }}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

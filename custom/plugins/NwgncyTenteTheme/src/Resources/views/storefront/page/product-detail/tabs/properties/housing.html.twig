@@ -1,0 +1,57 @@
+{% sw_extends '@Storefront/storefront/utilities/offcanvas.html.twig' %}
+
+{% block utilities_offcanvas_content %}
+    {% block page_product_detail_properties_inner %}
+        <div class="product-detail-properties tente-product-detail-properties">
+            {% block page_product_detail_properties_container %}
+                <h4 class="product-detail-properties-title">{{ "detail.properties.label.housing"|trans }}</h4>
+                <div class="product-detail-properties-container">
+                    <div class="product-detail-properties-left">
+                        {% block page_product_detail_properties_table %}
+                            <table class="table table-hover product-detail-properties-table">
+                                <tbody>
+                                {# @var product \Shopware\Core\Content\Product\SalesChannel\SalesChannelProductEntity #}
+                                {% for group in page.product.sortedProperties %}
+                                    {% if group.translated.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'housing' %}
+                                        {% block page_product_detail_properties_table_row %}
+                                            <tr class="properties-row">
+                                                {% block page_product_detail_properties_item_label %}
+                                                    <th class="properties-label">{{ group.translated.name|e }}
+                                                        {% if group.translated.description %}
+                                                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="{{ group.translated.description }}">
+                                                                {% sw_icon 'info' %}
+                                                            </span>
+                                                        {% endif %}
+                                                    </th>
+                                                {% endblock %}
+                                                {% block page_product_detail_properties_item_value %}
+                                                    <td class="properties-value">
+                                                        {% apply spaceless %}
+                                                            {% for option in group.options %}
+                                                                {% set i = ( i|default(0) ) + 1 %}
+                                                                <span>{% if i > 1 %}, {% endif %}{{ option.translated.name|e }}</span>
+                                                            {% endfor %}
+                                                        {% endapply %}
+                                                    </td>
+                                                {% endblock %}
+                                            </tr>
+                                        {% endblock %}
+                                    {% endif %}
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        {% endblock %}
+                    </div>
+                    <div class="product-detail-properties-right">
+                        {% if page.product.translated.customFields.custom_technical_data_images_housing is defined %}
+                        {% set housingMediaId = page.product.translated.customFields.custom_technical_data_images_housing %}
+                        {% set mediaCollection = searchMedia([housingMediaId], context.context) %}
+                        {% set housingImg = mediaCollection.get(housingMediaId) %}
+                        <img class="img-fluid" src="{{ housingImg.url }}" width="200" />
+                    {% endif %}
+                    </div>
+                </div>
+            {% endblock %}
+        </div>
+    {% endblock %}
+{% endblock %}

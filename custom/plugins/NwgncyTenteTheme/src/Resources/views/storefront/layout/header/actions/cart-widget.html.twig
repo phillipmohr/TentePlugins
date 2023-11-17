@@ -1,0 +1,14 @@
+{% sw_extends '@Storefront/storefront/layout/header/actions/cart-widget.html.twig' %}
+
+{# Replace cart icon #}
+{% block layout_header_actions_cart_widget %}
+    <span class="header-cart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="23.187" height="20.787" viewBox="0 0 23.187 20.787" class="icon">
+            <path id="cart-shopping-solid" d="M0,.974A.972.972,0,0,1,.974,0H2.822A2.274,2.274,0,0,1,4.876,1.3H21.563A1.623,1.623,0,0,1,23.13,3.345L21.465,9.529a2.928,2.928,0,0,1-2.822,2.164H6.93L7.15,12.85a.978.978,0,0,0,.958.792h11.7a.974.974,0,1,1,0,1.949H8.108a2.92,2.92,0,0,1-2.87-2.375l-2.095-11a.323.323,0,0,0-.321-.264H.974A.972.972,0,0,1,0,.974ZM5.2,18.838a1.949,1.949,0,1,1,1.949,1.949A1.949,1.949,0,0,1,5.2,18.838ZM18.838,16.89a1.949,1.949,0,1,1-1.949,1.949A1.949,1.949,0,0,1,18.838,16.89Z" fill="currentColor"/>
+        </svg>
+    </span>
+    {% if page.cart.lineItems|length > 0 %}
+        <span class="badge bg-primary header-cart-badge">{{ page.cart.lineItems|length }}</span>
+    {% endif %}
+    {# Remove cart total #}
+{% endblock %}

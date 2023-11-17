@@ -1,0 +1,50 @@
+{% block zeobv_store_switcher_component_modal_store_switcher %}
+    <div data-store-switcher-modal="true"
+         data-store-switcher-modal-options='{
+            "domainSelectionIsMandatory": {{ zeobvStoreSwitcher.config.domainSelectionIsMandatory ? 1 : 0 }},
+            "currentStoreId": "{{ context.domainId }}"
+         }'
+         class="modal fade"
+         tabindex="-1"
+         aria-hidden="true"
+         id="storeSwitcherModal"
+         
+            {% if zeobvStoreSwitcher.config.domainSelectionIsMandatory %}
+                data-backdrop="static"
+                data-keyboard="false"
+            {% endif %}
+         role="dialog">
+        {% block zeobv_store_switcher_component_modal_store_switcher_modal %}
+            <div class="modal-dialog modal-dialog-centered"
+                 role="document">
+                <div class="modal-content">
+                    <div class="modal-header only-close">
+                        <div class="h5 modal-title store-switcher-modal--title-element">{{ "zeobv-store-switcher.modal.title"|trans|sw_sanitize }}</div>
+                        {% if not zeobvStoreSwitcher.config.domainSelectionIsMandatory %}
+                            <button type="button"
+                                    class="btn-close close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close">
+                                {% block element_image_gallery_inner_zoom_modal_close_icon %}
+                                {% endblock %}
+                            </button>
+                        {% endif %}
+                    </div>
+                    <div class="modal-body store-switcher-modal--content-element">
+                        {% block zeobv_store_switcher_component_modal_store_picker_widget %}
+                            <div class="h5 store-switcher-modal--subtitle-element">{{ "zeobv-store-switcher.modal.selectStoreLabel"|trans|sw_sanitize }}</div>
+                            <div class="store-switcher-modal--store-picker-element">
+                                {% sw_include '@ZeobvStoreSwitcher/storefront/component/widgets/store-picker-widget.html.twig' with {
+                                    expanded: true,
+                                    options: zeobvStoreSwitcher.options,
+                                    activeDomain: zeobvStoreSwitcher.activeDomain,
+                                    showFlag: zeobvStoreSwitcher.config.showStoreSwitcherDomainCountryFlag
+                                } %}
+                            </div>
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+    </div>
+{% endblock %}

@@ -1,0 +1,141 @@
+{% sw_extends '@Storefront/storefront/layout/footer/footer.html.twig' %}
+
+{% block layout_footer_navigation_hotline %}
+    <div class="col-md-4 footer-column footer-column-logo d-none d-md-block text-md-center">
+        <div class="footer-logo-wrapper">
+            {% sw_include '@Storefront/storefront/tente-custom/snippets/footer-logo.html.twig' %}
+        </div>
+        {% sw_include '@Storefront/storefront/tente-custom/snippets/contact-us-button.html.twig' %}
+    </div>
+    <div class="col-md-4 footer-column js-footer-column d-none d-md-block">
+        {% block layout_footer_navigation_hotline_headline %}
+            <div class="footer-column-headline footer-headline js-footer-column-headline js-collapse-footer-column-trigger"
+                    id="collapseFooterHotlineTitle"
+                    data-bs-target="#collapseFooterHotline"
+                    aria-expanded="true"
+                    aria-controls="collapseFooterHotline"
+                    role="listitem">
+                {{ 'footer.serviceHotlineHeadline'|trans|sw_sanitize }}
+                {% block layout_footer_navigation_hotline_icons %}
+                    <div class="footer-column-toggle">
+                        <span class="footer-plus-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7.352" viewBox="0 0 13 7.352">
+                                <path id="angle-down-regular" d="M47.053,143.053a.844.844,0,0,1-1.2,0L40.2,137.4a.847.847,0,0,1,1.2-1.2l5.052,5.052L51.5,136.2a.847.847,0,0,1,1.2,1.2Z" transform="translate(-39.95 -135.95)" fill="#3fafec"/>
+                            </svg>
+                        </span>
+                        <span class="footer-minus-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7.352" viewBox="0 0 13 7.352">
+                                <path id="angle-down-regular" d="M47.053,143.053a.844.844,0,0,1-1.2,0L40.2,137.4a.847.847,0,0,1,1.2-1.2l5.052,5.052L51.5,136.2a.847.847,0,0,1,1.2,1.2Z" transform="translate(52.95 143.302) rotate(180)" fill="#3fafec"/>
+                            </svg>
+                        </span>
+                    </div>
+                {% endblock %}
+            </div>
+        {% endblock %}
+
+        {% block layout_footer_navigation_hotline_content %}
+            <div id="collapseFooterHotline"
+                    class="footer-column-content collapse js-footer-column-content footer-contact d-none d-md-block"
+                    aria-labelledby="collapseFooterHotlineTitle">
+                <div class="footer-column-content-inner">
+                    {{ 'footer.serviceHotline'|trans|sw_sanitize }}
+                </div>
+            </div>
+        {% endblock %}
+    </div>
+{% endblock %}
+
+{% block layout_footer_navigation_columns %}
+    {% for root in page.footer.navigation.tree %}
+        {% block layout_footer_navigation_column %}
+            <div class="col-md-4 footer-column js-footer-column">
+                {% block layout_footer_navigation_information_headline %}
+                    <div class="footer-column-headline footer-headline js-collapse-footer-column-trigger"
+                            data-bs-target="#collapseFooterTitle{{ loop.index }}"
+                            aria-expanded="true"
+                            aria-controls="collapseFooter{{ loop.index }}">
+
+                        {% if root.category.type == 'folder' %}
+                            {{ root.category.translated.name }}
+                        {% else %}
+                            <a href="{{ category_url(root.category) }}"
+                                {% if category_linknewtab(root.category) %}target="_blank"{% endif %}
+                                title="{{ root.category.translated.name }}">
+                                {{ root.category.translated.name }}
+                            </a>
+                        {% endif %}
+                        {% block layout_footer_navigation_information_icons %}
+                            <div class="footer-column-toggle">
+                                <span class="footer-plus-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7.352" viewBox="0 0 13 7.352">
+                                        <path id="angle-down-regular" d="M47.053,143.053a.844.844,0,0,1-1.2,0L40.2,137.4a.847.847,0,0,1,1.2-1.2l5.052,5.052L51.5,136.2a.847.847,0,0,1,1.2,1.2Z" transform="translate(-39.95 -135.95)" fill="#3fafec"/>
+                                    </svg>
+                                </span>
+                                <span class="footer-minus-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7.352" viewBox="0 0 13 7.352">
+                                        <path id="angle-down-regular" d="M47.053,143.053a.844.844,0,0,1-1.2,0L40.2,137.4a.847.847,0,0,1,1.2-1.2l5.052,5.052L51.5,136.2a.847.847,0,0,1,1.2,1.2Z" transform="translate(52.95 143.302) rotate(180)" fill="#3fafec"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        {% endblock %}
+                    </div>
+                {% endblock %}
+
+                {% block layout_footer_navigation_information_content %}
+                    {{ parent() }}
+                {% endblock %}
+            </div>
+        {% endblock %}
+    {% endfor %}
+    {% set colPadding = "px-3" %}
+    <div class="col-md-2 footer-column footer-column-social order-first order-md-last border-bottom-0">
+        <div class="footer-column-headline" id="collapseFooterSocial" role="listitem">
+            {{ 'footer.socialMediaHeadline' | trans }}
+        </div>
+        <div id="collapseFooterSocial"
+            class="footer-column-content footer-social-wrapper">
+            <div class="footer-column-content-inner">
+                {% sw_include '@Storefront/storefront/tente-custom/snippets/footer-social.html.twig' %}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 footer-column footer-column-logo px-0 d-md-none">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 text-center {{ colPadding }}">
+                    <a href="mailto:{{ 'footer.serviceHotlineEmail'|trans|sw_sanitize }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44.502" height="33.393" viewBox="0 0 44.502 33.393">
+                            <path id="envelope-solid" d="M4.172,64a4.174,4.174,0,0,0-2.5,7.513L20.582,85.705a2.789,2.789,0,0,0,3.338,0L42.834,71.513A4.174,4.174,0,0,0,40.33,64ZM0,73.74V91.827a5.569,5.569,0,0,0,5.563,5.565H38.94A5.569,5.569,0,0,0,44.5,91.827V73.74L25.589,87.931a5.552,5.552,0,0,1-6.675,0Z" transform="translate(0 -64)" fill="#193c69"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-3 text-center {{ colPadding }}">
+                    <a href="tel:{{ 'footer.phoneNumber'|trans|sw_sanitize }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31.888" height="31.888" viewBox="0 0 31.888 31.888">
+                            <path id="phone-solid" d="M10.27,1.511A2.483,2.483,0,0,0,7.318.066L1.837,1.561A2.5,2.5,0,0,0,0,3.965a27.9,27.9,0,0,0,27.9,27.9,2.5,2.5,0,0,0,2.4-1.837l1.495-5.48A2.483,2.483,0,0,0,30.354,21.6L24.376,19.1a2.483,2.483,0,0,0-2.883.722L18.976,22.9A21.048,21.048,0,0,1,8.968,12.889l3.07-2.51A2.486,2.486,0,0,0,12.761,7.5L10.27,1.517Z" transform="translate(0 0.023)" fill="#193c69"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-6 text-center d-grid mobile-contact-btn {{ colPadding }}">
+                    {% sw_include '@Storefront/storefront/tente-custom/snippets/contact-us-button.html.twig' %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{# Remove payment and shipping logos #}
+{% block layout_footer_payment_shipping_logos %}
+    {% if theme_config('te-show-footer-logos') %}
+        {{ parent() }}
+    {% else %}{% endif %}
+{% endblock %}
+
+{% block layout_footer_vat %}{% endblock %}
+
+{% block layout_footer_copyright %}
+    <div class="footer-copyright">
+        {{ "footer.copyrightInfo"|trans|sw_sanitize }}
+    </div>
+{% endblock %}
+
+{% block layout_footer_service_menu_content %}  {% endblock %}

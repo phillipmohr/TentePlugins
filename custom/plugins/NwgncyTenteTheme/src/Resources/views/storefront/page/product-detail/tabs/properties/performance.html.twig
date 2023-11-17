@@ -1,0 +1,147 @@
+{% sw_extends '@Storefront/storefront/utilities/offcanvas.html.twig' %}
+
+{% block utilities_offcanvas_content %}
+    {% block page_product_detail_properties_inner %}
+        <div class="product-detail-properties tente-product-detail-properties">
+            {% block page_product_detail_properties_container %}
+                <h4 class="product-detail-properties-title">{{ "detail.properties.label.performance"|trans }}</h4>
+                <div class="product-detail-properties-container">
+                    <div class="product-detail-properties-left">
+                        {% block page_product_detail_properties_table %}
+                            <table class="table table-hover product-detail-properties-table">
+                                <tbody>
+                                {# @var product \Shopware\Core\Content\Product\SalesChannel\SalesChannelProductEntity #}
+                                {% for group in page.product.sortedProperties %}
+                                    {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'performance' %}
+                                        {% block page_product_detail_properties_table_row %}
+                                            <tr class="properties-row">
+                                                {% block page_product_detail_properties_item_label %}
+                                                    <th class="properties-label">{{ group.translated.name|e }}
+                                                        {% if group.translated.description %}
+                                                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="{{ group.translated.description }}">
+                                                                {% sw_icon 'info' %}
+                                                            </span>
+                                                        {% endif %}
+                                                    </th>
+                                                {% endblock %}
+                                                {% block page_product_detail_properties_item_value %}
+                                                    <td class="properties-value">
+                                                        {% apply spaceless %}
+                                                            {% for option in group.options %}
+                                                                {% set i = ( i|default(0) ) + 1 %}
+                                                                <span>{% if i > 1 %}, {% endif %}{{ option.translated.name|e }}</span>
+                                                            {% endfor %}
+                                                        {% endapply %}
+                                                    </td>
+                                                {% endblock %}
+                                            </tr>
+                                        {% endblock %}
+                                    {% endif %}
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        {% endblock %}
+                    </div>
+                    <div class="product-detail-properties-right">
+                    {% set rating_roll = page.product.translated.customFields.product_performance_rating_roll %}
+                    {% set rating_movement = page.product.translated.customFields.product_performance_rating_movement %}
+                    {% set rating_atrittion = page.product.translated.customFields.product_performance_rating_atrittion %}
+                    {% set rating_resistance = page.product.translated.customFields.product_performance_rating_resistance %}
+
+                            {% if rating_roll || rating_movement || rating_atrittion || rating_resistance  %}
+                                <table class="table table-hover product-detail-properties-table product-performanace-rating">
+                                    <tbody>
+                                    {% if rating_roll %}
+                                        <tr class="properties-row">
+                                            <th class="properties-label">
+                                            {{ "detail.performance.roll"|trans }}
+                                            </th>
+                                            <td class="properties-value">
+                                            {% set blank = 5 - rating_roll %}
+
+                                                {% for star in range(1,rating_roll) %}
+                                                    {% sw_icon 'star' style { 'color': 'review', 'size': 'sm', 'pack': 'solid', 'class': 'full' } %}
+                                                {% endfor %}
+                                                {% if blank > 0 %}
+                                                    {% for star in range(1,blank) %}
+                                                        {% sw_icon 'star' style { 'size': 'sm', 'class': 'blank' } %}
+                                                    {% endfor %}
+                                                {% endif %}
+                                            </td>
+                                        </tr>
+                                    {% endif %}
+                                    {% if rating_movement %}
+                                        <tr class="properties-row">
+                                            <th class="properties-label">
+                                            {{ "detail.performance.movement"|trans }}
+                                            </th>
+                                            <td class="properties-value">
+                                            {% set blank = 5 - rating_movement %}
+
+                                                {% for star in range(1,rating_movement) %}
+                                                    {% sw_icon 'star' style { 'color': 'review', 'size': 'sm', 'pack': 'solid', 'class': 'full' } %}
+                                                {% endfor %}
+                                                {% if blank > 0 %}
+                                                    {% for star in range(1,blank) %}
+                                                        {% sw_icon 'star' style { 'size': 'sm', 'class': 'blank' } %}
+                                                    {% endfor %}
+                                                {% endif %}
+                                            </td>
+                                        </tr>
+                                    {% endif %}
+                                    {% if rating_atrittion %}
+                                        <tr class="properties-row">
+                                            <th class="properties-label">
+                                            {{ "detail.performance.atrittion"|trans }}
+                                            </th>
+                                            <td class="properties-value">
+                                            {% set blank = 5 - rating_atrittion %}
+
+                                                {% for star in range(1,rating_atrittion) %}
+                                                    {% sw_icon 'star' style { 'color': 'review', 'size': 'sm', 'pack': 'solid', 'class': 'full' } %}
+                                                {% endfor %}
+                                                {% if blank > 0 %}
+                                                    {% for star in range(1,blank) %}
+                                                        {% sw_icon 'star' style { 'size': 'sm', 'class': 'blank' } %}
+                                                    {% endfor %}
+                                                {% endif %}
+                                            </td>
+                                        </tr>
+                                    {% endif %}
+                                    {% if rating_resistance %}
+                                        <tr class="properties-row">
+                                            <th class="properties-label">
+                                            {{ "detail.performance.resistance"|trans }}
+                                            </th>
+                                            <td class="properties-value">
+                                            {% set blank = 5 - rating_resistance %}
+
+                                                {% for star in range(1,rating_resistance) %}
+                                                    {% sw_icon 'star' style { 'color': 'review', 'size': 'sm', 'pack': 'solid', 'class': 'full' } %}
+                                                {% endfor %}
+                                                {% if blank > 0 %}
+                                                    {% for star in range(1,blank) %}
+                                                        {% sw_icon 'star' style { 'size': 'sm', 'class': 'blank' } %}
+                                                    {% endfor %}
+                                                {% endif %}
+                                            </td>
+                                        </tr>
+                                    {% endif %}
+                                    </tbody>
+                                </table>
+                            {% endif %}
+
+                            <div class="performance-img">
+                                {% if page.product.translated.customFields.custom_technical_data_images_performance is defined %}
+                                    {% set performanceMediaId = page.product.translated.customFields.custom_technical_data_images_performance %}
+                                    {% set mediaCollection = searchMedia([performanceMediaId], context.context) %}
+                                    {% set performanceImg = mediaCollection.get(performanceMediaId) %}
+                                    <img class="img-fluid" src="{{ performanceImg.url }}" width="100" />
+                                {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endblock %}
+        </div>
+    {% endblock %}
+{% endblock %}

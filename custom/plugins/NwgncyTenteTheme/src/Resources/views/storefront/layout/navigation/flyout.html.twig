@@ -1,0 +1,66 @@
+{% sw_extends '@Storefront/storefront/layout/navigation/flyout.html.twig' %}
+
+{% block layout_navigation_flyout_bar %}
+    {% if category.customFields.megamenu_headline is not empty %}
+        <div class="row navigation-flyout-bar">
+            {% block layout_navigation_flyout_bar_category %}
+                <div class="col">
+                    <div class="navigation-flyout-category-link">
+                        {% block layout_navigation_flyout_bar_category_link %}
+                            {{ category.customFields.megamenu_headline }}
+                        {% endblock %}
+                    </div>
+                </div>
+            {% endblock %}
+
+            {% block layout_navigation_flyout_bar_close %}{% endblock %}
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block layout_navigation_flyout_content %}
+    {% set displayTabView = category.customFields.display_tab_view %}
+
+    <div class="row navigation-flyout-content {% if displayTabView %}is-flyout-tab-view{% endif %}">
+        {% if displayTabView %}
+            <div class="col-12 p-0">
+                <ul class="row g-0 nav nav-tabs" id="myTab" role="tablist">
+                    {% for treeItem in navigationTree.children %}
+                        <li class="nav-item col" role="presentation">
+                            <a class="nav-link{{ loop.first ? ' active' }}" id="tab-link-{{ treeItem.category.id }}" data-bs-toggle="tab" data-bs-target="#tab-{{ treeItem.category.id }}" href="#tab-{{ treeItem.category.id }}" role="tab" aria-selected="{{ loop.first ? 'true' : 'false' }}">{{ treeItem.category.translated.name }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="tab-content" id="myTabContent">
+                {% for treeItem in navigationTree.children %}
+                    <div class="tab-pane fade{{ loop.first ? ' show active' }}" id="tab-{{ treeItem.category.id }}" role="tabpanel">
+                        {% sw_include '@Storefront/storefront/layout/navigation/categories.html.twig' with {
+                            navigationTree: treeItem.children,
+                            navigationMedia: category.media,
+                            page: page,
+                            level: 1,
+                            displayTabView: displayTabView,
+                        } only %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            {% block layout_navigation_flyout_categories %}
+                <div class="{% if category.media %}col-8 col-xl-9{% else %}col{% endif %}">
+                    <div class="navigation-flyout-categories">
+                        {% block layout_navigation_flyout_categories_recoursion %}
+                            {% sw_include '@Storefront/storefront/layout/navigation/categories.html.twig' with {
+                                navigationTree: navigationTree.children,
+                                navigationMedia: category.media,
+                                page: page,
+                                displayTabView: displayTabView,
+                            } only %}
+                        {% endblock %}
+                    </div>
+                </div>
+            {% endblock %}
+        {% endif %}
+    </div>
+{% endblock %}
+

@@ -1,0 +1,66 @@
+{% sw_extends '@Storefront/storefront/layout/header/top-bar.html.twig' %}
+{% block layout_header_top_bar %}
+    <div class="top-bar d-none d-lg-block">
+        <div class="container">
+            <nav class="top-bar-nav">
+                {% block layout_navigation_offcanvas_navigation_action_location %}
+                    {% sw_include '@Storefront/storefront/tente-custom/location-widget.html.twig' %}
+                {% endblock %}
+                    {% sw_include '@Storefront/storefront/layout/header/actions/language-widget.html.twig' %}
+                {% block layout_header_top_bar_language %}
+                {% endblock %}
+
+                {% block layout_header_top_bar_currency %}
+                    
+                {% endblock %}
+            </nav>
+            <nav class="top-bar-nav links d-flex align-items-center pe-2">
+                {% for serviceMenuItem in page.header.serviceMenu %}
+                    {% block layout_header_service_menu_item %}
+                            <a class="header-service-menu-link"
+                                href="{{ category_url(serviceMenuItem) }}"
+                                {% if category_linknewtab(serviceMenuItem) %}target="_blank"{% endif %}
+                                title="{{ serviceMenuItem.translated.name }}">
+                                {{ serviceMenuItem.translated.name }}
+                            </a>
+                    {% endblock %}
+                {% endfor %}
+
+                {% block layout_header_actions_account_widget %}
+                    <div class="dropdown">
+                        {% block layout_header_actions_account_widget_dropdown_button %}
+                            <button class="btn account-menu-btn header-actions-btn text-white"
+                                    type="button"
+                                    id="accountWidget"
+                                    {# @deprecated tag:v6.6.0 - Registering plugin on selector "data-offcanvas-account-menu" is deprecated. Use "data-account-menu" instead #}
+                                    {% if feature('v6.6.0.0') %}
+                                        data-account-menu="true"
+                                    {% else %}
+                                        data-offcanvas-account-menu="true"
+                                    {% endif %}
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    aria-label="{{ "account.myAccount"|trans|striptags }}"
+                                    title="{{ "account.myAccount"|trans|striptags }}">
+                                    {% if not context.customer %}
+                                    {{ "account.loginSubmit"|trans|sw_sanitize }}
+                                {% else %}
+                                    {{ "account.myAccount"|trans|sw_sanitize }}
+                                {% endif %}
+                            </button>
+                        {% endblock %}
+
+                        {% block layout_header_actions_account_widget_dropdown_menu %}
+                            <div class="dropdown-menu dropdown-menu-right account-menu-dropdown js-account-menu-dropdown"
+                                aria-labelledby="accountWidget">
+                                {% sw_include '@Storefront/storefront/layout/header/account-menu.html.twig' %}
+                            </div>
+                        {% endblock %}
+                    </div>
+                {% endblock %}
+
+            </nav>
+        </div>
+    </div>
+{% endblock %}

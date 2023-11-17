@@ -1,0 +1,19 @@
+{
+  "name": "nwgncy/tente-theme",
+  "description": "Tente custom theme by Newwwagency",
+  "version": "1.0.0",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+        "Nwgncy\\TenteTheme\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Nwgncy\\TenteTheme\\NwgncyTenteTheme",
+    "label": {
+      "de-DE": "Tente custom theme by Newwwagency",
+      "en-GB": "Tente custom theme by Newwwagency"
+    }
+  }
+}

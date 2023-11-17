@@ -1,0 +1,90 @@
+{% set activeId = navigation.active.id ?? context.salesChannel.navigationCategoryId %}
+{% set isActive = item.category.id == activeId %}
+{% set hasVisibleChildren = item.category.visibleChildCount > 0 %}
+{% set hasChildren = item.category.childCount > 0 %}
+{% set url = category_url(item.category) %}
+{% set name = item.category.translated.name %}
+{% set itemLevel = item.category.level %}
+
+
+<li class="navigation-offcanvas-list-item">
+    {% block layout_navigation_offcanvas_navigation_categories_list_category_item_link %}
+    {% if itemLevel == 3 %}
+        <details>
+            <summary>
+                <a class="navigation-offcanvas-link nav-item nav-link{% if isActive %} active{% endif %} is-level-3"
+                title="{{ name }}"
+                {% if not hasVisibleChildren %}
+                    href="{{ url }}"
+                    {% if category_linknewtab(item.category) %}target="_blank"{% endif %}
+                {% endif %}
+                >
+                    <span itemprop="name" class="link-title">{{ name }}</span>
+                    <span
+                        class="navigation-offcanvas-link-icon js-navigation-offcanvas-loading-icon{% if not hasVisibleChildren and not hasChildren %} invisible{% endif %}">
+
+                            {% sw_icon 'polygon-left-big' style {
+                                'size': 'ls',
+                                'namespace': 'NwgncyTenteTheme',
+                                } 
+                            %}
+                    </span>
+                </a>
+            </summary>
+            {% for itemChildren in item.children %}
+                {% sw_include '@Storefront/storefront/layout/navigation/offcanvas/item-link.html.twig' with {
+                    item: itemChildren,
+                    navigation: navigation,
+                    isDisplayedUnderParent: true
+                } only %}
+            {% endfor %}
+        </details>
+
+    {% else %}
+
+        <a class="navigation-offcanvas-link nav-item nav-link{% if isActive %} active{% endif %}{% if hasVisibleChildren or hasChildren %} js-navigation-offcanvas-link target-link{% endif %}{% if isDisplayedUnderParent %} is-child{% endif %}{% if itemLevel == 2 %} is-on-root{% endif %}"
+           href="{{ url }}"
+            {% if hasVisibleChildren or hasChildren %}
+                data-href="{{ path('frontend.menu.offcanvas', {'navigationId': item.category.id}) }}"
+            {% endif %}
+           itemprop="url"
+            {% if category_linknewtab(item.category) %}target="_blank"{% endif %}
+           title="{{ name }}">
+            {% block layout_navigation_offcanvas_navigation_categories_list_category_item_link_text %}
+                <span itemprop="name" class="link-title">{{ name }}</span>
+                {% if hasVisibleChildren or hasChildren %}
+                    {% block layout_navigation_offcanvas_navigation_categories_list_category_item_link_icon %}
+                        <span
+                            class="navigation-offcanvas-link-icon js-navigation-offcanvas-loading-icon">
+                            {% if itemLevel == 2 %}
+                                {% sw_icon 'arrow-medium-down' style { 'pack': 'solid', 'size': 'bg' } %}
+                            {% else %}
+                                {% if isDisplayedUnderParent %}
+                                    {% sw_icon 'polygon-right-small' style {
+                                        'size': 'sm',
+                                        'namespace': 'NwgncyTenteTheme',
+                                        } 
+                                    %}
+                                {% else %}
+                                    {% sw_icon 'polygon-left-big' style {
+                                        'size': 'ls',
+                                        'namespace': 'NwgncyTenteTheme',
+                                        } 
+                                    %}
+                                {% endif %}
+
+                            {% endif %}
+                        </span>
+                    {% endblock %}
+                {% else %}
+                    <span
+                        class="navigation-offcanvas-link-icon js-navigation-offcanvas-loading-icon invisible">
+                            {% sw_icon 'arrow-medium-down' style { 'pack': 'solid', 'size': 'bg' } %}
+                    </span>
+                {% endif %}
+            {% endblock %}
+        </a>
+    {% endif %}
+    {% endblock %}
+</li>
+

@@ -1,0 +1,63 @@
+{% sw_extends '@Storefront/storefront/layout/navigation/navigation.html.twig' %}
+
+{% block layout_main_navigation_navbar %}
+    <div class="container d-flex justify-content-end pe-0">
+        {% block layout_main_navigation_menu %}
+           {{ parent() }}
+        {% endblock %}
+    </div>
+{% endblock %}
+
+{# Render flyout menus directly under the trigger element 'data-flyout-menu-trigger' #}
+{% block layout_main_navigation_menu_flyout_container %}{% endblock %}
+
+{% block layout_main_navigation_menu_item %}
+    {# Search for flyout menu that belongs to the parent category so we can render it underneath 'data-flyout-menu-trigger' #}
+    {% set targetId = category.id %}
+    {% set foundItem = null %}
+    {% set menuClass = 'default-menu' %}
+
+    {% for item in page.header.navigation.tree %}
+        {% if item.category.id == targetId %}
+            {% set foundItem = item %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+
+    {% if foundItem is not null and foundItem.children|length > 1 %}
+        {% set menuClass = 'megamenu' %}
+    {% endif %}
+
+    <div class="{% if menuClass != 'megamenu' %}position-relative{% endif %}" data-flyout-menu-trigger-wrapper="{{ category.id }}">
+        {% if category.type == 'folder' %}
+            <div class="nav-link main-navigation-link"
+                {% if treeItem.children|length > 0 %}
+                    data-flyout-menu-trigger="{{ category.id }}"
+                {% endif %}
+                    title="{{ name }}">
+                <div class="main-navigation-link-text">
+                    <span itemprop="name">{{ name }}</span>
+                </div>
+            </div>
+        {% else %}
+            <a class="nav-link main-navigation-link{% if category.id == page.header.navigation.active.id or category.id in activePath %} active{% endif %} {% if category.customFields.tente_categories_service_menu %} d-inline d-sm-none {% endif %}"
+                href="{{ category_url(category) }}"
+                itemprop="url"
+                {% if treeItem.children|length > 0 %}data-flyout-menu-trigger="{{ category.id }}"{% endif %}
+                {% if category_linknewtab(category) %}target="_blank"{% endif %}
+                title="{{ name }}">
+                <div class="main-navigation-link-text">
+                    <span itemprop="name">{{ name }}</span>
+                </div>
+            </a>
+        {% endif %}
+        {% if foundItem is not null and foundItem.children|length > 0 %}
+            <div class="navigation-flyout {{ menuClass }}" data-flyout-menu-id="{{ treeItem.category.id }}">
+                <div class="container">
+                    {% sw_include '@Storefront/storefront/layout/navigation/flyout.html.twig' with {navigationTree: foundItem, level: level+1, page: page} only %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
+

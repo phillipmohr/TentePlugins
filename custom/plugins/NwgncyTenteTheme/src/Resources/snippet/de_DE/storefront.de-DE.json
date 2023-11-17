@@ -1,0 +1,82 @@
+{
+    "general": {
+        "contactUs": "Kontaktiere uns",
+        "contactUsLink": "/kontakt",
+        "privacyNoticeText": "Durch die Anmeldung unseres Newsletters stimmen Sie unseren <a data-ajax-modal=\"true\" data-url=\"%privacyUrl%\" href=\"%privacyUrl%\" title=\"Datenschutzbestimmungen\">Datenschutzbestimmungen</a> sowie unseren <a data-ajax-modal=\"true\" data-url=\"%tosUrl%\" href=\"%tosUrl%\" title=\"AGB\">AGBs</a> zu.",
+        "categories": "Navigation",
+        "loginRegister": "Login / Registrieren"
+    },
+    "topBar": {
+        "location": "Location"
+    },
+    "account": {
+        "myAccount": "Mein Account"
+    },
+    "listing": {
+        "boxProductDetails": "More technical data"
+    },
+    "detail": {
+        "qte": "quantity",
+        "ean": "EAN",
+        "orderNumber": "Order number",
+        "sendQuoteRequest": "Send Quote Request",
+        "contactText": "Haven’t found the right product yet, have special requirements or are you interested in individual solutions? <a data-toggle=\"modal\" data-bs-toggle=\"modal\" data-url=\"%url%\" href=\"%url%\" title=\"Kontaktformular\">Contact us</a>.",
+        "properties": {
+            "housing": "Technical Data Housing",
+            "wheel": "Technical Data Wheel",
+            "fitting": "Technical Data Fitting",
+            "performance": "Performance",
+            "label": {
+                "downloads": "Downloads",
+                "housing": "Housing",
+                "wheel": "Wheel",
+                "fitting": "Fitting",
+                "performance": "Performance",
+                "feature": "Product Features"
+            }
+        },
+        "tabs": {
+            "downloads":"Downloads",
+            "features":"Features",
+            "performance":"Performance"
+        },
+        "cadService": {
+            "title": "CAD Service",
+            "headline": "You can download construction data for This product in different format",
+            "login": "Please <a href=\"/account/login\">Login</a> to see the CAD Files"
+        },
+        "performance": {
+            "roll": "Roll performance",
+            "movement": "Movement noise",
+            "atrittion": "Atrittion",
+            "resistance": "Corrosion resistance"
+        },
+        "buyOnline": "Buy online",
+        "priceOnRequestTitle": "Price on request",
+        "priceOnRequestText": "per piece plus VAT<br>In 24 hours ready for shipping"
+    },
+    "footer": {
+        "serviceHotlineHeadline": "TENTE Castors Ltd.",
+        "serviceHotline": "<div class='footer-address'>100 Papyrus Road, Wrrington<br>Peterborough PE4 5HN<br>United Kingdom</div><div class='footer-contact-info'><a href='tel:441733578111' class='prefix-icon phone'>+44 (0)1733 578111</a><br><a href='mailto:info.uk@tente.com' class='prefix-icon mail'>info.uk@tente.com</a></div>",
+        "socialMediaHeadline": "Social",
+        "copyrightInfo": "Copyright © 2023 by TENTE International GmbH. All rights reserved. Designed by TENTE International GmbH",
+        "newsletterHeadline": "Abonniere unseren Newsletter",
+        "serviceHotlineEmail": "info.uk@tente.com",
+        "serviceHotlinePhoneNumber": "441733578111"
+    },
+    "newsletter": {
+        "placeholderMail": "E-Mail"
+    },
+    "socialMedia": {
+        "facebook": "https://www.facebook.com/tenteworld",
+        "youtube": "https://www.youtube.com/TENTEinternational",
+        "twitter": "https://twitter.com/tenteworld",
+        "linkedin": "https://www.linkedin.com/company//tente-rollen-gmbh/",
+        "instagram": "https://www.instagram.com/tente_australia/?hl=de",
+        "xing": "https://www.xing.com/pages/tenteinternationalgmbh"
+    },
+    "checkout": {
+        "addToCartSuccess": "{1} 1 Produkt wurde dem Warenkorb hinzugefügt.|]1,Inf[ %count% Produkte wurden dem Warenkorb hinzugefügt.",
+        "or": "oder"
+    }
+}

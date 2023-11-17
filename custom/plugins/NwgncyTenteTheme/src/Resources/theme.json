@@ -1,0 +1,291 @@
+{
+  "name": "Tente Theme",
+  "author": "Made by Newwwagency",
+  "previewMedia": "app/tente-preview.png",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@NwgncyTenteTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/nwgncy-tente-theme.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "configInheritance": [
+    "@Storefront"
+  ],
+  "config": {
+    "tabs": {
+      "footer": {
+        "label": {
+          "en-GB": "Footer",
+          "de-DE": "Footer"
+        }
+      }
+    },
+    "blocks": {
+      "themeColors": {
+        "label": {
+          "en-GB": "Theme Colors",
+          "de-DE": "Themefarben"
+        }
+      },
+      "statusColors": {
+        "label": {
+          "en-GB": "Status Colors",
+          "de-DE": "Statusfarben"
+        }
+      },
+      "typography": {
+        "label": {
+          "en-GB": "Typography",
+          "de-DE": "Typografie"
+        }
+      },
+      "eCommerce": {
+        "label": {
+          "en-GB": "E-Commerce",
+          "de-DE": "E-Commerce"
+        }
+      },
+      "media": {
+        "label": {
+          "en-GB": "Media",
+          "de-DE": "Medien"
+        }
+      }
+    },
+    "fields": {
+      "sw-color-brand-primary": {
+        "value": "#3FAFEC",
+        "label": {
+          "en-GB": "Primary Color",
+          "de-DE": "Primärfarbe"
+        }
+      },
+      "sw-color-brand-secondary": {
+        "value": "#707070",
+        "label": {
+          "en-GB": "Secondary Color",
+          "de-DE": "Sekundärfarbe"
+        }
+      },
+      "sw-color-brand-tertiary": {
+        "label": {
+          "en-GB": "Third Color",
+          "de-DE": "Dritte Farbe"
+        },
+        "type": "color",
+        "value": "#193C69",
+        "editable": true,
+        "block": "themeColors",
+        "order": 300
+      },
+      "sw-color-brand-quaternary": {
+        "label": {
+          "en-GB": "Fourth Color",
+          "de-DE": "Vierte Farbe"
+        },
+        "type": "color",
+        "value": "#FF9600",
+        "editable": true,
+        "block": "themeColors",
+        "order": 400
+      },
+      "sw-color-success": {
+        "value": "#349666",
+        "label": {
+          "en-GB": "Success",
+          "de-DE": "Erfolg"
+        }
+      },
+      "sw-color-info": {
+        "label": {
+          "en-GB": "Info",
+          "de-DE": "Info"
+        }
+      },
+      "sw-color-warning": {
+        "label": {
+          "en-GB": "Warning",
+          "de-DE": "Warnung"
+        }
+      },
+      "sw-color-danger": {
+        "label": {
+          "en-GB": "Error",
+          "de-DE": "Fehler"
+        }
+      },
+      "sw-border-color": {
+        "label": {
+          "en-GB": "Border Color",
+          "de-DE": "Rahmenfarbe"
+        },
+        "type": "color",
+        "value": "#707070",
+        "editable": true,
+        "block": "themeColors",
+        "order": 1400
+      },
+      "sw-background-color": {
+        "label": {
+          "en-GB": "Background Color",
+          "de-DE": "Hintergrundfarbe"
+        },
+        "order": 1500
+      },
+      "sw-text-color": {
+        "value": "#313131",
+        "label": {
+          "en-GB": "Text Color",
+          "de-DE": "Textfarbe"
+        }
+      },
+      "sw-font-family-base": {
+        "value": "'Calibri', sans-serif",
+        "label": {
+          "en-GB": "Font Family Base",
+          "de-DE": "Schriftart"
+        }
+      },
+      "sw-font-family-headline": {
+        "value": "'Calibri', sans-serif",
+        "label": {
+          "en-GB": "Font Family Headline",
+          "de-DE": "Schriftart Überschriften"
+        }
+      },
+      "sw-headline-color": {
+        "value": "#193C69",
+        "label": {
+          "en-GB": "Headline Color",
+          "de-DE": "Überschriftenfarbe"
+        }
+      },
+      "sw-color-price": {
+        "value": "#193C69",
+        "label": {
+          "en-GB": "Price Color",
+          "de-DE": "Preisfarbe"
+        }
+      },
+      "sw-color-buy-button": {
+        "value": "#3FAFEC",
+        "label": {
+          "en-GB": "Buy Button Color",
+          "de-DE": "Kaufbutton Farbe"
+        }
+      },
+      "sw-color-buy-button-text": {
+        "label": {
+          "en-GB": "Buy Button Text Color",
+          "de-DE": "Kaufbutton Textfarbe"
+        }
+      },
+      "sw-logo-desktop": {
+        "label": {
+          "en-GB": "Logo Desktop",
+          "de-DE": "Logo Desktop"
+        },
+        "type": "media",
+        "order": 100,
+        "editable": true,
+        "fullWidth": true,
+        "value": "app/storefront/src/assets/images/tente-logo-long.png"
+      },
+      "sw-logo-tablet": {
+        "label": {
+          "en-GB": "Logo Tablet",
+          "de-DE": "Logo Tablet"
+        },
+        "type": "media",
+        "order": 100,
+        "editable": true,
+        "fullWidth": true,
+        "value": "app/storefront/src/assets/images/tente-logo-long.png"
+      },
+      "sw-logo-mobile": {
+        "label": {
+          "en-GB": "Logo Mobile",
+          "de-DE": "Logo Mobile"
+        },
+        "type": "media",
+        "order": 100,
+        "editable": true,
+        "fullWidth": true,
+        "value": "app/storefront/src/assets/images/tente-logo-short.png"
+      },
+      "sw-logo-share": {
+        "label": {
+          "en-GB": "App- & Share-Icon",
+          "de-DE": "App- & Share-Icon"
+        }
+      },
+      "sw-logo-favicon": {
+        "label": {
+          "en-GB": "Favicon",
+          "de-DE": "Favicon"
+        }
+      },
+      "te-footer-logo-desktop": {
+        "label": {
+          "en-GB": "Desktop",
+          "de-DE": "Desktop"
+        },
+        "type": "media",
+        "tab": "footer",
+        "block": "media",
+        "order": 100,
+        "editable": true,
+        "fullWidth": true,
+        "value": "app/storefront/src/assets/images/tente-logo-short.png"
+      },
+      "te-footer-logo-tablet": {
+        "label": {
+          "en-GB": "Tablet",
+          "de-DE": "Tablet"
+        },
+        "type": "media",
+        "tab": "footer",
+        "block": "media",
+        "order": 200,
+        "editable": true,
+        "fullWidth": true,
+        "value": "app/storefront/src/assets/images/tente-logo-short.png"
+      },
+      "te-footer-logo-mobile": {
+        "label": {
+          "en-GB": "Mobile",
+          "de-DE": "Mobile"
+        },
+        "type": "media",
+        "tab": "footer",
+        "block": "media",
+        "order": 300,
+        "editable": true,
+        "fullWidth": true,
+        "value": "app/storefront/src/assets/images/tente-logo-short.png"
+      },
+      "te-show-footer-logos": {
+        "tab": "footer",
+        "label": {
+          "en-GB": "Show footer payment and shipping logos",
+          "de-DE": "Zeige Zahlungs- und Versandlogos im Footer"
+        },
+        "type": "switch",
+        "value": false,
+        "editable": true
+      }
+    }
+  }
+}

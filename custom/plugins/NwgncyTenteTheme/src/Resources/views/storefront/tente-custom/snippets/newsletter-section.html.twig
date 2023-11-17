@@ -1,0 +1,44 @@
+<div class="newsletter-section">
+    <div class="container">
+        <div class="cms-block cms-block-form">
+                <div class="cms-element-form text-sm-center">
+                    <div>
+                        <div class="newsletter-headline">
+                            {{ "footer.newsletterHeadline"|trans|sw_sanitize }}
+                        </div>
+                    </div>
+                    <form action="{{ path('frontend.form.newsletter.register.handle') }}" method="post" data-form-csrf-handler="true" data-form-validation="true">
+                        <div class="newsletter-input-wrapper d-flex justify-content-center">
+                            {% sw_include '@Storefront/storefront/element/cms-element-form/form-components/cms-element-form-input.html.twig'
+                                with {
+                                    fieldName: 'email',
+                                    type: 'email',
+                                    placeholder: 'newsletter.placeholderMail',
+                                    required: true
+                                }
+                            %}
+                            <button type="submit" aria-label="Submit" class="btn btn-primary text-tertiary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19.196" height="19.2" viewBox="0 0 19.196 19.2">
+                                    <path id="paper-plane-solid" d="M18.665.206a1.2,1.2,0,0,1,.506,1.17l-2.4,15.6a1.2,1.2,0,0,1-1.65.922l-4.484-1.863L8.07,18.81a1.2,1.2,0,0,1-2.081-.817V14.858a.587.587,0,0,1,.157-.4L12.43,7.6a.6.6,0,0,0-.84-.851L3.964,13.524.654,11.867A1.194,1.194,0,0,1-.01,10.828a1.208,1.208,0,0,1,.6-1.076l16.8-9.6a1.2,1.2,0,0,1,1.275.052Z" transform="translate(0.01 0.004)" fill="#193c69"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div>
+                            {% sw_include '@Storefront/storefront/component/captcha/base.html.twig' %}
+                        </div>
+
+                        <div>
+                            {% sw_include '@Storefront/storefront/element/cms-element-form/form-components/cms-element-form-privacy.html.twig' %}
+                        </div>
+                        <div class="form-hidden-fields">
+                            <input type="hidden" name="option" value="{{ constant('Shopware\\Storefront\\Controller\\FormController::SUBSCRIBE') }}">
+
+                            <input type="submit" class="submit--hidden d-none" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

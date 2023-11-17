@@ -1,0 +1,33 @@
+{% sw_extends '@parent/storefront/component/product/card/price-unit.html.twig' %}
+
+
+{% block component_product_box_price_info %}
+
+    {% set por_btn_visible = product.extensions.nimbits_por_product_ruleset.por_btn_visible %}
+    {% set por_dont_show_price = product.extensions.nimbits_por_product_ruleset.por_dont_show_price %}
+    {% set por_add_to_cart_not_visible = product.extensions.nimbits_por_product_ruleset.por_add_to_cart_not_visible %}
+    {% set por_product_not_purchasable = product.extensions.nimbits_por_product_ruleset.por_product_not_purchasable %}
+    {% set nbporcustomtext = product.translated.customFields.custom_nimbits_priceonrequest_customtext %}
+
+        {% if por_dont_show_price %}
+            <div class="product-price-wrapper">
+                <div class="product-price-info nb-pricerequest-listing-text">
+                    <div class="d-grid">
+                        <a href="{{ seoUrl('frontend.detail.page', {'productId': id}) }}"
+                        class="btn btn-detail btn-primary"
+                        title="{{ "listing.boxProductDetails"|trans|striptags }}">
+                            {{ "listing.boxProductDetails"|trans|sw_sanitize }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        {% else %}
+            {{ parent() }}
+        {% endif %}
+
+    {% if nbporcustomtext %}
+        {{ nbporcustomtext }}
+    {% endif %}
+{% endblock %}
+

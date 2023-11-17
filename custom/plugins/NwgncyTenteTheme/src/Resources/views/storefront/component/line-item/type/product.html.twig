@@ -1,0 +1,38 @@
+{% sw_extends '@Storefront/storefront/component/line-item/type/product.html.twig' %}
+
+{# Remove product number label #}
+{% block component_line_item_type_product_order_number %}
+    <div class="line-item-ordernumber">
+        {{ lineItem.payload.productNumber }}
+    </div>
+{% endblock %}
+
+{% block component_line_item_type_product_col_quantity %}
+    <div class="col-12 order-3">
+        <div class="row quantity-price-wrapper">
+            <div class="col-7 pl-0">
+                {{ parent() }}
+            </div>
+            <div class="col-5 d-flex flex-column">
+                {% if showTaxPrice %}
+                    <div class="line-item-tax-price order-last">
+                        {% if context.salesChannel.taxCalculationType == 'horizontal' %}
+                            {% sw_include '@Storefront/storefront/component/line-item/element/tax-price.html.twig' %}
+                        {% endif %}
+                    </div>
+                {% else %}
+                    <div class="line-item-unit-price{% if lineItem.quantity > 1 %} is-shown{% endif %}">
+                        {% sw_include '@Storefront/storefront/component/line-item/element/unit-price.html.twig' %}
+                    </div>
+                {% endif %}
+                <div class="line-item-total-price line-item-price">
+                    {% sw_include '@Storefront/storefront/component/line-item/element/total-price.html.twig' %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block component_line_item_type_product_col_tax_price %}{% endblock %}
+{% block component_line_item_type_product_col_unit_price %}{% endblock %}
+{% block component_line_item_type_product_col_total_price %}{% endblock %}

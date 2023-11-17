@@ -1,0 +1,20 @@
+.alert {
+    border-radius: 3px;
+
+    .alert-content-container {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .alert-content {
+        font-size: 18px;
+    }
+}
+
+.alert-success {
+
+    &.alert-has-icon svg {
+        width: 17px;
+        height: 12px;
+    }
+}

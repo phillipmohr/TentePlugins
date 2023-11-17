@@ -1,0 +1,38 @@
+{% sw_extends '@Storefront/storefront/layout/navigation/categories.html.twig' %}
+{% block layout_navigation_categories %}
+    {% set navigationMaxDepth = 3 %}
+
+    {% if not level %}
+        {% set level = 0 %}
+    {% endif %}
+    {% set activeId = page.header.navigation.active.id %}
+
+    {% if page.product is defined %}
+        {% set activePath = page.product.categoryTree %}
+    {% else %}
+        {% set activePath = page.header.navigation.active.path %}
+    {% endif %}
+
+    {# if level 1 and displayTabView added #}
+    <div class="{% if level == 0 or level == 1 and displayTabView %}row {% endif %}navigation-flyout-categories is-level-{{ level }}">
+        {% for treeItem in navigationTree %}
+            {% set id = treeItem.category.id %}
+            {% set name = treeItem.category.translated.name %}
+            {% set link = category_url(treeItem.category) %}
+
+            {% block layout_navigation_categories_item %}
+                {# if level 1 and displayTabView added #}
+                <div class="{% if level == 0 or level == 1 and displayTabView %}{% if navigationMedia %}col-4 {% else %}col-3 {% endif %}{% endif %}navigation-flyout-col">
+                    {% block layout_navigation_categories_item_link %}
+                        {{ parent() }}
+                    {% endblock %}
+
+                    {% block layout_navigation_categories_recoursion %}
+                        {{ parent() }}
+                    {% endblock %}
+                </div>
+            {% endblock %}
+        {% endfor %}
+    </div>
+{% endblock %}
+

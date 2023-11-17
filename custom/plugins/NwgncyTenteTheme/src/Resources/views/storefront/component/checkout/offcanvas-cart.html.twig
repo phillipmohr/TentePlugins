@@ -1,0 +1,24 @@
+{% sw_extends '@Storefront/storefront/component/checkout/offcanvas-cart.html.twig' %}
+
+{% block component_offcanvas_cart_header_item_counter %}{% endblock %}
+
+{% block utilities_offcanvas_close %}
+    <button class="btn btn-light offcanvas-close js-offcanvas-close d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="19.25" height="22.45" viewBox="0 0 22.448 19.25">
+            <path id="arrow-down-solid" d="M8.417,53.978a1.606,1.606,0,0,0,2.27,0L18.7,45.961a1.605,1.605,0,0,0-2.27-2.27l-5.282,5.287V33.6a1.6,1.6,0,0,0-3.207,0V48.972L2.665,43.7a1.605,1.605,0,0,0-2.27,2.27l8.018,8.018Z" transform="translate(54.448 0.075) rotate(90)" fill="currentColor"/>
+        </svg>
+
+        {% block utilities_offcanvas_close_text %}
+            <div class="offcanvas-close-text">{{ parent() }}</div>
+        {% endblock %}
+    </button>
+{% endblock %}
+
+{% block component_offcanvas_cart_actions_checkout %}
+    {{ parent() }}
+    <div class="d-grid offcanvas-cart-actions-spacer">
+        <b class="text-uppercase">{{ "checkout.or" | trans }}</b>
+    </div>
+{% endblock %}
+
+{% block component_offcanvas_cart_actions_promotion %}{% endblock %}

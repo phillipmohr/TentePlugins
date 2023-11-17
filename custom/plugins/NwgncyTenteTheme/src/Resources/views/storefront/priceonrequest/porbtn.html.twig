@@ -1,0 +1,19 @@
+{% block nimbits_page_product_detail_por_button %}
+        {% if customizedProductsTemplate and customizedProductsTemplate.active %}
+            <button
+                    class="btn btn-primary btn-block btn-buy btn-nb-pricerequest-detail-cpext"
+                    {% if customizedProductsTemplate.confirmInput %} disabled="disabled" {% endif %}
+                    title="{{ 'detail.sendQuoteRequest'|trans }}">
+                {{ 'detail.sendQuoteRequest'|trans }}
+            </button>
+        {% else %}
+            <div
+                    class="btn btn-block btn-nb-pricerequest-detail btn-primary"
+                    title="{{ 'detail.sendQuoteRequest'|trans }}"
+                    data-toggle="modal"
+                    data-ajax-modal
+                    data-url="{{ path('frontend.action.nimbits.price-request-modal') }}">
+                {{ 'detail.sendQuoteRequest'|trans }}
+            </div>
+        {% endif %}
+{% endblock %}

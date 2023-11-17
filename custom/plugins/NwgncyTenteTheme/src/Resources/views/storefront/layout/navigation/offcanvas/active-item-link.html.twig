@@ -1,0 +1,30 @@
+{% sw_extends '@Storefront/storefront/layout/navigation/offcanvas/active-item-link.html.twig' %}
+
+{% if item.parentId == context.salesChannel.navigationCategoryId %}
+    {% set url = path('frontend.menu.offcanvas') %}
+{% else %}
+    {% set url = path('frontend.menu.offcanvas', { 'navigationId': item.parentId }) %}
+{% endif %}
+
+{% block layout_navigation_offcanvas_navigation_category_headline %}
+    <a class="nav-item nav-link navigation-offcanvas-headline js-navigation-offcanvas-link"
+       href="{{ url }}"
+       itemprop="url">
+        {% block layout_navigation_offcanvas_navigation_category_headline_text %}
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-9">
+                        <span itemprop="name">
+                            {{ item.translated.name }}
+                        </span>
+                    </div>
+                    <div class="col-3 d-flex align-items-center justify-content-center ps-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="icon">
+                            <path id="Polygon_7" data-name="Polygon 7" d="M8,0l8,12H0Z" transform="translate(0 16) rotate(-90)" fill="#193c69"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+    </a>
+{% endblock %}

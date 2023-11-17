@@ -1,0 +1,15 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{# Navigation is rendered in layout/header.html.twig #}
+{% block base_navigation %}{% endblock %}
+
+{% block base_footer %}
+
+    {% if controllerName != 'Product' %}
+        <div class="container newsletter-container px-0">{% sw_include '@Storefront/storefront/tente-custom/snippets/newsletter-section.html.twig' %}</div>
+    {% endif %}
+    
+    {{ parent() }}
+{% endblock %}
+
+{% block base_scroll_up %}{% endblock %}

@@ -1,0 +1,221 @@
+{% sw_extends '@Storefront/storefront/page/product-detail/tabs.html.twig' %}
+
+
+{% block page_product_detail_tabs_inner %}
+    <div class="card card-tabs">
+        {% block page_product_detail_tabs_navigation %}
+            <div class="card-header product-detail-tab-navigation">
+                {% block page_product_detail_tabs_navigation_container %}
+                    <ul class="nav nav-tabs product-detail-tab-navigation-list"
+                        id="product-detail-tabs"
+                        role="tablist">
+                        {% block page_product_detail_tabs_navigation_description %}{% endblock %}
+                        {% block page_product_detail_tabs_navigation_downloads %}
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %} product-detail-tab-navigation-link"
+                                    id="tab-downloads"
+                                    data-bs-toggle="tab"
+                                    {# @deprecated tag:v6.6.0 - Registering plugin on selector "data-offcanvas-tabs" is deprecated. Use "data-off-canvas-tabs" instead #}
+                                    {% if feature('v6.6.0.0') %}
+                                        data-off-canvas-tabs="true"
+                                    {% else %}
+                                        data-offcanvas-tabs="true"
+                                    {% endif %}
+                                    href="#tab-downloads-pane"
+                                    role="tab"
+                                    aria-controls="tab-downloads-pane"
+                                    aria-selected="true"
+                                >
+                                    <span>{{ "detail.tabs.downloads"|trans|sw_sanitize }}</span>
+                                    <span class="product-detail-tab-navigation-icon">
+                                        {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                    </span>
+                                </a>
+                            </li>
+                        {% endblock %}
+                        {% block page_product_detail_tabs_features %}
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link product-detail-tab-navigation-link"
+                                    id="tab-features"
+                                    data-bs-toggle="tab"
+                                    {# @deprecated tag:v6.6.0 - Registering plugin on selector "data-offcanvas-tabs" is deprecated. Use "data-off-canvas-tabs" instead #}
+                                    {% if feature('v6.6.0.0') %}
+                                        data-off-canvas-tabs="true"
+                                    {% else %}
+                                        data-offcanvas-tabs="true"
+                                    {% endif %}
+                                    href="#tab-features-pane"
+                                    role="tab"
+                                    aria-controls="tab-features-pane"
+                                    aria-selected="true"
+                                >
+                                    <span>{{ "detail.tabs.features"|trans|sw_sanitize }}</span>
+                                    <span class="product-detail-tab-navigation-icon">
+                                        {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                    </span>
+                                </a>
+                            </li>
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_performance %}
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link product-detail-tab-navigation-link"
+                                    id="tab-performance"
+                                    data-bs-toggle="tab"
+                                    {# @deprecated tag:v6.6.0 - Registering plugin on selector "data-offcanvas-tabs" is deprecated. Use "data-off-canvas-tabs" instead #}
+                                    {% if feature('v6.6.0.0') %}
+                                        data-off-canvas-tabs="true"
+                                    {% else %}
+                                        data-offcanvas-tabs="true"
+                                    {% endif %}
+                                    href="#tab-performance-pane"
+                                    role="tab"
+                                    aria-controls="tab-performance-pane"
+                                    aria-selected="true"
+                                >
+                                    <span>{{ "detail.tabs.performance"|trans|sw_sanitize }}</span>
+                                    <span class="product-detail-tab-navigation-icon">
+                                        {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                    </span>
+                                </a>
+                            </li>
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_technical_data_housing %}
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link product-detail-tab-navigation-link"
+                                    id="technical-data-housing"
+                                    data-bs-toggle="tab"
+                                    {# @deprecated tag:v6.6.0 - Registering plugin on selector "data-offcanvas-tabs" is deprecated. Use "data-off-canvas-tabs" instead #}
+                                    {% if feature('v6.6.0.0') %}
+                                        data-off-canvas-tabs="true"
+                                    {% else %}
+                                        data-offcanvas-tabs="true"
+                                    {% endif %}
+                                    href="#technical-data-housing-pane"
+                                    role="tab"
+                                    aria-controls="technical-data-housing-pane"
+                                    aria-selected="true"
+                                >
+                                    <span>{{ "detail.properties.housing"|trans|sw_sanitize }}</span>
+                                    <span class="product-detail-tab-navigation-icon">
+                                        {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                    </span>
+                                </a>
+                            </li>
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_technical_data_wheel %}
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link product-detail-tab-navigation-link"
+                                    id="technical-data-wheel"
+                                    data-bs-toggle="tab"
+                                    {# @deprecated tag:v6.6.0 - Registering plugin on selector "data-offcanvas-tabs" is deprecated. Use "data-off-canvas-tabs" instead #}
+                                    {% if feature('v6.6.0.0') %}
+                                        data-off-canvas-tabs="true"
+                                    {% else %}
+                                        data-offcanvas-tabs="true"
+                                    {% endif %}
+                                    href="#technical-data-wheel-pane"
+                                    role="tab"
+                                    aria-controls="technical-data-wheel-pane"
+                                    aria-selected="true"
+                                >
+                                    <span>{{ "detail.properties.wheel"|trans|sw_sanitize }}</span>
+                                    <span class="product-detail-tab-navigation-icon">
+                                        {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                    </span>
+                                </a>
+                            </li>
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_technical_data_fitting %}
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link product-detail-tab-navigation-link"
+                                    id="technical-data-fitting"
+                                    data-bs-toggle="tab"
+                                    {# @deprecated tag:v6.6.0 - Registering plugin on selector "data-offcanvas-tabs" is deprecated. Use "data-off-canvas-tabs" instead #}
+                                    {% if feature('v6.6.0.0') %}
+                                        data-off-canvas-tabs="true"
+                                    {% else %}
+                                        data-offcanvas-tabs="true"
+                                    {% endif %}
+                                    href="#technical-data-fitting-pane"
+                                    role="tab"
+                                    aria-controls="technical-data-fitting-pane"
+                                    aria-selected="true"
+                                >
+                                    <span>{{ "detail.properties.fitting"|trans|sw_sanitize }}</span>
+                                    <span class="product-detail-tab-navigation-icon">
+                                        {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                    </span>
+                                </a>
+                            </li>
+                        {% endblock %}
+                    </ul>
+                {% endblock %}
+            </div>
+        {% endblock %}
+
+        {% block page_product_detail_tabs_content %}
+            <div class="product-detail-tabs-content card-body">
+                {% block page_product_detail_tabs_content_container %}
+                    <div class="tab-content">
+                        {% block page_product_detail_tabs_content_description %} {% endblock %}
+
+                        {% block page_product_detail_tabs_content_downloads %}
+                            <div class="tab-pane fade show {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                 id="tab-downloads-pane"
+                                 role="tabpanel"
+                                 aria-labelledby="tab-downloads">
+                                {% sw_include '@Storefront/storefront/page/product-detail/tabs/downloads.html.twig' %}
+                            </div>
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_features %}
+                            <div class="tab-pane fade show"
+                                 id="tab-features-pane"
+                                 role="tabpanel"
+                                 aria-labelledby="tab-features">
+                                {% sw_include '@Storefront/storefront/page/product-detail/tabs/features.html.twig' %}
+                            </div>
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_performance %}
+                            <div class="tab-pane fade show"
+                                 id="tab-performance-pane"
+                                 role="tabpanel"
+                                 aria-labelledby="tab-performance">
+                                {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/performance.html.twig' %}
+                            </div>
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_technical_data_housing %}
+                            <div class="tab-pane fade show"
+                                 id="technical-data-housing-pane"
+                                 role="tabpanel"
+                                 aria-labelledby="technical-data-housing">
+                                {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/housing.html.twig' %}
+                            </div>
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_technical_data_wheel %}
+                            <div class="tab-pane fade show"
+                                 id="technical-data-wheel-pane"
+                                 role="tabpanel"
+                                 aria-labelledby="technical-data-wheel">
+                                {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/wheel.html.twig' %}
+                            </div>
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_technical_data_fitting %}
+                            <div class="tab-pane fade show"
+                                 id="technical-data-fitting-pane"
+                                 role="tabpanel"
+                                 aria-labelledby="technical-data-fitting">
+                                {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/fitting.html.twig' %}
+                            </div>
+                        {% endblock %}
+                    </div>
+                {% endblock %}
+            </div>
+        {% endblock %}
+    </div>
+{% endblock %}

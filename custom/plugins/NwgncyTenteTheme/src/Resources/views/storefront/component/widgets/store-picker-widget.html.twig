@@ -1,0 +1,22 @@
+{% block zeobv_store_switcher_widgets_store_picker_widget %}
+    <div class="language-form">
+        <div class="languages-menu">
+            {% block zeobv_store_switcher_widgets_store_picker_widget_languages_options %}
+                {% for option in options %}
+                    <div title="{{ option.name }}">
+                        <a href="{{ option.url }}" data-option="{{ option.salesChannelDomainId }}"
+                           class="btn btn-domain-selector btn-block btn-light{% if option.extensions.suggested %} btn--highlight{% endif %}">
+                            {% if showFlag %}
+                                <div class="top-bar-list-icon language-flag country-{{ option.iso|lower }}"></div>
+                            {% endif %}
+
+                            <span class="store-name">{{ option.name }}</span>
+
+                            <em class="store-suggestion{% if not option.extensions.suggested %} d-none{% endif %}">{{ "zeobv-store-switcher.modal.suggestLabel"|trans }}</em>
+                        </a>
+                    </div>
+                {% endfor %}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

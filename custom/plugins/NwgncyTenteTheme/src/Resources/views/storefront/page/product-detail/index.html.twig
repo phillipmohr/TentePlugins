@@ -1,0 +1,130 @@
+{% sw_extends '@Storefront/storefront/page/product-detail/index.html.twig' %}
+
+
+{% block base_head %}
+    {% sw_include '@Storefront/storefront/page/product-detail/meta.html.twig' %}
+{% endblock %}
+
+{% block base_content %}
+    {% block page_product_detail %}
+
+        <div class="product-detail"
+             itemscope
+             itemtype="https://schema.org/Product">
+            {% block page_product_detail_inner %}
+                {% block page_product_detail_content %}
+                    <div class="product-detail-content">
+
+                        {% set mediaItems = page.product.media.media %}
+
+                        {% block page_product_detail_main %}
+                            <div class="row product-detail-main gx-3">
+                                {% block page_product_detail_media %}
+                                    <div class="col-lg-7 product-detail-left-side">
+                                        <div class="p-3">
+                                            <div class="row">
+                                                <div class="col product-detail-info">
+                                                    {% block page_product_detail_headline %}
+                                                        <div class="product-detail-headline">
+                                                            {% sw_include '@Storefront/storefront/page/product-detail/headline.html.twig' %}
+                                                        </div>
+                                                    {% endblock %}
+
+                                                    <div class="product-detail-media d-block d-sm-none">
+                                                        {% if page.product.media %}
+                                                            {% sw_include '@Storefront/storefront/element/cms-element-image-gallery.html.twig' with {
+                                                                'mediaItems': mediaItems,
+                                                                'zoom': false,
+                                                                'zoomModal': true,
+                                                                'displayMode': 'contain',
+                                                                'gutter': 5,
+                                                                'minHeight': '430px',
+                                                                'navigationArrows': 'inside',
+                                                                'navigationDots': 'inside',
+                                                                'galleryPosition': 'left',
+                                                                'isProduct': true,
+                                                                'fallbackImageTitle': page.product.translated.name,
+                                                                'startIndexThumbnails': 1,
+                                                                'startIndexSlider': 1,
+                                                                'keepAspectRatioOnZoom': false
+                                                            } %}
+                                                        {% endif %}
+                                                    </div>
+
+                                                    {% block page_product_detail_info_container %}
+                                                        <div class="product-detail-info-container">
+                                                            <table>
+                                                                <tr>
+                                                                    <td><span>{{ "detail.ean"|trans }} :</span></td>
+                                                                    <td class="sm-text-right">{{ page.product.ean }}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><span>{{ "detail.orderNumber"|trans }} :</span></td>
+                                                                    <td class="sm-text-right">{{ page.product.productNumber }}</td>
+                                                                </tr>
+                                                            </table>
+
+                                                            {% block page_product_detail_contact %}
+                                                                <div class="product-detail-contact-text">
+                                                                    {{ "detail.contactText"|trans|raw }}
+                                                                </div>
+                                                            {% endblock %}
+                                                        </div>
+                                                    {% endblock %}
+                                                </div>
+                                                <div class="col-lg-7 product-detail-media d-none d-sm-block">
+                                                    {% if page.product.media %}
+                                                        {% sw_include '@Storefront/storefront/element/cms-element-image-gallery.html.twig' with {
+                                                            'mediaItems': mediaItems,
+                                                            'zoom': false,
+                                                            'zoomModal': true,
+                                                            'displayMode': 'contain',
+                                                            'gutter': 5,
+                                                            'minHeight': '430px',
+                                                            'navigationArrows': 'inside',
+                                                            'navigationDots': 'inside',
+                                                            'galleryPosition': 'left',
+                                                            'isProduct': true,
+                                                            'fallbackImageTitle': page.product.translated.name,
+                                                            'startIndexThumbnails': 1,
+                                                            'startIndexSlider': 1,
+                                                            'keepAspectRatioOnZoom': false
+                                                        } %}
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endblock %}
+
+                                {% block page_product_detail_buy %}
+                                    <div class="col-lg-5 product-detail-buy">
+                                        <div class="p-3">
+                                            {% sw_include '@Storefront/storefront/page/product-detail/buy-widget.html.twig' %}
+                                        </div>
+                                    </div>
+                                {% endblock %}
+                            </div>
+                        {% endblock %}
+                    </div>
+                {% endblock %}
+
+                {% block page_product_detail_tabs %}
+                    <div class="product-detail-tabs">
+                        {% sw_include '@Storefront/storefront/page/product-detail/tabs.html.twig' %}
+                    </div>
+                {% endblock %}
+
+                {% block page_product_detail_cross_selling %}
+                    {% if page.crossSellings.elements is defined and page.crossSellings.elements|filter(item => item.total > 0)|length > 0 %}
+                        <div class="product-detail-tabs product-detail-cross-selling">
+                            {% sw_include '@Storefront/storefront/page/product-detail/cross-selling/tabs.html.twig' with {
+                                crossSellings: page.crossSellings
+                            } %}
+                        </div>
+                    {% endif %}
+                {% endblock %}
+            {% endblock %}
+        </div>
+    {% endblock %}
+{% endblock %}

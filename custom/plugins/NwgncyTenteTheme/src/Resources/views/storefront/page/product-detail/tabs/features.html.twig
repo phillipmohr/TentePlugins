@@ -1,0 +1,48 @@
+{% sw_extends '@Storefront/storefront/utilities/offcanvas.html.twig' %}
+
+{% block utilities_offcanvas_content %}
+    {% block page_product_detail_properties_inner %}
+        <div class="product-detail-properties tente-product-detail-properties">
+            {% block page_product_detail_properties_container %}
+                <h4 class="product-detail-properties-title">{{ "detail.properties.label.feature"|trans }}</h4>
+                <div class="tente-feature-container">
+                {% if page.product.translated.customFields.product_data_feature_1_title is defined %}
+                    <div class="tente-feature">
+                        <h5>{{ page.product.translated.customFields.product_data_feature_1_title }}</h5>
+                        <p>{{ page.product.translated.customFields.product_data_feature_1_content }}</p>
+                    </div>
+                {% endif %}
+
+                {% if page.product.translated.customFields.product_data_feature_2_title is defined %}
+                    <div class="tente-feature">
+                        <h5>{{ page.product.translated.customFields.product_data_feature_2_title }}</h5>
+                        <p>{{ page.product.translated.customFields.product_data_feature_2_content }}</p>
+                    </div>
+                {% endif %}
+
+                {% if page.product.translated.customFields.product_data_feature_3_title is defined %}
+                    <div class="tente-feature">
+                        <h5>{{ page.product.translated.customFields.product_data_feature_3_title }}</h5>
+                        <p>{{ page.product.translated.customFields.product_data_feature_3_content }}</p>
+                    </div>
+                {% endif %}
+
+                {% if page.product.translated.customFields.product_data_feature_4_title is defined %}
+                    <div class="tente-feature">
+                        <h5>{{ page.product.translated.customFields.product_data_feature_4_title }}</h5>
+                        <p>{{ page.product.translated.customFields.product_data_feature_4_content }}</p>
+                    </div>
+                {% endif %}
+
+                {% if page.product.translated.customFields.product_data_feature_5_title is defined %}
+                    <div class="tente-feature">
+                        <h5>{{ page.product.translated.customFields.product_data_feature_5_title }}</h5>
+                        <p>{{ page.product.translated.customFields.product_data_feature_5_content }}</p>
+                    </div>
+                {% endif %}
+
+                </div>
+            {% endblock %}
+        </div>
+    {% endblock %}
+{% endblock %}

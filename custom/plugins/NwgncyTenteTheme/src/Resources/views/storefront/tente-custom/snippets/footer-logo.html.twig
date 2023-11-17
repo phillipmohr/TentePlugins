@@ -1,0 +1,17 @@
+<picture class="footer-logo-picture">
+    {% if theme_config('te-footer-logo-tablet') and theme_config('te-footer-logo-tablet') != theme_config('te-footer-logo-desktop') %}
+        <source srcset="{{ theme_config('te-footer-logo-tablet') |sw_encode_url }}"
+                media="(min-width: {{ theme_config('breakpoint.md') }}px) and (max-width: {{ theme_config('breakpoint.lg') - 1 }}px)">
+    {% endif %}
+
+    {% if theme_config('te-footer-logo-mobile') and theme_config('te-footer-logo-mobile') != theme_config('te-footer-logo-desktop') %}
+        <source srcset="{{ theme_config('te-footer-logo-mobile') |sw_encode_url }}"
+                media="(max-width: {{ theme_config('breakpoint.md') - 1 }}px)">
+    {% endif %}
+
+    {% if theme_config('te-footer-logo-desktop') %}
+        <img src="{{ theme_config('te-footer-logo-desktop') |sw_encode_url }}"
+                alt="{{ "header.logoLink"|trans|striptags }}"
+                class="img-fluid header-logo-main-img"/>
+    {% endif %}
+</picture>
