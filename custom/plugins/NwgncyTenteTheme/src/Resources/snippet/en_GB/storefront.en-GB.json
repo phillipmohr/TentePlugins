@@ -79,5 +79,14 @@
         "proceedLink": "Proceed to checkout",
         "proceedToCheckout": "Proceed to checkout",
         "or": "or"
+    },
+    "switcher": {
+        "titleChose": "Choose your location",
+        "titleAfrica": "Africa",
+        "titleAsia": "Asia",
+        "titleAustralia": "Australia",
+        "titleEurope": "Europa",
+        "titleNAmerica": "North America",
+        "titleSAmerica": "South America"
     }
 }

@@ -78,5 +78,14 @@
     "checkout": {
         "addToCartSuccess": "{1} 1 Produkt wurde dem Warenkorb hinzugefügt.|]1,Inf[ %count% Produkte wurden dem Warenkorb hinzugefügt.",
         "or": "oder"
+    },
+    "switcher": {
+        "titleChose": "Choose your location",
+        "titleAfrica": "Africa",
+        "titleAsia": "Asia",
+        "titleAustralia": "Australia",
+        "titleEurope": "Europa",
+        "titleNAmerica": "North America",
+        "titleSAmerica": "South America"
     }
 }

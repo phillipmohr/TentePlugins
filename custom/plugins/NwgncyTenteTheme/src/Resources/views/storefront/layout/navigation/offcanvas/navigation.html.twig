@@ -5,9 +5,6 @@
 {% block utilities_offcanvas_content %}
     {% block layout_navigation_offcanvas_navigation_actions %}
         <nav class="nav navigation-offcanvas-actions">
-            {% block layout_navigation_offcanvas_navigation_action_location %}
-                {% sw_include '@Storefront/storefront/tente-custom/location-widget.html.twig' %}
-            {% endblock %}
             {% block layout_navigation_offcanvas_navigation_action_language %}
                 {% sw_include '@Storefront/storefront/layout/header/actions/language-widget.html.twig' with {position: 'offcanvas'} %}
             {% endblock %}

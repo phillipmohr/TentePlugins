@@ -1,7 +1,9 @@
 {% sw_extends '@Storefront/storefront/base.html.twig' %}
 
 {# Navigation is rendered in layout/header.html.twig #}
-{% block base_navigation %}{% endblock %}
+{% block base_navigation %}
+    {% sw_include '@Storefront/storefront/component/modals/store-switcher.html.twig' %}
+{% endblock %}
 
 {% block base_footer %}
 

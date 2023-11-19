@@ -21,7 +21,7 @@
                             <div class="row product-detail-main gx-3">
                                 {% block page_product_detail_media %}
                                     <div class="col-lg-7 product-detail-left-side">
-                                        <div class="p-3">
+                                        <div class="border-lg p-lg-3">
                                             <div class="row">
                                                 <div class="col product-detail-info">
                                                     {% block page_product_detail_headline %}
@@ -98,8 +98,8 @@
                                 {% endblock %}
 
                                 {% block page_product_detail_buy %}
-                                    <div class="col-lg-5 product-detail-buy">
-                                        <div class="p-3">
+                                    <div class="col-lg-5 product-detail-buy mb-0">
+                                        <div class="border-lg p-lg-3 h-100">
                                             {% sw_include '@Storefront/storefront/page/product-detail/buy-widget.html.twig' %}
                                         </div>
                                     </div>
