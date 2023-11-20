@@ -1,127 +1,206 @@
 .switcher-modal-language {
+  .modal-content {
+    background-color: #193c69;
+    border: solid 1px #707070;
+
+    .all-content {
+      padding-top: 43px;
+      min-height: 732px;
+      margin: 0;
+    }
+
+    .left-side {
+      border-right: solid 1px #ffffff;
+      margin-top: -43px; /* Add negative margin to overlap with the top padding of all-content */
+      padding-top: 43px; /* Compensate by adding padding-top to left-side */
+      padding-left: 88px;
+
+      .icon {
+        color: #ffffff;
+        width: 13px;
+      }
+
+      .icon-close-select {
+        display: none;
+      }
+
+      .icon-continent {
+        position: absolute;
+        left: -20px;
+      }
+    }
+
+    .store-switcher-modal--subtitle-element {
+      color: #ffffff;
+      font-size: 16px;
+      margin-bottom: 35px;
+      font-weight: normal;
+      text-align: left;
+    }
+
+    .continent {
+      font-size: 20px;
+      color: #ffffff;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .continent:last-child {
+      margin-bottom: 0;
+    }
+
+    .active {
+      font-weight: bold;
+
+      .icon-close-select {
+        display: block;
+      }
+
+      .icon-open-select {
+        display: none;
+      }
+    }
+
+    .right-side {
+      padding-left: 135.5px;
+      padding-top: 52px;
+      padding-bottom: 20px;
+    }
+
+    .nav-link {
+      font-size: 18px;
+      font-weight: normal;
+      text-decoration: none;
+      color: #ffffff;
+
+      margin-bottom: 30px;
+    }
+
+    .nav-link:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    .nav-link:hover {
+      color: #ffffff;
+    }
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  &.modal-dialog {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .switcher-modal-language {
     .modal-content {
-      background-color: #193c69;
-      border: solid 1px #707070;
-  
       .all-content {
+        padding-left: 0;
         padding-top: 43px;
-        min-height: 732px;
-        margin: 0;
+        min-height: 641px;
       }
-  
+
       .left-side {
-        border-right: solid 1px #ffffff;
-        margin-top: -43px; /* Add negative margin to overlap with the top padding of all-content */
-        padding-top: 43px; /* Compensate by adding padding-top to left-side */
-        padding-left: 88px;
+        padding-left: 35px;
+        border-right: 0px;
+
+        .nav-pills.continents {
+          padding-left: 20px;
+        }
       }
-  
-      .store-switcher-modal--subtitle-element {
-        color: #ffffff;
-        font-size: 16px;
-        margin-bottom: 35px;
-        font-weight: normal;
-        text-align: left;
-      }
-  
       .continent {
-        font-size: 20px;
-        color: #ffffff;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+
+        &.active {
+          padding-bottom: 86px;
+        }
       }
-  
       .continent:last-child {
-        margin-bottom: 0;
-      }
-  
-      .active {
-        font-weight: bold;
-      }
-  
-      .right-side {
-        padding-left: 135.5px;
-        padding-top: 52px;
-        padding-bottom: 20px;
-      }
-  
-      .nav-link {
-        font-size: 18px;
-        font-weight: normal;
-        text-decoration: none;
-        color: #ffffff;
-  
         margin-bottom: 30px;
       }
-  
-      .nav-link:not(:last-child) {
-        margin-bottom: 0;
+
+      .right-side {
+        padding: 0;
+        overflow: auto;
       }
-  
-      .nav-link:hover {
-        color: #ffffff;
+
+      .col-6 {
+        margin-bottom: 30px;
+      }
+
+      .nav-link {
+        padding: 2px 0;
       }
     }
-  
-    .modal-body {
-      padding: 0;
-    }
-  
+
     &.modal-dialog {
-      max-width: 70%;
+      max-width: 100%;
     }
-  }
-  
-  @media only screen and (max-width: 760px) {
-    .switcher-modal-language {
-      .modal-content {
-        .all-content {
-          padding-left: 0;
-          padding-top: 43px;
+
+    .tab-content {
+      .tab-pane {
+        position: absolute;
+        width: 271px;
+        border: 1px solid #fff;
+        height: 88px;
+        left: 55px;
+        top: 135px;
+        background: #193C69;
+
+        .row {
+          margin: 0;
+          height: 100%;
+
+          .flex-column {
+            max-width: 100%;
+            flex: 0 0 100%;
+            height: 100%;
+            overflow: auto;
+            margin: 0;
+
+            .nav-link {
+              margin-bottom: 0;
+              font-size: 16px;
+            }
+          }
         }
-  
-        .left-side {
-          padding-left: 10px;
-          border-right: 0px;
-          border-bottom: solid 1px #ffffff;
+
+        &#v-pills-asia {
+          top: 185px;
         }
-        .continent {
-          margin-bottom: 6px;
+
+        &#v-pills-australia {
+          top: 235px;
         }
-        .continent:last-child {
-          margin-bottom: 30px;
+
+        &#v-pills-europe {
+          top: 285px;
         }
-  
-        .right-side {
-          padding-left: 10px;
-          padding-top: 43px;
-          height: 300px;
-          overflow: auto;
+
+        &#v-pills-north-america {
+          top: 335px;
         }
-  
-        .col-6 {
-          margin-bottom: 30px;
-        }
-  
-        .nav-link {
-          padding: 8px 0;
-        }
-      }
-  
-      &.modal-dialog {
-        max-width: 100%;
-      }
-    }
-  }
-  
-  @media only screen and (min-width: 760px) and (max-width: 992px) {
-    .switcher-modal-language {
-      .modal-content {
-        .left-side {
-          padding-left: 30px;
-        }
-        .right-side {
-          padding-left: 45px;
+
+        &#v-pills-south-america {
+          top: 385px;
         }
       }
     }
   }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1259px) {
+  .switcher-modal-language {
+    .modal-content {
+      .left-side {
+        padding-left: 30px;
+      }
+      .right-side {
+        padding-left: 45px;
+      }
+    }
+  }
+}

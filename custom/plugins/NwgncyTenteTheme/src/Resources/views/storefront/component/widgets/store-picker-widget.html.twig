@@ -2,47 +2,45 @@
     {% set counter = 0 %}
     {% set closed = false %}
 
+    <div class="col-6 col-md-4 flex-column">
+    {% set closed = false %}
+
     {% for option in options %}
-        {% for countryCon in dataContinent %}
-            {% if option.name == countryCon.country and continent == countryCon.continent %}
-                {% if counter == 0 %}
-                    <div class="col-6 col-md-4 flex-column">
-                    {% set closed = false %}
-                {% elseif counter == 12 %}
-                    <div class="col-6 col-md-4 flex-column">
-                    {% set closed = false %}
-                {% elseif counter == 24 %}
-                    <div class="col-6 col-md-4 flex-column">
-                    {% set closed = false %}
-                {% elseif counter == 36 %}
-                    <div class="col-6 col-md-4 flex-column">
-                    {% set closed = false %}
-                {% endif %}
-                <div title="{{ option.name }} {{ counter }}">
-                    <a href="{{ option.url }}" data-option="{{ option.salesChannelDomainId }}"
-                       class="nav-link">
-                        {% if showFlag %}
-                            <div class="top-bar-list-icon language-flag country-{{ option.iso|lower }}"></div>
-                        {% endif %}
-
-                        <span class="store-name">{{ option.name }}</span>
-
-                        <em class="store-suggestion{% if not option.extensions.suggested %} d-none{% endif %}">{{ "zeobv-store-switcher.modal.suggestLabel"|trans }}</em>
-                    </a>
-                </div>
-                {% if counter == 11 %}
-                    </div>
-                    {% set closed = true %}
-                {% elseif counter == 23 %}
-                    </div>
-                    {% set closed = true %}
-                {% elseif counter == 35 %}
-                    </div>
-                    {% set closed = true %}
-                {% endif %}
-                {% set counter = counter + 1 %}
+        {% if continent == option.country.translated.customFields.custom_country_continent_continent %}
+            {% if counter == 12 %}
+                <div class="col-6 col-md-4 flex-column">
+                {% set closed = false %}
+            {% elseif counter == 24 %}
+                <div class="col-6 col-md-4 flex-column">
+                {% set closed = false %}
+            {% elseif counter == 36 %}
+                <div class="col-6 col-md-4 flex-column">
+                {% set closed = false %}
             {% endif %}
-        {% endfor %}
+            <div title="{{ option.name }}">
+                <a href="{{ option.url }}" data-option="{{ option.salesChannelDomainId }}"
+                   class="nav-link">
+                    {% if showFlag %}
+                        <div class="top-bar-list-icon language-flag country-{{ option.iso|lower }}"></div>
+                    {% endif %}
+
+                    <span class="store-name">{{ option.name }}</span>
+
+                    <em class="store-suggestion{% if not option.extensions.suggested %} d-none{% endif %}">{{ "zeobv-store-switcher.modal.suggestLabel"|trans }}</em>
+                </a>
+            </div>
+            {% if counter == 11 %}
+                </div>
+                {% set closed = true %}
+            {% elseif counter == 23 %}
+                </div>
+                {% set closed = true %}
+            {% elseif counter == 35 %}
+                </div>
+                {% set closed = true %}
+            {% endif %}
+            {% set counter = counter + 1 %}
+        {% endif %}
     {% endfor %}
 
     {% if not closed %}
