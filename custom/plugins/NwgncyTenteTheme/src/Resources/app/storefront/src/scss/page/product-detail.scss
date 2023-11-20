@@ -349,3 +349,79 @@
 .btn-buy {
     display: none;
 }
+
+.product-detail-tabs-content {
+    display: block;
+
+    .accordion-item {
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 576px){
+            margin-bottom: 0;
+        }
+
+        .nav-link {
+            width: 100%;
+            text-align: left;
+            font-size: 15px;
+            padding: 8px 15px;
+            background-color: #193C69;
+            color: white;
+
+            @media screen and (min-width: 576px){
+                display: none;
+            }
+
+            .icon {
+                color: white;
+            }
+
+            .icon-open-select {
+                display: none;
+            }
+
+            .icon-accordion-detail {
+                float: right;
+
+                .icon {
+                    width: 14px;
+                }
+            }
+
+            &.collapsed {
+                background-color: #EAF4FA;
+                color: #193C69;
+
+                .icon {
+                    color: #193C69;
+                }
+
+                .icon-close-select {
+                    display: none;
+                }
+
+                .icon-open-select {
+                    display: block;
+                }
+            }
+        }
+
+        .tente-product-detail-properties {
+            margin-bottom: 0;
+            padding-top: 20px;
+
+            @media screen and (min-width: 576px){
+                margin-bottom: 50px;
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+.product-detail-tab-navigation {
+    display: none;
+
+    @media screen and (min-width: 576px){
+        display: block;
+    }
+}
