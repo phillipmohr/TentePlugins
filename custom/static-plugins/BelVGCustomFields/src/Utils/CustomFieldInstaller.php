@@ -23,6 +23,10 @@ class CustomFieldInstaller
      */
     public const CUSTOM_FIELDS_FOR_SALES_CHANNEL_CONTACT = 'custom_fields_for_sales_channel_contact';
     /**
+     *
+     */
+    public const CUSTOM_FIELDS_FOR_SALES_CHANNEL_SHORT_CONTACT = 'custom_fields_for_sales_channel_short_contact';
+    /**
      * @var EntityRepository|object|null
      */
     protected EntityRepository $customFieldRepository;
@@ -73,7 +77,7 @@ class CustomFieldInstaller
      */
     protected function getCustomFields(Context $context): array
     {
-        $config = [
+        $configContact = [
             'componentName' => 'sw-text-editor',
             'customFieldType' => 'textEditor',
             'customFieldPosition' => 1,
@@ -84,14 +88,32 @@ class CustomFieldInstaller
             ],
         ];
 
+        $configShortContact = [
+            'componentName' => 'sw-text-editor',
+            'customFieldType' => 'textEditor',
+            'customFieldPosition' => 1,
+            'validation' => 'required',
+            'label' => [
+                'de-DE' => 'kurzer Kontakt',
+                'en-GB' => 'short contact'
+            ],
+        ];
+
         $return[] = [
             'id' => md5(self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_CONTACT),
             'name' => self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_CONTACT,
             'type' => CustomFieldTypes::HTML,
             'customFieldSetId' => md5(self::CUSTOM_FIELDS_FOR_SALES_CHANNEL),
-            'config' => $config
+            'config' => $configContact
         ];
 
+        $return[] = [
+            'id' => md5(self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_SHORT_CONTACT),
+            'name' => self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_SHORT_CONTACT,
+            'type' => CustomFieldTypes::HTML,
+            'customFieldSetId' => md5(self::CUSTOM_FIELDS_FOR_SALES_CHANNEL),
+            'config' => $configShortContact
+        ];
         return $return;
     }
 

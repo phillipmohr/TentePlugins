@@ -1,0 +1,7 @@
+{% sw_extends '@Storefront/storefront/layout/header/header-minimal.html.twig' %}
+ {% block layout_header_minimal_contact %}
+     <div class="col-md-4 header-minimal-contact">
+         {% set contact_data = context.salesChannel.translated.customFields.custom_fields_for_sales_channel_short_contact %}
+         {{ contact_data|raw }}
+     </div>
+ {% endblock %}
