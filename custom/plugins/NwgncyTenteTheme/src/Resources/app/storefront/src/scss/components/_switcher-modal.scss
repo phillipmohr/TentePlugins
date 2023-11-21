@@ -149,6 +149,7 @@
         left: 55px;
         top: 135px;
         background: #193C69;
+        overflow: auto;
 
         .row {
           margin: 0;
@@ -157,8 +158,6 @@
           .flex-column {
             max-width: 100%;
             flex: 0 0 100%;
-            height: 100%;
-            overflow: auto;
             margin: 0;
 
             .nav-link {
