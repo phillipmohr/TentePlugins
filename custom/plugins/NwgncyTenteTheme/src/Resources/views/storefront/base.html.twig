@@ -8,3 +8,11 @@
 {% endblock %}
 
 {% block base_scroll_up %}{% endblock %}
+
+{% block base_pseudo_modal %}
+    {% sw_include '@Storefront/storefront/component/pseudo-modal.html.twig' %}
+
+    {% if zeobvStoreSwitcher.options.count > 0 %}
+        {% sw_include '@ZeobvStoreSwitcher/storefront/component/modals/store-switcher.html.twig' %}
+    {% endif %}
+{% endblock %}

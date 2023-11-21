@@ -103,6 +103,13 @@
         }
         
     }
+
+    .top-bar-location {
+        .icon.earth {
+            color: #ffffff;
+            width: 16px;
+        }
+    }
 }
 .offcanvas-backdrop.show {
     opacity: 0;

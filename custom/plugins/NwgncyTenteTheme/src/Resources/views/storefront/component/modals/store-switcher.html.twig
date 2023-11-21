@@ -1,7 +1,7 @@
 {% sw_extends '@Storefront/storefront/component/modals/store-switcher.html.twig' %}
 
 {% block zeobv_store_switcher_component_modal_store_switcher %}
-    <div data-store-switcher-modal="true"
+    <div {% if zeobvStoreSwitcher.showStorePickerModal %}data-store-switcher-modal="true"{% endif %}
          data-store-switcher-modal-options='{
             "domainSelectionIsMandatory": {{ zeobvStoreSwitcher.config.domainSelectionIsMandatory ? 1 : 0 }},
             "currentStoreId": "{{ context.domainId }}"
