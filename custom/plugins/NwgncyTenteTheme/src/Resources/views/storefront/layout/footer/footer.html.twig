@@ -38,7 +38,8 @@
                     class="footer-column-content collapse js-footer-column-content footer-contact d-none d-md-block"
                     aria-labelledby="collapseFooterHotlineTitle">
                 <div class="footer-column-content-inner">
-                    {{ 'footer.serviceHotline'|trans|sw_sanitize }}
+                    {% set contact_data = context.salesChannel.translated.customFields.custom_fields_for_sales_channel_contact %}
+                    {{ contact_data|raw }}
                 </div>
             </div>
         {% endblock %}

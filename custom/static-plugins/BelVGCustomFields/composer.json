@@ -1,0 +1,33 @@
+{
+  "name": "belvg/plugin-customfields",
+  "description": "BelVGCustomFields",
+  "version": "1.0.0",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "BelVG"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.5"
+  },
+  "extra": {
+    "shopware-plugin-class": "BelVGCustomFields\\BelVGCustomFields",
+    "plugin-icon": "src/Resources/config/plugin.png",
+    "copyright": "(c) by BelVG",
+    "label": {
+      "en-GB": "BelVGCustomFields",
+      "de-DE": "BelVGCustomFields"
+    },
+    "description": {
+      "en-GB": "BelVGCustomFields",
+      "de-DE": "BelVGCustomFields"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "BelVGCustomFields\\": "src/"
+    }
+  }
+}
