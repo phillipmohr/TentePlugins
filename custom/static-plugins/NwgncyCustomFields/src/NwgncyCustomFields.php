@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace BelVGCustomFields;
+namespace NwgncyCustomFields;
 
-use BelVGCustomFields\Utils\CustomFieldInstaller;
+use NwgncyCustomFields\Utils\CustomFieldInstaller;
 use Shopware\Core\Framework\Plugin;
 use Shopware\Core\Framework\Plugin\Context\ActivateContext;
 
 /**
  *
  */
-class BelVGCustomFields extends Plugin
+class NwgncyCustomFields extends Plugin
 {
     /**
      * @param ActivateContext $activateContext

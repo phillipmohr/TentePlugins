@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace BelVGCustomFields\Utils;
+namespace NwgncyCustomFields\Utils;
 
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
