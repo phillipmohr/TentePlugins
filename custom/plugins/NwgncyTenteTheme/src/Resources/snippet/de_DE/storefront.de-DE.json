@@ -43,7 +43,7 @@
         "cadService": {
             "title": "CAD Service",
             "headline": "You can download construction data for This product in different format",
-            "login": "Please <a href=\"/account/login\">Login</a> to see the CAD Files"
+            "login": "Please <a href=\"%url%\">Login</a> to see the CAD Files"
         },
         "performance": {
             "roll": "Roll performance",
