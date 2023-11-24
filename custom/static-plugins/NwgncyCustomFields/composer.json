@@ -1,0 +1,32 @@
+{
+  "name": "nwgncy/plugin-customfields",
+  "description": "NwgncyCustomFields",
+  "version": "1.0.0",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nwgncy"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.5"
+  },
+  "extra": {
+    "shopware-plugin-class": "NwgncyCustomFields\\NwgncyCustomFields",
+    "copyright": "(c) by Newwwagency",
+    "label": {
+      "en-GB": "NwgncyCustomFields",
+      "de-DE": "NwgncyCustomFields"
+    },
+    "description": {
+      "en-GB": "NwgncyCustomFields",
+      "de-DE": "NwgncyCustomFields"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "NwgncyCustomFields\\": "src/"
+    }
+  }
+}
