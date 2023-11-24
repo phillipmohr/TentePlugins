@@ -5,5 +5,18 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
+        <service id="Nwgncy\TenteTheme\Service\LexiconSeoDecorator" decorates="Cbax\ModulLexicon\Components\LexiconSeo" lazy="true">
+            <argument type="service" id="Shopware\Core\System\SystemConfig\SystemConfigService"/>
+            <argument type="service" id="seo_url.repository"/>
+            <argument type="service" id="sales_channel.repository"/>
+            <argument type="service" id="cbax_lexicon_entry.repository"/>
+            <argument type="service" id="slugify"/>
+            <argument type="service" id="logger"/>
+            <argument type="service" id="log_entry.repository"/>
+            <argument type="service" id="translator" />
+            <argument type="service" id="language.repository"/>
+            <argument type="service" id="Doctrine\DBAL\Connection"/>
+            <argument type="service" id="Nwgncy\TenteTheme\Service\LexiconSeoDecorator.inner"/>
+        </service>
     </services>
 </container>
