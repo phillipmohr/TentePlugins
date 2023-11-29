@@ -21,11 +21,27 @@ class CustomFieldInstaller
     /**
      *
      */
-    public const CUSTOM_FIELDS_FOR_SALES_CHANNEL_CONTACT = 'custom_fields_for_sales_channel_contact';
+    public const CUSTOM_FIELDS_FOR_SALES_CHANNEL_ADDRESS = 'custom_fields_for_sales_channel_address';
     /**
      *
      */
-    public const CUSTOM_FIELDS_FOR_SALES_CHANNEL_SHORT_CONTACT = 'custom_fields_for_sales_channel_short_contact';
+    public const CUSTOM_FIELDS_FOR_SALES_CHANNEL_PHONE = 'custom_fields_for_sales_channel_phone';
+    /**
+     *
+     */
+    public const CUSTOM_FIELDS_FOR_SALES_CHANNEL_PHONE_LINK = 'custom_fields_for_sales_channel_phone_link';
+    /**
+     *
+     */
+    public const CUSTOM_FIELDS_FOR_SALES_CHANNEL_EMAIL = 'custom_fields_for_sales_channel_email';
+    /**
+     *
+     */
+    public const CUSTOM_FIELDS_FOR_SALES_CHANNEL_COMPANY_NAME = 'custom_fields_for_sales_channel_company_name';
+    /**
+     *
+     */
+    public const CUSTOM_FIELDS_FOR_SALES_CHANNEL_WORK_TIME = 'custom_fields_for_sales_channel_work_time';
     /**
      * @var EntityRepository|object|null
      */
@@ -77,43 +93,49 @@ class CustomFieldInstaller
      */
     protected function getCustomFields(Context $context): array
     {
-        $configContact = [
+        $configAddress = [
             'componentName' => 'sw-text-editor',
             'customFieldType' => 'textEditor',
             'customFieldPosition' => 1,
             'validation' => 'required',
             'label' => [
-                'de-DE' => 'Kontakt',
-                'en-GB' => 'contact'
+                'de-DE' => 'Anschrift',
+                'en-GB' => 'Address'
             ],
         ];
-
-        $configShortContact = [
-            'componentName' => 'sw-text-editor',
-            'customFieldType' => 'textEditor',
-            'customFieldPosition' => 1,
-            'validation' => 'required',
-            'label' => [
-                'de-DE' => 'kurzer Kontakt',
-                'en-GB' => 'short contact'
-            ],
-        ];
-
         $return[] = [
-            'id' => md5(self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_CONTACT),
-            'name' => self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_CONTACT,
+            'id' => md5(self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_ADDRESS),
+            'name' => self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_ADDRESS,
             'type' => CustomFieldTypes::HTML,
             'customFieldSetId' => md5(self::CUSTOM_FIELDS_FOR_SALES_CHANNEL),
-            'config' => $configContact
+            'config' => $configAddress
         ];
 
-        $return[] = [
-            'id' => md5(self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_SHORT_CONTACT),
-            'name' => self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_SHORT_CONTACT,
-            'type' => CustomFieldTypes::HTML,
-            'customFieldSetId' => md5(self::CUSTOM_FIELDS_FOR_SALES_CHANNEL),
-            'config' => $configShortContact
+        $textField = [
+            self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_PHONE => ['de-DE' => 'Telefon', 'en-GB' => 'Phone'],
+            self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_PHONE_LINK => ['de-DE' => 'Telefonverbindung', 'en-GB' => 'Phone Link'],
+            self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_EMAIL => ['de-DE' => 'Email', 'en-GB' => 'Email'],
+            self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_COMPANY_NAME => ['de-DE' => 'Firmenname', 'en-GB' => 'Company name'],
+            self::CUSTOM_FIELDS_FOR_SALES_CHANNEL_WORK_TIME => ['de-DE' => 'Arbeitszeit', 'en-GB' => 'Work time'],
         ];
+        foreach ($textField as $name => $label) {
+            $config = [
+                'type' => 'text',
+                'label' => $label,
+                'placeholder' => $label,
+                'componentName' => 'sw-field',
+                'customFieldType' => 'text',
+                'customFieldPosition' => 1,
+            ];
+            $return[] = [
+                'id' => md5($name),
+                'name' => $name,
+                'type' => CustomFieldTypes::TEXT,
+                'customFieldSetId' => md5(self::CUSTOM_FIELDS_FOR_SALES_CHANNEL),
+                'config' => $config
+            ];
+
+        }
         return $return;
     }
 

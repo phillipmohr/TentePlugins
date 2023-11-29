@@ -1,5 +1,12 @@
 {% sw_extends '@Storefront/storefront/layout/footer/footer.html.twig' %}
 
+{% set customFields = context.salesChannel.translated.customFields %}
+{% set customAddress = customFields.custom_fields_for_sales_channel_address %}
+{% set customPhone = customFields.custom_fields_for_sales_channel_phone|trans|sw_sanitize %}
+{% set customPhoneLink = customFields.custom_fields_for_sales_channel_phone_link|trans|sw_sanitize %}
+{% set customEmail = customFields.custom_fields_for_sales_channel_email|trans|sw_sanitize %}
+{% set customCompanyName = customFields.custom_fields_for_sales_channel_company_name|trans|sw_sanitize %}
+
 {% block layout_footer_navigation_hotline %}
     <div class="col-md-4 footer-column footer-column-logo d-none d-md-block text-md-center">
         <div class="footer-logo-wrapper">
@@ -15,7 +22,7 @@
                     aria-expanded="true"
                     aria-controls="collapseFooterHotline"
                     role="listitem">
-                {{ 'footer.serviceHotlineHeadline'|trans|sw_sanitize }}
+                {{ customCompanyName }}
                 {% block layout_footer_navigation_hotline_icons %}
                     <div class="footer-column-toggle">
                         <span class="footer-plus-icon">
@@ -38,8 +45,13 @@
                     class="footer-column-content collapse js-footer-column-content footer-contact d-none d-md-block"
                     aria-labelledby="collapseFooterHotlineTitle">
                 <div class="footer-column-content-inner">
-                    {% set contact_data = context.salesChannel.translated.customFields.custom_fields_for_sales_channel_contact %}
-                    {{ contact_data|raw }}
+
+                    <div class="footer-address">{{ customAddress|raw }}</div>
+                    <div class="footer-contact-info">
+                        <a class="prefix-icon phone" href="tel:{{ customPhoneLink }}">{{ customPhone }}</a>
+                        <br>
+                        <a class="prefix-icon mail" href="mailto:{{ customEmail }}">{{ customEmail }}</a>
+                    </div>
                 </div>
             </div>
         {% endblock %}
