@@ -1,0 +1,33 @@
+{
+  "name": "belvg/plugin-geoip",
+  "description": "BelVGGeoIp plugin",
+  "version": "1.0.0",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "BelVG"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.4"
+  },
+  "extra": {
+    "shopware-plugin-class": "BelVGGeoIp\\BelVGGeoIp",
+    "plugin-icon": "src/Resources/config/plugin.png",
+    "copyright": "(c) by BelVG",
+    "label": {
+      "en-GB": "BelVGGeoIp plugin",
+      "de-DE": "BelVGGeoIp plugin"
+    },
+    "description": {
+      "en-GB": "BelVGGeoIp plugin",
+      "de-DE": "BelVGGeoIp plugin"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "BelVGGeoIp\\": "src/"
+    }
+  }
+}
