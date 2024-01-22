@@ -1,5 +1,27 @@
 {% sw_extends '@Storefront/storefront/component/modals/store-switcher.html.twig' %}
 
+ {% set partsWorld = {
+     'africa': {
+         'title': "switcher.titleAfrica",
+     },
+     'asia': {
+         'title': "switcher.titleAsia",
+     },
+     'australia': {
+         'title': "switcher.titleAustralia",
+     },
+     'europe': {
+         'title': "switcher.titleEurope",
+     },
+     'north-america': {
+         'title': "switcher.titleNAmerica",
+     },
+     'south-america': {
+         'title': "switcher.titleSAmerica",
+     },
+
+ }
+ %}
 {% block zeobv_store_switcher_component_modal_store_switcher %}
     <div {% if zeobvStoreSwitcher.showStorePickerModal %}data-store-switcher-modal="true"{% endif %}
          data-store-switcher-modal-options='{
@@ -37,228 +59,65 @@
                                 <div class="col-12 col-md-4 col-lg-3 left-side">
                                     <!-- Left side-->
                                     <div class="h5 store-switcher-modal--subtitle-element">{{ "switcher.titleChose"|trans|sw_sanitize }}</div>
+                                    <!-- This div element is to make vertical tabs -->
+                                    <div class="nav flex-column nav-pills continents"
+                                         id="v-pills-tab"
+                                         role="tablist"
+                                         aria-orientation="vertical">
+                                        {% for key, part in partsWorld %}
 
-                                    <div
-                                            class="nav flex-column nav-pills continents"
-                                            id="v-pills-tab"
-                                            role="tablist"
-                                            aria-orientation="vertical"
-                                    >
-                                        <!-- This div element is to make vertical tabs -->
-                                        <p
-                                                class="continent active"
-                                                id="v-pills-africa-tab"
-                                                data-bs-toggle="pill"
-                                                data-bs-target="#v-pills-africa"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="v-pills-africa"
-                                                aria-selected="true"
-                                        >
+                                            {% set active = '' %}
+                                            {% if key === 'africa' %}
+                                                {% set active = "active" %}
+                                            {% endif %}
+
+                                            <p class="continent {{ active }}"
+                                               id="v-pills-{{ key }}-tab"
+                                               data-bs-toggle="pill"
+                                               data-bs-target="#v-pills-{{ key }}"
+                                               type="button"
+                                               role="tab"
+                                               aria-controls="v-pills-{{ key }}"
+                                               aria-selected="true">
                                             <span class="d-md-none icon-continent icon-open-select">
                                                 {% sw_icon 'arrow-head-down' %}
                                             </span>
-                                            <span class="d-md-none icon-continent icon-close-select">
+                                                <span class="d-md-none icon-continent icon-close-select">
                                                 {% sw_icon 'arrow-head-up' %}
                                             </span>
-                                            {{ "switcher.titleAfrica"|trans|sw_sanitize }}
-                                        </p>
-                                        <p
-                                                class="continent"
-                                                id="v-pills-asia-tab"
-                                                data-bs-toggle="pill"
-                                                data-bs-target="#v-pills-asia"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="v-pills-asia"
-                                                aria-selected="false"
-                                        >
-                                            <span class="d-md-none icon-continent icon-open-select">
-                                                {% sw_icon 'arrow-head-down' %}
-                                            </span>
-                                            <span class="d-md-none icon-continent icon-close-select">
-                                                {% sw_icon 'arrow-head-up' %}
-                                            </span>
-                                            {{ "switcher.titleAsia"|trans|sw_sanitize }}
-                                        </p>
-                                        <p
-                                                class="continent"
-                                                id="v-pills-australia-tab"
-                                                data-bs-toggle="pill"
-                                                data-bs-target="#v-pills-australia"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="v-pills-australia"
-                                                aria-selected="false"
-                                        >
-                                            <span class="d-md-none icon-continent icon-open-select">
-                                                {% sw_icon 'arrow-head-down' %}
-                                            </span>
-                                            <span class="d-md-none icon-continent icon-close-select">
-                                                {% sw_icon 'arrow-head-up' %}
-                                            </span>
-                                            {{ "switcher.titleAustralia"|trans|sw_sanitize }}
-                                        </p>
-                                        <p
-                                                class="continent"
-                                                id="v-pills-europe-tab"
-                                                data-bs-toggle="pill"
-                                                data-bs-target="#v-pills-europe"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="v-pills-europe"
-                                                aria-selected="false"
-                                        >
-                                            <span class="d-md-none icon-continent icon-open-select">
-                                                {% sw_icon 'arrow-head-down' %}
-                                            </span>
-                                            <span class="d-md-none icon-continent icon-close-select">
-                                                {% sw_icon 'arrow-head-up' %}
-                                            </span>
-                                            {{ "switcher.titleEurope"|trans|sw_sanitize }}
-                                        </p>
-                                        <p
-                                                class="continent"
-                                                id="v-pills-north-america-tab"
-                                                data-bs-toggle="pill"
-                                                data-bs-target="#v-pills-north-america"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="v-pills-north-america"
-                                                aria-selected="false"
-                                        >
-                                            <span class="d-md-none icon-continent icon-open-select">
-                                                {% sw_icon 'arrow-head-down' %}
-                                            </span>
-                                            <span class="d-md-none icon-continent icon-close-select">
-                                                {% sw_icon 'arrow-head-up' %}
-                                            </span>
-                                            {{ "switcher.titleNAmerica"|trans|sw_sanitize }}
-                                        </p>
-                                        <p
-                                                class="continent"
-                                                id="v-pills-south-america-tab"
-                                                data-bs-toggle="pill"
-                                                data-bs-target="#v-pills-south-america"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="v-pills-south-america"
-                                                aria-selected="false"
-                                        >
-                                            <span class="d-md-none icon-continent icon-open-select">
-                                                {% sw_icon 'arrow-head-down' %}
-                                            </span>
-                                            <span class="d-md-none icon-continent icon-close-select">
-                                                {% sw_icon 'arrow-head-up' %}
-                                            </span>
-                                            {{ "switcher.titleSAmerica"|trans|sw_sanitize }}
-                                        </p>
+                                                {{ (part.title)|trans|sw_sanitize }}
+                                            </p>
+                                        {% endfor %}
+
                                     </div>
                                 </div>
 
                                 <div class="col-12 col-md-8 col-lg-9 right-side">
                                     <div class="tab-content" id="v-pills-tabContent">
-                                        <div
-                                                class="tab-pane fade show active"
-                                                id="v-pills-africa"
-                                                role="tabpanel"
-                                                aria-labelledby="v-pills-africa-tab"
-                                        >
-                                            <div class="row">
-                                                {% sw_include '@ZeobvStoreSwitcher/storefront/component/widgets/store-picker-widget.html.twig' with {
-                                                    expanded: true,
-                                                    options: zeobvStoreSwitcher.options,
-                                                    activeDomain: zeobvStoreSwitcher.activeDomain,
-                                                    showFlag: zeobvStoreSwitcher.config.showStoreSwitcherDomainCountryFlag,
-                                                    continent: 'africa'
-                                                } %}
-                                            </div>
-                                        </div>
 
-                                        <div
-                                                class="tab-pane fade"
-                                                id="v-pills-asia"
-                                                role="tabpanel"
-                                                aria-labelledby="v-pills-asia-tab"
-                                        >
-                                            <div class="row">
-                                                {% sw_include '@ZeobvStoreSwitcher/storefront/component/widgets/store-picker-widget.html.twig' with {
-                                                    expanded: true,
-                                                    options: zeobvStoreSwitcher.options,
-                                                    activeDomain: zeobvStoreSwitcher.activeDomain,
-                                                    showFlag: zeobvStoreSwitcher.config.showStoreSwitcherDomainCountryFlag,
-                                                    continent: 'asia'
-                                                } %}
-                                            </div>
-                                        </div>
+                                        {% for key, part in partsWorld %}
 
-                                        <div
-                                                class="tab-pane fade"
-                                                id="v-pills-australia"
-                                                role="tabpanel"
-                                                aria-labelledby="v-pills-australia-tab"
-                                        >
-                                            <div class="row">
-                                                {% sw_include '@ZeobvStoreSwitcher/storefront/component/widgets/store-picker-widget.html.twig' with {
-                                                    expanded: true,
-                                                    options: zeobvStoreSwitcher.options,
-                                                    activeDomain: zeobvStoreSwitcher.activeDomain,
-                                                    showFlag: zeobvStoreSwitcher.config.showStoreSwitcherDomainCountryFlag,
-                                                    continent: 'australia'
-                                                } %}
-                                            </div>
-                                        </div>
+                                            {% set active = '' %}
+                                            {% if key === 'africa' %}
+                                                {% set active = "show active" %}
+                                            {% endif %}
 
-                                        <div
-                                                class="tab-pane fade"
-                                                id="v-pills-europe"
-                                                role="tabpanel"
-                                                aria-labelledby="v-pills-europe-tab"
-                                        >
-                                            <div class="row">
-                                                {% sw_include '@ZeobvStoreSwitcher/storefront/component/widgets/store-picker-widget.html.twig' with {
-                                                    expanded: true,
-                                                    options: zeobvStoreSwitcher.options,
-                                                    activeDomain: zeobvStoreSwitcher.activeDomain,
-                                                    showFlag: zeobvStoreSwitcher.config.showStoreSwitcherDomainCountryFlag,
-                                                    continent: 'europa'
-                                                } %}
+                                            <div class="tab-pane fade {{ active }}"
+                                                 id="v-pills-{{ key }}"
+                                                 role="tabpanel"
+                                                 aria-labelledby="v-pills-{{ key }}-tab">
+                                                <div class="row">
+                                                    {% sw_include '@ZeobvStoreSwitcher/storefront/component/widgets/store-picker-widget.html.twig' with {
+                                                        expanded: true,
+                                                        options: zeobvStoreSwitcher.options,
+                                                        activeDomain: zeobvStoreSwitcher.activeDomain,
+                                                        showFlag: zeobvStoreSwitcher.config.showStoreSwitcherDomainCountryFlag,
+                                                        continent: key
+                                                    } %}
+                                                </div>
                                             </div>
-                                        </div>
+                                        {% endfor %}
 
-                                        <div
-                                                class="tab-pane fade"
-                                                id="v-pills-north-america"
-                                                role="tabpanel"
-                                                aria-labelledby="v-pills-north-america-tab"
-                                        >
-                                            <div class="row">
-                                                {% sw_include '@ZeobvStoreSwitcher/storefront/component/widgets/store-picker-widget.html.twig' with {
-                                                    expanded: true,
-                                                    options: zeobvStoreSwitcher.options,
-                                                    activeDomain: zeobvStoreSwitcher.activeDomain,
-                                                    showFlag: zeobvStoreSwitcher.config.showStoreSwitcherDomainCountryFlag,
-                                                    continent: 'north-america'
-                                                } %}
-                                            </div>
-                                        </div>
-
-                                        <div
-                                                class="tab-pane fade"
-                                                id="v-pills-south-america"
-                                                role="tabpanel"
-                                                aria-labelledby="v-pills-south-america-tab"
-                                        >
-                                            <div class="row">
-                                                {% sw_include '@ZeobvStoreSwitcher/storefront/component/widgets/store-picker-widget.html.twig' with {
-                                                    expanded: true,
-                                                    options: zeobvStoreSwitcher.options,
-                                                    activeDomain: zeobvStoreSwitcher.activeDomain,
-                                                    showFlag: zeobvStoreSwitcher.config.showStoreSwitcherDomainCountryFlag,
-                                                    continent: 'south-america'
-                                                } %}
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
