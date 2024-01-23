@@ -10,7 +10,8 @@
     }
   ],
   "require": {
-    "shopware/core": "~6.4"
+    "shopware/core": "~6.4",
+    "geoip2/geoip2": "~2.0"
   },
   "extra": {
     "shopware-plugin-class": "BelVGGeoIp\\BelVGGeoIp",
@@ -28,6 +29,11 @@
   "autoload": {
     "psr-4": {
       "BelVGGeoIp\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "symfony/runtime": true
     }
   }
 }

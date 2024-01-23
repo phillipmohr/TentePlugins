@@ -5,7 +5,17 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
 
+        <service id="BelVGGeoIp\Service\GeoIp\LocalData"/>
+        <service id="BelVGGeoIp\Service\GeoIp\RemoteHost"/>
+
+        <service id="BelVGGeoIp\Service\GeoData">
+            <argument type="service" id="logger"/>
+        </service>
+        <service id="BelVGGeoIp\Service\IpAddress"/>
+
         <service id="BelVGGeoIp\Subscriber\GeoIpSubscriber">
+            <argument type="service" id="request_stack"/>
+            <argument type="service" id="BelVGGeoIp\Service\GeoData"/>
             <tag name="kernel.event_subscriber"/>
         </service>
 
