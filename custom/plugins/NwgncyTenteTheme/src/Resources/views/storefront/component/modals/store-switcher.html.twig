@@ -1,27 +1,52 @@
 {% sw_extends '@Storefront/storefront/component/modals/store-switcher.html.twig' %}
 
- {% set partsWorld = {
+ {% set continents = {
      'africa': {
          'title': "switcher.titleAfrica",
+         'continent': 'africa',
+         'continentCode': 'AF',
      },
      'asia': {
          'title': "switcher.titleAsia",
+         'continent': 'asia',
+         'continentCode': 'AS',
      },
      'australia': {
          'title': "switcher.titleAustralia",
+         'continent': 'australia',
+         'continentCode': 'OC',
+
      },
      'europe': {
          'title': "switcher.titleEurope",
+         'continent': 'europa',
+         'continentCode': 'EU',
      },
      'north-america': {
          'title': "switcher.titleNAmerica",
+         'continent': 'north-america',
+         'continentCode': 'NA',
      },
      'south-america': {
          'title': "switcher.titleSAmerica",
+         'continent': 'south-america',
+         'continentCode': 'SA',
      },
 
- }
- %}
+ } %}
+
+{% set active_continent = 'africa' %}
+{% if geoIP is defined %}
+    {% for key, part in continents %}
+        {% if part.continentCode === geoIP.continentCode %}
+            {% set active_continent = key %}
+            {% set break = true %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+
+
 {% block zeobv_store_switcher_component_modal_store_switcher %}
     <div {% if zeobvStoreSwitcher.showStorePickerModal %}data-store-switcher-modal="true"{% endif %}
          data-store-switcher-modal-options='{
@@ -32,7 +57,7 @@
          tabindex="-1"
          aria-hidden="true"
          id="storeSwitcherModal"
-         
+
             {% if zeobvStoreSwitcher.config.domainSelectionIsMandatory %}
                 data-backdrop="static"
                 data-keyboard="false"
@@ -42,17 +67,17 @@
             <div class="modal-dialog modal-dialog-centered switcher-modal-language"
                  role="document">
                 <div class="modal-content">
-{#                    <div class="modal-header only-close">#}
-{#                        {% if not zeobvStoreSwitcher.config.domainSelectionIsMandatory %}#}
-{#                            <button type="button"#}
-{#                                    class="btn-close close"#}
-{#                                    data-bs-dismiss="modal"#}
-{#                                    aria-label="Close">#}
-{#                                {% block element_image_gallery_inner_zoom_modal_close_icon %}#}
-{#                                {% endblock %}#}
-{#                            </button>#}
-{#                        {% endif %}#}
-{#                    </div>#}
+                    {#                    <div class="modal-header only-close"> #}
+                    {#                        {% if not zeobvStoreSwitcher.config.domainSelectionIsMandatory %} #}
+                    {#                            <button type="button" #}
+                    {#                                    class="btn-close close" #}
+                    {#                                    data-bs-dismiss="modal" #}
+                    {#                                    aria-label="Close"> #}
+                    {#                                {% block element_image_gallery_inner_zoom_modal_close_icon %} #}
+                    {#                                {% endblock %} #}
+                    {#                            </button> #}
+                    {#                        {% endif %} #}
+                    {#                    </div> #}
                     <div class="modal-body store-switcher-modal--content-element">
                         {% block zeobv_store_switcher_component_modal_store_picker_widget %}
                             <div class="row all-content">
@@ -64,11 +89,13 @@
                                          id="v-pills-tab"
                                          role="tablist"
                                          aria-orientation="vertical">
-                                        {% for key, part in partsWorld %}
+                                        {% for key, part in continents %}
 
                                             {% set active = '' %}
-                                            {% if key === 'africa' %}
+                                            {% set ariaselected = 'false' %}
+                                            {% if key === active_continent %}
                                                 {% set active = "active" %}
+                                                {% set ariaselected = 'true' %}
                                             {% endif %}
 
                                             <p class="continent {{ active }}"
@@ -78,7 +105,7 @@
                                                type="button"
                                                role="tab"
                                                aria-controls="v-pills-{{ key }}"
-                                               aria-selected="true">
+                                               aria-selected="{{ ariaselected }}">
                                             <span class="d-md-none icon-continent icon-open-select">
                                                 {% sw_icon 'arrow-head-down' %}
                                             </span>
@@ -95,10 +122,9 @@
                                 <div class="col-12 col-md-8 col-lg-9 right-side">
                                     <div class="tab-content" id="v-pills-tabContent">
 
-                                        {% for key, part in partsWorld %}
-
+                                        {% for key, part in continents %}
                                             {% set active = '' %}
-                                            {% if key === 'africa' %}
+                                            {% if key === active_continent %}
                                                 {% set active = "show active" %}
                                             {% endif %}
 
@@ -112,7 +138,7 @@
                                                         options: zeobvStoreSwitcher.options,
                                                         activeDomain: zeobvStoreSwitcher.activeDomain,
                                                         showFlag: zeobvStoreSwitcher.config.showStoreSwitcherDomainCountryFlag,
-                                                        continent: key
+                                                        continent: part.continent
                                                     } %}
                                                 </div>
                                             </div>
