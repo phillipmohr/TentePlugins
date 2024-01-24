@@ -22,7 +22,7 @@
 
             {% block layout_navigation_categories_item %}
                 {# if level 1 and displayTabView added #}
-                <div class="{% if level == 0 or level == 1 and displayTabView %}{% if navigationMedia %}col-4 {% else %}col-3 {% endif %}{% endif %}navigation-flyout-col {% if level > 1 and not displayTabView %} d-none {% endif %}">
+                <div class="{% if level == 0 or level == 1 and displayTabView %}{% if navigationMedia %}col-4 {% else %}col-3 {% endif %}{% endif %}navigation-flyout-col">
                     {% block layout_navigation_categories_item_link %}
                         {{ parent() }}
                     {% endblock %}

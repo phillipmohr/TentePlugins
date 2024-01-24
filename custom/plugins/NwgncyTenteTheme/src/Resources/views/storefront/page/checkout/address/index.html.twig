@@ -1,0 +1,16 @@
+{% sw_extends '@Storefront/storefront/page/checkout/address/index.html.twig' %}
+
+{% block page_checkout_address_login_toggle %}
+     <div class="register-login-collapse-toogle">
+          <span class='icon'>
+               <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512">
+                    <path fill="#3fafec" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
+               </svg>
+          </span>
+          <a href="#loginCollapse"
+          class="login-collapse-toggle"
+          data-bs-toggle="collapse"
+          aria-expanded="false">
+          <strong>{{ "checkout.addressLoginToggle"|trans|sw_sanitize }}</strong> </a>
+     </div>
+{% endblock %}

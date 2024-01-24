@@ -5,7 +5,8 @@
   "views": [
      "@Storefront",
      "@Plugins",
-     "@NwgncyTenteTheme"
+     "@NwgncyTenteTheme",
+     "@NwgncyCadConnector"
   ],
   "style": [
     "app/storefront/src/scss/overrides.scss",
@@ -132,7 +133,7 @@
           "de-DE": "Rahmenfarbe"
         },
         "type": "color",
-        "value": "#707070",
+        "value": "#C2C2C2",
         "editable": true,
         "block": "themeColors",
         "order": 1400

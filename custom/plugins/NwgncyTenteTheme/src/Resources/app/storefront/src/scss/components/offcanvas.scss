@@ -48,7 +48,7 @@
 
         }
         .link-title {
-            margin: auto 60px auto auto;
+            margin: auto 45px auto auto;
             text-align: right;
          }
         .is-level-3 {
@@ -76,6 +76,7 @@
             padding-right: 8%;
             padding-left: 8%;
             padding-top: 20px;
+            padding-bottom: 50px;
         }
         .navigation-offcanvas-container {
             padding: 20px 0;
@@ -88,7 +89,6 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            white-space: nowrap;
             color: $sw-color-brand-tertiary;
             .icon {
                 color: $sw-color-brand-tertiary;
@@ -116,10 +116,15 @@
 }
 .offcanvas{
     .offcanvas-header{
-        background-color: $sw-color-brand-tertiary;
+        background-color: $sw-light-gray;
         color: #fff;
         .btn.offcanvas-close.js-offcanvas-close {
             display: none;
+            color: $sw-dark-blue;
+            background-color: $sw-light-gray;
+            svg {
+                margin-right: 20px;
+            }
         }
     }
 }
@@ -138,6 +143,69 @@
 
 .icon-earth-solid {
     color: white !important;
+}
+.offcanvas-cart {
+    .offcanvas-cart-header {
+        font-weight: bold;
+    }
+}
+
+.quantity-selector-group {
+    min-width: 150px;
+    .btn {
+        border: 0.5px solid #E8EAEB;
+        color: $sw-dark-blue;
+        font-size: 14px;
+        &:hover {
+            border: 0.5px solid #E8EAEB;
+        }
+
+        .icon {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    .product-detail-quantity-input {
+        border: 0.5px solid #E8EAEB;
+        color: $sw-dark-blue;
+        font-size: 16px;
+        &:hover {
+            border: 0.5px solid #E8EAEB !important;
+        }
+    }
+    .quantity-selector-group-input {
+        border: 0.5px solid #E8EAEB;
+        &:hover {
+            border: 0.5px solid #E8EAEB !important;
+        }
+    }
+}
+
+//disable price request on cart offcanvas
+.btn-nb-pricerequest-offcanvascart {
+    display: none;
+}
+
+.offcanvas-cart-actions-spacer {
+    font-size: 18px;
+}
+
+@media (max-width: 456px) {
+    .offcanvas-cart-actions-row {
+        flex-direction: column;
+        gap: 6px;
+        a.btn, .d-grid {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 365px) {
+    .line-item {
+        .quantity-price-row {
+            flex-direction: column;
+        }
+    }
 }
 
 @include media-breakpoint-down(md) {
@@ -166,3 +234,41 @@
 
     }
 }
+.line-item {
+    &.is-offcanvas {
+        .line-item-info {
+            .line-item-row {
+                flex-wrap: nowrap;
+                gap: 10px;
+            }
+        }
+        .line-item-details {
+            width: 66.66%;
+        }
+        .line-item-quantity {
+            margin-top: 15px;
+            padding-left: 0;
+        }
+
+        .line-item-total-price {
+            width: auto;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    
+}
+
+.quantity-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offcanvas-cart-tax {
+    color: $sw-dark-blue;
+}
+.offcanvas-summary-list, .offcanvas-shipping-info {
+    font-size: 16px;
+}
+

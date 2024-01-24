@@ -10,17 +10,22 @@
         "location": "Location"
     },
     "account": {
-        "myAccount": "My Account"
+        "myAccount": "My Account",
+        "homepageLabel": "Homepage",
+        "faxLabel": "Fax",
+        "homepagePlaceholder" : "Enter homepage URL",
+        "faxPlaceholder" : "Enter fax"
     },
     "listing": {
         "boxProductDetails": "More technical data"
     },
     "detail": {
+        "addProduct": "Add to cart",
         "qte": "quantity",
         "ean": "EAN",
         "orderNumber": "Order number",
         "sendQuoteRequest": "Send Quote Request",
-        "contactText": "Haven’t found the right product yet, have special requirements or are you interested in individual solutions? <a data-toggle=\"modal\" data-bs-toggle=\"modal\" data-url=\"%url%\" href=\"%url%\" title=\"Kontaktformular\">Contact us</a>.",
+        "contactText": "Haven’t found the right product yet, have special requirements or are you interested in individual solutions? <a href=\"%url%\" title=\"Kontaktformular\">Contact us</a>.",
         "properties": {
             "housing": "Technical Data Housing",
             "wheel": "Technical Data Wheel",
@@ -43,7 +48,7 @@
         "cadService": {
             "title": "CAD Service",
             "headline": "You can download construction data for This product in different format",
-            "login": "Please <a href=\"%url%\">Login</a> to see the CAD Files"
+            "login": "Please <a href=\"/account/login\">Login</a> to see the CAD Files"
         },
         "performance": {
             "roll": "Roll performance",
@@ -88,5 +93,8 @@
         "titleEurope": "Europa",
         "titleNAmerica": "North America",
         "titleSAmerica": "South America"
+    },
+    "contact": {
+        "newsletterSubscribe": "I hereby agree that TENTE may also inform me via e-mail and telephone about products and events (eg trade fair appearances) of TENTE."
     }
 }

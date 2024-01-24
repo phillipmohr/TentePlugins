@@ -15,6 +15,21 @@
                 {% endblock %}
             </nav>
             <nav class="top-bar-nav links d-flex align-items-center pe-2">
+            {# service menu left #}
+                {% set serviceMenuLeft = getServiceMenuLeft(context) %}
+                {% if serviceMenuLeft %}
+                    {% for serviceMenuItem in serviceMenuLeft %}
+                    {% block layout_header_service_menu_left_item %}
+                            <a class="header-service-menu-link"
+                                href="{{ category_url(serviceMenuItem) }}"
+                                {% if category_linknewtab(serviceMenuItem) %}target="_blank"{% endif %}
+                                title="{{ serviceMenuItem.translated.name }}">
+                                {{ serviceMenuItem.translated.name }}
+                            </a>
+                    {% endblock %}
+                    {% endfor %}
+                {% endif %}
+            {# service menu #}
                 {% for serviceMenuItem in page.header.serviceMenu %}
                     {% block layout_header_service_menu_item %}
                             <a class="header-service-menu-link"

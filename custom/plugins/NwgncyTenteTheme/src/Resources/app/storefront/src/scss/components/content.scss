@@ -22,3 +22,36 @@
 a {
     font-size: var(--bs-body-font-size);
 }
+
+body {
+    color: $sw-dark-blue;
+}
+
+.is-act-checkoutregisterpage {
+    .checkout {
+        padding-top: 10px;
+    }
+}
+.register-login-collapse-toogle {
+    .icon {
+        color: $sw-light-blue;
+        width: 17px;
+        height: 17px;
+    }
+}
+
+.checkout {
+    .checkout-aside {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 456px) {
+    .checkout-aside-action.d-flex {
+        flex-direction: column;
+        gap: 6px;
+        .btn, a.btn, .d-grid, .request-offer {
+            width: 100%;
+        }
+    }
+}

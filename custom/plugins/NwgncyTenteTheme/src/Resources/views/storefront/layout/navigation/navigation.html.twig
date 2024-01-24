@@ -16,7 +16,6 @@
     {% set targetId = category.id %}
     {% set foundItem = null %}
     {% set menuClass = 'default-menu' %}
-    {% set displayTabView = category.customFields.display_tab_view %}
 
     {% for item in page.header.navigation.tree %}
         {% if item.category.id == targetId %}
@@ -25,7 +24,7 @@
         {% endif %}
     {% endfor %}
 
-    {% if foundItem is not null and foundItem.children|length > 1  and displayTabView %}
+    {% if foundItem is not null and foundItem.children|length > 1 %}
         {% set menuClass = 'megamenu' %}
     {% endif %}
 
@@ -60,18 +59,5 @@
             </div>
         {% endif %}
     </div>
-{% endblock %}
-
-{% block layout_main_navigation_menu_home %}
-    {% if context.salesChannel.translated.homeEnabled %}
-        <a class="nav-link main-navigation-link{% if controllerAction is same as('home') %} active{% endif %} home-link"
-           href="{{ path('frontend.home.page') }}"
-           itemprop="url"
-           title="{{ "general.homeLink"|trans }}">
-            <div class="main-navigation-link-text">
-                 <span itemprop="name">{% if config('VierpSimpleSubMenu.config.homeIcon') %}{% sw_icon 'home' %}{% else %}{{ "general.homeLink"|trans }}{% endif %}</span>
-            </div>
-        </a>
-    {% endif %}
 {% endblock %}
 

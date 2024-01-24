@@ -1,0 +1,56 @@
+{% sw_extends '@Storefront/storefront/page/checkout/cart/index.html.twig' %}
+    {% block page_checkout_cart_action_proceed %}
+
+     <div class="checkout-aside-action d-flex justify-content-between flex-wrap align-items-center mt-4">
+
+          <div class="request-offer">
+          {% if page.extensions.nimbits_por_cart_ruleset.show_por_btn or page.extensions.nimbits_por_cart_ruleset.cart_is_not_purchaseable %}
+                    <button
+                        class="btn btn-block btn-nb-pricerequest nb-cartrequest btn-lg text-uppercase btn-nb-pricerequest-cart{% if not page.cart.lineItems.count is same as(0) %} btn-secondary{% else %} btn-light disabled{% endif %}"
+                        title="{{ 'nimbits-pricerequests.cart.cartRequestButton'|trans }}"
+                        data-toggle="modal"
+                        data-ajax-modal
+                        data-url="{{ path('frontend.action.nimbits.price-request-modal') }}">
+                        {{ 'nimbits-pricerequests.cart.cartRequestButton'|trans }}
+                    </button>
+
+              {% set nbPriceRequestItems = [] %}
+              {% block nb_por_component_offcanvas_cart_placelogic %}
+                  {% for lineItem in page.cart.lineItems %}
+                      {% set nbPriceRequestItemChildren = [] %}
+
+                      {% for lineItemChildren in lineItem.children %}
+
+                          {% if lineItemChildren.payload.productNumber != lineItem.payload.productNumber %}
+                              {% set nbPriceRequestChildItem = { quantity: lineItemChildren.quantity, number: lineItemChildren.payload.productNumber, name: lineItemChildren.label, packUnit: lineItemChildren.extensions.nimbits_por_product_units.packUnit, packUnitPlural: lineItemChildren.extensions.nimbits_por_product_units.packUnitPlural } %}
+                              {% set nbPriceRequestItemChildren = nbPriceRequestItemChildren|merge([nbPriceRequestChildItem]) %}
+                          {% endif %}
+                      {% endfor %}
+
+                      {% set nbPriceRequestItem = { quantity: lineItem.quantity, number: lineItem.payload.productNumber, name: lineItem.label, image: lineItem.payload.cover.media, children: nbPriceRequestItemChildren, packUnit: lineItem.extensions.nimbits_por_product_units.packUnit, packUnitPlural: lineItem.extensions.nimbits_por_product_units.packUnitPlural } %}
+                      {% set nbPriceRequestItems = nbPriceRequestItems|merge([nbPriceRequestItem]) %}
+
+                  {% endfor %}
+                  <input name="nb_pricerequest_lineitems" type="hidden"
+                         value="{{ nbPriceRequestItems|json_encode() }}"/>
+              {% endblock %}
+          {% endif %}
+          </div>
+            {# <div class="offcanvas-cart-actions-spacer">
+                <b class="text-uppercase">{{ "checkout.or" | trans }}</b>
+            </div>
+          <a href="{{ path('frontend.checkout.confirm.page') }}"
+               class="btn btn-primary btn-lg begin-checkout-btn"
+               title="{{ "checkout.proceedLink"|trans|striptags }}">
+                {{ "checkout.proceedLink"|trans|sw_sanitize }}
+          </a> #}
+          
+
+     </div>
+
+    {% endblock %}
+
+
+    {% block page_checkout_cart_add_promotion %}
+    {% endblock %}
+

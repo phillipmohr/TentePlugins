@@ -44,3 +44,25 @@
 .btn-secondary {
     border-radius: 3px;
 }
+
+
+.line-item-remove-button {
+    background: none;
+    border: none;
+    .icon {
+        color: $sw-border-color;
+        fill: $sw-border-color;
+    }
+    transition: all 400ms;
+    &:hover {
+        background: $sw-light-gray;
+        .icon {
+            color: $sw-light-blue;
+            fill: $sw-light-blue;
+        }
+    }
+}
+
+.btn-outline-primary {
+    text-transform: uppercase;
+}

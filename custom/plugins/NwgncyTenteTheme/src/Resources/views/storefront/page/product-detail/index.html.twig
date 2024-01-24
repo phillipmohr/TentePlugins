@@ -64,10 +64,18 @@
                                                                 </tr>
                                                             </table>
 
+
+
+
                                                             {% block page_product_detail_contact %}
-                                                                <div class="product-detail-contact-text">
-                                                                    {{ "detail.contactText"|trans|raw }}
-                                                                </div>
+                                                            {% set contactUsID = getContactPageID(context) %}
+                                                                {% if contactUsID is not null %}
+                                                                    <div class="product-detail-contact-text">
+                                                                        {{ "detail.contactText"|trans({
+                                                                                '%url%': seoUrl('frontend.landing.page', { landingPageId: contactUsID })
+                                                                            })|raw }}
+                                                                    </div>
+                                                                {% endif %}
                                                             {% endblock %}
                                                         </div>
                                                     {% endblock %}

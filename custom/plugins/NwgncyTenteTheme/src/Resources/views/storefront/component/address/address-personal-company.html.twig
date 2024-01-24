@@ -1,0 +1,124 @@
+{% block component_account_register_company_fields %}
+        <div class="address-contact-type-company">
+            {% block component_address_form_company_fields %}
+                <div class="row g-2">
+                    {% block component_address_form_company_name %}
+                        <div class="form-group col-12">
+                            {% if formViolations.getViolations("/company") is not empty %}
+                                {% set violationPath = "/company" %}
+                            {% elseif formViolations.getViolations("/#{prefix}/company") is not empty %}
+                                {% set violationPath = "/#{prefix}/company" %}
+                            {% else %}
+                                {% set requiredMessage = "error.VIOLATION::IS_BLANK_ERROR"|trans({ '%field%': "address.companyNameLabel"|trans|sw_sanitize }) %}
+                            {% endif %}
+
+                            {% block component_address_form_company_name_label %}
+                                <label class="form-label"
+                                       for="{{ idPrefix ~ prefix }}company">
+                                    {{ "address.companyNameLabel"|trans|sw_sanitize }}{{ "general.required"|trans|sw_sanitize }}
+                                </label>
+                            {% endblock %}
+
+                            {% block component_address_form_company_name_input %}
+                                <input type="text"
+                                       class="form-control{% if violationPath %} is-invalid{% endif %}"
+                                       id="{{ idPrefix ~ prefix }}company"
+                                       placeholder="{{ "address.companyNamePlaceholder"|trans|striptags }}"
+                                       name="{{ prefix }}[company]"
+                                       value="{{ address.get('company') }}"
+                                       data-form-validation-required
+                                       data-form-validation-required-message="{{ requiredMessage }}"
+                                       required="required">
+                            {% endblock %}
+
+                            {% block component_address_form_company_name_input_error %}
+                                {% if violationPath %}
+                                    {% sw_include '@Storefront/storefront/utilities/form-violation.html.twig' %}
+                                {% endif %}
+                            {% endblock %}
+                        </div>
+                    {% endblock %}
+                </div>
+                {% if prefix == 'billingAddress' %}
+                <div class="row g-2">
+                    <div class="form-group col-12">
+                        {% block component_address_form_company_homepage_label %}
+                            <label class="form-label"
+                                    for="{{ idPrefix }}homepage">
+                                {{ "account.homepageLabel"|trans|sw_sanitize }}
+                            </label>
+                        {% endblock %}
+
+                        {% block component_address_form_company_homepage_input %}
+                            <input type="url"
+                                    class="form-control{% if violationPath %} is-invalid{% endif %}"
+                                    id="{{ idPrefix }}homepage"
+                                    placeholder="{{ "account.homepagePlaceholder"|trans|sw_sanitize }}"
+                                    name="homepage">
+                        {% endblock %}
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="form-group col-12">
+                        {% block component_address_form_company_fax_label %}
+                            <label class="form-label"
+                                    for="{{ idPrefix }}fax">
+                                {{ "account.faxLabel"|trans|sw_sanitize }}
+                            </label>
+                        {% endblock %}
+
+                        {% block component_address_form_company_fax_input %}
+                            <input type="text"
+                                    class="form-control{% if violationPath %} is-invalid{% endif %}"
+                                    id="{{ idPrefix }}fax"
+                                    placeholder="{{ "account.faxPlaceholder"|trans|sw_sanitize }}"
+                                    name="fax">
+                        {% endblock %}
+                </div>
+                {% endif %}
+                <div class="row g-2">
+                    {% block component_address_form_company_department %}
+                        <div class="form-group col-md-6">
+                            {% if formViolations.getViolations("/department") is not empty %}
+                                {% set violationPath = "/department" %}
+                            {% elseif formViolations.getViolations("/#{prefix}/department") is not empty %}
+                                {% set violationPath = "/#{prefix}/department" %}
+                            {% endif %}
+
+                            {% block component_address_form_company_department_label %}
+                                <label class="form-label"
+                                       for="{{ idPrefix ~ prefix }}department">
+                                    {{ "address.companyDepartmentLabel"|trans|sw_sanitize }}
+                                </label>
+                            {% endblock %}
+
+                            {% block component_address_form_company_department_input %}
+                                <input type="text"
+                                       class="form-control{% if violationPath %} is-invalid{% endif %}"
+                                       id="{{ idPrefix ~ prefix }}department"
+                                       placeholder="{{ "address.companyDepartmentPlaceholder"|trans|striptags }}"
+                                       name="{{ prefix }}[department]"
+                                       value="{{ address.get('department') }}">
+                            {% endblock %}
+
+                            {% block component_address_form_company_department_input_error %}
+                                {% if violationPath %}
+                                    {% sw_include '@Storefront/storefront/utilities/form-violation.html.twig' %}
+                                {% endif %}
+                            {% endblock %}
+                        </div>
+                    {% endblock %}
+
+                    {% block component_address_form_company_vatId %}
+                        {% if prefix != 'shippingAddress' %}
+                            <div class="form-group col-md-6">
+                                {% sw_include '@Storefront/storefront/component/address/address-personal-vat-id.html.twig' with {
+                                    'vatIds': data.get('vatIds')
+                                } %}
+                            </div>
+                        {% endif %}
+                    {% endblock %}
+                </div>
+            {% endblock %}
+        </div>
+{% endblock %}

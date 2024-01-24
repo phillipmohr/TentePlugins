@@ -40,6 +40,9 @@
 
     .product-detail-form-container {
         padding: 0 25px;
+        .row {
+            align-items: flex-start;
+        }
     }
 
     .product-detail-left-side {
@@ -86,12 +89,17 @@
             text-align: left;
 
             h2 {
-                font-size: 36px;
+                font-size: 32px;
             }
 
             h3 {
-                font-size: 28px;
+                font-size: 24px;
                 color: $sw-light-blue;
+            }
+            p {
+                color: $sw-color-brand-secondary;
+                font-size: 13px;
+                line-height: normal;
             }
 
             @include media-breakpoint-down(md) {
@@ -100,6 +108,11 @@
         }
 
         .buy-widget-container {
+
+            .btn-buy {
+                min-width: 200px;
+                font-size: 14px;
+            }
 
             flex-direction: column;
             align-items: center;
@@ -111,11 +124,13 @@
                 flex-direction: column;
 
                 h3 {
-                    text-transform: uppercase;
-                    width: 200px;
-                    text-align: left;
-                    font-weight: normal;
-                    font-size: 16px
+                    &.quantity-label {
+                        text-transform: uppercase;
+                        width: 200px;
+                        text-align: left;
+                        font-weight: normal;
+                        font-size: 14px;
+                    }
                 }
             }
 
@@ -247,6 +262,9 @@
 
         .btn {
             border: 0.5px solid #E8EAEB;
+            &:hover {
+                border: 0.5px solid #E8EAEB;
+            }
             color: $sw-dark-blue;
             font-size: 14px;
 
@@ -260,6 +278,9 @@
             border: 0.5px solid #E8EAEB;
             color: $sw-dark-blue;
             font-size: 16px;
+            &:hover {
+                border: 0.5px solid #E8EAEB;
+            }
         }
     }
 
@@ -327,8 +348,7 @@
                 }
 
                 .product-variant-characteristics,
-                .product-price-unit,
-                .btn-buy {
+                .product-price-unit {
                     display: none;
                 }
 
@@ -344,10 +364,6 @@
             }
         }
     }
-}
-
-.btn-buy {
-    display: none;
 }
 
 .product-detail-tabs-content {
@@ -423,5 +439,11 @@
 
     @media screen and (min-width: 576px){
         display: block;
+    }
+}
+
+.line-item-quantity-select-wrapper {
+    .quantity-selector-group {
+        width: 120px;
     }
 }

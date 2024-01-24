@@ -27,9 +27,7 @@
                 <p>{{ "detail.cadService.headline"|trans }}</p>
 
                 {% if not context.customer %}
-                <p>{{ "detail.cadService.login"|trans({
-                        '%url%': path('frontend.account.login' )
-                    })|raw }}</p>
+                <p>{{ "detail.cadService.login"|trans|raw }}</p>
                 {% else %}
 
                 {% endif %}

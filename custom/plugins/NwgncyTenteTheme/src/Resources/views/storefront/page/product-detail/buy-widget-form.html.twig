@@ -1,4 +1,4 @@
-{% sw_extends '@Storefront/storefront/page/product-detail/buy-widget-form.html.twig' %}
+{% sw_extends '@NimbitsPriceOnRequestNext/storefront/page/product-detail/buy-widget-form.html.twig' %}
 
 {% block page_product_detail_buy_quantity_container %}
     {% if showQuantitySelect %}
@@ -6,7 +6,7 @@
             {% set selectQuantityThreshold = 100 %}
             {% block page_product_detail_buy_quantity %}
                 {% block page_product_detail_buy_quantity_input_group %}
-                <h3>{{ "detail.qte"|trans }}</h3>
+                <h3 class="quantity-label">{{ "detail.qte"|trans }}</h3>
                     <div class="input-group product-detail-quantity-group quantity-selector-group" data-quantity-selector="true">
                         {% block page_product_detail_buy_quantity_input %}
                             <button type="button" class="btn btn-outline-light btn-minus js-btn-minus">
@@ -59,3 +59,67 @@
     </div>
 {% endblock %}
 
+
+{% block page_product_detail_buy_button %}
+    <div class="d-flex flex-column align-items-center gap-1 mt-2">
+    <button class="btn btn-primary btn-buy flex-1"
+            title="{{ "detail.addProduct"|trans|striptags }}"
+            aria-label="{{ "detail.addProduct"|trans|striptags }}">
+        {{ "detail.addProduct"|trans|sw_sanitize }}
+    </button>
+    <b class="fs-5 fw-bold">OR</b>
+
+    {% set nbporcustomtext = page.product.translated.customFields.custom_nimbits_priceonrequest_customtext %}
+
+    {% set por_btn_visible = page.product.extensions.nimbits_por_product_ruleset.por_btn_visible %}
+    {% set por_dont_show_price = page.product.extensions.nimbits_por_product_ruleset.por_dont_show_price %}
+    {% set por_add_to_cart_not_visible = page.product.extensions.nimbits_por_product_ruleset.por_add_to_cart_not_visible %}
+    {% set por_product_not_purchasable = page.product.extensions.nimbits_por_product_ruleset.por_product_not_purchasable %}
+
+
+    {% if por_btn_visible or por_dont_show_price or por_add_to_cart_not_visible or por_product_not_purchasable %}
+
+        {% if por_product_not_purchasable %}
+            {% do page.extensions.payPalEcsButtonData.assign({'productDetailEnabled': false }) %}
+            {% do page.removeExtension('payPalInstallmentBannerData') %}
+        {% endif %}
+
+        {% if por_dont_show_price %}
+            {% do page.extensions.payPalEcsButtonData.assign({'productDetailEnabled': false }) %}
+            {% do page.removeExtension('payPalInstallmentBannerData') %}
+        {% endif %}
+
+
+
+
+
+        {% if por_btn_visible %}
+            <div class="d-grid text-uppercase">
+                {% sw_include "@Storefront/storefront/priceonrequest/porbtn.html.twig" %}
+            </div>
+        {% endif %}
+
+        {% set nbPriceRequestItems = [] %}
+        {% set nbPriceRequestItemsVariants = "" %}
+
+
+        {% if page.product.options != "" %}
+            {% set innerctr = 0 %}
+            {% for tmpoptn in page.product.options.elements %}
+                {% set nbPriceRequestItemsVariants = nbPriceRequestItemsVariants ~ tmpoptn.group.name ~ ": " ~ tmpoptn.name %}
+
+                {% if (innerctr + 1) < page.product.options|length %}
+                    {% set nbPriceRequestItemsVariants = nbPriceRequestItemsVariants ~ ", " %}
+                {% endif %}
+                {% set innerctr = innerctr + 1 %}
+            {% endfor %}
+        {% endif %}
+
+
+        {% set nbPriceRequestItems = nbPriceRequestItems|merge([{ quantity: 0,  number: page.product.productNumber, name: page.product.translated.name, variant: nbPriceRequestItemsVariants, packUnit: page.product.translated.packUnit, packUnitPlural: page.product.translated.packUnitPlural  }]) %}
+
+        <input name="nb_pricerequest_lineitems" type="hidden" value="{{ nbPriceRequestItems|json_encode() }}"/>
+
+    {% endif %}
+    </div>
+{% endblock %}

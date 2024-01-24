@@ -5,18 +5,27 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="Nwgncy\TenteTheme\Service\LexiconSeoDecorator" decorates="Cbax\ModulLexicon\Components\LexiconSeo" lazy="true">
+        <service id="Nwgncy\TenteTheme\Core\Checkout\Customer\SalesChannel\RegisterRouteDecorator" decorates="Shopware\Core\Checkout\Customer\SalesChannel\RegisterRoute" public="true">
+            <argument type="service" id="event_dispatcher"/>
+            <argument type="service" id="Shopware\Core\System\NumberRange\ValueGenerator\NumberRangeValueGeneratorInterface"/>
+            <argument type="service" id="Shopware\Core\Framework\Validation\DataValidator"/>
+            <argument type="service" id="Shopware\Core\Checkout\Customer\Validation\CustomerValidationFactory"/>
+            <argument type="service" id="Shopware\Core\Checkout\Customer\Validation\AddressValidationFactory"/>
             <argument type="service" id="Shopware\Core\System\SystemConfig\SystemConfigService"/>
-            <argument type="service" id="seo_url.repository"/>
-            <argument type="service" id="sales_channel.repository"/>
-            <argument type="service" id="cbax_lexicon_entry.repository"/>
-            <argument type="service" id="slugify"/>
-            <argument type="service" id="logger"/>
-            <argument type="service" id="log_entry.repository"/>
-            <argument type="service" id="translator" />
-            <argument type="service" id="language.repository"/>
+            <argument type="service" id="customer.repository"/>
+            <argument type="service" id="Shopware\Core\System\SalesChannel\Context\SalesChannelContextPersister"/>
+            <argument type="service" id="sales_channel.country.repository"/>
             <argument type="service" id="Doctrine\DBAL\Connection"/>
-            <argument type="service" id="Nwgncy\TenteTheme\Service\LexiconSeoDecorator.inner"/>
+            <argument type="service" id="Shopware\Core\System\SalesChannel\Context\SalesChannelContextService"/>
+            <argument type="service" id="Shopware\Core\System\SalesChannel\StoreApiCustomFieldMapper"/>
+            <argument type="service" id="salutation.repository"/>
+            <argument type="service" id="Nwgncy\TenteTheme\Core\Checkout\Customer\SalesChannel\RegisterRouteDecorator.inner"/>
+        </service>
+
+        <service id="Nwgncy\TenteTheme\Twig\TenteThemeTwigFunctions" public="true">
+            <argument type="service" id="category.repository" />
+            <argument type="service" id="landing_page.repository" />
+            <tag name="twig.extension"/>
         </service>
     </services>
 </container>

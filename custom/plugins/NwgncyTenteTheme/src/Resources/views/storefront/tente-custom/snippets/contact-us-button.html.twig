@@ -1,1 +1,12 @@
-<a class="btn btn-primary w-100" href="{{ 'general.contactUsLink' | trans }}">{{ 'general.contactUs' | trans }}</a>
+{# {% for element in page.header.serviceMenu %}
+    {% if element.translated.customFields.is_contact_page == true %}
+        {% set contactUsID = element.id %}
+    {% endif %}
+{% endfor %} #}
+
+{% set contactUsID = getContactPageID(context) %}
+
+{% if contactUsID is not null %}
+    <a class="btn btn-primary w-100" href="{{ seoUrl('frontend.landing.page', { landingPageId: contactUsID }) }}">{{ 'general.contactUs' | trans }}</a>
+{% endif %}
+
