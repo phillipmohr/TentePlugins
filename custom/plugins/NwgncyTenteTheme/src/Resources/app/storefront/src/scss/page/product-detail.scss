@@ -202,6 +202,9 @@
             display: flex;
             gap: 40px;
 
+            .product-detail-properties-left, .product-detail-properties-right {
+                max-width: 100%;
+            }
 
             .table {
                 width: auto;
