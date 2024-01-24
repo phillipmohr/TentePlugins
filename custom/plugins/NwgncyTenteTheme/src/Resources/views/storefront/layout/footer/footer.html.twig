@@ -15,7 +15,11 @@
                     aria-expanded="true"
                     aria-controls="collapseFooterHotline"
                     role="listitem">
-                {{ 'footer.serviceHotlineHeadline'|trans|sw_sanitize }}
+                {% if context.saleschannel.translated.customFields.custom_fields_for_sales_channel_company_name is defined and context.saleschannel.translated.customFields.custom_fields_for_sales_channel_company_name != '' %}
+                    {{ context.saleschannel.translated.customFields.custom_fields_for_sales_channel_company_name|raw }}
+                {% else %}
+                    {{ 'footer.serviceHotlineHeadline'|trans|sw_sanitize }}
+                {% endif %}
                 {% block layout_footer_navigation_hotline_icons %}
                     <div class="footer-column-toggle">
                         <span class="footer-plus-icon">
