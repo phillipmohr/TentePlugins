@@ -10,8 +10,7 @@
     }
   ],
   "require": {
-    "shopware/core": "~6.4",
-    "geoip2/geoip2": "~2.0"
+    "shopware/core": "~6.5"
   },
   "extra": {
     "shopware-plugin-class": "BelVGGeoIp\\BelVGGeoIp",

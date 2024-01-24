@@ -1,9 +1,6 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace BelVGGeoIp\Service\GeoIp;
-//require_once 'vendor/autoload.php';
-require_once '/var/www/html/tente/html/custom/static-plugins/BelVGGeoIp/vendor2/autoload.php';
-
 
 use GeoIp2\Database\Reader;
 use GeoIp2\ProviderInterface;
