@@ -58,6 +58,41 @@
 
         &.megamenu {
             width: 1100px;
+            max-width: 100%;
+            margin-top: 18px;
+
+            &.fixed-with-flyout {
+                width: 229px;
+                right: unset;
+                margin-left: -10px;
+
+                .navigation-flyout-bar {
+                    padding-left: 4px;
+                    padding-right: 4px;
+                    padding-top: 20px;
+                }
+
+                .navigation-flyout-content {
+                    padding-bottom: 23px;
+                    padding-top: 13px;
+                }
+
+                .navigation-flyout-categories {
+                    margin-left: 0!important;
+
+                    .navigation-flyout-col {
+                        padding-bottom: 13px;
+
+                        &:last-child {
+                            padding-bottom: 0;
+                        }
+                    }
+
+                    .navigation-flyout-link {
+                        margin: 0 4px;
+                    }
+                }
+            }
 
             > .container {
                 padding: 0 20px;

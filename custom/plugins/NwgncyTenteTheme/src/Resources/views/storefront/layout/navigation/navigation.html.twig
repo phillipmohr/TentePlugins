@@ -28,6 +28,8 @@
         {% set menuClass = 'megamenu' %}
     {% endif %}
 
+    {% set displayTabView = category.customFields.display_tab_view %}
+
     <div class="{% if menuClass != 'megamenu' %}position-relative{% endif %}" data-flyout-menu-trigger-wrapper="{{ category.id }}">
         {% if category.type == 'folder' %}
             <div class="nav-link main-navigation-link"
@@ -52,7 +54,7 @@
             </a>
         {% endif %}
         {% if foundItem is not null and foundItem.children|length > 0 %}
-            <div class="navigation-flyout {{ menuClass }}" data-flyout-menu-id="{{ treeItem.category.id }}">
+            <div class="navigation-flyout {{ menuClass }}{% if not displayTabView %} fixed-with-flyout{% endif %}" data-flyout-menu-id="{{ treeItem.category.id }}">
                 <div class="container">
                     {% sw_include '@Storefront/storefront/layout/navigation/flyout.html.twig' with {navigationTree: foundItem, level: level+1, page: page} only %}
                 </div>
