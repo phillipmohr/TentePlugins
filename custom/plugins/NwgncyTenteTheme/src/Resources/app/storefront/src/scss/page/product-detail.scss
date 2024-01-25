@@ -202,13 +202,20 @@
             display: flex;
             gap: 40px;
 
+            @media screen and (max-width: 767px) {
+                flex-wrap: wrap;
+            }
+
             .product-detail-properties-left, .product-detail-properties-right {
                 max-width: 100%;
             }
 
             .table {
-                width: auto;
+                width: 100%;
                 table-layout: fixed;
+                @media screen and (min-width: 768px) {
+                    width: auto;
+                }
                 @media screen and (min-width: 992px) {
                     min-width: 400px;
                 }
