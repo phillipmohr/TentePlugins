@@ -28,7 +28,7 @@
         {% set menuClass = 'megamenu' %}
     {% endif %}
 
-    {% set displayTabView = category.customFields.display_tab_view %}
+    {% set displayTabView = category.translated.customFields.display_tab_view %}
 
     <div class="{% if menuClass != 'megamenu' %}position-relative{% endif %}" data-flyout-menu-trigger-wrapper="{{ category.id }}">
         {% if category.type == 'folder' %}

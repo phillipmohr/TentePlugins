@@ -19,7 +19,7 @@
 {% endblock %}
 
 {% block layout_navigation_flyout_content %}
-    {% set displayTabView = category.customFields.display_tab_view %}
+    {% set displayTabView = category.translated.customFields.display_tab_view %}
 
     <div class="row navigation-flyout-content {% if displayTabView %}is-flyout-tab-view{% endif %}">
         {% if displayTabView %}
