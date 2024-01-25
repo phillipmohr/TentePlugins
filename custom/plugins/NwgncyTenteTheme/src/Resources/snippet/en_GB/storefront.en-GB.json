@@ -17,7 +17,8 @@
         "faxPlaceholder" : "Enter fax"
     },
     "listing": {
-        "boxProductDetails": "More technical data"
+        "boxProductDetails": "More technical data",
+        "downloadText": "Download"
     },
     "detail": {
         "addProduct": "Add to cart",

@@ -26,6 +26,10 @@ class NwgncyTenteTheme extends Plugin implements ThemeInterface
         if ($this->checkIfCustomFieldExists($installContext->getContext(), 'product_download')) {
             $this->createDownloadProductCustomFiled($installContext->getContext());
         }
+
+        if ($this->checkIfCustomFieldExists($installContext->getContext(), 'social_media_links')) {
+            $this->createSocialMediaCustomFiled($installContext->getContext());
+        }
     }
 
     public function update(UpdateContext $updateContext): void
@@ -34,6 +38,10 @@ class NwgncyTenteTheme extends Plugin implements ThemeInterface
 
         if ($this->checkIfCustomFieldExists($updateContext->getContext(), 'product_download')) {
             $this->createDownloadProductCustomFiled($updateContext->getContext());
+        }
+
+        if ($this->checkIfCustomFieldExists($updateContext->getContext(), 'social_media_links')) {
+            $this->createSocialMediaCustomFiled($updateContext->getContext());
         }
     }
 
@@ -69,6 +77,108 @@ class NwgncyTenteTheme extends Plugin implements ThemeInterface
                     'relations' => [
                         [
                             'entityName' => 'product',
+                        ],
+                    ],
+
+                ],
+            ],
+            $context
+        );
+    }
+
+    public function createSocialMediaCustomFiled(Context $context): void
+    {
+        /** @var EntityRepository $categoryRepository */
+        $categoryRepository = $this->container->get('custom_field_set.repository');
+
+        $categoryRepository->upsert(
+            [
+                [
+                    'name' => 'social_media_links',
+                    'active' => true,
+                    'config' => [
+                        'label' => [
+                            'en-GB' => 'Social media links',
+                            'de-DE' => 'Social media links',
+                        ],
+                    ],
+                    'customFields' => [
+                        [
+                            'name' => 'social_media_links_instagram',
+                            'label' => 'Instagram link',
+                            'type' => CustomFieldTypes::TEXT,
+                            'config' => [
+                                'label' => [
+                                    'en-GB' => 'Instagram link',
+                                    'de-DE' => 'Instagram link'
+                                ],
+                                'customFieldType' => CustomFieldTypes::TEXT
+                            ]
+                        ],
+                        [
+                            'name' => 'social_media_links_facebook',
+                            'label' => 'Facebook link',
+                            'type' => CustomFieldTypes::TEXT,
+                            'config' => [
+                                'label' => [
+                                    'en-GB' => 'Facebook link',
+                                    'de-DE' => 'Facebook link'
+                                ],
+                                'customFieldType' => CustomFieldTypes::TEXT
+                            ]
+                        ],
+                        [
+                            'name' => 'social_media_links_twitter',
+                            'label' => 'Twitter link',
+                            'type' => CustomFieldTypes::TEXT,
+                            'config' => [
+                                'label' => [
+                                    'en-GB' => 'Twitter link',
+                                    'de-DE' => 'Twitter link'
+                                ],
+                                'customFieldType' => CustomFieldTypes::TEXT
+                            ]
+                        ],
+                        [
+                            'name' => 'social_media_links_youtube',
+                            'label' => 'YouTube link',
+                            'type' => CustomFieldTypes::TEXT,
+                            'config' => [
+                                'label' => [
+                                    'en-GB' => 'YouTube link',
+                                    'de-DE' => 'YouTube link'
+                                ],
+                                'customFieldType' => CustomFieldTypes::TEXT
+                            ]
+                        ],
+                        [
+                            'name' => 'social_media_links_linkedin',
+                            'label' => 'Linkedin link',
+                            'type' => CustomFieldTypes::TEXT,
+                            'config' => [
+                                'label' => [
+                                    'en-GB' => 'Linkedin link',
+                                    'de-DE' => 'Linkedin link'
+                                ],
+                                'customFieldType' => CustomFieldTypes::TEXT
+                            ]
+                        ],
+                        [
+                            'name' => 'social_media_links_xing',
+                            'label' => 'Xing link',
+                            'type' => CustomFieldTypes::TEXT,
+                            'config' => [
+                                'label' => [
+                                    'en-GB' => 'Xing link',
+                                    'de-DE' => 'Xing link'
+                                ],
+                                'customFieldType' => CustomFieldTypes::TEXT
+                            ]
+                        ],
+                    ],
+                    'relations' => [
+                        [
+                            'entityName' => 'sales_channel',
                         ],
                     ],
 

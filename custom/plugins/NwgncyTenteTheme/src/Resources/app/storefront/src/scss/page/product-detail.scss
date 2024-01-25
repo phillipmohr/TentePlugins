@@ -208,8 +208,10 @@
 
             .table {
                 width: auto;
-                min-width: 400px;
                 table-layout: fixed;
+                @media screen and (min-width: 992px) {
+                    min-width: 400px;
+                }
 
                 .properties-row {
                     background-color: $sw-light-gray;
@@ -434,6 +436,10 @@
                 padding-top: 0;
             }
         }
+    }
+
+    .offcanvas-header {
+        display: none;
     }
 }
 

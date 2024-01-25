@@ -16,7 +16,11 @@
                         <a href="{{ seoUrl('frontend.detail.page', {'productId': id}) }}"
                         class="btn btn-detail btn-primary"
                         title="{{ "listing.boxProductDetails"|trans|striptags }}">
-                            {{ "listing.boxProductDetails"|trans|sw_sanitize }}
+                            {% if product.translated.customFields.product_download_is %}
+                                {{ "listing.downloadText"|trans|sw_sanitize }}
+                            {% else %}
+                                {{ "listing.boxProductDetails"|trans|sw_sanitize }}
+                            {% endif %}
                         </a>
                     </div>
                 </div>
