@@ -1,0 +1,73 @@
+a {
+  color: var(--bs-link-color);
+  text-decoration: none;
+}
+
+.cms-element-category-listing-item-image-wrapper {
+  height: 0;
+  padding-bottom: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-contact-btn>.btn, .cms-element-rhweb-tabs .mobile-contact-btn>[class*=rhweb-nav-link].rhweb-nav-link-button {
+  min-width: 0;
+  width: 100%;
+  display: none;
+}
+
+.nb-por-search-suggest {
+  display: none;
+}
+
+.cms-element-rich-snippet-contact .card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  width: 50%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.cms-element-rhweb-search-hero .rhweb-hero-caption {
+  font-size: 14px;
+}
+
+.container, .cms-section .boxed {
+  max-width: 1640px;
+}
+
+.tenteHeader {
+  font-family:  Calibri, Jaldi-Regular, Arial, sans-serif;
+}
+
+.tenteHeader h3 {
+  font-size: 11px !important;
+  color: white !important;
+  text-shadow: 0 0 1.5px #193c69;
+}
+
+.tenteHeader p.container-content-text {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+
+.tenteHeader .cms-block-container {
+  padding: 0px !important;
+}
+
+.tenteHeader .cms-element-rhweb-cta-banner {
+  justify-content: unset !important;
+  padding: 0px;
+  height: 25vw !important;
+  min-height: 250px !important;
+  max-height: 400px;
+}
+
+.tenteHeader .cms-element-rhweb-cta-banner .overlay {
+  padding: 15px 15px 15px 50px;
+  background: linear-gradient(90deg,rgba(50, 60, 105, 1.0),rgba(50, 60, 105, 0.7),rgba(50, 60, 105, 0.01)) !important;
+  height: 100% !important;
+}
