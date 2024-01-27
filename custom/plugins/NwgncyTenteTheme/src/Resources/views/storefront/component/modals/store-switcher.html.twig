@@ -46,7 +46,7 @@
                                     >
                                         <!-- This div element is to make vertical tabs -->
                                         <p
-                                                class="continent active"
+                                                class="continent {% if not opennedContinent or opennedContinent == 'africa' %}active{% endif %}"
                                                 id="v-pills-africa-tab"
                                                 data-bs-toggle="pill"
                                                 data-bs-target="#v-pills-africa"
@@ -64,7 +64,7 @@
                                             {{ "switcher.titleAfrica"|trans|sw_sanitize }}
                                         </p>
                                         <p
-                                                class="continent"
+                                                class="continent {% if opennedContinent == 'asia' %}active{% endif %}"
                                                 id="v-pills-asia-tab"
                                                 data-bs-toggle="pill"
                                                 data-bs-target="#v-pills-asia"
@@ -82,7 +82,7 @@
                                             {{ "switcher.titleAsia"|trans|sw_sanitize }}
                                         </p>
                                         <p
-                                                class="continent"
+                                                class="continent {% if opennedContinent == 'australia' %}active{% endif %}"
                                                 id="v-pills-australia-tab"
                                                 data-bs-toggle="pill"
                                                 data-bs-target="#v-pills-australia"
@@ -100,7 +100,7 @@
                                             {{ "switcher.titleAustralia"|trans|sw_sanitize }}
                                         </p>
                                         <p
-                                                class="continent"
+                                                class="continent {% if opennedContinent == 'europe' %}active{% endif %}"
                                                 id="v-pills-europe-tab"
                                                 data-bs-toggle="pill"
                                                 data-bs-target="#v-pills-europe"
@@ -118,7 +118,7 @@
                                             {{ "switcher.titleEurope"|trans|sw_sanitize }}
                                         </p>
                                         <p
-                                                class="continent"
+                                                class="continent {% if opennedContinent == 'north-america' %}active{% endif %}"
                                                 id="v-pills-north-america-tab"
                                                 data-bs-toggle="pill"
                                                 data-bs-target="#v-pills-north-america"
@@ -136,7 +136,7 @@
                                             {{ "switcher.titleNAmerica"|trans|sw_sanitize }}
                                         </p>
                                         <p
-                                                class="continent"
+                                                class="continent {% if opennedContinent == 'south-america' %}active{% endif %}"
                                                 id="v-pills-south-america-tab"
                                                 data-bs-toggle="pill"
                                                 data-bs-target="#v-pills-south-america"
@@ -159,7 +159,7 @@
                                 <div class="col-12 col-md-8 col-lg-9 right-side">
                                     <div class="tab-content" id="v-pills-tabContent">
                                         <div
-                                                class="tab-pane fade show active"
+                                                class="tab-pane fade {% if not opennedContinent or opennedContinent == 'africa' %}show active{% endif %}"
                                                 id="v-pills-africa"
                                                 role="tabpanel"
                                                 aria-labelledby="v-pills-africa-tab"
@@ -176,7 +176,7 @@
                                         </div>
 
                                         <div
-                                                class="tab-pane fade"
+                                                class="tab-pane fade {% if opennedContinent == 'asia' %}show active{% endif %}"
                                                 id="v-pills-asia"
                                                 role="tabpanel"
                                                 aria-labelledby="v-pills-asia-tab"
@@ -193,7 +193,7 @@
                                         </div>
 
                                         <div
-                                                class="tab-pane fade"
+                                                class="tab-pane fade {% if opennedContinent == 'australia' %}show active{% endif %}"
                                                 id="v-pills-australia"
                                                 role="tabpanel"
                                                 aria-labelledby="v-pills-australia-tab"
@@ -210,7 +210,7 @@
                                         </div>
 
                                         <div
-                                                class="tab-pane fade"
+                                                class="tab-pane fade {% if opennedContinent == 'europe' %}show active{% endif %}"
                                                 id="v-pills-europe"
                                                 role="tabpanel"
                                                 aria-labelledby="v-pills-europe-tab"
@@ -227,7 +227,7 @@
                                         </div>
 
                                         <div
-                                                class="tab-pane fade"
+                                                class="tab-pane fade {% if opennedContinent == 'north-america' %}show active{% endif %}"
                                                 id="v-pills-north-america"
                                                 role="tabpanel"
                                                 aria-labelledby="v-pills-north-america-tab"
@@ -244,7 +244,7 @@
                                         </div>
 
                                         <div
-                                                class="tab-pane fade"
+                                                class="tab-pane fade {% if opennedContinent == 'south-america' %}show active{% endif %}"
                                                 id="v-pills-south-america"
                                                 role="tabpanel"
                                                 aria-labelledby="v-pills-south-america-tab"

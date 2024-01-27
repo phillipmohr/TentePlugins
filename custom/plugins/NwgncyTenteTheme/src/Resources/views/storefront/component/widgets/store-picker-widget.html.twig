@@ -5,7 +5,7 @@
     <div class="col-6 col-md-4 flex-column">
     {% set closed = false %}
 
-    {% for option in options %}
+    {% for option in options|sort((a, b) => b.extensions.suggested <=> a.extensions.suggested) %}
         {% if continent == option.country.translated.customFields.custom_country_continent_continent %}
             {% if counter == 12 %}
                 <div class="col-6 col-md-4 flex-column">
