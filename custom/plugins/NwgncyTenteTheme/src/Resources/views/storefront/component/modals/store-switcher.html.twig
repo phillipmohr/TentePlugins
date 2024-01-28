@@ -10,7 +10,7 @@
          tabindex="-1"
          aria-hidden="true"
          id="storeSwitcherModal"
-         
+
             {% if zeobvStoreSwitcher.config.domainSelectionIsMandatory %}
                 data-bs-backdrop="static"
                 data-bs-keyboard="false"
@@ -33,6 +33,12 @@
 {#                    </div>#}
                     <div class="modal-body store-switcher-modal--content-element">
                         {% block zeobv_store_switcher_component_modal_store_picker_widget %}
+                            {% set opennedContinent = null %}
+                            {% for option in zeobvStoreSwitcher.options %}
+                                {% if option.extensions.suggested %}
+                                    {% set opennedContinent = option.country.translated.customFields.custom_country_continent_continent %}
+                                {% endif %}
+                            {% endfor %}
                             <div class="row all-content">
                                 <div class="col-12 col-md-4 col-lg-3 left-side">
                                     <!-- Left side-->
@@ -100,7 +106,7 @@
                                             {{ "switcher.titleAustralia"|trans|sw_sanitize }}
                                         </p>
                                         <p
-                                                class="continent {% if opennedContinent == 'europe' %}active{% endif %}"
+                                                class="continent {% if opennedContinent == 'europa' %}active{% endif %}"
                                                 id="v-pills-europe-tab"
                                                 data-bs-toggle="pill"
                                                 data-bs-target="#v-pills-europe"
@@ -210,7 +216,7 @@
                                         </div>
 
                                         <div
-                                                class="tab-pane fade {% if opennedContinent == 'europe' %}show active{% endif %}"
+                                                class="tab-pane fade {% if opennedContinent == 'europa' %}show active{% endif %}"
                                                 id="v-pills-europe"
                                                 role="tabpanel"
                                                 aria-labelledby="v-pills-europe-tab"
