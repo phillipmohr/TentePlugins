@@ -67,7 +67,7 @@
             aria-label="{{ "detail.addProduct"|trans|striptags }}">
         {{ "detail.addProduct"|trans|sw_sanitize }}
     </button>
-    <b class="fs-5 fw-bold">OR</b>
+    <b class="fs-5 fw-bold text-uppercase">{{ "detail.orText"|trans|sw_sanitize }}</b>
 
     {% set nbporcustomtext = page.product.translated.customFields.custom_nimbits_priceonrequest_customtext %}
 

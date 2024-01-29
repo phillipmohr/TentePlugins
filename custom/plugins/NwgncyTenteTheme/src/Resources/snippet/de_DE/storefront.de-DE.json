@@ -24,7 +24,7 @@
         "addProduct": "In den Warenkorb",
         "qte": "quantity",
         "ean": "EAN",
-        "orderNumber": "Order number",
+        "orderNumber": "Produktnummer",
         "sendQuoteRequest": "Send Quote Request",
         "contactText": "Haven’t found the right product yet, have special requirements or are you interested in individual solutions? <a href=\"%url%\" title=\"Kontaktformular\">Contact us</a>.",
         "properties": {
@@ -59,7 +59,8 @@
         },
         "buyOnline": "Buy online",
         "priceOnRequestTitle": "Price on request",
-        "priceOnRequestText": "per piece plus VAT<br>In 24 hours ready for shipping"
+        "priceOnRequestText": "per piece plus VAT<br>In 24 hours ready for shipping",
+        "orText": "Oder"
     },
     "footer": {
         "serviceHotlineHeadline": "TENTE Castors Ltd.",
