@@ -1,0 +1,20 @@
+{
+    "sw-cms": {
+        "elements": {
+            "nwgncy-products-configurator": {
+                "config": {
+                    "label": {
+                        "category": "Kategorie Eigenschaftsgruppe",
+                        "categoryPlaceholder": "Kategorie Eigenschaftsgruppe",
+                        "propertyGroup": "Eigenschaftsgruppen",
+                        "propertyGroupPlaceholder": "Eigenschaftsgruppen",
+                        "measuredPropertyGroup": "Gemessene Eigenschaftsgruppen (für Min- und Max-Bereiche)",
+                        "measuredPropertyGroupPlaceholder": "Gemessene Eigenschaftsgruppen",
+                        "propertyGroupOption": "Eigenschaftsgruppen-Optionen (Mehrfachauswahl-Checkbox-Filter)",
+                        "propertyGroupOptionPlaceholder": "Eigenschaftsgruppen-Optionen"
+                    }
+                }
+            }
+        }
+    }
+}

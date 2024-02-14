@@ -1,0 +1,109 @@
+{% sw_extends '@Storefront/storefront/utilities/offcanvas.html.twig' %}
+
+{% block utilities_offcanvas_content %}
+    {% block page_product_detail_properties_inner %}
+
+       <div class="row product-detail-properties tente-product-detail-properties">
+        <div class="col-md-8">
+            {% block page_product_detail_properties_container_pdf %}
+                <h4 class="product-detail-properties-title">{{ "detail.properties.label.downloads"|trans }}</h4>
+                <div class="tente-downloads-container">
+
+
+                    {% if page.product.extension('acrisDownloadTabs').elements|length > 0 %}
+                        {% for downloadTab in page.product.extension('acrisDownloadTabs').elements %}
+                        {% if downloadTab.internalId == 'downloadgroup_1' %}
+
+                            {% sw_include '@Storefront/storefront/page/product-detail/acris-downloads/download-tab.html.twig' with {
+                            downloads: downloadTab.acrisDownloads.elements
+                            } %}
+                        {% endif %}
+                        {% endfor %}
+                    {% endif %}
+
+                {% if config('AcrisProductDownloadsCS.config').displayPosition != 'noDisplay' and ((page.product.extensions.acrisDownloads.elements and page.product.extensions.acrisDownloads.elements|length > 0) or (config('AcrisProductDownloadsCS.config').linkDisplayPosition == 'inDownloads' and page.product.extensions.acrisLinks.elements and page.product.extensions.acrisLinks.elements|length > 0)) %}
+
+                    {% sw_include '@Storefront/storefront/page/product-detail/acris-downloads/download-tab.html.twig' with {
+                        downloads: page.product.extensions.acrisDownloads.elements
+                    } %}
+
+                {% endif %}
+                </div>
+            {% endblock %}
+        </div>
+        <div class="col-md-4" data-cad-download="true">
+            {% block page_product_detail_properties_container_cad %}
+                <h4 class="product-detail-properties-title">{{ "detail.cadService.title"|trans }}</h4>
+                <div class="tente-downloads-container">
+                <p>{{ "detail.cadService.headline"|trans }}</p>
+
+                {% if not context.customer %}
+                <p>{{ "detail.cadService.login"|trans({
+                '%url%':path('frontend.account.login.page')})|raw 
+                }}</p>
+                {% else %}
+
+
+                {% set cadStpFile = null %}
+                {% set cadPdfFile = null %}
+                    {% if page.product.extension('acrisDownloadTabs').elements|length > 0 %}
+                        {% set defaultDownloadWasShown = false %}
+                        {% for downloadTab in page.product.extension('acrisDownloadTabs').elements %}
+                        {% if downloadTab.internalId == 'downloadgroup_2' %}
+
+                            {% set downloads = downloadTab.acrisDownloads.elements %}
+                                {% set previewedDownloadList = [] %}
+                                {% set downloadList = [] %}
+                                {% if downloads is not empty %}
+                                    {% for element in downloads %}
+                                        {% if element.previewImageEnabled %}
+                                            {% set previewedDownloadList = previewedDownloadList|merge([element]) %}
+                                        {% else %}
+                                            {% set downloadList = downloadList|merge([element]) %}
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                                {% if downloadList is not empty %}
+                                        {% for value in downloadList %}
+                                        {% if value.getMedia().getFileExtension() == 'stp' %}
+                                            {% set cadStpFile = value.getMedia().getUrl() %}
+                                        {% elseif value.getMedia().getFileExtension() == 'pdf' %}
+                                            {% set cadPdfFile = value.getMedia().getUrl() %}
+                                        {% endif %}
+                                        {% endfor %}
+                                {% endif %}
+                        {% endif %}
+                        {% endfor %}
+                    {% endif %}
+
+                    <div class="tente-downloads-btn-group btn-group mb-3" role="group">
+                            <button id="btnGroupDrop1" type="button" class="btn btn-primary tente-downloads-dropdown-toggle dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            {{ "detail.cadService.fileFormatplaceholder"|trans }}
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li><a class="dropdown-item tente-downloads-pdf-btn" href="#">{{ "detail.cadService.fileFormatPdf"|trans }}</a></li>
+                                <li><a class="dropdown-item tente-downloads-stp-btn" href="#">{{ "detail.cadService.fileFormatStep"|trans }}</a></li>
+                            </ul>
+                    </div>
+
+                    <form class="tente-downloads-form tente-pdf-downloads-form d-none" method="post" action="{{ path('storefront.cad-download.pdf.post') }}">
+                    <input type="hidden" name="productId" value="{{ page.product.id }}" />
+                        <div class="tente-downloads-btn">
+                        <a class="btn btn-block btn-primary" href="{{ cadPdfFile }}" target="_blank">{{ "detail.cadService.downloadBtn"|trans }}</a>
+                        </div>
+                    </form>
+
+                    <form class="tente-downloads-form tente-stp-downloads-form d-none" method="post" action="{{ path('storefront.cad-download.stp.post') }}">
+                    <input type="hidden" name="productId" value="{{ page.product.id }}" />
+                        <div class="tente-downloads-btn">
+                        <a class="btn btn-block btn-primary" href="{{ cadStpFile }}" target="_blank">{{ "detail.cadService.downloadBtn"|trans }}</a>
+                        </div>
+                    </form>
+
+                {% endif %}
+                </div>
+            {% endblock %}
+            </div>
+        </div>
+    {% endblock %}
+{% endblock %}

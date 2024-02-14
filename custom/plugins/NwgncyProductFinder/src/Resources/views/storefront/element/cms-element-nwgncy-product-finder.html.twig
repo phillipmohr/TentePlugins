@@ -1,0 +1,102 @@
+{% block sw_cms_element_nwgncy_product_finder %}
+    <form id="product-finder-form" name="product-finder" data-available-options-route="{{ path('storefront.product-finder.available-options.get') }}" data-sc-base-url="{{ app.request.attributes.get('sw-sales-channel-base-url') }}">
+        <div class="finder-row">
+            <div class="section categories">
+            {% set categoryOptionsIds = element.config.categoryPropertyGroupOptions.value ?? [] %}
+            {% set categoryOptions = getPropertyGroupOptionsByIds(categoryOptionsIds, context) %}
+            {% set categoryOptionIndex = 0 %}
+            {% for categoryOption in categoryOptions %}
+                {% set categoryOptionIndex = categoryOptionIndex + 1 %}
+                {% set categoryOptionDomId = 'finder-category-' ~ categoryOption.id  %}
+                <div class="field js-product-finder-category-field{% if categoryOptionIndex == 1 %} active{% endif %}">
+                    <label class="category-label" for="{{ categoryOptionDomId }}">{{ categoryOption.name }}</label>
+                    <input id="{{ categoryOptionDomId }}" name="finder-category" type="radio" value="{{ categoryOption.id }}" />
+                </div>
+            {% endfor %}
+            </div>
+            <div class="properties-container">
+                <div class="loading">
+                    <div class="loader"></div>
+                </div>
+                <div class="section property-options">
+                {% if element.config.propertyGroups.value %}    
+                    {% for propertyGroupId in element.config.propertyGroups.value %}
+                        {% set name = getPropertyGroupName(propertyGroupId, context) %}
+                        {% set id = 'product-finder-property-group-' ~ propertyGroupId %}
+
+                        {% set propertyGroupOptions = getPropertyOptionsByGroupId(propertyGroupId, true, context) %}
+                        <div class="field js-product-finder-property-option-group-field" data-property-group="{{ propertyGroupId }}">
+                            <label class="property-group-label" for="{{ id }}">
+                                <span>
+                                    <span class='js-property-group-label-name' data-property-group="{{ propertyGroupId }}">{{ name }}</span> {% sw_icon 'arrow-medium-down' style { 'size': 'xs', 'pack': 'solid'} %}
+                                </span>
+                            </label>
+                            <div class="dropdown-content">
+                                <div class="options-list">
+                                    {% for option in propertyGroupOptions %}
+                                        {% set optionDomId = 'finder-group-option-' ~ option.id %}
+                                        <div class='js-option-field'>
+                                            <label class="property-group-option-label" for="{{ optionDomId }}">{{ option.name }}</label>
+                                            <input class='js-finder-property-option-input' id="{{ optionDomId }}" name="{{ propertyGroupId }}" value="{{ option.id }}" data-option-name="{{ option.name }}" type="radio"/>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                {# other property groups with options #}
+                {% if element.config.measuredPropertyGroups.value %}    
+                    {% for propertyGroupId in element.config.measuredPropertyGroups.value %}
+                        {% set name = getPropertyGroupName(propertyGroupId, context) %}
+                        {% set id = 'product-finder-property-group-' ~ propertyGroupId %}
+                        {% set minId = id ~ '-min' %}
+                        {% set maxId = id ~ '-max' %}
+                        {% set propertyGroupOptions = getPropertyOptionsByGroupId(propertyGroupId, true, context) %}
+                        {% set propertyGroupUnit = getUnitByGroupId(propertyGroupId, context) %}
+                        <div class="field js-product-finder-property-option-group-field js-product-finder-property-option-group-slider-field"  data-property-group="{{ propertyGroupId }}">
+                            <label class="property-group-label" for="{{ id }}">
+                                <span>{{ name }} {% sw_icon 'arrow-medium-down' style { 'size': 'xs', 'pack': 'solid'} %}
+                                </span>
+                            </label>
+                            <div class="dropdown-content slider">
+                                <div class="min-max" data-property-group="{{ propertyGroupId }}">
+                                    <div class="nwgncy-finder-slider-values">
+                                        <div class="nwgncy-finder-slider-range1"></div>
+                                        <div class="nwgncy-finder-slider-dash"> &dash; </div>
+                                        <div class="nwgncy-finder-slider-range2"></div>
+                                        <div class="nwgncy-finder-slider-unit"> {{ propertyGroupUnit }} </div>
+                                    </div>
+                                    <div class="nwgncy-finder-slider-container">
+                                        <div class="nwgncy-finder-slider-track"></div>
+                                        <input type="range" min="0" max="{{ propertyGroupOptions|length - 1 }}" value="0" class="nwgncy-finder-slider-1" step="1">
+                                        <input type="range" min="0" max="{{ propertyGroupOptions|length - 1 }}" value="{{ propertyGroupOptions|length - 1 }}" class="nwgncy-finder-slider-2" step="1">
+
+                                        <div class="nwgncy-finder-slider-buttons">
+                                        {% set optionIndex = 0 %}
+                                            {% for option in propertyGroupOptions %}
+                                                <span data-value="{{ optionIndex }}"></span>
+                                                {% set optionIndex = optionIndex + 1 %}
+                                            {% endfor %}
+                                        </div>
+
+                                        <datalist class="nwgncy-finder-slider-number">
+                                            {% for option in propertyGroupOptions %}
+                                                <option id="{{ option.id }}" value="{{ option.parsedValue }}"></option> 
+                                            {% endfor %}
+                                        </datalist>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                </div>
+            </div>
+            <button class="btn btn-primary js-btn-find-products" type="button" data-target-lang="{{ page.metaInformation.xmlLang }}" data-target-cat="{{ getMainProductsCategoryUrl(context) }}" >
+                <span class="btn-label">{{ "nwgncy-product-finder.label.find-products" | trans }}</span>
+            </button>
+        </div>
+        <template data-product-finder></template>
+    </form>
+{% endblock %}

@@ -1,0 +1,98 @@
+<!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+{% block sw_cms_element_nwgncy_product_finder_config %}
+<div class="sw-cms-el-config-nwgncy-product-finder">
+    <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+    {% block sw_cms_element_nwgncy_product_finder_config_tabs %}
+    <sw-tabs
+        position-identifier="sw-cms-element-config-nwgncy-product-finder"
+        class="sw-cms-el-config-nwgncy-product-finder__tabs"
+        default-item="settings"
+    >
+        <template #default="{ active }">
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_cms_element_nwgncy_product_finder_config_tab_settings %}
+            <sw-tabs-item
+                :title="$tc('sw-cms.elements.general.config.tab.settings')"
+                name="settings"
+                :active-tab="active"
+            >
+                {{ $tc('sw-cms.elements.general.config.tab.settings') }}
+            </sw-tabs-item>
+            {% endblock %}
+        </template>
+
+        <template
+            #content="{ active }"
+        >
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_cms_element_nwgncy_product_finder_config_content %}
+            <sw-container
+                v-if="active === 'content'"
+                class="sw-cms-el-config-nwgncy-product-finder__tab-content"
+            >
+                <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                {% block sw_cms_element_nwgncy_product_finder_config_content_title %}
+                <sw-field
+                    v-model="element.config.title.value"
+                    type="text"
+                    :label="$tc('sw-cms.elements.productSlider.config.label.title')"
+                    :placeholder="$tc('sw-cms.elements.productSlider.config.placeholder.title')"
+                />
+                {% endblock %}
+
+            </sw-container>
+            {% endblock %}
+
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_cms_element_nwgncy_product_finder_config_content_property_group_options %}
+            <sw-container>
+                <sw-entity-multi-select
+                    v-model="categoryPropertyGroupOptionCollection"
+                    :required="true"
+                    class="sw-cms-el-config-nwgncy-product-finder__property_group_options"
+                    :label="$tc('sw-cms.elements.nwgncy-product-finder.config.label.categoryPropertyGroupOption')"
+                    :placeholder="$tc('sw-cms.elements.nwgncy-product-finder.config.label.categoryPropertyGroupOptionPlaceholder')"
+                    :context="categoryPropertyGroupSelectContext"
+                    @change="onCategoryPropertyGroupOptionsChange"
+                    :criteria="categoryPropertyGroupOptionCriteria"
+                />
+            </sw-container>
+            {% endblock %}
+
+
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_cms_element_nwgncy_product_finder_config_content_measured_property_groups %}
+            <sw-container>
+                <sw-entity-multi-select
+                    v-model="measuredPropertyGroupCollection"
+                    class="sw-cms-el-config-nwgncy-product-finder__measured_property_groups"
+                    :label="$tc('sw-cms.elements.nwgncy-product-finder.config.label.measuredPropertyGroup')"
+                    :placeholder="$tc('sw-cms.elements.nwgncy-product-finder.config.label.measuredPropertyGroupPlaceholder')"
+                    :context="measuredPropertyGroupMultiSelectContext"
+                    @change="onMeasuredPropertyGroupsChange"
+                    :criteria="propertyGroupCriteria"
+                />
+            </sw-container>
+            {% endblock %}
+
+
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_cms_element_nwgncy_product_finder_config_content_property_groups %}
+            <sw-container>
+                <sw-entity-multi-select
+                    v-model="propertyGroupCollection"
+                    class="sw-cms-el-config-nwgncy-product-finder__property_groups"
+                    :label="$tc('sw-cms.elements.nwgncy-product-finder.config.label.propertyGroup')"
+                    :placeholder="$tc('sw-cms.elements.nwgncy-product-finder.config.label.propertyGroupPlaceholder')"
+                    :context="propertyGroupMultiSelectContext"
+                    @change="onPropertyGroupsChange"
+                    :criteria="propertyGroupCriteria"
+                />
+            </sw-container>
+            {% endblock %}
+
+        </template>
+    </sw-tabs>
+    {% endblock %}
+</div>
+{% endblock %}

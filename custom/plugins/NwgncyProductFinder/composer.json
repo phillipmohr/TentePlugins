@@ -1,0 +1,19 @@
+{
+  "name": "nwgncy/product-finder",
+  "description": "Tente Product Finder | By Newwwagency",
+  "type": "shopware-platform-plugin",
+  "license": "proprietary",
+  "version": "1.1.3",
+  "autoload": {
+    "psr-4": {
+      "Nwgncy\\ProductFinder\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Nwgncy\\ProductFinder\\NwgncyProductFinder",
+    "label": {
+      "de-DE": "Tente Product Finder | By Newwwagency",
+      "en-GB": "Tente Product Finder | By Newwwagency"
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{% block sw_cms_element_nwgncy_products_configurator %}
+<form id="configurator-form" name="products-configurator" action="{{ path('storefront.respective-available-options.get') }}" data-sc-base-url="{{ app.request.attributes.get('sw-sales-channel-base-url') }}">
+    <div class="categories-and-search">
+        <div class="categories">
+            <div class="fields">
+                <span class="category">{{ "nwgncy-products-configurator.label.category" | trans }}</span>
+                {% set categoryGroupId = element.config.categoryPropertyGroup.value %}
+                {% set categoryOptions = getPropertyOptionsByGroupId(categoryGroupId, true, context) %}
+                {% for categoryOption in categoryOptions %}
+                    <div class="field">
+                        {% set name = categoryOption.name %}
+                        {% set id = categoryOption.id %}
+                        {% set fullId = 'configurator-cat-' ~ categoryOption.id %}
+                        <input name="categories" id="{{ fullId }}" type="radio" value="{{ id }}" class="js-configurator-category">
+                        <label for="{{ fullId }}">{{ name }}</label>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="search-container">
+            <label for="configurator-search-input">{{ "nwgncy-products-configurator.label.search" | trans }}</label>
+            <div class="search-box">
+                <input id="configurator-search-input" name="search" type="text" class="js-configurator-search-input" />
+                <button type="button" class="js-configurator-search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.57 23.575" class="icon">
+                        <path id="magnifying-glass-solid" d="M19.152,9.576a9.552,9.552,0,0,1-1.842,5.649l5.828,5.833a1.475,1.475,0,0,1-2.086,2.086L15.225,17.31a9.577,9.577,0,1,1,3.927-7.734ZM9.576,16.205A6.629,6.629,0,1,0,2.946,9.576,6.629,6.629,0,0,0,9.576,16.205Z" fill="currentColor"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="filters">
+        {% if element.config.measuredPropertyGroups.value %}    
+            <div class="measured js-configurator-measured-container">
+            {% for propertyGroupId in element.config.measuredPropertyGroups.value %}
+                {% set name = getPropertyGroupName(propertyGroupId, context) %}
+                {% set selectName = 'configurator-property-' ~ name %}
+                {% set selectNameMin = selectName ~ '-min' %}
+                {% set selectNameMax = selectName ~ '-max' %}
+                {% set id = 'configurator-property-group-' ~ propertyGroupId %}
+                {% set minId = id ~ '-min' %}
+                {% set maxId = id ~ '-max' %}
+                {% set propertyGroupOptions = getPropertyOptionsByGroupId(propertyGroupId, true, context) %}
+                <div class="field">
+                    <label for="{{ id }}">{{ name }}</label>
+                    <div class="min-max">
+                        <select name="{{ selectNameMin }}" id="{{ minId }}" class="js-configurator-measured-property min">
+                            <option class="reset" selected value="">-</option>
+                            {% for option in propertyGroupOptions %}
+                                <option id="{{ option.id }}" value="{{ option.parsedValue }}">{{ option.name }}</option>
+                            {% endfor %}
+                        </select>
+                        <span>-</span>
+                        <select name="{{ selectNameMax }}" id="{{ maxId }}"  class="js-configurator-measured-property max">
+                            <option class="reset" selected value="">-</option>
+                            {% for option in propertyGroupOptions %}
+                                <option id="{{ option.id }}" value="{{ option.parsedValue }}">{{ option.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        {% endif %}
+        {% for propertyGroupId in element.config.propertyGroups.value %}
+            {% set name = getPropertyGroupName(propertyGroupId, context) %}
+            {% set selectName = 'configurator-property-' ~ name %}
+            {% set id = 'configurator-property-group-' ~ propertyGroupId %}
+            {% set propertyGroupOptions = getPropertyOptionsByGroupId(propertyGroupId, false, context) %}
+            <div class="field">
+                <label for="{{ id }}">{{ name }}</label>
+                <select name="{{ selectName }}" id="{{ id }}" multiple class="js-configurator-property">
+                    <option class="reset" value="">{{ "nwgncy-products-configurator.label.reset" | trans }}</option>
+                    {% for option in propertyGroupOptions %}
+                        <option value="{{ option.id }}">{{ option.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="checkboxes">
+        <div class="fields">
+            <span>{{ "nwgncy-products-configurator.label.show-only" | trans }}</span>
+            {% set optionIds = element.config.propertyGroupOptions.value %}
+            {% set optionNames = getPropertyGroupOptionsByIds(optionIds, context) %}
+
+            {% for option in optionNames %}
+                <div class="field">
+                    {% set id = 'configurator-checkbox-option-' ~ option.id %}
+                    <input name="checkbox-option" id="{{ id }}" type="checkbox" value="{{ option.id }}" class="js-configurator-property-checkbox">
+                    <label for="{{ id }}">{{ option.name }}</label>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <button class="btn btn-primary js-btn-reset-filters" type="button">
+        <template data-products-configurator></template>
+        <span class="btn-label">{{ "nwgncy-products-configurator.label.reset-filters" | trans }}</span>
+    </button>
+</form>
+<div class="loading">
+    <div class="loader"></div>
+</div>
+{% endblock %}

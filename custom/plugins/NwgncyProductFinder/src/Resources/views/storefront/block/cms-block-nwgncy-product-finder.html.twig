@@ -1,0 +1,22 @@
+{% block block_product_finder %}
+     {% set element = block.slots.getSlot('productFinder') %}
+     <div class="container" data-cms-element-id="{{ element.id }}">
+          <div class="content">
+               <h3>{{ "nwgncy-product-finder.label.title" | trans }}</h3>
+               {% block block_text_inner %}
+                    {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing with {
+                         element : element,
+                    } %}
+               {% endblock %}
+          </div>
+     </div>
+{% endblock %}
+
+
+
+
+
+
+
+
+

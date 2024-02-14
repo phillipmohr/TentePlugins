@@ -1,0 +1,19 @@
+{% block cms_form_select_country_content %}
+    {% set countries = getCountries(context) %}
+    <div class="form-group {{ additionalClass }}">
+        <label class="form-label" for="form-country">{{ "address.countryLabel"|trans|sw_sanitize }}</label>
+        <select class="country-select form-select{% if formViolations.getViolations( '/country' ) %} is-invalid{% endif %}"
+            id="form-country"
+            name="country"
+            required="required">
+            {% for country in countries %}
+                <option value="{{ country.translated.name  ~ '|' ~ country.iso }}">{{ country.translated.name }}</option>
+            {% endfor %}
+        </select>
+        {% if formViolations.getViolations( '/country') is not empty %}
+            {% sw_include '@Storefront/storefront/utilities/form-violation.html.twig' with {
+                violationPath: ('/country')
+            } %}
+        {% endif %}
+    </div>
+{% endblock %}

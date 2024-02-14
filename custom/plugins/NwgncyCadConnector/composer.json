@@ -1,0 +1,19 @@
+{
+  "name": "nwgncy/cad-connector",
+  "description": "Tente CAD Connector | By Newwwagency",
+  "version": "1.0.5",
+  "type": "shopware-platform-plugin",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "Nwgncy\\CadConnector\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Nwgncy\\CadConnector\\NwgncyCadConnector",
+    "label": {
+      "de-DE": "Tente CAD Connector | By Newwwagency",
+      "en-GB": "Tente CAD Connector | By Newwwagency"
+    }
+  }
+}

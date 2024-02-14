@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+
+<card>
+    <title>Credentials</title>
+    <input-field type="url">
+          <name>cadOrderUrl</name>
+          <label>CAD Order URL</label>
+          <label lang="de-DE">CAD Order URL</label>
+          <defaultValue>https://www.partcommunity.com/cgi-bin/cgi2pview.exe</defaultValue>
+     </input-field>
+
+         <input-field type="url">
+          <name>cadRequestOrderUrl</name>
+          <label>CAD Request Order URL</label>
+          <label lang="de-DE">CAD Request Order URL</label>
+          <defaultValue>https://www.partcommunity.com/partserver/preview</defaultValue>
+     </input-field>
+     <input-field type="password">
+          <name>endpointUsername</name>
+          <label>Username</label>
+          <label lang="de-DE">Benutzer</label>
+     </input-field>
+     <input-field type="password">
+          <name>endpointPassword</name>
+          <label>Password</label>
+          <label lang="de-DE">Passwort</label>
+     </input-field>
+</card>
+</config>

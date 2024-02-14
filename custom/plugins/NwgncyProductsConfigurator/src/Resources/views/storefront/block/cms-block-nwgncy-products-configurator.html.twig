@@ -1,0 +1,31 @@
+{% block block_products_configurator %}
+ {% if page.header.navigation.active.customFields.nwgncy_is_the_main_products_category %}
+     {% set element = block.slots.getSlot('productsConfigurator') %}
+     <div class="container" data-cms-element-id="{{ element.id }}">
+          <div class="filter-toggle-container">
+               <button class="btn filter-toggle js-products-configurator-toggle open">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 0 512 512" class="chevron-down">
+                         <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                    </svg>
+                    <span>{{ "nwgncy-products-configurator.label.configurator" | trans }}</span>
+               </button>
+          </div>
+          <div class="content">
+          {% block block_text_inner %}
+               {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing with {
+                    element : element,
+               } %}
+          {% endblock %}
+          </div>
+     </div>
+{% endif %}
+{% endblock %}
+
+
+
+
+
+
+
+
+

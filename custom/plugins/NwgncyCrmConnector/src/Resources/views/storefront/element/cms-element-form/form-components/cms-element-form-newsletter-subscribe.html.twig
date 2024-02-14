@@ -1,0 +1,12 @@
+{% block cms_form_privacy_opt_in %}
+	<div class="form-text newsletter-subscribe-notice form-check">
+		{% block cms_form_privacy_opt_in_input %}
+			<input name="newsletter-subscribe" type="checkbox" class="form-check-input" id="form-newsletter-subscribe-checkbox">
+		{% endblock %}
+		{% block cms_form_privacy_opt_in_label %}
+			<label for="form-newsletter-subscribe-checkbox" class="form-check-label">
+               {{ "contact.newsletterSubscribe"|trans }}
+               </label>
+		{% endblock %}
+	</div>
+{% endblock %}

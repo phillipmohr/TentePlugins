@@ -1,0 +1,19 @@
+{
+  "name": "nwgncy/products-configurator",
+  "description": "Tente Product Configurator | By Newwwagency",
+  "type": "shopware-platform-plugin",
+  "license": "proprietary",
+  "version": "1.2.0",
+  "autoload": {
+    "psr-4": {
+      "Nwgncy\\ProductsConfigurator\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Nwgncy\\ProductsConfigurator\\NwgncyProductsConfigurator",
+    "label": {
+      "de-DE": "Tente Product Configurator | By Newwwagency",
+      "en-GB": "Tente Product Configurator | By Newwwagency"
+    }
+  }
+}

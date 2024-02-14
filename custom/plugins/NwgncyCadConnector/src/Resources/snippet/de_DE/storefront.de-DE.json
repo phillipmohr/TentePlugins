@@ -1,0 +1,10 @@
+{
+    "detail": {
+        "cadService": {
+            "fileFormatplaceholder": "Dateiformat",
+            "fileFormatPdf": "PDF",
+            "fileFormatStep": "STEP-2.14",
+            "downloadBtn": "Download"
+        }
+    }
+}

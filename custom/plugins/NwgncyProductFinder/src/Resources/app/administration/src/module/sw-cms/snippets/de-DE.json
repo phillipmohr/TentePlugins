@@ -1,0 +1,18 @@
+{
+    "sw-cms": {
+        "elements": {
+            "nwgncy-product-finder": {
+                "config": {
+                    "label": {
+                        "categoryPropertyGroupOption": "Categories",
+                        "categoryPropertyGroupOptionPlaceholder": "Categories",
+                        "propertyGroup": "Property groups",
+                        "propertyGroupPlaceholder": "Property groups",
+                        "measuredPropertyGroup": "Measured Property groups (for min and max ranges)",
+                        "measuredPropertyGroupPlaceholder": "Measured Property groups"
+                    }
+                }
+            }
+        }  
+    }
+}

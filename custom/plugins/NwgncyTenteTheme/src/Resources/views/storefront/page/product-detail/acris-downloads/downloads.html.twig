@@ -29,7 +29,7 @@
                         <a href="{{ value.getMedia().getUrl() }}" target="_blank"
                            title="{{ value.getMedia().getFileName() }}.{{ value.getMedia().getFileExtension() }}"
                            {% if directDonwloadConfig == "direct" %}download="{{ value.getMedia().getFileName() }}.{{ value.getMedia().getFileExtension() }}"{% endif %}>
-                            <img src="/bundles/nwgncytentetheme/static/img/pdf.png" width="20" /> {% if value.translated.title %}{{ value.translated.title }}{% else %}{{ value.getMedia().getFileName() }}.{{ value.getMedia().getFileExtension() }}{% endif %}
+                            <img src="/bundles/nwgncytentetheme/assets/img/pdf.png" width="20" /> {% if value.translated.title %}{{ value.translated.title }}{% else %}{{ value.getMedia().getFileName() }}.{{ value.getMedia().getFileExtension() }}{% endif %}
                         </a>
                         {% if value.translated.description %} - {{ value.translated.description }}{% endif %}
                     {% endif %}

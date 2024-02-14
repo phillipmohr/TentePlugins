@@ -1,0 +1,118 @@
+<!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+{% block sw_cms_element_nwgncy_products_configurator_config %}
+<div class="sw-cms-el-config-nwgncy-products-configurator">
+    <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+    {% block sw_cms_element_nwgncy_products_configurator_config_tabs %}
+    <sw-tabs
+        position-identifier="sw-cms-element-config-nwgncy-products-configurator"
+        class="sw-cms-el-config-nwgncy-products-configurator__tabs"
+        default-item="settings"
+    >
+        <template #default="{ active }">
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_cms_element_nwgncy_products_configurator_config_tab_settings %}
+            <sw-tabs-item
+                :title="$tc('sw-cms.elements.general.config.tab.settings')"
+                name="settings"
+                :active-tab="active"
+            >
+                {{ $tc('sw-cms.elements.general.config.tab.settings') }}
+            </sw-tabs-item>
+            {% endblock %}
+        </template>
+
+        <template
+            #content="{ active }"
+        >
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_cms_element_nwgncy_products_configurator_config_content %}
+            <sw-container
+                v-if="active === 'content'"
+                class="sw-cms-el-config-nwgncy-products-configurator__tab-content"
+            >
+                <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                {% block sw_cms_element_nwgncy_products_configurator_config_content_title %}
+                <sw-field
+                    v-model="element.config.title.value"
+                    type="text"
+                    :label="$tc('sw-cms.elements.productSlider.config.label.title')"
+                    :placeholder="$tc('sw-cms.elements.productSlider.config.placeholder.title')"
+                />
+                {% endblock %}
+
+            </sw-container>
+            {% endblock %}
+
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_cms_element_nwgncy_products_configurator_config_content_category %}
+            
+            <sw-container>
+                <sw-entity-single-select
+                    v-model="categoryPropertyGroupModel"
+                    :required="true"
+                    entity="property_group"
+                    class="sw-cms-el-config-nwgncy-products-configurator__category"
+                    :label="$tc('sw-cms.elements.nwgncy-products-configurator.config.label.category')"
+                    :placeholder="$tc('sw-cms.elements.nwgncy-products-configurator.config.label.categoryPlaceholder')"
+                    :context="categoryPropertyGroupSelectContext"
+                    @change="onCategoryPropertyGroupChange"
+                />
+            </sw-container>
+            
+            {% endblock %}
+
+
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_cms_element_nwgncy_products_configurator_config_content_measured_property_groups %}
+            <sw-container>
+                <sw-entity-multi-select
+                    v-model="measuredPropertyGroupCollection"
+                    class="sw-cms-el-config-nwgncy-products-configurator__measured_property_groups"
+                    :label="$tc('sw-cms.elements.nwgncy-products-configurator.config.label.measuredPropertyGroup')"
+                    :placeholder="$tc('sw-cms.elements.nwgncy-products-configurator.config.label.measuredPropertyGroupPlaceholder')"
+                    :context="measuredPropertyGroupMultiSelectContext"
+                    @change="onMeasuredPropertyGroupsChange"
+                    :criteria="propertyGroupCriteria"
+                />
+            </sw-container>
+            {% endblock %}
+
+
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_cms_element_nwgncy_products_configurator_config_content_property_groups %}
+            <sw-container>
+                <sw-entity-multi-select
+                    v-model="propertyGroupCollection"
+                    :required="true"
+                    class="sw-cms-el-config-nwgncy-products-configurator__property_groups"
+                    :label="$tc('sw-cms.elements.nwgncy-products-configurator.config.label.propertyGroup')"
+                    :placeholder="$tc('sw-cms.elements.nwgncy-products-configurator.config.label.propertyGroupPlaceholder')"
+                    :context="propertyGroupMultiSelectContext"
+                    @change="onPropertyGroupsChange"
+                    :criteria="propertyGroupCriteria"
+                />
+            </sw-container>
+            {% endblock %}
+
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_cms_element_nwgncy_products_configurator_config_content_property_group_options %}
+            <sw-container>
+                <sw-entity-multi-select
+                    v-model="propertyGroupOptionCollection"
+                    :required="true"
+                    class="sw-cms-el-config-nwgncy-products-configurator__property_group_options"
+                    :label="$tc('sw-cms.elements.nwgncy-products-configurator.config.label.propertyGroupOption')"
+                    :placeholder="$tc('sw-cms.elements.nwgncy-products-configurator.config.label.propertyGroupOptionPlaceholder')"
+                    :context="propertyGroupOptionMultiSelectContext"
+                    @change="onPropertyGroupOptionsChange"
+                    :criteria="propertyGroupOptionCriteria"
+                />
+            </sw-container>
+            {% endblock %}
+
+
+        </template>
+    </sw-tabs>
+    {% endblock %}
+</div>
+{% endblock %}

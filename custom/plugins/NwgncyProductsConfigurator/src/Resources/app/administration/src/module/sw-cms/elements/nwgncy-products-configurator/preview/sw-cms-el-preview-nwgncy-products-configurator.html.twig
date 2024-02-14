@@ -1,0 +1,106 @@
+<!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+{% block sw_cms_element_nwgncy_products_configurator_preview %}
+<div class="cms-block  pos-0 cms-block-nwgncy-products-configurator">
+  <div class="cms-block-container">
+    <div class="cms-block-container-row row cms-row ">
+      <div class="container">
+        <div class="filter-toggle-container">
+          <button class="btn filter-toggle js-products-configurator-toggle open">
+            <svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 0 512 512" class="chevron-down">
+              <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path>
+            </svg>
+            <span>Products Configurator</span>
+          </button>
+        </div>
+        <div class="content">
+          <form name="products-configurator" action="" method="get">
+            <div class="categories-and-search">
+              <div class="categories">
+                  <div class="fields">
+                <span class="category">Category</span>
+                <div class="field">
+                  <input name="categories" type="radio" class="js-configurator-category">
+                  <label>Example</label>
+                </div>
+                <div class="field">
+                  <input name="categories" type="radio" class="js-configurator-category">
+                  <label>Example</label>
+                </div>
+                <div class="field">
+                  <input name="categories" type="radio" class="js-configurator-category">
+                  <label>Example</label>
+                </div>
+                <div class="field">
+                  <input name="categories" type="radio" class="js-configurator-category">
+                  <label>Example</label>
+                </div>
+                  </div>
+              </div>
+              <div class="search-container">
+                  <label for="configurator-search-input">Search</label>
+                  <div class="search-box">
+                      <input name="search" type="text" class="js-configurator-search-input" />
+                      <button type="button" class="js-configurator-search-button">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.57 23.575" class="icon">
+                              <path id="magnifying-glass-solid" d="M19.152,9.576a9.552,9.552,0,0,1-1.842,5.649l5.828,5.833a1.475,1.475,0,0,1-2.086,2.086L15.225,17.31a9.577,9.577,0,1,1,3.927-7.734ZM9.576,16.205A6.629,6.629,0,1,0,2.946,9.576,6.629,6.629,0,0,0,9.576,16.205Z" fill="currentColor"></path>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+            <div class="filters">
+              <div class="field">
+                <label>Example</label>
+                <select multiple class="js-configurator-property">
+                  <option class="reset" value="">Reset filter</option>
+                  <option value="Example">Example</option>
+                  <option value="Example">Example</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Example</label>
+                <select multiple class="js-configurator-property">
+                  <option class="reset" value="">Reset filter</option>
+                  <option value="Example">Example</option>
+                  <option value="Example">Example</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Example</label>
+                <select multiple class="js-configurator-property">
+                  <option class="reset" value="">Reset filter</option>
+                  <option value="Example">Example</option>
+                  <option value="Example">Example</option>
+                </select>
+              </div>
+            </div>
+            <div class="checkboxes">
+              <div class="fields">
+                <span>Show only products</span>
+                <div class="field">
+                  <input class="js-configurator-property-checkbox" type="checkbox">
+                  <label>Example</label>
+                </div>
+                <div class="field">
+                  <input class="js-configurator-property-checkbox" type="checkbox">
+                  <label>Example</label>
+                </div>
+                <div class="field">
+                  <input class="js-configurator-property-checkbox" type="checkbox">
+                  <label>Example</label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <button class="btn btn-primary js-btn-reset-filters">
+            <span class="btn-label">Reset filters</span>
+          </button>
+        </div>
+        <div class="loading">
+          <div class="loader"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="Nwgncy\ProductFinder\Twig\ProductFinderFunctions" public="true">
+            <argument type="service" id="property_group.repository" />
+            <argument type="service" id="property_group_option.repository" />
+            <argument type="service" id="category.repository" />
+            <tag name="twig.extension"/>
+        </service>
+        <service id="Nwgncy\ProductFinder\Storefront\Controller\ProductFinderController" public="true">
+            <argument type="service" id="product.repository" />
+            <argument type="service" id="product_visibility.repository" />
+            <call method="setContainer">
+                <argument type="service" id="service_container"/>
+            </call>
+        </service>
+    </services>
+</container>

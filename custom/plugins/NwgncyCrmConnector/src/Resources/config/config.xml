@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+     <card>
+          <title>SAP endpoints</title>
+          <title lang="de-DE">SAP Endpunkte für C4C</title>
+          <input-field type="url">
+               <name>sapRequestLeadEndpoint</name>
+               <label>SAP RequestLead Endpoint</label>
+               <label lang="de-DE">SAP RequestLead Endpunkt</label>
+          </input-field>
+          <input-field type="url">
+               <name>sapCadEndpoint</name>
+               <label>SAP CAD Endpoint</label>
+               <label lang="de-DE">SAP CAD Endpunkt</label>
+          </input-field>
+
+          <input-field type="password">
+               <name>sapAuthUser</name>
+               <label>User</label>
+               <label lang="de-DE">Benutzer</label>
+          </input-field>
+          <input-field type="password">
+               <name>sapAuthPassword</name>
+               <label>Password</label>
+               <label lang="de-DE">Passwort</label>
+          </input-field>
+     </card>
+     <card>
+          <title>Microsoft Dynamics endpoints</title>
+          <title lang="de-DE">Microsoft Dynamics Endpunkte für C4C</title>
+          <input-field type="url">
+               <name>microsoftDynamicsRequestLeadEndpoint</name>
+               <label>Microsoft Dynamics RequestLead Endpoint</label>
+               <label lang="de-DE">Microsoft Dynamics RequestLead Endpunkt</label>
+          </input-field>
+          <input-field type="url">
+               <name>microsoftDynamicsCadEndpoint</name>
+               <label>Microsoft Dynamics CAD Endpoint</label>
+               <label lang="de-DE">Microsoft Dynamics CAD Endpunkt</label>
+          </input-field>
+     </card>
+</config>

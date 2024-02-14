@@ -1,0 +1,20 @@
+{
+    "sw-cms": {
+        "elements": {
+            "nwgncy-products-configurator": {
+                "config": {
+                    "label": {
+                        "category": "Category property group",
+                        "categoryPlaceholder": "Category property group",
+                        "propertyGroup": "Property groups",
+                        "propertyGroupPlaceholder": "Property groups",
+                        "measuredPropertyGroup": "Measured Property groups (for min and max ranges)",
+                        "measuredPropertyGroupPlaceholder": "Measured Property groups",
+                        "propertyGroupOption": "Property group options (Multi checkbox filters)",
+                        "propertyGroupOptionPlaceholder": "Property group options"
+                    }
+                }
+            }
+        }  
+    }
+}

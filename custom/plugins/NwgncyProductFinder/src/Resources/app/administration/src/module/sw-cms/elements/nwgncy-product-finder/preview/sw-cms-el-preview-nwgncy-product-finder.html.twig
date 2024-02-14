@@ -1,0 +1,207 @@
+<!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+{% block sw_cms_element_nwgncy_product_finder_preview %}
+<div class="cms-section nwgncy-quick-finder-block pos-0 cms-section-default" style="">
+     <div class="cms-section-default full-width">
+          <div class="cms-block  pos-0 cms-block-nwgncy-product-finder-preview" style="">
+               <div class="cms-block-container" >
+                    <div class="cms-block-container-row row cms-row ">
+                         <div class="container">
+                              <div class="content">
+                                   <h3>Quick-find your products</h3>
+                                   <form id="product-finder-form" name="product-finder">
+                                        <div class="finder-row">
+                                             <div class="section categories">
+                                                  <div class="field js-product-finder-category-field active">
+                                                       <label class="category-label">Category 1</label>
+                                                       <input name="finder-category" type="radio" >
+                                                  </div>
+                                                  <div class="field js-product-finder-category-field">
+                                                       <label class="category-label">Category 2</label>
+                                                       <input name="finder-category" type="radio">
+                                                  </div>
+                                             </div>
+                                             <div class="properties-container">
+                                                  <div class="loading" style="display: none;">
+                                                       <div class="loader"></div>
+                                                  </div>
+                                                  <div class="section property-options" style="display: flex;">
+
+
+                                                       <div class="field js-product-finder-property-option-group-field" style="display: flex;">
+                                                            <label class="property-group-label">
+                                                                 <span>
+                                                                      <span class="js-property-group-label-name">Property group 1</span>
+                                                                      <span class="icon icon-arrow-medium-down icon-xs">
+                                                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewbox="0 0 16 16">
+                                                                                <use xlink:href="#icons-solid-arrow-medium-down" fill="#758CA3" fill-rule="evenodd"></use>
+                                                                           </svg>
+                                                                      </span>
+                                                                 </span>
+                                                            </label>
+                                                            <div class="dropdown-content">
+                                                                 <div class="options-list">
+                                                                      <div class="js-option-field">
+                                                                           <label class="property-group-option-label">-</label>
+                                                                           <input class="js-finder-property-option-input" data-option-name="-" type="radio">
+                                                                      </div>
+                                                                      <div class="js-option-field">
+                                                                           <label class="property-group-option-label">-</label>
+                                                                           <input class="js-finder-property-option-input" data-option-name="-" type="radio">
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+
+                                                       <div class="field js-product-finder-property-option-group-field js-product-finder-property-option-group-slider-field" style="display: flex;">
+                                                            <label class="property-group-label">
+                                                                 <span>Property group 2
+                                                                      <span class="icon icon-arrow-medium-down icon-xs">
+                                                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewbox="0 0 16 16">
+                                                                                <use xlink:href="#icons-solid-arrow-medium-down" fill="#758CA3" fill-rule="evenodd"></use>
+                                                                           </svg>
+                                                                      </span>
+                                                                 </span>
+                                                            </label>
+                                                            <div class="dropdown-content slider">
+                                                                 <div class="min-max">
+                                                                      <div class="nwgncy-finder-slider-values">
+                                                                           <div class="nwgncy-finder-slider-range1" style="order: 1;">-</div>
+                                                                           <div class="nwgncy-finder-slider-dash" style="order: 2;">
+                                                                                ‐
+                                                                           </div>
+                                                                           <div class="nwgncy-finder-slider-range2" style="order: 3;">-</div>
+                                                                           <div class="nwgncy-finder-slider-unit">
+                                                                                unit
+                                                                           </div>
+                                                                      </div>
+                                                                      <div class="nwgncy-finder-slider-container">
+                                                                           <div class="nwgncy-finder-slider-track"></div>
+                                                                           <input type="range" min="0" max="21" value="0" class="nwgncy-finder-slider-1" step="1">
+                                                                           <input type="range" min="0" max="21" value="21" class="nwgncy-finder-slider-2" step="1">
+
+                                                                           <div class="nwgncy-finder-slider-buttons">
+                                                                                <span data-value="0"></span>
+                                                                                <span data-value="1"></span>
+                                                                                <span data-value="2"></span>
+                                                                                <span data-value="3"></span>
+                                                                                <span data-value="4"></span>
+                                                                                <span data-value="5"></span>
+                                                                                <span data-value="6"></span>
+                                                                                <span data-value="7"></span>
+                                                                                <span data-value="8"></span>
+                                                                                <span data-value="9"></span>
+                                                                                <span data-value="10"></span>
+                                                                                <span data-value="11"></span>
+                                                                                <span data-value="12"></span>
+                                                                                <span data-value="13"></span>
+                                                                                <span data-value="14"></span>
+                                                                                <span data-value="15"></span>
+                                                                                <span data-value="16"></span>
+                                                                                <span data-value="17"></span>
+                                                                                <span data-value="18"></span>
+                                                                                <span data-value="19"></span>
+                                                                                <span data-value="20"></span>
+                                                                                <span data-value="21"></span>
+                                                                           </div>
+
+                                                                           <datalist class="nwgncy-finder-slider-number">
+                                                                                <option value="-"></option>
+                                                                                <option value="-"></option>
+                                                                           </datalist>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="field js-product-finder-property-option-group-field js-product-finder-property-option-group-slider-field" style="display: flex;">
+                                                            <label class="property-group-label">
+                                                                 <span>Property group 3
+                                                                      <span class="icon icon-arrow-medium-down icon-xs">
+                                                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewbox="0 0 16 16">
+                                                                                <use xlink:href="#icons-solid-arrow-medium-down" fill="#758CA3" fill-rule="evenodd"></use>
+                                                                           </svg>
+                                                                      </span>
+                                                                 </span>
+                                                            </label>
+                                                            <div class="dropdown-content slider">
+                                                                 <div class="min-max">
+                                                                      <div class="nwgncy-finder-slider-values">
+                                                                           <div class="nwgncy-finder-slider-range1" style="order: 1;">-</div>
+                                                                           <div class="nwgncy-finder-slider-dash" style="order: 2;">
+                                                                                ‐
+                                                                           </div>
+                                                                           <div class="nwgncy-finder-slider-range2" style="order: 3;">-</div>
+                                                                           <div class="nwgncy-finder-slider-unit">
+                                                                                -
+                                                                           </div>
+                                                                      </div>
+                                                                      <div class="nwgncy-finder-slider-container">
+                                                                           <div class="nwgncy-finder-slider-track"></div>
+                                                                           <input type="range" min="0" max="1" value="0" class="nwgncy-finder-slider-1" step="1">
+                                                                           <input type="range" min="0" max="1" value="1" class="nwgncy-finder-slider-2" step="1">
+
+                                                                           <div class="nwgncy-finder-slider-buttons">
+                                                                                <span data-value="0"></span>
+                                                                                <span data-value="1"></span>
+                                                                           </div>
+
+                                                                           <datalist class="nwgncy-finder-slider-number">
+                                                                                <option value="-"></option>
+                                                                                <option value="-"></option>
+                                                                           </datalist>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="field js-product-finder-property-option-group-field js-product-finder-property-option-group-slider-field" style="display: none;">
+                                                            <label class="property-group-label">
+                                                                 <span>Property group 4
+                                                                      <span class="icon icon-arrow-medium-down icon-xs">
+                                                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewbox="0 0 16 16">
+                                                                                <use xlink:href="#icons-solid-arrow-medium-down" fill="#758CA3" fill-rule="evenodd"></use>
+                                                                           </svg>
+                                                                      </span>
+                                                                 </span>
+                                                            </label>
+                                                            <div class="dropdown-content slider">
+                                                                 <div class="min-max">
+                                                                      <div class="nwgncy-finder-slider-values">
+                                                                           <div class="nwgncy-finder-slider-range1" style="order: 1;">-</div>
+                                                                           <div class="nwgncy-finder-slider-dash" style="order: 2;">
+                                                                                ‐
+                                                                           </div>
+                                                                           <div class="nwgncy-finder-slider-range2" style="order: 3;">-</div>
+                                                                           <div class="nwgncy-finder-slider-unit">
+                                                                                -
+                                                                           </div>
+                                                                      </div>
+                                                                      <div class="nwgncy-finder-slider-container">
+                                                                           <div class="nwgncy-finder-slider-track"></div>
+                                                                           <input type="range" min="0" max="0" value="0" class="nwgncy-finder-slider-1" step="1">
+                                                                           <input type="range" min="0" max="0" value="0" class="nwgncy-finder-slider-2" step="1">
+
+                                                                           <div class="nwgncy-finder-slider-buttons">
+                                                                                <span data-value="0"></span>
+                                                                           </div>
+
+                                                                           <datalist class="nwgncy-finder-slider-number">
+                                                                                <option value="8"></option>
+                                                                           </datalist>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <button class="btn btn-primary js-btn-find-products" type="button" data-target-lang="en-GB">
+                                                  <span class="btn-label">Find Products</span>
+                                             </button>
+                                        </div>
+                                   </form>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+{% endblock %}

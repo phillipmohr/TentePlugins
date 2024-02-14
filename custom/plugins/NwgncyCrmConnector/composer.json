@@ -1,0 +1,22 @@
+{
+  "name": "nwgncy/crm-connector",
+  "description": "Tente CRM Connector | By Newwwagency",
+  "type": "shopware-platform-plugin",
+  "license": "proprietary",
+  "version": "1.2.2",
+  "autoload": {
+    "psr-4": {
+      "Nwgncy\\CrmConnector\\": "src/"
+    }
+  },
+  "require" : {
+    "nimbits/nimbits-priceonrequest": ">=2.4.4"
+  },
+  "extra": {
+    "shopware-plugin-class": "Nwgncy\\CrmConnector\\NwgncyCrmConnector",
+    "label": {
+      "de-DE": "Tente CRM Connector | By Newwwagency",
+      "en-GB": "Tente CRM Connector | By Newwwagency"
+    }
+  }
+}
