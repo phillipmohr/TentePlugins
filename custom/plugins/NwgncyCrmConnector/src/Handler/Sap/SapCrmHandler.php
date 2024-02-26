@@ -43,18 +43,18 @@ class SapCrmHandler extends CrmHandlerBase
                $response = $httpClientInterface->request($method, $url, $options);
 
 
-               // $responseStatusCode = $response->getStatusCode();
-               // $responseContent = $response->getContent();
-               // $responseHeaders = $response->getHeaders();
-               // $responseInfo = $response->getInfo();
-   // 
-               // dd([
-               //     "CRM" => 'Dynamics',
-               //     "status" => $responseStatusCode,
-               //     "content" => $responseContent,
-               //     "headers" => $responseHeaders,
-               //     "info" => $responseInfo
-               // ]);
+            //    $responseStatusCode = $response->getStatusCode();
+            //    $responseContent = $response->getContent();
+            //    $responseHeaders = $response->getHeaders();
+            //    $responseInfo = $response->getInfo();
+   
+            //    dd([
+            //        "CRM" => 'Dynamics',
+            //        "status" => $responseStatusCode,
+            //        "content" => $responseContent,
+            //        "headers" => $responseHeaders,
+            //        "info" => $responseInfo
+            //    ]);
                
                $crmResponse = $this->createCrmResponse($response);
 

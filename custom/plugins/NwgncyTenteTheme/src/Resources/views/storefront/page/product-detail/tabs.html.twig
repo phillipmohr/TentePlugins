@@ -2,8 +2,34 @@
 
 
 {% block page_product_detail_tabs_inner %}
+            {% set tentePerformanceTab = false %}
+            {% set tenteHousingTab = false %}
+            {% set tenteFittingTab = false %}
+            {% set tenteWheelTab = false %}
+
+            {% for group in page.product.sortedProperties %}
+                {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'performance' %}
+                        {% set tentePerformanceTab = true %}
+                {% endif %}
+
+                {% if group.translated.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'housing' %}
+                        {% set tenteHousingTab = true %}
+                {% endif %}
+
+                {% if group.translated.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'fitting' %}
+                        {% set tenteFittingTab = true %}
+                {% endif %}
+
+                {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'wheel' %}
+                        {% set tenteWheelTab = true %}
+                {% endif %}
+
+            {% endfor %}
     <div class="card card-tabs">
         {% block page_product_detail_tabs_navigation %}
+
+
+
             <div class="card-header product-detail-tab-navigation">
                 {% block page_product_detail_tabs_navigation_container %}
                     <ul class="nav nav-tabs product-detail-tab-navigation-list"
@@ -11,112 +37,135 @@
                         role="tablist">
                         {% block page_product_detail_tabs_navigation_description %}{% endblock %}
                         {% block page_product_detail_tabs_navigation_downloads %}
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %} product-detail-tab-navigation-link"
-                                    id="tab-downloads"
-                                    data-bs-toggle="tab"
-                                    href="#tab-downloads-pane"
-                                    role="tab"
-                                    aria-controls="tab-downloads-pane"
-                                    aria-selected="true"
-                                >
-                                    <span>{{ "detail.tabs.downloads"|trans|sw_sanitize }}</span>
-                                    <span class="product-detail-tab-navigation-icon">
-                                        {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
-                                    </span>
-                                </a>
-                            </li>
+
+                            {% if page.product.extensions.acrisDownloadTabs.elements %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %} product-detail-tab-navigation-link"
+                                        id="tab-downloads"
+                                        data-bs-toggle="tab"
+                                        href="#tab-downloads-pane"
+                                        role="tab"
+                                        aria-controls="tab-downloads-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.tabs.downloads"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
                         {% endblock %}
                         {% block page_product_detail_tabs_features %}
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link product-detail-tab-navigation-link"
-                                    id="tab-features"
-                                    data-bs-toggle="tab"
-                                    href="#tab-features-pane"
-                                    role="tab"
-                                    aria-controls="tab-features-pane"
-                                    aria-selected="true"
-                                >
-                                    <span>{{ "detail.tabs.features"|trans|sw_sanitize }}</span>
-                                    <span class="product-detail-tab-navigation-icon">
-                                        {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
-                                    </span>
-                                </a>
-                            </li>
+
+                            {% if page.product.translated.customFields["product_data_feature_1_title"] is defined 
+                                or page.product.translated.customFields["product_data_feature_2_title"] is defined
+                                or page.product.translated.customFields["product_data_feature_3_title"] is defined
+                                or page.product.translated.customFields["product_data_feature_4_title"] is defined
+                                or page.product.translated.customFields["product_data_feature_5_title"] is defined %}
+
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="tab-features"
+                                        data-bs-toggle="tab"
+                                        href="#tab-features-pane"
+                                        role="tab"
+                                        aria-controls="tab-features-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.tabs.features"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
                         {% endblock %}
                         {% block page_product_detail_tabs_navigation_performance %}
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link product-detail-tab-navigation-link"
-                                    id="tab-performance"
-                                    data-bs-toggle="tab"
-                                    href="#tab-performance-pane"
-                                    role="tab"
-                                    aria-controls="tab-performance-pane"
-                                    aria-selected="true"
-                                >
-                                    <span>{{ "detail.tabs.performance"|trans|sw_sanitize }}</span>
-                                    <span class="product-detail-tab-navigation-icon">
-                                        {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
-                                    </span>
-                                </a>
-                            </li>
+
+                            {% if tentePerformanceTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="tab-performance"
+                                        data-bs-toggle="tab"
+                                        href="#tab-performance-pane"
+                                        role="tab"
+                                        aria-controls="tab-performance-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.tabs.performance"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+
+                            {% endif %}
                         {% endblock %}
                         {% block page_product_detail_tabs_navigation_technical_data_housing %}
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link product-detail-tab-navigation-link"
-                                    id="technical-data-housing"
-                                    data-bs-toggle="tab"
-                                    href="#technical-data-housing-pane"
-                                    role="tab"
-                                    aria-controls="technical-data-housing-pane"
-                                    aria-selected="true"
-                                >
-                                    <span>{{ "detail.properties.housing"|trans|sw_sanitize }}</span>
-                                    <span class="product-detail-tab-navigation-icon">
-                                        {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
-                                    </span>
-                                </a>
-                            </li>
+
+                            {% if tenteHousingTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="technical-data-housing"
+                                        data-bs-toggle="tab"
+                                        href="#technical-data-housing-pane"
+                                        role="tab"
+                                        aria-controls="technical-data-housing-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.properties.housing"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
                         {% endblock %}
                         {% block page_product_detail_tabs_navigation_technical_data_wheel %}
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link product-detail-tab-navigation-link"
-                                    id="technical-data-wheel"
-                                    data-bs-toggle="tab"
-                                    href="#technical-data-wheel-pane"
-                                    role="tab"
-                                    aria-controls="technical-data-wheel-pane"
-                                    aria-selected="true"
-                                >
-                                    <span>{{ "detail.properties.wheel"|trans|sw_sanitize }}</span>
-                                    <span class="product-detail-tab-navigation-icon">
-                                        {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
-                                    </span>
-                                </a>
-                            </li>
+                            {% if tenteWheelTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="technical-data-wheel"
+                                        data-bs-toggle="tab"
+                                        href="#technical-data-wheel-pane"
+                                        role="tab"
+                                        aria-controls="technical-data-wheel-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.properties.wheel"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
                         {% endblock %}
                         {% block page_product_detail_tabs_navigation_technical_data_fitting %}
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link product-detail-tab-navigation-link"
-                                    id="technical-data-fitting"
-                                    data-bs-toggle="tab"
-                                    href="#technical-data-fitting-pane"
-                                    role="tab"
-                                    aria-controls="technical-data-fitting-pane"
-                                    aria-selected="true"
-                                >
-                                    <span>{{ "detail.properties.fitting"|trans|sw_sanitize }}</span>
-                                    <span class="product-detail-tab-navigation-icon">
-                                        {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
-                                    </span>
-                                </a>
-                            </li>
+
+                            {% if tenteFittingTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="technical-data-fitting"
+                                        data-bs-toggle="tab"
+                                        href="#technical-data-fitting-pane"
+                                        role="tab"
+                                        aria-controls="technical-data-fitting-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.properties.fitting"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
                         {% endblock %}
                     </ul>
                 {% endblock %}
@@ -130,26 +179,34 @@
                         {% block page_product_detail_tabs_content_description %} {% endblock %}
 
                         {% block page_product_detail_tabs_content_downloads %}
-                            <div class="accordion-item nav-item">
-                                <button class="nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#tab-downloads-pane" aria-expanded="true" aria-controls="tab-downloads-pane">
-                                    <span>{{ "detail.tabs.downloads"|trans|sw_sanitize }}</span>
-                                    <span class="icon-accordion-detail icon-open-select">
-                                        {% sw_icon 'arrow-head-down' %}
-                                    </span>
-                                    <span class="icon-accordion-detail icon-close-select">
-                                        {% sw_icon 'arrow-head-up' %}
-                                    </span>
-                                </button>
-                                <div class="tab-pane collapse fade show {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
-                                     id="tab-downloads-pane"
-                                     role="tabpanel"
-                                     data-bs-parent="#accordionMobile"
-                                     aria-labelledby="tab-downloads">
-                                    {% sw_include '@Storefront/storefront/page/product-detail/tabs/downloads.html.twig' %}
+                            {% if page.product.extensions.acrisDownloadTabs.elements %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#tab-downloads-pane" aria-expanded="true" aria-controls="tab-downloads-pane">
+                                        <span>{{ "detail.tabs.downloads"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade show {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="tab-downloads-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="tab-downloads">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/downloads.html.twig' %}
+                                    </div>
                                 </div>
-                            </div>
+                            {% endif %}
                         {% endblock %}
                         {% block page_product_detail_tabs_content_features %}
+
+                        {% if page.product.translated.customFields["product_data_feature_1_title"] is defined 
+                            or page.product.translated.customFields["product_data_feature_2_title"] is defined
+                            or page.product.translated.customFields["product_data_feature_3_title"] is defined
+                            or page.product.translated.customFields["product_data_feature_4_title"] is defined
+                            or page.product.translated.customFields["product_data_feature_5_title"] is defined %}
                             <div class="accordion-item nav-item">
                                 <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tab-features-pane" aria-expanded="true" aria-controls="tab-features-pane">
                                     <span>{{ "detail.tabs.features"|trans|sw_sanitize }}</span>
@@ -168,86 +225,99 @@
                                     {% sw_include '@Storefront/storefront/page/product-detail/tabs/features.html.twig' %}
                                 </div>
                             </div>
+
+                            {% endif %}
                         {% endblock %}
                         {% block page_product_detail_tabs_content_performance %}
-                            <div class="accordion-item nav-item">
-                                <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tab-performance-pane" aria-expanded="true" aria-controls="tab-performance-pane">
-                                    <span>{{ "detail.tabs.performance"|trans|sw_sanitize }}</span>
-                                    <span class="icon-accordion-detail icon-open-select">
-                                        {% sw_icon 'arrow-head-down' %}
-                                    </span>
-                                    <span class="icon-accordion-detail icon-close-select">
-                                        {% sw_icon 'arrow-head-up' %}
-                                    </span>
-                                </button>
-                                <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
-                                     id="tab-performance-pane"
-                                     role="tabpanel"
-                                     data-bs-parent="#accordionMobile"
-                                     aria-labelledby="tab-performance">
-                                    {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/performance.html.twig' %}
+
+
+                            {% if tentePerformanceTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tab-performance-pane" aria-expanded="true" aria-controls="tab-performance-pane">
+                                        <span>{{ "detail.tabs.performance"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="tab-performance-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="tab-performance">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/performance.html.twig' %}
+                                    </div>
                                 </div>
-                            </div>
+                            {% endif %}
                         {% endblock %}
                         {% block page_product_detail_tabs_content_technical_data_housing %}
-                            <div class="accordion-item nav-item">
-                                <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-housing-pane" aria-expanded="true" aria-controls="technical-data-housing-pane">
-                                    <span>{{ "detail.properties.housing"|trans|sw_sanitize }}</span>
-                                    <span class="icon-accordion-detail icon-open-select">
-                                        {% sw_icon 'arrow-head-down' %}
-                                    </span>
-                                    <span class="icon-accordion-detail icon-close-select">
-                                        {% sw_icon 'arrow-head-up' %}
-                                    </span>
-                                </button>
-                                <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
-                                     id="technical-data-housing-pane"
-                                     role="tabpanel"
-                                     data-bs-parent="#accordionMobile"
-                                     aria-labelledby="technical-data-housing-pane">
-                                    {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/housing.html.twig' %}
+
+                            {% if tenteHousingTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-housing-pane" aria-expanded="true" aria-controls="technical-data-housing-pane">
+                                        <span>{{ "detail.properties.housing"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="technical-data-housing-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="technical-data-housing-pane">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/housing.html.twig' %}
+                                    </div>
                                 </div>
-                            </div>
+                            {% endif %}
                         {% endblock %}
                         {% block page_product_detail_tabs_content_technical_data_wheel %}
-                            <div class="accordion-item nav-item">
-                                <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-wheel-pane" aria-expanded="true" aria-controls="technical-data-wheel-pane">
-                                    <span>{{ "detail.properties.wheel"|trans|sw_sanitize }}</span>
-                                    <span class="icon-accordion-detail icon-open-select">
-                                        {% sw_icon 'arrow-head-down' %}
-                                    </span>
-                                    <span class="icon-accordion-detail icon-close-select">
-                                        {% sw_icon 'arrow-head-up' %}
-                                    </span>
-                                </button>
-                                <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
-                                     id="technical-data-wheel-pane"
-                                     role="tabpanel"
-                                     data-bs-parent="#accordionMobile"
-                                     aria-labelledby="technical-data-wheel-pane">
-                                    {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/wheel.html.twig' %}
+                            {% if tenteWheelTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-wheel-pane" aria-expanded="true" aria-controls="technical-data-wheel-pane">
+                                        <span>{{ "detail.properties.wheel"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="technical-data-wheel-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="technical-data-wheel-pane">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/wheel.html.twig' %}
+                                    </div>
                                 </div>
-                            </div>
+                            {% endif %}
                         {% endblock %}
                         {% block page_product_detail_tabs_content_technical_data_fitting %}
-                            <div class="accordion-item nav-item">
-                                <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-fitting-pane" aria-expanded="true" aria-controls="technical-data-fitting-pane">
-                                    <span>{{ "detail.properties.fitting"|trans|sw_sanitize }}</span>
-                                    <span class="icon-accordion-detail icon-open-select">
-                                        {% sw_icon 'arrow-head-down' %}
-                                    </span>
-                                    <span class="icon-accordion-detail icon-close-select">
-                                        {% sw_icon 'arrow-head-up' %}
-                                    </span>
-                                </button>
-                                <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
-                                     id="technical-data-fitting-pane"
-                                     role="tabpanel"
-                                     data-bs-parent="#accordionMobile"
-                                     aria-labelledby="technical-data-fitting-pane">
-                                    {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/fitting.html.twig' %}
+                            {% if tenteFittingTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-fitting-pane" aria-expanded="true" aria-controls="technical-data-fitting-pane">
+                                        <span>{{ "detail.properties.fitting"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="technical-data-fitting-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="technical-data-fitting-pane">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/fitting.html.twig' %}
+                                    </div>
                                 </div>
-                            </div>
+                            {% endif %}
                         {% endblock %}
                     </div>
                 {% endblock %}

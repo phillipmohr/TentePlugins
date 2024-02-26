@@ -1,0 +1,302 @@
+{% sw_extends '@Storefront/storefront/component/pricerequest/modal.html.twig' %}
+
+
+{% block nb_priceonrequest_requestform_text %}
+     <div class="request-text tente-pricerequest-request-popup-text">
+          {{ 'nimbits-pricerequests.popup.text'|trans }}
+     </div><br>
+{% endblock %}
+
+{% block nb_priceonrequest_requestform_product %}
+     {% if config('NimbitsPriceOnRequestNext.config.nbporshowarticlesinrequestform') %}
+          <div class="request-product tente-pricerequest-request-product">
+          <div class="row request-product-title">
+               <div class="col">
+                    <b>{{ 'nimbits-pricerequests.popup.product'|trans }}</b>
+               </div>
+          </div>
+          <div class="row request-product-data border">
+               <div class="col nb_pricerequest_form_lineitems_div">
+               </div>
+          </div>
+          </div>
+     {% endif %}
+{% endblock %}
+
+{% block nb_priceonrequest_requestform_form %}
+     <template data-price-request-submit-loader></template>
+     <form class="needs-validation tente-pricerequest-modal-form"
+          method="post"
+          data-form-csrf-handler="true"
+          data-form-validation="true"
+          action="{{ path('frontend.action.nimbits.price-request-request') }}">
+
+          {% block nb_priceonrequest_requestform_loading_component %}
+               <div class="loading-component-container d-none">
+                    <div class="content">
+                         <h5>{{ "priceRequest.sendRequestText"|trans }}</h5>
+                         <div class="loading-spinner">
+                              {% sw_include '@Storefront/storefront/component/widgets/loading-spinner.html.twig' %}
+                         </div>
+                         <h5>{{ "priceRequest.waitText"|trans }}</h5>
+                    </div>
+               </div>
+          {% endblock %}
+          <div class="form-content">
+               <input type="hidden"
+                    value="{{ path('frontend.action.nimbits.price-request-customerdata') }}"
+                    id="nimbits-priconrequest-cdata-url">
+
+               <input name="nbpr_form_sourceurl" class="nbpr_form_sourceurl" type="hidden" value=""/>
+
+               {% block nb_priceonrequest_requestform_lineitems_input %}
+               <input name="nb_pricerequest_form_lineitems" type="hidden"/>
+               {% endblock %}
+
+               {% block nb_priceonrequest_requestform_salutation %}
+               <div class="row">
+                    <div class="col">
+                         <div class="form-group">
+                              <label for="priceOnRequestFormSalutation">{{ 'nimbits-pricerequests.popup.salutation'|trans }} {% if nbPorConfig.nbproformsettingsrequiredsalutation == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</label>
+                              <select name="nbpr_salutation" class="form-control"
+                                   id="priceOnRequestFormSalutation"
+                                   {% if config('NimbitsPriceOnRequestNext.config.nbproformsettingsrequiredsalutation') == true %} required{% endif %}>
+                                   <option value="">{{ 'nimbits-pricerequests.popup.salutation'|trans }} {% if nbPorConfig.nbproformsettingsrequiredsalutation == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</option>
+                                   <option>{{ 'nimbits-pricerequests.popup.genderw'|trans }}</option>
+                                   <option>{{ 'nimbits-pricerequests.popup.genderm'|trans }}</option>
+                                   <option>{{ 'nimbits-pricerequests.popup.gendern'|trans }}</option>
+                              </select>
+                         </div>
+                    </div>
+                    <div class="col">
+                         <div class="form-group">
+                              <label for="priceOnRequestFormCompany">{{ 'nimbits-pricerequests.popup.company'|trans }} {% if nbPorConfig.nbproformsettingsrequiredcompany == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</label>
+                              <input name="nbpr_company" type="text" class="form-control"
+                                   id="priceOnRequestFormCompany"
+                                   placeholder="{{ 'nimbits-pricerequests.popup.company'|trans }}" {% if nbPorConfig.nbproformsettingsrequiredcompany == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}"{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}" required{% endif %}
+                              {% if nbPorConfig.nbporautofillactive and customerData.company != null %} value="{{ customerData.company }}" {% endif %}
+                              >
+                         </div>
+                    </div>
+               </div>
+               {% endblock %}
+
+               {% block nb_priceonrequest_requestform_firstlastname %}
+               <div class="row">
+                    {% block nb_priceonrequest_requestform_firstname %}
+
+                         <div class="col">
+                              <div class="form-group">
+                                   <label for="priceOnRequestFormForename">{{ 'nimbits-pricerequests.popup.name'|trans }} {% if nbPorConfig.nbproformsettingsrequiredsfirstname == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</label>
+                                   <input name="nbpr_firstname" type="text" class="form-control"
+                                        id="priceOnRequestFormForename"
+                                        placeholder="{{ 'nimbits-pricerequests.popup.name'|trans }}" {% if nbPorConfig.nbproformsettingsrequiredsfirstname == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}"{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}" required{% endif %}
+                                        {% if nbPorConfig.nbporautofillactive and customerData.firstname != null %} value="{{ customerData.firstname}}" {% endif %}
+                                   >
+                              </div>
+                         </div>
+                    {% endblock %}
+                    {% block nb_priceonrequest_requestform_lastname %}
+                         <div class="col">
+                              <div class="form-group">
+                                   <label for="priceOnRequestFormSurname">{{ 'nimbits-pricerequests.popup.surname'|trans }} {% if nbPorConfig.nbproformsettingsrequiredlastname == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</label>
+                                   <input name="nbpr_surname" type="text" class="form-control"
+                                        id="priceOnRequestFormSurname"
+                                        placeholder="{{ 'nimbits-pricerequests.popup.surname'|trans }}" {% if nbPorConfig.nbproformsettingsrequiredlastname == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}"{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}" required{% endif %}
+                                        {% if nbPorConfig.nbporautofillactive and customerData.lastname != null %} value="{{ customerData.lastname}}" {% endif %}
+                                   >
+                              </div>
+                         </div>
+                    {% endblock %}
+               </div>
+               {% endblock %}
+               {% block nb_priceonrequest_requestform_phonemail %}
+               <div class="row">
+                    {% block nb_priceonrequest_requestform_phone %}
+                         {% if nbPorConfig.nbproformsettingsphoneactive %}
+                              <div class="col">
+                                   <div class="form-group">
+                                   <label for="priceOnRequestFormPhonenumber">{{ 'nimbits-pricerequests.popup.phonenumber'|trans }} {% if nbPorConfig.nbproformsettingsrequiredphonenumber == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</label>
+                                   <input type="tel" name="nbpr_phonenumber"
+                                             class="form-control"
+                                             id="priceOnRequestFormPhonenumber"
+                                             placeholder="{{ 'nimbits-pricerequests.popup.phonenumber'|trans }}" {% if nbPorConfig.nbproformsettingsrequiredphonenumber == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}"{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}" required{% endif %}
+                                   >
+                                   </div>
+                              </div>
+                         {% endif %}
+                    {% endblock %}
+                    {% block nb_priceonrequest_requestform_mail %}
+                         <div class="col">
+                              <div class="form-group">
+                                   <label for="priceOnRequestFormMail">{{ 'nimbits-pricerequests.popup.mail'|trans }} {% if nbPorConfig.nbproformsettingsrequiredemail == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</label>
+                                   <input name="nbpr_mail" type="email" class="form-control"
+                                        id="priceOnRequestFormMail"
+                                        placeholder="{{ 'nimbits-pricerequests.popup.mail'|trans }}" {% if nbPorConfig.nbproformsettingsrequiredemail == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}"{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}" required{% endif %}
+                                        {% if nbPorConfig.nbporautofillactive and customerData.email != null %} value="{{ customerData.email}}" {% endif %}
+                                   >
+                                   <div class="invalid-feedback">
+                                   {{ 'nimbits-pricerequests.popup.entervalidmail'|trans }}
+                                   </div>
+                              </div>
+                         </div>
+                    {% endblock %}
+               </div>
+               {% endblock %}
+
+               {% block nb_priceonrequest_requestform_address %}
+               {% if nbPorConfig.nbproformsettingsaddressactive %}
+                    {% block nb_priceonrequest_requestform_streethousenumber %}
+                         <div class="row">
+                              {% block nb_priceonrequest_requestform_street %}
+
+                                   <div class="col">
+                                   <div class="form-group">
+                                        <label for="priceOnRequestFormStreet">{{ 'nimbits-pricerequests.popup.street'|trans }} {% if nbPorConfig.nbproformsettingsrequiredaddress == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</label>
+                                        <input name="nbpr_street" type="text"
+                                                  class="form-control"
+                                                  id="priceOnRequestFormStreet"
+                                                  placeholder="{{ 'nimbits-pricerequests.popup.street'|trans }}" {% if nbPorConfig.nbproformsettingsrequiredaddress == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}"{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}" required{% endif %}
+                                                  {% if nbPorConfig.nbporautofillactive and customerData.address.street != null %} value="{{ customerData.address.street }}" {% endif %}
+                                        >
+                                        <div class="invalid-feedback">
+                                             {{ 'nimbits-pricerequests.popup.entervalidstreet'|trans }}
+                                        </div>
+                                   </div>
+                                   </div>
+                              {% endblock %}
+                              {% block nb_priceonrequest_requestform_housenumber %}
+                                   <div class="col">
+                                   <div class="form-group">
+                                        <label for="priceOnRequestFormHousenumber">{{ 'nimbits-pricerequests.popup.housenumber'|trans }} {% if nbPorConfig.nbproformsettingsrequiredaddress == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</label>
+                                        <input name="nbpr_housenumber" type="text"
+                                                  class="form-control"
+                                                  id="priceOnRequestFormHousenumber"
+                                                  placeholder="{{ 'nimbits-pricerequests.popup.housenumber'|trans }}" {% if nbPorConfig.nbproformsettingsrequiredaddress == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}"{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}" required{% endif %}
+                                                  {% if nbPorConfig.nbporautofillactive and customerData.address.housenumber != null %} value="{{ customerData.address.housenumber }}" {% endif %}
+                                        >
+                                        <div class="invalid-feedback">
+                                             {{ 'nimbits-pricerequests.popup.entervalidhousenumber'|trans }}
+                                        </div>
+                                   </div>
+                                   </div>
+                              {% endblock %}
+                         </div>
+                    {% endblock %}
+
+                    {% block nb_priceonrequest_requestform_zipcodecity %}
+                         <div class="row">
+                              {% block nb_priceonrequest_requestform_zipcode %}
+                                   <div class="col">
+                                   <div class="form-group">
+                                        <label for="priceOnRequestFormZipcode">{{ 'nimbits-pricerequests.popup.zipcode'|trans }} {% if nbPorConfig.nbproformsettingsrequiredaddress == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</label>
+                                        <input name="nbpr_zipcode" type="text"
+                                                  class="form-control"
+                                                  id="priceOnRequestFormZipcode"
+                                                  placeholder="{{ 'nimbits-pricerequests.popup.zipcode'|trans }}" {% if nbPorConfig.nbproformsettingsrequiredaddress == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}"{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}" required{% endif %}
+                                                  {% if nbPorConfig.nbporautofillactive and customerData.address.zipcode != null %} value="{{ customerData.address.zipcode }}" {% endif %}
+                                        >
+                                        <div class="invalid-feedback">
+                                             {{ 'nimbits-pricerequests.popup.entervalidzipcode'|trans }}
+                                        </div>
+                                   </div>
+                                   </div>
+                              {% endblock %}
+                              {% block nb_priceonrequest_requestform_city %}
+                                   <div class="col">
+                                   <div class="form-group">
+                                        <label for="priceOnRequestFormCity">{{ 'nimbits-pricerequests.popup.city'|trans }} {% if nbPorConfig.nbproformsettingsrequiredaddress == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</label>
+                                        <input name="nbpr_city" type="text" class="form-control"
+                                                  id="priceOnRequestFormCity"
+                                                  placeholder="{{ 'nimbits-pricerequests.popup.city'|trans }}" {% if nbPorConfig.nbproformsettingsrequiredaddress == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}"{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}" required{% endif %}
+                                                  {% if nbPorConfig.nbporautofillactive and customerData.address.city != null %} value="{{ customerData.address.city }}" {% endif %}
+                                        >
+                                        <div class="invalid-feedback">
+                                             {{ 'nimbits-pricerequests.popup.entervalidcity'|trans }}
+                                        </div>
+                                   </div>
+                                   </div>
+                              {% endblock %}
+                         </div>
+                    {% endblock %}
+
+                    {% block nb_priceonrequest_requestform_country %}
+                         <div class="form-group">
+                              <label for="priceOnRequestFormCountry">{{ 'nimbits-pricerequests.popup.country'|trans }} {% if nbPorConfig.nbproformsettingsrequiredaddress == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</label>
+                              <select name="nbpr_country" id="priceOnRequestFormCountry" class="form-control" {% if nbPorConfig.nbproformsettingsrequiredaddress %} required {% endif %}>
+                                   <option disabled="disabled" value="" selected="selected">
+                                   {{ "address.countryPlaceholder"|trans|sw_sanitize }}
+                                   </option>
+                                   {% for country in countries %}
+                                   <option value="{{ country.id }}" {% if nbPorConfig.nbporautofillactive and customerData.address.country != null and customerData.address.country == country.name %} selected {% endif %}>
+                                        {{ country.translated.name }}
+                                   </option>
+                                   {% endfor %}
+                              </select>
+                              <div class="invalid-feedback">
+                                   {{ 'nimbits-pricerequests.popup.entervalidcountry'|trans }}
+                              </div>
+                         </div>
+                    {% endblock %}
+               {% endif %}
+               {% endblock %}
+
+               {% if nbPorConfig.nbproformsettingsdesiredprice %}
+               {% block nb_priceonrequest_desired_price %}
+                    <div class="form-group">
+                         <label for="priceOnRequestDesiredPrice">{{ 'nimbits-pricerequests.popup.desiredprice'|trans }} {% if nbPorConfig.nbproformsettingsdesiredpricerequired == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</label>
+                         <input name="nbpr_desiredprice" type="number" min="0"
+                              class="form-control"
+                              id="priceOnRequestDesiredPrice"
+                              placeholder="{{ 'nimbits-pricerequests.popup.desiredprice'|trans }}{{ page.header.activeCurrency.symbol }} {{ page.header.activeCurrency.translated.name }}"
+                              {% if nbPorConfig.nbproformsettingsdesiredpricerequired == true %}required{% endif %}>
+                         <input name="nbpr_desiredpricecurrency" type="hidden"
+                              id="priceOnRequestDesiredPriceCurrrency"
+                              value="{{ page.header.activeCurrency.translated.name }}">
+                    </div>
+               {% endblock %}
+               {% endif %}
+
+               {% block nb_priceonrequest_requestform_comment %}
+               <div class="form-group d-none">
+                    <label for="priceOnRequestFormMessage">{{ 'nimbits-pricerequests.popup.request'|trans }} {% if nbPorConfig.nbproformsettingsrequiredcomment == false %}{{ 'nimbits-pricerequests.popup.optional'|trans }}{% else %}{{ 'nimbits-pricerequests.popup.required'|trans }}{% endif %}</label>
+                    <textarea name="nbpr_comment" class="form-control"
+                              id="priceOnRequestFormMessage" rows="3"
+                              {% if nbPorConfig.nbproformsettingsrequiredcomment == true %}required {% endif %}></textarea>
+               </div>
+               {% endblock %}
+
+               {% block nb_priceonrequest_requestform_dataprivacy %}
+               <div class="custom-control custom-checkbox nbpr-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="priceOnRequestCheck1" required>
+                    <label class="custom-control-label"
+                              for="priceOnRequestCheck1">{{ 'nimbits-pricerequests.popup.dataprivacytext'|trans|raw }}{{ 'nimbits-pricerequests.popup.required'|trans }}</label>
+               </div>
+
+                <div class="custom-control custom-checkbox nbpr-checkbox">
+                    <input type="checkbox" name="nbpr_newsletter" class="custom-control-input" id="priceOnRequestNewsletter">
+                    <label class="custom-control-label"
+                              for="priceOnRequestNewsletter">{{ 'priceRequest.newsletterText'|trans|raw }}</label>
+               </div>
+               <div class="form-group mt-2">
+                    {{ 'nimbits-pricerequests.popup.requiredtext'|trans }}
+               </div>
+               {% endblock %}
+
+               <input name="nbpr_deletecart" class="nbpr_deletecart" type="hidden" value="">
+
+               <input name="errorRoute" class="nb_por_error_route" type="hidden" value="">
+               <input name="error_route" class="nb_por_error_route" type="hidden" value="">
+
+               <input type="hidden" name="errorRoute" value="frontend.account.register.page">
+
+               {% sw_include '@Storefront/storefront/component/captcha/base.html.twig'  with { preCheck: true } %}
+
+               {% block nb_priceonrequest_requestform_buttons %}
+               <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary nimbits-requestprice-button">{{ 'nimbits-pricerequests.popup.requestbutton'|trans }}</button>
+               </div>
+               {% endblock %}
+          </div>
+     </form>
+{% endblock %}

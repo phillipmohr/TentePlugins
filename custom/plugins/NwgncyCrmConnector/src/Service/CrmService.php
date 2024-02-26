@@ -62,6 +62,7 @@ class CrmService
 
      public function processEvent(Event $event) {
           try {
+
                //defaults
                $crmRecord = new CrmRecord();
                $isValidEvent = false;
@@ -95,7 +96,15 @@ class CrmService
                               $crmRecord->setCallingWebsiteCountry($salesChannelCountryCode);
                          }
                     }
-                    $customer = $salesChannelContext->getCustomer();
+
+                    
+                    if($event->getCustomer() instanceof CustomerEntity) {
+                        $customer = $event->getCustomer();
+                    } else {
+                        
+                        $customer = $salesChannelContext->getCustomer();
+                        
+                    }
                     if ($customer instanceof CustomerEntity) {
                          $webRequestId = $this->formatWebrequestId($customer->getId());
                          $crmRecord->setWebrequestId($webRequestId);
@@ -533,10 +542,13 @@ class CrmService
           $crmRecord->setCadRequest('true');
           $state = "";
           $timestamp = time();
+          $fileName = null;
 
           $crmRecord->setDcTimestamp($this->dcTimestampFormatting($timestamp));
 
           $recordInformationMessage = 'CAD File downloaded = Yes'; //not sure
+          $recordInformationMessage .= "\n\n"; // New line
+          $recordInformationMessage .= 'File name : ' . $fileName; // Second variable
      
           $informationArr = $this->createRecordInformationArr($timestamp, $state, $recordInformationMessage);
           $information = implode("\r\n", $informationArr);

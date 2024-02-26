@@ -41,19 +41,24 @@ export default class CadDownloadPlugin extends Plugin {
 
     changeFileFormat() {
         const tentePdfBtn = document.querySelector(this.options.tentePdfBtn);
-        tentePdfBtn.addEventListener('click', (event) => {
-            event.preventDefault();
-            this.changeFileType('PDF');
-            this.showPdfForm();
-            this.hideStpForm();
-        });
+        if(tentePdfBtn) {
+            tentePdfBtn.addEventListener('click', (event) => {
+                event.preventDefault();
+                this.changeFileType('PDF');
+                this.showPdfForm();
+                this.hideStpForm();
+            });
+        }
 
         const tenteStpBtn = document.querySelector(this.options.tenteStpBtn);
-        tenteStpBtn.addEventListener('click', (event) => {
-            event.preventDefault();
-            this.changeFileType('STEP-2.14');
-            this.showStpForm();
-            this.hidePdfForm();
-        });
+
+        if(tenteStpBtn) {
+            tenteStpBtn.addEventListener('click', (event) => {
+                event.preventDefault();
+                this.changeFileType('STEP-2.14');
+                this.showStpForm();
+                this.hidePdfForm();
+            });
+        }
     }
 }

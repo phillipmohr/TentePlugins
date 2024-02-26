@@ -98,5 +98,10 @@
     },
     "contact": {
         "newsletterSubscribe": "I hereby agree that TENTE may also inform me via e-mail and telephone about products and events (eg trade fair appearances) of TENTE."
+    },
+    "priceRequest": {
+        "waitText": "Please wait...",
+        "sendRequestText": "Request will be transmitted...",
+        "newsletterText": "I hereby agree that TENTE may also inform me via e-mail and telephone about products and events (eg trade fair appearances) of TENTE."
     }
 }

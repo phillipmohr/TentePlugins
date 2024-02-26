@@ -1,0 +1,28 @@
+.tente-pricerequest-modal-form {
+     position: relative;
+     .loading-component-container {
+          display: flex;
+          min-height: 350px;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          .content {
+               position: absolute;
+               top: calc(50% - 40px);
+               left: 50%;
+               transform: translate(-50%, -50%);
+               z-index: 999;
+               padding: 5px;
+               width: 100%;
+               h5 {
+                    text-align: center;
+                    font-size: 18px;
+                    margin-bottom: 15px;
+               }
+               .loading-spinner {
+                    margin-bottom: 15px;
+               }
+          }
+     }
+}

@@ -97,5 +97,10 @@
     },
     "contact": {
         "newsletterSubscribe": "Hiermit stimme ich zu, dass TST mich auch per E-Mail und Telefon über Produkte und Veranstaltungen (z. B. Messeauftritte) von TST informieren darf."
+    },
+    "priceRequest": {
+        "waitText": "Bitte warten...",
+        "sendRequestText": "Die Anfrage wird übermittelt...",
+        "newsletterText": "Hiermit willige ich ein, dass TENTE mich über Produkte und Veranstaltungen (z.B. Messeauftritte) von TENTE informieren darf. Sie können Ihre Einwilligung jederzeit ohne Angaben von Gründen uns gegenüber widerrufen."
     }
 }

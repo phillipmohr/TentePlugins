@@ -31,6 +31,7 @@
                 </div>
             {% endblock %}
         </div>
+
         <div class="col-md-4" data-cad-download="true">
             {% block page_product_detail_properties_container_cad %}
                 <h4 class="product-detail-properties-title">{{ "detail.cadService.title"|trans }}</h4>
@@ -39,7 +40,7 @@
 
                 {% if not context.customer %}
                 <p>{{ "detail.cadService.login"|trans({
-                '%url%':path('frontend.account.login.page')})|raw 
+                '%url%':path('frontend.account.login.page', { redirectTo: app.request.attributes.get('_route'), redirectParameters: { productId: page.product.id } })})|raw 
                 }}</p>
                 {% else %}
 
@@ -76,28 +77,46 @@
                         {% endfor %}
                     {% endif %}
 
-                    <div class="tente-downloads-btn-group btn-group mb-3" role="group">
-                            <button id="btnGroupDrop1" type="button" class="btn btn-primary tente-downloads-dropdown-toggle dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            {{ "detail.cadService.fileFormatplaceholder"|trans }}
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                <li><a class="dropdown-item tente-downloads-pdf-btn" href="#">{{ "detail.cadService.fileFormatPdf"|trans }}</a></li>
-                                <li><a class="dropdown-item tente-downloads-stp-btn" href="#">{{ "detail.cadService.fileFormatStep"|trans }}</a></li>
-                            </ul>
-                    </div>
+
+                    {% if cadPdfFile or cadStpFile %}
+
+                        <div class="tente-downloads-btn-group btn-group mb-3" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-primary tente-downloads-dropdown-toggle dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                {{ "detail.cadService.fileFormatplaceholder"|trans }}
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                {% if cadPdfFile %}
+                                    <li><a class="dropdown-item tente-downloads-pdf-btn" href="#">{{ "detail.cadService.fileFormatPdf"|trans }}</a></li>
+                                {% endif %}
+                                {% if cadStpFile %}
+                                    <li><a class="dropdown-item tente-downloads-stp-btn" href="#">{{ "detail.cadService.fileFormatStep"|trans }}</a></li>
+                                {% endif %}
+                                </ul>
+                        </div>
+                    {% endif %}
+
+                    
 
                     <form class="tente-downloads-form tente-pdf-downloads-form d-none" method="post" action="{{ path('storefront.cad-download.pdf.post') }}">
                     <input type="hidden" name="productId" value="{{ page.product.id }}" />
+                    <input type="hidden" name="customerId" value="{{ context.customer.id }}" />
+                    <input type="hidden" name="cadFileUrl" value="{{ cadPdfFile }}" />
+                    {% if cadPdfFile %}
                         <div class="tente-downloads-btn">
-                        <a class="btn btn-block btn-primary" href="{{ cadPdfFile }}" target="_blank">{{ "detail.cadService.downloadBtn"|trans }}</a>
+                        <button class="btn btn-block btn-primary" type="submit">{{ "detail.cadService.downloadBtn"|trans }}</a>
                         </div>
+                    {% endif %}
                     </form>
 
                     <form class="tente-downloads-form tente-stp-downloads-form d-none" method="post" action="{{ path('storefront.cad-download.stp.post') }}">
                     <input type="hidden" name="productId" value="{{ page.product.id }}" />
+                    <input type="hidden" name="customerId" value="{{ context.customer.id }}" />
+                    <input type="hidden" name="cadFileUrl" value="{{ cadStpFile }}" />
+                    {% if cadStpFile %}
                         <div class="tente-downloads-btn">
-                        <a class="btn btn-block btn-primary" href="{{ cadStpFile }}" target="_blank">{{ "detail.cadService.downloadBtn"|trans }}</a>
+                        <button class="btn btn-block btn-primary" type="submit">{{ "detail.cadService.downloadBtn"|trans }}</a>
                         </div>
+                    {% endif %}
                     </form>
 
                 {% endif %}

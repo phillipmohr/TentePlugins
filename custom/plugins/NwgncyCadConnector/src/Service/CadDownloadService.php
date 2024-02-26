@@ -156,7 +156,7 @@ class CadDownloadService
         $options['auth_basic'] = "$endpointUsername:$endpointPassword";
         $options['verify_peer'] = false;
         $response = $this->client->request('GET', $url, $options);
-        dd($response);
+        // dd($response);
 
 
         return $response->getBody()->getContents();
