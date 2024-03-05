@@ -390,6 +390,7 @@ class CrmService
           $state = "";
           $currentTimestamp = time();
           $crmRecord->setTenteQuoteRequest('false');
+          $crmRecord->setTenteFreeTextRequest('true');
 
           if (array_key_exists('firstName', $contactFormData) && is_string($firstName = $contactFormData['firstName'])) {
                $crmRecord->setFirstname($firstName);
@@ -425,7 +426,7 @@ class CrmService
                //might be useful
           }
           if (array_key_exists('comment', $contactFormData) && is_string($comment = $contactFormData['comment'])) {
-               //might be useful
+               $crmRecord->setInformation($comment);
           }
           if (array_key_exists('salutation', $contactFormData) && is_string($salutation = $contactFormData['salutation'])) {
                //might be useful
@@ -433,12 +434,12 @@ class CrmService
 
           $crmRecord->setDcTimestamp($this->dcTimestampFormatting($currentTimestamp));
 
-          $recordInformationMessage = 'Contact message sent = Yes'; //not sure
+        //   $recordInformationMessage = 'Contact message sent = Yes'; 
      
-          $informationArr = $this->createRecordInformationArr($currentTimestamp, $state, $recordInformationMessage);
-          $information = implode("\r\n", $informationArr);
+        //   $informationArr = $this->createRecordInformationArr($currentTimestamp, $state, $recordInformationMessage);
+        //   $information = implode("\r\n", $informationArr);
 
-          $crmRecord->setInformation($information);
+        //   $crmRecord->setInformation($information);
 
           return $crmRecord;
      }
