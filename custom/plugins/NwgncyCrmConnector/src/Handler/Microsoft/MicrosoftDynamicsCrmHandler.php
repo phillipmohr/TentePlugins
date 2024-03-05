@@ -20,6 +20,7 @@ class MicrosoftDynamicsCrmHandler extends CrmHandlerBase
             $cadEndpoint = $this->systemConfigService->get('NwgncyCrmConnector.config.microsoftDynamicsCadEndpoint');
             $url = $requestLeadEndpoint;
 
+
             if ($record->getCadRequest() == 'true') {
                 $url = $cadEndpoint;
             }
@@ -40,6 +41,20 @@ class MicrosoftDynamicsCrmHandler extends CrmHandlerBase
             } else {
                 $this->logCrmError(SELF::CRM_NAME, new Exception($crmResponse->getMessage(), $response->getStatusCode()), $record);
             }
+
+            // $responseStatusCode = $response->getStatusCode();
+            // $responseContent = $response->getContent();
+            // $responseHeaders = $response->getHeaders();
+            // $responseInfo = $response->getInfo();
+
+
+            // dd([
+            //     "CRM" => 'Dynamics',
+            //     "status" => $responseStatusCode,
+            //     "content" => $responseContent,
+            //     "headers" => $responseHeaders,
+            //     "info" => $responseInfo
+            // ]);
 
 
 

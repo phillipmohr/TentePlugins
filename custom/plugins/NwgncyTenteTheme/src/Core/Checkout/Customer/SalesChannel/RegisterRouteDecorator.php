@@ -156,8 +156,8 @@ class RegisterRouteDecorator extends AbstractRegisterRoute
         $this->customerRepository->upsert([[
             'id' => $customer['id'],
             'customFields' => [
-                'homepage' => $data->get('homepage'),
-                'fax' => $data->get('fax')
+                'customer_homepage' => $data->get('homepage'),
+                'customer_fax' => $data->get('fax')
             ]
         ]], $context->getContext());
 

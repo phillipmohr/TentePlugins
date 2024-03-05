@@ -22,11 +22,20 @@ class CadDownloadController extends StorefrontController
     }
 
 
-    #[Route(path: '/cad-download/pdf', name: 'storefront.cad-download.pdf.post', methods: ['POST'], defaults: ['XmlHttpRequest' => true])]
+    #[Route(path: '/cad-download/pdf', name: 'storefront.cad-download.pdf.post', methods: ['POST'], defaults: ['XmlHttpRequest' => true, 'auth_required' => true])]
     public function downloadPdfFile(Request $request, SalesChannelContext $salesChannelContext)
     {
         $cadUrl = $request->get('cadFileUrl');
         $customerId = $request->get('customerId');
+
+        $productId = $request->get('productId');
+        $productEan = $request->get('productEan');
+        $fileFormat = 'pdf';
+        $data = [
+            "format" => $fileFormat,
+            "productNumber" => $productId,
+            "productEan" => $productEan
+        ];
 
         $criteria = new Criteria([$customerId]);
         $criteria->addAssociation('addresses');
@@ -43,10 +52,11 @@ class CadDownloadController extends StorefrontController
 
         $event = new CadFileDownloadEvent(
             $salesChannelContext,
-            $customerEntity
+            $customerEntity,
+            $data
        );
 
-       
+      
        $this->eventDispatcher->dispatch(
             $event
        );
@@ -64,12 +74,21 @@ class CadDownloadController extends StorefrontController
     }
 
 
-    #[Route(path: '/cad-download/stp', name: 'storefront.cad-download.stp.post', methods: ['POST'], defaults: ['XmlHttpRequest' => true])]
+    #[Route(path: '/cad-download/stp', name: 'storefront.cad-download.stp.post', methods: ['POST'], defaults: ['XmlHttpRequest' => true, 'auth_required' => true])]
     public function downloadStpFile(Request $request, SalesChannelContext $salesChannelContext)
     {
 
         $cadUrl = $request->get('cadFileUrl');
         $customerId = $request->get('customerId');
+
+        $productId = $request->get('productId');
+        $productEan = $request->get('productEan');
+        $fileFormat = 'step';
+        $data = [
+            "format" => $fileFormat,
+            "productNumber" => $productId,
+            "productEan" => $productEan
+        ];
 
         $criteria = new Criteria([$customerId]);
         $criteria->addAssociation('addresses');
@@ -86,7 +105,8 @@ class CadDownloadController extends StorefrontController
         
         $event = new CadFileDownloadEvent(
             $salesChannelContext,
-            $customerEntity
+            $customerEntity,
+            $data
        );
 
        $this->eventDispatcher->dispatch(

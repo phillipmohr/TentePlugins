@@ -6,6 +6,16 @@
             {% set tenteHousingTab = false %}
             {% set tenteFittingTab = false %}
             {% set tenteWheelTab = false %}
+            {% set tenteAwardsTab = false %}
+            {% set tenteCoreAttributesTab = false %}
+            {% set tenteDriveUnitTab = false %}
+            {% set tenteControlUnitTab = false %}
+            {% set tenteHandleSetTab = false %}
+            {% set tenteMountingKitForHandlesTab = false %}
+            {% set tenteBatteryTab = false %}
+            {% set tenteBatteryHolderTab = false %}
+            {% set tenteBatteryChargerTab = false %}
+            {% set tenteBatteryCableTab = false %}
 
             {% for group in page.product.sortedProperties %}
                 {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'performance' %}
@@ -22,6 +32,37 @@
 
                 {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'wheel' %}
                         {% set tenteWheelTab = true %}
+                {% endif %}
+
+                {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'awards' %}
+                        {% set tenteAwardsTab = true %}
+                {% endif %}
+                {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'coreAttributes' %}
+                        {% set tenteCoreAttributesTab = true %}
+                {% endif %}
+                {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'driveUnit' %}
+                        {% set tenteDriveUnitTab = true %}
+                {% endif %}
+                {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'controlUnit' %}
+                        {% set tenteControlUnitTab = true %}
+                {% endif %}
+                {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'handleSet' %}
+                        {% set tenteHandleSetTab = true %}
+                {% endif %}
+                {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'mountingKitForHandles' %}
+                        {% set tenteMountingKitForHandlesTab = true %}
+                {% endif %}
+                {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'battery' %}
+                        {% set tenteBatteryTab = true %}
+                {% endif %}
+                {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'batteryHolder' %}
+                        {% set tenteBatteryHolderTab = true %}
+                {% endif %}
+                {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'batteryCharger' %}
+                        {% set tenteBatteryChargerTab = true %}
+                {% endif %}
+                {% if group.customFields.custom_technical_data_type is defined and group.customFields.custom_technical_data_type == 'batteryCable' %}
+                        {% set tenteBatteryCableTab = true %}
                 {% endif %}
 
             {% endfor %}
@@ -160,6 +201,216 @@
                                         aria-selected="true"
                                     >
                                         <span>{{ "detail.properties.fitting"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_technical_data_awards %}
+
+                            {% if tenteAwardsTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="technical-data-awards"
+                                        data-bs-toggle="tab"
+                                        href="#technical-data-awards-pane"
+                                        role="tab"
+                                        aria-controls="technical-data-awards-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.properties.awards"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_technical_data_core_attributes %}
+
+                            {% if tenteCoreAttributesTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="technical-data-core-attributes"
+                                        data-bs-toggle="tab"
+                                        href="#technical-data-coreAttributes-pane"
+                                        role="tab"
+                                        aria-controls="technical-data-core-attributes-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.properties.coreAttributes"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_technical_data_drive_unit %}
+
+                            {% if tenteDriveUnitTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="technical-data-driveUnit"
+                                        data-bs-toggle="tab"
+                                        href="#technical-data-drive-unit-pane"
+                                        role="tab"
+                                        aria-controls="technical-data-drive-unit-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.properties.driveUnit"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_technical_data_control_unit %}
+
+                            {% if tenteControlUnitTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="technical-data-controlUnit"
+                                        data-bs-toggle="tab"
+                                        href="#technical-data-control-unit-pane"
+                                        role="tab"
+                                        aria-controls="technical-data-control-unit-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.properties.controlUnit"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_technical_data_handle_set %}
+
+                            {% if tenteHandleSetTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="technical-data-handle-set"
+                                        data-bs-toggle="tab"
+                                        href="#technical-data-handle-set-pane"
+                                        role="tab"
+                                        aria-controls="technical-data-handle-set-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.properties.handleSet"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_technical_data_mounting_kit_for_handles %}
+
+                            {% if tenteMountingKitForHandlesTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="technical-data-mounting-kit-for-handles"
+                                        data-bs-toggle="tab"
+                                        href="#technical-data-mounting-kit-for-handles-pane"
+                                        role="tab"
+                                        aria-controls="technical-data-mounting-kit-for-handles-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.properties.mountingKitForHandles"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_technical_data_battery %}
+
+                            {% if tenteBatteryTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="technical-data-battery"
+                                        data-bs-toggle="tab"
+                                        href="#technical-data-battery-pane"
+                                        role="tab"
+                                        aria-controls="technical-data-battery-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.properties.battery"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_technical_data_battery_holder %}
+
+                            {% if tenteBatteryHolderTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="technical-data-battery-holder"
+                                        data-bs-toggle="tab"
+                                        href="#technical-data-battery-holder-pane"
+                                        role="tab"
+                                        aria-controls="technical-data-battery-holder-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.properties.batteryHolder"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_technical_data_battery_charger %}
+
+                            {% if tenteBatteryChargerTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="technical-data-battery-charger"
+                                        data-bs-toggle="tab"
+                                        href="#technical-data-battery-charger-pane"
+                                        role="tab"
+                                        aria-controls="technical-data-battery-charger-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.properties.batteryCharger"|trans|sw_sanitize }}</span>
+                                        <span class="product-detail-tab-navigation-icon">
+                                            {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_navigation_technical_data_battery_cable %}
+
+                            {% if tenteBatteryCableTab %}
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link product-detail-tab-navigation-link"
+                                        id="technical-data-battery-cable"
+                                        data-bs-toggle="tab"
+                                        href="#technical-data-battery-cable-pane"
+                                        role="tab"
+                                        aria-controls="technical-data-battery-cable-pane"
+                                        aria-selected="true"
+                                    >
+                                        <span>{{ "detail.properties.batteryCable"|trans|sw_sanitize }}</span>
                                         <span class="product-detail-tab-navigation-icon">
                                             {% sw_icon 'arrow-medium-right' style {'pack':'solid'} %}
                                         </span>
@@ -315,6 +566,227 @@
                                         data-bs-parent="#accordionMobile"
                                         aria-labelledby="technical-data-fitting-pane">
                                         {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/fitting.html.twig' %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endblock %}
+
+                        {% block page_product_detail_tabs_content_technical_data_awards %}
+                            {% if tenteAwardsTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-awards-pane" aria-expanded="true" aria-controls="technical-data-awards-pane">
+                                        <span>{{ "detail.properties.awards"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="technical-data-awards-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="technical-data-awards-pane">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/awards.html.twig' %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_technical_data_core_attributes %}
+                            {% if tenteCoreAttributesTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-core-attributes-pane" aria-expanded="true" aria-controls="technical-data-core-attributes-pane">
+                                        <span>{{ "detail.properties.coreAttributes"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="technical-data-core-attributes-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="technical-data-core-attributes-pane">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/core-attributes.html.twig' %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_technical_data_drive_unit %}
+                            {% if tenteDriveUnitTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-drive-unit-pane" aria-expanded="true" aria-controls="technical-data-drive-unit-pane">
+                                        <span>{{ "detail.properties.driveUnit"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="technical-data-drive-unit-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="technical-data-drive-unit-pane">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/drive-unit.html.twig' %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_technical_data_control_unit %}
+                            {% if tenteControlUnitTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-control-unit-pane" aria-expanded="true" aria-controls="technical-data-control-unit-pane">
+                                        <span>{{ "detail.properties.controlUnit"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="technical-data-control-unit-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="technical-data-control-unit-pane">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/control-unit.html.twig' %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_technical_data_handleSet %}
+                            {% if tentehandleSetTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-handle-set-pane" aria-expanded="true" aria-controls="technical-data-handle-set-pane">
+                                        <span>{{ "detail.properties.handleSet"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="technical-data-handle-set-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="technical-data-handle-set-pane">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/handle-set.html.twig' %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_technical_data_mounting_kit_for_handles %}
+                            {% if tenteMountingKitForHandlesTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-mounting-kit-for-handles-pane" aria-expanded="true" aria-controls="technical-data-mounting-kit-for-handles-pane">
+                                        <span>{{ "detail.properties.mountingKitForHandles"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="technical-data-mounting-kit-for-handles-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="technical-data-mounting-kit-for-handles-pane">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/mounting-kit-for-handles.html.twig' %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_technical_data_battery %}
+                            {% if tenteBatteryTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-battery-pane" aria-expanded="true" aria-controls="technical-data-battery-pane">
+                                        <span>{{ "detail.properties.battery"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="technical-data-battery-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="technical-data-battery-pane">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/battery.html.twig' %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_technical_data_battery_holder %}
+                            {% if tenteBatteryHolderTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-battery-holder-pane" aria-expanded="true" aria-controls="technical-data-battery-holder-pane">
+                                        <span>{{ "detail.properties.batteryHolder"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="technical-data-battery-holder-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="technical-data-battery-holder-pane">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/battery-holder.html.twig' %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_technical_data_battery_charger %}
+                            {% if tenteBatteryChargerTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-battery-charger-pane" aria-expanded="true" aria-controls="technical-data-battery-charger-pane">
+                                        <span>{{ "detail.properties.batteryCharger"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="technical-data-battery-charger-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="technical-data-battery-charger-pane">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/battery-charger.html.twig' %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endblock %}
+                        {% block page_product_detail_tabs_content_technical_data_battery_cable %}
+                            {% if tentebatteryCableTab %}
+                                <div class="accordion-item nav-item">
+                                    <button class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technical-data-battery-cable-pane" aria-expanded="true" aria-controls="technical-data-battery-cable-pane">
+                                        <span>{{ "detail.properties.batteryCable"|trans|sw_sanitize }}</span>
+                                        <span class="icon-accordion-detail icon-open-select">
+                                            {% sw_icon 'arrow-head-down' %}
+                                        </span>
+                                        <span class="icon-accordion-detail icon-close-select">
+                                            {% sw_icon 'arrow-head-up' %}
+                                        </span>
+                                    </button>
+                                    <div class="tab-pane collapse fade {% if (ratingSuccess != 1) and (ratingSuccess != -1) %}active{% endif %}"
+                                        id="technical-data-battery-cable-pane"
+                                        role="tabpanel"
+                                        data-bs-parent="#accordionMobile"
+                                        aria-labelledby="technical-data-battery-cable-pane">
+                                        {% sw_include '@Storefront/storefront/page/product-detail/tabs/properties/battery-cable.html.twig' %}
                                     </div>
                                 </div>
                             {% endif %}

@@ -63,10 +63,12 @@ class CrmService
      public function processEvent(Event $event) {
           try {
 
-               //defaults
-               $crmRecord = new CrmRecord();
-               $isValidEvent = false;
-               $context = Context::createDefaultContext();
+              
+              //defaults
+              $crmRecord = new CrmRecord();
+              $isValidEvent = false;
+              $salesChannelContext = null;
+              $context = Context::createDefaultContext();
                if (method_exists($event, 'getContext')) {
                     $eventContext = $event->getContext();
                     if ($eventContext instanceof Context) {
@@ -79,13 +81,14 @@ class CrmService
                }
                
                $crmRecord->setLanguage($this->getLanguageCode($context));
-
+               
                if (method_exists($event, 'getSalesChannelContext')) {
-                    $eventSalesChannelContext = $event->getSalesChannelContext();
-                    if ($eventSalesChannelContext instanceof SalesChannelContext) {
-                         $salesChannelContext = $eventSalesChannelContext;
+                   $eventSalesChannelContext = $event->getSalesChannelContext();
+                   if ($eventSalesChannelContext instanceof SalesChannelContext) {
+                       $salesChannelContext = $eventSalesChannelContext;
                     }
-               }
+                }
+                
                if (isset($salesChannelContext) && $salesChannelContext instanceof SalesChannelContext) {
                     $salesChannel = $salesChannelContext->getSalesChannel();
                     $salesChannelCountry = $salesChannel->getCountry();
@@ -117,7 +120,7 @@ class CrmService
                                    $crmRecord->setDepartment($department);
                               }
                               if ($postalCode) {
-                                   $crmRecord->setPostalcode($postalCode);
+                                   $crmRecord->setPostalcode($postalCode); 
                               }
                               $city = $customerBillingAddress->getCity();
                               $countryState = $customerBillingAddress->getCountryState();
@@ -189,7 +192,7 @@ class CrmService
                }
 
                if ($isValidEvent) { //the event is valid and the corresponding records were added
-                    //$crmRecord->setCallingWebsiteCountry('DK');
+                    $crmRecord->setCallingWebsiteCountry($crmRecord->getCountry());
                     $crmRecord->setDcIpAddress($this->getClientIpAddress());
                     $this->execute($crmRecord);
                     return $event;
@@ -299,6 +302,7 @@ class CrmService
 
      private function customerRegisterEventHandler(CustomerRegisterEvent $event, CrmRecord $crmRecord): CrmRecord {
           $crmRecord->setTenteUserAccountCreated('true');
+          $crmRecord->setTenteQuoteRequest('false');
           $customer = $event->getCustomer();
           $webRequestId = $this->formatWebrequestId($customer->getId());
           $crmRecord->setWebrequestId($webRequestId);
@@ -385,6 +389,7 @@ class CrmService
           $contactFormData = $event->getContactFormData();
           $state = "";
           $currentTimestamp = time();
+          $crmRecord->setTenteQuoteRequest('false');
 
           if (array_key_exists('firstName', $contactFormData) && is_string($firstName = $contactFormData['firstName'])) {
                $crmRecord->setFirstname($firstName);
@@ -474,6 +479,11 @@ class CrmService
           if (array_key_exists('nbpr_street', $exactVars) && is_string($street = $exactVars['nbpr_street'])) {
                $crmRecord->setStreet($street);
           }
+
+
+          if (array_key_exists('nbpr_newsletter', $exactVars) && is_string($street = $exactVars['nbpr_newsletter'])) {
+               $crmRecord->setNewsletterRequest('true');
+          }
           
           if (array_key_exists('nbpr_zipcode', $exactVars) && is_string($zipCode = $exactVars['nbpr_zipcode'])) {
                $crmRecord->setPostalcode($zipCode);
@@ -544,6 +554,23 @@ class CrmService
           $timestamp = time();
           $fileName = null;
 
+          $dataArray = $event->getDataArray();
+
+          if(isset($dataArray['format'])) {
+            $crmRecord->setCadFileFormat($dataArray['format']);
+          }
+
+          if(isset($dataArray['productNumber'])) {
+            $crmRecord->setProductNumber($dataArray['productNumber']);
+          }
+          if(isset($dataArray['productEan'])) {
+            $crmRecord->setProductEan($dataArray['productEan']);
+          }
+
+          if($crmRecord->getPostalcode()) {
+            $crmRecord->setPlz($crmRecord->getPostalcode());
+          }
+
           $crmRecord->setDcTimestamp($this->dcTimestampFormatting($timestamp));
 
           $recordInformationMessage = 'CAD File downloaded = Yes'; //not sure
@@ -559,7 +586,8 @@ class CrmService
      }
      
      private function formatWebrequestId(string $id): string {
-          return 'M2-' . $id;
+        //   return 'M2-' . $id;
+          return $id;
      }
 
      private function getClientIpAddress() {

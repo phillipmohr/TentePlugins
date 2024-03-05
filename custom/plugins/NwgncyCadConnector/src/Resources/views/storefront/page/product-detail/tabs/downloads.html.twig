@@ -40,7 +40,7 @@
 
                 {% if not context.customer %}
                 <p>{{ "detail.cadService.login"|trans({
-                '%url%':path('frontend.account.login.page', { redirectTo: app.request.attributes.get('_route'), redirectParameters: { productId: page.product.id } })})|raw 
+                '%url%':path('frontend.account.login.page')})|raw 
                 }}</p>
                 {% else %}
 
@@ -100,6 +100,8 @@
                     <form class="tente-downloads-form tente-pdf-downloads-form d-none" method="post" action="{{ path('storefront.cad-download.pdf.post') }}">
                     <input type="hidden" name="productId" value="{{ page.product.id }}" />
                     <input type="hidden" name="customerId" value="{{ context.customer.id }}" />
+                    <input type="hidden" name="productNumber" value="{{ page.product.productNumber }}" />
+                    <input type="hidden" name="productEan" value="{{ page.product.ean }}" />
                     <input type="hidden" name="cadFileUrl" value="{{ cadPdfFile }}" />
                     {% if cadPdfFile %}
                         <div class="tente-downloads-btn">
@@ -111,6 +113,8 @@
                     <form class="tente-downloads-form tente-stp-downloads-form d-none" method="post" action="{{ path('storefront.cad-download.stp.post') }}">
                     <input type="hidden" name="productId" value="{{ page.product.id }}" />
                     <input type="hidden" name="customerId" value="{{ context.customer.id }}" />
+                    <input type="hidden" name="productNumber" value="{{ page.product.productNumber }}" />
+                    <input type="hidden" name="productEan" value="{{ page.product.ean }}" />
                     <input type="hidden" name="cadFileUrl" value="{{ cadStpFile }}" />
                     {% if cadStpFile %}
                         <div class="tente-downloads-btn">

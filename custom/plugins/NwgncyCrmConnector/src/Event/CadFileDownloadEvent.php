@@ -8,9 +8,6 @@ use Shopware\Core\System\SalesChannel\SalesChannelContext;
 use Symfony\Contracts\EventDispatcher\Event;
 use Shopware\Core\Checkout\Customer\CustomerEntity;
 use Shopware\Core\Framework\Event\CustomerAware;
-use Shopware\Core\Framework\Event\FlowEventAware;
-use Shopware\Core\Framework\Event\MailAware;
-use Shopware\Core\Framework\Event\SalesChannelAware;
 use Shopware\Core\Framework\Event\EventData\EventDataCollection;
 use Shopware\Core\Framework\Event\EventData\EntityType;
 use Shopware\Core\Checkout\Customer\CustomerDefinition;
@@ -20,7 +17,7 @@ class CadFileDownloadEvent extends Event implements ShopwareSalesChannelEvent, C
    
    public const EVENT_NAME = 'tente.cad_file.download';
 
-   public function __construct(private readonly SalesChannelContext $salesChannelContext, private readonly CustomerEntity $customer)
+   public function __construct(private readonly SalesChannelContext $salesChannelContext, private readonly CustomerEntity $customer, private readonly array $dataArray)
    {
    }
 
@@ -47,6 +44,11 @@ class CadFileDownloadEvent extends Event implements ShopwareSalesChannelEvent, C
    public function getCustomerId(): string
    {
        return $this->getCustomer()->getId();
+   }
+
+   public function getDataArray(): array
+   {
+    return $this->dataArray;
    }
 
    public static function getAvailableData(): EventDataCollection

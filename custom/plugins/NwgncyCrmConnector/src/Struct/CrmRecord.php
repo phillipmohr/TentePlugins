@@ -10,6 +10,10 @@ class CrmRecord extends Struct {
      public const LANGUAGE                       = 'language';
      public const STREET                         = 'street';
      public const POSTALCODE                     = 'postalcode';
+     public const PLZ                            = 'plz';
+     public const PRODUCT_EAN                    = 'productean';
+     public const PRODUCT_NUMBER                 = 'productnumber';
+     public const CAD_FORMAT                     = 'format';
      public const CITY                           = 'city';
      public const COUNTRY                        = 'country';
      public const CAD_REQUEST                    = 'cadrequest';
@@ -47,6 +51,10 @@ class CrmRecord extends Struct {
      private string $language = '';
      private string $street = '';
      private string $postalcode = '';
+     private string $plz = '';
+     private string $productnumber = '';
+     private string $productean = '';
+     private string $format = '';
      private string $city = '';
      private string $country = '';
      private string $cadRequest = 'false';
@@ -74,7 +82,7 @@ class CrmRecord extends Struct {
      private string $department = '';
      private string $origin = '';
      private string $turnover = 'C';
-     private string $dcCompliance = 'false';
+     private string $dcCompliance = 'true';
      private string $dcAdvertisingConsent = 'false';
      private string $dcIpAddress = '';
      private string $dcTimestamp = '';
@@ -113,6 +121,40 @@ class CrmRecord extends Struct {
      public function setPostalcode(string $postalcode): void {
           $this->postalcode = $postalcode;
      }
+
+
+        public function setProductNumber(string $Productnumber): void {
+                $this->productnumber = $Productnumber;
+        }
+
+
+        public function getProductNumber(): string {
+            return $this->productnumber;
+        }
+
+        public function setProductEan(string $Productean): void {
+            $this->productean = $Productean;
+        }
+
+        public function getProductEan(): string {
+            return $this->productean;
+        }
+
+        public function setPlz(string $plz): void {
+            $this->plz = $plz;
+        }
+
+        public function getplz(): string {
+            return $this->plz;
+        }
+
+        public function setCadFileFormat(string $CadFileFormat): void {
+            $this->format = $CadFileFormat;
+        }
+
+        public function getCadFileFormat(): string {
+            return $this->format;
+        }
   
      public function getCity(): string {
           return $this->city;
@@ -375,6 +417,10 @@ class CrmRecord extends Struct {
                self::NEWSLETTER_REQUEST => $this->newsletterRequest,
                self::PHONE => $this->phone,
                self::FAX => $this->fax,
+               self::PLZ => $this->plz,
+               self::PRODUCT_EAN => $this->productean,
+               self::PRODUCT_NUMBER => $this->productnumber,
+               self::CAD_FORMAT => $this->format,
                self::WEBREQUEST_ID => $this->webrequestId,
                self::CALLING_WEBSITE_COUNTRY => $this->callingWebsiteCountry,
                self::CAMPAIGN => $this->campaign,

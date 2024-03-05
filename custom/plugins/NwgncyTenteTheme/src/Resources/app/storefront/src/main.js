@@ -4,10 +4,6 @@ import PriceRequestsWindow from './pricerequests-window/pricerequests-window';
 
 const PluginManager = window.PluginManager;
 
-
-
-
-
 PluginManager.override('OffcanvasMenu', CustomOffCanvasMenuPlugin, '[data-offcanvas-menu]');
 PluginManager.override('PriceRequestsWindow', PriceRequestsWindow, 'body');
 PluginManager.register('PriceRequestSubmitLoader', PriceRequestSubmitLoader, '[data-price-request-submit-loader]');
