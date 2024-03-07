@@ -70,6 +70,9 @@ class ImportLanguageSnippetsCommand extends Command
 
         $currentSnippetList = $translationHelper->getSnippetsForImport($context);
 
+        $countUpdated = 0;
+        $countNew = 0;
+
         if (!empty($filesArr)) {
 
             $foundFiles = (string)count($filesArr);
@@ -77,8 +80,7 @@ class ImportLanguageSnippetsCommand extends Command
             // $io->success('Sales channel has been created successfully.');
             // $io->error('Something went wrong.');
             $io->text('Found files: ' . $foundFiles);
-            $countUpdated = 0;
-            $countNew = 0;
+
             foreach ($filesArr as $file) {
                 if (!$file->isDir()) {
 
@@ -95,7 +97,6 @@ class ImportLanguageSnippetsCommand extends Command
                             } else {
                                 $io->error('No language pack found for: ' . $languagePackName);
                                 exit;
-                                break;
                             }
                             // $io->text($languagePackName);
                             // break;
@@ -126,15 +127,15 @@ class ImportLanguageSnippetsCommand extends Command
                             $author = 'System';
                         }
     
-                        // $io->text($languagePackName . ' Importing translation for key: ' . $translationKey . ' Translation: ' . $translation);
+                        $io->text($languagePackName . ' Importing translation for key: ' . $translationKey . ' Translation: ' . $translation);
                         // $translation = str_replace('target="blank"', 'target="_blank"', $translation);
 
                         if (empty($snippetId)) {
                             $countNew++;
                             $translationHelper->createSnippet($languagePackId, $translationKey, $translation, $author, $context);
                         } else {
-                            $io->text('Current: ' . $currentTranslation);
-                            $io->text('Updated: ' . $languagePackName . ' Translationkey ' . $translationKey . ' Translation: ' . $translation . ' ID' . $snippetId);
+                            // $io->text('Current: ' . $currentTranslation);
+                            // $io->text('Updated: ' . $languagePackName . ' Translationkey ' . $translationKey . ' Translation: ' . $translation . ' ID' . $snippetId);
                             // $io->text('Updated: ' . $translation);
                             
                             $countUpdated++;
