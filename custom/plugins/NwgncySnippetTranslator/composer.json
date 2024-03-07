@@ -1,0 +1,27 @@
+{
+    "name": "snippets-import/nwgncy-snippet-translator",
+    "description": "Export/Import snippets from file",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "6.5.*"
+    },
+    "extra": {
+        "shopware-plugin-class": "SnippetsImport\\NwgncySnippetTranslator",
+        "label": {
+            "de-DE": "Export/Import snippets from file",
+            "en-GB": "Export/Import snippets from file"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "SnippetsImport\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SnippetsImport\\Tests\\": "tests/"
+        }
+    }
+}
