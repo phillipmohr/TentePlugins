@@ -2,7 +2,7 @@
     "name": "snippets-import/nwgncy-snippet-translator",
     "description": "Export/Import snippets from file",
     "type": "shopware-platform-plugin",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "license": "MIT",
     "require": {
         "shopware/core": "6.5.*"

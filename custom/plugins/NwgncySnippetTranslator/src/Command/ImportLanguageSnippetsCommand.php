@@ -68,21 +68,27 @@ class ImportLanguageSnippetsCommand extends Command
 
         $foundRootFiles = (string)count($rootFilesArr);
         $io->text('Found files in root: ' . $foundRootFiles);
+
         if (!empty($rootFilesArr)) {
 
             $stopReading = 0;
             $stopReadingAfter = 10;
             foreach ($rootFilesArr as $file) {
-
-                if ($file->isDir()) {
-
-                    $io->text($file->path());
-
-                    $stopReading++;
-                }
+                $io->text( $file->jsonSerialize()['path']);
+                
                 if ($stopReading == $stopReadingAfter) {
                     break;
                 }
+                $stopReading++;
+                // if ($file->isDir()) {
+
+                //     $io->text($file->path());
+
+                //     $stopReading++;
+                // }
+                // if ($stopReading == $stopReadingAfter) {
+                //     break;
+                // }
 
             }
         }
