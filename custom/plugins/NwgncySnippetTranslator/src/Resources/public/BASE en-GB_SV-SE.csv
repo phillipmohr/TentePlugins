@@ -1,0 +1,564 @@
+LanguagePack sv-SE|Översättning
+account.doubleOptinAccountAlert|Ditt kundkonto har inte aktiverats än. Vi har skickat en bekräftelse via e-post med en aktiveringslänk. Kontrollera din inkorg och klicka på länken för att slutföra registreringen!
+account.downloadFileButton|Ladda ned
+account.downloadItemColumnDate|Datum
+account.downloadItemColumnTitle|Fil
+account.faxLabel|Fax
+account.faxPlaceholder|Ange fax
+account.homepageLabel|Startsida
+account.homepagePlaceholder|Ange URL för hemsida
+account.passwordNotIdentical|Lösenorden du har angett stämmer inte överens.
+account.personalTypePlaceholder|Välj...
+account.profileCurrentMailPlaceholder|Ange e-postadress...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Klicka här</a> för att radera alla dina personuppgifter."
+account.profilePasswordCreateNewPlaceholder|Ange nytt lösenord...
+account.profilePasswordCurrentPlaceholder|Ange aktuellt lösenord...
+acrisFilter.buttonFiltersHide|Visa färre filter
+acrisFilter.buttonFilterShowHideLabel|Visa fler eller färre filter
+acrisFilter.buttonFiltersShow|Visa fler filter
+acrisFilter.buttonHeaderSearchAllCategories|Alla kategorier
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Omedelbart tillgänglig
+acrisFilter.filterCategoriesDisplayName|Kategorier
+acrisFilter.filterRangeActiveMaxLabel|Egenskap %displayName% till
+acrisFilter.filterRangeActiveMinLabel|Egenskap %displayName% från
+acrisFilter.filterRangeSliderFrom|från
+acrisFilter.filterRangeSliderTo|till
+acrisFilter.filterSearchPlaceholder|Sök...
+card.card-image|Bild på %name%
+card.linkTitle|Öppna %url% i ny flik
+cbaxLexicon.page.ajax.linkDescription|Till lexikonet
+cbaxLexicon.page.banner.alt|Banner
+cbaxLexicon.page.boxKeyword.moreRead|Läs mer
+cbaxLexicon.page.breadcrumb.name|Lexicon
+cbaxLexicon.page.content.headline|Innehållsförteckning
+cbaxLexicon.page.content.metaDescription|Innehåll i beskrivning av lexikonmeta
+cbaxLexicon.page.content.metaKeywords|Lexicon Meta-nyckelordsinnehåll
+cbaxLexicon.page.content.metaTitle|Innehållsförteckning
+cbaxLexicon.page.filter.button|Lexicon-navigering
+cbaxLexicon.page.filter.headline|Lexicon-navigering
+cbaxLexicon.page.index.metaDescription|Beskrivningsindex för lexikonmeta
+cbaxLexicon.page.index.metaKeywords|Lexicon Meta Keywords Index för nyckelord
+cbaxLexicon.page.index.metaTitle|Lexicon
+cbaxLexicon.page.listing.entryHeadline|Inlägg i denna encyklopedikategori
+cbaxLexicon.page.listing.metaDescription09|Beskrivning av lexikonmeta, lista 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Beskrivning av lexikonmeta, lista A
+cbaxLexicon.page.listing.metaDescriptionB|Beskrivning av lexikonmeta, lista B
+cbaxLexicon.page.listing.metaDescriptionC|Beskrivning av lexikonmeta, lista C
+cbaxLexicon.page.listing.metaDescriptionD|Beskrivning av lexikonmeta, lista D
+cbaxLexicon.page.listing.metaDescriptionE|Beskrivning av lexikonmeta, lista E
+cbaxLexicon.page.listing.metaDescriptionF|Beskrivning av lexikonmeta, lista F
+cbaxLexicon.page.listing.metaDescriptionG|Beskrivning av lexikonmeta, lista G
+cbaxLexicon.page.listing.metaDescriptionH|Beskrivning av lexikonmeta, lista H
+cbaxLexicon.page.listing.metaDescriptionI|Lexicon Meta Description Listing I
+cbaxLexicon.page.listing.metaDescriptionJ|Beskrivning av lexikonmeta, lista J
+cbaxLexicon.page.listing.metaDescriptionK|Beskrivning av lexikonmeta, lista K
+cbaxLexicon.page.listing.metaDescriptionL|Beskrivning av lexikonmeta, lista L
+cbaxLexicon.page.listing.metaDescriptionM|Beskrivning av lexikonmeta, lista M
+cbaxLexicon.page.listing.metaDescriptionN|Beskrivning av lexikonmetan N
+cbaxLexicon.page.listing.metaDescriptionO|Beskrivning av lexikonmeta, lista O
+cbaxLexicon.page.listing.metaDescriptionP|Beskrivning av lexikonmeta, lista P
+cbaxLexicon.page.listing.metaDescriptionQ|Beskrivning av lexikonmeta, lista Q
+cbaxLexicon.page.listing.metaDescriptionR|Beskrivning av lexikonmeta R
+cbaxLexicon.page.listing.metaDescriptionS|Beskrivning av lexikonmeta, lista S
+cbaxLexicon.page.listing.metaDescriptionT|Beskrivning av lexikonmeta, lista T
+cbaxLexicon.page.listing.metaDescriptionU|Beskrivning av lexikonmeta, lista U
+cbaxLexicon.page.listing.metaDescriptionV|Beskrivning av lexikonmeta, lista V
+cbaxLexicon.page.listing.metaDescriptionW|Beskrivning av lexikonmeta, lista W
+cbaxLexicon.page.listing.metaDescriptionX|Beskrivning av lexikonmeta, lista X
+cbaxLexicon.page.listing.metaDescriptionY|Beskrivning av lexikonmeta, lista Y
+cbaxLexicon.page.listing.metaDescriptionZ|Beskrivning av lexikonmeta, lista Z
+cbaxLexicon.page.listing.metaKeywords09|Nyckelord för lexikonmeta, lista 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Nyckelord för lexikonmeta, lista A
+cbaxLexicon.page.listing.metaKeywordsB|Nyckelord för lexikonmeta, lista B
+cbaxLexicon.page.listing.metaKeywordsC|Nyckelord för lexikonmeta, lista C
+cbaxLexicon.page.listing.metaKeywordsD|Nyckelord för lexikonmeta, lista D
+cbaxLexicon.page.listing.metaKeywordsE|Nyckelord för lexikonmeta, lista E
+cbaxLexicon.page.listing.metaKeywordsF|Lexicon Meta Nyckelord Listing F
+cbaxLexicon.page.listing.metaKeywordsG|Nyckelord för lexikonmeta, lista G
+cbaxLexicon.page.listing.metaKeywordsH|Nyckelord för lexikonmeta, lista H
+cbaxLexicon.page.listing.metaKeywordsI|Lexicon Meta Keywords Listing I
+cbaxLexicon.page.listing.metaKeywordsJ|Lexicon Meta Nyckelord Listing J
+cbaxLexicon.page.listing.metaKeywordsK|Nyckelord för lexikonmeta, lista K
+cbaxLexicon.page.listing.metaKeywordsL|Nyckelord för lexikonmeta, lista L
+cbaxLexicon.page.listing.metaKeywordsM|Nyckelord för lexikonmeta, lista M
+cbaxLexicon.page.listing.metaKeywordsN|Nyckelord för lexikonmeta, lista N
+cbaxLexicon.page.listing.metaKeywordsO|Lexicon Meta Nyckelord Lista O
+cbaxLexicon.page.listing.metaKeywordsP|Nyckelord för lexikonmeta, lista P
+cbaxLexicon.page.listing.metaKeywordsQ|Nyckelord för lexikonmeta – lista Q
+cbaxLexicon.page.listing.metaKeywordsR|Nyckelord för lexikonmeta, lista R
+cbaxLexicon.page.listing.metaKeywordsS|Nyckelord för lexikonmeta, lista S
+cbaxLexicon.page.listing.metaKeywordsT|Lexicon Meta Nyckelord Lista T
+cbaxLexicon.page.listing.metaKeywordsU|Lexicon Meta Nyckelord Lista U
+cbaxLexicon.page.listing.metaKeywordsV|Lexicon Meta-nyckelord, lista V
+cbaxLexicon.page.listing.metaKeywordsW|Lexicon Meta Nyckelord Listing W
+cbaxLexicon.page.listing.metaKeywordsX|Lexicon Meta-nyckelord, lista X
+cbaxLexicon.page.listing.metaKeywordsY|Nyckelord för lexikonmeta, lista Y
+cbaxLexicon.page.listing.metaKeywordsZ|Lexicon Meta-nyckelord, lista Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|I
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Q
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Innehållsförteckning
+cbaxLexicon.page.navigation.linkIndex|Startsida
+cbaxLexicon.page.pagination.toOverview|Till översikt
+cbaxLexicon.page.sidebar.title|Lexicon:
+checkout.confirmRevocationReminder|Du har redan förklarat att du avstår från ångerrätten.
+checkout.confirmRevocationTerms|Jag vill ha omedelbar tillgång till det digitala innehållet och jag bekräftar att jag därmed avstår från min rätt att avbryta.
+checkout.confirmTermsReminderText|"Du har redan godkänt <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""general terms"">general terms and conditions</a>."
+checkout.confirmTermsText|"Jag har läst och godkänt <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""general terms"">allmänna villkor</a>."
+checkout.lineItemUnitPriceDescriptor|enhet
+checkout.merchant-not-selected|Välj din lokala handlare för att fortsätta med betalningen.
+checkout.or|eller
+CmsElements.callToAction.elementError|Detta element är inte tillgängligt för sidofältet. Välj en annan <p class='h5 my-2'>Ring till handling</p> för sidofältet.
+CmsElements.counter.days|DAGAR
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEK
+CmsElements.htmlVideo.hint.content|Du har inte laddat upp en giltig video. Kontrollera inställningarna för elementet.
+CmsElements.htmlVideo.hint.headline|Fel format/ingen video
+CmsElements.placeholder.label|Byt ut elementet
+CmsElements.shopTheLook.addAllProducts|Lägg till produkter i varukorgen
+CmsElements.shopTheLook.totalDiscount|Besparingar:
+component.cms.imageGallery.sliderDotLabel|Visa bild %index% av %total%
+component.cms.vimeo.privacyNoticeText|"Genom att visa videon godkänner du att dina data överförs till %platform% och att du har läst <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Privacy policy"">Privacy policy</a>."
+component.product.quantitySelect.decrease|Minska kvantitet
+component.product.quantitySelect.increase|Öka kvantitet
+component.product.quantitySelect.label|Kvantitet
+contact.newsletterSubscribe|Jag samtycker härmed till att TENTE även kan informera mig via e-post och telefon om TENTE:s produkter och evenemang (t.ex. mässor)
+contact.privacyNoticeText|"Genom att välja Fortsätt bekräftar du att du har läst och godkänner vår <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Dataskyddsinformation"">dataskyddsinformation</a>."
+cookie.groupComfortFeaturesYoutubeVideo|YouTube-video
+cookie.messageText|"Den här webbplatsen använder cookies för att säkerställa bästa möjliga upplevelse. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Mer information"">Mer information...</a>"
+detail.acrisProductDownloadBtnText|Ladda ned
+detail.acrisProductDownloadNoPreview|Ingen förhandsgranskning
+detail.acrisProductDownloadTabLabel|Nedladdningar
+detail.acrisProductDownloadTitle|Nedladdningar
+detail.acrisProductLinkTabLabel|Länkar
+detail.acrisProductLinkTitle|Länkar
+detail.buyOnline|Köp online
+detail.cadService.downloadBtn|Ladda ned
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Filtyp
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Du kan ladda ner konstruktionsdata för denna produkt i olika format
+detail.cadService.login|"<a href=""%url%"">Logga in</a> för att se CAD-filerna"
+detail.cadService.title|CAD-tjänst
+detail.contactText|"Har du inte hittat rätt produkt ännu, har särskilda krav eller är du intresserad av individuella lösningar? <a href=""%url%"" title=""Kontaktformular"">Kontakta oss</a>."
+detail.ean|EAN
+detail.orderNumber|Produktnummer
+detail.orText|Eller
+detail.performance.atrittion|Atrittion
+detail.performance.movement|Rörelsebrus
+detail.performance.resistance|Rostskydd
+detail.performance.roll|Rulla prestanda
+detail.priceOnRequestText|per kolli exkl. moms<br />Om 24 timmar klar för leverans
+detail.priceOnRequestTitle|Pris på begäran
+detail.properties.fitting|Anpassning av tekniska data
+detail.properties.housing|Tekniskt Bygel
+detail.properties.label.downloads|Nedladdningar
+detail.properties.label.feature|Produktegenskaper
+detail.properties.label.fitting|Koppling
+detail.properties.label.housing|Bygel
+detail.properties.label.performance|Prestanda
+detail.properties.label.wheel|Hjul
+detail.properties.performance|Prestanda
+detail.properties.wheel|Hjul för tekniska data
+detail.qte|Kvantitet
+detail.reviewFormContentPlaceholder|Ange din recension...
+detail.sendQuoteRequest|Skicka offertförfrågan
+detail.tabs.downloads|Nedladdningar
+detail.tabs.features|Funktioner
+detail.tabs.performance|Prestanda
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|Kvantiteten (%kvantitet%) är felaktig.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|"Ordern med ordernumret ""%orderNumber%"" betalades redan och kan inte redigeras efteråt."
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Denna order kunde inte hittas.
+error.merchant-not-selected|Välj din lokala handlare för att fortsätta med betalningen.
+error.VIOLATION::ZIP_CODE_INVALID|Postnumret du har angett har inte rätt format.
+footer.excludeVatText|"* Alla priser exkl. Moms plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">fraktkostnader</a> och eventuella leveransavgifter, om inte annat anges."
+footer.includeVatText|"* Alla priser inkl. Moms plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">fraktkostnader</a> och eventuella leveransavgifter, om inte annat anges."
+footer.serviceContactText|"Eller via vår <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Contact form"">contact form</a>."
+footer.socialMediaHeadline|Sociala
+general.contactUs|Kontakta oss
+general.contactUsLink|/kontakt
+general.loginRegister|Logga in/registrera dig
+general.privacyNoticeText|"Genom att prenumerera på nyhetsbrevet godkänner du vår <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Privacy policy"">sekretesspolicy</a> samt vår <a data-ajax-modal=""true"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""terms and conditions"">villkor</a>."
+global.default.activate|Aktivera
+global.default.cancel|Avbryt
+global.default.confirm|Bekräfta
+global.default.deactivate|Inaktivera
+global.default.delete|Radera
+global.default.edit|Redigera
+global.default.noteRequiredFields|Fält markerade med asterisker (*) är obligatoriska.
+global.default.save|Spara
+listing.downloadText|Ladda ned
+moorl-creator.aboutTheCreator|Om skaparen
+moorl-creator.aboutTheCreators|Om skaparna
+moorl-creator.creator|Skapare
+moorl-creator.creators|Skapare
+moorl-creator.donate|Donera
+moorl-creator.follow|Följ
+moorl-creator.link|Startsida
+moorl-creator.productsOf|Produkter från
+moorl-creator.readMore|Läs mer...
+moorl-foundation.buttons.acceptCookie|Acceptera cookie
+moorl-foundation.buttons.addMerchantButtonText|Ny handlare
+moorl-foundation.buttons.administrationButtonText|Administration
+moorl-foundation.buttons.cancelButtonText|Avbryt
+moorl-foundation.buttons.exportButtonText|Exportera CSV
+moorl-foundation.buttons.exportButtonTitle|Ladda ner din CSV
+moorl-foundation.buttons.getLocButtonText|Hämta positioner från OpenStreetMap
+moorl-foundation.buttons.importButtonText|Importera CSV
+moorl-foundation.buttons.importButtonTitle|Ladda upp din CSV
+moorl-foundation.buttons.mediaFolder|Spara bilder i den här mappen
+moorl-foundation.buttons.newButtonText|Ny
+moorl-foundation.buttons.openMapButtonText|Öppna karta
+moorl-foundation.buttons.openNewWindowButtonText|Öppna i nytt fönster
+moorl-foundation.buttons.overwriteText|Skriv över befintliga datarader (originId måste ställas in).
+moorl-foundation.buttons.placeIdLink|Planera rutt
+moorl-foundation.buttons.refreshButtonText|Ladda om
+moorl-foundation.buttons.saveButtonText|Spara
+moorl-foundation.buttons.selectLocButtonText|Välj
+moorl-foundation.buttons.startImportButtonText|Starta import
+moorl-foundation.card.address|Adress
+moorl-foundation.card.company|Företag
+moorl-foundation.card.contact|Kontakt
+moorl-foundation.card.legend|Förklaring
+moorl-foundation.card.openingHours|Öppettider
+moorl-foundation.card.person|Kontaktperson
+moorl-foundation.customerUpload.checkToDelete|Markera för att radera
+moorl-foundation.customerUpload.dictDefaultMessage|Dra filer hit för att ladda upp
+moorl-foundation.customerUpload.useAsCover|Använd som skydd
+moorl-foundation.days.closed|Stängd
+moorl-foundation.days.friday|Fredag
+moorl-foundation.days.monday|Måndag
+moorl-foundation.days.saturday|Lördag
+moorl-foundation.days.sunday|Söndag
+moorl-foundation.days.thursday|Torsdag
+moorl-foundation.days.today|Idag
+moorl-foundation.days.tuesday|Tisdag
+moorl-foundation.days.wednesday|Onsdag
+moorl-foundation.general.selectedItems|Valda objekt
+moorl-foundation.general.share|Dela
+moorl-foundation.general.subTotal|Delsumma
+moorl-foundation.general.toc|Innehållsförteckning
+moorl-foundation.label.accountCard|Konto
+moorl-foundation.label.addressCard|Adress
+moorl-foundation.label.generalCard|Allmänt
+moorl-foundation.label.locationCard|Plats
+moorl-foundation.label.markerCard|Markör
+moorl-foundation.label.metaCard|Meta
+moorl-foundation.label.relationsCard|Relationer och filter
+moorl-foundation.label.visibilityCard|Synlighet
+moorl-foundation.listing.filter.categories|Kategorier
+moorl-foundation.listing.filter.country|Land
+moorl-foundation.listing.filter.distance|Avstånd
+moorl-foundation.listing.filter.firstChar|Index
+moorl-foundation.listing.filter.inRadiusOf|i radie av
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|MI
+moorl-foundation.listing.filter.myLocation|Använd min plats
+moorl-foundation.listing.filter.navigation|Kategorier
+moorl-foundation.listing.filter.radius|Sök efter postnummer
+moorl-foundation.listing.filter.search|Sök text
+moorl-foundation.listing.filter.tags|Taggar
+moorl-foundation.listing.filter.zipcodeCity|Postnummer/ort
+moorl-foundation.properties.active|Aktiv
+moorl-foundation.properties.additionalAddressLine1|Adress rad 1
+moorl-foundation.properties.additionalAddressLine2|Adress rad 2
+moorl-foundation.properties.articles|Artiklar
+moorl-foundation.properties.author|Författare
+moorl-foundation.properties.categories|Kategorier
+moorl-foundation.properties.city|Ort
+moorl-foundation.properties.closed|Stängd
+moorl-foundation.properties.cmsPage|CMS-sida
+moorl-foundation.properties.cmsPageId|CMS-sid-ID
+moorl-foundation.properties.company|Företag
+moorl-foundation.properties.content|Innehåll
+moorl-foundation.properties.country|Land
+moorl-foundation.properties.countryCode|Landskod
+moorl-foundation.properties.countryId|Land
+moorl-foundation.properties.createdAt|Skapad vid
+moorl-foundation.properties.customerGroupId|Kundgrupp
+moorl-foundation.properties.customerNumber|Kundnummer
+moorl-foundation.properties.date|Datum
+moorl-foundation.properties.department|Avdelning
+moorl-foundation.properties.description|Beskrivning
+moorl-foundation.properties.distance|Avstånd
+moorl-foundation.properties.email|E-post
+moorl-foundation.properties.enableComments|Aktivera kommentarer
+moorl-foundation.properties.firstName|Förnamn
+moorl-foundation.properties.from|Från
+moorl-foundation.properties.highlight|Markera
+moorl-foundation.properties.image|Artikel
+moorl-foundation.properties.info|Info
+moorl-foundation.properties.inRadiusOf|i radie av
+moorl-foundation.properties.invisible|Osynlig
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|Efternamn
+moorl-foundation.properties.location|Position
+moorl-foundation.properties.locationLat|Latitud
+moorl-foundation.properties.locationLon|Longitud
+moorl-foundation.properties.locked|Låst
+moorl-foundation.properties.logo|Logotyp
+moorl-foundation.properties.marker|Markör
+moorl-foundation.properties.markerId|Markör
+moorl-foundation.properties.markerSettings|Markörinställningar
+moorl-foundation.properties.markerSettingsExample|Du kan kopiera detta exempel för att justera dina anpassade markörinställningar.
+moorl-foundation.properties.markerSettingsLink|Exempel på anpassad markör för broschyr
+moorl-foundation.properties.markerShadow|Markörskugga
+moorl-foundation.properties.markerShadowId|Markörskugga
+moorl-foundation.properties.media|Media
+moorl-foundation.properties.mediaId|Media-ID
+moorl-foundation.properties.merchant|Handlare
+moorl-foundation.properties.merchantUrl|Handlarens URL
+moorl-foundation.properties.metaDescription|Metabeskrivning
+moorl-foundation.properties.metaTitle|Metatitel
+moorl-foundation.properties.name|Namn
+moorl-foundation.properties.openingHours|Öppettider
+moorl-foundation.properties.originId|Ursprungs-ID
+moorl-foundation.properties.phoneNumber|Telefon
+moorl-foundation.properties.priority|Prioritet
+moorl-foundation.properties.productManufacturers|Tillverkarens ID
+moorl-foundation.properties.products|Produkter
+moorl-foundation.properties.radius|Radius
+moorl-foundation.properties.repeat|Upprepa
+moorl-foundation.properties.salesChannel|Försäljningskanal
+moorl-foundation.properties.salesChannelId|Försäljningskanal
+moorl-foundation.properties.search|Sök
+moorl-foundation.properties.shopUrl|Handla URL
+moorl-foundation.properties.showFrom|Visa från
+moorl-foundation.properties.showUntil|Visa tills
+moorl-foundation.properties.slug|Slug
+moorl-foundation.properties.sticky|Klibbig
+moorl-foundation.properties.street|Gator
+moorl-foundation.properties.streetNumber|Antal
+moorl-foundation.properties.tags|Taggnamn/-ID
+moorl-foundation.properties.teaser|Teaser
+moorl-foundation.properties.title|Titel
+moorl-foundation.properties.until|Tills
+moorl-foundation.properties.updatedAt|Uppdaterad kl.
+moorl-foundation.properties.vatId|Moms-ID
+moorl-foundation.properties.zipcode|Postnummer
+moorl-foundation.search.headline|"{0} Inga träffar för ""%searchTerm%"" | {1} En matchning för ""%searchTerm%"" | ]1,Inf[ %count% träffar för ""%searchTerm%"""
+moorl-foundation.search.missingConfiguration|Konfiguration saknas för denna lista!
+moorl-foundation.search.moreButton|Mer
+moorl-foundation.search.noListingSlotFound|Den här sidan har inget listelement. Kontrollera dina listinställningar och välj ”Automatisk artikel”
+moorl-foundation.search.notAvailable|Ej tillgänglig
+moorl-foundation.search.product|Produkter
+moorl-location-map.cookieDescription|Vi använder OpenStreetMap som kakelleverantör för att visuellt visa var våra butiker och handlare finns.
+moorl-location-map.cookieHint|Acceptera cookien för att använda önskad funktion.
+moorl-location-map.cookieName|Platskartor
+moorl-magazine.articles|Bloggartiklar
+moorl-magazine.author|Författare
+moorl-magazine.authors|Författare
+moorl-magazine.back|Tillbaka
+moorl-magazine.backToOverview|Tillbaka till översikt
+moorl-magazine.categories|Kategorier
+moorl-magazine.categoryAll|Alla kategorier
+moorl-magazine.commentArea|Kommentarsområde
+moorl-magazine.commentAreaDisabled|Kommentarer är inaktiverade för den här artikeln
+moorl-magazine.commentError|Se till att du har fyllt i alla fält korrekt
+moorl-magazine.commentReview|Din kommentar kommer att släppas efter granskning.
+moorl-magazine.commentSuccess|Tack för din kommentar!
+moorl-magazine.date|Datum
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|E-post
+moorl-magazine.emailPlaceholder|Ange din e-postadress
+moorl-magazine.name|Namn
+moorl-magazine.namePlaceholder|Ange ditt namn
+moorl-magazine.next|Nästa
+moorl-magazine.page|Sida
+moorl-magazine.pageDescription|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. På vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, ingen havstakimata sanctus est Lorem ipsum dolor sitta amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. På Vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, ingen havstakimata sanctus est Lorem ipsum dolor sitta amet.
+moorl-magazine.pageTitle|Min graciösa blogg
+moorl-magazine.posts|Blogginlägg
+moorl-magazine.products|Relaterade produkter
+moorl-magazine.readMore|Läs mer
+moorl-magazine.recentComments|Senaste kommentarer
+moorl-magazine.relatedArticles|Relaterade blogginlägg
+moorl-magazine.search|Sök
+moorl-magazine.searchFor|Sök efter...
+moorl-magazine.sendComment|Skicka in din kommentar
+moorl-magazine.similarArticles|Liknande blogginlägg
+moorl-magazine.sticky|Fäst
+moorl-magazine.tags|Taggar
+moorl-magazine.writeComment|Skriv en kommentar
+moorl-magazine.wroteOn|skrev den
+moorl-magazine.yourComment|Din kommentar
+moorl-magazine.yourCommentPlaceholder|Ange din kommentar här
+moorl-merchant-finder.allCategories|Alla kategorier
+moorl-merchant-finder.allCountries|Alla länder
+moorl-merchant-finder.allManufacturers|Alla tillverkare
+moorl-merchant-finder.allowMerchantCustomerContact|Jag tillåter min valda handlare att kontakta mig via telefon eller e-post.
+moorl-merchant-finder.allResults|-- Välj --
+moorl-merchant-finder.allTags|Alla taggar
+moorl-merchant-finder.are|är 
+moorl-merchant-finder.available|Tillgänglig
+moorl-merchant-finder.backToOverview|Tillbaka till översikt
+moorl-merchant-finder.call|Ring
+moorl-merchant-finder.cancel|Avbryt
+moorl-merchant-finder.categories|Kategorier
+moorl-merchant-finder.checkAvailability|Kontrollera tillgänglighet
+moorl-merchant-finder.chose|Välj
+moorl-merchant-finder.choseMerchant|Välj en handlare
+moorl-merchant-finder.choseMerchantToProceed|Välj din lokala handlare för att fortsätta med betalningen
+moorl-merchant-finder.close|Stäng
+moorl-merchant-finder.commentToMerchant|Skicka en kommentar till handlaren
+moorl-merchant-finder.country|Land
+moorl-merchant-finder.deliveryTime|Leveranstid
+moorl-merchant-finder.deliveryTimeUnknown|Okänd - Produkter kommer att beställas
+moorl-merchant-finder.description|Beskrivning
+moorl-merchant-finder.desiredDate|Önskat upphämtningsdatum
+moorl-merchant-finder.desiredTime|Önskad upphämtningstid
+moorl-merchant-finder.displayOnMap|Visa på karta
+moorl-merchant-finder.distance|Avstånd
+moorl-merchant-finder.emptyResultMessage|Inga handlare hittades
+moorl-merchant-finder.findMerchants|Hitta handlare
+moorl-merchant-finder.forTheSearch|för sökningen 
+moorl-merchant-finder.forTheSearchZipcode|i postnummer och avstånd km omgivning 
+moorl-merchant-finder.highlight|Spets
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|Laddar...
+moorl-merchant-finder.manufacturers|Tillverkare
+moorl-merchant-finder.merchant|Handlare
+moorl-merchant-finder.merchants|Handlare
+moorl-merchant-finder.merchantUrl|Webbplats
+moorl-merchant-finder.more|Mer
+moorl-merchant-finder.myLocation|Använd min nuvarande plats
+moorl-merchant-finder.mySelection|Mitt val
+moorl-merchant-finder.noMerchantSelected|Produkten är inte tillgänglig. Ingen handlare vald.
+moorl-merchant-finder.none|ingen
+moorl-merchant-finder.openingHours|Öppettider
+moorl-merchant-finder.outOfStock|Produkten är inte tillgänglig. Din valda handlare har inte denna produkt i lager.
+moorl-merchant-finder.phoneNumber|Telefon
+moorl-merchant-finder.pickupDateSet|Upphämtningstiden har ställts in
+moorl-merchant-finder.productAvailability|Produkttillgänglighet
+moorl-merchant-finder.productNotAvailable|Produkten är inte tillgänglig. Kontakta butikssupporten för mer information.
+moorl-merchant-finder.radius|Radius
+moorl-merchant-finder.resetSelection|Återställ val
+moorl-merchant-finder.resultsFound|räkningsresultat hittades
+moorl-merchant-finder.save|Spara
+moorl-merchant-finder.search|Sök
+moorl-merchant-finder.searchFor|Sök efter
+moorl-merchant-finder.searchLocation|Sök plats
+moorl-merchant-finder.searchRules.hasLogo|Handlare med logotyp
+moorl-merchant-finder.searchRules.hasPriority|Prioriterad handlare
+moorl-merchant-finder.searchRules.isHighlighted|Premium-handlare
+moorl-merchant-finder.searchRules.isNotHighlighted|Normal handlare
+moorl-merchant-finder.selectedMerchant|Vald handlare
+moorl-merchant-finder.sendMail|E-post
+moorl-merchant-finder.shop|Handla
+moorl-merchant-finder.shopUrl|Besök butiken
+moorl-merchant-finder.stockInfo|Lagerinformation
+moorl-merchant-finder.tags|Taggar
+moorl-merchant-finder.thereAre|det finns 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|postnummer, ort
+moorl-merchant-finder.zipcodeCityEnter|Skriv in ett postnummer eller en ort och tryck på retur
+nimbits-pricerequests.cart.cartRequestButton|Begär ett erbjudande
+nimbits-pricerequests.cart.dontAddByProductNumber|Denna produkt kan inte läggas till i kundvagnen.
+nimbits-pricerequests.detail.available|Tillgänglig
+nimbits-pricerequests.detail.button.openrequestform|Begär ett erbjudande
+nimbits-pricerequests.detail.restock|"{1} Tillgängligt på 1 dag|]1,Inf[ Tillgängligt på %restockTime% dagar"
+nimbits-pricerequests.detail.text.priceonrequest|Pris på begäran
+nimbits-pricerequests.fail.alert|Begäran skickades inte – ett fel uppstod. Försök igen.
+nimbits-pricerequests.finish.alert|Begäran har skickats
+nimbits-pricerequests.finish.buttonBack|Tillbaka till butiken
+nimbits-pricerequests.listing.button.openrequestform|Begär ett erbjudande
+nimbits-pricerequests.listing.text.priceonrequest|Pris på begäran
+nimbits-pricerequests.mail.address|Adress
+nimbits-pricerequests.mail.amount|Belopp
+nimbits-pricerequests.mail.article|Artikel
+nimbits-pricerequests.mail.city|Ort
+nimbits-pricerequests.mail.comment|Kommentar från kunder
+nimbits-pricerequests.mail.company|Företag
+nimbits-pricerequests.mail.country|Land
+nimbits-pricerequests.mail.customersendername|Pris på begäran
+nimbits-pricerequests.mail.housenumber|Husnummer
+nimbits-pricerequests.mail.mail|E-post
+nimbits-pricerequests.mail.name|Namn
+nimbits-pricerequests.mail.ordernumber|Beställningsnummer
+nimbits-pricerequests.mail.price|Pris
+nimbits-pricerequests.mail.pricegross|Inkl. Skatt
+nimbits-pricerequests.mail.pricegrosssum|Inkl. Skattesumma
+nimbits-pricerequests.mail.pricenet|Exklusive. Skatt
+nimbits-pricerequests.mail.pricenetsum|Exklusive. Skattesumma
+nimbits-pricerequests.mail.requestfirst|Prisförfrågan från
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Pris på begäran
+nimbits-pricerequests.mail.street|Gatu
+nimbits-pricerequests.mail.subject|Pris på begäran
+nimbits-pricerequests.mail.subjectcart|Begäran om varukorg
+nimbits-pricerequests.mail.subjectshopowner|Pris på begäran
+nimbits-pricerequests.mail.subjectshopownercart|Begäran om varukorg
+nimbits-pricerequests.mail.zipcode|Postnummer
+nimbits-pricerequests.popup.city|Ort
+nimbits-pricerequests.popup.closebutton|Stäng
+nimbits-pricerequests.popup.company|Företag
+nimbits-pricerequests.popup.country|Land
+nimbits-pricerequests.popup.dataprivacytext|"Jag har läst, förstått och godkänner <a href=""/privacy"" target=""_blank"" rel=""noreferrer noopener""> Sekretesspolicy </a>."
+nimbits-pricerequests.popup.desiredprice|Önskat pris i 
+nimbits-pricerequests.popup.entervalidcity|Ange en giltig ort.
+nimbits-pricerequests.popup.entervalidcountry|Ange ett giltigt land.
+nimbits-pricerequests.popup.entervalidhousenumber|Ange ett giltigt husnummer.
+nimbits-pricerequests.popup.entervalidmail|Ange en giltig e-postadress.
+nimbits-pricerequests.popup.entervalidstreet|Ange en giltig gata.
+nimbits-pricerequests.popup.entervalidzipcode|Ange ett giltigt postnummer.
+nimbits-pricerequests.popup.genderm|Herr
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Fru
+nimbits-pricerequests.popup.housenumber|Husnummer
+nimbits-pricerequests.popup.mail|E-postadress
+nimbits-pricerequests.popup.name|Namn
+nimbits-pricerequests.popup.optional|(valfritt)
+nimbits-pricerequests.popup.phonenumber|Telefon
+nimbits-pricerequests.popup.popupTitle|Begär ett erbjudande
+nimbits-pricerequests.popup.product|Produkt(er) i denna begäran:
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Begäran
+nimbits-pricerequests.popup.requestbutton|Begäran
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|Fält markerade med * är obligatoriska.
+nimbits-pricerequests.popup.salutation|Hälsning
+nimbits-pricerequests.popup.street|Gatu
+nimbits-pricerequests.popup.surname|Efternamn
+nimbits-pricerequests.popup.text|Begär ett erbjudande för de valda produkterna
+nimbits-pricerequests.popup.zipcode|Postnummer
+nimbits-pricerequests.search.text.priceonrequest|Pris på begäran
+nimbits-pricerequests.toasts.error|Begäran skickades inte – ett fel uppstod. Försök igen.
+nimbits-pricerequests.toasts.success|Begäran har skickats
+priceRequest.newsletterText|Jag samtycker härmed till att TENTE även kan informera mig via e-post och telefon om TENTE:s produkter och evenemang (t.ex. mässor)
+priceRequest.sendRequestText|Begäran kommer att överföras...
+priceRequest.waitText|Vänta...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Välj alternativ...
+theme.compilation.async.success|Sammanställning för försäljningskanal %salesChannelName% slutförd
+vdct-simple-events.events.detail.to-event|Till evenemanget
+zeobv-store-switcher.switchStoreLabel|Byt butik

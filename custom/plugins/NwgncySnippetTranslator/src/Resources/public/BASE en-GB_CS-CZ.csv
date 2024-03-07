@@ -1,0 +1,564 @@
+LanguagePack cs-CZ|Překlad
+account.doubleOptinAccountAlert|Váš zákaznický účet ještě nebyl aktivován. Odeslali jsme potvrzovací e-mail obsahující aktivační odkaz. Zkontrolujte svou doručenou poštu a kliknutím na odkaz dokončete registraci!
+account.downloadFileButton|Stáhnout
+account.downloadItemColumnDate|Datum
+account.downloadItemColumnTitle|Soubor
+account.faxLabel|Fax
+account.faxPlaceholder|Zadejte fax
+account.homepageLabel|Domovská stránka
+account.homepagePlaceholder|Zadejte adresu URL domovské stránky
+account.passwordNotIdentical|Zadaná hesla se neshodují.
+account.personalTypePlaceholder|Vybrat...
+account.profileCurrentMailPlaceholder|Zadejte e-mailovou adresu...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Kliknutím sem</a> odstraníte všechny své osobní údaje."
+account.profilePasswordCreateNewPlaceholder|Zadejte nové heslo...
+account.profilePasswordCurrentPlaceholder|Zadejte aktuální heslo...
+acrisFilter.buttonFiltersHide|Zobrazit méně filtrů
+acrisFilter.buttonFilterShowHideLabel|Zobrazit více nebo méně filtrů
+acrisFilter.buttonFiltersShow|Zobrazit více filtrů
+acrisFilter.buttonHeaderSearchAllCategories|Všechny kategorie
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Okamžitě k dispozici
+acrisFilter.filterCategoriesDisplayName|Kategorie
+acrisFilter.filterRangeActiveMaxLabel|Vlastnost %displayName% až
+acrisFilter.filterRangeActiveMinLabel|Vlastnost %displayName% z
+acrisFilter.filterRangeSliderFrom|od
+acrisFilter.filterRangeSliderTo|k
+acrisFilter.filterSearchPlaceholder|Hledat...
+card.card-image|Obrázek %name%
+card.linkTitle|Otevřít %url% v nové záložce
+cbaxLexicon.page.ajax.linkDescription|K lexikonu
+cbaxLexicon.page.banner.alt|Banner
+cbaxLexicon.page.boxKeyword.moreRead|Přečtěte si více
+cbaxLexicon.page.breadcrumb.name|Lexikon
+cbaxLexicon.page.content.headline|Obsah
+cbaxLexicon.page.content.metaDescription|Obsah popisu lexikon Meta
+cbaxLexicon.page.content.metaKeywords|Obsah klíčových slov Lexicon Meta
+cbaxLexicon.page.content.metaTitle|Obsah
+cbaxLexicon.page.filter.button|Navigace v lexikonu
+cbaxLexicon.page.filter.headline|Navigace v lexikonu
+cbaxLexicon.page.index.metaDescription|Index metapopisu lexikonu
+cbaxLexicon.page.index.metaKeywords|Index klíčových slov Lexicon Meta
+cbaxLexicon.page.index.metaTitle|Lexikon
+cbaxLexicon.page.listing.entryHeadline|Příspěvky v této kategorii encyklopedie
+cbaxLexicon.page.listing.metaDescription09|Seznam popisů lexikonu Meta 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Popis lexikonu Meta, seznam A
+cbaxLexicon.page.listing.metaDescriptionB|Seznam B popisu lexikonu Meta
+cbaxLexicon.page.listing.metaDescriptionC|Popis lexikonu Meta – seznam C
+cbaxLexicon.page.listing.metaDescriptionD|Popis lexikonu Meta, seznam D
+cbaxLexicon.page.listing.metaDescriptionE|Seznam popisů lexikonu Meta E
+cbaxLexicon.page.listing.metaDescriptionF|Lexikon Meta Popis Seznam F
+cbaxLexicon.page.listing.metaDescriptionG|Popis lexikonu Meta – seznam G
+cbaxLexicon.page.listing.metaDescriptionH|Seznam H popisu lexikonu Meta
+cbaxLexicon.page.listing.metaDescriptionI|Popis lexikonu Meta – seznam I
+cbaxLexicon.page.listing.metaDescriptionJ|Popis lexikonu Meta, seznam J
+cbaxLexicon.page.listing.metaDescriptionK|Popis lexikonu Meta – seznam K
+cbaxLexicon.page.listing.metaDescriptionL|Seznam popisů lexikonu Meta L
+cbaxLexicon.page.listing.metaDescriptionM|Seznam metapopisů lexikonu M
+cbaxLexicon.page.listing.metaDescriptionN|Seznam popisů lexikonu Meta N
+cbaxLexicon.page.listing.metaDescriptionO|Seznam popisů lexikonu Meta O
+cbaxLexicon.page.listing.metaDescriptionP|Seznam popisů lexikonu Meta P
+cbaxLexicon.page.listing.metaDescriptionQ|Seznam metapopisů lexikonu Q
+cbaxLexicon.page.listing.metaDescriptionR|Seznam popisů lexikonu Meta R
+cbaxLexicon.page.listing.metaDescriptionS|Popis lexikonu Meta, seznam S
+cbaxLexicon.page.listing.metaDescriptionT|Popis lexikonu Meta, seznam T
+cbaxLexicon.page.listing.metaDescriptionU|Popis lexikonu Meta, seznam U
+cbaxLexicon.page.listing.metaDescriptionV|Popis lexikonu Meta – seznam V
+cbaxLexicon.page.listing.metaDescriptionW|Seznam W popisu lexikonu Meta
+cbaxLexicon.page.listing.metaDescriptionX|Seznam popisů lexikonu Meta X
+cbaxLexicon.page.listing.metaDescriptionY|Seznam popisů lexikonu meta Y
+cbaxLexicon.page.listing.metaDescriptionZ|Seznam Z popisu lexikonu Meta
+cbaxLexicon.page.listing.metaKeywords09|Seznam klíčových slov Lexicon Meta 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Klíčová slova Lexicon Meta, seznam A
+cbaxLexicon.page.listing.metaKeywordsB|Seznam klíčových slov Lexicon Meta B
+cbaxLexicon.page.listing.metaKeywordsC|Seznam klíčových slov Lexicon Meta C
+cbaxLexicon.page.listing.metaKeywordsD|Klíčová slova Lexicon Meta – seznam D
+cbaxLexicon.page.listing.metaKeywordsE|Seznam klíčových slov Lexicon Meta E
+cbaxLexicon.page.listing.metaKeywordsF|Klíčová slova Lexicon Meta, seznam F
+cbaxLexicon.page.listing.metaKeywordsG|Seznam klíčových slov Lexicon Meta G
+cbaxLexicon.page.listing.metaKeywordsH|Seznam klíčových slov Lexicon Meta H
+cbaxLexicon.page.listing.metaKeywordsI|Seznam klíčových slov Lexicon Meta I
+cbaxLexicon.page.listing.metaKeywordsJ|Seznam klíčových slov Lexicon Meta J
+cbaxLexicon.page.listing.metaKeywordsK|Seznam klíčových slov Lexicon Meta K
+cbaxLexicon.page.listing.metaKeywordsL|Seznam klíčových slov Lexicon Meta L
+cbaxLexicon.page.listing.metaKeywordsM|Seznam klíčových slov Lexicon Meta M
+cbaxLexicon.page.listing.metaKeywordsN|Seznam klíčových slov Lexicon Meta N
+cbaxLexicon.page.listing.metaKeywordsO|Seznam klíčových slov Lexicon Meta O
+cbaxLexicon.page.listing.metaKeywordsP|Seznam klíčových slov Lexicon Meta P
+cbaxLexicon.page.listing.metaKeywordsQ|Seznam klíčových slov Lexicon Meta Q
+cbaxLexicon.page.listing.metaKeywordsR|Seznam klíčových slov Lexicon Meta R
+cbaxLexicon.page.listing.metaKeywordsS|Klíčová slova Lexicon Meta, seznam S
+cbaxLexicon.page.listing.metaKeywordsT|Seznam klíčových slov Lexicon Meta T
+cbaxLexicon.page.listing.metaKeywordsU|Lexikon Meta klíčová slova U
+cbaxLexicon.page.listing.metaKeywordsV|Seznam klíčových slov Lexicon Meta V
+cbaxLexicon.page.listing.metaKeywordsW|Seznam klíčových slov Lexicon Meta W
+cbaxLexicon.page.listing.metaKeywordsX|Seznam klíčových slov Lexicon Meta X
+cbaxLexicon.page.listing.metaKeywordsY|Seznam klíčových slov Lexicon Meta Y
+cbaxLexicon.page.listing.metaKeywordsZ|Seznam klíčových slov Z pro lexikon Meta
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|I
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Otázka
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Obsah
+cbaxLexicon.page.navigation.linkIndex|Úvodní stránka
+cbaxLexicon.page.pagination.toOverview|Přehled
+cbaxLexicon.page.sidebar.title|Lexikon:
+checkout.confirmRevocationReminder|Již jste prohlásili, že se vzdáváte práva na odstoupení od smlouvy.
+checkout.confirmRevocationTerms|Chci okamžitý přístup k digitálnímu obsahu a beru na vědomí, že se tímto vzdávám práva na zrušení.
+checkout.confirmTermsReminderText|"Již jste přijali <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""všeobecné podmínky"">všeobecné podmínky</a>."
+checkout.confirmTermsText|"Přečetl/a jsem si a přijímám <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""všeobecné podmínky"">všeobecné podmínky</a>."
+checkout.lineItemUnitPriceDescriptor|jednotka
+checkout.merchant-not-selected|Chcete-li pokračovat v placení, vyberte místního obchodníka.
+checkout.or|nebo
+CmsElements.callToAction.elementError|Tento prvek není k dispozici pro postranní lištu. Vyberte jinou <p class='h5 my-2'>Výzvu k akci</p> pro váš postranní panel.
+CmsElements.counter.days|DNY
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|Nenahráli jste platné video. Zkontrolujte nastavení prvku.
+CmsElements.htmlVideo.hint.headline|Nesprávný formát / žádné video
+CmsElements.placeholder.label|Vyměňte prvek
+CmsElements.shopTheLook.addAllProducts|Přidat produkty do nákupního košíku
+CmsElements.shopTheLook.totalDiscount|Úspory:
+component.cms.imageGallery.sliderDotLabel|Zobrazit obrázek %index% z %total%
+component.cms.vimeo.privacyNoticeText|"Prohlížením videa souhlasíte s tím, že vaše údaje budou přeneseny do platformy %platform% a že jste si přečetli <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Zásady ochrany osobních údajů"">Zásady ochrany osobních údajů</a>."
+component.product.quantitySelect.decrease|Snížit množství
+component.product.quantitySelect.increase|Zvýšit množství
+component.product.quantitySelect.label|Množství
+contact.newsletterSubscribe|Tímto souhlasím s tím, že mě společnost TENTE může také informovat e-mailem a telefonicky o produktech a událostech (např. veletrzích) společnosti TENTE.
+contact.privacyNoticeText|"Výběrem možnosti Pokračovat potvrzujete, že jste si přečetli naše <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Informace o ochraně údajů"">informace o ochraně údajů</a> a souhlasíte s nimi."
+cookie.groupComfortFeaturesYoutubeVideo|Video na YouTube
+cookie.messageText|"Tyto webové stránky používají soubory cookie, aby zajistily co nejlepší zážitek. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Další informace"">Další informace...</a>"
+detail.acrisProductDownloadBtnText|Stáhnout
+detail.acrisProductDownloadNoPreview|Žádný náhled
+detail.acrisProductDownloadTabLabel|Stahování
+detail.acrisProductDownloadTitle|Stahování
+detail.acrisProductLinkTabLabel|Odkazy
+detail.acrisProductLinkTitle|Odkazy
+detail.buyOnline|Koupit online
+detail.cadService.downloadBtn|Stáhnout
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Typ souboru
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Stavební data pro tento produkt si můžete stáhnout v jiném formátu
+detail.cadService.login|"<a href=""%url%"">Přihlaste se</a>, aby se zobrazily soubory CAD"
+detail.cadService.title|Služba CAD
+detail.contactText|"Ještě jste nenašli ten správný produkt, máte zvláštní požadavky nebo máte zájem o individuální řešení? <a href=""%url%"" title=""Kontaktformular"">Kontaktujte nás</a>."
+detail.ean|EAN
+detail.orderNumber|Číslo produktu
+detail.orText|Nebo
+detail.performance.atrittion|Aritace
+detail.performance.movement|Hluk pohybu
+detail.performance.resistance|Odolné vůči korozi
+detail.performance.roll|Výkon role
+detail.priceOnRequestText|na kus plus DPH<br />Za 24 hodin připraveno k odeslání
+detail.priceOnRequestTitle|Cena na vyžádání
+detail.properties.fitting|Technické údaje
+detail.properties.housing|Uchycení technických údajů
+detail.properties.label.downloads|Stahování
+detail.properties.label.feature|Vlastnosti produktu
+detail.properties.label.fitting|Montáž
+detail.properties.label.housing|Uchycení
+detail.properties.label.performance|Výkon
+detail.properties.label.wheel|Kolo
+detail.properties.performance|Výkon
+detail.properties.wheel|Kolo s technickými údaji
+detail.qte|Množství
+detail.reviewFormContentPlaceholder|Zadejte svou recenzi...
+detail.sendQuoteRequest|Odeslat žádost o nabídku
+detail.tabs.downloads|Stahování
+detail.tabs.features|Funkce
+detail.tabs.performance|Výkon
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|Množství (%množství %) je nesprávné.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|Objednávka s číslem objednávky „%orderNumber%“ již byla zaplacena a poté ji nelze upravit.
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Tuto objednávku se nepodařilo najít.
+error.merchant-not-selected|Chcete-li pokračovat v placení, vyberte místního obchodníka.
+error.VIOLATION::ZIP_CODE_INVALID|Zadané poštovní směrovací číslo nemá správný formát.
+footer.excludeVatText|"* Všechny ceny bez DPH plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">náklady na odeslání</a> a případné poplatky za doručení, pokud není uvedeno jinak."
+footer.includeVatText|"* Všechny ceny včetně DPH plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">náklady na odeslání</a> a případné poplatky za doručení, pokud není uvedeno jinak."
+footer.serviceContactText|"Nebo prostřednictvím <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Kontaktní formulář"">kontaktní formulář</a>."
+footer.socialMediaHeadline|Sociální
+general.contactUs|Kontaktujte nás
+general.contactUsLink|/kontakt
+general.loginRegister|Přihlášení/registrace
+general.privacyNoticeText|Přihlášením k odběru newsletteru přijímáte naše zásady ochrany osobních údajů <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Privacy policy"">zásady ochrany osobních údajů</a>
+global.default.activate|Aktivovat
+global.default.cancel|Zrušit
+global.default.confirm|Potvrdit
+global.default.deactivate|Deaktivovat
+global.default.delete|Odstranit
+global.default.edit|Upravit
+global.default.noteRequiredFields|Pole označená hvězdičkou (*) jsou povinná.
+global.default.save|Uložit
+listing.downloadText|Stáhnout
+moorl-creator.aboutTheCreator|O tvůrci
+moorl-creator.aboutTheCreators|O tvůrcích
+moorl-creator.creator|Tvůrce
+moorl-creator.creators|Tvůrci
+moorl-creator.donate|Darovat
+moorl-creator.follow|Sledovat
+moorl-creator.link|Domovská stránka
+moorl-creator.productsOf|Produkty
+moorl-creator.readMore|Přečtěte si více...
+moorl-foundation.buttons.acceptCookie|Přijmout soubor cookie
+moorl-foundation.buttons.addMerchantButtonText|Nový obchodník
+moorl-foundation.buttons.administrationButtonText|Správa
+moorl-foundation.buttons.cancelButtonText|Zrušit
+moorl-foundation.buttons.exportButtonText|Exportovat CSV
+moorl-foundation.buttons.exportButtonTitle|Stáhněte si svůj CSV
+moorl-foundation.buttons.getLocButtonText|Získat pozice pomocí mapy OpenStreetMap
+moorl-foundation.buttons.importButtonText|Importovat CSV
+moorl-foundation.buttons.importButtonTitle|Nahrajte svůj CSV
+moorl-foundation.buttons.mediaFolder|Uložit snímky do této složky
+moorl-foundation.buttons.newButtonText|Nový
+moorl-foundation.buttons.openMapButtonText|Otevřít mapu
+moorl-foundation.buttons.openNewWindowButtonText|Otevřít v novém okně
+moorl-foundation.buttons.overwriteText|Přepsat stávající datové řady (je třeba nastavitoriginId).
+moorl-foundation.buttons.placeIdLink|Plánovat trasu
+moorl-foundation.buttons.refreshButtonText|Znovu načíst
+moorl-foundation.buttons.saveButtonText|Uložit
+moorl-foundation.buttons.selectLocButtonText|Vyberte si
+moorl-foundation.buttons.startImportButtonText|Zahájit import
+moorl-foundation.card.address|Adresa
+moorl-foundation.card.company|Společnost
+moorl-foundation.card.contact|Kontakt
+moorl-foundation.card.legend|Legenda
+moorl-foundation.card.openingHours|Otevírací doba
+moorl-foundation.card.person|Kontaktní osoba
+moorl-foundation.customerUpload.checkToDelete|Zaškrtnutím smažete
+moorl-foundation.customerUpload.dictDefaultMessage|Přetáhněte soubory sem pro nahrání
+moorl-foundation.customerUpload.useAsCover|Použít jako kryt
+moorl-foundation.days.closed|Uzavřeno
+moorl-foundation.days.friday|Pátek
+moorl-foundation.days.monday|Pondělí
+moorl-foundation.days.saturday|Sobota
+moorl-foundation.days.sunday|Neděle
+moorl-foundation.days.thursday|Čtvrtek
+moorl-foundation.days.today|Dnes
+moorl-foundation.days.tuesday|Úterý
+moorl-foundation.days.wednesday|Středa
+moorl-foundation.general.selectedItems|Vybrané položky
+moorl-foundation.general.share|Sdílet
+moorl-foundation.general.subTotal|Mezisoučet
+moorl-foundation.general.toc|Obsah
+moorl-foundation.label.accountCard|Účet
+moorl-foundation.label.addressCard|Adresa
+moorl-foundation.label.generalCard|Obecné
+moorl-foundation.label.locationCard|Umístění
+moorl-foundation.label.markerCard|Značka
+moorl-foundation.label.metaCard|Meta
+moorl-foundation.label.relationsCard|Vztahy a filtry
+moorl-foundation.label.visibilityCard|Viditelnost
+moorl-foundation.listing.filter.categories|Kategorie
+moorl-foundation.listing.filter.country|Země
+moorl-foundation.listing.filter.distance|Vzdálenost
+moorl-foundation.listing.filter.firstChar|Index
+moorl-foundation.listing.filter.inRadiusOf|v poloměru
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|MI
+moorl-foundation.listing.filter.myLocation|Použít mou polohu
+moorl-foundation.listing.filter.navigation|Kategorie
+moorl-foundation.listing.filter.radius|Hledat PSČ
+moorl-foundation.listing.filter.search|Hledat text
+moorl-foundation.listing.filter.tags|Značky
+moorl-foundation.listing.filter.zipcodeCity|PSČ/město
+moorl-foundation.properties.active|Aktivní
+moorl-foundation.properties.additionalAddressLine1|Řádek adresy 1
+moorl-foundation.properties.additionalAddressLine2|Řádek adresy 2
+moorl-foundation.properties.articles|Články
+moorl-foundation.properties.author|Autor
+moorl-foundation.properties.categories|Kategorie
+moorl-foundation.properties.city|Město
+moorl-foundation.properties.closed|Uzavřeno
+moorl-foundation.properties.cmsPage|Stránka CMS
+moorl-foundation.properties.cmsPageId|ID stránky CMS
+moorl-foundation.properties.company|Společnost
+moorl-foundation.properties.content|Obsah
+moorl-foundation.properties.country|Země
+moorl-foundation.properties.countryCode|Kód země
+moorl-foundation.properties.countryId|Země
+moorl-foundation.properties.createdAt|Vytvořeno v
+moorl-foundation.properties.customerGroupId|Skupina zákazníků
+moorl-foundation.properties.customerNumber|Číslo zákazníka
+moorl-foundation.properties.date|Datum
+moorl-foundation.properties.department|Oddělení
+moorl-foundation.properties.description|Popis
+moorl-foundation.properties.distance|Vzdálenost
+moorl-foundation.properties.email|E-mail
+moorl-foundation.properties.enableComments|Povolit komentáře
+moorl-foundation.properties.firstName|Křestní jméno
+moorl-foundation.properties.from|Od
+moorl-foundation.properties.highlight|Zvýraznit
+moorl-foundation.properties.image|Článek
+moorl-foundation.properties.info|Informace
+moorl-foundation.properties.inRadiusOf|v poloměru
+moorl-foundation.properties.invisible|Neviditelné
+moorl-foundation.properties.km|Km
+moorl-foundation.properties.lastName|Příjmení
+moorl-foundation.properties.location|Pozice
+moorl-foundation.properties.locationLat|Zeměpisná šířka
+moorl-foundation.properties.locationLon|Zeměpisná délka
+moorl-foundation.properties.locked|Uzamčeno
+moorl-foundation.properties.logo|Logo
+moorl-foundation.properties.marker|Značka
+moorl-foundation.properties.markerId|Značka
+moorl-foundation.properties.markerSettings|Nastavení značek
+moorl-foundation.properties.markerSettingsExample|Tento příklad můžete zkopírovat a upravit vlastní nastavení značek.
+moorl-foundation.properties.markerSettingsLink|Příklad vlastní značky příbalové informace
+moorl-foundation.properties.markerShadow|Stín značky
+moorl-foundation.properties.markerShadowId|Stíny značek
+moorl-foundation.properties.media|Média
+moorl-foundation.properties.mediaId|ID média
+moorl-foundation.properties.merchant|Obchodník
+moorl-foundation.properties.merchantUrl|URL obchodníka
+moorl-foundation.properties.metaDescription|Meta popis
+moorl-foundation.properties.metaTitle|Meta titul
+moorl-foundation.properties.name|Název
+moorl-foundation.properties.openingHours|Otevírací doba
+moorl-foundation.properties.originId|ID původu
+moorl-foundation.properties.phoneNumber|Telefon
+moorl-foundation.properties.priority|Priorita
+moorl-foundation.properties.productManufacturers|ID výrobce
+moorl-foundation.properties.products|Produkty
+moorl-foundation.properties.radius|Poloměr
+moorl-foundation.properties.repeat|Opakovat
+moorl-foundation.properties.salesChannel|Prodejní kanál
+moorl-foundation.properties.salesChannelId|Prodejní kanál
+moorl-foundation.properties.search|Hledat
+moorl-foundation.properties.shopUrl|Nakupovat URL
+moorl-foundation.properties.showFrom|Zobrazit od
+moorl-foundation.properties.showUntil|Zobrazit do
+moorl-foundation.properties.slug|Odřenina
+moorl-foundation.properties.sticky|Lepkavý
+moorl-foundation.properties.street|Ulice
+moorl-foundation.properties.streetNumber|Číslo
+moorl-foundation.properties.tags|Názvy/ID značek
+moorl-foundation.properties.teaser|Upoutávka
+moorl-foundation.properties.title|Název
+moorl-foundation.properties.until|Do
+moorl-foundation.properties.updatedAt|Aktualizováno v
+moorl-foundation.properties.vatId|DIČ
+moorl-foundation.properties.zipcode|PSČ
+moorl-foundation.search.headline|"{0} Žádné shody pro „%searchTerm%“ | {1} Jedna shoda pro „%searchTerm%“ | ]1,Inf[ %count% shody pro „%searchTerm%“"
+moorl-foundation.search.missingConfiguration|Chybí konfigurace pro tento seznam!
+moorl-foundation.search.moreButton|Více
+moorl-foundation.search.noListingSlotFound|Tato stránka nemá prvek seznamu. Zkontrolujte nastavení seznamu a vyberte možnost „Automatické položky“
+moorl-foundation.search.notAvailable|Není k dispozici
+moorl-foundation.search.product|Produkty
+moorl-location-map.cookieDescription|Jako poskytovatel dlaždic používáme OpenStreetMap, abychom vám vizuálně ukázali polohu našich obchodů a obchodníků.
+moorl-location-map.cookieHint|Chcete-li použít požadovanou funkci, přijměte soubor cookie.
+moorl-location-map.cookieName|Mapy umístění
+moorl-magazine.articles|Články na blogu
+moorl-magazine.author|Autor
+moorl-magazine.authors|Autoři
+moorl-magazine.back|Zpět
+moorl-magazine.backToOverview|Zpět na přehled
+moorl-magazine.categories|Kategorie
+moorl-magazine.categoryAll|Všechny kategorie
+moorl-magazine.commentArea|Oblast komentářů
+moorl-magazine.commentAreaDisabled|Komentáře k tomuto článku jsou zakázány
+moorl-magazine.commentError|Ujistěte se, že jste správně vyplnili všechna pole
+moorl-magazine.commentReview|Váš komentář bude uvolněn po kontrole.
+moorl-magazine.commentSuccess|Děkujeme za váš komentář!
+moorl-magazine.date|Datum
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|E-mail
+moorl-magazine.emailPlaceholder|Zadejte svou e-mailovou adresu
+moorl-magazine.name|Název
+moorl-magazine.namePlaceholder|Zadejte své jméno
+moorl-magazine.next|Další
+moorl-magazine.page|Strana
+moorl-magazine.pageDescription|Lorem ipsum dolor sit amet, konseteturní smutný elitr, sed nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea Rebum. Stet clita kasd gubergren, bez mořské takimaty sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, konseteturní smutný elitr, sed nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea Rebum. Gubergren Stet clita kasd, bez mořské takimaty sanctus est Lorem ipsum dolor sit amet.
+moorl-magazine.pageTitle|Můj ohleduplný blog
+moorl-magazine.posts|Příspěvky na blog
+moorl-magazine.products|Související produkty
+moorl-magazine.readMore|Přečtěte si více
+moorl-magazine.recentComments|Nedávné komentáře
+moorl-magazine.relatedArticles|Související příspěvky na blogu
+moorl-magazine.search|Hledat
+moorl-magazine.searchFor|Hledat...
+moorl-magazine.sendComment|Odeslat komentář
+moorl-magazine.similarArticles|Podobné příspěvky na blogu
+moorl-magazine.sticky|Připnutý
+moorl-magazine.tags|Značky
+moorl-magazine.writeComment|Napsat komentář
+moorl-magazine.wroteOn|napsal/a
+moorl-magazine.yourComment|Váš komentář
+moorl-magazine.yourCommentPlaceholder|Sem zadejte svůj komentář
+moorl-merchant-finder.allCategories|Všechny kategorie
+moorl-merchant-finder.allCountries|Všechny země
+moorl-merchant-finder.allManufacturers|Všichni výrobci
+moorl-merchant-finder.allowMerchantCustomerContact|Umožňuji vybranému obchodníkovi, aby mě kontaktoval telefonicky nebo e-mailem.
+moorl-merchant-finder.allResults|-- Vybrat --
+moorl-merchant-finder.allTags|Všechny tagy
+moorl-merchant-finder.are|jsou 
+moorl-merchant-finder.available|K dispozici
+moorl-merchant-finder.backToOverview|Zpět na přehled
+moorl-merchant-finder.call|Volat
+moorl-merchant-finder.cancel|Zrušit
+moorl-merchant-finder.categories|Kategorie
+moorl-merchant-finder.checkAvailability|Zkontrolovat dostupnost
+moorl-merchant-finder.chose|Vyberte
+moorl-merchant-finder.choseMerchant|Vyberte si obchodníka
+moorl-merchant-finder.choseMerchantToProceed|Chcete-li pokračovat v placení, vyberte místního obchodníka
+moorl-merchant-finder.close|Zavřít
+moorl-merchant-finder.commentToMerchant|Odeslat obchodníkovi komentář
+moorl-merchant-finder.country|Země
+moorl-merchant-finder.deliveryTime|Čas doručení
+moorl-merchant-finder.deliveryTimeUnknown|Není známo – produkty budou vyžádány na objednávce
+moorl-merchant-finder.description|Popis
+moorl-merchant-finder.desiredDate|Požadované datum vyzvednutí
+moorl-merchant-finder.desiredTime|Požadovaný čas vyzvednutí
+moorl-merchant-finder.displayOnMap|Zobrazit na mapě
+moorl-merchant-finder.distance|Vzdálenost
+moorl-merchant-finder.emptyResultMessage|Nebyli nalezeni žádní obchodníci
+moorl-merchant-finder.findMerchants|Najít obchodníky
+moorl-merchant-finder.forTheSearch|pro vyhledávání 
+moorl-merchant-finder.forTheSearchZipcode|v PSČ a v okolí na vzdálenost km 
+moorl-merchant-finder.highlight|Tip
+moorl-merchant-finder.km|Km
+moorl-merchant-finder.loading|Načítání...
+moorl-merchant-finder.manufacturers|Výrobci
+moorl-merchant-finder.merchant|Obchodník
+moorl-merchant-finder.merchants|Obchodníci
+moorl-merchant-finder.merchantUrl|Webové stránky
+moorl-merchant-finder.more|Více
+moorl-merchant-finder.myLocation|Použít mou aktuální polohu
+moorl-merchant-finder.mySelection|Můj výběr
+moorl-merchant-finder.noMerchantSelected|Produkt není k dispozici. Nebyl vybrán žádný obchodník.
+moorl-merchant-finder.none|žádné
+moorl-merchant-finder.openingHours|Otevírací doba
+moorl-merchant-finder.outOfStock|Produkt není k dispozici. Váš vybraný obchodník nemá tento produkt na skladě.
+moorl-merchant-finder.phoneNumber|Telefon
+moorl-merchant-finder.pickupDateSet|Čas vyzvednutí byl nastaven
+moorl-merchant-finder.productAvailability|Dostupnost produktů
+moorl-merchant-finder.productNotAvailable|Produkt není k dispozici. Pro více informací kontaktujte podporu obchodu.
+moorl-merchant-finder.radius|Poloměr
+moorl-merchant-finder.resetSelection|Resetovat výběr
+moorl-merchant-finder.resultsFound|nalezené výsledky počtu
+moorl-merchant-finder.save|Uložit
+moorl-merchant-finder.search|Hledat
+moorl-merchant-finder.searchFor|Hledat
+moorl-merchant-finder.searchLocation|Vyhledat místo
+moorl-merchant-finder.searchRules.hasLogo|Obchodník s logem
+moorl-merchant-finder.searchRules.hasPriority|Prioritní obchodník
+moorl-merchant-finder.searchRules.isHighlighted|Obchodník Premium
+moorl-merchant-finder.searchRules.isNotHighlighted|Běžný obchodník
+moorl-merchant-finder.selectedMerchant|Vybraný obchodník
+moorl-merchant-finder.sendMail|Pošta
+moorl-merchant-finder.shop|Nakupovat
+moorl-merchant-finder.shopUrl|Navštivte obchod
+moorl-merchant-finder.stockInfo|Informace o zásobách
+moorl-merchant-finder.tags|Značky
+moorl-merchant-finder.thereAre|existují 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|PSČ, město
+moorl-merchant-finder.zipcodeCityEnter|Zadejte PSČ nebo město a stiskněte klávesu Enter
+nimbits-pricerequests.cart.cartRequestButton|Požádat o nabídku
+nimbits-pricerequests.cart.dontAddByProductNumber|Tento produkt nelze přidat do košíku.
+nimbits-pricerequests.detail.available|K dispozici
+nimbits-pricerequests.detail.button.openrequestform|Požádat o nabídku
+nimbits-pricerequests.detail.restock|"{1} K dispozici za 1 den|]1,Inf[ K dispozici za %restockTime% dní"
+nimbits-pricerequests.detail.text.priceonrequest|Cena na vyžádání
+nimbits-pricerequests.fail.alert|Požadavek nebyl odeslán – došlo k chybě. Zkuste to prosím znovu.
+nimbits-pricerequests.finish.alert|Požadavek byl úspěšně odeslán
+nimbits-pricerequests.finish.buttonBack|Zpět do obchodu
+nimbits-pricerequests.listing.button.openrequestform|Požádat o nabídku
+nimbits-pricerequests.listing.text.priceonrequest|Cena na vyžádání
+nimbits-pricerequests.mail.address|Adresa
+nimbits-pricerequests.mail.amount|Částka
+nimbits-pricerequests.mail.article|Článek
+nimbits-pricerequests.mail.city|Město
+nimbits-pricerequests.mail.comment|Komentář zákazníka
+nimbits-pricerequests.mail.company|Společnost
+nimbits-pricerequests.mail.country|Země
+nimbits-pricerequests.mail.customersendername|Cena na vyžádání
+nimbits-pricerequests.mail.housenumber|Číslo domu
+nimbits-pricerequests.mail.mail|Pošta
+nimbits-pricerequests.mail.name|Název
+nimbits-pricerequests.mail.ordernumber|Číslo objednávky
+nimbits-pricerequests.mail.price|Cena
+nimbits-pricerequests.mail.pricegross|Včetně Daň
+nimbits-pricerequests.mail.pricegrosssum|Včetně Daňová částka
+nimbits-pricerequests.mail.pricenet|Bez Daň
+nimbits-pricerequests.mail.pricenetsum|Bez Daňová částka
+nimbits-pricerequests.mail.requestfirst|Žádost o cenu od
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Cena na vyžádání
+nimbits-pricerequests.mail.street|Ulice
+nimbits-pricerequests.mail.subject|Cena na vyžádání
+nimbits-pricerequests.mail.subjectcart|Požadavek na košík
+nimbits-pricerequests.mail.subjectshopowner|Cena na vyžádání
+nimbits-pricerequests.mail.subjectshopownercart|Požadavek na košík
+nimbits-pricerequests.mail.zipcode|PSČ
+nimbits-pricerequests.popup.city|Město
+nimbits-pricerequests.popup.closebutton|Zavřít
+nimbits-pricerequests.popup.company|Společnost
+nimbits-pricerequests.popup.country|Země
+nimbits-pricerequests.popup.dataprivacytext|"Přečetl/a jsem si <a href=""/privacy"" target=""_blank"" rel=""noreferrer noopener""> Zásady ochrany osobních údajů </a>, rozumím jim a souhlasím s nimi."
+nimbits-pricerequests.popup.desiredprice|Požadovaná cena v 
+nimbits-pricerequests.popup.entervalidcity|Zadejte platné město.
+nimbits-pricerequests.popup.entervalidcountry|Zadejte platnou zemi.
+nimbits-pricerequests.popup.entervalidhousenumber|Zadejte platné číslo domu.
+nimbits-pricerequests.popup.entervalidmail|Zadejte platnou e-mailovou adresu.
+nimbits-pricerequests.popup.entervalidstreet|Zadejte platnou ulici.
+nimbits-pricerequests.popup.entervalidzipcode|Zadejte platné PSČ.
+nimbits-pricerequests.popup.genderm|Pan
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Paní
+nimbits-pricerequests.popup.housenumber|Číslo domu
+nimbits-pricerequests.popup.mail|Poštovní adresy
+nimbits-pricerequests.popup.name|Název
+nimbits-pricerequests.popup.optional|(volitelné)
+nimbits-pricerequests.popup.phonenumber|Telefon
+nimbits-pricerequests.popup.popupTitle|Požádat o nabídku
+nimbits-pricerequests.popup.product|Produkt(y) v této žádosti:
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Požadavek
+nimbits-pricerequests.popup.requestbutton|Požadavek
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|Pole označená * jsou povinná.
+nimbits-pricerequests.popup.salutation|Oslovení
+nimbits-pricerequests.popup.street|Ulice
+nimbits-pricerequests.popup.surname|Příjmení
+nimbits-pricerequests.popup.text|Požádat o nabídku vybraných produktů
+nimbits-pricerequests.popup.zipcode|PSČ
+nimbits-pricerequests.search.text.priceonrequest|Cena na vyžádání
+nimbits-pricerequests.toasts.error|Požadavek nebyl odeslán – došlo k chybě. Zkuste to prosím znovu.
+nimbits-pricerequests.toasts.success|Požadavek byl úspěšně odeslán
+priceRequest.newsletterText|Tímto souhlasím s tím, že mě společnost TENTE může také informovat e-mailem a telefonicky o produktech a událostech (např. veletrzích) společnosti TENTE.
+priceRequest.sendRequestText|Požadavek bude přenesen...
+priceRequest.waitText|Čekejte prosím...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Vyberte možnost...
+theme.compilation.async.success|Kompilace prodejního kanálu %salesChannelName% dokončena
+vdct-simple-events.events.detail.to-event|Přejít na událost
+zeobv-store-switcher.switchStoreLabel|Přepnout obchod

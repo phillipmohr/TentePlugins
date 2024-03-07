@@ -1,0 +1,564 @@
+LanguagePack uk-UA|Переклад
+account.doubleOptinAccountAlert|Ваш обліковий запис клієнта ще не активовано. Ми надіслали електронний лист із підтвердженням, що містить посилання для активації. Перевірте свою поштову скриньку та натисніть на посилання, щоб завершити реєстрацію!
+account.downloadFileButton|Завантажити
+account.downloadItemColumnDate|Дата
+account.downloadItemColumnTitle|Файл
+account.faxLabel|Факс
+account.faxPlaceholder|Введіть факс
+account.homepageLabel|Головна сторінка
+account.homepagePlaceholder|Введіть URL-адресу домашньої сторінки
+account.passwordNotIdentical|Введені паролі не збігаються.
+account.personalTypePlaceholder|Виберіть...
+account.profileCurrentMailPlaceholder|Введіть адресу електронної пошти...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Натисніть тут</a>, щоб видалити всі ваші персональні дані."
+account.profilePasswordCreateNewPlaceholder|Введіть новий пароль...
+account.profilePasswordCurrentPlaceholder|Введіть поточний пароль...
+acrisFilter.buttonFiltersHide|Показати менше фільтрів
+acrisFilter.buttonFilterShowHideLabel|Показати більше або менше фільтрів
+acrisFilter.buttonFiltersShow|Показати більше фільтрів
+acrisFilter.buttonHeaderSearchAllCategories|Усі категорії
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Доступно негайно
+acrisFilter.filterCategoriesDisplayName|Категорії
+acrisFilter.filterRangeActiveMaxLabel|Майно %displayName% –
+acrisFilter.filterRangeActiveMinLabel|Майно %displayName% від
+acrisFilter.filterRangeSliderFrom|від
+acrisFilter.filterRangeSliderTo|до
+acrisFilter.filterSearchPlaceholder|Пошук...
+card.card-image|Зображення %name%
+card.linkTitle|Відкрити %url% у новій вкладці
+cbaxLexicon.page.ajax.linkDescription|До лексикону
+cbaxLexicon.page.banner.alt|Банер
+cbaxLexicon.page.boxKeyword.moreRead|Читати більше
+cbaxLexicon.page.breadcrumb.name|Лексикон
+cbaxLexicon.page.content.headline|Зміст
+cbaxLexicon.page.content.metaDescription|Вміст опису метаболізму лексикону
+cbaxLexicon.page.content.metaKeywords|Вміст ключових слів метаболізму Lexicon
+cbaxLexicon.page.content.metaTitle|Зміст
+cbaxLexicon.page.filter.button|Навігація Lexicon
+cbaxLexicon.page.filter.headline|Навігація Lexicon
+cbaxLexicon.page.index.metaDescription|Індекс опису метаболізму лексикону
+cbaxLexicon.page.index.metaKeywords|Індекс мета ключових слів Lexicon
+cbaxLexicon.page.index.metaTitle|Лексикон
+cbaxLexicon.page.listing.entryHeadline|Публікації в цій категорії енциклопедії
+cbaxLexicon.page.listing.metaDescription09|Перелік опису метаболізму лексикону 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Перелік A опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionB|Перелік B опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionC|Список C Опису Металу Лексикону
+cbaxLexicon.page.listing.metaDescriptionD|Перелік D опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionE|Перелік E опису метаданих лексикону
+cbaxLexicon.page.listing.metaDescriptionF|Перелік F опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionG|Перелік G опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionH|Перелік H опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionI|Список описів метаболізму лексикону I
+cbaxLexicon.page.listing.metaDescriptionJ|Перелік J опису метаданих Лексикону
+cbaxLexicon.page.listing.metaDescriptionK|Перелік K опису метаданих Лексикону
+cbaxLexicon.page.listing.metaDescriptionL|Перелік L опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionM|Список M опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionN|Перелік N опису метаданих лексикону
+cbaxLexicon.page.listing.metaDescriptionO|Перелік O опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionP|Перелік P опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionQ|Список Q опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionR|Перелік R опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionS|Перелік S опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionT|Перелік Т опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionU|Перелік опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionV|Список V опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionW|Перелік опису метаболізму лексикону W
+cbaxLexicon.page.listing.metaDescriptionX|Список X опису метаданих лексикону
+cbaxLexicon.page.listing.metaDescriptionY|Перелік Y опису метаболізму лексикону
+cbaxLexicon.page.listing.metaDescriptionZ|Перелік Z опису метаданих Лексикону
+cbaxLexicon.page.listing.metaKeywords09|Перелік ключових слів метаболізму Lexicon 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Ключові слова метаболізму Lexicon, перелік A
+cbaxLexicon.page.listing.metaKeywordsB|Ключові слова метаболізму Lexicon, перелік B
+cbaxLexicon.page.listing.metaKeywordsC|Перелік ключових слів метаболізму Lexicon
+cbaxLexicon.page.listing.metaKeywordsD|Перелік ключових слів метаболізму Lexicon
+cbaxLexicon.page.listing.metaKeywordsE|Перелік ключових слів метаболізму Lexicon
+cbaxLexicon.page.listing.metaKeywordsF|Перелік ключових слів метаболізму Lexicon F
+cbaxLexicon.page.listing.metaKeywordsG|Перелік ключових слів метаболізму Lexicon G
+cbaxLexicon.page.listing.metaKeywordsH|Перелік ключових слів метаболізму Lexicon H
+cbaxLexicon.page.listing.metaKeywordsI|Список ключових слів метаболізму Lexicon I
+cbaxLexicon.page.listing.metaKeywordsJ|Перелік ключових слів метаболізму Lexicon J
+cbaxLexicon.page.listing.metaKeywordsK|Перелік ключових слів метаболізму Lexicon K
+cbaxLexicon.page.listing.metaKeywordsL|Перелік ключових слів метаболізму Lexicon L
+cbaxLexicon.page.listing.metaKeywordsM|Перелік ключових слів метаболізму Lexicon M
+cbaxLexicon.page.listing.metaKeywordsN|Ключові слова метаболізму Lexicon, перелік N
+cbaxLexicon.page.listing.metaKeywordsO|Перелік ключових слів метаболізму Lexicon
+cbaxLexicon.page.listing.metaKeywordsP|Перелік ключових слів метаболізму Lexicon P
+cbaxLexicon.page.listing.metaKeywordsQ|Список ключових слів метаболітів Lexicon Q
+cbaxLexicon.page.listing.metaKeywordsR|Перелік ключових слів метаболізму Lexicon
+cbaxLexicon.page.listing.metaKeywordsS|Перелік ключових слів метаболізму Lexicon S
+cbaxLexicon.page.listing.metaKeywordsT|Перелік ключових слів метаболізму Lexicon
+cbaxLexicon.page.listing.metaKeywordsU|Ключові слова метаболізму Lexicon з переліком U
+cbaxLexicon.page.listing.metaKeywordsV|Перелік ключових слів метаболізму Lexicon V
+cbaxLexicon.page.listing.metaKeywordsW|Перелік ключових слів метаболізму Lexicon W
+cbaxLexicon.page.listing.metaKeywordsX|Перелік ключових слів метаболізму Lexicon X
+cbaxLexicon.page.listing.metaKeywordsY|Перелік ключових слів метаболізму Lexicon, перелік Y
+cbaxLexicon.page.listing.metaKeywordsZ|Мета-ключові слова Lexicon, перелік Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|Я
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|М
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Q
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Зміст
+cbaxLexicon.page.navigation.linkIndex|Початкова сторінка
+cbaxLexicon.page.pagination.toOverview|Переглянути
+cbaxLexicon.page.sidebar.title|Лексикон:
+checkout.confirmRevocationReminder|Ви вже заявили, що відмовляєтеся від права відмови.
+checkout.confirmRevocationTerms|Я хочу негайно отримати доступ до цифрового вмісту і підтверджую, що таким чином відмовляюся від свого права на скасування.
+checkout.confirmTermsReminderText|"Ви вже прийняли <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Загальні положення та умови"">Загальні положення та умови</a>."
+checkout.confirmTermsText|"Я прочитав і прийняв <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Загальні положення та умови"">Загальні положення та умови</a>."
+checkout.lineItemUnitPriceDescriptor|одиниця
+checkout.merchant-not-selected|Щоб продовжити розрахунок, виберіть місцевого продавця.
+checkout.or|або
+CmsElements.callToAction.elementError|Цей елемент недоступний для бічної панелі. Виберіть інший <p клас='h5 my-2'>Зателефонувати до дії</p> для вашої бічної панелі.
+CmsElements.counter.days|ДНІ
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|Ви не завантажили дійсне відео. Перевірте налаштування елемента.
+CmsElements.htmlVideo.hint.headline|Неправильний формат / Немає відео
+CmsElements.placeholder.label|Замінити елемент
+CmsElements.shopTheLook.addAllProducts|Додати продукти до кошика
+CmsElements.shopTheLook.totalDiscount|Заощадження:
+component.cms.imageGallery.sliderDotLabel|Показати зображення %індекс% %total%
+component.cms.vimeo.privacyNoticeText|"Переглядаючи відео, ви погоджуєтеся з тим, що ваші дані будуть передані %platform% і що ви прочитали <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Політика конфіденційності"">Політика конфіденційності</a>."
+component.product.quantitySelect.decrease|Зменшити кількість
+component.product.quantitySelect.increase|Збільшити кількість
+component.product.quantitySelect.label|Кількість
+contact.newsletterSubscribe|Цим я погоджуюся, що компанія TENTE також може повідомляти мене електронною поштою та телефоном про продукти та заходи (наприклад, торгівельно-ярмаркові прояви) компанії TENTE.
+contact.privacyNoticeText|"Вибравши «Продовжити», ви підтверджуєте, що прочитали та погоджуєтеся з нашим <ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Інформація про захист даних"">Інформація про захист даних</a>."
+cookie.groupComfortFeaturesYoutubeVideo|Відео YouTube
+cookie.messageText|"Цей веб-сайт використовує файли cookie для забезпечення найкращого досвіду. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Додаткова інформація"">Додаткова інформація...</a>"
+detail.acrisProductDownloadBtnText|Завантажити
+detail.acrisProductDownloadNoPreview|Немає попереднього перегляду
+detail.acrisProductDownloadTabLabel|Завантаження
+detail.acrisProductDownloadTitle|Завантаження
+detail.acrisProductLinkTabLabel|Посилання
+detail.acrisProductLinkTitle|Посилання
+detail.buyOnline|Придбати онлайн
+detail.cadService.downloadBtn|Завантажити
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Тип файлу
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Ви можете завантажити будівельні дані для цього продукту в іншому форматі
+detail.cadService.login|"<a href=""%url%"">Увійти</a>, щоб переглянути файли CAD"
+detail.cadService.title|Служба CAD
+detail.contactText|"Ви ще не знайшли правильний продукт, маєте особливі вимоги або зацікавлені в індивідуальних рішеннях? <a href=""%url%"" title=""Kontaktformular"">Зв'яжіться з нами</a>."
+detail.ean|EAN
+detail.orderNumber|Номер виробу
+detail.orText|або
+detail.performance.atrittion|Подразнення
+detail.performance.movement|Шум руху
+detail.performance.resistance|Стійкість до корозії
+detail.performance.roll|Продуктивність рулону
+detail.priceOnRequestText|за одиницю плюс ПДВ<br />За 24 години готово до відправлення
+detail.priceOnRequestTitle|Ціна за запитом
+detail.properties.fitting|Налаштування технічних даних
+detail.properties.housing|Кронштейн технічних даних
+detail.properties.label.downloads|Завантаження
+detail.properties.label.feature|Функції продукту
+detail.properties.label.fitting|Встановлення
+detail.properties.label.housing|Кронштейн
+detail.properties.label.performance|Ефективність
+detail.properties.label.wheel|Колесо
+detail.properties.performance|Ефективність
+detail.properties.wheel|Колесо технічних даних
+detail.qte|Кількість
+detail.reviewFormContentPlaceholder|Введіть свій відгук...
+detail.sendQuoteRequest|Надіслати запит на розцінки
+detail.tabs.downloads|Завантаження
+detail.tabs.features|Функції
+detail.tabs.performance|Ефективність
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|Неправильна кількість (% кількості%).
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|Замовлення з номером замовлення «%orderNumber%» вже оплачено, і його не можна редагувати після цього.
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Не вдалося знайти це замовлення.
+error.merchant-not-selected|Щоб продовжити розрахунок, виберіть місцевого продавця.
+error.VIOLATION::ZIP_CODE_INVALID|Введений поштовий індекс має неправильний формат.
+footer.excludeVatText|"* Усі ціни без урахування ПДВ плюс <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%""> вартість доставки</a> та можливі витрати на доставку, якщо не зазначено інше."
+footer.includeVatText|"* Усі ціни включно з ПДВ плюс <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%""> вартість доставки</a> та можливі витрати на доставку, якщо не зазначено інше."
+footer.serviceContactText|"Або через наш <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Contact form"">contact form</a>."
+footer.socialMediaHeadline|Соціальний
+general.contactUs|Зв'яжіться з нами
+general.contactUsLink|/контакт
+general.loginRegister|Вхід/реєстрація
+general.privacyNoticeText|Підписавшись на інформаційну розсилку, ви приймаєте наші <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Політика конфіденційності""> Політика конфіденційності</a>, а також наші
+global.default.activate|Активувати
+global.default.cancel|Скасувати
+global.default.confirm|Підтвердити
+global.default.deactivate|Деактивувати
+global.default.delete|Видалити
+global.default.edit|Редагувати
+global.default.noteRequiredFields|Поля, позначені зірочкою (*), обов’язкові для заповнення.
+global.default.save|Зберегти
+listing.downloadText|Завантажити
+moorl-creator.aboutTheCreator|Про автора
+moorl-creator.aboutTheCreators|Про творців
+moorl-creator.creator|Створювач
+moorl-creator.creators|Автори
+moorl-creator.donate|Пожертвувати
+moorl-creator.follow|Подальше
+moorl-creator.link|Головна сторінка
+moorl-creator.productsOf|Продукція
+moorl-creator.readMore|Читати більше...
+moorl-foundation.buttons.acceptCookie|Прийняти файли cookie
+moorl-foundation.buttons.addMerchantButtonText|Новий продавець
+moorl-foundation.buttons.administrationButtonText|Адміністрування
+moorl-foundation.buttons.cancelButtonText|Скасувати
+moorl-foundation.buttons.exportButtonText|Експорт CSV
+moorl-foundation.buttons.exportButtonTitle|Завантажте CSV-файл
+moorl-foundation.buttons.getLocButtonText|Отримати посади за допомогою OpenStreetMap
+moorl-foundation.buttons.importButtonText|Імпорт CSV
+moorl-foundation.buttons.importButtonTitle|Завантажте CSV-файл
+moorl-foundation.buttons.mediaFolder|Зберегти зображення в цій папці
+moorl-foundation.buttons.newButtonText|Новий
+moorl-foundation.buttons.openMapButtonText|Відкрити карту
+moorl-foundation.buttons.openNewWindowButtonText|Відкрити в новому вікні
+moorl-foundation.buttons.overwriteText|Перезаписати наявні рядки даних (потрібно встановити первинний ідентифікатор).
+moorl-foundation.buttons.placeIdLink|Маршрут планування
+moorl-foundation.buttons.refreshButtonText|Перезавантажити
+moorl-foundation.buttons.saveButtonText|Зберегти
+moorl-foundation.buttons.selectLocButtonText|Виберіть
+moorl-foundation.buttons.startImportButtonText|Почати імпорт
+moorl-foundation.card.address|Адреса
+moorl-foundation.card.company|Компанія
+moorl-foundation.card.contact|Контактна особа
+moorl-foundation.card.legend|Легенда
+moorl-foundation.card.openingHours|Години роботи
+moorl-foundation.card.person|Контактна особа
+moorl-foundation.customerUpload.checkToDelete|Перевірити, щоб видалити
+moorl-foundation.customerUpload.dictDefaultMessage|Перетягніть файли сюди, щоб завантажити
+moorl-foundation.customerUpload.useAsCover|Використовувати як кришку
+moorl-foundation.days.closed|Закрито
+moorl-foundation.days.friday|П'ятниця
+moorl-foundation.days.monday|Понеділок
+moorl-foundation.days.saturday|Субота
+moorl-foundation.days.sunday|Неділя
+moorl-foundation.days.thursday|Четвер
+moorl-foundation.days.today|Сьогодні
+moorl-foundation.days.tuesday|Вівторок
+moorl-foundation.days.wednesday|Середа
+moorl-foundation.general.selectedItems|Вибрані елементи
+moorl-foundation.general.share|Поділитися
+moorl-foundation.general.subTotal|Проміжна сума
+moorl-foundation.general.toc|Зміст
+moorl-foundation.label.accountCard|Рахунок
+moorl-foundation.label.addressCard|Адреса
+moorl-foundation.label.generalCard|Загальні
+moorl-foundation.label.locationCard|Місцезнаходження
+moorl-foundation.label.markerCard|Маркер
+moorl-foundation.label.metaCard|Мета
+moorl-foundation.label.relationsCard|Відносини та фільтри
+moorl-foundation.label.visibilityCard|Видимість
+moorl-foundation.listing.filter.categories|Категорії
+moorl-foundation.listing.filter.country|Країна
+moorl-foundation.listing.filter.distance|Відстань
+moorl-foundation.listing.filter.firstChar|Індекс
+moorl-foundation.listing.filter.inRadiusOf|в радіусі
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|MI
+moorl-foundation.listing.filter.myLocation|Використовувати моє місцезнаходження
+moorl-foundation.listing.filter.navigation|Категорії
+moorl-foundation.listing.filter.radius|Шукати поштовий індекс
+moorl-foundation.listing.filter.search|Пошук тексту
+moorl-foundation.listing.filter.tags|Теги
+moorl-foundation.listing.filter.zipcodeCity|Поштовий індекс / Місто
+moorl-foundation.properties.active|Активний
+moorl-foundation.properties.additionalAddressLine1|Рядок адреси 1
+moorl-foundation.properties.additionalAddressLine2|Рядок адреси 2
+moorl-foundation.properties.articles|Статті
+moorl-foundation.properties.author|Автор
+moorl-foundation.properties.categories|Категорії
+moorl-foundation.properties.city|Місто
+moorl-foundation.properties.closed|Закрито
+moorl-foundation.properties.cmsPage|Сторінка CMS
+moorl-foundation.properties.cmsPageId|Ідентифікатор сторінки CMS
+moorl-foundation.properties.company|Компанія
+moorl-foundation.properties.content|Вміст
+moorl-foundation.properties.country|Країна
+moorl-foundation.properties.countryCode|Код країни
+moorl-foundation.properties.countryId|Країна
+moorl-foundation.properties.createdAt|Створено о
+moorl-foundation.properties.customerGroupId|Група клієнтів
+moorl-foundation.properties.customerNumber|Номер клієнта
+moorl-foundation.properties.date|Дата
+moorl-foundation.properties.department|Відділ
+moorl-foundation.properties.description|Опис
+moorl-foundation.properties.distance|Відстань
+moorl-foundation.properties.email|Електронна пошта
+moorl-foundation.properties.enableComments|Увімкнути коментарі
+moorl-foundation.properties.firstName|Ім’я
+moorl-foundation.properties.from|Від
+moorl-foundation.properties.highlight|Виділити
+moorl-foundation.properties.image|Стаття
+moorl-foundation.properties.info|Інформація
+moorl-foundation.properties.inRadiusOf|в радіусі
+moorl-foundation.properties.invisible|Невидимий
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|Прізвище
+moorl-foundation.properties.location|Положення
+moorl-foundation.properties.locationLat|Широта
+moorl-foundation.properties.locationLon|Довготність
+moorl-foundation.properties.locked|Заблоковано
+moorl-foundation.properties.logo|Логотип
+moorl-foundation.properties.marker|Маркер
+moorl-foundation.properties.markerId|Маркер
+moorl-foundation.properties.markerSettings|Налаштування маркера
+moorl-foundation.properties.markerSettingsExample|Ви можете скопіювати цей приклад, щоб налаштувати власні налаштування маркерів.
+moorl-foundation.properties.markerSettingsLink|Приклад спеціального маркера буклету
+moorl-foundation.properties.markerShadow|Тінь маркера
+moorl-foundation.properties.markerShadowId|Тінь маркера
+moorl-foundation.properties.media|Носії
+moorl-foundation.properties.mediaId|Ідентифікатор носія
+moorl-foundation.properties.merchant|Продавець
+moorl-foundation.properties.merchantUrl|URL-адреса продавця
+moorl-foundation.properties.metaDescription|Опис метаболізму
+moorl-foundation.properties.metaTitle|Назва метаболіту
+moorl-foundation.properties.name|Назва
+moorl-foundation.properties.openingHours|Години роботи
+moorl-foundation.properties.originId|Ідентифікатор походження
+moorl-foundation.properties.phoneNumber|Телефон
+moorl-foundation.properties.priority|Пріоритет
+moorl-foundation.properties.productManufacturers|Ідентифікатори виробника
+moorl-foundation.properties.products|Продукти
+moorl-foundation.properties.radius|Радіус
+moorl-foundation.properties.repeat|Повторити
+moorl-foundation.properties.salesChannel|Канал збуту
+moorl-foundation.properties.salesChannelId|Канал збуту
+moorl-foundation.properties.search|Пошук
+moorl-foundation.properties.shopUrl|URL-адреса магазину
+moorl-foundation.properties.showFrom|Показати з
+moorl-foundation.properties.showUntil|Показати до
+moorl-foundation.properties.slug|Шлап
+moorl-foundation.properties.sticky|Солодкий
+moorl-foundation.properties.street|Вулиця
+moorl-foundation.properties.streetNumber|Номер
+moorl-foundation.properties.tags|Назви/ідентифікатори тегів
+moorl-foundation.properties.teaser|Збивач
+moorl-foundation.properties.title|Назва
+moorl-foundation.properties.until|До
+moorl-foundation.properties.updatedAt|Оновлено о
+moorl-foundation.properties.vatId|Ідентифікаційний номер платника ПДВ
+moorl-foundation.properties.zipcode|Поштовий індекс
+moorl-foundation.search.headline|"{0} Немає збігів для ""%searchTerm%"" | {1} Один збіг для ""%searchTerm%"" | ]1,Inf[%count% збігів для ""%searchTerm%"""
+moorl-foundation.search.missingConfiguration|Відсутня конфігурація для цього списку!
+moorl-foundation.search.moreButton|Більше
+moorl-foundation.search.noListingSlotFound|На цій сторінці немає елемента списку. Перевірте налаштування списку та виберіть пункт «Автоматичні елементи»
+moorl-foundation.search.notAvailable|Недоступно
+moorl-foundation.search.product|Продукти
+moorl-location-map.cookieDescription|Ми використовуємо OpenStreetMap як постачальника плиток, щоб візуально показати вам розташування наших магазинів і продавців.
+moorl-location-map.cookieHint|Прийміть файл cookie, щоб скористатися бажаною функцією.
+moorl-location-map.cookieName|Карти місцезнаходжень
+moorl-magazine.articles|Блогові статті
+moorl-magazine.author|Автор
+moorl-magazine.authors|Автори
+moorl-magazine.back|Назад
+moorl-magazine.backToOverview|Повернутися до огляду
+moorl-magazine.categories|Категорії
+moorl-magazine.categoryAll|Усі категорії
+moorl-magazine.commentArea|Зона коментарів
+moorl-magazine.commentAreaDisabled|Коментарі вимкнено для цієї статті
+moorl-magazine.commentError|Переконайтеся, що Ви правильно заповнили всі поля
+moorl-magazine.commentReview|Ваш коментар буде опублікований після перегляду.
+moorl-magazine.commentSuccess|Дякуємо за коментар!
+moorl-magazine.date|Дата
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|Електронна пошта
+moorl-magazine.emailPlaceholder|Введіть адресу електронної пошти
+moorl-magazine.name|Назва
+moorl-magazine.namePlaceholder|Введіть своє ім’я
+moorl-magazine.next|Далі
+moorl-magazine.page|Сторінка
+moorl-magazine.pageDescription|Lorem ipsum dolor сидить за аметою, елітом для сумування консетора, седованим димом nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. У vero eos et accusam et justo duo dolores et ea rebum. Вулиця кліта kasd gubergren, без морського такімата sanctus est Lorem ipsum dolor сидить амето. Lorem ipsum dolor сидить за аметою, елітом для сумування консетора, седованим димом nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. У vero eos et accusam et justo duo dolores et ea rebum. Вулична кліта касд-губергрен, без морського такімата-санктус-ест Лорем-іпс-долор сидить амето.
+moorl-magazine.pageTitle|Мій граціональний блог
+moorl-magazine.posts|Пости у блозі
+moorl-magazine.products|Пов’язані продукти
+moorl-magazine.readMore|Читати більше
+moorl-magazine.recentComments|Останні коментарі
+moorl-magazine.relatedArticles|Пов'язані дописи в блозі
+moorl-magazine.search|Пошук
+moorl-magazine.searchFor|Пошук...
+moorl-magazine.sendComment|Надіслати коментар
+moorl-magazine.similarArticles|Схожі дописи в блозі
+moorl-magazine.sticky|Зафарбовано
+moorl-magazine.tags|Теги
+moorl-magazine.writeComment|Написати коментар
+moorl-magazine.wroteOn|написано
+moorl-magazine.yourComment|Ваш коментар
+moorl-magazine.yourCommentPlaceholder|Введіть коментар тут
+moorl-merchant-finder.allCategories|Усі категорії
+moorl-merchant-finder.allCountries|Усі країни
+moorl-merchant-finder.allManufacturers|Усі виробники
+moorl-merchant-finder.allowMerchantCustomerContact|Я дозволяю вибраному продавцю зв’язуватися зі мною по телефону або електронною поштою.
+moorl-merchant-finder.allResults|-- Виберіть --
+moorl-merchant-finder.allTags|Усі теги
+moorl-merchant-finder.are|є 
+moorl-merchant-finder.available|Доступно
+moorl-merchant-finder.backToOverview|Повернутися до огляду
+moorl-merchant-finder.call|Дзвінок
+moorl-merchant-finder.cancel|Скасувати
+moorl-merchant-finder.categories|Категорії
+moorl-merchant-finder.checkAvailability|Перевірте наявність
+moorl-merchant-finder.chose|Виберіть
+moorl-merchant-finder.choseMerchant|Виберіть продавця
+moorl-merchant-finder.choseMerchantToProceed|Щоб продовжити розрахунок, виберіть місцевого продавця
+moorl-merchant-finder.close|Закрити
+moorl-merchant-finder.commentToMerchant|Надіслати коментар продавцю
+moorl-merchant-finder.country|Країна
+moorl-merchant-finder.deliveryTime|Час доставки
+moorl-merchant-finder.deliveryTimeUnknown|Невідомо — продукція буде запитана в замовленні
+moorl-merchant-finder.description|Опис
+moorl-merchant-finder.desiredDate|Бажана дата отримання
+moorl-merchant-finder.desiredTime|Бажаний час отримання
+moorl-merchant-finder.displayOnMap|Відобразити на мапі
+moorl-merchant-finder.distance|Відстань
+moorl-merchant-finder.emptyResultMessage|Продавця не знайдено
+moorl-merchant-finder.findMerchants|Знайти продавців
+moorl-merchant-finder.forTheSearch|для пошуку 
+moorl-merchant-finder.forTheSearchZipcode|у поштовому індексі та на відстані км 
+moorl-merchant-finder.highlight|Порада
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|Завантаження...
+moorl-merchant-finder.manufacturers|Виробники
+moorl-merchant-finder.merchant|Продавець
+moorl-merchant-finder.merchants|Продавці
+moorl-merchant-finder.merchantUrl|Веб-сайт
+moorl-merchant-finder.more|Більше
+moorl-merchant-finder.myLocation|Використати моє поточне місцезнаходження
+moorl-merchant-finder.mySelection|Мій вибір
+moorl-merchant-finder.noMerchantSelected|Продукт недоступний. Продавця не вибрано.
+moorl-merchant-finder.none|немає
+moorl-merchant-finder.openingHours|Години роботи
+moorl-merchant-finder.outOfStock|Продукт недоступний. У вибраного продавця немає цього продукту на складі.
+moorl-merchant-finder.phoneNumber|Телефон
+moorl-merchant-finder.pickupDateSet|Час приїзду кур’єра встановлено
+moorl-merchant-finder.productAvailability|Доступність продукту
+moorl-merchant-finder.productNotAvailable|Продукт недоступний. Для отримання додаткової інформації зверніться до служби підтримки магазину.
+moorl-merchant-finder.radius|Радіус
+moorl-merchant-finder.resetSelection|Скинути вибір
+moorl-merchant-finder.resultsFound|знайдено результати підрахунку
+moorl-merchant-finder.save|Зберегти
+moorl-merchant-finder.search|Пошук
+moorl-merchant-finder.searchFor|Пошук
+moorl-merchant-finder.searchLocation|Пошук розташування
+moorl-merchant-finder.searchRules.hasLogo|Продавець із логотипом
+moorl-merchant-finder.searchRules.hasPriority|Продавець пріоритету
+moorl-merchant-finder.searchRules.isHighlighted|Продавець преміум-класу
+moorl-merchant-finder.searchRules.isNotHighlighted|Звичайний продавець
+moorl-merchant-finder.selectedMerchant|Вибраний продавець
+moorl-merchant-finder.sendMail|Поштова адреса
+moorl-merchant-finder.shop|Купити
+moorl-merchant-finder.shopUrl|Відвідайте магазин
+moorl-merchant-finder.stockInfo|Інформація про акції
+moorl-merchant-finder.tags|Теги
+moorl-merchant-finder.thereAre|є 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|поштовий індекс, місто
+moorl-merchant-finder.zipcodeCityEnter|Введіть поштовий індекс або місто та натисніть клавішу Enter
+nimbits-pricerequests.cart.cartRequestButton|Запит пропозиції
+nimbits-pricerequests.cart.dontAddByProductNumber|Цей продукт не можна додати до кошика.
+nimbits-pricerequests.detail.available|Доступно
+nimbits-pricerequests.detail.button.openrequestform|Запит пропозиції
+nimbits-pricerequests.detail.restock|"{1} Доступно через 1 день|]1,Inf[ Доступно через %restockTime% днів"
+nimbits-pricerequests.detail.text.priceonrequest|Ціна за запитом
+nimbits-pricerequests.fail.alert|Запит не надіслано. Сталася помилка. Повторіть спробу.
+nimbits-pricerequests.finish.alert|Запит успішно надіслано
+nimbits-pricerequests.finish.buttonBack|Назад до магазину
+nimbits-pricerequests.listing.button.openrequestform|Запит пропозиції
+nimbits-pricerequests.listing.text.priceonrequest|Ціна за запитом
+nimbits-pricerequests.mail.address|Адреса
+nimbits-pricerequests.mail.amount|Сума
+nimbits-pricerequests.mail.article|Стаття
+nimbits-pricerequests.mail.city|Місто
+nimbits-pricerequests.mail.comment|Коментар клієнтів
+nimbits-pricerequests.mail.company|Компанія
+nimbits-pricerequests.mail.country|Країна
+nimbits-pricerequests.mail.customersendername|Ціна за запитом
+nimbits-pricerequests.mail.housenumber|Номер будинку
+nimbits-pricerequests.mail.mail|Поштова адреса
+nimbits-pricerequests.mail.name|Назва
+nimbits-pricerequests.mail.ordernumber|Номер замовлення
+nimbits-pricerequests.mail.price|Ціна
+nimbits-pricerequests.mail.pricegross|Включно з Податок
+nimbits-pricerequests.mail.pricegrosssum|Включно з Сума податку
+nimbits-pricerequests.mail.pricenet|За винятком Податок
+nimbits-pricerequests.mail.pricenetsum|За винятком Сума податку
+nimbits-pricerequests.mail.requestfirst|Запит ціни від
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Ціна за запитом
+nimbits-pricerequests.mail.street|Вулиця
+nimbits-pricerequests.mail.subject|Ціна за запитом
+nimbits-pricerequests.mail.subjectcart|Запит на мобільну стійку
+nimbits-pricerequests.mail.subjectshopowner|Ціна за запитом
+nimbits-pricerequests.mail.subjectshopownercart|Запит на мобільну стійку
+nimbits-pricerequests.mail.zipcode|Поштовий індекс
+nimbits-pricerequests.popup.city|Місто
+nimbits-pricerequests.popup.closebutton|Закрити
+nimbits-pricerequests.popup.company|Компанія
+nimbits-pricerequests.popup.country|Країна
+nimbits-pricerequests.popup.dataprivacytext|"Я прочитала, зрозуміла та погоджуюся з цільовим <a href=""/privacy"" target=""_blank""> Політика конфіденційності </a>."
+nimbits-pricerequests.popup.desiredprice|Бажана ціна в 
+nimbits-pricerequests.popup.entervalidcity|Введіть дійсне місто.
+nimbits-pricerequests.popup.entervalidcountry|Введіть дійсну країну.
+nimbits-pricerequests.popup.entervalidhousenumber|Введіть дійсний номер будинку.
+nimbits-pricerequests.popup.entervalidmail|Введіть дійсну адресу електронної пошти.
+nimbits-pricerequests.popup.entervalidstreet|Введіть дійсну вулицю.
+nimbits-pricerequests.popup.entervalidzipcode|Введіть дійсний поштовий індекс.
+nimbits-pricerequests.popup.genderm|Пан
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Пані
+nimbits-pricerequests.popup.housenumber|Номер будинку
+nimbits-pricerequests.popup.mail|Поштова адреса
+nimbits-pricerequests.popup.name|Назва
+nimbits-pricerequests.popup.optional|(необов’язково)
+nimbits-pricerequests.popup.phonenumber|Телефон
+nimbits-pricerequests.popup.popupTitle|Запит пропозиції
+nimbits-pricerequests.popup.product|Продукт(-и) у цьому запиті:
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Запит
+nimbits-pricerequests.popup.requestbutton|Запит
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|Поля, позначені *, є обов'язковими.
+nimbits-pricerequests.popup.salutation|Заспокійливий
+nimbits-pricerequests.popup.street|Вулиця
+nimbits-pricerequests.popup.surname|Прізвище
+nimbits-pricerequests.popup.text|Запит пропозиції для обраних продуктів
+nimbits-pricerequests.popup.zipcode|Поштовий індекс
+nimbits-pricerequests.search.text.priceonrequest|Ціна за запитом
+nimbits-pricerequests.toasts.error|Запит не надіслано. Сталася помилка. Повторіть спробу.
+nimbits-pricerequests.toasts.success|Запит успішно надіслано
+priceRequest.newsletterText|Цим я погоджуюся, що компанія TENTE також може повідомляти мене електронною поштою та телефоном про продукти та події (наприклад, про торгівельно-високі прояви) компанії TENTE.
+priceRequest.sendRequestText|Запит буде передано...
+priceRequest.waitText|Зачекайте...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Виберіть опцію...
+theme.compilation.async.success|Компіляція для каналу продажу %salesChannelName% завершена
+vdct-simple-events.events.detail.to-event|До заходу
+zeobv-store-switcher.switchStoreLabel|Змінити магазин

@@ -1,0 +1,564 @@
+LanguagePack hu-HU|Fordítás
+account.doubleOptinAccountAlert|Ügyfélfiókját még nem aktiválták. Elküldtük az aktiválási hivatkozást tartalmazó megerősítő e-mailt. Kérjük, ellenőrizze bejövő leveleit, és kattintson a hivatkozásra a regisztráció befejezéséhez!
+account.downloadFileButton|Letöltés
+account.downloadItemColumnDate|Dátum
+account.downloadItemColumnTitle|Fájl
+account.faxLabel|Fax
+account.faxPlaceholder|Adja meg a faxot
+account.homepageLabel|Kezdőlap
+account.homepagePlaceholder|Adja meg a honlap URL-jét
+account.passwordNotIdentical|A megadott jelszavak nem egyeznek.
+account.personalTypePlaceholder|Kiválasztás...
+account.profileCurrentMailPlaceholder|Adja meg az e-mail címet...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Kattintson ide</a> az összes személyes adat törléséhez."
+account.profilePasswordCreateNewPlaceholder|Új jelszó megadása...
+account.profilePasswordCurrentPlaceholder|Adja meg a jelenlegi jelszót...
+acrisFilter.buttonFiltersHide|Kevesebb szűrő megjelenítése
+acrisFilter.buttonFilterShowHideLabel|Több vagy kevesebb szűrő megjelenítése
+acrisFilter.buttonFiltersShow|További szűrők megjelenítése
+acrisFilter.buttonHeaderSearchAllCategories|Minden kategória
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Azonnal elérhető
+acrisFilter.filterCategoriesDisplayName|Kategóriák
+acrisFilter.filterRangeActiveMaxLabel|%displayName% tulajdonság –
+acrisFilter.filterRangeActiveMinLabel|%displayName% tulajdonság innen:
+acrisFilter.filterRangeSliderFrom|ettől:
+acrisFilter.filterRangeSliderTo|a következőre:
+acrisFilter.filterSearchPlaceholder|Keresés...
+card.card-image|Kép: %name%
+card.linkTitle|%url% megnyitása új lapon
+cbaxLexicon.page.ajax.linkDescription|A lexikonhoz
+cbaxLexicon.page.banner.alt|Banner
+cbaxLexicon.page.boxKeyword.moreRead|További információk
+cbaxLexicon.page.breadcrumb.name|Lexikon
+cbaxLexicon.page.content.headline|Tartalomjegyzék
+cbaxLexicon.page.content.metaDescription|Lexicon metaleírás tartalma
+cbaxLexicon.page.content.metaKeywords|Lexicon Meta kulcsszavak tartalma
+cbaxLexicon.page.content.metaTitle|Tartalomjegyzék
+cbaxLexicon.page.filter.button|Lexicon navigáció
+cbaxLexicon.page.filter.headline|Lexicon navigáció
+cbaxLexicon.page.index.metaDescription|Lexicon metaleírási index
+cbaxLexicon.page.index.metaKeywords|Lexicon Meta kulcsszó index
+cbaxLexicon.page.index.metaTitle|Lexikon
+cbaxLexicon.page.listing.entryHeadline|Bejegyzések ebben az enciklopédia kategóriában
+cbaxLexicon.page.listing.metaDescription09|Lexicon metaleírás lista 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Lexicon metaleírás A lista
+cbaxLexicon.page.listing.metaDescriptionB|Lexicon metaleírás B lista
+cbaxLexicon.page.listing.metaDescriptionC|Lexicon metaleírás C lista
+cbaxLexicon.page.listing.metaDescriptionD|Lexicon metaleírás D lista
+cbaxLexicon.page.listing.metaDescriptionE|Lexicon metaleírás E felsorolás
+cbaxLexicon.page.listing.metaDescriptionF|Lexicon metaleírás lista F
+cbaxLexicon.page.listing.metaDescriptionG|Lexicon Meta leírás lista G
+cbaxLexicon.page.listing.metaDescriptionH|Lexicon metaleírás, H felsorolás
+cbaxLexicon.page.listing.metaDescriptionI|Lexicon metaleírás I. lista
+cbaxLexicon.page.listing.metaDescriptionJ|Lexicon metaleírás J felsorolása
+cbaxLexicon.page.listing.metaDescriptionK|Lexicon metaleírás lista K
+cbaxLexicon.page.listing.metaDescriptionL|Lexicon metaleírás lista L
+cbaxLexicon.page.listing.metaDescriptionM|Lexicon metaleírás lista M
+cbaxLexicon.page.listing.metaDescriptionN|Lexicon metaleírás lista N
+cbaxLexicon.page.listing.metaDescriptionO|Lexicon metaleírás, O felsorolás
+cbaxLexicon.page.listing.metaDescriptionP|Lexicon metaleírás lista P
+cbaxLexicon.page.listing.metaDescriptionQ|Lexicon metaleírás, Q felsorolás
+cbaxLexicon.page.listing.metaDescriptionR|Lexicon metaleírás, R felsorolás
+cbaxLexicon.page.listing.metaDescriptionS|Lexicon metaleírás S-lista
+cbaxLexicon.page.listing.metaDescriptionT|Lexicon metaleírás lista T
+cbaxLexicon.page.listing.metaDescriptionU|Lexicon metaleírás, U felsorolás
+cbaxLexicon.page.listing.metaDescriptionV|Lexicon metaleírás, V. lista
+cbaxLexicon.page.listing.metaDescriptionW|Lexicon metaleírás W lista
+cbaxLexicon.page.listing.metaDescriptionX|Lexicon metaleírás lista X
+cbaxLexicon.page.listing.metaDescriptionY|Lexicon metaleírás, Y-lista
+cbaxLexicon.page.listing.metaDescriptionZ|Lexicon metaleírás lista Z
+cbaxLexicon.page.listing.metaKeywords09|Lexicon Meta kulcsszavak listája 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Lexicon Meta kulcsszavak A felsorolása
+cbaxLexicon.page.listing.metaKeywordsB|Lexicon Meta kulcsszólista B
+cbaxLexicon.page.listing.metaKeywordsC|Lexicon Meta kulcsszólista C
+cbaxLexicon.page.listing.metaKeywordsD|Lexicon Meta kulcsszavak, D felsorolás
+cbaxLexicon.page.listing.metaKeywordsE|Lexicon Meta kulcsszavak listája E
+cbaxLexicon.page.listing.metaKeywordsF|Lexicon Meta kulcsszavak felsorolása F
+cbaxLexicon.page.listing.metaKeywordsG|Lexicon Meta G-t felsoroló kulcsszavak
+cbaxLexicon.page.listing.metaKeywordsH|Lexicon Meta kulcsszavak felsorolása H
+cbaxLexicon.page.listing.metaKeywordsI|Lexicon Meta I-t felsoroló kulcsszavak
+cbaxLexicon.page.listing.metaKeywordsJ|Lexicon Meta J-t felsoroló kulcsszavak
+cbaxLexicon.page.listing.metaKeywordsK|Lexicon Meta kulcsszavak listája K
+cbaxLexicon.page.listing.metaKeywordsL|Lexicon Meta kulcsszavak felsorolása L
+cbaxLexicon.page.listing.metaKeywordsM|Lexicon Meta kulcsszavak felsorolása M
+cbaxLexicon.page.listing.metaKeywordsN|Lexicon Meta kulcsszólista N
+cbaxLexicon.page.listing.metaKeywordsO|Lexicon Meta kulcsszólista O
+cbaxLexicon.page.listing.metaKeywordsP|Lexicon Meta kulcsszólista P
+cbaxLexicon.page.listing.metaKeywordsQ|Lexicon Meta Q-t felsoroló kulcsszavak
+cbaxLexicon.page.listing.metaKeywordsR|Lexicon Meta kulcsszavak listája R
+cbaxLexicon.page.listing.metaKeywordsS|Lexicon Meta S-t tartalmazó kulcsszavak
+cbaxLexicon.page.listing.metaKeywordsT|Lexicon Meta kulcsszavak listája T
+cbaxLexicon.page.listing.metaKeywordsU|Lexicon Meta kulcsszavak, melyek U-t sorolnak fel
+cbaxLexicon.page.listing.metaKeywordsV|Lexicon Meta kulcsszavak V felsorolása
+cbaxLexicon.page.listing.metaKeywordsW|Lexicon Meta kulcsszavak W felsorolása
+cbaxLexicon.page.listing.metaKeywordsX|Lexicon Meta X-et felsoroló kulcsszavak
+cbaxLexicon.page.listing.metaKeywordsY|Lexicon Meta kulcsszavak listája Y
+cbaxLexicon.page.listing.metaKeywordsZ|Lexicon Meta kulcsszavak Z felsorolása
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|I
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Q
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Tartalomjegyzék
+cbaxLexicon.page.navigation.linkIndex|Kezdőoldal
+cbaxLexicon.page.pagination.toOverview|Áttekintésre
+cbaxLexicon.page.sidebar.title|Lexicon:
+checkout.confirmRevocationReminder|Ön már bejelentette, hogy lemond az elállási jogáról.
+checkout.confirmRevocationTerms|Azonnal hozzáférést szeretnék a digitális tartalomhoz, és tudomásul veszem, hogy ezzel lemondok a lemondási jogomról.
+checkout.confirmTermsReminderText|"Ön már elfogadta az <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""általános szerződési feltételek"">általános szerződési feltételek</a> dokumentumot."
+checkout.confirmTermsText|"Elolvastam és elfogadom az <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""general terms and conditions"">általános terms and conditions</a> dokumentumot."
+checkout.lineItemUnitPriceDescriptor|egység
+checkout.merchant-not-selected|Kérjük, válassza ki a helyi kereskedőt a fizetés folytatásához.
+checkout.or|vagy
+CmsElements.callToAction.elementError|Ez az elem nem érhető el az oldalsávhoz. Kérjük, válasszon másik <p class='h5 my-2'>Hívás műveletre</p> lehetőséget az oldalsávhoz.
+CmsElements.counter.days|NAPOK
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|Nem töltött fel érvényes videót. Ellenőrizze az elem beállításait.
+CmsElements.htmlVideo.hint.headline|Rossz formátum / Nincs videó
+CmsElements.placeholder.label|Cserélje ki az elemet
+CmsElements.shopTheLook.addAllProducts|Termékek hozzáadása a bevásárlókosárhoz
+CmsElements.shopTheLook.totalDiscount|Megtakarítások:
+component.cms.imageGallery.sliderDotLabel|%index% / %total% kép megjelenítése
+component.cms.vimeo.privacyNoticeText|"A videó megtekintésével Ön elfogadja, hogy az Ön adatait %platform% platformra továbbítjuk, és hogy elolvasta az <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Privacy policy"">Adatvédelmi irányelv</a> dokumentumot."
+component.product.quantitySelect.decrease|Mennyiség csökkentése
+component.product.quantitySelect.increase|Mennyiség növelése
+component.product.quantitySelect.label|Mennyiség
+contact.newsletterSubscribe|Ezennel beleegyezem abba, hogy a TENTE e-mailben és telefonon is tájékoztathat a TENTE termékekről és eseményekről (pl. kereskedelmi megjelenés).
+contact.privacyNoticeText|"A folytatás kiválasztásával megerősíti, hogy elolvasta és elfogadja <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Data protection information"">adatvédelmi információ</a> dokumentumunkat."
+cookie.groupComfortFeaturesYoutubeVideo|YouTube-videó
+cookie.messageText|"Ez a weboldal sütiket használ a lehető legjobb élmény biztosítása érdekében. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""More information"">További információk...</a>"
+detail.acrisProductDownloadBtnText|Letöltés
+detail.acrisProductDownloadNoPreview|Nincs előnézet
+detail.acrisProductDownloadTabLabel|Letöltések
+detail.acrisProductDownloadTitle|Letöltések
+detail.acrisProductLinkTabLabel|Hivatkozások
+detail.acrisProductLinkTitle|Hivatkozások
+detail.buyOnline|Online vásárlás
+detail.cadService.downloadBtn|Letöltés
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Fájl típusa
+detail.cadService.fileFormatStep|STEP-2
+detail.cadService.headline|A termék felépítési adatait különböző formátumban töltheti le
+detail.cadService.login|"Kérjük, <a href=""%url%"">Bejelentkezés</a> a CAD fájlok megtekintéséhez"
+detail.cadService.title|CAD szolgáltatás
+detail.contactText|"Még nem találta meg a megfelelő terméket, különleges igényei vannak, vagy érdeklik az egyes megoldások? <a href=""%url%"" title=""Kontaktformular"">Lépjen kapcsolatba velünk</a>."
+detail.ean|EAN
+detail.orderNumber|Termék száma
+detail.orText|Vagy
+detail.performance.atrittion|Jellemző
+detail.performance.movement|Mozgás zaja
+detail.performance.resistance|Korrozióállóság
+detail.performance.roll|Tekercs teljesítménye
+detail.priceOnRequestText|darabonként plusz áfa<br />24 órán belül készen áll a szállításra
+detail.priceOnRequestTitle|Ár kérésre
+detail.properties.fitting|Műszaki adatok illesztése
+detail.properties.housing|Műszaki adatok Váz
+detail.properties.label.downloads|Letöltések
+detail.properties.label.feature|Termékjellemzők
+detail.properties.label.fitting|Szerelvény
+detail.properties.label.housing|Váz
+detail.properties.label.performance|Teljesítmény
+detail.properties.label.wheel|Kerék
+detail.properties.performance|Teljesítmény
+detail.properties.wheel|Műszaki Kerék
+detail.qte|Mennyiség
+detail.reviewFormContentPlaceholder|Adja meg az értékelést...
+detail.sendQuoteRequest|Árajánlatkérés küldése
+detail.tabs.downloads|Letöltések
+detail.tabs.features|Funkciók
+detail.tabs.performance|Teljesítmény
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|A mennyiség (%quantity%) helytelen.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|A „%orderNumber%” rendelési számmal rendelkező rendelés már kifizetésre került, és utána nem szerkeszthető.
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Ez a rendelés nem található.
+error.merchant-not-selected|Kérjük, válassza ki a helyi kereskedőt a fizetés folytatásához.
+error.VIOLATION::ZIP_CODE_INVALID|A megadott irányítószám formátuma nem megfelelő.
+footer.excludeVatText|"* Minden ár kivéve. ÁFA plusz <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">szállítási költségek</a> és esetleges szállítási díjak, ha nincs másként megadva."
+footer.includeVatText|"* Minden ár tartalmazza ÁFA plusz <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">szállítási költségek</a> és esetleges szállítási díjak, ha nincs másként megadva."
+footer.serviceContactText|"Vagy <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Contact form"">kapcsolatfelvételi űrlapunk</a> segítségével."
+footer.socialMediaHeadline|Társadalmi
+general.contactUs|Lépjen kapcsolatba velünk
+general.contactUsLink|/kapcsolattartó
+general.loginRegister|Bejelentkezés/Regisztrálás
+general.privacyNoticeText|"A hírlevélre való feliratkozással elfogadod <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Privacy policy"">adatvédelmi irányelvünket</a> valamint <a data-ajax-modal=""true"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""terms and conditions"">feltételeinket</a>."
+global.default.activate|Aktiválás
+global.default.cancel|Mégse
+global.default.confirm|Megerősítés
+global.default.deactivate|Deaktiválás
+global.default.delete|Törlés
+global.default.edit|Szerkesztés
+global.default.noteRequiredFields|A csillaggal (*) jelölt mezők kitöltése kötelező.
+global.default.save|Mentés
+listing.downloadText|Letöltés
+moorl-creator.aboutTheCreator|Az alkotóról
+moorl-creator.aboutTheCreators|Az alkotókról
+moorl-creator.creator|Létrehozó
+moorl-creator.creators|Alkotók
+moorl-creator.donate|Adományozás
+moorl-creator.follow|Követés
+moorl-creator.link|Kezdőlap
+moorl-creator.productsOf|Termékei
+moorl-creator.readMore|További információk...
+moorl-foundation.buttons.acceptCookie|Cookie elfogadása
+moorl-foundation.buttons.addMerchantButtonText|Új kereskedő
+moorl-foundation.buttons.administrationButtonText|Adminisztráció
+moorl-foundation.buttons.cancelButtonText|Mégse
+moorl-foundation.buttons.exportButtonText|CSV exportálása
+moorl-foundation.buttons.exportButtonTitle|Töltse le CSV-fájlját
+moorl-foundation.buttons.getLocButtonText|Pozíciók hívása OpenStreetMap szerint
+moorl-foundation.buttons.importButtonText|CSV importálása
+moorl-foundation.buttons.importButtonTitle|Töltse fel a CSV-t
+moorl-foundation.buttons.mediaFolder|Képek mentése ebbe a mappába
+moorl-foundation.buttons.newButtonText|Új
+moorl-foundation.buttons.openMapButtonText|Térkép megnyitása
+moorl-foundation.buttons.openNewWindowButtonText|Megnyitás új ablakban
+moorl-foundation.buttons.overwriteText|Meglévő adatsorok felülírása (az eredeti azonosítót be kell állítani).
+moorl-foundation.buttons.placeIdLink|Útvonal megtervezése
+moorl-foundation.buttons.refreshButtonText|Újratöltés
+moorl-foundation.buttons.saveButtonText|Mentés
+moorl-foundation.buttons.selectLocButtonText|Kiválasztás
+moorl-foundation.buttons.startImportButtonText|Importálás indítása
+moorl-foundation.card.address|Cím
+moorl-foundation.card.company|Vállalat
+moorl-foundation.card.contact|Kapcsolat
+moorl-foundation.card.legend|Jelmagyarázat
+moorl-foundation.card.openingHours|Nyitvatartási idő
+moorl-foundation.card.person|Kapcsolattartó
+moorl-foundation.customerUpload.checkToDelete|Törléshez jelölje be
+moorl-foundation.customerUpload.dictDefaultMessage|Húzza ide a fájlokat a feltöltéshez
+moorl-foundation.customerUpload.useAsCover|Használja fedélként
+moorl-foundation.days.closed|Lezárva
+moorl-foundation.days.friday|Péntek
+moorl-foundation.days.monday|Hétfő
+moorl-foundation.days.saturday|Szombat
+moorl-foundation.days.sunday|Vasárnap
+moorl-foundation.days.thursday|Csütörtök
+moorl-foundation.days.today|Ma
+moorl-foundation.days.tuesday|Kedd
+moorl-foundation.days.wednesday|Szerda
+moorl-foundation.general.selectedItems|Kiválasztott tételek
+moorl-foundation.general.share|Megosztás
+moorl-foundation.general.subTotal|Részösszeg
+moorl-foundation.general.toc|Tartalomjegyzék
+moorl-foundation.label.accountCard|Fiók
+moorl-foundation.label.addressCard|Cím
+moorl-foundation.label.generalCard|Általános
+moorl-foundation.label.locationCard|Hely
+moorl-foundation.label.markerCard|Jelölő
+moorl-foundation.label.metaCard|Meta
+moorl-foundation.label.relationsCard|Kapcsolatok és szűrők
+moorl-foundation.label.visibilityCard|Láthatóság
+moorl-foundation.listing.filter.categories|Kategóriák
+moorl-foundation.listing.filter.country|Ország
+moorl-foundation.listing.filter.distance|Távolság
+moorl-foundation.listing.filter.firstChar|Index
+moorl-foundation.listing.filter.inRadiusOf|a következő sugárban:
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|MI
+moorl-foundation.listing.filter.myLocation|Helyem használata
+moorl-foundation.listing.filter.navigation|Kategóriák
+moorl-foundation.listing.filter.radius|Irányítószám keresése
+moorl-foundation.listing.filter.search|Szöveg keresése
+moorl-foundation.listing.filter.tags|Címkék
+moorl-foundation.listing.filter.zipcodeCity|Irányítószám/város
+moorl-foundation.properties.active|Aktív
+moorl-foundation.properties.additionalAddressLine1|1. címsor
+moorl-foundation.properties.additionalAddressLine2|2. címsor
+moorl-foundation.properties.articles|Cikkek
+moorl-foundation.properties.author|Szerző
+moorl-foundation.properties.categories|Kategóriák
+moorl-foundation.properties.city|Város
+moorl-foundation.properties.closed|Lezárva
+moorl-foundation.properties.cmsPage|CMS oldal
+moorl-foundation.properties.cmsPageId|CMS oldal azonosítója
+moorl-foundation.properties.company|Vállalat
+moorl-foundation.properties.content|Tartalom
+moorl-foundation.properties.country|Ország
+moorl-foundation.properties.countryCode|Ország kódja
+moorl-foundation.properties.countryId|Ország
+moorl-foundation.properties.createdAt|Létrehozva itt:
+moorl-foundation.properties.customerGroupId|Ügyfélcsoport
+moorl-foundation.properties.customerNumber|Ügyfél száma
+moorl-foundation.properties.date|Dátum
+moorl-foundation.properties.department|Osztály
+moorl-foundation.properties.description|Leírás
+moorl-foundation.properties.distance|Távolság
+moorl-foundation.properties.email|E-mail
+moorl-foundation.properties.enableComments|Megjegyzések engedélyezése
+moorl-foundation.properties.firstName|Keresztnév
+moorl-foundation.properties.from|Kezdő
+moorl-foundation.properties.highlight|Kiemelés
+moorl-foundation.properties.image|Cikk
+moorl-foundation.properties.info|Információ
+moorl-foundation.properties.inRadiusOf|a következő sugárban:
+moorl-foundation.properties.invisible|Láthatatlan
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|Vezetéknév
+moorl-foundation.properties.location|Pozíció
+moorl-foundation.properties.locationLat|Terjedelem
+moorl-foundation.properties.locationLon|Hosszúság
+moorl-foundation.properties.locked|Zárolt
+moorl-foundation.properties.logo|Logó
+moorl-foundation.properties.marker|Jelölő
+moorl-foundation.properties.markerId|Jelölő
+moorl-foundation.properties.markerSettings|Marker beállításai
+moorl-foundation.properties.markerSettingsExample|Ezt a példát lemásolhatja az egyéni jelölőbeállítások módosításához.
+moorl-foundation.properties.markerSettingsLink|Kiadvány egyedi marker példa
+moorl-foundation.properties.markerShadow|Árnyékjelző
+moorl-foundation.properties.markerShadowId|Marker árnyék
+moorl-foundation.properties.media|Média
+moorl-foundation.properties.mediaId|Médiaazonosító
+moorl-foundation.properties.merchant|Kereskedő
+moorl-foundation.properties.merchantUrl|Kereskedő URL-címe
+moorl-foundation.properties.metaDescription|Meta leírás
+moorl-foundation.properties.metaTitle|Meta cím
+moorl-foundation.properties.name|Név
+moorl-foundation.properties.openingHours|Nyitvatartási idő
+moorl-foundation.properties.originId|Származási azonosító
+moorl-foundation.properties.phoneNumber|Telefon
+moorl-foundation.properties.priority|Prioritás
+moorl-foundation.properties.productManufacturers|Gyártói azonosítók
+moorl-foundation.properties.products|Termékek
+moorl-foundation.properties.radius|Sugár
+moorl-foundation.properties.repeat|Ismétlés
+moorl-foundation.properties.salesChannel|Értékesítési csatorna
+moorl-foundation.properties.salesChannelId|Értékesítési csatorna
+moorl-foundation.properties.search|Keresés
+moorl-foundation.properties.shopUrl|Vásárlás URL-címe
+moorl-foundation.properties.showFrom|Megjelenítés innen:
+moorl-foundation.properties.showUntil|Megjelenítés eddig:
+moorl-foundation.properties.slug|Zsibbadás
+moorl-foundation.properties.sticky|Ragadós
+moorl-foundation.properties.street|Utca
+moorl-foundation.properties.streetNumber|Szám
+moorl-foundation.properties.tags|Címkenevek/azonosítók
+moorl-foundation.properties.teaser|Hétköznapi
+moorl-foundation.properties.title|Cím
+moorl-foundation.properties.until|Eddig:
+moorl-foundation.properties.updatedAt|Frissítve:
+moorl-foundation.properties.vatId|ÁFA-azonosító
+moorl-foundation.properties.zipcode|Irányítószám
+moorl-foundation.search.headline|"{0} Nincs találat erre: „%searchTerm%” | {1} Egy találat erre: „%searchTerm%” | ]1,Inf[ %count% találat erre: „%searchTerm%”"
+moorl-foundation.search.missingConfiguration|Hiányzó konfiguráció ehhez a listához!
+moorl-foundation.search.moreButton|Továbbiak
+moorl-foundation.search.noListingSlotFound|Ezen az oldalon nincs listaelem. Ellenőrizze a lista beállításait, és válassza az „Automatikus tételek” lehetőséget
+moorl-foundation.search.notAvailable|Nem elérhető
+moorl-foundation.search.product|Termékek
+moorl-location-map.cookieDescription|Az OpenStreetMap-ot mozaikszolgáltatóként használjuk, hogy vizuálisan megmutassuk üzleteink és kereskedőink helyét.
+moorl-location-map.cookieHint|A kívánt funkció használatához fogadja el a sütit.
+moorl-location-map.cookieName|Helytérképek
+moorl-magazine.articles|Blogcikkek
+moorl-magazine.author|Szerző
+moorl-magazine.authors|Szerzők
+moorl-magazine.back|Vissza
+moorl-magazine.backToOverview|Vissza az áttekintéshez
+moorl-magazine.categories|Kategóriák
+moorl-magazine.categoryAll|Minden kategória
+moorl-magazine.commentArea|Megjegyzés területe
+moorl-magazine.commentAreaDisabled|A megjegyzések le vannak tiltva ennél a cikknél
+moorl-magazine.commentError|Kérjük, győződjön meg arról, hogy az összes mezőt helyesen töltötte ki
+moorl-magazine.commentReview|Megjegyzését felülvizsgálat után közzétesszük.
+moorl-magazine.commentSuccess|Köszönjük a megjegyzését!
+moorl-magazine.date|Dátum
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|E-mail
+moorl-magazine.emailPlaceholder|Adja meg e-mail címét
+moorl-magazine.name|Név
+moorl-magazine.namePlaceholder|Adja meg a nevét
+moorl-magazine.next|Következő
+moorl-magazine.page|Oldal
+moorl-magazine.pageDescription|Lorem ipsum dolor sit amet, consetur sadipscing elitr, sed diam nonumy eirmod temporvidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. A vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, egyetlen tengeri takimata sem menstruál Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetur sadipscing elitr, sed diam nonumy eirmod temporvidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. A vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, egyetlen tengeri takimata sem menstruál Lorem ipsum dolor sit amet.
+moorl-magazine.pageTitle|Az én kecses blogom
+moorl-magazine.posts|Blogbejegyzések
+moorl-magazine.products|Kapcsolódó termékek
+moorl-magazine.readMore|További információk
+moorl-magazine.recentComments|Legutóbbi megjegyzések
+moorl-magazine.relatedArticles|Kapcsolódó blogbejegyzések
+moorl-magazine.search|Keresés
+moorl-magazine.searchFor|Keresés...
+moorl-magazine.sendComment|Megjegyzés elküldése
+moorl-magazine.similarArticles|Hasonló blogbejegyzések
+moorl-magazine.sticky|Csapos
+moorl-magazine.tags|Címkék
+moorl-magazine.writeComment|Megjegyzés írása
+moorl-magazine.wroteOn|írta:
+moorl-magazine.yourComment|Az Ön megjegyzése
+moorl-magazine.yourCommentPlaceholder|Ide írja be megjegyzését
+moorl-merchant-finder.allCategories|Minden kategória
+moorl-merchant-finder.allCountries|Minden ország
+moorl-merchant-finder.allManufacturers|Minden gyártó
+moorl-merchant-finder.allowMerchantCustomerContact|Engedélyezem, hogy a kiválasztott kereskedőm telefonon vagy e-mailben kapcsolatba lépjen velem.
+moorl-merchant-finder.allResults|-- Kiválasztás --
+moorl-merchant-finder.allTags|Összes címke
+moorl-merchant-finder.are|azok 
+moorl-merchant-finder.available|Elérhető
+moorl-merchant-finder.backToOverview|Vissza az áttekintéshez
+moorl-merchant-finder.call|Hívás
+moorl-merchant-finder.cancel|Mégse
+moorl-merchant-finder.categories|Kategóriák
+moorl-merchant-finder.checkAvailability|Rendelkezésre állás ellenőrzése
+moorl-merchant-finder.chose|Kiválasztás
+moorl-merchant-finder.choseMerchant|Válasszon kereskedőt
+moorl-merchant-finder.choseMerchantToProceed|Kérjük, válassza ki a helyi kereskedőt a fizetés folytatásához
+moorl-merchant-finder.close|Bezárás
+moorl-merchant-finder.commentToMerchant|Megjegyzés küldése a kereskedőnek
+moorl-merchant-finder.country|Ország
+moorl-merchant-finder.deliveryTime|Szállítási idő
+moorl-merchant-finder.deliveryTimeUnknown|Ismeretlen - A termékek rendelésre kerülnek
+moorl-merchant-finder.description|Leírás
+moorl-merchant-finder.desiredDate|Kívánt felvételi dátum
+moorl-merchant-finder.desiredTime|Kívánt felvételi idő
+moorl-merchant-finder.displayOnMap|Megjelenítés a térképen
+moorl-merchant-finder.distance|Távolság
+moorl-merchant-finder.emptyResultMessage|Nem találhatók kereskedők
+moorl-merchant-finder.findMerchants|Kereskedők keresése
+moorl-merchant-finder.forTheSearch|a kereséshez 
+moorl-merchant-finder.forTheSearchZipcode|irányítószám és távolsági km környezetében 
+moorl-merchant-finder.highlight|Tipp
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|Betöltés...
+moorl-merchant-finder.manufacturers|Gyártók
+moorl-merchant-finder.merchant|Kereskedő
+moorl-merchant-finder.merchants|Kereskedők
+moorl-merchant-finder.merchantUrl|Weboldal
+moorl-merchant-finder.more|Továbbiak
+moorl-merchant-finder.myLocation|Jelenlegi tartózkodási helyem használata
+moorl-merchant-finder.mySelection|Saját kiválasztás
+moorl-merchant-finder.noMerchantSelected|A termék nem érhető el. Nincs kiválasztva kereskedő.
+moorl-merchant-finder.none|nincs
+moorl-merchant-finder.openingHours|Nyitvatartási idő
+moorl-merchant-finder.outOfStock|A termék nem érhető el. Az Ön által kiválasztott kereskedőnek nincs raktáron ez a termék.
+moorl-merchant-finder.phoneNumber|Telefon
+moorl-merchant-finder.pickupDateSet|Az átvételi idő be van állítva
+moorl-merchant-finder.productAvailability|Termék elérhetősége
+moorl-merchant-finder.productNotAvailable|A termék nem érhető el. További információkért forduljon a bolti ügyfélszolgálathoz.
+moorl-merchant-finder.radius|Sugár
+moorl-merchant-finder.resetSelection|Kiválasztás visszaállítása
+moorl-merchant-finder.resultsFound|találatok számlálása
+moorl-merchant-finder.save|Mentés
+moorl-merchant-finder.search|Keresés
+moorl-merchant-finder.searchFor|Keresés a következőre:
+moorl-merchant-finder.searchLocation|Hely keresése
+moorl-merchant-finder.searchRules.hasLogo|Kereskedő logóval
+moorl-merchant-finder.searchRules.hasPriority|Elsőbbségi kereskedő
+moorl-merchant-finder.searchRules.isHighlighted|Prémium kereskedő
+moorl-merchant-finder.searchRules.isNotHighlighted|Normál kereskedő
+moorl-merchant-finder.selectedMerchant|Kiválasztott kereskedő
+moorl-merchant-finder.sendMail|Levelezés
+moorl-merchant-finder.shop|Vásárlás
+moorl-merchant-finder.shopUrl|Látogasson el a boltba
+moorl-merchant-finder.stockInfo|Készletinformáció
+moorl-merchant-finder.tags|Címkék
+moorl-merchant-finder.thereAre|vannak 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|irányítószám, város
+moorl-merchant-finder.zipcodeCityEnter|Írjon be egy irányítószámot vagy várost, és nyomja meg az Enter billentyűt
+nimbits-pricerequests.cart.cartRequestButton|Ajánlat kérése
+nimbits-pricerequests.cart.dontAddByProductNumber|Ez a termék nem adható hozzá a kosárhoz.
+nimbits-pricerequests.detail.available|Elérhető
+nimbits-pricerequests.detail.button.openrequestform|Ajánlat kérése
+nimbits-pricerequests.detail.restock|"{1} Elérhető 1 nap múlva|]1,Inf[ Elérhető %restockTime% nap múlva"
+nimbits-pricerequests.detail.text.priceonrequest|Ár kérésre
+nimbits-pricerequests.fail.alert|A kérelem nem lett elküldve – hiba történt. Kérjük, próbálja újra.
+nimbits-pricerequests.finish.alert|Kérés sikeresen elküldve
+nimbits-pricerequests.finish.buttonBack|Vissza az üzletbe
+nimbits-pricerequests.listing.button.openrequestform|Ajánlat kérése
+nimbits-pricerequests.listing.text.priceonrequest|Ár kérésre
+nimbits-pricerequests.mail.address|Cím
+nimbits-pricerequests.mail.amount|Összeg
+nimbits-pricerequests.mail.article|Cikk
+nimbits-pricerequests.mail.city|Város
+nimbits-pricerequests.mail.comment|Ügyfelek megjegyzése
+nimbits-pricerequests.mail.company|Vállalat
+nimbits-pricerequests.mail.country|Ország
+nimbits-pricerequests.mail.customersendername|Ár kérelemre
+nimbits-pricerequests.mail.housenumber|Házszám
+nimbits-pricerequests.mail.mail|Levelezés
+nimbits-pricerequests.mail.name|Név
+nimbits-pricerequests.mail.ordernumber|Rendelés száma
+nimbits-pricerequests.mail.price|Ár
+nimbits-pricerequests.mail.pricegross|Beleértve Adó
+nimbits-pricerequests.mail.pricegrosssum|Beleértve Adó összege
+nimbits-pricerequests.mail.pricenet|Kivéve: Adó
+nimbits-pricerequests.mail.pricenetsum|Kivéve: Adó összege
+nimbits-pricerequests.mail.requestfirst|Árigénylés innen:
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Ár kérelemre
+nimbits-pricerequests.mail.street|Utca
+nimbits-pricerequests.mail.subject|Ár kérelemre
+nimbits-pricerequests.mail.subjectcart|Kosárra vonatkozó kérelem
+nimbits-pricerequests.mail.subjectshopowner|Ár kérelemre
+nimbits-pricerequests.mail.subjectshopownercart|Kosárra vonatkozó kérelem
+nimbits-pricerequests.mail.zipcode|Irányítószám
+nimbits-pricerequests.popup.city|Város
+nimbits-pricerequests.popup.closebutton|Bezárás
+nimbits-pricerequests.popup.company|Vállalat
+nimbits-pricerequests.popup.country|Ország
+nimbits-pricerequests.popup.dataprivacytext|"Elolvastam, megértettem és elfogadom az <a href=""/privacy"" target=""_blank"" rel=""noreferrer noopener""> Adatvédelmi irányelvet </a>."
+nimbits-pricerequests.popup.desiredprice|Kívánt ár: 
+nimbits-pricerequests.popup.entervalidcity|Kérjük, adjon meg egy érvényes várost.
+nimbits-pricerequests.popup.entervalidcountry|Kérjük, adjon meg egy érvényes országot.
+nimbits-pricerequests.popup.entervalidhousenumber|Kérjük, adjon meg egy érvényes házszámot.
+nimbits-pricerequests.popup.entervalidmail|Kérjük, adjon meg egy érvényes e-mail címet.
+nimbits-pricerequests.popup.entervalidstreet|Kérjük, adjon meg egy érvényes utcát.
+nimbits-pricerequests.popup.entervalidzipcode|Kérjük, adjon meg egy érvényes irányítószámot.
+nimbits-pricerequests.popup.genderm|Úr
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Asszony
+nimbits-pricerequests.popup.housenumber|Házszám
+nimbits-pricerequests.popup.mail|Levelezési cím
+nimbits-pricerequests.popup.name|Név
+nimbits-pricerequests.popup.optional|(opcionális)
+nimbits-pricerequests.popup.phonenumber|Telefon
+nimbits-pricerequests.popup.popupTitle|Ajánlat kérése
+nimbits-pricerequests.popup.product|A kérelemben szereplő termék(ek):
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Kérelem
+nimbits-pricerequests.popup.requestbutton|Kérelem
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|A *-gal jelölt mezők kitöltése kötelező.
+nimbits-pricerequests.popup.salutation|Megszólítás
+nimbits-pricerequests.popup.street|Utca
+nimbits-pricerequests.popup.surname|Vezetéknév
+nimbits-pricerequests.popup.text|Kérjen ajánlatot a kiválasztott termékekre
+nimbits-pricerequests.popup.zipcode|Irányítószám
+nimbits-pricerequests.search.text.priceonrequest|Ár kérésre
+nimbits-pricerequests.toasts.error|A kérelem nem lett elküldve – hiba történt. Kérjük, próbálja újra.
+nimbits-pricerequests.toasts.success|Kérés sikeresen elküldve
+priceRequest.newsletterText|Ezennel beleegyezem abba, hogy a TENTE e-mailben és telefonon is tájékoztathat a TENTE termékekről és eseményekről (pl. kereskedelmi megjelenés).
+priceRequest.sendRequestText|A kérelem továbbításra kerül...
+priceRequest.waitText|Kérjük, várjon...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Válassza ki az opciót...
+theme.compilation.async.success|%salesChannelName% értékesítési csatorna összeállítása befejezve
+vdct-simple-events.events.detail.to-event|Az eseményhez
+zeobv-store-switcher.switchStoreLabel|Üzlet váltása

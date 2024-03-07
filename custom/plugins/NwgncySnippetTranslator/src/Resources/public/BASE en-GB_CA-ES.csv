@@ -1,0 +1,564 @@
+TENTE ca-ES|Traducció
+account.doubleOptinAccountAlert|El seu compte de client encara no ha estat activat. Hem enviat un correu electrònic de confirmació que conté un enllaç d'activació. Si us plau, revisa la teva safata d'entrada i fes clic a l'enllaç per completar la inscripció!
+account.downloadFileButton|Descàrrega
+account.downloadItemColumnDate|Data
+account.downloadItemColumnTitle|Archivo
+account.faxLabel|Fax
+account.faxPlaceholder|Entrar al fax
+account.homepageLabel|Pàgina
+account.homepagePlaceholder|Entrar a la pàgina URL
+account.passwordNotIdentical|Les contrasenyes que heu introduït no coincideixen.
+account.personalTypePlaceholder|Seleccionar...
+account.profileCurrentMailPlaceholder|Introdueix l'adreça de correu electrònic... 
+account.profileDeleteText|<a href="%target%" data-bs-toggle="modal" data-bs-target="%target%">Cliqueu aquí</a> per eliminar totes les vostres dades personals.
+account.profilePasswordCreateNewPlaceholder|Introdueix una nova contrasenya...
+account.profilePasswordCurrentPlaceholder|Introdueix la contrasenya actual
+acrisFilter.buttonFiltersHide|Mostrar menys filtres
+acrisFilter.buttonFilterShowHideLabel|Mostrar més o menys filtres
+acrisFilter.buttonFiltersShow|Mostrar més filtres
+acrisFilter.buttonHeaderSearchAllCategories|Totes les categories
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Disponible de forma immediata
+acrisFilter.filterCategoriesDisplayName|Categories
+acrisFilter.filterRangeActiveMaxLabel|El percentatge d’inscripcions és del %
+acrisFilter.filterRangeActiveMinLabel|Propietari %DisplayName %
+acrisFilter.filterRangeSliderFrom|de
+acrisFilter.filterRangeSliderTo|En
+acrisFilter.filterSearchPlaceholder|Recerca...
+card.card-image|Imatge del %
+card.linkTitle|Open %url% en nova pestanya
+cbaxLexicon.page.ajax.linkDescription|A la lèxic
+cbaxLexicon.page.banner.alt|Banyar
+cbaxLexicon.page.boxKeyword.moreRead|Llegir més
+cbaxLexicon.page.breadcrumb.name|Lèxic
+cbaxLexicon.page.content.headline|Taula de continguts
+cbaxLexicon.page.content.metaDescription|Contingut de metadescripció de lèxic
+cbaxLexicon.page.content.metaKeywords|Lexicon Meta Keywords Contingut
+cbaxLexicon.page.content.metaTitle|Taula de continguts
+cbaxLexicon.page.filter.button|Navegació lèxic
+cbaxLexicon.page.filter.headline|Navegació lèxic
+cbaxLexicon.page.index.metaDescription|Índex de metadescripció de lèxic
+cbaxLexicon.page.index.metaKeywords|Índex de paraules clau de Lexicon Meta
+cbaxLexicon.page.index.metaTitle|Lèxic
+cbaxLexicon.page.listing.entryHeadline|Posts en aquesta categoria d'enciclopèdia
+cbaxLexicon.page.listing.metaDescription09|Lèxic Meta Descripció 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Lèxic meta Descripció A
+cbaxLexicon.page.listing.metaDescriptionB|Lèxic Meta Descripció Llistat B
+cbaxLexicon.page.listing.metaDescriptionC|Lèxic Meta Descripció Llistat C
+cbaxLexicon.page.listing.metaDescriptionD|Lèxic Meta Descripció Llistat D
+cbaxLexicon.page.listing.metaDescriptionE|Lèxic Meta Descripció Llistat E
+cbaxLexicon.page.listing.metaDescriptionF|Lèxic Meta Descripció Llistat F
+cbaxLexicon.page.listing.metaDescriptionG|Lèxic Meta Descripció Llistat G
+cbaxLexicon.page.listing.metaDescriptionH|Lèxic Meta Descripció Llistat H
+cbaxLexicon.page.listing.metaDescriptionI|Lèxic Meta Descripció Llistat I
+cbaxLexicon.page.listing.metaDescriptionJ|Lèxic Meta Descripció Llistat J
+cbaxLexicon.page.listing.metaDescriptionK|Lèxic Meta Descripció Llistat K
+cbaxLexicon.page.listing.metaDescriptionL|Lèxic Meta Descripció L
+cbaxLexicon.page.listing.metaDescriptionM|Lèxic Meta Descripció Llistat M
+cbaxLexicon.page.listing.metaDescriptionN|Lèxic Meta Descripció Llistat N
+cbaxLexicon.page.listing.metaDescriptionO|Lèxic Meta Descripció Llistat O
+cbaxLexicon.page.listing.metaDescriptionP|Lèxic Meta Descripció Llistat P
+cbaxLexicon.page.listing.metaDescriptionQ|Lèxic Meta Descripció Llistat Q
+cbaxLexicon.page.listing.metaDescriptionR|Lèxic Meta Descripció Llistat R
+cbaxLexicon.page.listing.metaDescriptionS|Lèxic Meta Descripció Llistat S
+cbaxLexicon.page.listing.metaDescriptionT|Lèxic Meta Descripció Llistat T
+cbaxLexicon.page.listing.metaDescriptionU|Lèxic Meta Descripció Llistat U
+cbaxLexicon.page.listing.metaDescriptionV|Lèxic Meta Descripció Llistat V
+cbaxLexicon.page.listing.metaDescriptionW|Lèxic Meta Descripció Llistat W
+cbaxLexicon.page.listing.metaDescriptionX|Lèxic Meta Descripció Llistat X
+cbaxLexicon.page.listing.metaDescriptionY|Lèxic Meta Descripció Llistat Y
+cbaxLexicon.page.listing.metaDescriptionZ|Lèxic Meta Descripció Llistat Z
+cbaxLexicon.page.listing.metaKeywords09|Lexicon Meta Keywords Llistat 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Lèxic Meta Paraules clau Llistat A
+cbaxLexicon.page.listing.metaKeywordsB|Lexicon Meta Keywords Llistat B
+cbaxLexicon.page.listing.metaKeywordsC|Lexicon Meta Keywords Llistat C
+cbaxLexicon.page.listing.metaKeywordsD|Lèxic Meta Paraules clau Llistat D
+cbaxLexicon.page.listing.metaKeywordsE|Lexicon Meta Keywords Llistat E
+cbaxLexicon.page.listing.metaKeywordsF|Lexicon Meta Keywords Llistat F
+cbaxLexicon.page.listing.metaKeywordsG|Lexicon Meta Keywords Llistat G
+cbaxLexicon.page.listing.metaKeywordsH|Lèxic Meta Paraules clau Llistes H
+cbaxLexicon.page.listing.metaKeywordsI|Lexicon Meta Keywords Llistat I
+cbaxLexicon.page.listing.metaKeywordsJ|Lexicon Meta Keywords Llistat J
+cbaxLexicon.page.listing.metaKeywordsK|Lexicon Meta Keywords Llistat K
+cbaxLexicon.page.listing.metaKeywordsL|Lèxic Meta Paraules clau L
+cbaxLexicon.page.listing.metaKeywordsM|Lexicon Meta Keywords Llistat M
+cbaxLexicon.page.listing.metaKeywordsN|Lèxic Meta Paraules clau Llistat N
+cbaxLexicon.page.listing.metaKeywordsO|Lexicon Meta Keywords Llistat O
+cbaxLexicon.page.listing.metaKeywordsP|Lexicon Meta Keywords Llistat P
+cbaxLexicon.page.listing.metaKeywordsQ|Lexicon Meta Keywords Llistat Q
+cbaxLexicon.page.listing.metaKeywordsR|Lexicon Meta Keywords Llistat R
+cbaxLexicon.page.listing.metaKeywordsS|Lexicon Meta Keywords Listing S
+cbaxLexicon.page.listing.metaKeywordsT|Lexicon Meta Keywords Llistat T
+cbaxLexicon.page.listing.metaKeywordsU|Lexicon Meta Keywords Llistat U
+cbaxLexicon.page.listing.metaKeywordsV|Lèxic Meta Keywords Llistat V
+cbaxLexicon.page.listing.metaKeywordsW|Lexicon Meta Keywords Llistat W
+cbaxLexicon.page.listing.metaKeywordsX|Lexicon Meta Keywords Llistant X
+cbaxLexicon.page.listing.metaKeywordsY|Lexicon Meta Keywords Llistat Y
+cbaxLexicon.page.listing.metaKeywordsZ|Lexicon Meta Keywords Llistat Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|y
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|y
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Q
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Taula de continguts
+cbaxLexicon.page.navigation.linkIndex|Pàgina inicial
+cbaxLexicon.page.pagination.toOverview|A la visió general
+cbaxLexicon.page.sidebar.title|Lèxic:
+checkout.confirmRevocationReminder|Vostè ja ha declarat que renuncia al dret de desistiment.
+checkout.confirmRevocationTerms|Vull l'accés immediat al contingut digital i reconec que per tant renuncio al meu dret a cancel·lar.
+checkout.confirmTermsReminderText|Ja heu acceptat el títol <a data-ajax-modal="true" url="%url%" href="%url%" title="termes generals i condicions"> termes i condicions generals</a>.
+checkout.confirmTermsText|He llegit i accepto el títol  <a data-ajax-modal="true" data-url="%url%" href="%url%" title="Condicions generals">Condicions generals</a>.
+checkout.lineItemUnitPriceDescriptor|Unitat
+checkout.merchant-not-selected|Si us plau, triï el seu comerciant local per procedir a la comprovació.
+checkout.or|O
+CmsElements.callToAction.elementError|Aquest element no està disponible per a la barra lateral. Seleccioneu una altra classe <p='h5 my-2'>Call to Action</p> per a la vostra barra lateral.
+CmsElements.counter.days|Días
+CmsElements.counter.hours|El Sr.
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|No heu pujat cap vídeo vàlid. Comproveu la configuració de l'element.
+CmsElements.htmlVideo.hint.headline|Format equivocat / No hi ha vídeo
+CmsElements.placeholder.label|Substitució d'elements
+CmsElements.shopTheLook.addAllProducts|Afegir productes al carret de la compra
+CmsElements.shopTheLook.totalDiscount|Estalvi:
+component.cms.imageGallery.sliderDotLabel|Mostrar imatge %index % %total %
+component.cms.vimeo.privacyNoticeText|En visualitzar el vídeo acceptes que les teves dades seran cedides a %platform% i que has llegit el títol  <a data-ajax-modal="true" data-url="%url%" href="%url%" title="de política de privacitat">Política de privacitat</a>.
+component.product.quantitySelect.decrease|Disminució de la quantitat
+component.product.quantitySelect.increase|Augmentar la quantitat
+component.product.quantitySelect.label|Quantitat
+contact.newsletterSubscribe|Accepto que TENTE també pot informar-me per correu electrònic i telèfon sobre productes i esdeveniments (per exemple, aparicions firals) de TENTE.
+contact.privacyNoticeText|En seleccionar-lo, confirmeu que heu llegit i accepteu el nostre títol <a data-ajax-modal=""true"" url=""%privacyUrl%"" href=""%privacyUrl%"" title=""informació de protecció de dades"">informació de protecció de dades</a>.
+cookie.groupComfortFeaturesYoutubeVideo|Vídeo de YouTube
+cookie.messageText|Aquest lloc web utilitza cookies per garantir la millor experiència possible.  <a data-ajax-modal="true" data-url="%url%" href="%url%" title="More information">Més informació...</a>
+detail.acrisProductDownloadBtnText|Descàrrega
+detail.acrisProductDownloadNoPreview|Sense previsualització
+detail.acrisProductDownloadTabLabel|Descàrrega
+detail.acrisProductDownloadTitle|Descàrrega
+detail.acrisProductLinkTabLabel|Links
+detail.acrisProductLinkTitle|Links
+detail.buyOnline|Compra online
+detail.cadService.downloadBtn|Descàrrega
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Tipus d'arxiu
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Podeu descarregar les dades de construcció d'aquest producte en diferents formats
+detail.cadService.login|Si us plau <a href="%url%">Login</a> per veure els fitxers CAD
+detail.cadService.title|Servei CAD
+detail.contactText|Encara no has trobat el producte adequat, tens requisits especials o te interessen les solucions individuals? <a href="%url%" title="ØKontaktformular">Contacte’ns</a>.
+detail.ean|ÈAN
+detail.orderNumber|Número de producte
+detail.orText|O
+detail.performance.atrittion|L'escriptura
+detail.performance.movement|El soroll del moviment
+detail.performance.resistance|Resistència a a la corrosió
+detail.performance.roll|Actuació Roll
+detail.priceOnRequestText|per peça més IVA<br />En 24 hores llestes per a l'enviament
+detail.priceOnRequestTitle|Preu a petició
+detail.properties.fitting|Fitting de dades tècniques
+detail.properties.housing|Dades tècniques dSuport
+detail.properties.label.downloads|Descàrrega
+detail.properties.label.feature|Característiques del producte
+detail.properties.label.fitting|Fitació
+detail.properties.label.housing|Suport
+detail.properties.label.performance|Actuació
+detail.properties.label.wheel|Roda
+detail.properties.performance|Actuació
+detail.properties.wheel|Roda de dades tècniques
+detail.qte|Quantitat
+detail.reviewFormContentPlaceholder|Introdueix la teva revisió...
+detail.sendQuoteRequest|Sol·licitud de cita
+detail.tabs.downloads|Descàrrega
+detail.tabs.features|Característiques
+detail.tabs.performance|Actuació
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|La quantitat (%) és incorrecta.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|L'ordre amb el número de comanda 100% ordre ja estava pagada i no es pot editar després.
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Aquest ordre no es va poder trobar.
+error.merchant-not-selected|Si us plau, triï el seu comerciant local per procedir a la comprovació.
+error.VIOLATION::ZIP_CODE_INVALID|El codi postal que has introduït no té el format correcte.
+footer.excludeVatText|* Tots els preus excl. IVA més <a data-ajax-modal="true" href="%url%" data-url="%url%">costos d enviament</a> i possibles càrrecs de lliurament, si no s'indica el contrari.
+footer.includeVatText|* Tots els preus inclosos. IVA més <a data-ajax-modal="true" href="%url%" data-url="%url%">costos d enviament</a> i possibles càrrecs de lliurament, si no s'indica el contrari.
+footer.serviceContactText|O a través del nostre <a data-ajax-modal="true" href="%url%" data-url="%url%" title="Contact form">forma de contacte</a>.
+footer.socialMediaHeadline|Social
+general.contactUs|Contacta amb nosaltres
+general.contactUsLink|/Contacte
+general.loginRegister|Login / Registre
+general.privacyNoticeText|En subscriure s al butlletí acceptes el nostre <a data-ajax-modal="true" data-url="%url%" href="%url%" title="">Política de Privadesa</a> així com el nostre <a data-ajax-modal="true" data-url="%url%" href="%url%" title="">Terms i condicions</a>
+global.default.activate|Activació
+global.default.cancel|Cancel·lació
+global.default.confirm|Confirmació
+global.default.deactivate|Desactivació
+global.default.delete|Deleció
+global.default.edit|Edita
+global.default.noteRequiredFields|Es requereixen camps marcats amb asterisc (*).
+global.default.save|Salvar
+listing.downloadText|Descàrrega
+moorl-creator.aboutTheCreator|Sobre el creador
+moorl-creator.aboutTheCreators|Sobre els creadors
+moorl-creator.creator|Creador
+moorl-creator.creators|Creadors
+moorl-creator.donate|Donació
+moorl-creator.follow|Seguiment
+moorl-creator.link|Pàgina
+moorl-creator.productsOf|Productes de
+moorl-creator.readMore|Llegeix més...
+moorl-foundation.buttons.acceptCookie|Acceptar la cookie
+moorl-foundation.buttons.addMerchantButtonText|El nou comerciant
+moorl-foundation.buttons.administrationButtonText|Administració
+moorl-foundation.buttons.cancelButtonText|Cancel·lació
+moorl-foundation.buttons.exportButtonText|Exportació CSV
+moorl-foundation.buttons.exportButtonTitle|Descarrega el teu CSV
+moorl-foundation.buttons.getLocButtonText|Posició OpenStreetMap
+moorl-foundation.buttons.importButtonText|Importació CSV
+moorl-foundation.buttons.importButtonTitle|Puja el teu CSV
+moorl-foundation.buttons.mediaFolder|Guardar imatges en aquesta carpeta
+moorl-foundation.buttons.newButtonText|Nueva
+moorl-foundation.buttons.openMapButtonText|Mapa obert
+moorl-foundation.buttons.openNewWindowButtonText|Obert en una nova finestra
+moorl-foundation.buttons.overwriteText|Sobreescriure les dades existents (cal establir l'origen).
+moorl-foundation.buttons.placeIdLink|Plan de ruta
+moorl-foundation.buttons.refreshButtonText|Recàrrega
+moorl-foundation.buttons.saveButtonText|Salvar
+moorl-foundation.buttons.selectLocButtonText|Escollit
+moorl-foundation.buttons.startImportButtonText|Inici importació
+moorl-foundation.card.address|Direcció
+moorl-foundation.card.company|Empresa
+moorl-foundation.card.contact|Contacte
+moorl-foundation.card.legend|Llegenda
+moorl-foundation.card.openingHours|Horari d'obertura
+moorl-foundation.card.person|Persona de contacte
+moorl-foundation.customerUpload.checkToDelete|Comprovar si s'elimina
+moorl-foundation.customerUpload.dictDefaultMessage|Descarregar arxius aquí per pujar
+moorl-foundation.customerUpload.useAsCover|Utilitza com a cobertura
+moorl-foundation.days.closed|Tancat
+moorl-foundation.days.friday|Divendres
+moorl-foundation.days.monday|Dilluns
+moorl-foundation.days.saturday|Dissabte
+moorl-foundation.days.sunday|Diumenge
+moorl-foundation.days.thursday|Jueves
+moorl-foundation.days.today|Hoy
+moorl-foundation.days.tuesday|Dimarts
+moorl-foundation.days.wednesday|Dimecres
+moorl-foundation.general.selectedItems|Articles seleccionats
+moorl-foundation.general.share|Compartint
+moorl-foundation.general.subTotal|Subtítols
+moorl-foundation.general.toc|Taula de continguts
+moorl-foundation.label.accountCard|Comptabilitat
+moorl-foundation.label.addressCard|Direcció
+moorl-foundation.label.generalCard|General
+moorl-foundation.label.locationCard|Ubicació
+moorl-foundation.label.markerCard|Marcador
+moorl-foundation.label.metaCard|Meta
+moorl-foundation.label.relationsCard|Relacions i filtres
+moorl-foundation.label.visibilityCard|Visibilitat
+moorl-foundation.listing.filter.categories|Categories
+moorl-foundation.listing.filter.country|País
+moorl-foundation.listing.filter.distance|Distància
+moorl-foundation.listing.filter.firstChar|Indexació
+moorl-foundation.listing.filter.inRadiusOf|En el radi de
+moorl-foundation.listing.filter.km|El KM
+moorl-foundation.listing.filter.mi|Mi
+moorl-foundation.listing.filter.myLocation|Utilitza la meva ubicació
+moorl-foundation.listing.filter.navigation|Categories
+moorl-foundation.listing.filter.radius|Cercar codi postal
+moorl-foundation.listing.filter.search|Text de recerca
+moorl-foundation.listing.filter.tags|Tags
+moorl-foundation.listing.filter.zipcodeCity|Codi postal / Ciutat
+moorl-foundation.properties.active|Activitat
+moorl-foundation.properties.additionalAddressLine1|Línia 1
+moorl-foundation.properties.additionalAddressLine2|Línia 2
+moorl-foundation.properties.articles|Articles
+moorl-foundation.properties.author|Autor
+moorl-foundation.properties.categories|Categories
+moorl-foundation.properties.city|Ciutat
+moorl-foundation.properties.closed|Tancat
+moorl-foundation.properties.cmsPage|Pàgina del CMS
+moorl-foundation.properties.cmsPageId|Pàgina de CMS ID
+moorl-foundation.properties.company|Empresa
+moorl-foundation.properties.content|Contingut
+moorl-foundation.properties.country|País
+moorl-foundation.properties.countryCode|Codi de país
+moorl-foundation.properties.countryId|País
+moorl-foundation.properties.createdAt|Creada en
+moorl-foundation.properties.customerGroupId|Grup de clients
+moorl-foundation.properties.customerNumber|Número de client
+moorl-foundation.properties.date|Data
+moorl-foundation.properties.department|Departament
+moorl-foundation.properties.description|Descripció
+moorl-foundation.properties.distance|Distància
+moorl-foundation.properties.email|E-Mail
+moorl-foundation.properties.enableComments|Permeten comentaris
+moorl-foundation.properties.firstName|Primer nom
+moorl-foundation.properties.from|De
+moorl-foundation.properties.highlight|Il·lustració
+moorl-foundation.properties.image|Artículo
+moorl-foundation.properties.info|Informació
+moorl-foundation.properties.inRadiusOf|En el radi de
+moorl-foundation.properties.invisible|Invisibles
+moorl-foundation.properties.km|El KM
+moorl-foundation.properties.lastName|Última denominació
+moorl-foundation.properties.location|Posició
+moorl-foundation.properties.locationLat|Latitud
+moorl-foundation.properties.locationLon|Longitud
+moorl-foundation.properties.locked|Tancat
+moorl-foundation.properties.logo|Logo
+moorl-foundation.properties.marker|Marcador
+moorl-foundation.properties.markerId|Marcador
+moorl-foundation.properties.markerSettings|Marca fixació
+moorl-foundation.properties.markerSettingsExample|Podeu copiar aquest exemple per ajustar la configuració de marcadors personalitzats.
+moorl-foundation.properties.markerSettingsLink|Ejemplo de marcas costumbres
+moorl-foundation.properties.markerShadow|Sombra de Marker
+moorl-foundation.properties.markerShadowId|Marker Shadow
+moorl-foundation.properties.media|Mitjans de comunicació
+moorl-foundation.properties.mediaId|Mitjans de comunicació ID
+moorl-foundation.properties.merchant|Mercaderia
+moorl-foundation.properties.merchantUrl|La URL comercial
+moorl-foundation.properties.metaDescription|Meta descripció
+moorl-foundation.properties.metaTitle|Títol meta
+moorl-foundation.properties.name|Noms
+moorl-foundation.properties.openingHours|Horari d'obertura
+moorl-foundation.properties.originId|Origen ID
+moorl-foundation.properties.phoneNumber|Telèfon
+moorl-foundation.properties.priority|Prioritat
+moorl-foundation.properties.productManufacturers|ID de fabricant
+moorl-foundation.properties.products|Productes
+moorl-foundation.properties.radius|Radiació
+moorl-foundation.properties.repeat|Repetir
+moorl-foundation.properties.salesChannel|Canal de venda
+moorl-foundation.properties.salesChannelId|Canal de venda
+moorl-foundation.properties.search|Recerca
+moorl-foundation.properties.shopUrl|Botiga URL
+moorl-foundation.properties.showFrom|Espectacle de
+moorl-foundation.properties.showUntil|Mostrar fins a
+moorl-foundation.properties.slug|El Llug
+moorl-foundation.properties.sticky|Sticky
+moorl-foundation.properties.street|El carrer
+moorl-foundation.properties.streetNumber|Número
+moorl-foundation.properties.tags|Tag Noms / Ids
+moorl-foundation.properties.teaser|Teaser
+moorl-foundation.properties.title|Títol
+moorl-foundation.properties.until|Fins que
+moorl-foundation.properties.updatedAt|Actualitzat en
+moorl-foundation.properties.vatId|IVA-ID
+moorl-foundation.properties.zipcode|El Zipcode
+moorl-foundation.search.headline|"{0} No hi ha partits per a la cerca de percentatgeTerm% | {1} Un partit per a la cerca de percentatgeTerm% | ]1, Inf[%% partits per a la cerca de percentatgeTerm%"
+moorl-foundation.search.missingConfiguration|Manca de configuració per a aquesta llista!
+moorl-foundation.search.moreButton|Més
+moorl-foundation.search.noListingSlotFound|Aquesta pàgina no té cap element de llista. Comproveu la configuració de la vostra llista i trieu articles automàtics
+moorl-foundation.search.notAvailable|No disponible
+moorl-foundation.search.product|Productes
+moorl-location-map.cookieDescription|Utilitzem OpenStreetMap com a proveïdor de rajola per mostrar visualment la ubicació de les nostres botigues i comerciants.
+moorl-location-map.cookieHint|Si us plau, accepteu la cookie per utilitzar la funció desitjada.
+moorl-location-map.cookieName|Mapa de localització
+moorl-magazine.articles|Blog Articles
+moorl-magazine.author|Autor
+moorl-magazine.authors|Autors
+moorl-magazine.back|Tornada
+moorl-magazine.backToOverview|Torna cap a Visió general
+moorl-magazine.categories|Categories
+moorl-magazine.categoryAll|Totes les categories
+moorl-magazine.commentArea|Zona de comentaris
+moorl-magazine.commentAreaDisabled|Els comentaris estan desactivats per aquest article
+moorl-magazine.commentError|Assegureu-vos que heu omplert correctament tots els camps.
+moorl-magazine.commentReview|El teu comentari es publicarà després de la revisió.
+moorl-magazine.commentSuccess|Gràcies pel teu comentari!
+moorl-magazine.date|Data
+moorl-magazine.dateFormat|jS \a\t g:ia
+moorl-magazine.email|E-Mail
+moorl-magazine.emailPlaceholder|Introdueix la teva adreça electrònica
+moorl-magazine.name|Noms
+moorl-magazine.namePlaceholder|Introdueix el teu nom
+moorl-magazine.next|Següent
+moorl-magazine.page|Pàgina
+moorl-magazine.pageDescription|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. A Vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, sense takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. A Vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, sense takimata sanctus est Lorem ipsum dolor sit amet.
+moorl-magazine.pageTitle|El meu blog graciós
+moorl-magazine.posts|Blog Posts
+moorl-magazine.products|Productes relacionats
+moorl-magazine.readMore|Llegir més
+moorl-magazine.recentComments|Comentaris recents
+moorl-magazine.relatedArticles|Articles relacionats amb el blog
+moorl-magazine.search|Recerca
+moorl-magazine.searchFor|Buscando...
+moorl-magazine.sendComment|Envia el teu comentari
+moorl-magazine.similarArticles|Articles similars al blog
+moorl-magazine.sticky|Pintada
+moorl-magazine.tags|Tags
+moorl-magazine.writeComment|Escriu un comentari
+moorl-magazine.wroteOn|Escriví en
+moorl-magazine.yourComment|El teu comentari
+moorl-magazine.yourCommentPlaceholder|Introdueix el teu comentari aquí
+moorl-merchant-finder.allCategories|Totes les categories
+moorl-merchant-finder.allCountries|Tots els països
+moorl-merchant-finder.allManufacturers|Tots els fabricants
+moorl-merchant-finder.allowMerchantCustomerContact|Permeto que el meu comerciant seleccionat es posi en contacte amb mi per telèfon o correu electrònic.
+moorl-merchant-finder.allResults|- Seleccionar -
+moorl-merchant-finder.allTags|Tots els tags
+moorl-merchant-finder.are|Es 
+moorl-merchant-finder.available|Disponible
+moorl-merchant-finder.backToOverview|Torna cap a Visió general
+moorl-merchant-finder.call|Truca
+moorl-merchant-finder.cancel|Cancel·lació
+moorl-merchant-finder.categories|Categories
+moorl-merchant-finder.checkAvailability|Comprovar disponibilitat
+moorl-merchant-finder.chose|Escollit
+moorl-merchant-finder.choseMerchant|Escollir un comerciant
+moorl-merchant-finder.choseMerchantToProceed|Si us plau, triï el seu comerciant local per procedir a la comprovació
+moorl-merchant-finder.close|Acerca
+moorl-merchant-finder.commentToMerchant|Envia un comentari al comerciant
+moorl-merchant-finder.country|País
+moorl-merchant-finder.deliveryTime|Temps de lliurament
+moorl-merchant-finder.deliveryTimeUnknown|Desconegut - Els productes seran sol·licitats en comanda
+moorl-merchant-finder.description|Descripció
+moorl-merchant-finder.desiredDate|Data de recollida desitjada
+moorl-merchant-finder.desiredTime|Desitjant recuperar el temps
+moorl-merchant-finder.displayOnMap|Exposició al mapa
+moorl-merchant-finder.distance|Distància
+moorl-merchant-finder.emptyResultMessage|No es van trobar comerciants
+moorl-merchant-finder.findMerchants|Troba els comerciants
+moorl-merchant-finder.forTheSearch|Per a la recerca 
+moorl-merchant-finder.forTheSearchZipcode|En zipcode i l'entorn de km de distància 
+moorl-merchant-finder.highlight|Tip
+moorl-merchant-finder.km|El KM
+moorl-merchant-finder.loading|Carregar...
+moorl-merchant-finder.manufacturers|Fabricants
+moorl-merchant-finder.merchant|Mercaderia
+moorl-merchant-finder.merchants|Mercaderies
+moorl-merchant-finder.merchantUrl|Web
+moorl-merchant-finder.more|Més
+moorl-merchant-finder.myLocation|Utilitza la meva ubicació actual
+moorl-merchant-finder.mySelection|La meva selecció
+moorl-merchant-finder.noMerchantSelected|Producte no disponible. No hi ha cap comerciant seleccionat.
+moorl-merchant-finder.none|Cap
+moorl-merchant-finder.openingHours|Horari d'obertura
+moorl-merchant-finder.outOfStock|Producte no disponible. El vostre comerciant seleccionat no té aquest producte en estoc.
+moorl-merchant-finder.phoneNumber|Telèfon
+moorl-merchant-finder.pickupDateSet|S'ha fixat el temps de recollida
+moorl-merchant-finder.productAvailability|Disponibilitat del producte
+moorl-merchant-finder.productNotAvailable|Producte no disponible. Si us plau, poseu-vos en contacte amb el suport de la botiga per obtenir més informació.
+moorl-merchant-finder.radius|Radiació
+moorl-merchant-finder.resetSelection|Recuperar la selecció
+moorl-merchant-finder.resultsFound|Resultats del recompte trobats
+moorl-merchant-finder.save|Salvar
+moorl-merchant-finder.search|Recerca
+moorl-merchant-finder.searchFor|Recerca
+moorl-merchant-finder.searchLocation|Localització de recerca
+moorl-merchant-finder.searchRules.hasLogo|Comerciant amb el logo
+moorl-merchant-finder.searchRules.hasPriority|Prioritat comerciant
+moorl-merchant-finder.searchRules.isHighlighted|Premsa comercial
+moorl-merchant-finder.searchRules.isNotHighlighted|Comerciant normal
+moorl-merchant-finder.selectedMerchant|El comerciant seleccionat
+moorl-merchant-finder.sendMail|Correu
+moorl-merchant-finder.shop|Botiga
+moorl-merchant-finder.shopUrl|Visita a la botiga
+moorl-merchant-finder.stockInfo|Informació Stock
+moorl-merchant-finder.tags|Tags
+moorl-merchant-finder.thereAre|Hi ha 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|Zipcode, ciutat
+moorl-merchant-finder.zipcodeCityEnter|Escriu un zipcode o ciutat i premsa
+nimbits-pricerequests.cart.cartRequestButton|Sol·licitar una oferta
+nimbits-pricerequests.cart.dontAddByProductNumber|Aquest producte no es pot afegir a la cistella.
+nimbits-pricerequests.detail.available|Disponible
+nimbits-pricerequests.detail.button.openrequestform|Sol·licitar una oferta
+nimbits-pricerequests.detail.restock|"{1} Disponible en 1 dia|]1, Inf[disponible en %restockTime% dies"
+nimbits-pricerequests.detail.text.priceonrequest|Preu a petició
+nimbits-pricerequests.fail.alert|No es va enviar cap petició: es va produir un error. Si us plau, torneu a intentar-ho.
+nimbits-pricerequests.finish.alert|Sol·licitud enviada amb èxit
+nimbits-pricerequests.finish.buttonBack|Tornar a la botiga
+nimbits-pricerequests.listing.button.openrequestform|Sol·licitar una oferta
+nimbits-pricerequests.listing.text.priceonrequest|Preu a petició
+nimbits-pricerequests.mail.address|Direcció
+nimbits-pricerequests.mail.amount|Quantitat
+nimbits-pricerequests.mail.article|Artículo
+nimbits-pricerequests.mail.city|Ciutat
+nimbits-pricerequests.mail.comment|Comentaris dels clients
+nimbits-pricerequests.mail.company|Empresa
+nimbits-pricerequests.mail.country|País
+nimbits-pricerequests.mail.customersendername|Preu a petició
+nimbits-pricerequests.mail.housenumber|Habitació
+nimbits-pricerequests.mail.mail|Correu
+nimbits-pricerequests.mail.name|Noms
+nimbits-pricerequests.mail.ordernumber|Ordenació
+nimbits-pricerequests.mail.price|Preu
+nimbits-pricerequests.mail.pricegross|Incl. Fiscalitat
+nimbits-pricerequests.mail.pricegrosssum|Incl. Tributació Suma
+nimbits-pricerequests.mail.pricenet|Excl. Fiscalitat
+nimbits-pricerequests.mail.pricenetsum|Excl. Tributació Suma
+nimbits-pricerequests.mail.requestfirst|El preu de la sol·licitud de
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Preu a petició
+nimbits-pricerequests.mail.street|El carrer
+nimbits-pricerequests.mail.subject|Preu a petició
+nimbits-pricerequests.mail.subjectcart|Cartes sol·licitades
+nimbits-pricerequests.mail.subjectshopowner|Preu a petició
+nimbits-pricerequests.mail.subjectshopownercart|Cartes sol·licitades
+nimbits-pricerequests.mail.zipcode|El Zipcode
+nimbits-pricerequests.popup.city|Ciutat
+nimbits-pricerequests.popup.closebutton|Acerca
+nimbits-pricerequests.popup.company|Empresa
+nimbits-pricerequests.popup.country|País 
+nimbits-pricerequests.popup.dataprivacytext|He llegit, entes i accepto el <a href="/privacy">Política de privacitat</a>..
+nimbits-pricerequests.popup.desiredprice|El preu desitjat en 
+nimbits-pricerequests.popup.entervalidcity|Si us plau, entreu en una ciutat vàlida.
+nimbits-pricerequests.popup.entervalidcountry|Si us plau, entreu en un país vàlid.
+nimbits-pricerequests.popup.entervalidhousenumber|Si us plau, introdueixi un número de casa vàlid.
+nimbits-pricerequests.popup.entervalidmail|Si us plau, introdueixi una adreça de correu electrònic vàlida.
+nimbits-pricerequests.popup.entervalidstreet|Si us plau, entreu en un bon carrer.
+nimbits-pricerequests.popup.entervalidzipcode|Si us plau, introdueixi un codi postal vàlid.
+nimbits-pricerequests.popup.genderm|El Sr.
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Sra.
+nimbits-pricerequests.popup.housenumber|Habitació
+nimbits-pricerequests.popup.mail|Correu d'adreces
+nimbits-pricerequests.popup.name|Noms
+nimbits-pricerequests.popup.optional|(opcional)
+nimbits-pricerequests.popup.phonenumber|Telèfon
+nimbits-pricerequests.popup.popupTitle|Sol·licitar una oferta
+nimbits-pricerequests.popup.product|Producte(s) en aquesta petició:
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Sol·licitud
+nimbits-pricerequests.popup.requestbutton|Sol·licitud
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|Els camps marcats amb * són obligatoris.
+nimbits-pricerequests.popup.salutation|Salutació
+nimbits-pricerequests.popup.street|El carrer
+nimbits-pricerequests.popup.surname|Sobrenom
+nimbits-pricerequests.popup.text|Sol·licitar una oferta per als productes seleccionats
+nimbits-pricerequests.popup.zipcode|El Zipcode
+nimbits-pricerequests.search.text.priceonrequest|Preu a petició
+nimbits-pricerequests.toasts.error|No s'ha enviat cap petició: s'ha produït un error. Si us plau, torneu a intentar-ho.
+nimbits-pricerequests.toasts.success|Sol·licitud enviada amb èxit
+priceRequest.newsletterText|Accepto que TENTE també pot informar-me per correu electrònic i telèfon sobre productes i esdeveniments (per exemple, aparicions firals) de TENTE.
+priceRequest.sendRequestText|La petició es transmetrà...
+priceRequest.waitText|Espereu si us plau...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Seleccionar opció...
+theme.compilation.async.success|Compilació del canal de venda %salesChannelName% completat
+vdct-simple-events.events.detail.to-event|Per a l'esdeveniment
+zeobv-store-switcher.switchStoreLabel|Botiga de canvi

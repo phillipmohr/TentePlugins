@@ -1,0 +1,564 @@
+LanguagePack fi-FI|Käännös
+account.doubleOptinAccountAlert|Asiakastiliäsi ei ole vielä aktivoitu. Olemme lähettäneet vahvistussähköpostin, joka sisältää aktivointilinkin. Tarkista Saapuneet-kansiosi ja napsauta linkkiä rekisteröitymisen suorittamiseksi loppuun!
+account.downloadFileButton|Lataa
+account.downloadItemColumnDate|Päivämäärä
+account.downloadItemColumnTitle|Tiedosto
+account.faxLabel|Faksi
+account.faxPlaceholder|Anna faksi
+account.homepageLabel|Kotisivu
+account.homepagePlaceholder|Anna kotisivun URL-osoite
+account.passwordNotIdentical|Antamasi salasanat eivät täsmää.
+account.personalTypePlaceholder|Valitse...
+account.profileCurrentMailPlaceholder|Anna sähköpostiosoite...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Poista kaikki henkilötietosi napsauttamalla tästä</a>."
+account.profilePasswordCreateNewPlaceholder|Anna uusi salasana...
+account.profilePasswordCurrentPlaceholder|Anna nykyinen salasana...
+acrisFilter.buttonFiltersHide|Näytä vähemmän suodattimia
+acrisFilter.buttonFilterShowHideLabel|Näytä enemmän tai vähemmän suodattimia
+acrisFilter.buttonFiltersShow|Näytä lisää suodattimia
+acrisFilter.buttonHeaderSearchAllCategories|Kaikki kategoriat
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Välittömästi saatavilla
+acrisFilter.filterCategoriesDisplayName|Kategoriat
+acrisFilter.filterRangeActiveMaxLabel|Ominaisuus %displayName% kohteeseen
+acrisFilter.filterRangeActiveMinLabel|Ominaisuus %displayName% kohteesta
+acrisFilter.filterRangeSliderFrom|kohteesta
+acrisFilter.filterRangeSliderTo|kohteeseen
+acrisFilter.filterSearchPlaceholder|Etsi...
+card.card-image|Kuva / %name%
+card.linkTitle|Avaa %url% uuteen välilehteen
+cbaxLexicon.page.ajax.linkDescription|Sanastoon
+cbaxLexicon.page.banner.alt|Banneri
+cbaxLexicon.page.boxKeyword.moreRead|Lue lisää
+cbaxLexicon.page.breadcrumb.name|Sanasto
+cbaxLexicon.page.content.headline|Sisällysluettelo
+cbaxLexicon.page.content.metaDescription|Sanaston metakuvauksen sisältö
+cbaxLexicon.page.content.metaKeywords|Lexicon Meta -avainsanojen sisältö
+cbaxLexicon.page.content.metaTitle|Sisällysluettelo
+cbaxLexicon.page.filter.button|Sanaston navigointi
+cbaxLexicon.page.filter.headline|Sanaston navigointi
+cbaxLexicon.page.index.metaDescription|Lexicon Meta Description Index -sanasto
+cbaxLexicon.page.index.metaKeywords|Lexicon Meta -avainsanojen hakemisto
+cbaxLexicon.page.index.metaTitle|Sanasto
+cbaxLexicon.page.listing.entryHeadline|Julkaisut tässä tietosanakirjakategoriassa
+cbaxLexicon.page.listing.metaDescription09|Lexicon Meta Description Listing 0-9 -sanaston kuvauslistaus
+cbaxLexicon.page.listing.metaDescriptionA|Sanaston metakuvaus, listaus A
+cbaxLexicon.page.listing.metaDescriptionB|Lexicon Meta Description Listing B -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionC|Lexicon Meta Description Listing C -sanasto
+cbaxLexicon.page.listing.metaDescriptionD|Lexicon Meta Description Listing D -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionE|Lexicon Meta Description Listing E -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionF|Lexicon Meta Description Listing F -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionG|Lexicon Meta Description Listing G -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionH|Sanaston metakuvauksen listaus H
+cbaxLexicon.page.listing.metaDescriptionI|Lexicon Meta Description Listing I -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionJ|Sanaston metakuvauksen listaus J
+cbaxLexicon.page.listing.metaDescriptionK|Lexicon Meta Description Listing K -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionL|Sanaston metakuvauksen luettelo L
+cbaxLexicon.page.listing.metaDescriptionM|Lexicon Meta Description Listing M -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionN|Sanaston metakuvauksen luettelo N
+cbaxLexicon.page.listing.metaDescriptionO|Lexicon Meta Description Listing O -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionP|Lexicon Meta Description Listing P -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionQ|Lexicon Meta Description Listing Q -sanasto
+cbaxLexicon.page.listing.metaDescriptionR|Lexicon Meta Description Listing R -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionS|Lexicon Meta Description Listing S -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionT|Lexicon Meta Description Listing T -sanasto
+cbaxLexicon.page.listing.metaDescriptionU|Sanaston metakuvaus, listaus U
+cbaxLexicon.page.listing.metaDescriptionV|Lexicon Meta Description Listing V -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionW|Sanaston metakuvauksen luettelo W
+cbaxLexicon.page.listing.metaDescriptionX|Lexicon Meta Description Listing X -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionY|Lexicon Meta Description Listing Y -sanaston kuvaus
+cbaxLexicon.page.listing.metaDescriptionZ|Lexicon Meta Description Listing Z -sanaston kuvaus
+cbaxLexicon.page.listing.metaKeywords09|Sanaston meta-avainsanat, listaus 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Sanaston meta-avainsanat, listaus A
+cbaxLexicon.page.listing.metaKeywordsB|Sanaston meta-avainsanat, lista B
+cbaxLexicon.page.listing.metaKeywordsC|Sanaston meta-avainsanat, listaus C
+cbaxLexicon.page.listing.metaKeywordsD|Sanaston meta-avainsanat, lista D
+cbaxLexicon.page.listing.metaKeywordsE|Sanaston meta-avainsanat, listaus E
+cbaxLexicon.page.listing.metaKeywordsF|Sanaston meta-avainsanat, listaus F
+cbaxLexicon.page.listing.metaKeywordsG|Sanaston meta-avainsanat, lista G
+cbaxLexicon.page.listing.metaKeywordsH|Sanaston meta-avainsanat, listaus H
+cbaxLexicon.page.listing.metaKeywordsI|Lexicon Meta -avainsanat, listaus I
+cbaxLexicon.page.listing.metaKeywordsJ|Lexicon Meta -avainsanojen listaus J
+cbaxLexicon.page.listing.metaKeywordsK|Sanaston meta-avainsanat, listaus K
+cbaxLexicon.page.listing.metaKeywordsL|Lexicon Meta -avainsanojen listaus L
+cbaxLexicon.page.listing.metaKeywordsM|Sanaston meta-avainsanat, M-luettelo
+cbaxLexicon.page.listing.metaKeywordsN|Sanaston meta-avainsanat, listaus N
+cbaxLexicon.page.listing.metaKeywordsO|Lexicon Meta -avainsanojen listaus O
+cbaxLexicon.page.listing.metaKeywordsP|Lexicon Meta -avainsanojen listaus P
+cbaxLexicon.page.listing.metaKeywordsQ|Lexicon Meta -avainsanojen listaus Q
+cbaxLexicon.page.listing.metaKeywordsR|Lexicon Meta -avainsanojen listaus R
+cbaxLexicon.page.listing.metaKeywordsS|Sanaston meta-avainsanat, S-luettelo
+cbaxLexicon.page.listing.metaKeywordsT|Lexicon Meta -avainsanojen listaus T
+cbaxLexicon.page.listing.metaKeywordsU|Sanaston meta-avainsanat U-listaus
+cbaxLexicon.page.listing.metaKeywordsV|Sanaston meta-avainsanat, listaus V
+cbaxLexicon.page.listing.metaKeywordsW|Sanaston meta-avainsanojen listaus W
+cbaxLexicon.page.listing.metaKeywordsX|Lexicon Meta -avainsanat, X-listaus
+cbaxLexicon.page.listing.metaKeywordsY|Sanaston meta-avainsanat, Y-listaus
+cbaxLexicon.page.listing.metaKeywordsZ|Sanaston meta-avainsanat, Z-listaus
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|Minä
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Q
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Sisällysluettelo
+cbaxLexicon.page.navigation.linkIndex|Aloitussivu
+cbaxLexicon.page.pagination.toOverview|Yleiskatsaus
+cbaxLexicon.page.sidebar.title|Sanasto:
+checkout.confirmRevocationReminder|Olet jo ilmoittanut luopuvasi peruutusoikeudesta.
+checkout.confirmRevocationTerms|Haluan välittömän pääsyn digitaaliseen sisältöön ja hyväksyn, että näin ollen luovun oikeudestani peruuttaa.
+checkout.confirmTermsReminderText|"Olet jo hyväksynyt <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""general terms and conditions"">yleiset ehdot</a>."
+checkout.confirmTermsText|"Olen lukenut ja hyväksynyt <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""general terms and conditions"">yleiset ehdot</a>."
+checkout.lineItemUnitPriceDescriptor|yksikkö
+checkout.merchant-not-selected|Valitse paikallinen kauppias jatkaaksesi kassalla.
+checkout.or|tai
+CmsElements.callToAction.elementError|Tämä elementti ei ole sivupalkin käytettävissä. Valitse toinen <p class='h5 my-2'>Soita toimintoon</p> sivupalkkiisi.
+CmsElements.counter.days|PÄIVÄÄ
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|Et ole ladannut kelvollista videota. Tarkista elementin asetukset.
+CmsElements.htmlVideo.hint.headline|Väärä muoto / Ei videota
+CmsElements.placeholder.label|Vaihda elementti
+CmsElements.shopTheLook.addAllProducts|Lisää tuotteita ostoskoriin
+CmsElements.shopTheLook.totalDiscount|Säästöt:
+component.cms.imageGallery.sliderDotLabel|Näytä kuva %index% %total%
+component.cms.vimeo.privacyNoticeText|"Katsomalla videon hyväksyt, että tietosi siirretään %platform%:lle ja että olet lukenut <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Privacy policy"">Tietosuojakäytännön</a>."
+component.product.quantitySelect.decrease|Vähennä määrää
+component.product.quantitySelect.increase|Lisää määrää
+component.product.quantitySelect.label|Määrä
+contact.newsletterSubscribe|Täten suostun siihen, että TENTE voi myös ilmoittaa minulle sähköpostitse ja puhelimitse TENTE:n tuotteista ja tapahtumista (esim. messut).
+contact.privacyNoticeText|"Valitsemalla jatka vahvistat lukeneesi ja hyväksyväsi <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Data protection information"">tietosuojatiedot</a>."
+cookie.groupComfortFeaturesYoutubeVideo|YouTube-video
+cookie.messageText|"Tällä verkkosivustolla käytetään evästeitä parhaan mahdollisen kokemuksen varmistamiseksi. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""More information"">Lisätietoja...</a>"
+detail.acrisProductDownloadBtnText|Lataa
+detail.acrisProductDownloadNoPreview|Ei esikatselua
+detail.acrisProductDownloadTabLabel|Lataukset
+detail.acrisProductDownloadTitle|Lataukset
+detail.acrisProductLinkTabLabel|Linkit
+detail.acrisProductLinkTitle|Linkit
+detail.buyOnline|Osta verkossa
+detail.cadService.downloadBtn|Lataa
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Tiedoston tyyppi
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Voit ladata tämän tuotteen rakennustiedot eri muodossa
+detail.cadService.login|"<a href=""%url%"">Kirjaudu sisään</a> nähdäksesi CAD-tiedostot"
+detail.cadService.title|CAD-palvelu
+detail.contactText|"Etkö ole vielä löytänyt oikeaa tuotetta, sinulla on erityisvaatimuksia tai oletko kiinnostunut yksittäisistä ratkaisuista? <a href=""%url%"" title=""Kontaktformular"">Ota meihin yhteyttä</a>."
+detail.ean|EAN
+detail.orderNumber|Tuotteen numero
+detail.orText|Tai
+detail.performance.atrittion|Huomio
+detail.performance.movement|Liikkeen melu
+detail.performance.resistance|Korroosion kestävyys
+detail.performance.roll|Rullan suorituskyky
+detail.priceOnRequestText|kappaletta kohti + ALV<br />24 tunnin kuluessa toimitusvalmiina
+detail.priceOnRequestTitle|Hinta pyynnöstä
+detail.properties.fitting|Teknisten tietojen sovitus
+detail.properties.housing|Teknisten tietojen Haarukka
+detail.properties.label.downloads|Lataukset
+detail.properties.label.feature|Tuotteen ominaisuudet
+detail.properties.label.fitting|Sovitus
+detail.properties.label.housing|Haarukka
+detail.properties.label.performance|Suorituskyky
+detail.properties.label.wheel|Pyörä
+detail.properties.performance|Suorituskyky
+detail.properties.wheel|Teknisten tietojen Pyörä
+detail.qte|Määrä
+detail.reviewFormContentPlaceholder|Kirjoita arvostelusi...
+detail.sendQuoteRequest|Lähetä tarjouspyyntö
+detail.tabs.downloads|Lataukset
+detail.tabs.features|Ominaisuudet
+detail.tabs.performance|Suorituskyky
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|Määrä (%quantity%) on virheellinen.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|"Tilausnumerolla ""%orderNumber%"" varustettu tilaus on jo maksettu, eikä sitä voi muokata jälkikäteen."
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Tilausta ei löytynyt.
+error.merchant-not-selected|Valitse paikallinen kauppias jatkaaksesi kassalla.
+error.VIOLATION::ZIP_CODE_INVALID|Antamasi postinumero ei ole oikeassa muodossa.
+footer.excludeVatText|"* Kaikki hinnat ilman ALV plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">lähetyskulut</a> ja mahdolliset toimituskulut, ellei toisin ilmoiteta."
+footer.includeVatText|"* Kaikki hinnat mukaan lukien ALV plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">lähetyskulut</a> ja mahdolliset toimituskulut, ellei toisin ilmoiteta."
+footer.serviceContactText|"Tai <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Contact form"">yhteydenottolomakkeella</a>."
+footer.socialMediaHeadline|Sosiaalinen
+general.contactUs|Ota meihin yhteyttä
+general.contactUsLink|/yhteyshenkilö
+general.loginRegister|Kirjaudu sisään / rekisteröidy
+general.privacyNoticeText|"Tilaamalla uutiskirjeen hyväksyt <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Privacy policy"">tietosuojakäytäntömme</a> sekä <a data-ajax-modal=""true"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""terms and conditions"">ehdot</a>."
+global.default.activate|Aktivoi
+global.default.cancel|Peruuta
+global.default.confirm|Vahvista
+global.default.deactivate|Poista käytöstä
+global.default.delete|Poista
+global.default.edit|Muokkaa
+global.default.noteRequiredFields|Tähdellä (*) merkityt kentät ovat pakollisia.
+global.default.save|Tallenna
+listing.downloadText|Lataa
+moorl-creator.aboutTheCreator|Tietoja luojasta
+moorl-creator.aboutTheCreators|Tietoja luovan työn tekijöistä
+moorl-creator.creator|Luoja
+moorl-creator.creators|Luojat
+moorl-creator.donate|Lahjoita
+moorl-creator.follow|Seuraa
+moorl-creator.link|Kotisivu
+moorl-creator.productsOf|Tuotteet /
+moorl-creator.readMore|Lue lisää...
+moorl-foundation.buttons.acceptCookie|Hyväksy eväste
+moorl-foundation.buttons.addMerchantButtonText|Uusi kauppias
+moorl-foundation.buttons.administrationButtonText|Hallinto
+moorl-foundation.buttons.cancelButtonText|Peruuta
+moorl-foundation.buttons.exportButtonText|Vie CSV
+moorl-foundation.buttons.exportButtonTitle|Lataa CSV
+moorl-foundation.buttons.getLocButtonText|Hae työpaikkoja OpenStreetMap-sovelluksen mukaan
+moorl-foundation.buttons.importButtonText|Tuo CSV
+moorl-foundation.buttons.importButtonTitle|Lataa CSV
+moorl-foundation.buttons.mediaFolder|Tallenna kuvat tähän kansioon
+moorl-foundation.buttons.newButtonText|Uusi
+moorl-foundation.buttons.openMapButtonText|Avaa kartta
+moorl-foundation.buttons.openNewWindowButtonText|Avaa uudessa ikkunassa
+moorl-foundation.buttons.overwriteText|Korvaa olemassa olevat tietorivit (originId on asetettava).
+moorl-foundation.buttons.placeIdLink|Suunnittele reitti
+moorl-foundation.buttons.refreshButtonText|Lataa uudelleen
+moorl-foundation.buttons.saveButtonText|Tallenna
+moorl-foundation.buttons.selectLocButtonText|Valitse
+moorl-foundation.buttons.startImportButtonText|Aloita tuonti
+moorl-foundation.card.address|Osoite
+moorl-foundation.card.company|Yritys
+moorl-foundation.card.contact|Yhteyshenkilö
+moorl-foundation.card.legend|Merkkien selitykset
+moorl-foundation.card.openingHours|Aukioloajat
+moorl-foundation.card.person|Yhteyshenkilö
+moorl-foundation.customerUpload.checkToDelete|Valitse poistaaksesi
+moorl-foundation.customerUpload.dictDefaultMessage|Lataa vetämällä tiedostoja tähän
+moorl-foundation.customerUpload.useAsCover|Käytä suojana
+moorl-foundation.days.closed|Suljettu
+moorl-foundation.days.friday|Perjantai
+moorl-foundation.days.monday|Maanantai
+moorl-foundation.days.saturday|Lauantai
+moorl-foundation.days.sunday|Sunnuntai
+moorl-foundation.days.thursday|Torstai
+moorl-foundation.days.today|Tänään
+moorl-foundation.days.tuesday|Tiistai
+moorl-foundation.days.wednesday|Keskiviikko
+moorl-foundation.general.selectedItems|Valitut kohteet
+moorl-foundation.general.share|Jaa
+moorl-foundation.general.subTotal|Välisumma
+moorl-foundation.general.toc|Sisällysluettelo
+moorl-foundation.label.accountCard|Tili
+moorl-foundation.label.addressCard|Osoite
+moorl-foundation.label.generalCard|Yleinen
+moorl-foundation.label.locationCard|Sijainti
+moorl-foundation.label.markerCard|Merkki
+moorl-foundation.label.metaCard|Meta
+moorl-foundation.label.relationsCard|Relaatiot ja suodattimet
+moorl-foundation.label.visibilityCard|Näkyvyys
+moorl-foundation.listing.filter.categories|Kategoriat
+moorl-foundation.listing.filter.country|Maa
+moorl-foundation.listing.filter.distance|Etäisyys
+moorl-foundation.listing.filter.firstChar|Indeksi
+moorl-foundation.listing.filter.inRadiusOf|säteellä
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|MI
+moorl-foundation.listing.filter.myLocation|Käytä sijaintiani
+moorl-foundation.listing.filter.navigation|Kategoriat
+moorl-foundation.listing.filter.radius|Etsi postinumero
+moorl-foundation.listing.filter.search|Etsi tekstiä
+moorl-foundation.listing.filter.tags|Tunnisteet
+moorl-foundation.listing.filter.zipcodeCity|Postinumero/kaupunki
+moorl-foundation.properties.active|Aktiivinen
+moorl-foundation.properties.additionalAddressLine1|Osoiterivi 1
+moorl-foundation.properties.additionalAddressLine2|Osoiterivi 2
+moorl-foundation.properties.articles|Artikkelit
+moorl-foundation.properties.author|Kirjoittaja
+moorl-foundation.properties.categories|Kategoriat
+moorl-foundation.properties.city|Kaupunki
+moorl-foundation.properties.closed|Suljettu
+moorl-foundation.properties.cmsPage|CMS-sivu
+moorl-foundation.properties.cmsPageId|CMS-sivun tunnus
+moorl-foundation.properties.company|Yritys
+moorl-foundation.properties.content|Sisältö
+moorl-foundation.properties.country|Maa
+moorl-foundation.properties.countryCode|Maakoodi
+moorl-foundation.properties.countryId|Maa
+moorl-foundation.properties.createdAt|Luotu
+moorl-foundation.properties.customerGroupId|Asiakasryhmä
+moorl-foundation.properties.customerNumber|Asiakkaan numero
+moorl-foundation.properties.date|Päivämäärä
+moorl-foundation.properties.department|Osasto
+moorl-foundation.properties.description|Kuvaus
+moorl-foundation.properties.distance|Etäisyys
+moorl-foundation.properties.email|Sähköposti
+moorl-foundation.properties.enableComments|Ota kommentit käyttöön
+moorl-foundation.properties.firstName|Etunimi
+moorl-foundation.properties.from|Alkaen
+moorl-foundation.properties.highlight|Korostus
+moorl-foundation.properties.image|Artikkeli
+moorl-foundation.properties.info|Tiedot
+moorl-foundation.properties.inRadiusOf|säteellä
+moorl-foundation.properties.invisible|Näkymätön
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|Sukunimi
+moorl-foundation.properties.location|Asento
+moorl-foundation.properties.locationLat|Leveysaste
+moorl-foundation.properties.locationLon|Pituusaste
+moorl-foundation.properties.locked|Lukittu
+moorl-foundation.properties.logo|Logo
+moorl-foundation.properties.marker|Merkki
+moorl-foundation.properties.markerId|Merkki
+moorl-foundation.properties.markerSettings|Merkin asetukset
+moorl-foundation.properties.markerSettingsExample|Voit kopioida tämän esimerkin muokataksesi mukautettuja merkkiasetuksia.
+moorl-foundation.properties.markerSettingsLink|Esitteen mukautetun merkin esimerkki
+moorl-foundation.properties.markerShadow|Merkin varjo
+moorl-foundation.properties.markerShadowId|Merkkien varjo
+moorl-foundation.properties.media|Media
+moorl-foundation.properties.mediaId|Median tunnus
+moorl-foundation.properties.merchant|Kauppias
+moorl-foundation.properties.merchantUrl|Kauppiaan URL-osoite
+moorl-foundation.properties.metaDescription|Meta-kuvaus
+moorl-foundation.properties.metaTitle|Meta-otsikko
+moorl-foundation.properties.name|Nimi
+moorl-foundation.properties.openingHours|Aukioloajat
+moorl-foundation.properties.originId|Alkuperän tunnus
+moorl-foundation.properties.phoneNumber|Puhelin
+moorl-foundation.properties.priority|Prioriteetti
+moorl-foundation.properties.productManufacturers|Valmistajan tunnukset
+moorl-foundation.properties.products|Tuotteet
+moorl-foundation.properties.radius|Säde
+moorl-foundation.properties.repeat|Toista
+moorl-foundation.properties.salesChannel|Myyntikanava
+moorl-foundation.properties.salesChannelId|Myyntikanava
+moorl-foundation.properties.search|Etsi
+moorl-foundation.properties.shopUrl|Kaupan URL-osoite
+moorl-foundation.properties.showFrom|Näytä kohteesta
+moorl-foundation.properties.showUntil|Näytä
+moorl-foundation.properties.slug|Kuttausta
+moorl-foundation.properties.sticky|tahmea
+moorl-foundation.properties.street|Katu
+moorl-foundation.properties.streetNumber|Numero
+moorl-foundation.properties.tags|Tunnisteiden nimet/tunnukset
+moorl-foundation.properties.teaser|Teaser
+moorl-foundation.properties.title|Otsikko
+moorl-foundation.properties.until|Kunnes
+moorl-foundation.properties.updatedAt|Päivitetty
+moorl-foundation.properties.vatId|ALV-tunnus
+moorl-foundation.properties.zipcode|Postinumero
+moorl-foundation.search.headline|"{0} Ei vastaavuuksia kohteelle ""%searchTerm%"" | {1} Yksi vastaavuus kohteelle ""%searchTerm%"" | ]1,Inf[ %count% vastaavuuksia kohteelle ""%searchTerm%"""
+moorl-foundation.search.missingConfiguration|Tämän luettelon määritys puuttuu!
+moorl-foundation.search.moreButton|Lisää
+moorl-foundation.search.noListingSlotFound|"Tällä sivulla ei ole listauselementtiä. Tarkista luetteloasetuksesi ja valitse ""Automaattiset tuotteet"""
+moorl-foundation.search.notAvailable|Ei saatavilla
+moorl-foundation.search.product|Tuotteet
+moorl-location-map.cookieDescription|Käytämme OpenStreetMap-sovellusta laattatoimittajana näyttääksemme sinulle visuaalisesti myymälöidemme ja kauppiaidemme sijainnin.
+moorl-location-map.cookieHint|Hyväksy eväste käyttääksesi haluttua toimintoa.
+moorl-location-map.cookieName|Sijaintikartat
+moorl-magazine.articles|Blogin artikkelit
+moorl-magazine.author|Kirjoittaja
+moorl-magazine.authors|Kirjoittajat
+moorl-magazine.back|Takaisin
+moorl-magazine.backToOverview|Takaisin yleiskatsaukseen
+moorl-magazine.categories|Kategoriat
+moorl-magazine.categoryAll|Kaikki kategoriat
+moorl-magazine.commentArea|Kommenttialue
+moorl-magazine.commentAreaDisabled|Tämän artikkelin kommentit on poistettu käytöstä
+moorl-magazine.commentError|Varmista, että olet täyttänyt kaikki kentät oikein
+moorl-magazine.commentReview|Kommenttisi julkaistaan arvioinnin jälkeen.
+moorl-magazine.commentSuccess|Kiitos kommentistasi!
+moorl-magazine.date|Päivämäärä
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|Sähköposti
+moorl-magazine.emailPlaceholder|Anna sähköpostiosoitteesi
+moorl-magazine.name|Nimi
+moorl-magazine.namePlaceholder|Anna nimesi
+moorl-magazine.next|Seuraava
+moorl-magazine.page|Sivu
+moorl-magazine.pageDescription|Lorem ipsum dolor is amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Me vero eos et accusam et justo duo dolores et ea rebum -messuilla. Stet clita kasd gubergren, ei meritakimata sanctus est Lorem ipsum dolor is amet. Lorem ipsum dolor is is amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Me vero eos et accusam et justo duo dolores et ea rebum -yhtiössä. Stet clita kasd gubergren, ei meritakimata sanctus est Lorem ipsum dolor -istuma-amettia.
+moorl-magazine.pageTitle|Oma ihana blogini
+moorl-magazine.posts|Blogikirjoitukset
+moorl-magazine.products|Liittyvät tuotteet
+moorl-magazine.readMore|Lue lisää
+moorl-magazine.recentComments|Viimeisimmät kommentit
+moorl-magazine.relatedArticles|Aiheeseen liittyvät blogikirjoitukset
+moorl-magazine.search|Etsi
+moorl-magazine.searchFor|Etsi...
+moorl-magazine.sendComment|Lähetä kommenttisi
+moorl-magazine.similarArticles|Samankaltaiset blogikirjoitukset
+moorl-magazine.sticky|Kiinnitetty
+moorl-magazine.tags|Tunnisteet
+moorl-magazine.writeComment|Kirjoita kommentti
+moorl-magazine.wroteOn|kirjoitti
+moorl-magazine.yourComment|Kommenttisi
+moorl-magazine.yourCommentPlaceholder|Kirjoita kommenttisi tähän
+moorl-merchant-finder.allCategories|Kaikki kategoriat
+moorl-merchant-finder.allCountries|Kaikki maat
+moorl-merchant-finder.allManufacturers|Kaikki valmistajat
+moorl-merchant-finder.allowMerchantCustomerContact|Annan valitun kauppiaan ottaa minuun yhteyttä puhelimitse tai sähköpostitse.
+moorl-merchant-finder.allResults|-- Valitse --
+moorl-merchant-finder.allTags|Kaikki tunnisteet
+moorl-merchant-finder.are|ovat 
+moorl-merchant-finder.available|Saatavilla
+moorl-merchant-finder.backToOverview|Takaisin yleiskatsaukseen
+moorl-merchant-finder.call|Puhelu
+moorl-merchant-finder.cancel|Peruuta
+moorl-merchant-finder.categories|Kategoriat
+moorl-merchant-finder.checkAvailability|Tarkista saatavuus
+moorl-merchant-finder.chose|Valitse
+moorl-merchant-finder.choseMerchant|Valitse kauppias
+moorl-merchant-finder.choseMerchantToProceed|Valitse paikallinen kauppias jatkaaksesi kassalla
+moorl-merchant-finder.close|Sulje
+moorl-merchant-finder.commentToMerchant|Lähetä kommentti kauppiaalle
+moorl-merchant-finder.country|Maa
+moorl-merchant-finder.deliveryTime|Toimitusaika
+moorl-merchant-finder.deliveryTimeUnknown|Tuntematon – tuotteita pyydetään tilattaessa
+moorl-merchant-finder.description|Kuvaus
+moorl-merchant-finder.desiredDate|Haluttu noutopäivä
+moorl-merchant-finder.desiredTime|Haluttu noutoaika
+moorl-merchant-finder.displayOnMap|Näytä kartalla
+moorl-merchant-finder.distance|Etäisyys
+moorl-merchant-finder.emptyResultMessage|Kauppiaita ei löytynyt
+moorl-merchant-finder.findMerchants|Etsi kauppiaita
+moorl-merchant-finder.forTheSearch|hakua varten 
+moorl-merchant-finder.forTheSearchZipcode|postinumerossa ja etäisyydessä km ympäristössä 
+moorl-merchant-finder.highlight|Vinkki
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|Ladataan...
+moorl-merchant-finder.manufacturers|Valmistajat
+moorl-merchant-finder.merchant|Kauppias
+moorl-merchant-finder.merchants|Kauppiaat
+moorl-merchant-finder.merchantUrl|Verkkosivusto
+moorl-merchant-finder.more|Lisää
+moorl-merchant-finder.myLocation|Käytä nykyistä sijaintiani
+moorl-merchant-finder.mySelection|Oma valinta
+moorl-merchant-finder.noMerchantSelected|Tuote ei ole saatavilla. Kauppiasta ei ole valittu.
+moorl-merchant-finder.none|ei mitään
+moorl-merchant-finder.openingHours|Aukioloajat
+moorl-merchant-finder.outOfStock|Tuote ei ole saatavilla. Valitsemallasi kauppiaalla ei ole tätä tuotetta varastossa.
+moorl-merchant-finder.phoneNumber|Puhelin
+moorl-merchant-finder.pickupDateSet|Noutoaika on asetettu
+moorl-merchant-finder.productAvailability|Tuotteen saatavuus
+moorl-merchant-finder.productNotAvailable|Tuote ei ole saatavilla. Ota yhteyttä myymälätukeen saadaksesi lisätietoja.
+moorl-merchant-finder.radius|Säde
+moorl-merchant-finder.resetSelection|Nollaa valinta
+moorl-merchant-finder.resultsFound|tulokset löytyivät
+moorl-merchant-finder.save|Tallenna
+moorl-merchant-finder.search|Etsi
+moorl-merchant-finder.searchFor|Etsi
+moorl-merchant-finder.searchLocation|Etsi sijaintia
+moorl-merchant-finder.searchRules.hasLogo|Logolla varustettu kauppias
+moorl-merchant-finder.searchRules.hasPriority|Priorisoitu kauppias
+moorl-merchant-finder.searchRules.isHighlighted|Premium-kauppias
+moorl-merchant-finder.searchRules.isNotHighlighted|Normaali kauppias
+moorl-merchant-finder.selectedMerchant|Valittu kauppias
+moorl-merchant-finder.sendMail|Posti
+moorl-merchant-finder.shop|Osta
+moorl-merchant-finder.shopUrl|Käy myymälässä
+moorl-merchant-finder.stockInfo|Varaston tiedot
+moorl-merchant-finder.tags|Tunnisteet
+moorl-merchant-finder.thereAre|on olemassa 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|postinumero, kaupunki
+moorl-merchant-finder.zipcodeCityEnter|Kirjoita postinumero tai kaupunki ja paina Enter-näppäintä
+nimbits-pricerequests.cart.cartRequestButton|Pyydä tarjous
+nimbits-pricerequests.cart.dontAddByProductNumber|Tätä tuotetta ei voi lisätä ostoskoriin.
+nimbits-pricerequests.detail.available|Saatavilla
+nimbits-pricerequests.detail.button.openrequestform|Pyydä tarjous
+nimbits-pricerequests.detail.restock|"{1} Saatavilla 1 päivän kuluttua|]1,Inf[ Saatavilla %restockTime% päivän kuluttua"
+nimbits-pricerequests.detail.text.priceonrequest|Hinta pyynnöstä
+nimbits-pricerequests.fail.alert|Pyyntöä ei lähetetty – tapahtui virhe. Yritä uudelleen.
+nimbits-pricerequests.finish.alert|Pyynnön lähetys onnistui
+nimbits-pricerequests.finish.buttonBack|Takaisin kauppaan
+nimbits-pricerequests.listing.button.openrequestform|Pyydä tarjous
+nimbits-pricerequests.listing.text.priceonrequest|Hinta pyynnöstä
+nimbits-pricerequests.mail.address|Osoite
+nimbits-pricerequests.mail.amount|Summa
+nimbits-pricerequests.mail.article|Artikkeli
+nimbits-pricerequests.mail.city|Kaupunki
+nimbits-pricerequests.mail.comment|Asiakkaiden kommentti
+nimbits-pricerequests.mail.company|Yritys
+nimbits-pricerequests.mail.country|Maa
+nimbits-pricerequests.mail.customersendername|Hinta pyynnöstä
+nimbits-pricerequests.mail.housenumber|Talon numero
+nimbits-pricerequests.mail.mail|Posti
+nimbits-pricerequests.mail.name|Nimi
+nimbits-pricerequests.mail.ordernumber|Tilauksen numero
+nimbits-pricerequests.mail.price|Hinta
+nimbits-pricerequests.mail.pricegross|Sis. Vero
+nimbits-pricerequests.mail.pricegrosssum|Sis. Verojen summa
+nimbits-pricerequests.mail.pricenet|Ei sisällä Vero
+nimbits-pricerequests.mail.pricenetsum|Ei sisällä Verojen summa
+nimbits-pricerequests.mail.requestfirst|Hintapyyntö henkilöltä
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Hinta pyynnöstä
+nimbits-pricerequests.mail.street|Katu
+nimbits-pricerequests.mail.subject|Hinta pyynnöstä
+nimbits-pricerequests.mail.subjectcart|Ostoskorin pyyntö
+nimbits-pricerequests.mail.subjectshopowner|Hinta pyynnöstä
+nimbits-pricerequests.mail.subjectshopownercart|Ostoskorin pyyntö
+nimbits-pricerequests.mail.zipcode|Postinumero
+nimbits-pricerequests.popup.city|Kaupunki
+nimbits-pricerequests.popup.closebutton|Sulje
+nimbits-pricerequests.popup.company|Yritys
+nimbits-pricerequests.popup.country|Maa
+nimbits-pricerequests.popup.dataprivacytext|"Olen lukenut, ymmärtänyt ja hyväksyn <a href=""/privacy"" target=""_blank"" rel=""noreferrer noopener""> Tietosuojakäytännön </a>."
+nimbits-pricerequests.popup.desiredprice|Haluttu hinta 
+nimbits-pricerequests.popup.entervalidcity|Anna kelvollinen kaupunki.
+nimbits-pricerequests.popup.entervalidcountry|Anna kelvollinen maa.
+nimbits-pricerequests.popup.entervalidhousenumber|Anna kelvollinen kotinumero.
+nimbits-pricerequests.popup.entervalidmail|Anna kelvollinen sähköpostiosoite.
+nimbits-pricerequests.popup.entervalidstreet|Anna kelvollinen katu.
+nimbits-pricerequests.popup.entervalidzipcode|Anna kelvollinen postinumero.
+nimbits-pricerequests.popup.genderm|Herra
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Rouva
+nimbits-pricerequests.popup.housenumber|Talon numero
+nimbits-pricerequests.popup.mail|Postiosoite
+nimbits-pricerequests.popup.name|Nimi
+nimbits-pricerequests.popup.optional|(valinnainen)
+nimbits-pricerequests.popup.phonenumber|Puhelin
+nimbits-pricerequests.popup.popupTitle|Pyydä tarjous
+nimbits-pricerequests.popup.product|Tämän pyynnön tuote(et):
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Pyyntö
+nimbits-pricerequests.popup.requestbutton|Pyyntö
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|*-merkityt kentät ovat pakollisia.
+nimbits-pricerequests.popup.salutation|Tervehdys
+nimbits-pricerequests.popup.street|Katu
+nimbits-pricerequests.popup.surname|Sukunimi
+nimbits-pricerequests.popup.text|Pyydä tarjous valituista tuotteista
+nimbits-pricerequests.popup.zipcode|Postinumero
+nimbits-pricerequests.search.text.priceonrequest|Hinta pyynnöstä
+nimbits-pricerequests.toasts.error|Pyyntöä ei lähetetty – tapahtui virhe. Yritä uudelleen.
+nimbits-pricerequests.toasts.success|Pyynnön lähetys onnistui
+priceRequest.newsletterText|Täten suostun siihen, että TENTE voi myös ilmoittaa minulle sähköpostitse ja puhelimitse TENTE:n tuotteista ja tapahtumista (esim. messut).
+priceRequest.sendRequestText|Pyyntö lähetetään...
+priceRequest.waitText|Odota...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Valitse vaihtoehto...
+theme.compilation.async.success|Myyntikanavan %salesChannelName% kokoaminen valmis
+vdct-simple-events.events.detail.to-event|Tapahtumaan
+zeobv-store-switcher.switchStoreLabel|Vaihda myymälää

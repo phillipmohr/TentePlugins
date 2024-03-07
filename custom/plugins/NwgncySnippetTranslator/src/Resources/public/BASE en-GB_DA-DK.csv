@@ -1,0 +1,564 @@
+LanguagePack da-DK|Oversættelse
+account.doubleOptinAccountAlert|Din kundekonto er endnu ikke blevet aktiveret. Vi har sendt en bekræftelses-e-mail med et aktiveringslink. Tjek din indbakke, og klik på linket for at gennemføre tilmeldingen!
+account.downloadFileButton|Download
+account.downloadItemColumnDate|Dato
+account.downloadItemColumnTitle|Fil
+account.faxLabel|Fax
+account.faxPlaceholder|Indtast fax
+account.homepageLabel|Hjemmeside
+account.homepagePlaceholder|Indtast URL for startside
+account.passwordNotIdentical|De indtastede adgangskoder stemmer ikke overens.
+account.personalTypePlaceholder|Vælg...
+account.profileCurrentMailPlaceholder|Indtast e-mailadresse...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Klik her</a> for at slette alle dine personoplysninger."
+account.profilePasswordCreateNewPlaceholder|Indtast ny adgangskode...
+account.profilePasswordCurrentPlaceholder|Indtast aktuel adgangskode...
+acrisFilter.buttonFiltersHide|Vis færre filtre
+acrisFilter.buttonFilterShowHideLabel|Vis flere eller færre filtre
+acrisFilter.buttonFiltersShow|Vis flere filtre
+acrisFilter.buttonHeaderSearchAllCategories|Alle kategorier
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Umiddelbart tilgængelig
+acrisFilter.filterCategoriesDisplayName|Kategorier
+acrisFilter.filterRangeActiveMaxLabel|Egenskab %displayName% til
+acrisFilter.filterRangeActiveMinLabel|Egenskab %displayName% fra
+acrisFilter.filterRangeSliderFrom|fra
+acrisFilter.filterRangeSliderTo|til
+acrisFilter.filterSearchPlaceholder|Søg...
+card.card-image|Billede af %name%
+card.linkTitle|Åbn %url% i ny fane
+cbaxLexicon.page.ajax.linkDescription|Til leksikonet
+cbaxLexicon.page.banner.alt|Banner
+cbaxLexicon.page.boxKeyword.moreRead|Læs mere
+cbaxLexicon.page.breadcrumb.name|Lexicon
+cbaxLexicon.page.content.headline|Indholdsfortegnelse
+cbaxLexicon.page.content.metaDescription|Indhold af Lexicon-metabeskrivelse
+cbaxLexicon.page.content.metaKeywords|Indhold af Lexicon Meta Keywords
+cbaxLexicon.page.content.metaTitle|Indholdsfortegnelse
+cbaxLexicon.page.filter.button|Lexicon-navigation
+cbaxLexicon.page.filter.headline|Lexicon-navigation
+cbaxLexicon.page.index.metaDescription|Indeks for beskrivelse af Lexicon-meta
+cbaxLexicon.page.index.metaKeywords|Lexicon Meta Keywords-indeks
+cbaxLexicon.page.index.metaTitle|Lexicon
+cbaxLexicon.page.listing.entryHeadline|Artikler i denne encyklopædikategori
+cbaxLexicon.page.listing.metaDescription09|Beskrivelse af Lexicon-meta, liste 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Beskrivelse af Lexicon-meta, liste A
+cbaxLexicon.page.listing.metaDescriptionB|Beskrivelse af Lexicon-meta, liste B
+cbaxLexicon.page.listing.metaDescriptionC|Beskrivelse af Lexicon-meta, liste C
+cbaxLexicon.page.listing.metaDescriptionD|Beskrivelse af Lexicon-meta, liste D
+cbaxLexicon.page.listing.metaDescriptionE|Beskrivelse af Lexicon Meta Listing E
+cbaxLexicon.page.listing.metaDescriptionF|Beskrivelse af Lexicon Meta Listing F
+cbaxLexicon.page.listing.metaDescriptionG|Beskrivelse af Lexicon Meta Listing G
+cbaxLexicon.page.listing.metaDescriptionH|Beskrivelse af Lexicon-meta, der angiver H
+cbaxLexicon.page.listing.metaDescriptionI|Beskrivelse af Lexicon-meta, liste I
+cbaxLexicon.page.listing.metaDescriptionJ|Liste over Lexicon Meta Description J
+cbaxLexicon.page.listing.metaDescriptionK|Beskrivelse af Lexicon Meta Listing K
+cbaxLexicon.page.listing.metaDescriptionL|Beskrivelse af Lexicon-meta, liste L
+cbaxLexicon.page.listing.metaDescriptionM|Beskrivelse af Lexicon-meta, liste M
+cbaxLexicon.page.listing.metaDescriptionN|Beskrivelse af Lexicon-meta, der angiver N
+cbaxLexicon.page.listing.metaDescriptionO|Beskrivelse af Lexicon-meta, der angiver O
+cbaxLexicon.page.listing.metaDescriptionP|Beskrivelse af Lexicon Meta Listing P
+cbaxLexicon.page.listing.metaDescriptionQ|Beskrivelse af Lexicon Meta Listing Q
+cbaxLexicon.page.listing.metaDescriptionR|Beskrivelse af Lexicon Meta Listing R
+cbaxLexicon.page.listing.metaDescriptionS|Liste over Lexicon Meta Description S
+cbaxLexicon.page.listing.metaDescriptionT|Beskrivelse af Lexicon Meta Listing T
+cbaxLexicon.page.listing.metaDescriptionU|Beskrivelse af Lexicon-meta, der angiver U
+cbaxLexicon.page.listing.metaDescriptionV|Liste over Lexicon Meta Description V
+cbaxLexicon.page.listing.metaDescriptionW|Liste over Lexicon Meta Description W
+cbaxLexicon.page.listing.metaDescriptionX|Beskrivelse af Lexicon-meta, liste X
+cbaxLexicon.page.listing.metaDescriptionY|Beskrivelse af Lexicon-meta, der angiver Y
+cbaxLexicon.page.listing.metaDescriptionZ|Beskrivelse af Lexicon-meta, der angiver Z
+cbaxLexicon.page.listing.metaKeywords09|Lexicon-metanøgleord, der angiver 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Lexicon-metanøgleord, der angiver A
+cbaxLexicon.page.listing.metaKeywordsB|Lexicon Meta Keywords liste B
+cbaxLexicon.page.listing.metaKeywordsC|Lexicon Meta Keywords liste C
+cbaxLexicon.page.listing.metaKeywordsD|Lexicon-metanøgleord, der angiver D
+cbaxLexicon.page.listing.metaKeywordsE|Lexicon-metanøgleord, der angiver E
+cbaxLexicon.page.listing.metaKeywordsF|Lexicon Meta Keywords liste F
+cbaxLexicon.page.listing.metaKeywordsG|Lexicon-metanøgleord, der angiver G
+cbaxLexicon.page.listing.metaKeywordsH|Lexicon-metanøgleord, der angiver H
+cbaxLexicon.page.listing.metaKeywordsI|Lexicon-metanøgleord, der angiver I
+cbaxLexicon.page.listing.metaKeywordsJ|Lexicon-metanøgleord, der angiver J
+cbaxLexicon.page.listing.metaKeywordsK|Lexicon Meta Keywords Liste K
+cbaxLexicon.page.listing.metaKeywordsL|Lexicon-metanøgleord, der angiver L
+cbaxLexicon.page.listing.metaKeywordsM|Lexicon-metanøgleord, der angiver M
+cbaxLexicon.page.listing.metaKeywordsN|Lexicon-metanøgleord, der angiver N
+cbaxLexicon.page.listing.metaKeywordsO|Lexicon-metanøgleord, der angiver O
+cbaxLexicon.page.listing.metaKeywordsP|Lexicon Meta Keywords liste P
+cbaxLexicon.page.listing.metaKeywordsQ|Lexicon Meta Keywords liste Q
+cbaxLexicon.page.listing.metaKeywordsR|Lexicon-metanøgleord, der angiver R
+cbaxLexicon.page.listing.metaKeywordsS|Lexicon Meta Keywords Listing S
+cbaxLexicon.page.listing.metaKeywordsT|Lexicon-metanøgleord, der angiver T
+cbaxLexicon.page.listing.metaKeywordsU|Lexicon-metanøgleord, der angiver U
+cbaxLexicon.page.listing.metaKeywordsV|Lexicon Meta Keywords liste V
+cbaxLexicon.page.listing.metaKeywordsW|Lexicon Meta Keywords liste W
+cbaxLexicon.page.listing.metaKeywordsX|Lexicon Meta Keywords liste X
+cbaxLexicon.page.listing.metaKeywordsY|Lexicon-metanøgleord, der angiver Y
+cbaxLexicon.page.listing.metaKeywordsZ|Lexicon-metanøgleord, der angiver Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|Jeg
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Q
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Indholdsfortegnelse
+cbaxLexicon.page.navigation.linkIndex|Startside
+cbaxLexicon.page.pagination.toOverview|For at få overblik
+cbaxLexicon.page.sidebar.title|Lexicon:
+checkout.confirmRevocationReminder|Du har allerede erklæret, at du giver afkald på fortrydelsesretten.
+checkout.confirmRevocationTerms|Jeg ønsker øjeblikkelig adgang til det digitale indhold, og jeg anerkender, at jeg derved giver afkald på min ret til at annullere.
+checkout.confirmTermsReminderText|"Du har allerede accepteret <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""generelle vilkår og betingelser"">generelle vilkår og betingelser</a>."
+checkout.confirmTermsText|"Jeg har læst og accepteret <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""generelle vilkår og betingelser"">generelle vilkår og betingelser</a>."
+checkout.lineItemUnitPriceDescriptor|enhed
+checkout.merchant-not-selected|Vælg venligst din lokale forhandler for at gå til kassen.
+checkout.or|eller
+CmsElements.callToAction.elementError|Dette element er ikke tilgængeligt for sidepanelet. Vælg en anden <p class='h5 my-2'>Ring til handling</p> for dit sidepanel.
+CmsElements.counter.days|DAGE
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|Du har ikke uploadet en gyldig video. Kontrollér elementets indstillinger.
+CmsElements.htmlVideo.hint.headline|Forkert format/Ingen video
+CmsElements.placeholder.label|Udskift element
+CmsElements.shopTheLook.addAllProducts|Tilføj produkter til indkøbskurv
+CmsElements.shopTheLook.totalDiscount|Besparelser:
+component.cms.imageGallery.sliderDotLabel|Vis billede %index% af %total%
+component.cms.vimeo.privacyNoticeText|"Ved at se videoen accepterer du, at dine data vil blive overført til %platform%, og at du har læst <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Privacy policy"">Privacy policy</a>."
+component.product.quantitySelect.decrease|Reducer mængden
+component.product.quantitySelect.increase|Øg mængden
+component.product.quantitySelect.label|Mængde
+contact.newsletterSubscribe|Jeg accepterer hermed, at TENTE også via e-mail og telefon kan informere mig om produkter og arrangementer (f.eks. messer) af TENTE.
+contact.privacyNoticeText|"Ved at vælge Fortsæt bekræfter du, at du har læst og accepterer vores <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Databeskyttelsesoplysninger"">databeskyttelsesoplysninger</a>."
+cookie.groupComfortFeaturesYoutubeVideo|YouTube-video
+cookie.messageText|"Dette websted bruger cookies for at sikre den bedst mulige oplevelse. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Flere oplysninger"">Flere oplysninger...</a>"
+detail.acrisProductDownloadBtnText|Download
+detail.acrisProductDownloadNoPreview|Ingen forhåndsvisning
+detail.acrisProductDownloadTabLabel|Downloads
+detail.acrisProductDownloadTitle|Downloads
+detail.acrisProductLinkTabLabel|Links
+detail.acrisProductLinkTitle|Links
+detail.buyOnline|Køb online
+detail.cadService.downloadBtn|Download
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Filtype
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Du kan downloade konstruktionsdata for dette produkt i et andet format
+detail.cadService.login|"<a href=""%url%"">Log ind</a> for at se CAD-filerne"
+detail.cadService.title|CAD-service
+detail.contactText|"Har du ikke fundet det rigtige produkt endnu, har særlige krav eller er du interesseret i individuelle løsninger? <a href=""%url%"" title=""Kontaktformular"">Kontakt os</a>."
+detail.ean|EAN
+detail.orderNumber|Produktnummer
+detail.orText|Eller
+detail.performance.atrittion|Tiltrækning
+detail.performance.movement|Bevægelsesstøj
+detail.performance.resistance|Rustbeskyttelse
+detail.performance.roll|Rullens ydeevne
+detail.priceOnRequestText|pr. stk. plus moms<br />Om 24 timer klar til forsendelse
+detail.priceOnRequestTitle|Pris på anmodning
+detail.properties.fitting|Tilpasning af tekniske data
+detail.properties.housing|Tekniske Gaffel
+detail.properties.label.downloads|Downloads
+detail.properties.label.feature|Produktfunktioner
+detail.properties.label.fitting|Tilpasning
+detail.properties.label.housing|Gaffel
+detail.properties.label.performance|Ydeevne
+detail.properties.label.wheel|Hjul
+detail.properties.performance|Ydeevne
+detail.properties.wheel|Teknisk Hjul
+detail.qte|Mængde
+detail.reviewFormContentPlaceholder|Indtast din anmeldelse...
+detail.sendQuoteRequest|Send anmodning om tilbud
+detail.tabs.downloads|Downloads
+detail.tabs.features|Funktioner
+detail.tabs.performance|Ydeevne
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|Mængden (%quantity%) er forkert.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|"Best./ord. med best./ord.-nummeret ""%orderNumber%"" var allerede betalt og kan ikke redigeres bagefter."
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Denne best./ord. kunne ikke findes.
+error.merchant-not-selected|Vælg venligst din lokale forhandler for at gå til kassen.
+error.VIOLATION::ZIP_CODE_INVALID|Det indtastede postnummer har ikke det korrekte format.
+footer.excludeVatText|"* Alle priser ekskl. Moms plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">forsendelsesomkostninger</a> og mulige leveringsomkostninger, hvis ikke andet er angivet."
+footer.includeVatText|"* Alle priser inkl. Moms plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">forsendelsesomkostninger</a> og mulige leveringsomkostninger, hvis ikke andet er angivet."
+footer.serviceContactText|"Eller via vores <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Kontaktformular"">kontaktformular</a>."
+footer.socialMediaHeadline|Socialt
+general.contactUs|Kontakt os
+general.contactUsLink|/kontakt
+general.loginRegister|Log ind/registrer dig
+general.privacyNoticeText|"Ved at abonnere på nyhedsbrevet accepterer du vores <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Privacy policy"">privacy policy</a> samt vores <a data-ajax-modal=""true"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""terms and conditions"">terms and conditions</a>."
+global.default.activate|Aktiver
+global.default.cancel|Annuller
+global.default.confirm|Bekræft
+global.default.deactivate|Deaktivering
+global.default.delete|Slet
+global.default.edit|Redigér
+global.default.noteRequiredFields|Felter markeret med stjerner (*) skal udfyldes.
+global.default.save|Gem
+listing.downloadText|Download
+moorl-creator.aboutTheCreator|Om skaberen
+moorl-creator.aboutTheCreators|Om skaberne
+moorl-creator.creator|Skaber
+moorl-creator.creators|Skabere
+moorl-creator.donate|Donér
+moorl-creator.follow|Følg
+moorl-creator.link|Hjemmeside
+moorl-creator.productsOf|Produkter fra
+moorl-creator.readMore|Læs mere...
+moorl-foundation.buttons.acceptCookie|Accepter cookie
+moorl-foundation.buttons.addMerchantButtonText|Ny forhandler
+moorl-foundation.buttons.administrationButtonText|Administration
+moorl-foundation.buttons.cancelButtonText|Annuller
+moorl-foundation.buttons.exportButtonText|Eksporter CSV
+moorl-foundation.buttons.exportButtonTitle|Download din CSV
+moorl-foundation.buttons.getLocButtonText|Find stillinger hos OpenStreetMap
+moorl-foundation.buttons.importButtonText|Import af CSV
+moorl-foundation.buttons.importButtonTitle|Upload din CSV
+moorl-foundation.buttons.mediaFolder|Gem billeder i denne mappe
+moorl-foundation.buttons.newButtonText|Ny
+moorl-foundation.buttons.openMapButtonText|Åbn kort
+moorl-foundation.buttons.openNewWindowButtonText|Åbn i nyt vindue
+moorl-foundation.buttons.overwriteText|Overskriv eksisterende datarows (oprindelses-id skal indstilles).
+moorl-foundation.buttons.placeIdLink|Planlæg rute
+moorl-foundation.buttons.refreshButtonText|Genindlæs
+moorl-foundation.buttons.saveButtonText|Gem
+moorl-foundation.buttons.selectLocButtonText|Vælg
+moorl-foundation.buttons.startImportButtonText|Start import
+moorl-foundation.card.address|Adresse
+moorl-foundation.card.company|Virksomhed
+moorl-foundation.card.contact|Kontakt
+moorl-foundation.card.legend|Forklaring
+moorl-foundation.card.openingHours|Åbningstider
+moorl-foundation.card.person|Kontaktperson
+moorl-foundation.customerUpload.checkToDelete|Afkryds for at slette
+moorl-foundation.customerUpload.dictDefaultMessage|Træk filer hertil for at uploade
+moorl-foundation.customerUpload.useAsCover|Brug som dæksel
+moorl-foundation.days.closed|Lukket
+moorl-foundation.days.friday|Fredag
+moorl-foundation.days.monday|Mandag
+moorl-foundation.days.saturday|Lørdag
+moorl-foundation.days.sunday|Søndag
+moorl-foundation.days.thursday|Torsdag
+moorl-foundation.days.today|I dag
+moorl-foundation.days.tuesday|Tirsdag
+moorl-foundation.days.wednesday|Onsdag
+moorl-foundation.general.selectedItems|Valgte elementer
+moorl-foundation.general.share|Del
+moorl-foundation.general.subTotal|Subtotal
+moorl-foundation.general.toc|Indholdsfortegnelse
+moorl-foundation.label.accountCard|Konto
+moorl-foundation.label.addressCard|Adresse
+moorl-foundation.label.generalCard|Generelt
+moorl-foundation.label.locationCard|Placering
+moorl-foundation.label.markerCard|Markør
+moorl-foundation.label.metaCard|Meta
+moorl-foundation.label.relationsCard|Relationer og filtre
+moorl-foundation.label.visibilityCard|Synlighed
+moorl-foundation.listing.filter.categories|Kategorier
+moorl-foundation.listing.filter.country|Land
+moorl-foundation.listing.filter.distance|Afstand
+moorl-foundation.listing.filter.firstChar|Indeks
+moorl-foundation.listing.filter.inRadiusOf|i radius af
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|MI
+moorl-foundation.listing.filter.myLocation|Brug min placering
+moorl-foundation.listing.filter.navigation|Kategorier
+moorl-foundation.listing.filter.radius|Søg efter postnummer
+moorl-foundation.listing.filter.search|Søg efter tekst
+moorl-foundation.listing.filter.tags|Tags
+moorl-foundation.listing.filter.zipcodeCity|Postnummer/by
+moorl-foundation.properties.active|Aktiv
+moorl-foundation.properties.additionalAddressLine1|Adresse linje 1
+moorl-foundation.properties.additionalAddressLine2|Adresse linje 2
+moorl-foundation.properties.articles|Artikler
+moorl-foundation.properties.author|Forfatter
+moorl-foundation.properties.categories|Kategorier
+moorl-foundation.properties.city|By
+moorl-foundation.properties.closed|Lukket
+moorl-foundation.properties.cmsPage|CMS-side
+moorl-foundation.properties.cmsPageId|CMS-side-ID
+moorl-foundation.properties.company|Virksomhed
+moorl-foundation.properties.content|Indhold
+moorl-foundation.properties.country|Land
+moorl-foundation.properties.countryCode|Landekode
+moorl-foundation.properties.countryId|Land
+moorl-foundation.properties.createdAt|Oprettet kl.
+moorl-foundation.properties.customerGroupId|Kundegruppe
+moorl-foundation.properties.customerNumber|Kundenummer
+moorl-foundation.properties.date|Dato
+moorl-foundation.properties.department|Afsnit
+moorl-foundation.properties.description|Beskrivelse
+moorl-foundation.properties.distance|Afstand
+moorl-foundation.properties.email|E-mail
+moorl-foundation.properties.enableComments|Aktiver kommentarer
+moorl-foundation.properties.firstName|Fornavn
+moorl-foundation.properties.from|Fra
+moorl-foundation.properties.highlight|Fremhæv
+moorl-foundation.properties.image|Artikel
+moorl-foundation.properties.info|Oplysninger
+moorl-foundation.properties.inRadiusOf|i radius af
+moorl-foundation.properties.invisible|Usynlig
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|Efternavn
+moorl-foundation.properties.location|Position
+moorl-foundation.properties.locationLat|Breddegrad
+moorl-foundation.properties.locationLon|Længdegrad
+moorl-foundation.properties.locked|Låst
+moorl-foundation.properties.logo|Logo
+moorl-foundation.properties.marker|Markør
+moorl-foundation.properties.markerId|Markør
+moorl-foundation.properties.markerSettings|Indstillinger for markør
+moorl-foundation.properties.markerSettingsExample|Du kan kopiere dette eksempel for at justere dine brugerdefinerede markørindstillinger.
+moorl-foundation.properties.markerSettingsLink|Eksempel på brugerdefineret markør i indlægsseddel
+moorl-foundation.properties.markerShadow|Markør skygge
+moorl-foundation.properties.markerShadowId|Markør skygge
+moorl-foundation.properties.media|Medier
+moorl-foundation.properties.mediaId|Medie-ID
+moorl-foundation.properties.merchant|Forhandler
+moorl-foundation.properties.merchantUrl|Forhandlers URL
+moorl-foundation.properties.metaDescription|Meta beskrivelse
+moorl-foundation.properties.metaTitle|Meta-titel
+moorl-foundation.properties.name|Navn
+moorl-foundation.properties.openingHours|Åbningstider
+moorl-foundation.properties.originId|Oprindelses-ID
+moorl-foundation.properties.phoneNumber|Telefon
+moorl-foundation.properties.priority|Prioritet
+moorl-foundation.properties.productManufacturers|Producent-ID'er
+moorl-foundation.properties.products|Produkter
+moorl-foundation.properties.radius|Radius
+moorl-foundation.properties.repeat|Gentag
+moorl-foundation.properties.salesChannel|Salgskanal
+moorl-foundation.properties.salesChannelId|Salgskanal
+moorl-foundation.properties.search|Søg
+moorl-foundation.properties.shopUrl|Køb URL
+moorl-foundation.properties.showFrom|Vis fra
+moorl-foundation.properties.showUntil|Vis indtil
+moorl-foundation.properties.slug|Slug
+moorl-foundation.properties.sticky|Klæbende
+moorl-foundation.properties.street|Gade
+moorl-foundation.properties.streetNumber|Antal
+moorl-foundation.properties.tags|Tag-navne/ID'er
+moorl-foundation.properties.teaser|Teaser
+moorl-foundation.properties.title|Titel
+moorl-foundation.properties.until|Indtil
+moorl-foundation.properties.updatedAt|Opdateret kl.
+moorl-foundation.properties.vatId|Moms-ID
+moorl-foundation.properties.zipcode|Postnummer
+moorl-foundation.search.headline|"{0} Ingen kampe for ""%searchTerm%"" | {1} Én kamp for ""%searchTerm%"" | ]1,Inf[ %count% kampe for ""%searchTerm%"""
+moorl-foundation.search.missingConfiguration|Manglende konfiguration for denne liste!
+moorl-foundation.search.moreButton|Mere
+moorl-foundation.search.noListingSlotFound|"Denne side har ikke noget noteringselement. Tjek dine listeindstillinger og vælg ""Automatiske elementer"""
+moorl-foundation.search.notAvailable|Ikke tilgængelig
+moorl-foundation.search.product|Produkter
+moorl-location-map.cookieDescription|Vi bruger OpenStreetMap som fliseudbyder til visuelt at vise dig placeringen af vores butikker og forhandlere.
+moorl-location-map.cookieHint|Accepter cookien for at bruge den ønskede funktion.
+moorl-location-map.cookieName|Placeringskort
+moorl-magazine.articles|Blogartikler
+moorl-magazine.author|Forfatter
+moorl-magazine.authors|Forfattere
+moorl-magazine.back|Tilbage
+moorl-magazine.backToOverview|Tilbage til oversigt
+moorl-magazine.categories|Kategorier
+moorl-magazine.categoryAll|Alle kategorier
+moorl-magazine.commentArea|Kommentarområde
+moorl-magazine.commentAreaDisabled|Kommentarer er deaktiveret for denne artikel
+moorl-magazine.commentError|Sørg for, at du har udfyldt alle felter korrekt
+moorl-magazine.commentReview|Din kommentar vil blive frigivet efter gennemgang.
+moorl-magazine.commentSuccess|Tak for din kommentar!
+moorl-magazine.date|Dato
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|E-mail
+moorl-magazine.emailPlaceholder|Indtast din e-mail-adresse
+moorl-magazine.name|Navn
+moorl-magazine.namePlaceholder|Indtast dit navn
+moorl-magazine.next|Næste
+moorl-magazine.page|Side
+moorl-magazine.pageDescription|Lorem ipsum dolor sidder amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. På vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, ingen havtakimata sanctus est Lorem ipsum dolor sidder amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. På vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, ingen havtakimata sanctus est Lorem ipsum dolor sidder amet.
+moorl-magazine.pageTitle|Min dejlige blog
+moorl-magazine.posts|Blogindlæg
+moorl-magazine.products|Relaterede produkter
+moorl-magazine.readMore|Læs mere
+moorl-magazine.recentComments|Seneste kommentarer
+moorl-magazine.relatedArticles|Relaterede blogindlæg
+moorl-magazine.search|Søg
+moorl-magazine.searchFor|Søg efter...
+moorl-magazine.sendComment|Indsend din kommentar
+moorl-magazine.similarArticles|Lignende blogindlæg
+moorl-magazine.sticky|Fastgøret
+moorl-magazine.tags|Tags
+moorl-magazine.writeComment|Skriv en kommentar
+moorl-magazine.wroteOn|skrev den
+moorl-magazine.yourComment|Din kommentar
+moorl-magazine.yourCommentPlaceholder|Indtast din kommentar her
+moorl-merchant-finder.allCategories|Alle kategorier
+moorl-merchant-finder.allCountries|Alle lande
+moorl-merchant-finder.allManufacturers|Alle producenter
+moorl-merchant-finder.allowMerchantCustomerContact|Jeg giver min valgte forhandler tilladelse til at kontakte mig via telefon eller e-mail.
+moorl-merchant-finder.allResults|-- Vælg --
+moorl-merchant-finder.allTags|Alle tags
+moorl-merchant-finder.are|er 
+moorl-merchant-finder.available|Tilgængelig
+moorl-merchant-finder.backToOverview|Tilbage til oversigt
+moorl-merchant-finder.call|Opkald
+moorl-merchant-finder.cancel|Annuller
+moorl-merchant-finder.categories|Kategorier
+moorl-merchant-finder.checkAvailability|Tjek tilgængelighed
+moorl-merchant-finder.chose|Vælg
+moorl-merchant-finder.choseMerchant|Vælg en købmand
+moorl-merchant-finder.choseMerchantToProceed|Vælg din lokale forhandler for at fortsætte betalingen
+moorl-merchant-finder.close|Luk
+moorl-merchant-finder.commentToMerchant|Send en kommentar til forhandleren
+moorl-merchant-finder.country|Land
+moorl-merchant-finder.deliveryTime|Leveringstid
+moorl-merchant-finder.deliveryTimeUnknown|Ukendt - Produkter vil blive anmodet om på bestilling
+moorl-merchant-finder.description|Beskrivelse
+moorl-merchant-finder.desiredDate|Ønsket afhentningsdato
+moorl-merchant-finder.desiredTime|Ønsket afhentningstidspunkt
+moorl-merchant-finder.displayOnMap|Vis på kort
+moorl-merchant-finder.distance|Afstand
+moorl-merchant-finder.emptyResultMessage|Ingen forhandlere fundet
+moorl-merchant-finder.findMerchants|Find forhandlere
+moorl-merchant-finder.forTheSearch|for søgningen 
+moorl-merchant-finder.forTheSearchZipcode|i omgivelser med postnummer og afstand km 
+moorl-merchant-finder.highlight|Spids
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|Indlæser...
+moorl-merchant-finder.manufacturers|Producenter
+moorl-merchant-finder.merchant|Forhandler
+moorl-merchant-finder.merchants|Forhandlere
+moorl-merchant-finder.merchantUrl|Hjemmeside
+moorl-merchant-finder.more|Mere
+moorl-merchant-finder.myLocation|Brug min nuværende placering
+moorl-merchant-finder.mySelection|Mit valg
+moorl-merchant-finder.noMerchantSelected|Produktet er ikke tilgængeligt. Ingen forhandler valgt.
+moorl-merchant-finder.none|ingen
+moorl-merchant-finder.openingHours|Åbningstider
+moorl-merchant-finder.outOfStock|Produktet er ikke tilgængeligt. Din valgte forhandler har ikke dette produkt på lager.
+moorl-merchant-finder.phoneNumber|Telefon
+moorl-merchant-finder.pickupDateSet|Afhentningstidspunkt er blevet indstillet
+moorl-merchant-finder.productAvailability|Produkttilgængelighed
+moorl-merchant-finder.productNotAvailable|Produktet er ikke tilgængeligt. Kontakt butikkens support for yderligere oplysninger.
+moorl-merchant-finder.radius|Radius
+moorl-merchant-finder.resetSelection|Nulstil valg
+moorl-merchant-finder.resultsFound|optællingsresultater fundet
+moorl-merchant-finder.save|Gem
+moorl-merchant-finder.search|Søg
+moorl-merchant-finder.searchFor|Søg efter
+moorl-merchant-finder.searchLocation|Søg efter placering
+moorl-merchant-finder.searchRules.hasLogo|Forhandler med logo
+moorl-merchant-finder.searchRules.hasPriority|Prioriteret forhandler
+moorl-merchant-finder.searchRules.isHighlighted|Premium-forhandler
+moorl-merchant-finder.searchRules.isNotHighlighted|Normal forhandler
+moorl-merchant-finder.selectedMerchant|Valgt forhandler
+moorl-merchant-finder.sendMail|Mail
+moorl-merchant-finder.shop|Køb
+moorl-merchant-finder.shopUrl|Besøg butikken
+moorl-merchant-finder.stockInfo|Oplysninger om lager
+moorl-merchant-finder.tags|Tags
+moorl-merchant-finder.thereAre|der er 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|postnummer, by
+moorl-merchant-finder.zipcodeCityEnter|Indtast et postnummer eller en by, og tryk på enter
+nimbits-pricerequests.cart.cartRequestButton|Anmod om et tilbud
+nimbits-pricerequests.cart.dontAddByProductNumber|Dette produkt kan ikke føjes til vognen.
+nimbits-pricerequests.detail.available|Tilgængelig
+nimbits-pricerequests.detail.button.openrequestform|Anmod om et tilbud
+nimbits-pricerequests.detail.restock|"{1} Tilgængelig om 1 dag|]1,Inf[ Tilgængelig om %restockTime% dage"
+nimbits-pricerequests.detail.text.priceonrequest|Pris på anmodning
+nimbits-pricerequests.fail.alert|Anmodning blev ikke sendt - der opstod en fejl. Prøv igen.
+nimbits-pricerequests.finish.alert|Anmodning sendt
+nimbits-pricerequests.finish.buttonBack|Tilbage til butikken
+nimbits-pricerequests.listing.button.openrequestform|Anmod om et tilbud
+nimbits-pricerequests.listing.text.priceonrequest|Pris på anmodning
+nimbits-pricerequests.mail.address|Adresse
+nimbits-pricerequests.mail.amount|Beløb
+nimbits-pricerequests.mail.article|Artikel
+nimbits-pricerequests.mail.city|By
+nimbits-pricerequests.mail.comment|Kundernes kommentar
+nimbits-pricerequests.mail.company|Virksomhed
+nimbits-pricerequests.mail.country|Land
+nimbits-pricerequests.mail.customersendername|Pris på anmodning
+nimbits-pricerequests.mail.housenumber|Husnummer
+nimbits-pricerequests.mail.mail|Mail
+nimbits-pricerequests.mail.name|Navn
+nimbits-pricerequests.mail.ordernumber|Ordrenummer
+nimbits-pricerequests.mail.price|Pris
+nimbits-pricerequests.mail.pricegross|Inkl. Skat
+nimbits-pricerequests.mail.pricegrosssum|Inkl. Skattesum
+nimbits-pricerequests.mail.pricenet|Ekskl. Skat
+nimbits-pricerequests.mail.pricenetsum|Ekskl. Skattesum
+nimbits-pricerequests.mail.requestfirst|Prisanmodning fra
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Pris på anmodning
+nimbits-pricerequests.mail.street|Gade
+nimbits-pricerequests.mail.subject|Pris på anmodning
+nimbits-pricerequests.mail.subjectcart|Anmodning om kurv
+nimbits-pricerequests.mail.subjectshopowner|Pris på anmodning
+nimbits-pricerequests.mail.subjectshopownercart|Anmodning om kurv
+nimbits-pricerequests.mail.zipcode|Postnummer
+nimbits-pricerequests.popup.city|By
+nimbits-pricerequests.popup.closebutton|Luk
+nimbits-pricerequests.popup.company|Virksomhed
+nimbits-pricerequests.popup.country|Land
+nimbits-pricerequests.popup.dataprivacytext|"Jeg har læst, forstået og accepterer <a href=""/privacy"" target=""_blank"" rel=""noreferrer noopener""> Fortrolighedspolitik </a>."
+nimbits-pricerequests.popup.desiredprice|Ønsket pris i 
+nimbits-pricerequests.popup.entervalidcity|Indtast venligst en gyldig by.
+nimbits-pricerequests.popup.entervalidcountry|Indtast venligst et gyldigt land.
+nimbits-pricerequests.popup.entervalidhousenumber|Indtast venligst et gyldigt husnummer.
+nimbits-pricerequests.popup.entervalidmail|Indtast venligst en gyldig e-mailadresse.
+nimbits-pricerequests.popup.entervalidstreet|Indtast venligst en gyldig gade.
+nimbits-pricerequests.popup.entervalidzipcode|Indtast et gyldigt postnummer.
+nimbits-pricerequests.popup.genderm|Hr.
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Fru
+nimbits-pricerequests.popup.housenumber|Husnummer
+nimbits-pricerequests.popup.mail|Mail-adresse
+nimbits-pricerequests.popup.name|Navn
+nimbits-pricerequests.popup.optional|(valgfrit)
+nimbits-pricerequests.popup.phonenumber|Telefon
+nimbits-pricerequests.popup.popupTitle|Anmod om et tilbud
+nimbits-pricerequests.popup.product|Produkt(er) i denne anmodning:
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Anmodning
+nimbits-pricerequests.popup.requestbutton|Anmodning
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|Felter markeret med * er obligatoriske.
+nimbits-pricerequests.popup.salutation|Hilsner
+nimbits-pricerequests.popup.street|Gade
+nimbits-pricerequests.popup.surname|Efternavn
+nimbits-pricerequests.popup.text|Anmod om et tilbud på de valgte produkter
+nimbits-pricerequests.popup.zipcode|Postnummer
+nimbits-pricerequests.search.text.priceonrequest|Pris på anmodning
+nimbits-pricerequests.toasts.error|Anmodning blev ikke sendt - der opstod en fejl. Prøv igen.
+nimbits-pricerequests.toasts.success|Anmodning sendt
+priceRequest.newsletterText|Jeg accepterer hermed, at TENTE også via e-mail og telefon kan informere mig om produkter og arrangementer (f.eks. messer) af TENTE.
+priceRequest.sendRequestText|Anmodning vil blive sendt...
+priceRequest.waitText|Vent venligst...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Vælg mulighed...
+theme.compilation.async.success|Kompilering af salgskanal %salesChannelName% gennemført
+vdct-simple-events.events.detail.to-event|Til hændelsen
+zeobv-store-switcher.switchStoreLabel|Skift butik

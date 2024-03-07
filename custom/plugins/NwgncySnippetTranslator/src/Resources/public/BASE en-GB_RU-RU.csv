@@ -1,0 +1,564 @@
+LanguagePack ru-RU|Перевод
+account.doubleOptinAccountAlert|Ваша учетная запись клиента еще не активирована. Мы отправили электронное письмо с подтверждением, содержащее ссылку для активации. Пожалуйста, проверьте свой почтовый ящик и нажмите на ссылку, чтобы завершить регистрацию!
+account.downloadFileButton|Загрузить
+account.downloadItemColumnDate|Дата
+account.downloadItemColumnTitle|Файл
+account.faxLabel|Факс
+account.faxPlaceholder|Введите факс
+account.homepageLabel|Главная страница
+account.homepagePlaceholder|Введите URL-адрес домашней страницы
+account.passwordNotIdentical|Введенные пароли не совпадают.
+account.personalTypePlaceholder|Выбрать...
+account.profileCurrentMailPlaceholder|Введите адрес электронной почты...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Нажмите здесь</a>, чтобы удалить все свои персональные данные."
+account.profilePasswordCreateNewPlaceholder|Введите новый пароль...
+account.profilePasswordCurrentPlaceholder|Введите текущий пароль...
+acrisFilter.buttonFiltersHide|Показать меньше фильтров
+acrisFilter.buttonFilterShowHideLabel|Показать больше или меньше фильтров
+acrisFilter.buttonFiltersShow|Показать больше фильтров
+acrisFilter.buttonHeaderSearchAllCategories|Все категории
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Немедленно доступен
+acrisFilter.filterCategoriesDisplayName|Категории
+acrisFilter.filterRangeActiveMaxLabel|Свойство %displayName% для
+acrisFilter.filterRangeActiveMinLabel|Свойство %displayName% из
+acrisFilter.filterRangeSliderFrom|из
+acrisFilter.filterRangeSliderTo|чтобы
+acrisFilter.filterSearchPlaceholder|Поиск...
+card.card-image|Изображение %name%
+card.linkTitle|Открыть %url% в новой вкладке
+cbaxLexicon.page.ajax.linkDescription|К лексикону
+cbaxLexicon.page.banner.alt|Баннер
+cbaxLexicon.page.boxKeyword.moreRead|Подробнее
+cbaxLexicon.page.breadcrumb.name|Лексикон
+cbaxLexicon.page.content.headline|Содержание
+cbaxLexicon.page.content.metaDescription|Содержание мета-описания Lexicon
+cbaxLexicon.page.content.metaKeywords|Содержание ключевых слов Lexicon Meta
+cbaxLexicon.page.content.metaTitle|Содержание
+cbaxLexicon.page.filter.button|Навигация по лексикону
+cbaxLexicon.page.filter.headline|Навигация по лексикону
+cbaxLexicon.page.index.metaDescription|Индекс метаописания Lexicon
+cbaxLexicon.page.index.metaKeywords|Индекс ключевых слов Lexicon Meta
+cbaxLexicon.page.index.metaTitle|Лексикон
+cbaxLexicon.page.listing.entryHeadline|Публикации в этой категории энциклопедии
+cbaxLexicon.page.listing.metaDescription09|Перечень мета-описаний Lexicon 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Мета-описание компании Lexicon, перечень A
+cbaxLexicon.page.listing.metaDescriptionB|Перечень B мета-описания Lexicon
+cbaxLexicon.page.listing.metaDescriptionC|Мета-описание препарата Lexicon Перечень C
+cbaxLexicon.page.listing.metaDescriptionD|Мета-описание препарата Lexicon, перечень D
+cbaxLexicon.page.listing.metaDescriptionE|Мета-описание препарата Lexicon, перечень E
+cbaxLexicon.page.listing.metaDescriptionF|Перечень F мета-описания Lexicon
+cbaxLexicon.page.listing.metaDescriptionG|Перечень G мета-описания Lexicon
+cbaxLexicon.page.listing.metaDescriptionH|Мета-описание препарата Lexicon, перечень H
+cbaxLexicon.page.listing.metaDescriptionI|Перечень I мета-описания Lexicon
+cbaxLexicon.page.listing.metaDescriptionJ|Перечень J мета-описаний Lexicon
+cbaxLexicon.page.listing.metaDescriptionK|Перечень K мета-описания Lexicon
+cbaxLexicon.page.listing.metaDescriptionL|Перечень L мета-описания Lexicon
+cbaxLexicon.page.listing.metaDescriptionM|Мета-описание Lexicon Перечень M
+cbaxLexicon.page.listing.metaDescriptionN|Перечень N мета-описания компании Lexicon
+cbaxLexicon.page.listing.metaDescriptionO|Перечень O мета-описания компании Lexicon
+cbaxLexicon.page.listing.metaDescriptionP|Перечень P мета-описания Lexicon
+cbaxLexicon.page.listing.metaDescriptionQ|Перечень Q мета-описания Lexicon
+cbaxLexicon.page.listing.metaDescriptionR|Перечень R мета-описаний Lexicon
+cbaxLexicon.page.listing.metaDescriptionS|Перечень S мета-описания Lexicon
+cbaxLexicon.page.listing.metaDescriptionT|Перечень T мета-описания Lexicon
+cbaxLexicon.page.listing.metaDescriptionU|Перечень U мета-описания Lexicon
+cbaxLexicon.page.listing.metaDescriptionV|Перечень V мета-описания Lexicon
+cbaxLexicon.page.listing.metaDescriptionW|Перечень W мета-описания Lexicon
+cbaxLexicon.page.listing.metaDescriptionX|Мета-описание Lexicon, перечень X
+cbaxLexicon.page.listing.metaDescriptionY|Перечень Y мета-описаний Lexicon
+cbaxLexicon.page.listing.metaDescriptionZ|Мета-описание препарата Lexicon Перечень Z
+cbaxLexicon.page.listing.metaKeywords09|Перечень ключевых слов Lexicon Meta 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Перечень ключевых слов Lexicon Meta A
+cbaxLexicon.page.listing.metaKeywordsB|Перечень ключевых слов Lexicon Meta B
+cbaxLexicon.page.listing.metaKeywordsC|Перечень ключевых слов Lexicon Meta C
+cbaxLexicon.page.listing.metaKeywordsD|Перечень D ключевых слов Lexicon Meta
+cbaxLexicon.page.listing.metaKeywordsE|Перечень ключевых слов E для мета-методов Lexicon
+cbaxLexicon.page.listing.metaKeywordsF|Перечень F ключевых слов Lexicon Meta
+cbaxLexicon.page.listing.metaKeywordsG|Перечень G ключевых слов Lexicon Meta
+cbaxLexicon.page.listing.metaKeywordsH|Перечень ключевых слов для мета-методов Lexicon H
+cbaxLexicon.page.listing.metaKeywordsI|Перечень I ключевых слов Lexicon Meta
+cbaxLexicon.page.listing.metaKeywordsJ|Перечень ключевых слов Lexicon Meta J
+cbaxLexicon.page.listing.metaKeywordsK|Перечень ключевых слов Lexicon Meta K
+cbaxLexicon.page.listing.metaKeywordsL|Перечень L ключевых слов Lexicon Meta
+cbaxLexicon.page.listing.metaKeywordsM|Перечень M ключевых слов Lexicon Meta
+cbaxLexicon.page.listing.metaKeywordsN|Перечень ключевых слов Lexicon Meta N
+cbaxLexicon.page.listing.metaKeywordsO|Перечень O ключевых слов Lexicon Meta
+cbaxLexicon.page.listing.metaKeywordsP|Перечень ключевых слов для мета-анализа Lexicon P
+cbaxLexicon.page.listing.metaKeywordsQ|Перечень ключевых слов Lexicon Meta Q
+cbaxLexicon.page.listing.metaKeywordsR|Перечень ключевых слов Lexicon Meta R
+cbaxLexicon.page.listing.metaKeywordsS|Перечень ключевых слов для мета-методов Lexicon S
+cbaxLexicon.page.listing.metaKeywordsT|Перечень T ключевых слов Lexicon Meta
+cbaxLexicon.page.listing.metaKeywordsU|Перечень ключевых слов Lexicon Meta U
+cbaxLexicon.page.listing.metaKeywordsV|Перечень ключевых слов Lexicon Meta V
+cbaxLexicon.page.listing.metaKeywordsW|Перечень ключевых слов Lexicon Meta W
+cbaxLexicon.page.listing.metaKeywordsX|Перечень ключевых слов для мета-анализа Lexicon X
+cbaxLexicon.page.listing.metaKeywordsY|Перечень ключевых слов «Lexicon Meta» Y
+cbaxLexicon.page.listing.metaKeywordsZ|Перечень ключевых слов для мета-методов Lexicon Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|Я
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Q
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Содержание
+cbaxLexicon.page.navigation.linkIndex|Начальная страница
+cbaxLexicon.page.pagination.toOverview|К обзору
+cbaxLexicon.page.sidebar.title|Лексикон:
+checkout.confirmRevocationReminder|Вы уже заявили, что отказываетесь от права на отзыв.
+checkout.confirmRevocationTerms|Я хочу получить немедленный доступ к цифровому контенту и признаю, что тем самым отказываюсь от своего права на отмену.
+checkout.confirmTermsReminderText|"Вы уже приняли <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""general terms"">общие условия</a>."
+checkout.confirmTermsText|"Я прочитал и принял <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""general terms"">общие условия</a>."
+checkout.lineItemUnitPriceDescriptor|единица измерения
+checkout.merchant-not-selected|Выберите местного продавца, чтобы продолжить оформление заказа.
+checkout.or|или
+CmsElements.callToAction.elementError|Этот элемент недоступен для боковой панели. Выберите другой <p class='h5 my-2'>Call to Action</p> для боковой панели.
+CmsElements.counter.days|ДНИ
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|Вы не загрузили допустимое видео. Проверьте настройки элемента.
+CmsElements.htmlVideo.hint.headline|Неверный формат / нет видео
+CmsElements.placeholder.label|Заменить элемент
+CmsElements.shopTheLook.addAllProducts|Добавить продукты в корзину
+CmsElements.shopTheLook.totalDiscount|Экономия:
+component.cms.imageGallery.sliderDotLabel|Показать изображение %index% из %total%
+component.cms.vimeo.privacyNoticeText|"Просматривая видео, вы соглашаетесь с тем, что ваши данные будут переданы на %platform% и что вы прочитали <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Политику конфиденциальности"">Политику конфиденциальности</a>."
+component.product.quantitySelect.decrease|Уменьшить количество
+component.product.quantitySelect.increase|Увеличить количество
+component.product.quantitySelect.label|Количество
+contact.newsletterSubscribe|Настоящим я соглашаюсь с тем, что компания TENTE может также информировать меня по электронной почте и телефону о продуктах и мероприятиях (например, о выставках) компании TENTE.
+contact.privacyNoticeText|"Нажимая «Продолжить», вы подтверждаете, что прочитали и согласны с нашей <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Data protection information"">информацией о защите данных</a>."
+cookie.groupComfortFeaturesYoutubeVideo|Видео на YouTube
+cookie.messageText|"На этом веб-сайте используются файлы cookie для обеспечения максимального удобства работы. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""More information"">Дополнительная информация...</a>"
+detail.acrisProductDownloadBtnText|Загрузить
+detail.acrisProductDownloadNoPreview|Нет предварительного просмотра
+detail.acrisProductDownloadTabLabel|Загрузки
+detail.acrisProductDownloadTitle|Загрузки
+detail.acrisProductLinkTabLabel|Ссылки
+detail.acrisProductLinkTitle|Ссылки
+detail.buyOnline|Купить онлайн
+detail.cadService.downloadBtn|Загрузить
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Тип файла
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Вы можете загрузить строительные данные для этого продукта в другом формате
+detail.cadService.login|"<a href=""%url%"">Войдите в систему</a> для просмотра файлов CAD"
+detail.cadService.title|Служба САПР
+detail.contactText|"Вы еще не нашли нужный продукт, у вас есть особые требования или вы заинтересованы в индивидуальных решениях? <a href=""%url%"" title=""Kontaktformular"">Свяжитесь с нами</a>."
+detail.ean|EAN
+detail.orderNumber|Номер продукта
+detail.orText|Или
+detail.performance.atrittion|Притязание
+detail.performance.movement|Шум движения
+detail.performance.resistance|Устойчивость к коррозии
+detail.performance.roll|Производительность рулона
+detail.priceOnRequestText|за единицу плюс НДС<br />За 24 часа до отправки
+detail.priceOnRequestTitle|Цена по запросу
+detail.properties.fitting|Фитинг технических данных
+detail.properties.housing|Кронштейн технических данных
+detail.properties.label.downloads|Загрузки
+detail.properties.label.feature|Особенности продукта
+detail.properties.label.fitting|Фитинг
+detail.properties.label.housing|Кронштейн
+detail.properties.label.performance|Производительность
+detail.properties.label.wheel|Колесо
+detail.properties.performance|Производительность
+detail.properties.wheel|Колесо технических данных
+detail.qte|Количество
+detail.reviewFormContentPlaceholder|Введите свой отзыв...
+detail.sendQuoteRequest|Отправить запрос ценового предложения
+detail.tabs.downloads|Загрузки
+detail.tabs.features|Особенности
+detail.tabs.performance|Производительность
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|Неверное количество (% количества%).
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|"Заказ с номером заказа ""%orderNumber%"" уже оплачен и не может быть отредактирован впоследствии."
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Этот заказ не найден.
+error.merchant-not-selected|Выберите местного продавца, чтобы продолжить оформление заказа.
+error.VIOLATION::ZIP_CODE_INVALID|Введенный вами почтовый индекс имеет неверный формат.
+footer.excludeVatText|"* Все цены не включены НДС плюс <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">расходы на доставку</a> и возможные расходы на доставку, если не указано иное."
+footer.includeVatText|"* Все цены включают НДС плюс <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">расходы на доставку</a> и возможные расходы на доставку, если не указано иное."
+footer.serviceContactText|"Или через <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Contact form"">форму обратной связи</a>."
+footer.socialMediaHeadline|Социальный
+general.contactUs|Свяжитесь с нами
+general.contactUsLink|/контакт
+general.loginRegister|Вход в систему / регистрация
+general.privacyNoticeText|"Подписываясь на новостную рассылку, вы принимаете наши <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Политика конфиденциальности"">политику конфиденциальности</a>, а также наши <a data-ajax-modal=""true"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""terms and conditions"">положения и условия</a>."
+global.default.activate|Активировать
+global.default.cancel|Отменить
+global.default.confirm|Подтвердить
+global.default.deactivate|Деактивировать
+global.default.delete|Удалить
+global.default.edit|Редактировать
+global.default.noteRequiredFields|Поля, отмеченные звездочками (*), являются обязательными для заполнения.
+global.default.save|Сохранить
+listing.downloadText|Загрузить
+moorl-creator.aboutTheCreator|О создателе
+moorl-creator.aboutTheCreators|О создателях
+moorl-creator.creator|Создатель
+moorl-creator.creators|Создатели
+moorl-creator.donate|Пожертвовать
+moorl-creator.follow|Следите за новостями
+moorl-creator.link|Главная страница
+moorl-creator.productsOf|Продукты
+moorl-creator.readMore|Подробнее...
+moorl-foundation.buttons.acceptCookie|Принять файлы cookie
+moorl-foundation.buttons.addMerchantButtonText|Новый продавец
+moorl-foundation.buttons.administrationButtonText|Администрирование
+moorl-foundation.buttons.cancelButtonText|Отменить
+moorl-foundation.buttons.exportButtonText|Экспортировать CSV
+moorl-foundation.buttons.exportButtonTitle|Скачать CSV
+moorl-foundation.buttons.getLocButtonText|Получить вакансии с помощью OpenStreetMap
+moorl-foundation.buttons.importButtonText|Импортировать CSV
+moorl-foundation.buttons.importButtonTitle|Загрузить CSV
+moorl-foundation.buttons.mediaFolder|Сохранить изображения в этой папке
+moorl-foundation.buttons.newButtonText|Новый
+moorl-foundation.buttons.openMapButtonText|Открыть карту
+moorl-foundation.buttons.openNewWindowButtonText|Открыть в новом окне
+moorl-foundation.buttons.overwriteText|Перезаписать существующие строки данных (необходимо установить идентификатор инициала).
+moorl-foundation.buttons.placeIdLink|Планировать маршрут
+moorl-foundation.buttons.refreshButtonText|Перезагрузить
+moorl-foundation.buttons.saveButtonText|Сохранить
+moorl-foundation.buttons.selectLocButtonText|Выбор
+moorl-foundation.buttons.startImportButtonText|Начать импорт
+moorl-foundation.card.address|Адрес
+moorl-foundation.card.company|Компания
+moorl-foundation.card.contact|Контактное лицо
+moorl-foundation.card.legend|Легенда
+moorl-foundation.card.openingHours|Часы работы
+moorl-foundation.card.person|Контактное лицо
+moorl-foundation.customerUpload.checkToDelete|Отметьте, чтобы удалить
+moorl-foundation.customerUpload.dictDefaultMessage|Перетащите файлы сюда для загрузки
+moorl-foundation.customerUpload.useAsCover|Использовать в качестве крышки
+moorl-foundation.days.closed|Закрыто
+moorl-foundation.days.friday|Пятница
+moorl-foundation.days.monday|Понедельник
+moorl-foundation.days.saturday|Суббота
+moorl-foundation.days.sunday|Воскресенье
+moorl-foundation.days.thursday|Четверг
+moorl-foundation.days.today|Сегодня
+moorl-foundation.days.tuesday|Вторник
+moorl-foundation.days.wednesday|Среда
+moorl-foundation.general.selectedItems|Выбранные элементы
+moorl-foundation.general.share|Поделиться
+moorl-foundation.general.subTotal|Промежуточный итог
+moorl-foundation.general.toc|Содержание
+moorl-foundation.label.accountCard|Учетная запись
+moorl-foundation.label.addressCard|Адрес
+moorl-foundation.label.generalCard|Общее
+moorl-foundation.label.locationCard|Местоположение
+moorl-foundation.label.markerCard|Маркер
+moorl-foundation.label.metaCard|Мета-мета
+moorl-foundation.label.relationsCard|Отношения и фильтры
+moorl-foundation.label.visibilityCard|Видимость
+moorl-foundation.listing.filter.categories|Категории
+moorl-foundation.listing.filter.country|Страна
+moorl-foundation.listing.filter.distance|Расстояние
+moorl-foundation.listing.filter.firstChar|Индекс
+moorl-foundation.listing.filter.inRadiusOf|в радиусе
+moorl-foundation.listing.filter.km|КМ
+moorl-foundation.listing.filter.mi|MI
+moorl-foundation.listing.filter.myLocation|Использовать мое местоположение
+moorl-foundation.listing.filter.navigation|Категории
+moorl-foundation.listing.filter.radius|Поиск почтового индекса
+moorl-foundation.listing.filter.search|Поиск текста
+moorl-foundation.listing.filter.tags|Теги
+moorl-foundation.listing.filter.zipcodeCity|Почтовый индекс / Город
+moorl-foundation.properties.active|Активный
+moorl-foundation.properties.additionalAddressLine1|Строка адреса 1
+moorl-foundation.properties.additionalAddressLine2|Адресная строка 2
+moorl-foundation.properties.articles|Статьи
+moorl-foundation.properties.author|Автор
+moorl-foundation.properties.categories|Категории
+moorl-foundation.properties.city|Город
+moorl-foundation.properties.closed|Закрыто
+moorl-foundation.properties.cmsPage|Страница CMS
+moorl-foundation.properties.cmsPageId|Идентификатор страницы CMS
+moorl-foundation.properties.company|Компания
+moorl-foundation.properties.content|Содержание
+moorl-foundation.properties.country|Страна
+moorl-foundation.properties.countryCode|Код страны
+moorl-foundation.properties.countryId|Страна
+moorl-foundation.properties.createdAt|Создано в
+moorl-foundation.properties.customerGroupId|Группа клиентов
+moorl-foundation.properties.customerNumber|Номер клиента
+moorl-foundation.properties.date|Дата
+moorl-foundation.properties.department|Отдел
+moorl-foundation.properties.description|Описание
+moorl-foundation.properties.distance|Расстояние
+moorl-foundation.properties.email|Электронная почта
+moorl-foundation.properties.enableComments|Включить комментарии
+moorl-foundation.properties.firstName|Имя
+moorl-foundation.properties.from|От
+moorl-foundation.properties.highlight|Выделить
+moorl-foundation.properties.image|Статья
+moorl-foundation.properties.info|Информация
+moorl-foundation.properties.inRadiusOf|в радиусе
+moorl-foundation.properties.invisible|Невидимый
+moorl-foundation.properties.km|КМ
+moorl-foundation.properties.lastName|Фамилия
+moorl-foundation.properties.location|Положение
+moorl-foundation.properties.locationLat|Широта
+moorl-foundation.properties.locationLon|Долгота
+moorl-foundation.properties.locked|Заблокировано
+moorl-foundation.properties.logo|Логотип
+moorl-foundation.properties.marker|Маркер
+moorl-foundation.properties.markerId|Маркер
+moorl-foundation.properties.markerSettings|Настройки маркера
+moorl-foundation.properties.markerSettingsExample|Вы можете скопировать этот пример, чтобы изменить настройки пользовательских маркеров.
+moorl-foundation.properties.markerSettingsLink|Пример пользовательского маркера листка-вкладыша
+moorl-foundation.properties.markerShadow|Тень маркера
+moorl-foundation.properties.markerShadowId|Тень маркера
+moorl-foundation.properties.media|Носители
+moorl-foundation.properties.mediaId|Идентификатор носителя
+moorl-foundation.properties.merchant|Торговый представитель
+moorl-foundation.properties.merchantUrl|URL-адрес продавца
+moorl-foundation.properties.metaDescription|Мета-описание
+moorl-foundation.properties.metaTitle|Заголовок мета
+moorl-foundation.properties.name|Имя
+moorl-foundation.properties.openingHours|Часы работы
+moorl-foundation.properties.originId|Идентификатор пункта отправления
+moorl-foundation.properties.phoneNumber|Телефон
+moorl-foundation.properties.priority|Приоритет
+moorl-foundation.properties.productManufacturers|Идентификаторы производителей
+moorl-foundation.properties.products|Продукты
+moorl-foundation.properties.radius|Радиус
+moorl-foundation.properties.repeat|Повторить
+moorl-foundation.properties.salesChannel|Канал продаж
+moorl-foundation.properties.salesChannelId|Канал продаж
+moorl-foundation.properties.search|Поиск
+moorl-foundation.properties.shopUrl|URL-адрес магазина
+moorl-foundation.properties.showFrom|Показать из
+moorl-foundation.properties.showUntil|Показать до
+moorl-foundation.properties.slug|Вялость
+moorl-foundation.properties.sticky|Клейкий
+moorl-foundation.properties.street|Улица
+moorl-foundation.properties.streetNumber|Номер
+moorl-foundation.properties.tags|Имена/идентификаторы тегов
+moorl-foundation.properties.teaser|Тизер
+moorl-foundation.properties.title|Заголовок
+moorl-foundation.properties.until|До
+moorl-foundation.properties.updatedAt|Обновлено в
+moorl-foundation.properties.vatId|ИНН НДС
+moorl-foundation.properties.zipcode|Почтовый индекс
+moorl-foundation.search.headline|"{0} Нет совпадений для ""%searchTerm%"" | {1} Один совпадений для ""%searchTerm%"" | ]1,Inf[ %count% совпадений для ""%searchTerm%"""
+moorl-foundation.search.missingConfiguration|Отсутствует конфигурация для этого списка!
+moorl-foundation.search.moreButton|Подробнее
+moorl-foundation.search.noListingSlotFound|На этой странице нет элемента списка. Проверьте настройки списка и выберите «Автоматические элементы»
+moorl-foundation.search.notAvailable|Недоступно
+moorl-foundation.search.product|Продукты
+moorl-location-map.cookieDescription|Мы используем OpenStreetMap в качестве поставщика плиток для визуального отображения местоположения наших магазинов и продавцов.
+moorl-location-map.cookieHint|Примите файл cookie, чтобы использовать желаемую функцию.
+moorl-location-map.cookieName|Карты местоположения
+moorl-magazine.articles|Статьи в блоге
+moorl-magazine.author|Автор
+moorl-magazine.authors|Авторы
+moorl-magazine.back|Задняя часть
+moorl-magazine.backToOverview|Вернуться к обзору
+moorl-magazine.categories|Категории
+moorl-magazine.categoryAll|Все категории
+moorl-magazine.commentArea|Область комментариев
+moorl-magazine.commentAreaDisabled|Комментарии для этой статьи отключены
+moorl-magazine.commentError|Убедитесь, что вы правильно заполнили все поля
+moorl-magazine.commentReview|Ваш комментарий будет опубликован после проверки.
+moorl-magazine.commentSuccess|Спасибо за ваш комментарий!
+moorl-magazine.date|Дата
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|Электронная почта
+moorl-magazine.emailPlaceholder|Введите свой адрес электронной почты
+moorl-magazine.name|Имя
+moorl-magazine.namePlaceholder|Введите свое имя
+moorl-magazine.next|Далее
+moorl-magazine.page|Страница
+moorl-magazine.pageDescription|Lorem ipsum dolor sit amet, Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. В vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, без морской такимата sanctus est Lorem ipsum dolor сидеть в амете. Lorem ipsum dolor sit amet, Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. В vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, без морской такимата sanctus est Lorem ipsum dolor сидеть в амете.
+moorl-magazine.pageTitle|Мой изящный блог
+moorl-magazine.posts|Публикации в блоге
+moorl-magazine.products|Сопутствующие продукты
+moorl-magazine.readMore|Подробнее
+moorl-magazine.recentComments|Последние комментарии
+moorl-magazine.relatedArticles|Связанные публикации в блоге
+moorl-magazine.search|Поиск
+moorl-magazine.searchFor|Поиск...
+moorl-magazine.sendComment|Отправить свой комментарий
+moorl-magazine.similarArticles|Аналогичные публикации в блоге
+moorl-magazine.sticky|Закреплено
+moorl-magazine.tags|Теги
+moorl-magazine.writeComment|Написать комментарий
+moorl-magazine.wroteOn|написано
+moorl-magazine.yourComment|Ваш комментарий
+moorl-magazine.yourCommentPlaceholder|Введите свой комментарий здесь
+moorl-merchant-finder.allCategories|Все категории
+moorl-merchant-finder.allCountries|Все страны
+moorl-merchant-finder.allManufacturers|Все производители
+moorl-merchant-finder.allowMerchantCustomerContact|Я разрешаю выбранному продавцу связываться со мной по телефону или электронной почте.
+moorl-merchant-finder.allResults|-- Выбрать --
+moorl-merchant-finder.allTags|Все теги
+moorl-merchant-finder.are|являются 
+moorl-merchant-finder.available|Доступно
+moorl-merchant-finder.backToOverview|Вернуться к обзору
+moorl-merchant-finder.call|Вызов
+moorl-merchant-finder.cancel|Отменить
+moorl-merchant-finder.categories|Категории
+moorl-merchant-finder.checkAvailability|Проверить доступность
+moorl-merchant-finder.chose|Выбор
+moorl-merchant-finder.choseMerchant|Выберите продавца
+moorl-merchant-finder.choseMerchantToProceed|Выберите местного продавца, чтобы продолжить оформление заказа
+moorl-merchant-finder.close|Закрыть
+moorl-merchant-finder.commentToMerchant|Отправить комментарий продавцу
+moorl-merchant-finder.country|Страна
+moorl-merchant-finder.deliveryTime|Время доставки
+moorl-merchant-finder.deliveryTimeUnknown|Неизвестно — продукты будут запрошены по заказу
+moorl-merchant-finder.description|Описание
+moorl-merchant-finder.desiredDate|Желаемая дата получения
+moorl-merchant-finder.desiredTime|Желаемое время получения
+moorl-merchant-finder.displayOnMap|Отображение на карте
+moorl-merchant-finder.distance|Расстояние
+moorl-merchant-finder.emptyResultMessage|Торговые точки не найдены
+moorl-merchant-finder.findMerchants|Найти продавцов
+moorl-merchant-finder.forTheSearch|для поиска 
+moorl-merchant-finder.forTheSearchZipcode|в почтовом индексе и на расстоянии км 
+moorl-merchant-finder.highlight|Совет
+moorl-merchant-finder.km|КМ
+moorl-merchant-finder.loading|Загрузка...
+moorl-merchant-finder.manufacturers|Производители
+moorl-merchant-finder.merchant|Торговый представитель
+moorl-merchant-finder.merchants|Продавцы
+moorl-merchant-finder.merchantUrl|Веб-сайт
+moorl-merchant-finder.more|Подробнее
+moorl-merchant-finder.myLocation|Использовать мое текущее местоположение
+moorl-merchant-finder.mySelection|Мой выбор
+moorl-merchant-finder.noMerchantSelected|Продукт недоступен. Продавец не выбран.
+moorl-merchant-finder.none|нет
+moorl-merchant-finder.openingHours|Часы работы
+moorl-merchant-finder.outOfStock|Продукт недоступен. Выбранный вами продавец не имеет этого продукта в наличии.
+moorl-merchant-finder.phoneNumber|Телефон
+moorl-merchant-finder.pickupDateSet|Время выемки установлено
+moorl-merchant-finder.productAvailability|Доступность продукта
+moorl-merchant-finder.productNotAvailable|Продукт недоступен. Для получения дополнительной информации обратитесь в службу технической поддержки.
+moorl-merchant-finder.radius|Радиус
+moorl-merchant-finder.resetSelection|Сбросить выбор
+moorl-merchant-finder.resultsFound|результаты подсчета найдены
+moorl-merchant-finder.save|Сохранить
+moorl-merchant-finder.search|Поиск
+moorl-merchant-finder.searchFor|Поиск
+moorl-merchant-finder.searchLocation|Поиск местоположения
+moorl-merchant-finder.searchRules.hasLogo|Продавец с логотипом
+moorl-merchant-finder.searchRules.hasPriority|Приоритетный продавец
+moorl-merchant-finder.searchRules.isHighlighted|Продавец премиум-класса
+moorl-merchant-finder.searchRules.isNotHighlighted|Обычный продавец
+moorl-merchant-finder.selectedMerchant|Выбранный продавец
+moorl-merchant-finder.sendMail|Почта
+moorl-merchant-finder.shop|Посмотреть
+moorl-merchant-finder.shopUrl|Посетить магазин
+moorl-merchant-finder.stockInfo|Информация о запасах
+moorl-merchant-finder.tags|Теги
+moorl-merchant-finder.thereAre|есть 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|почтовый индекс, город
+moorl-merchant-finder.zipcodeCityEnter|Введите почтовый индекс или город и нажмите клавишу Enter
+nimbits-pricerequests.cart.cartRequestButton|Запросить предложение
+nimbits-pricerequests.cart.dontAddByProductNumber|Этот продукт не может быть добавлен в корзину.
+nimbits-pricerequests.detail.available|Доступно
+nimbits-pricerequests.detail.button.openrequestform|Запросить предложение
+nimbits-pricerequests.detail.restock|"{1} Доступно через 1 день|]1,Inf[ Доступно через %restockTime% дней"
+nimbits-pricerequests.detail.text.priceonrequest|Цена по запросу
+nimbits-pricerequests.fail.alert|Запрос не был отправлен — произошла ошибка. Повторите попытку.
+nimbits-pricerequests.finish.alert|Запрос успешно отправлен
+nimbits-pricerequests.finish.buttonBack|Вернуться в магазин
+nimbits-pricerequests.listing.button.openrequestform|Запросить предложение
+nimbits-pricerequests.listing.text.priceonrequest|Цена по запросу
+nimbits-pricerequests.mail.address|Адрес
+nimbits-pricerequests.mail.amount|Сумма
+nimbits-pricerequests.mail.article|Статья
+nimbits-pricerequests.mail.city|Город
+nimbits-pricerequests.mail.comment|Комментарий клиентов
+nimbits-pricerequests.mail.company|Компания
+nimbits-pricerequests.mail.country|Страна
+nimbits-pricerequests.mail.customersendername|Цена по запросу
+nimbits-pricerequests.mail.housenumber|Номер дома
+nimbits-pricerequests.mail.mail|Почта
+nimbits-pricerequests.mail.name|Имя
+nimbits-pricerequests.mail.ordernumber|Номер заказа
+nimbits-pricerequests.mail.price|Цена
+nimbits-pricerequests.mail.pricegross|Вкл. Налог
+nimbits-pricerequests.mail.pricegrosssum|Вкл. Сумма налога
+nimbits-pricerequests.mail.pricenet|Исключ. Налог
+nimbits-pricerequests.mail.pricenetsum|Исключ. Сумма налога
+nimbits-pricerequests.mail.requestfirst|Запрос цены от
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Цена по запросу
+nimbits-pricerequests.mail.street|Улица
+nimbits-pricerequests.mail.subject|Цена по запросу
+nimbits-pricerequests.mail.subjectcart|Запрос на корзину
+nimbits-pricerequests.mail.subjectshopowner|Цена по запросу
+nimbits-pricerequests.mail.subjectshopownercart|Запрос на корзину
+nimbits-pricerequests.mail.zipcode|Почтовый индекс
+nimbits-pricerequests.popup.city|Город
+nimbits-pricerequests.popup.closebutton|Закрыть
+nimbits-pricerequests.popup.company|Компания
+nimbits-pricerequests.popup.country|Страна
+nimbits-pricerequests.popup.dataprivacytext|"Я прочитал, понял и согласен с <a href=""/privacy"" target=""_blank"" rel=""noreferrer noopener""> Политикой конфиденциальности </a>."
+nimbits-pricerequests.popup.desiredprice|Желаемая цена в 
+nimbits-pricerequests.popup.entervalidcity|Введите действительный город.
+nimbits-pricerequests.popup.entervalidcountry|Введите действительную страну.
+nimbits-pricerequests.popup.entervalidhousenumber|Введите действительный номер дома.
+nimbits-pricerequests.popup.entervalidmail|Введите действительный адрес электронной почты.
+nimbits-pricerequests.popup.entervalidstreet|Введите допустимую улицу.
+nimbits-pricerequests.popup.entervalidzipcode|Введите действительный почтовый индекс.
+nimbits-pricerequests.popup.genderm|Мистер
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Миссис
+nimbits-pricerequests.popup.housenumber|Номер дома
+nimbits-pricerequests.popup.mail|Адрес электронной почты
+nimbits-pricerequests.popup.name|Имя
+nimbits-pricerequests.popup.optional|(необязательно)
+nimbits-pricerequests.popup.phonenumber|Телефон
+nimbits-pricerequests.popup.popupTitle|Запросить предложение
+nimbits-pricerequests.popup.product|Продукт(-ы) в этом запросе:
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Запрос
+nimbits-pricerequests.popup.requestbutton|Запрос
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|Поля, отмеченные *, являются обязательными.
+nimbits-pricerequests.popup.salutation|Приветствие
+nimbits-pricerequests.popup.street|Улица
+nimbits-pricerequests.popup.surname|Фамилия
+nimbits-pricerequests.popup.text|Запрос предложения для выбранных продуктов
+nimbits-pricerequests.popup.zipcode|Почтовый индекс
+nimbits-pricerequests.search.text.priceonrequest|Цена по запросу
+nimbits-pricerequests.toasts.error|Запрос не был отправлен — произошла ошибка. Повторите попытку.
+nimbits-pricerequests.toasts.success|Запрос успешно отправлен
+priceRequest.newsletterText|Настоящим я соглашаюсь с тем, что компания TENTE может также информировать меня по электронной почте и телефону о продуктах и мероприятиях (например, о выставках) компании TENTE.
+priceRequest.sendRequestText|Запрос будет передан...
+priceRequest.waitText|Подождите...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Выберите вариант...
+theme.compilation.async.success|Компиляция канала продаж %salesChannelName% завершена
+vdct-simple-events.events.detail.to-event|К мероприятию
+zeobv-store-switcher.switchStoreLabel|Хранилище коммутаторов

@@ -1,0 +1,564 @@
+LanguagePack lv-LV|Tulkojums
+account.doubleOptinAccountAlert|Jūsu klienta konts vēl nav aktivizēts. Mēs nosūtījām apstiprinājuma e-pasta ziņojumu ar aktivizācijas saiti. Lūdzu, pārbaudiet savu iesūtni un noklikšķiniet uz saites, lai pabeigtu reģistrāciju!
+account.downloadFileButton|Lejupielādēt
+account.downloadItemColumnDate|Datums
+account.downloadItemColumnTitle|Fails
+account.faxLabel|Fakss
+account.faxPlaceholder|Ievadiet faksu
+account.homepageLabel|Mājas lapa
+account.homepagePlaceholder|Ievadiet sākumlapas URL
+account.passwordNotIdentical|Ievadītās paroles nesakrīt.
+account.personalTypePlaceholder|Atlasiet...
+account.profileCurrentMailPlaceholder|Ievadiet e-pasta adresi...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Noklikšķiniet šeit</a>, lai dzēstu visus savus personas datus."
+account.profilePasswordCreateNewPlaceholder|Ievadiet jaunu paroli...
+account.profilePasswordCurrentPlaceholder|Ievadiet pašreizējo paroli...
+acrisFilter.buttonFiltersHide|Rādīt mazāk filtru
+acrisFilter.buttonFilterShowHideLabel|Rādīt vairāk vai mazāk filtru
+acrisFilter.buttonFiltersShow|Rādīt vairāk filtru
+acrisFilter.buttonHeaderSearchAllCategories|Visas kategorijas
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Tūlīt pieejama
+acrisFilter.filterCategoriesDisplayName|Kategorijas
+acrisFilter.filterRangeActiveMaxLabel|Rekvizīts %displayName% līdz
+acrisFilter.filterRangeActiveMinLabel|Rekvizīts %displayName% no
+acrisFilter.filterRangeSliderFrom|no
+acrisFilter.filterRangeSliderTo|līdz
+acrisFilter.filterSearchPlaceholder|Meklēt...
+card.card-image|Attēls ar %name%
+card.linkTitle|Atvērt %url% jaunā cilnē
+cbaxLexicon.page.ajax.linkDescription|Uz leksiku
+cbaxLexicon.page.banner.alt|Baneris
+cbaxLexicon.page.boxKeyword.moreRead|Lasīt vairāk
+cbaxLexicon.page.breadcrumb.name|Leksikons
+cbaxLexicon.page.content.headline|Satura rādītājs
+cbaxLexicon.page.content.metaDescription|Lexicon Meta apraksta saturs
+cbaxLexicon.page.content.metaKeywords|Lexicon Meta Atslēgvārdi Saturs
+cbaxLexicon.page.content.metaTitle|Satura rādītājs
+cbaxLexicon.page.filter.button|Lexicon navigācija
+cbaxLexicon.page.filter.headline|Lexicon navigācija
+cbaxLexicon.page.index.metaDescription|Lexicon Meta apraksta indekss
+cbaxLexicon.page.index.metaKeywords|Lexicon Meta atslēgvārdu indekss
+cbaxLexicon.page.index.metaTitle|Leksikons
+cbaxLexicon.page.listing.entryHeadline|Ziņas šajā enciklopēdijas kategorijā
+cbaxLexicon.page.listing.metaDescription09|Lexicon Meta apraksts saraksts 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Lexicon Meta apraksts A saraksts
+cbaxLexicon.page.listing.metaDescriptionB|Lexicon Meta apraksts B saraksts
+cbaxLexicon.page.listing.metaDescriptionC|Lexicon Meta apraksts C saraksts
+cbaxLexicon.page.listing.metaDescriptionD|Lexicon Meta apraksts D saraksts
+cbaxLexicon.page.listing.metaDescriptionE|Lexicon Meta apraksts E saraksts
+cbaxLexicon.page.listing.metaDescriptionF|Lexicon Meta apraksts F saraksts
+cbaxLexicon.page.listing.metaDescriptionG|Lexicon Meta apraksts G saraksts
+cbaxLexicon.page.listing.metaDescriptionH|Lexicon Meta apraksts H saraksts
+cbaxLexicon.page.listing.metaDescriptionI|Lexicon Meta apraksts I saraksts
+cbaxLexicon.page.listing.metaDescriptionJ|Lexicon Meta apraksts J saraksts
+cbaxLexicon.page.listing.metaDescriptionK|Lexicon Meta apraksts saraksts K
+cbaxLexicon.page.listing.metaDescriptionL|Lexicon Meta apraksts L saraksts
+cbaxLexicon.page.listing.metaDescriptionM|Lexicon Meta apraksts M saraksts
+cbaxLexicon.page.listing.metaDescriptionN|Lexicon Meta apraksts N saraksts
+cbaxLexicon.page.listing.metaDescriptionO|Lexicon Meta apraksts O saraksts
+cbaxLexicon.page.listing.metaDescriptionP|Lexicon Meta apraksts P saraksts
+cbaxLexicon.page.listing.metaDescriptionQ|Lexicon Meta apraksts saraksts Q
+cbaxLexicon.page.listing.metaDescriptionR|Lexicon Meta apraksts R saraksts
+cbaxLexicon.page.listing.metaDescriptionS|Lexicon Meta apraksts saraksts S
+cbaxLexicon.page.listing.metaDescriptionT|Lexicon Meta apraksts, saraksts T
+cbaxLexicon.page.listing.metaDescriptionU|Lexicon Meta apraksts U saraksts
+cbaxLexicon.page.listing.metaDescriptionV|Lexicon Meta apraksts V saraksts
+cbaxLexicon.page.listing.metaDescriptionW|Lexicon Meta apraksts W saraksts
+cbaxLexicon.page.listing.metaDescriptionX|Lexicon Meta apraksts X saraksts
+cbaxLexicon.page.listing.metaDescriptionY|Lexicon Meta apraksts, Y saraksts
+cbaxLexicon.page.listing.metaDescriptionZ|Lexicon Meta apraksts Z saraksts
+cbaxLexicon.page.listing.metaKeywords09|Lexicon Meta Atslēgvārdi Saraksts 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Lexicon Meta Atslēgvārdi Saraksts A
+cbaxLexicon.page.listing.metaKeywordsB|Lexicon Meta Atslēgvārdi Saraksts B
+cbaxLexicon.page.listing.metaKeywordsC|Lexicon Meta Atslēgvārdi Saraksts C
+cbaxLexicon.page.listing.metaKeywordsD|Lexicon Meta Atslēgvārdu saraksts D
+cbaxLexicon.page.listing.metaKeywordsE|Lexicon Meta Atslēgvārdi Saraksts E
+cbaxLexicon.page.listing.metaKeywordsF|Lexicon Meta Atslēgvārdi Saraksts F
+cbaxLexicon.page.listing.metaKeywordsG|Lexicon Meta Atslēgvārdi Saraksts G
+cbaxLexicon.page.listing.metaKeywordsH|Lexicon Meta Atslēgvārdi Saraksts H
+cbaxLexicon.page.listing.metaKeywordsI|Lexicon Meta Atslēgvārdi Saraksts I
+cbaxLexicon.page.listing.metaKeywordsJ|Lexicon Meta Atslēgvārdu saraksts J
+cbaxLexicon.page.listing.metaKeywordsK|Lexicon Meta Atslēgvārdi Listing K
+cbaxLexicon.page.listing.metaKeywordsL|Lexicon Meta Atslēgvārdu saraksts L
+cbaxLexicon.page.listing.metaKeywordsM|Lexicon Meta Atslēgvārdi Listing M
+cbaxLexicon.page.listing.metaKeywordsN|Lexicon Meta Atslēgvārdi Listing N
+cbaxLexicon.page.listing.metaKeywordsO|Lexicon Meta Atslēgvārdi Listing O
+cbaxLexicon.page.listing.metaKeywordsP|Lexicon Meta Atslēgvārdi Listing P
+cbaxLexicon.page.listing.metaKeywordsQ|Lexicon Meta Atslēgvārdi Listing Q
+cbaxLexicon.page.listing.metaKeywordsR|Lexicon Meta Atslēgvārdi Listing R
+cbaxLexicon.page.listing.metaKeywordsS|Lexicon Meta Atslēgvārdu saraksts S
+cbaxLexicon.page.listing.metaKeywordsT|Lexicon Meta Atslēgvārdi Listing T
+cbaxLexicon.page.listing.metaKeywordsU|Lexicon Meta Atslēgvārdi Saraksts U
+cbaxLexicon.page.listing.metaKeywordsV|Lexicon Meta Atslēgvārdi Saraksts V
+cbaxLexicon.page.listing.metaKeywordsW|Lexicon Meta Atslēgvārdi Saraksts W
+cbaxLexicon.page.listing.metaKeywordsX|Lexicon Meta Atslēgvārdi Saraksts X
+cbaxLexicon.page.listing.metaKeywordsY|Lexicon Meta Atslēgvārdi Saraksts Y
+cbaxLexicon.page.listing.metaKeywordsZ|Lexicon Meta Atslēgvārdi Saraksts Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|Es
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|J
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Jā
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Satura rādītājs
+cbaxLexicon.page.navigation.linkIndex|Sākuma lapa
+cbaxLexicon.page.pagination.toOverview|Pārskatīšana
+cbaxLexicon.page.sidebar.title|Leksikons:
+checkout.confirmRevocationReminder|Jūs jau esat paziņojis, ka atsakāties no atteikuma tiesībām.
+checkout.confirmRevocationTerms|Es vēlos tūlītēju piekļuvi digitālajam saturam, un es atzīstu, ka tādējādi es atsakos no savām tiesībām atcelt.
+checkout.confirmTermsReminderText|"Jūs jau esat pieņēmis <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""general terms and conditions"">general terms and conditions</a>."
+checkout.confirmTermsText|"Esmu izlasījis un piekrītu <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""general terms and conditions"">general terms and conditions</a>."
+checkout.lineItemUnitPriceDescriptor|ierīce
+checkout.merchant-not-selected|Lūdzu, izvēlieties savu vietējo tirgotāju, lai turpinātu norēķināšanos.
+checkout.or|vai
+CmsElements.callToAction.elementError|Šis elements nav pieejams sānjoslai. Lūdzu, atlasiet citu <p class="h5 my-2">Izsaukums uz darbību</p> savai sānjoslai.
+CmsElements.counter.days|DIENAS
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|Jūs neesat augšupielādējis derīgu video. Pārbaudiet elementa iestatījumus.
+CmsElements.htmlVideo.hint.headline|Nepareizs formāts / Nav video
+CmsElements.placeholder.label|Nomainiet elementu
+CmsElements.shopTheLook.addAllProducts|Pievienot produktus iepirkumu grozam
+CmsElements.shopTheLook.totalDiscount|Ietaupījumi:
+component.cms.imageGallery.sliderDotLabel|Parādīt attēlu %index% no %total%
+component.cms.vimeo.privacyNoticeText|"Apskatot video, jūs piekrītat, ka jūsu dati tiks pārsūtīti uz %platform% un ka esat izlasījis <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Privacy policy"">Privacy policy</a>."
+component.product.quantitySelect.decrease|Samazināt daudzumu
+component.product.quantitySelect.increase|Palielināt daudzumu
+component.product.quantitySelect.label|Daudzums
+contact.newsletterSubscribe|Ar šo es piekrītu, ka TENTE var arī mani informēt pa e-pastu un tālruni par TENTE produktiem un pasākumiem (piemēram, tirdzniecības gadatirgu izskatu).
+contact.privacyNoticeText|"Atlasot turpināt, jūs apstiprināt, ka esat izlasījis un piekrītat mūsu <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Data protection information"">data protection information</a>."
+cookie.groupComfortFeaturesYoutubeVideo|YouTube video
+cookie.messageText|"Šī tīmekļa vietne izmanto sīkdatnes, lai nodrošinātu vislabāko iespējamo pieredzi. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""More information"">Vairāk informācijas...</a>"
+detail.acrisProductDownloadBtnText|Lejupielādēt
+detail.acrisProductDownloadNoPreview|Nav priekšskatījuma
+detail.acrisProductDownloadTabLabel|Lejupielādes
+detail.acrisProductDownloadTitle|Lejupielādes
+detail.acrisProductLinkTabLabel|Saites
+detail.acrisProductLinkTitle|Saites
+detail.buyOnline|Pirkt tiešsaistē
+detail.cadService.downloadBtn|Lejupielādēt
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Faila tips
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Jūs varat lejupielādēt būvniecības datus par šo produktu citā formātā
+detail.cadService.login|"Lūdzu, <a href=""%url%"">Pieteikties</a>, lai skatītu CAD failus"
+detail.cadService.title|CAD pakalpojums
+detail.contactText|"Vai vēl neesat atradis pareizo produktu, jums ir īpašas prasības vai jūs interesē individuāli risinājumi? <a href=""%url%"" title=""Kontaktformular"">Sazinieties ar mums</a>."
+detail.ean|EAN
+detail.orderNumber|Produkta numurs
+detail.orText|vai
+detail.performance.atrittion|Atritinājums
+detail.performance.movement|Kustības troksnis
+detail.performance.resistance|Korozijas izturīgs
+detail.performance.roll|Ruļļa veiktspēja
+detail.priceOnRequestText|par gabalu plus PVN<br />24 stundu laikā gatavs nosūtīšanai
+detail.priceOnRequestTitle|Cena pēc pieprasījuma
+detail.properties.fitting|Tehnisko datu uzstādīšana
+detail.properties.housing|Tehnisko datu Kronšteinis
+detail.properties.label.downloads|Lejupielādes
+detail.properties.label.feature|Produkta īpašības
+detail.properties.label.fitting|Uzstādīšana
+detail.properties.label.housing|Kronšteinis
+detail.properties.label.performance|Veiktspēja
+detail.properties.label.wheel|Ritenis
+detail.properties.performance|Veiktspēja
+detail.properties.wheel|Tehnisko datu Ritenis
+detail.qte|Daudzums
+detail.reviewFormContentPlaceholder|Ievadiet savu atsauksmi...
+detail.sendQuoteRequest|Sūtīt piedāvājuma pieprasījumu
+detail.tabs.downloads|Lejupielādes
+detail.tabs.features|Funkcijas
+detail.tabs.performance|Veiktspēja
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|Daudzums (%daudzums%) ir nepareizs.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|"Pasūtījums ar pasūtījuma numuru ""%orderNumber%"" jau tika apmaksāts un pēc tam to nevar rediģēt."
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Šo pasūtījumu nevarēja atrast.
+error.merchant-not-selected|Lūdzu, izvēlieties savu vietējo tirgotāju, lai turpinātu norēķināšanos.
+error.VIOLATION::ZIP_CODE_INVALID|Ievadītajam pasta indeksam nav pareizā formāta.
+footer.excludeVatText|"* Visas cenas bez PVN PVN plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">piegādes izmaksas</a> un iespējamās piegādes izmaksas, ja nav norādīts citādi."
+footer.includeVatText|"* Visas cenas ieskaitot PVN plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">piegādes izmaksas</a> un iespējamās piegādes izmaksas, ja nav norādīts citādi."
+footer.serviceContactText|"Vai izmantojot mūsu <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Contact form"">kontakta formu</a>."
+footer.socialMediaHeadline|Sociālie tīkli
+general.contactUs|Sazinieties ar mums
+general.contactUsLink|/kontakts
+general.loginRegister|Pieslēgties / Reģistrēties
+general.privacyNoticeText|"Abonējot informatīvo izdevumu, jūs piekrītat mūsu <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Privacy policy"">privātuma politikai</a>, kā arī mūsu <a data-ajax-modal=""true"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""terms and conditions"">noteikumi un nosacījumi</a>."
+global.default.activate|Aktivizēt
+global.default.cancel|Atcelt
+global.default.confirm|Apstiprināt
+global.default.deactivate|Deaktivizēt
+global.default.delete|Dzēst
+global.default.edit|Rediģēt
+global.default.noteRequiredFields|Lauki, kas apzīmēti ar zvaigznītēm (*), jāaizpilda obligāti.
+global.default.save|Saglabāt
+listing.downloadText|Lejupielādēt
+moorl-creator.aboutTheCreator|Par radītāju
+moorl-creator.aboutTheCreators|Par radītājiem
+moorl-creator.creator|Radītājs
+moorl-creator.creators|Radītāji
+moorl-creator.donate|Ziedot
+moorl-creator.follow|Sekot
+moorl-creator.link|Mājas lapa
+moorl-creator.productsOf|Izstrādājumi no
+moorl-creator.readMore|Lasīt vairāk...
+moorl-foundation.buttons.acceptCookie|Pieņemt sīkfailu
+moorl-foundation.buttons.addMerchantButtonText|Jauns tirgotājs
+moorl-foundation.buttons.administrationButtonText|Administrācija
+moorl-foundation.buttons.cancelButtonText|Atcelt
+moorl-foundation.buttons.exportButtonText|Eksportēt CSV
+moorl-foundation.buttons.exportButtonTitle|Lejupielādēt savu CSV
+moorl-foundation.buttons.getLocButtonText|Saņemt pozīcijas ar OpenStreetMap
+moorl-foundation.buttons.importButtonText|Importēt CSV
+moorl-foundation.buttons.importButtonTitle|Augšupielādējiet savu CSV
+moorl-foundation.buttons.mediaFolder|Attēlu saglabāšana šajā mapē
+moorl-foundation.buttons.newButtonText|Jauns
+moorl-foundation.buttons.openMapButtonText|Atvērt karti
+moorl-foundation.buttons.openNewWindowButtonText|Atvērt jaunā logā
+moorl-foundation.buttons.overwriteText|Pārrakstīt esošās datu rindas (jāiestata sākotnējais ID).
+moorl-foundation.buttons.placeIdLink|Plānot maršrutu
+moorl-foundation.buttons.refreshButtonText|Magazīna
+moorl-foundation.buttons.saveButtonText|Saglabāt
+moorl-foundation.buttons.selectLocButtonText|Izvēle
+moorl-foundation.buttons.startImportButtonText|Sākt importēšanu
+moorl-foundation.card.address|Adrese
+moorl-foundation.card.company|Uzņēmums
+moorl-foundation.card.contact|Kontaktinformācija
+moorl-foundation.card.legend|Leģenda
+moorl-foundation.card.openingHours|Darba laiks
+moorl-foundation.card.person|Kontaktpersona
+moorl-foundation.customerUpload.checkToDelete|Pārbaudiet, lai dzēstu
+moorl-foundation.customerUpload.dictDefaultMessage|Velciet failus šeit, lai augšupielādētu
+moorl-foundation.customerUpload.useAsCover|Izmantot kā vāku
+moorl-foundation.days.closed|Slēgts
+moorl-foundation.days.friday|Piektdiena
+moorl-foundation.days.monday|Pirmdiena
+moorl-foundation.days.saturday|Sestdiena
+moorl-foundation.days.sunday|Svētdiena
+moorl-foundation.days.thursday|Ceturtdiena
+moorl-foundation.days.today|Šodien
+moorl-foundation.days.tuesday|Otrdiena
+moorl-foundation.days.wednesday|Trešdiena
+moorl-foundation.general.selectedItems|Atlasītie vienumi
+moorl-foundation.general.share|Kopīgot
+moorl-foundation.general.subTotal|Starpsumma
+moorl-foundation.general.toc|Satura rādītājs
+moorl-foundation.label.accountCard|Konts
+moorl-foundation.label.addressCard|Adrese
+moorl-foundation.label.generalCard|Vispārīgi
+moorl-foundation.label.locationCard|Atrašanās vieta
+moorl-foundation.label.markerCard|Marķieris
+moorl-foundation.label.metaCard|Meta
+moorl-foundation.label.relationsCard|Attiecības un filtri
+moorl-foundation.label.visibilityCard|Redzamība
+moorl-foundation.listing.filter.categories|Kategorijas
+moorl-foundation.listing.filter.country|Valsts
+moorl-foundation.listing.filter.distance|Attālums
+moorl-foundation.listing.filter.firstChar|Indekss
+moorl-foundation.listing.filter.inRadiusOf|rādiusā
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|MI
+moorl-foundation.listing.filter.myLocation|Izmantot manu atrašanās vietu
+moorl-foundation.listing.filter.navigation|Kategorijas
+moorl-foundation.listing.filter.radius|Meklēt pasta indeksu
+moorl-foundation.listing.filter.search|Meklēšanas teksts
+moorl-foundation.listing.filter.tags|Atzīmes
+moorl-foundation.listing.filter.zipcodeCity|Pasta indekss / Pilsēta
+moorl-foundation.properties.active|Aktīvs
+moorl-foundation.properties.additionalAddressLine1|1. adreses rinda
+moorl-foundation.properties.additionalAddressLine2|2. adreses rinda
+moorl-foundation.properties.articles|Raksti
+moorl-foundation.properties.author|Autors
+moorl-foundation.properties.categories|Kategorijas
+moorl-foundation.properties.city|Pilsēta
+moorl-foundation.properties.closed|Slēgts
+moorl-foundation.properties.cmsPage|CMS lapa
+moorl-foundation.properties.cmsPageId|CMS lapas ID
+moorl-foundation.properties.company|Uzņēmums
+moorl-foundation.properties.content|Saturs
+moorl-foundation.properties.country|Valsts
+moorl-foundation.properties.countryCode|Valsts kods
+moorl-foundation.properties.countryId|Valsts
+moorl-foundation.properties.createdAt|Izveidots
+moorl-foundation.properties.customerGroupId|Klientu grupa
+moorl-foundation.properties.customerNumber|Klienta numurs
+moorl-foundation.properties.date|Datums
+moorl-foundation.properties.department|Nodaļa
+moorl-foundation.properties.description|Apraksts
+moorl-foundation.properties.distance|Attālums
+moorl-foundation.properties.email|E-pasts
+moorl-foundation.properties.enableComments|Iespējot komentārus
+moorl-foundation.properties.firstName|Vārds
+moorl-foundation.properties.from|No
+moorl-foundation.properties.highlight|Izcelt
+moorl-foundation.properties.image|Raksts
+moorl-foundation.properties.info|Informācija
+moorl-foundation.properties.inRadiusOf|rādiusā
+moorl-foundation.properties.invisible|Neredzams
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|Uzvārds
+moorl-foundation.properties.location|Pozīcija
+moorl-foundation.properties.locationLat|Platums
+moorl-foundation.properties.locationLon|Garums
+moorl-foundation.properties.locked|Bloķēts
+moorl-foundation.properties.logo|Logotips
+moorl-foundation.properties.marker|Marķieris
+moorl-foundation.properties.markerId|Marķieris
+moorl-foundation.properties.markerSettings|Marķiera iestatījumi
+moorl-foundation.properties.markerSettingsExample|Šo piemēru var kopēt, lai pielāgotu marķiera iestatījumus.
+moorl-foundation.properties.markerSettingsLink|Informācijas lapas pielāgotā marķiera piemērs
+moorl-foundation.properties.markerShadow|Marķiera ēna
+moorl-foundation.properties.markerShadowId|Marķiera ēna
+moorl-foundation.properties.media|Multivide
+moorl-foundation.properties.mediaId|Multivides ID
+moorl-foundation.properties.merchant|Tirgotājs
+moorl-foundation.properties.merchantUrl|Tirgotāja URL
+moorl-foundation.properties.metaDescription|Meta apraksts
+moorl-foundation.properties.metaTitle|Meta nosaukums
+moorl-foundation.properties.name|Nosaukums
+moorl-foundation.properties.openingHours|Darba laiks
+moorl-foundation.properties.originId|Izcelsmes ID
+moorl-foundation.properties.phoneNumber|Tālrunis
+moorl-foundation.properties.priority|Prioritāte
+moorl-foundation.properties.productManufacturers|Ražotāja ID
+moorl-foundation.properties.products|Produkti
+moorl-foundation.properties.radius|Rādiuss
+moorl-foundation.properties.repeat|Atkārtot
+moorl-foundation.properties.salesChannel|Pārdošanas kanāls
+moorl-foundation.properties.salesChannelId|Pārdošanas kanāls
+moorl-foundation.properties.search|Meklēt
+moorl-foundation.properties.shopUrl|Veikala URL
+moorl-foundation.properties.showFrom|Parādīt no
+moorl-foundation.properties.showUntil|Rādīt līdz
+moorl-foundation.properties.slug|Nogulšņi
+moorl-foundation.properties.sticky|Lipīgs
+moorl-foundation.properties.street|Iela
+moorl-foundation.properties.streetNumber|Numurs
+moorl-foundation.properties.tags|Tagu nosaukumi/ID
+moorl-foundation.properties.teaser|Teaser
+moorl-foundation.properties.title|Nosaukums
+moorl-foundation.properties.until|Līdz
+moorl-foundation.properties.updatedAt|Atjaunināts
+moorl-foundation.properties.vatId|PVN-ID
+moorl-foundation.properties.zipcode|Pasta indekss
+moorl-foundation.search.headline|"{0} Nav atbilstības ""%searchTerm%"" | {1} Viena atbilstība ""%searchTerm%"" | ]1,Inf[ %count% matches for ""%searchTerm%"""
+moorl-foundation.search.missingConfiguration|Trūkst konfigurācijas šim sarakstam!
+moorl-foundation.search.moreButton|Vairāk
+moorl-foundation.search.noListingSlotFound|"Šai lapai nav ieraksta elementa. Pārbaudiet savus uzskaites iestatījumus un izvēlieties ""Automātiskos vienumus"""
+moorl-foundation.search.notAvailable|Nav pieejams
+moorl-foundation.search.product|Produkti
+moorl-location-map.cookieDescription|Mēs izmantojam OpenStreetMap kā flīžu nodrošinātāju, lai vizuāli parādītu mūsu veikalu un tirgotāju atrašanās vietu.
+moorl-location-map.cookieHint|Lūdzu, piekrītiet sīkfailam, lai izmantotu vēlamo funkciju.
+moorl-location-map.cookieName|Atrašanās vietu kartes
+moorl-magazine.articles|Emuāra raksti
+moorl-magazine.author|Autors
+moorl-magazine.authors|Autori
+moorl-magazine.back|Atpakaļ
+moorl-magazine.backToOverview|Atpakaļ uz pārskatu
+moorl-magazine.categories|Kategorijas
+moorl-magazine.categoryAll|Visas kategorijas
+moorl-magazine.commentArea|Komentāru apgabals
+moorl-magazine.commentAreaDisabled|Komentāri šim rakstam ir atspējoti
+moorl-magazine.commentError|Lūdzu, pārliecinieties, ka visi lauki ir pareizi aizpildīti
+moorl-magazine.commentReview|Jūsu komentārs tiks publicēts pēc pārskatīšanas.
+moorl-magazine.commentSuccess|Paldies par jūsu komentāru!
+moorl-magazine.date|Datums
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|E-pasts
+moorl-magazine.emailPlaceholder|Ievadiet savu e-pasta adresi
+moorl-magazine.name|Nosaukums
+moorl-magazine.namePlaceholder|Ievadiet savu vārdu
+moorl-magazine.next|Nākamais
+moorl-magazine.page|Lapa
+moorl-magazine.pageDescription|Lorem ipsum dolor sēž amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore un dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores un ea rebum. Stet clita kasd gubergren, nav jūras takimata sanctus un Lorem ipsum dolor sēž amet. Lorem ipsum dolor sēž amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore un dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores un ea rebum. Stet clita kasd gubergren, nav jūras takimata sanctus un Lorem ipsum dolor sēž amet.
+moorl-magazine.pageTitle|Mans žēlastīgais emuārs
+moorl-magazine.posts|Emuāra ieraksti
+moorl-magazine.products|Saistītie produkti
+moorl-magazine.readMore|Lasīt vairāk
+moorl-magazine.recentComments|Jaunākie komentāri
+moorl-magazine.relatedArticles|Saistītie bloga ieraksti
+moorl-magazine.search|Meklēt
+moorl-magazine.searchFor|Meklēt...
+moorl-magazine.sendComment|Iesniegt savu komentāru
+moorl-magazine.similarArticles|Līdzīgi bloga ieraksti
+moorl-magazine.sticky|Piesprausts
+moorl-magazine.tags|Atzīmes
+moorl-magazine.writeComment|Uzrakstiet komentāru
+moorl-magazine.wroteOn|uzrakstīja
+moorl-magazine.yourComment|Jūsu komentārs
+moorl-magazine.yourCommentPlaceholder|Ievadiet savu komentāru šeit
+moorl-merchant-finder.allCategories|Visas kategorijas
+moorl-merchant-finder.allCountries|Visas valstis
+moorl-merchant-finder.allManufacturers|Visi ražotāji
+moorl-merchant-finder.allowMerchantCustomerContact|Es atļauju manam izvēlētajam tirgotājam sazināties ar mani pa tālruni vai e-pastu.
+moorl-merchant-finder.allResults|-- Izvēlieties --
+moorl-merchant-finder.allTags|Visi tagi
+moorl-merchant-finder.are|ir 
+moorl-merchant-finder.available|Pieejams
+moorl-merchant-finder.backToOverview|Atpakaļ uz pārskatu
+moorl-merchant-finder.call|Zvanīt
+moorl-merchant-finder.cancel|Atcelt
+moorl-merchant-finder.categories|Kategorijas
+moorl-merchant-finder.checkAvailability|Pārbaudīt pieejamību
+moorl-merchant-finder.chose|Izvēle
+moorl-merchant-finder.choseMerchant|Izvēlieties tirgotāju
+moorl-merchant-finder.choseMerchantToProceed|Lūdzu, izvēlieties vietējo tirgotāju, lai turpinātu norēķināšanos
+moorl-merchant-finder.close|Aizvērt
+moorl-merchant-finder.commentToMerchant|Nosūtīt komentāru tirgotājam
+moorl-merchant-finder.country|Valsts
+moorl-merchant-finder.deliveryTime|Piegādes laiks
+moorl-merchant-finder.deliveryTimeUnknown|Nezināms - Produkti tiks pieprasīti pēc pasūtījuma
+moorl-merchant-finder.description|Apraksts
+moorl-merchant-finder.desiredDate|Vēlamais saņemšanas datums
+moorl-merchant-finder.desiredTime|Vēlamais saņemšanas laiks
+moorl-merchant-finder.displayOnMap|Parādīt kartē
+moorl-merchant-finder.distance|Attālums
+moorl-merchant-finder.emptyResultMessage|Nav atrasts neviens tirgotājs
+moorl-merchant-finder.findMerchants|Atrast tirgotājus
+moorl-merchant-finder.forTheSearch|meklēšanai 
+moorl-merchant-finder.forTheSearchZipcode|pasta indekss un attālums km apkārtnē 
+moorl-merchant-finder.highlight|Padoms
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|Notiek ielāde...
+moorl-merchant-finder.manufacturers|Ražotāji
+moorl-merchant-finder.merchant|Tirgotājs
+moorl-merchant-finder.merchants|Tirgotāji
+moorl-merchant-finder.merchantUrl|Tīmekļa vietne
+moorl-merchant-finder.more|Vairāk
+moorl-merchant-finder.myLocation|Izmantot manu pašreizējo atrašanās vietu
+moorl-merchant-finder.mySelection|Mana atlase
+moorl-merchant-finder.noMerchantSelected|Produkts nav pieejams. Nav atlasīts neviens tirgotājs.
+moorl-merchant-finder.none|nav
+moorl-merchant-finder.openingHours|Darba laiks
+moorl-merchant-finder.outOfStock|Produkts nav pieejams. Jūsu izvēlētajam tirgotājam šī prece nav noliktavā.
+moorl-merchant-finder.phoneNumber|Tālrunis
+moorl-merchant-finder.pickupDateSet|Ir iestatīts saņemšanas laiks
+moorl-merchant-finder.productAvailability|Produkta pieejamība
+moorl-merchant-finder.productNotAvailable|Produkts nav pieejams. Lai iegūtu papildinformāciju, lūdzu, sazinieties ar veikala atbalsta dienestu.
+moorl-merchant-finder.radius|Rādiuss
+moorl-merchant-finder.resetSelection|Atiestatīt atlasi
+moorl-merchant-finder.resultsFound|atrastie skaitīšanas rezultāti
+moorl-merchant-finder.save|Saglabāt
+moorl-merchant-finder.search|Meklēt
+moorl-merchant-finder.searchFor|Meklēt
+moorl-merchant-finder.searchLocation|Meklēt atrašanās vietu
+moorl-merchant-finder.searchRules.hasLogo|Tirgotājs ar logotipu
+moorl-merchant-finder.searchRules.hasPriority|Prioritārais komersants
+moorl-merchant-finder.searchRules.isHighlighted|Premium tirgotājs
+moorl-merchant-finder.searchRules.isNotHighlighted|Parastais tirgotājs
+moorl-merchant-finder.selectedMerchant|Atlasītais tirgotājs
+moorl-merchant-finder.sendMail|Pasts
+moorl-merchant-finder.shop|Veikals
+moorl-merchant-finder.shopUrl|Apmeklēt veikalu
+moorl-merchant-finder.stockInfo|Informācija par krājumiem
+moorl-merchant-finder.tags|Atzīmes
+moorl-merchant-finder.thereAre|ir 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|Pasta indekss, pilsēta
+moorl-merchant-finder.zipcodeCityEnter|Ierakstiet pasta indeksu vai pilsētu un nospiediet taustiņu Enter
+nimbits-pricerequests.cart.cartRequestButton|Pieprasīt piedāvājumu
+nimbits-pricerequests.cart.dontAddByProductNumber|Šo produktu nevar pievienot grozam.
+nimbits-pricerequests.detail.available|Pieejams
+nimbits-pricerequests.detail.button.openrequestform|Pieprasīt piedāvājumu
+nimbits-pricerequests.detail.restock|"{1} Pieejams 1 dienā|]1,Inf[ Pieejams %restockTime% dienās"
+nimbits-pricerequests.detail.text.priceonrequest|Cena pēc pieprasījuma
+nimbits-pricerequests.fail.alert|Pieprasījums netika nosūtīts — radās kļūda. Lūdzu, mēģiniet vēlreiz.
+nimbits-pricerequests.finish.alert|Pieprasījums ir veiksmīgi nosūtīts
+nimbits-pricerequests.finish.buttonBack|Atpakaļ uz veikalu
+nimbits-pricerequests.listing.button.openrequestform|Pieprasīt piedāvājumu
+nimbits-pricerequests.listing.text.priceonrequest|Cena pēc pieprasījuma
+nimbits-pricerequests.mail.address|Adrese
+nimbits-pricerequests.mail.amount|Summa
+nimbits-pricerequests.mail.article|Raksts
+nimbits-pricerequests.mail.city|Pilsēta
+nimbits-pricerequests.mail.comment|Klientu komentārs
+nimbits-pricerequests.mail.company|Uzņēmums
+nimbits-pricerequests.mail.country|Valsts
+nimbits-pricerequests.mail.customersendername|Cena pēc pieprasījuma
+nimbits-pricerequests.mail.housenumber|Mājas numurs
+nimbits-pricerequests.mail.mail|Pasts
+nimbits-pricerequests.mail.name|Nosaukums
+nimbits-pricerequests.mail.ordernumber|Pasūtījuma numurs
+nimbits-pricerequests.mail.price|Cena
+nimbits-pricerequests.mail.pricegross|Incl. Nodoklis
+nimbits-pricerequests.mail.pricegrosssum|Incl. Nodokļu summa
+nimbits-pricerequests.mail.pricenet|Izņemot Nodoklis
+nimbits-pricerequests.mail.pricenetsum|Izņemot Nodokļu summa
+nimbits-pricerequests.mail.requestfirst|Cenas pieprasījums no
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Cena pēc pieprasījuma
+nimbits-pricerequests.mail.street|Iela
+nimbits-pricerequests.mail.subject|Cena pēc pieprasījuma
+nimbits-pricerequests.mail.subjectcart|Groza pieprasījums
+nimbits-pricerequests.mail.subjectshopowner|Cena pēc pieprasījuma
+nimbits-pricerequests.mail.subjectshopownercart|Groza pieprasījums
+nimbits-pricerequests.mail.zipcode|Pasta indekss
+nimbits-pricerequests.popup.city|Pilsēta
+nimbits-pricerequests.popup.closebutton|Aizvērt
+nimbits-pricerequests.popup.company|Uzņēmums
+nimbits-pricerequests.popup.country|Valsts
+nimbits-pricerequests.popup.dataprivacytext|"Esmu izlasījis, sapratis un piekrītu <a href=""/privacy"" target=""_blank"" rel=""noreferrer noopener""> Privātuma politikai </a>."
+nimbits-pricerequests.popup.desiredprice|Vēlamā cena 
+nimbits-pricerequests.popup.entervalidcity|Lūdzu, ievadiet derīgu pilsētu.
+nimbits-pricerequests.popup.entervalidcountry|Lūdzu, ievadiet derīgu valsti.
+nimbits-pricerequests.popup.entervalidhousenumber|Lūdzu, ievadiet derīgu mājas numuru.
+nimbits-pricerequests.popup.entervalidmail|Lūdzu, ievadiet derīgu e-pasta adresi.
+nimbits-pricerequests.popup.entervalidstreet|Lūdzu, ievadiet derīgu ielu.
+nimbits-pricerequests.popup.entervalidzipcode|Lūdzu, ievadiet derīgu pasta indeksu.
+nimbits-pricerequests.popup.genderm|Mr
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Kundze
+nimbits-pricerequests.popup.housenumber|Mājas numurs
+nimbits-pricerequests.popup.mail|Pasta adress
+nimbits-pricerequests.popup.name|Nosaukums
+nimbits-pricerequests.popup.optional|(pēc izvēles)
+nimbits-pricerequests.popup.phonenumber|Tālrunis
+nimbits-pricerequests.popup.popupTitle|Pieprasīt piedāvājumu
+nimbits-pricerequests.popup.product|Produkts(-i) šajā pieprasījumā:
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Pieprasījums
+nimbits-pricerequests.popup.requestbutton|Pieprasījums
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|Lauki, kas atzīmēti ar *, ir obligāti.
+nimbits-pricerequests.popup.salutation|Sveiciens
+nimbits-pricerequests.popup.street|Iela
+nimbits-pricerequests.popup.surname|Uzvārds
+nimbits-pricerequests.popup.text|Pieprasīt piedāvājumu izvēlētajiem produktiem
+nimbits-pricerequests.popup.zipcode|Pasta indekss
+nimbits-pricerequests.search.text.priceonrequest|Cena pēc pieprasījuma
+nimbits-pricerequests.toasts.error|Pieprasījums netika nosūtīts — radās kļūda. Lūdzu, mēģiniet vēlreiz.
+nimbits-pricerequests.toasts.success|Pieprasījums ir veiksmīgi nosūtīts
+priceRequest.newsletterText|Ar šo es piekrītu, ka TENTE var arī mani informēt pa e-pastu un tālruni par TENTE produktiem un pasākumiem (piemēram, tirdzniecības gadatirgu izskatu).
+priceRequest.sendRequestText|Pieprasījums tiks nosūtīts...
+priceRequest.waitText|Lūdzu, uzgaidiet...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Atlasiet iespēju...
+theme.compilation.async.success|Apkopojums pārdošanas kanālam %salesChannelName% pabeigts
+vdct-simple-events.events.detail.to-event|Uz pasākumu
+zeobv-store-switcher.switchStoreLabel|Pārslēgt veikalu

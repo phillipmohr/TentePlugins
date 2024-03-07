@@ -1,0 +1,564 @@
+LanguagePack sr-RS|Prevod
+account.doubleOptinAccountAlert|Vaš korisnički nalog još uvek nije aktiviran. Poslali smo e-poruku sa potvrdom koja sadrži vezu za aktivaciju. Proverite prijemno sanduče i kliknite na vezu da biste završili registraciju!
+account.downloadFileButton|Download
+account.downloadItemColumnDate|Datum
+account.downloadItemColumnTitle|Datoteka
+account.faxLabel|Faks
+account.faxPlaceholder|Unesite faks
+account.homepageLabel|Početna stranica
+account.homepagePlaceholder|Unesite URL na početnoj stranici
+account.passwordNotIdentical|Lozinke koje ste uneli se ne podudaraju.
+account.personalTypePlaceholder|Izaberite...
+account.profileCurrentMailPlaceholder|Unesite adresu e-pošte...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Kliknite ovde</a> da biste izbrisali sve vaše lične podatke."
+account.profilePasswordCreateNewPlaceholder|Unesite novu lozinku...
+account.profilePasswordCurrentPlaceholder|Unesite trenutnu lozinku...
+acrisFilter.buttonFiltersHide|Prikaži manje filtera
+acrisFilter.buttonFilterShowHideLabel|Prikaži više ili manje filtera
+acrisFilter.buttonFiltersShow|Prikaži više filtera
+acrisFilter.buttonHeaderSearchAllCategories|Sve kategorije
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Dostupno odmah
+acrisFilter.filterCategoriesDisplayName|Kategorije
+acrisFilter.filterRangeActiveMaxLabel|Imovina %displayName% do
+acrisFilter.filterRangeActiveMinLabel|Imovina %displayName% od
+acrisFilter.filterRangeSliderFrom|od
+acrisFilter.filterRangeSliderTo|To
+acrisFilter.filterSearchPlaceholder|Pretraga...
+card.card-image|Slika %name%
+card.linkTitle|Otvorite %url% na novoj kartici
+cbaxLexicon.page.ajax.linkDescription|U leksikonu
+cbaxLexicon.page.banner.alt|Zabrana
+cbaxLexicon.page.boxKeyword.moreRead|Pročitaj više
+cbaxLexicon.page.breadcrumb.name|Leksikona
+cbaxLexicon.page.content.headline|Tabela sadržaja
+cbaxLexicon.page.content.metaDescription|Sadržaj opisivanja leka Leksicon Meta
+cbaxLexicon.page.content.metaKeywords|Sadržaj ključnih reči Leksicon Meta
+cbaxLexicon.page.content.metaTitle|Tabela sadržaja
+cbaxLexicon.page.filter.button|Navigacija leksikonom
+cbaxLexicon.page.filter.headline|Navigacija leksikonom
+cbaxLexicon.page.index.metaDescription|Indeks opisivanja mete leka
+cbaxLexicon.page.index.metaKeywords|Indeks ključnih reči leksikona Meta
+cbaxLexicon.page.index.metaTitle|Leksikona
+cbaxLexicon.page.listing.entryHeadline|Postovi u ovoj kategoriji enciklopedija
+cbaxLexicon.page.listing.metaDescription09|Opis leka Meta lista 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Leksikonski meta opis Lista A
+cbaxLexicon.page.listing.metaDescriptionB|Opis leka Meta B
+cbaxLexicon.page.listing.metaDescriptionC|Opis leka Meta C
+cbaxLexicon.page.listing.metaDescriptionD|Opis leka Meta D
+cbaxLexicon.page.listing.metaDescriptionE|Opis leka Meta Lista E
+cbaxLexicon.page.listing.metaDescriptionF|Leksikonski Meta Opis Lista F
+cbaxLexicon.page.listing.metaDescriptionG|Opis leka Meta G
+cbaxLexicon.page.listing.metaDescriptionH|Leksikonski Meta Opis Lista H
+cbaxLexicon.page.listing.metaDescriptionI|Opis leka Meta Lista I
+cbaxLexicon.page.listing.metaDescriptionJ|Opis leka Meta DŽ.
+cbaxLexicon.page.listing.metaDescriptionK|Leksikonska meta Opis Lista K
+cbaxLexicon.page.listing.metaDescriptionL|Leksikon meta Opis lista L
+cbaxLexicon.page.listing.metaDescriptionM|Opis leka Meta lista M
+cbaxLexicon.page.listing.metaDescriptionN|Opis leka Meta lista N
+cbaxLexicon.page.listing.metaDescriptionO|Opis leka Meta Lista O
+cbaxLexicon.page.listing.metaDescriptionP|Opis leka Meta P
+cbaxLexicon.page.listing.metaDescriptionQ|Opis leka Meta u listi Q
+cbaxLexicon.page.listing.metaDescriptionR|Opis leka Meta R
+cbaxLexicon.page.listing.metaDescriptionS|Opis leka Meta S
+cbaxLexicon.page.listing.metaDescriptionT|Opis leka Meta T
+cbaxLexicon.page.listing.metaDescriptionU|Opis leka Meta koji vas navodi
+cbaxLexicon.page.listing.metaDescriptionV|Leksikonski Meta Opis Lista V
+cbaxLexicon.page.listing.metaDescriptionW|Opis leka Meta W
+cbaxLexicon.page.listing.metaDescriptionX|Leksikonska meta Opis Lista X
+cbaxLexicon.page.listing.metaDescriptionY|Opis leka Meta lista Y
+cbaxLexicon.page.listing.metaDescriptionZ|Leksikonski Meta Opis Lista Z
+cbaxLexicon.page.listing.metaKeywords09|Ključne reči leksikona Meta Lista 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Lexicon Meta ključne reči koje se nalaze na listi A
+cbaxLexicon.page.listing.metaKeywordsB|Lexicon Meta ključne reči lista B
+cbaxLexicon.page.listing.metaKeywordsC|Lexicon Meta Keywords Spisak ključnih reči C
+cbaxLexicon.page.listing.metaKeywordsD|Lexicon Meta Keywords Lista ključnih reči D
+cbaxLexicon.page.listing.metaKeywordsE|Lexicon Meta Keywords Lista ključnih reči E
+cbaxLexicon.page.listing.metaKeywordsF|Lexicon Meta Keywords Lista ključnih reči F
+cbaxLexicon.page.listing.metaKeywordsG|Lexicon Meta Keywords Spisak ključnih reči G
+cbaxLexicon.page.listing.metaKeywordsH|Leksikon Meta ključne reči Lista H
+cbaxLexicon.page.listing.metaKeywordsI|Lexicon Meta Keywords Spisak ključnih reči I
+cbaxLexicon.page.listing.metaKeywordsJ|Lexicon Meta Keywords Spisak ključnih reči J
+cbaxLexicon.page.listing.metaKeywordsK|Lexicon Meta Keywords Spisak ključnih reči K
+cbaxLexicon.page.listing.metaKeywordsL|Lexicon Meta Keywords Spisak ključnih reči L
+cbaxLexicon.page.listing.metaKeywordsM|Lexicon Meta Keywords Spisak ključnih reči M
+cbaxLexicon.page.listing.metaKeywordsN|Lexicon Meta Keywords Spisak ključnih reči N
+cbaxLexicon.page.listing.metaKeywordsO|Lexicon Meta Keywords Lista ključnih reči O
+cbaxLexicon.page.listing.metaKeywordsP|Lexicon Meta Keywords Lista ključnih reči P
+cbaxLexicon.page.listing.metaKeywordsQ|Lexicon Meta Keywords Lista ključnih reči Q
+cbaxLexicon.page.listing.metaKeywordsR|Lexicon Meta Keywords Spisak ključnih reči R
+cbaxLexicon.page.listing.metaKeywordsS|Lexicon Meta ključne reči S
+cbaxLexicon.page.listing.metaKeywordsT|Lexicon Meta Keywords Spisak ključnih reči T
+cbaxLexicon.page.listing.metaKeywordsU|Lexicon Meta ključne reči koje vas navode
+cbaxLexicon.page.listing.metaKeywordsV|Lexicon Meta Keywords Spisak ključnih reči V
+cbaxLexicon.page.listing.metaKeywordsW|Lexicon Meta Keywords Lista ključnih reči W
+cbaxLexicon.page.listing.metaKeywordsX|Lexicon Meta Keywords Lista ključnih reči X
+cbaxLexicon.page.listing.metaKeywordsY|Lexicon Meta Keywords Lista Y
+cbaxLexicon.page.listing.metaKeywordsZ|Lexicon Meta Keywords Spisak ključnih reči Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|Ja
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|P
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|Ti
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|I
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Tabela sadržaja
+cbaxLexicon.page.navigation.linkIndex|Početak stranice
+cbaxLexicon.page.pagination.toOverview|Za pregled
+cbaxLexicon.page.sidebar.title|Leksikona:
+checkout.confirmRevocationReminder|Već ste izjavili da se odričete prava na povlačenje.
+checkout.confirmRevocationTerms|Želim trenutni pristup digitalnom sadržaju i priznajem da se time odričem svog prava da otkažem.
+checkout.confirmTermsReminderText|"Već ste prihvatili <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""opšti uslovi"">opšti uslovi</a>."
+checkout.confirmTermsText|"Pročitao/la sam i prihvatio/la <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""opšte odredbe i uslovi"">opšte odredbe i uslovi</a>."
+checkout.lineItemUnitPriceDescriptor|jedinica
+checkout.merchant-not-selected|Izaberite svog lokalnog prodavca da biste nastavili čekiranje.
+checkout.or|ili
+CmsElements.callToAction.elementError|Ovaj element nije dostupan za bočnu traku. Izaberite drugu <p klasu='h5 my-2'> Poziv na akciju</p> za vašu Sidebar.
+CmsElements.counter.days|DANI
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|Niste otpremili važeći video. Proverite podešavanja elementa.
+CmsElements.htmlVideo.hint.headline|Pogrešan format / Bez video zapisa
+CmsElements.placeholder.label|Zamenite element
+CmsElements.shopTheLook.addAllProducts|Dodajte proizvode u korpu za kupovinu
+CmsElements.shopTheLook.totalDiscount|Štednja:
+component.cms.imageGallery.sliderDotLabel|Prikaži sliku %index% %total%
+component.cms.vimeo.privacyNoticeText|"Gledajući video, slažete se da će vaši podaci biti preneti %platformi% i da ste pročitali <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Politika privatnosti""> Politika privatnosti</a>."
+component.product.quantitySelect.decrease|Smanjenje količine
+component.product.quantitySelect.increase|Povećajte količinu
+component.product.quantitySelect.label|Količina
+contact.newsletterSubscribe|Ovim pristajem da me TENTE takođe može obavestiti putem e-pošte i telefona o proizvodima i događajima (npr. izgledima sajma) kompanije TENTE.
+contact.privacyNoticeText|"Izborom nastavka potvrđujete da ste pročitali i da ste saglasni sa našim <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" naslov=""Informacije o zaštiti podataka"">podaci o zaštiti podataka</a>."
+cookie.groupComfortFeaturesYoutubeVideo|YouTube video
+cookie.messageText|"Ova veb lokacija koristi kolačiće kako bi obezbedila najbolje moguće iskustvo. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title="" Više informacija"">Više informacija...</a>"
+detail.acrisProductDownloadBtnText|Download
+detail.acrisProductDownloadNoPreview|Nema pregleda
+detail.acrisProductDownloadTabLabel|Preuzimanje
+detail.acrisProductDownloadTitle|Preuzimanje
+detail.acrisProductLinkTabLabel|Linkovi
+detail.acrisProductLinkTitle|Linkovi
+detail.buyOnline|Kupite online
+detail.cadService.downloadBtn|Download
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Tip datoteke
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Možete preuzeti podatke o izgradnji za ovaj proizvod u različitom formatu
+detail.cadService.login|"Molim <a href=""%url%"">Login</a> da biste videli CAD datoteke"
+detail.cadService.title|CAD usluga
+detail.contactText|"Još uvek niste pronašli pravi proizvod, imate posebne zahteve ili ste zainteresovani za pojedinačna rešenja? <a href=""%url%"" title=""Kontaktformular"">Kontaktirajte nas</a>."
+detail.ean|EAN
+detail.orderNumber|Broj proizvoda
+detail.orText|Ili
+detail.performance.atrittion|aritmija
+detail.performance.movement|Buka u pokretu
+detail.performance.resistance|otpornost na rdju
+detail.performance.roll|Performanse kotrljanja
+detail.priceOnRequestText|po komadu plus PDV<br />Za 24 sata spreman za isporuku
+detail.priceOnRequestTitle|Cena na zahtev
+detail.properties.fitting|Podešavanje tehničkih podataka
+detail.properties.housing|kuciste tehničkih podataka
+detail.properties.label.downloads|Preuzimanje
+detail.properties.label.feature|Karakteristike proizvoda
+detail.properties.label.fitting|Prilagođavanje
+detail.properties.label.housing|kuciste
+detail.properties.label.performance|Performanse
+detail.properties.label.wheel|Tocak
+detail.properties.performance|Performanse
+detail.properties.wheel|Tocak sa tehničkim podacima
+detail.qte|Količina
+detail.reviewFormContentPlaceholder|Unesite svoj pregled...
+detail.sendQuoteRequest|Pošaljite zahtev za predračun
+detail.tabs.downloads|Preuzimanje
+detail.tabs.features|Karakteristike
+detail.tabs.performance|Performanse
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|Količina (% kvantiteta) je netačna.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|Narudžba sa brojem porudžbine „%narudžbeBroj%“ je već plaćena i ne može se naknadno uređivati.
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Ova naredba nije pronađena.
+error.merchant-not-selected|Izaberite svog lokalnog prodavca da biste nastavili čekiranje.
+error.VIOLATION::ZIP_CODE_INVALID|Poštanski kod koji ste uneli nema odgovarajući format.
+footer.excludeVatText|"* Sve cene su ekskluzivne. PDV plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%""> troškovi ispijanja</a> i moguće naknade za isporuku, ako nije drugačije navedeno."
+footer.includeVatText|"* Sve cene uključuju. PDV plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%""> troškovi ispijanja</a> i moguće naknade za isporuku, ako nije drugačije navedeno."
+footer.serviceContactText|"Ili putem našeg <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Kontakt form"">kontakt form</a>."
+footer.socialMediaHeadline|Socijalni
+general.contactUs|Kontaktirajte nas
+general.contactUsLink|/kontakt
+general.loginRegister|Prijavljivanje / registracija
+general.privacyNoticeText|"Pretplatom na bilten prihvatate našu <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Politika privatnosti""> Politika privatnosti</a> kao i našu <a data-ajax-modal=""true"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""terms i uslovi"">termi i uslovi</a>."
+global.default.activate|Aktiviraj
+global.default.cancel|Otkaži
+global.default.confirm|Potvrdite
+global.default.deactivate|Deaktivirajte
+global.default.delete|Brisanje
+global.default.edit|Uredi
+global.default.noteRequiredFields|Polja označena zvezdicom (*) su obavezna.
+global.default.save|Sačuvaj
+listing.downloadText|Download
+moorl-creator.aboutTheCreator|O Stvoritelju
+moorl-creator.aboutTheCreators|O kreatorima
+moorl-creator.creator|Tvorac
+moorl-creator.creators|Tvorci
+moorl-creator.donate|Donirajte
+moorl-creator.follow|Pratite
+moorl-creator.link|Početna stranica
+moorl-creator.productsOf|Proizvodi od
+moorl-creator.readMore|Pročitaj više...
+moorl-foundation.buttons.acceptCookie|Prihvatanje kolačića
+moorl-foundation.buttons.addMerchantButtonText|Novi trgovac
+moorl-foundation.buttons.administrationButtonText|Primena
+moorl-foundation.buttons.cancelButtonText|Otkaži
+moorl-foundation.buttons.exportButtonText|Izvoz CSV
+moorl-foundation.buttons.exportButtonTitle|Preuzmite svoj CSV
+moorl-foundation.buttons.getLocButtonText|Rubrika: OpenStreetMap
+moorl-foundation.buttons.importButtonText|Uvoz CSV
+moorl-foundation.buttons.importButtonTitle|Otpremite svoj CSV
+moorl-foundation.buttons.mediaFolder|Sačuvaj slike u ovoj fascikli
+moorl-foundation.buttons.newButtonText|Novi
+moorl-foundation.buttons.openMapButtonText|Otvorite mapu
+moorl-foundation.buttons.openNewWindowButtonText|Otvori u novom prozoru
+moorl-foundation.buttons.overwriteText|Zameni postojeće podatke (porekloId mora biti podešeno).
+moorl-foundation.buttons.placeIdLink|Plan rute
+moorl-foundation.buttons.refreshButtonText|Punjenje
+moorl-foundation.buttons.saveButtonText|Sačuvaj
+moorl-foundation.buttons.selectLocButtonText|Birajte
+moorl-foundation.buttons.startImportButtonText|Počnite sa uvozom
+moorl-foundation.card.address|Adresa
+moorl-foundation.card.company|Kompanija
+moorl-foundation.card.contact|Kontakt
+moorl-foundation.card.legend|Legenda
+moorl-foundation.card.openingHours|Radno vreme
+moorl-foundation.card.person|Kontakt osoba
+moorl-foundation.customerUpload.checkToDelete|Proverite da biste izbrisali
+moorl-foundation.customerUpload.dictDefaultMessage|Prevucite datoteke ovde da biste otpremili
+moorl-foundation.customerUpload.useAsCover|Koristite kao poklopac
+moorl-foundation.days.closed|Zatvoreno
+moorl-foundation.days.friday|Petak
+moorl-foundation.days.monday|Ponedeljak
+moorl-foundation.days.saturday|Subota
+moorl-foundation.days.sunday|nedelja
+moorl-foundation.days.thursday|Četvrtak
+moorl-foundation.days.today|Danas
+moorl-foundation.days.tuesday|Utorak
+moorl-foundation.days.wednesday|sreda
+moorl-foundation.general.selectedItems|Izabrane stavke
+moorl-foundation.general.share|Podeli
+moorl-foundation.general.subTotal|Podukupno
+moorl-foundation.general.toc|Tabela sadržaja
+moorl-foundation.label.accountCard|Račun
+moorl-foundation.label.addressCard|Adresa
+moorl-foundation.label.generalCard|General
+moorl-foundation.label.locationCard|Lokacija
+moorl-foundation.label.markerCard|Marker
+moorl-foundation.label.metaCard|Meta
+moorl-foundation.label.relationsCard|Odnosi i filteri
+moorl-foundation.label.visibilityCard|Vidljivost
+moorl-foundation.listing.filter.categories|Kategorije
+moorl-foundation.listing.filter.country|Zemlja
+moorl-foundation.listing.filter.distance|Udaljenost
+moorl-foundation.listing.filter.firstChar|Indeks
+moorl-foundation.listing.filter.inRadiusOf|U radijusu
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|MI
+moorl-foundation.listing.filter.myLocation|Koristite moju lokaciju
+moorl-foundation.listing.filter.navigation|Kategorije
+moorl-foundation.listing.filter.radius|Pretraga poštanskog broja
+moorl-foundation.listing.filter.search|Tekst pretrage
+moorl-foundation.listing.filter.tags|Tagovi
+moorl-foundation.listing.filter.zipcodeCity|Poštanski kod / Grad
+moorl-foundation.properties.active|Aktivno
+moorl-foundation.properties.additionalAddressLine1|Adresna linija 1
+moorl-foundation.properties.additionalAddressLine2|Adresna linija 2
+moorl-foundation.properties.articles|Članci
+moorl-foundation.properties.author|Autor
+moorl-foundation.properties.categories|Kategorije
+moorl-foundation.properties.city|Grad
+moorl-foundation.properties.closed|Zatvoreno
+moorl-foundation.properties.cmsPage|CMS stranica
+moorl-foundation.properties.cmsPageId|CMS ID stranice
+moorl-foundation.properties.company|Kompanija
+moorl-foundation.properties.content|Sadržaj
+moorl-foundation.properties.country|Zemlja
+moorl-foundation.properties.countryCode|Šifra zemlje
+moorl-foundation.properties.countryId|Zemlja
+moorl-foundation.properties.createdAt|Stvoren u
+moorl-foundation.properties.customerGroupId|Grupa klijenata
+moorl-foundation.properties.customerNumber|Broj klijenta
+moorl-foundation.properties.date|Datum
+moorl-foundation.properties.department|Odeljenje
+moorl-foundation.properties.description|Opis
+moorl-foundation.properties.distance|Udaljenost
+moorl-foundation.properties.email|E-pošta
+moorl-foundation.properties.enableComments|Omogući komentare
+moorl-foundation.properties.firstName|Prvo ime
+moorl-foundation.properties.from|od
+moorl-foundation.properties.highlight|Markiranje
+moorl-foundation.properties.image|Članak
+moorl-foundation.properties.info|Informacije
+moorl-foundation.properties.inRadiusOf|U radijusu
+moorl-foundation.properties.invisible|Nevidljivo
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|Prezime
+moorl-foundation.properties.location|Položaj
+moorl-foundation.properties.locationLat|Širina
+moorl-foundation.properties.locationLon|Dužina
+moorl-foundation.properties.locked|Zaključano
+moorl-foundation.properties.logo|Logo
+moorl-foundation.properties.marker|Marker
+moorl-foundation.properties.markerId|Marker
+moorl-foundation.properties.markerSettings|Podešavanja markera
+moorl-foundation.properties.markerSettingsExample|Možete da kopirate ovaj primer da biste prilagodili podešavanja prilagođenog markera.
+moorl-foundation.properties.markerSettingsLink|Primer prilagođenog markera uputstva
+moorl-foundation.properties.markerShadow|Senka markera
+moorl-foundation.properties.markerShadowId|Senka markera
+moorl-foundation.properties.media|Mediji
+moorl-foundation.properties.mediaId|ID medija
+moorl-foundation.properties.merchant|Trgovac
+moorl-foundation.properties.merchantUrl|URL trgovac
+moorl-foundation.properties.metaDescription|Meta opis
+moorl-foundation.properties.metaTitle|Meta titula
+moorl-foundation.properties.name|Ime
+moorl-foundation.properties.openingHours|Radno vreme
+moorl-foundation.properties.originId|ID porekla
+moorl-foundation.properties.phoneNumber|Telefon
+moorl-foundation.properties.priority|Prioritet
+moorl-foundation.properties.productManufacturers|ID-ovi proizvođača
+moorl-foundation.properties.products|Proizvodi
+moorl-foundation.properties.radius|Radijus
+moorl-foundation.properties.repeat|Ponovite
+moorl-foundation.properties.salesChannel|Kanal prodaje
+moorl-foundation.properties.salesChannelId|Kanal prodaje
+moorl-foundation.properties.search|Pretraga
+moorl-foundation.properties.shopUrl|URL prodavnice
+moorl-foundation.properties.showFrom|Prikaži iz
+moorl-foundation.properties.showUntil|Prikaži do
+moorl-foundation.properties.slug|Punjenje
+moorl-foundation.properties.sticky|Lepljenje
+moorl-foundation.properties.street|Ulica
+moorl-foundation.properties.streetNumber|Broj
+moorl-foundation.properties.tags|Imena/ID-ovi oznaka
+moorl-foundation.properties.teaser|Teaser
+moorl-foundation.properties.title|Naslov
+moorl-foundation.properties.until|Do
+moorl-foundation.properties.updatedAt|Ažurirano u
+moorl-foundation.properties.vatId|PDV-ID
+moorl-foundation.properties.zipcode|Zipkod
+moorl-foundation.search.headline|"{0} Nema podudaranja za „%searchTerm%” | {1} Jedno podudaranje za „%searchTerm%” | ]1,Inf[%count% podudaranja za „%searchTerm%”"
+moorl-foundation.search.missingConfiguration|Nedostaje konfiguracija za ovu listu!
+moorl-foundation.search.moreButton|Više
+moorl-foundation.search.noListingSlotFound|Ova stranica nema element za listing. Proverite podešavanja liste i izaberite „Automatske stavke“
+moorl-foundation.search.notAvailable|Nije dostupno
+moorl-foundation.search.product|Proizvodi
+moorl-location-map.cookieDescription|Koristimo OpenStreetMap kao provajder pločica kako bismo vam vizuelno pokazali lokaciju naših prodavnica i trgovaca.
+moorl-location-map.cookieHint|Molimo Vas da prihvatite kolačić da biste koristili željenu funkciju.
+moorl-location-map.cookieName|Mape lokacije
+moorl-magazine.articles|Blog članci
+moorl-magazine.author|Autor
+moorl-magazine.authors|Autori
+moorl-magazine.back|Nazad
+moorl-magazine.backToOverview|Nazad na pregled
+moorl-magazine.categories|Kategorije
+moorl-magazine.categoryAll|Sve kategorije
+moorl-magazine.commentArea|Oblast komentara
+moorl-magazine.commentAreaDisabled|Komentari su onemogućeni za ovaj članak
+moorl-magazine.commentError|Proverite da li ste ispravno popunili sva polja
+moorl-magazine.commentReview|Vaš komentar će biti objavljen nakon pregleda.
+moorl-magazine.commentSuccess|Hvala na komentaru!
+moorl-magazine.date|Datum
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|E-pošta
+moorl-magazine.emailPlaceholder|Unesite svoju e-mail adresu
+moorl-magazine.name|Ime
+moorl-magazine.namePlaceholder|Unesite svoje ime
+moorl-magazine.next|Sledeće
+moorl-magazine.page|Strana
+moorl-magazine.pageDescription|Lorem ipsum dolor sedi amet, konsetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Na vero eos et optužnicam et justo duo dolores et ea rebum. Stet clita kasd gubergren, nema morske takimata sanctus est Lorem ipsum dolor sedi amet. Lorem ipsum dolor sedi amet, konsetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Na vero eos et optužnicam et justo duo dolores et ea rebum. Stet clita kasd gubergren, nema morske takimata sanctus est Lorem ipsum dolor sedi amet.
+moorl-magazine.pageTitle|Moj dragi blog
+moorl-magazine.posts|Blog postovi
+moorl-magazine.products|Povezani proizvodi
+moorl-magazine.readMore|Pročitaj više
+moorl-magazine.recentComments|Nedavni komentari
+moorl-magazine.relatedArticles|Povezani blog postovi
+moorl-magazine.search|Pretraga
+moorl-magazine.searchFor|Potražite...
+moorl-magazine.sendComment|Pošaljite svoj komentar
+moorl-magazine.similarArticles|Slični blog postovi
+moorl-magazine.sticky|Pinned
+moorl-magazine.tags|Tagovi
+moorl-magazine.writeComment|Napišite komentar
+moorl-magazine.wroteOn|Pisao je na
+moorl-magazine.yourComment|Vaš komentar
+moorl-magazine.yourCommentPlaceholder|Unesite svoj komentar ovde
+moorl-merchant-finder.allCategories|Sve kategorije
+moorl-merchant-finder.allCountries|Sve države
+moorl-merchant-finder.allManufacturers|Svi proizvođači
+moorl-merchant-finder.allowMerchantCustomerContact|Dozvoljavam izabranom trgovcu da me kontaktira telefonom ili e-poštom.
+moorl-merchant-finder.allResults|-- Izaberite ---
+moorl-merchant-finder.allTags|Svi tagovi
+moorl-merchant-finder.are|su 
+moorl-merchant-finder.available|Dostupno
+moorl-merchant-finder.backToOverview|Nazad na pregled
+moorl-merchant-finder.call|Poziv
+moorl-merchant-finder.cancel|Otkaži
+moorl-merchant-finder.categories|Kategorije
+moorl-merchant-finder.checkAvailability|Proverite dostupnost
+moorl-merchant-finder.chose|Birajte
+moorl-merchant-finder.choseMerchant|Izaberi trgovca
+moorl-merchant-finder.choseMerchantToProceed|Izaberite svog lokalnog prodavca da biste nastavili proveru
+moorl-merchant-finder.close|Zatvori
+moorl-merchant-finder.commentToMerchant|Pošalji komentar trgovac
+moorl-merchant-finder.country|Zemlja
+moorl-merchant-finder.deliveryTime|Vreme isporuke
+moorl-merchant-finder.deliveryTimeUnknown|Nepoznato - Proizvodi će biti traženi po porudžbini
+moorl-merchant-finder.description|Opis
+moorl-merchant-finder.desiredDate|Željeni datum preuzimanja
+moorl-merchant-finder.desiredTime|Željeno vreme preuzimanja
+moorl-merchant-finder.displayOnMap|Prikaz na mapi
+moorl-merchant-finder.distance|Udaljenost
+moorl-merchant-finder.emptyResultMessage|Pronađeni trgovci
+moorl-merchant-finder.findMerchants|Pronađite trgovce
+moorl-merchant-finder.forTheSearch|za potragu 
+moorl-merchant-finder.forTheSearchZipcode|u zipkodu i okruženju na daljinu km 
+moorl-merchant-finder.highlight|Vrh
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|Učitavanje...
+moorl-merchant-finder.manufacturers|Proizvođači
+moorl-merchant-finder.merchant|Trgovac
+moorl-merchant-finder.merchants|Trgovci
+moorl-merchant-finder.merchantUrl|Sajt
+moorl-merchant-finder.more|Više
+moorl-merchant-finder.myLocation|Koristite moju trenutnu lokaciju
+moorl-merchant-finder.mySelection|Moj izbor
+moorl-merchant-finder.noMerchantSelected|Proizvod nije dostupan. Nije izabran trgovac.
+moorl-merchant-finder.none|Ništa
+moorl-merchant-finder.openingHours|Radno vreme
+moorl-merchant-finder.outOfStock|Proizvod nije dostupan. Vaš izabrani trgovac nema ovaj proizvod na zalihama.
+moorl-merchant-finder.phoneNumber|Telefon
+moorl-merchant-finder.pickupDateSet|Vreme preuzimanja je podešeno
+moorl-merchant-finder.productAvailability|Dostupnost proizvoda
+moorl-merchant-finder.productNotAvailable|Proizvod nije dostupan. Za više informacija kontaktirajte podršku prodavnice.
+moorl-merchant-finder.radius|Radijus
+moorl-merchant-finder.resetSelection|Resetovanje izbora
+moorl-merchant-finder.resultsFound|Pronađeni rezultati broja
+moorl-merchant-finder.save|Sačuvaj
+moorl-merchant-finder.search|Pretraga
+moorl-merchant-finder.searchFor|Pretraga
+moorl-merchant-finder.searchLocation|Lokacija pretrage
+moorl-merchant-finder.searchRules.hasLogo|Trgovac sa logotipom
+moorl-merchant-finder.searchRules.hasPriority|Prioritetni trgovac
+moorl-merchant-finder.searchRules.isHighlighted|Premium trgovac
+moorl-merchant-finder.searchRules.isNotHighlighted|Normalni trgovac
+moorl-merchant-finder.selectedMerchant|Izabrani trgovac
+moorl-merchant-finder.sendMail|Pošta
+moorl-merchant-finder.shop|Prodavnica
+moorl-merchant-finder.shopUrl|Prodavnica poseta
+moorl-merchant-finder.stockInfo|Informacije o zalihama
+moorl-merchant-finder.tags|Tagovi
+moorl-merchant-finder.thereAre|Postoje 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|zipkod, grad
+moorl-merchant-finder.zipcodeCityEnter|Unesite zipkod ili grad i pritisnite Enter
+nimbits-pricerequests.cart.cartRequestButton|Zatražite ponudu
+nimbits-pricerequests.cart.dontAddByProductNumber|Ovaj proizvod se ne može dodati u korpu.
+nimbits-pricerequests.detail.available|Dostupno
+nimbits-pricerequests.detail.button.openrequestform|Zatražite ponudu
+nimbits-pricerequests.detail.restock|"{1} Dostupno za 1 dan|]1,Inf[dostupno za %restockTime% dana"
+nimbits-pricerequests.detail.text.priceonrequest|Cena na zahtev
+nimbits-pricerequests.fail.alert|Zahtev nije poslat - došlo je do greške. Pokušajte ponovo.
+nimbits-pricerequests.finish.alert|Zahtev je uspešno poslat
+nimbits-pricerequests.finish.buttonBack|Nazad u prodavnicu
+nimbits-pricerequests.listing.button.openrequestform|Zatražite ponudu
+nimbits-pricerequests.listing.text.priceonrequest|Cena na zahtev
+nimbits-pricerequests.mail.address|Adresa
+nimbits-pricerequests.mail.amount|Količina
+nimbits-pricerequests.mail.article|Članak
+nimbits-pricerequests.mail.city|Grad
+nimbits-pricerequests.mail.comment|Komentari kupaca
+nimbits-pricerequests.mail.company|Kompanija
+nimbits-pricerequests.mail.country|Zemlja
+nimbits-pricerequests.mail.customersendername|Cena na zahtev
+nimbits-pricerequests.mail.housenumber|Broj kuće
+nimbits-pricerequests.mail.mail|Pošta
+nimbits-pricerequests.mail.name|Ime
+nimbits-pricerequests.mail.ordernumber|Broj porudžbine
+nimbits-pricerequests.mail.price|Cena
+nimbits-pricerequests.mail.pricegross|Incl. Porez
+nimbits-pricerequests.mail.pricegrosssum|Incl. Poreski zbir
+nimbits-pricerequests.mail.pricenet|Ekskluzivno. Porez
+nimbits-pricerequests.mail.pricenetsum|Ekskluzivno. Poreski zbir
+nimbits-pricerequests.mail.requestfirst|Zahtev za cenu od
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Cena na zahtev
+nimbits-pricerequests.mail.street|Ulica
+nimbits-pricerequests.mail.subject|Cena na zahtev
+nimbits-pricerequests.mail.subjectcart|Zahtev za korpu
+nimbits-pricerequests.mail.subjectshopowner|Cena na zahtev
+nimbits-pricerequests.mail.subjectshopownercart|Zahtev za korpu
+nimbits-pricerequests.mail.zipcode|Zipkod
+nimbits-pricerequests.popup.city|Grad
+nimbits-pricerequests.popup.closebutton|Zatvori
+nimbits-pricerequests.popup.company|Kompanija
+nimbits-pricerequests.popup.country|Zemlja
+nimbits-pricerequests.popup.dataprivacytext|"Pročitao/la sam, razumeo/la i saglasan/na sam sa <a href=""/privatnošću"" target=""blank""> Politika privatnosti </a>."
+nimbits-pricerequests.popup.desiredprice|Željena cena u 
+nimbits-pricerequests.popup.entervalidcity|Molimo vas da unesete važeći grad.
+nimbits-pricerequests.popup.entervalidcountry|Unesite važeću zemlju.
+nimbits-pricerequests.popup.entervalidhousenumber|Unesite važeći kućni broj.
+nimbits-pricerequests.popup.entervalidmail|Unesite važeću e-adresu.
+nimbits-pricerequests.popup.entervalidstreet|Molimo vas da unesete važeću ulicu.
+nimbits-pricerequests.popup.entervalidzipcode|Unesite važeći zip kod.
+nimbits-pricerequests.popup.genderm|G.
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Gospođa
+nimbits-pricerequests.popup.housenumber|Broj kuće
+nimbits-pricerequests.popup.mail|Poštanska adresa
+nimbits-pricerequests.popup.name|Ime
+nimbits-pricerequests.popup.optional|(opciono)
+nimbits-pricerequests.popup.phonenumber|Telefon
+nimbits-pricerequests.popup.popupTitle|Zatražite ponudu
+nimbits-pricerequests.popup.product|Proizvod(i) u ovom zahtevu:
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Zahtev
+nimbits-pricerequests.popup.requestbutton|Zahtev
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|Polja označena sa * su obavezna.
+nimbits-pricerequests.popup.salutation|Pozdrav
+nimbits-pricerequests.popup.street|Ulica
+nimbits-pricerequests.popup.surname|Ime
+nimbits-pricerequests.popup.text|Zatražite ponudu za odabrane proizvode
+nimbits-pricerequests.popup.zipcode|Zipkod
+nimbits-pricerequests.search.text.priceonrequest|Cena na zahtev
+nimbits-pricerequests.toasts.error|Zahtev nije poslat - došlo je do greške. Pokušajte ponovo.
+nimbits-pricerequests.toasts.success|Zahtev je uspešno poslat
+priceRequest.newsletterText|Ovim pristajem da me TENTE takođe može obavestiti putem e-pošte i telefona o proizvodima i događajima (npr. izgledima sajma) kompanije TENTE.
+priceRequest.sendRequestText|Zahtev će biti prosleđen...
+priceRequest.waitText|Molim vas sačekajte...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Izaberite opciju...
+theme.compilation.async.success|Kompilacija za kanal prodaje %salesChannelName% završena
+vdct-simple-events.events.detail.to-event|Do događaja
+zeobv-store-switcher.switchStoreLabel|Prebacivanje prodavnice

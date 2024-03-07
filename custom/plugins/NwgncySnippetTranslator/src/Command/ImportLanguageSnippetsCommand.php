@@ -43,15 +43,8 @@ class ImportLanguageSnippetsCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new ShopwareStyle($input, $output);
-        // $fsObject = new Filesystem();
 
-        // $filePath = '/var/www/html/tentecom/public/importTranslations.html';
-        // $fsObject->touch($filePath);
-        // $fsObject->chmod($filePath, 0777);
-
-        // $fsObject->appendToFile($filePath, @\Kint::dump($files));
         $context = Context::createDefaultContext();
-
 
         $files = $this->filesAndFolders->getFilesFromPublicFolder('snippets');
 
@@ -63,9 +56,8 @@ class ImportLanguageSnippetsCommand extends Command
 
         $fileSystemPublic = $writerHelper->getShopwareFileSystemPublic();
 
-        $files = $fileSystemPublic->listContents('snippets', true);
+        $files = $fileSystemPublic->listContents('bundles/nwgncysnippettranslator', true);
         $filesArr = $files->toArray();
-
         
 
         $currentSnippetList = $translationHelper->getSnippetsForImport($context);
@@ -76,14 +68,12 @@ class ImportLanguageSnippetsCommand extends Command
         if (!empty($filesArr)) {
 
             $foundFiles = (string)count($filesArr);
-            // $output->writeln('Found files: ' . $foundFiles);
-            // $io->success('Sales channel has been created successfully.');
-            // $io->error('Something went wrong.');
+
             $io->text('Found files: ' . $foundFiles);
 
             foreach ($filesArr as $file) {
                 if (!$file->isDir()) {
-
+                    
                     $fileStream = $fileSystemPublic->readStream($file->path());
                     $line = 0;
                     while ($data = fgetcsv($fileStream, null, '|')) {
@@ -93,7 +83,7 @@ class ImportLanguageSnippetsCommand extends Command
                             $languagePackName = $data[0];
 
                             if (isset($languagesNameId[$languagePackName])) {
-                                // $io->text('Found Packagename: ' . $languagePackName);
+                                $io->text('Found Packagename: ' . $languagePackName);
                             } else {
                                 $io->error('No language pack found for: ' . $languagePackName);
                                 exit;

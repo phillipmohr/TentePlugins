@@ -1,0 +1,564 @@
+LanguagePack ro-RO|Traducere
+account.doubleOptinAccountAlert|Contul dvs. de client nu a fost încă activat. Am trimis un e-mail de confirmare care conține un link de activare. Vă rugăm să vă verificați căsuța de e-mail și să faceți clic pe link pentru a finaliza înscrierea!
+account.downloadFileButton|Descărcare
+account.downloadItemColumnDate|Data
+account.downloadItemColumnTitle|Fișier
+account.faxLabel|Fax
+account.faxPlaceholder|Introduceți faxul
+account.homepageLabel|Pagina de pornire
+account.homepagePlaceholder|Introduceți URL-ul paginii de pornire
+account.passwordNotIdentical|Parolele pe care le-ați introdus nu corespund.
+account.personalTypePlaceholder|Selectați...
+account.profileCurrentMailPlaceholder|Introduceți adresa de e-mail...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Faceți clic aici</a> pentru a șterge toate datele dvs. cu caracter personal."
+account.profilePasswordCreateNewPlaceholder|Introduceți parola nouă...
+account.profilePasswordCurrentPlaceholder|Introduceți parola actuală...
+acrisFilter.buttonFiltersHide|Afișare mai puține filtre
+acrisFilter.buttonFilterShowHideLabel|Afișează mai multe sau mai puține filtre
+acrisFilter.buttonFiltersShow|Afișează mai multe filtre
+acrisFilter.buttonHeaderSearchAllCategories|Toate categoriile
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Disponibil imediat
+acrisFilter.filterCategoriesDisplayName|Categorii
+acrisFilter.filterRangeActiveMaxLabel|Proprietate %displayName% la
+acrisFilter.filterRangeActiveMinLabel|Proprietate %displayName% de la
+acrisFilter.filterRangeSliderFrom|din
+acrisFilter.filterRangeSliderTo|până la
+acrisFilter.filterSearchPlaceholder|Căutare...
+card.card-image|Imagine cu %name%
+card.linkTitle|Deschide %url% în filă nouă
+cbaxLexicon.page.ajax.linkDescription|Către lexicon
+cbaxLexicon.page.banner.alt|Banner
+cbaxLexicon.page.boxKeyword.moreRead|Citiți mai multe
+cbaxLexicon.page.breadcrumb.name|Lexicon
+cbaxLexicon.page.content.headline|Cuprins
+cbaxLexicon.page.content.metaDescription|Conținut descriere meta Lexicon
+cbaxLexicon.page.content.metaKeywords|Conținut cuvinte cheie Lexicon Meta
+cbaxLexicon.page.content.metaTitle|Cuprins
+cbaxLexicon.page.filter.button|Navigarea în lexicon
+cbaxLexicon.page.filter.headline|Navigarea în lexicon
+cbaxLexicon.page.index.metaDescription|Indice descriere meta Lexicon
+cbaxLexicon.page.index.metaKeywords|Index cuvinte cheie Lexicon Meta
+cbaxLexicon.page.index.metaTitle|Lexicon
+cbaxLexicon.page.listing.entryHeadline|Postări în această categorie de enciclopedie
+cbaxLexicon.page.listing.metaDescription09|Listă descriere meta Lexicon 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Lista Lexicon Meta Descriere A
+cbaxLexicon.page.listing.metaDescriptionB|Lista de descriere meta Lexicon B
+cbaxLexicon.page.listing.metaDescriptionC|Listă descriere meta Lexicon C
+cbaxLexicon.page.listing.metaDescriptionD|Lista de descriere meta Lexicon D
+cbaxLexicon.page.listing.metaDescriptionE|Lista de descriere meta Lexicon E
+cbaxLexicon.page.listing.metaDescriptionF|Lista Lexicon Meta Descriere F
+cbaxLexicon.page.listing.metaDescriptionG|Lista de descriere meta Lexicon G
+cbaxLexicon.page.listing.metaDescriptionH|Listă descriere meta Lexicon H
+cbaxLexicon.page.listing.metaDescriptionI|Lista Lexicon Meta Descriere I
+cbaxLexicon.page.listing.metaDescriptionJ|Listă descriere meta Lexicon J
+cbaxLexicon.page.listing.metaDescriptionK|Listă descriere meta Lexicon K
+cbaxLexicon.page.listing.metaDescriptionL|Listă descriere meta Lexicon L
+cbaxLexicon.page.listing.metaDescriptionM|Lista Lexicon Meta Descriere M
+cbaxLexicon.page.listing.metaDescriptionN|Listă descriere meta Lexicon N
+cbaxLexicon.page.listing.metaDescriptionO|Listare descriere meta Lexicon O
+cbaxLexicon.page.listing.metaDescriptionP|Listă descriere meta Lexicon P
+cbaxLexicon.page.listing.metaDescriptionQ|Listare descriere meta Lexicon Q
+cbaxLexicon.page.listing.metaDescriptionR|Lista Lexicon Meta Descriere R
+cbaxLexicon.page.listing.metaDescriptionS|Lista de descriere meta Lexicon S
+cbaxLexicon.page.listing.metaDescriptionT|Listare T descriere meta Lexicon
+cbaxLexicon.page.listing.metaDescriptionU|Listare descriere meta Lexicon U
+cbaxLexicon.page.listing.metaDescriptionV|Listă descriere meta Lexicon V
+cbaxLexicon.page.listing.metaDescriptionW|Listă descriere meta Lexicon W
+cbaxLexicon.page.listing.metaDescriptionX|Lista Lexicon Meta Descriere X
+cbaxLexicon.page.listing.metaDescriptionY|Listă descriere meta Lexicon Y
+cbaxLexicon.page.listing.metaDescriptionZ|Lista Lexicon Meta Descriere Z
+cbaxLexicon.page.listing.metaKeywords09|Lista cuvintelor cheie Lexicon Meta 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Cuvinte cheie Lexicon Meta Lista A
+cbaxLexicon.page.listing.metaKeywordsB|Lista cuvintelor cheie Lexicon Meta B
+cbaxLexicon.page.listing.metaKeywordsC|Lista cuvintelor cheie Lexicon Meta C
+cbaxLexicon.page.listing.metaKeywordsD|Lista cuvintelor cheie Lexicon Meta D
+cbaxLexicon.page.listing.metaKeywordsE|Lista cuvintelor cheie Lexicon Meta E
+cbaxLexicon.page.listing.metaKeywordsF|Lista cuvintelor cheie Lexicon Meta F
+cbaxLexicon.page.listing.metaKeywordsG|Lista cuvintelor cheie Lexicon Meta G
+cbaxLexicon.page.listing.metaKeywordsH|Lista cuvintelor cheie Lexicon Meta H
+cbaxLexicon.page.listing.metaKeywordsI|Lista cuvintelor cheie Lexicon Meta I
+cbaxLexicon.page.listing.metaKeywordsJ|Lista cuvintelor cheie Lexicon Meta J
+cbaxLexicon.page.listing.metaKeywordsK|Lista cuvintelor cheie Lexicon Meta K
+cbaxLexicon.page.listing.metaKeywordsL|Lista cuvintelor cheie Lexicon Meta L
+cbaxLexicon.page.listing.metaKeywordsM|Lista cuvintelor cheie Lexicon Meta
+cbaxLexicon.page.listing.metaKeywordsN|Lista cuvintelor cheie Lexicon Meta N
+cbaxLexicon.page.listing.metaKeywordsO|Lista cuvintelor cheie Lexicon Meta O
+cbaxLexicon.page.listing.metaKeywordsP|Lista cuvintelor cheie Lexicon Meta P
+cbaxLexicon.page.listing.metaKeywordsQ|Lista cuvintelor cheie Lexicon Meta Q
+cbaxLexicon.page.listing.metaKeywordsR|Lista cuvintelor cheie Lexicon Meta R
+cbaxLexicon.page.listing.metaKeywordsS|Lista cuvintelor cheie Lexicon Meta S
+cbaxLexicon.page.listing.metaKeywordsT|Lista cuvintelor cheie Lexicon Meta T
+cbaxLexicon.page.listing.metaKeywordsU|Lista cuvintelor cheie Lexicon Meta U
+cbaxLexicon.page.listing.metaKeywordsV|Lista cuvintelor cheie Lexicon Meta V
+cbaxLexicon.page.listing.metaKeywordsW|Lista cuvintelor cheie Lexicon Meta W
+cbaxLexicon.page.listing.metaKeywordsX|Lista cuvintelor cheie Lexicon Meta X
+cbaxLexicon.page.listing.metaKeywordsY|Lista cuvintelor cheie Lexicon Meta Y
+cbaxLexicon.page.listing.metaKeywordsZ|Lista cuvintelor cheie Lexicon Meta Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|Eu
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Î
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Cuprins
+cbaxLexicon.page.navigation.linkIndex|Pagina de pornire
+cbaxLexicon.page.pagination.toOverview|Către prezentare generală
+cbaxLexicon.page.sidebar.title|Lexicon:
+checkout.confirmRevocationReminder|Ați declarat deja că renunțați la dreptul de retragere.
+checkout.confirmRevocationTerms|Doresc acces imediat la conținutul digital și confirm că, prin urmare, renunț la dreptul meu de anulare.
+checkout.confirmTermsReminderText|"Ați acceptat deja <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""general terms and conditions"">termenii și condițiile generale</a>."
+checkout.confirmTermsText|"Am citit și acceptat <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""general terms and conditions"">termenii și condițiile generale</a>."
+checkout.lineItemUnitPriceDescriptor|unitate
+checkout.merchant-not-selected|Te rugăm să alegi comerciantul local pentru a continua efectuarea plății.
+checkout.or|sau
+CmsElements.callToAction.elementError|Acest Element nu este disponibil pentru bara laterală. Vă rugăm să selectați o altă <p class='h5 my-2'>Apel la acțiune</p> pentru bara dvs. laterală.
+CmsElements.counter.days|ZILE
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|Nu ați încărcat un videoclip valid. Verificați setările elementului.
+CmsElements.htmlVideo.hint.headline|Format greșit/Niciun videoclip
+CmsElements.placeholder.label|Înlocuire element
+CmsElements.shopTheLook.addAllProducts|Adăugare produse în coșul de cumpărături
+CmsElements.shopTheLook.totalDiscount|Economii:
+component.cms.imageGallery.sliderDotLabel|Afișare imagine %index% din %total%
+component.cms.vimeo.privacyNoticeText|"Vizionând videoclipul, sunteți de acord că datele dvs. vor fi transferate către %platform% și că ați citit <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Politica de confidențialitate"">Politica de confidențialitate</a>."
+component.product.quantitySelect.decrease|Scădere cantitate
+component.product.quantitySelect.increase|Mărire cantitate
+component.product.quantitySelect.label|Cantitate
+contact.newsletterSubscribe|Prin prezenta sunt de acord ca TENTE să mă informeze și prin e-mail și telefon cu privire la produsele și evenimentele (de exemplu, aparențele târgurilor comerciale) ale TENTE.
+contact.privacyNoticeText|"Selectând „Continuare”, confirmați că ați citit și sunteți de acord cu <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Informații privind protecția datelor"">informații privind protecția datelor</a>."
+cookie.groupComfortFeaturesYoutubeVideo|Videoclip YouTube
+cookie.messageText|"Acest site web utilizează module cookie pentru a asigura cea mai bună experiență posibilă. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Mai multe informații"">Mai multe informații...</a>"
+detail.acrisProductDownloadBtnText|Descărcare
+detail.acrisProductDownloadNoPreview|Nicio previzualizare
+detail.acrisProductDownloadTabLabel|Descărcări
+detail.acrisProductDownloadTitle|Descărcări
+detail.acrisProductLinkTabLabel|Linkuri
+detail.acrisProductLinkTitle|Linkuri
+detail.buyOnline|Cumpără online
+detail.cadService.downloadBtn|Descărcare
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Tip fișier
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Puteți descărca datele de construcție pentru acest produs în alt format
+detail.cadService.login|"<a href=""%url%"">Conectați-vă</a> pentru a vedea fișierele CAD"
+detail.cadService.title|Serviciu CAD
+detail.contactText|"Nu ați găsit încă produsul potrivit, aveți cerințe speciale sau sunteți interesat de soluții individuale? <a href=""%url%"" title=""Kontaktformular"">Contactați-ne</a>."
+detail.ean|EAN
+detail.orderNumber|Număr produs
+detail.orText|Sau
+detail.performance.atrittion|Înscriere
+detail.performance.movement|Zgomot de mișcare
+detail.performance.resistance|Rezistență la coroziune
+detail.performance.roll|Performanța rolei
+detail.priceOnRequestText|per bucată plus TVA<br />În 24 de ore, gata pentru expediere
+detail.priceOnRequestTitle|Preț la cerere
+detail.properties.fitting|Ajustarea datelor tehnice
+detail.properties.housing|Carcasă pentru date tehnice
+detail.properties.label.downloads|Descărcări
+detail.properties.label.feature|Caracteristicile produsului
+detail.properties.label.fitting|Racord
+detail.properties.label.housing|Carcasă
+detail.properties.label.performance|Performanță
+detail.properties.label.wheel|Roată
+detail.properties.performance|Performanță
+detail.properties.wheel|Roată date tehnice
+detail.qte|Cantitate
+detail.reviewFormContentPlaceholder|Introduceți recenzia dvs...
+detail.sendQuoteRequest|Trimitere solicitare cotație
+detail.tabs.downloads|Descărcări
+detail.tabs.features|Caracteristici
+detail.tabs.performance|Performanță
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|Cantitatea (%cantitate%) este incorectă.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|"Comanda cu numărul de comandă ""%orderNumber%"" a fost deja plătită și nu poate fi editată ulterior."
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Această comandă nu a putut fi găsită.
+error.merchant-not-selected|Te rugăm să alegi comerciantul local pentru a continua efectuarea plății.
+error.VIOLATION::ZIP_CODE_INVALID|Codul poștal pe care l-ați introdus nu are formatul corect.
+footer.excludeVatText|"* Toate prețurile cu excepția TVA plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">costuri de expediere</a> și posibile taxe de livrare, dacă nu se specifică altfel."
+footer.includeVatText|"* Toate prețurile, inclusiv TVA plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">costuri de expediere</a> și posibile taxe de livrare, dacă nu se specifică altfel."
+footer.serviceContactText|"Sau prin intermediul <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Contact form"">formular de contact</a>."
+footer.socialMediaHeadline|Social
+general.contactUs|Contactați-ne
+general.contactUsLink|/contact
+general.loginRegister|Conectare / Înregistrare
+general.privacyNoticeText|"Prin abonarea la buletinul informativ, acceptați <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Privacy policy"">politica de confidențialitate</a> precum și <a data-ajax-modal=""true"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""terms and conditions"">termenii și condițiile</a>."
+global.default.activate|Activare
+global.default.cancel|Anulare
+global.default.confirm|Confirmare
+global.default.deactivate|Dezactivare
+global.default.delete|Ștergere
+global.default.edit|Editare
+global.default.noteRequiredFields|Câmpurile marcate cu asteriscuri (*) sunt obligatorii.
+global.default.save|Salvare
+listing.downloadText|Descărcare
+moorl-creator.aboutTheCreator|Despre creator
+moorl-creator.aboutTheCreators|Despre creatori
+moorl-creator.creator|Creator
+moorl-creator.creators|Creatori
+moorl-creator.donate|Donați
+moorl-creator.follow|Urmăriți
+moorl-creator.link|Pagina de pornire
+moorl-creator.productsOf|Produse din
+moorl-creator.readMore|Citiți mai multe...
+moorl-foundation.buttons.acceptCookie|Acceptare modul cookie
+moorl-foundation.buttons.addMerchantButtonText|Comerciant nou
+moorl-foundation.buttons.administrationButtonText|Administrare
+moorl-foundation.buttons.cancelButtonText|Anulare
+moorl-foundation.buttons.exportButtonText|Export CSV
+moorl-foundation.buttons.exportButtonTitle|Descărcați CSV-ul dvs.
+moorl-foundation.buttons.getLocButtonText|Obține poziții de la OpenStreetMap
+moorl-foundation.buttons.importButtonText|Import CSV
+moorl-foundation.buttons.importButtonTitle|Încărcați CSV-ul
+moorl-foundation.buttons.mediaFolder|Salvare imagini în acest folder
+moorl-foundation.buttons.newButtonText|Nou
+moorl-foundation.buttons.openMapButtonText|Deschidere hartă
+moorl-foundation.buttons.openNewWindowButtonText|Deschidere într-o fereastră nouă
+moorl-foundation.buttons.overwriteText|Suprascrieți rândurile de date existente (trebuie setat ID-ul de origine).
+moorl-foundation.buttons.placeIdLink|Planificare rută
+moorl-foundation.buttons.refreshButtonText|Reîncărcare
+moorl-foundation.buttons.saveButtonText|Salvare
+moorl-foundation.buttons.selectLocButtonText|Alegeți
+moorl-foundation.buttons.startImportButtonText|Începere import
+moorl-foundation.card.address|Adresă
+moorl-foundation.card.company|Companie
+moorl-foundation.card.contact|Contact
+moorl-foundation.card.legend|Legendă
+moorl-foundation.card.openingHours|Program de lucru
+moorl-foundation.card.person|Persoană de contact
+moorl-foundation.customerUpload.checkToDelete|Bifați pentru a șterge
+moorl-foundation.customerUpload.dictDefaultMessage|Trageți fișierele aici pentru a încărca
+moorl-foundation.customerUpload.useAsCover|A se utiliza ca capac
+moorl-foundation.days.closed|Închis
+moorl-foundation.days.friday|Vineri
+moorl-foundation.days.monday|Luni
+moorl-foundation.days.saturday|Sâmbătă
+moorl-foundation.days.sunday|Duminică
+moorl-foundation.days.thursday|Joi
+moorl-foundation.days.today|Astăzi
+moorl-foundation.days.tuesday|Marți
+moorl-foundation.days.wednesday|Miercuri
+moorl-foundation.general.selectedItems|Articole selectate
+moorl-foundation.general.share|Partajare
+moorl-foundation.general.subTotal|Subtotal
+moorl-foundation.general.toc|Cuprins
+moorl-foundation.label.accountCard|Cont
+moorl-foundation.label.addressCard|Adresă
+moorl-foundation.label.generalCard|General
+moorl-foundation.label.locationCard|Locație
+moorl-foundation.label.markerCard|Marker
+moorl-foundation.label.metaCard|Meta
+moorl-foundation.label.relationsCard|Relații și filtre
+moorl-foundation.label.visibilityCard|Vizibilitate
+moorl-foundation.listing.filter.categories|Categorii
+moorl-foundation.listing.filter.country|Țară
+moorl-foundation.listing.filter.distance|Distanță
+moorl-foundation.listing.filter.firstChar|Indice
+moorl-foundation.listing.filter.inRadiusOf|în raza de
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|IM
+moorl-foundation.listing.filter.myLocation|Folosiți locația mea
+moorl-foundation.listing.filter.navigation|Categorii
+moorl-foundation.listing.filter.radius|Căutare cod poștal
+moorl-foundation.listing.filter.search|Text căutare
+moorl-foundation.listing.filter.tags|Etichete
+moorl-foundation.listing.filter.zipcodeCity|Cod poștal/Oraș
+moorl-foundation.properties.active|Activ
+moorl-foundation.properties.additionalAddressLine1|Rând 1 adresă
+moorl-foundation.properties.additionalAddressLine2|Rând 2 adresă
+moorl-foundation.properties.articles|Articole
+moorl-foundation.properties.author|Autor
+moorl-foundation.properties.categories|Categorii
+moorl-foundation.properties.city|Oraș
+moorl-foundation.properties.closed|Închis
+moorl-foundation.properties.cmsPage|Pagina CMS
+moorl-foundation.properties.cmsPageId|ID pagină CMS
+moorl-foundation.properties.company|Companie
+moorl-foundation.properties.content|Conținut
+moorl-foundation.properties.country|Țară
+moorl-foundation.properties.countryCode|Cod țară
+moorl-foundation.properties.countryId|Țară
+moorl-foundation.properties.createdAt|Creat la
+moorl-foundation.properties.customerGroupId|Grup de clienți
+moorl-foundation.properties.customerNumber|Număr client
+moorl-foundation.properties.date|Data
+moorl-foundation.properties.department|Departament
+moorl-foundation.properties.description|Descriere
+moorl-foundation.properties.distance|Distanță
+moorl-foundation.properties.email|E-mail
+moorl-foundation.properties.enableComments|Activare comentarii
+moorl-foundation.properties.firstName|Prenume
+moorl-foundation.properties.from|De la
+moorl-foundation.properties.highlight|Evidențiere
+moorl-foundation.properties.image|Articol
+moorl-foundation.properties.info|Informații
+moorl-foundation.properties.inRadiusOf|în raza de
+moorl-foundation.properties.invisible|Invizibil
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|Nume
+moorl-foundation.properties.location|Poziție
+moorl-foundation.properties.locationLat|Latitudine
+moorl-foundation.properties.locationLon|Longitudine
+moorl-foundation.properties.locked|Blocat
+moorl-foundation.properties.logo|Siglă
+moorl-foundation.properties.marker|Marker
+moorl-foundation.properties.markerId|Marker
+moorl-foundation.properties.markerSettings|Setări marcaj
+moorl-foundation.properties.markerSettingsExample|Puteți copia acest exemplu pentru a ajusta setările personalizate ale markerului.
+moorl-foundation.properties.markerSettingsLink|Exemplu de marker personalizat broșură
+moorl-foundation.properties.markerShadow|Umbră marker
+moorl-foundation.properties.markerShadowId|Umbră marker
+moorl-foundation.properties.media|Medii de tipărire
+moorl-foundation.properties.mediaId|ID media
+moorl-foundation.properties.merchant|Comerciant
+moorl-foundation.properties.merchantUrl|URL comerciant
+moorl-foundation.properties.metaDescription|Descriere meta
+moorl-foundation.properties.metaTitle|Titlu meta
+moorl-foundation.properties.name|Nume
+moorl-foundation.properties.openingHours|Program de lucru
+moorl-foundation.properties.originId|ID origine
+moorl-foundation.properties.phoneNumber|Telefon
+moorl-foundation.properties.priority|Prioritate
+moorl-foundation.properties.productManufacturers|ID-uri producător
+moorl-foundation.properties.products|Produse
+moorl-foundation.properties.radius|Rază
+moorl-foundation.properties.repeat|Repetare
+moorl-foundation.properties.salesChannel|Canal de vânzări
+moorl-foundation.properties.salesChannelId|Canal de vânzări
+moorl-foundation.properties.search|Căutare
+moorl-foundation.properties.shopUrl|URL magazin
+moorl-foundation.properties.showFrom|Afișare din
+moorl-foundation.properties.showUntil|Afișare până la
+moorl-foundation.properties.slug|Cârlig
+moorl-foundation.properties.sticky|Lipicios
+moorl-foundation.properties.street|Stradă
+moorl-foundation.properties.streetNumber|Număr
+moorl-foundation.properties.tags|Nume/ID-uri etichete
+moorl-foundation.properties.teaser|Teaser
+moorl-foundation.properties.title|Titlu
+moorl-foundation.properties.until|Până la
+moorl-foundation.properties.updatedAt|Actualizat la
+moorl-foundation.properties.vatId|ID-TVA
+moorl-foundation.properties.zipcode|Cod poștal
+moorl-foundation.search.headline|"{0} Nu există potriviri pentru ""%searchTerm%"" | {1} O potrivire pentru ""%searchTerm%"" | ]1,Inf[ %count% potriviri pentru ""%searchTerm%"""
+moorl-foundation.search.missingConfiguration|Lipsește configurația pentru această listă!
+moorl-foundation.search.moreButton|Mai multe
+moorl-foundation.search.noListingSlotFound|Această pagină nu are un element de listare. Verificați setările de listare și alegeți „Articole automate”
+moorl-foundation.search.notAvailable|Nu este disponibil
+moorl-foundation.search.product|Produse
+moorl-location-map.cookieDescription|Utilizăm OpenStreetMap ca furnizor de plăci de control pentru a vă arăta vizual locația magazinelor și comercianților noștri.
+moorl-location-map.cookieHint|Vă rugăm să acceptați modulul cookie pentru a utiliza funcția dorită.
+moorl-location-map.cookieName|Hărți de locații
+moorl-magazine.articles|Articole de blog
+moorl-magazine.author|Autor
+moorl-magazine.authors|Autori
+moorl-magazine.back|Înapoi
+moorl-magazine.backToOverview|Înapoi la prezentarea generală
+moorl-magazine.categories|Categorii
+moorl-magazine.categoryAll|Toate categoriile
+moorl-magazine.commentArea|Zona de comentarii
+moorl-magazine.commentAreaDisabled|Comentariile sunt dezactivate pentru acest articol
+moorl-magazine.commentError|Asigurați-vă că ați completat corect toate câmpurile
+moorl-magazine.commentReview|Comentariul dvs. va fi publicat după revizuire.
+moorl-magazine.commentSuccess|Vă mulțumim pentru comentariu!
+moorl-magazine.date|Data
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|E-mail
+moorl-magazine.emailPlaceholder|Introduceți adresa dvs. de e-mail
+moorl-magazine.name|Nume
+moorl-magazine.namePlaceholder|Introduceți-vă numele
+moorl-magazine.next|Următorul
+moorl-magazine.page|Pagină
+moorl-magazine.pageDescription|Lorem ipsum dolor sit amet, sadipscing consetetur elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. La vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, fără takimata sanctus est Lorem ipsum dolor, amet. Lorem ipsum dolor sit amet, sadipscing consetetur elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. La vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, fără takimata sanctus est Lorem ipsum dolor, amet.
+moorl-magazine.pageTitle|Blogul meu grațios
+moorl-magazine.posts|Postări pe blog
+moorl-magazine.products|Produse conexe
+moorl-magazine.readMore|Citiți mai multe
+moorl-magazine.recentComments|Comentarii recente
+moorl-magazine.relatedArticles|Postări de blog asociate
+moorl-magazine.search|Căutare
+moorl-magazine.searchFor|Căutare...
+moorl-magazine.sendComment|Trimiteți comentariul dvs.
+moorl-magazine.similarArticles|Postări similare pe blog
+moorl-magazine.sticky|Fixat
+moorl-magazine.tags|Etichete
+moorl-magazine.writeComment|Scrieți un comentariu
+moorl-magazine.wroteOn|scris pe
+moorl-magazine.yourComment|Comentariul dvs.
+moorl-magazine.yourCommentPlaceholder|Introduceți comentariul dvs. aici
+moorl-merchant-finder.allCategories|Toate categoriile
+moorl-merchant-finder.allCountries|Toate țările
+moorl-merchant-finder.allManufacturers|Toți producătorii
+moorl-merchant-finder.allowMerchantCustomerContact|Permit comerciantului selectat să mă contacteze telefonic sau prin e-mail.
+moorl-merchant-finder.allResults|-- Selectați --
+moorl-merchant-finder.allTags|Toate etichetele
+moorl-merchant-finder.are|sunt 
+moorl-merchant-finder.available|Disponibil
+moorl-merchant-finder.backToOverview|Înapoi la prezentarea generală
+moorl-merchant-finder.call|Apel
+moorl-merchant-finder.cancel|Anulare
+moorl-merchant-finder.categories|Categorii
+moorl-merchant-finder.checkAvailability|Verificați disponibilitatea
+moorl-merchant-finder.chose|Alegeți
+moorl-merchant-finder.choseMerchant|Alegeți un comerciant
+moorl-merchant-finder.choseMerchantToProceed|Te rugăm să alegi comerciantul local pentru a continua efectuarea plății
+moorl-merchant-finder.close|Închidere
+moorl-merchant-finder.commentToMerchant|Trimite un comentariu comerciantului
+moorl-merchant-finder.country|Țară
+moorl-merchant-finder.deliveryTime|Timp de livrare
+moorl-merchant-finder.deliveryTimeUnknown|Necunoscut - Produsele vor fi solicitate la comandă
+moorl-merchant-finder.description|Descriere
+moorl-merchant-finder.desiredDate|Data de preluare dorită
+moorl-merchant-finder.desiredTime|Ora de preluare dorită
+moorl-merchant-finder.displayOnMap|Afișare pe hartă
+moorl-merchant-finder.distance|Distanță
+moorl-merchant-finder.emptyResultMessage|Nu s-au găsit comercianți
+moorl-merchant-finder.findMerchants|Găsește comercianți
+moorl-merchant-finder.forTheSearch|pentru căutare 
+moorl-merchant-finder.forTheSearchZipcode|în cod poștal și împrejurimi de km distanță 
+moorl-merchant-finder.highlight|Vârf
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|Se încarcă...
+moorl-merchant-finder.manufacturers|Producători
+moorl-merchant-finder.merchant|Comerciant
+moorl-merchant-finder.merchants|Comercianți
+moorl-merchant-finder.merchantUrl|Site web
+moorl-merchant-finder.more|Mai multe
+moorl-merchant-finder.myLocation|Utilizați locația mea curentă
+moorl-merchant-finder.mySelection|Selecția mea
+moorl-merchant-finder.noMerchantSelected|Produsul nu este disponibil. Niciun comerciant selectat.
+moorl-merchant-finder.none|niciunul
+moorl-merchant-finder.openingHours|Program de lucru
+moorl-merchant-finder.outOfStock|Produsul nu este disponibil. Comerciantul selectat nu are acest produs în stoc.
+moorl-merchant-finder.phoneNumber|Telefon
+moorl-merchant-finder.pickupDateSet|Ora de preluare a fost setată
+moorl-merchant-finder.productAvailability|Disponibilitatea produselor
+moorl-merchant-finder.productNotAvailable|Produsul nu este disponibil. Vă rugăm să contactați serviciul de asistență pentru magazin pentru mai multe informații.
+moorl-merchant-finder.radius|Rază
+moorl-merchant-finder.resetSelection|Resetare selecție
+moorl-merchant-finder.resultsFound|numărare rezultate găsite
+moorl-merchant-finder.save|Salvare
+moorl-merchant-finder.search|Căutare
+moorl-merchant-finder.searchFor|Căutare
+moorl-merchant-finder.searchLocation|Căutare locație
+moorl-merchant-finder.searchRules.hasLogo|Comerciant cu logo
+moorl-merchant-finder.searchRules.hasPriority|Comerciant prioritar
+moorl-merchant-finder.searchRules.isHighlighted|Comerciant premium
+moorl-merchant-finder.searchRules.isNotHighlighted|Comerciant normal
+moorl-merchant-finder.selectedMerchant|Comerciant selectat
+moorl-merchant-finder.sendMail|Corespondență
+moorl-merchant-finder.shop|Cumpără
+moorl-merchant-finder.shopUrl|Vizitați magazinul
+moorl-merchant-finder.stockInfo|Informații despre stoc
+moorl-merchant-finder.tags|Etichete
+moorl-merchant-finder.thereAre|există 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|cod poștal, oraș
+moorl-merchant-finder.zipcodeCityEnter|Tastați un cod poștal sau un oraș și apăsați Enter
+nimbits-pricerequests.cart.cartRequestButton|Solicitați o ofertă
+nimbits-pricerequests.cart.dontAddByProductNumber|Acest produs nu poate fi adăugat în coș.
+nimbits-pricerequests.detail.available|Disponibil
+nimbits-pricerequests.detail.button.openrequestform|Solicitați o ofertă
+nimbits-pricerequests.detail.restock|"{1} Disponibil în 1 zi|]1,Inf[ Disponibil în %restockTime% zile"
+nimbits-pricerequests.detail.text.priceonrequest|Preț la cerere
+nimbits-pricerequests.fail.alert|Solicitarea nu a fost trimisă - a apărut o eroare. Încercați din nou.
+nimbits-pricerequests.finish.alert|Solicitare trimisă cu succes
+nimbits-pricerequests.finish.buttonBack|Înapoi la magazin
+nimbits-pricerequests.listing.button.openrequestform|Solicitați o ofertă
+nimbits-pricerequests.listing.text.priceonrequest|Preț la cerere
+nimbits-pricerequests.mail.address|Adresă
+nimbits-pricerequests.mail.amount|Sumă
+nimbits-pricerequests.mail.article|Articol
+nimbits-pricerequests.mail.city|Oraș
+nimbits-pricerequests.mail.comment|Comentariul clienților
+nimbits-pricerequests.mail.company|Companie
+nimbits-pricerequests.mail.country|Țară
+nimbits-pricerequests.mail.customersendername|Preț la cerere
+nimbits-pricerequests.mail.housenumber|Număr casă
+nimbits-pricerequests.mail.mail|Corespondență
+nimbits-pricerequests.mail.name|Nume
+nimbits-pricerequests.mail.ordernumber|Număr comandă
+nimbits-pricerequests.mail.price|Preț
+nimbits-pricerequests.mail.pricegross|Incl. Impozit
+nimbits-pricerequests.mail.pricegrosssum|Incl. Sumă Impozit
+nimbits-pricerequests.mail.pricenet|Excl. Impozit
+nimbits-pricerequests.mail.pricenetsum|Excl. Sumă Impozit
+nimbits-pricerequests.mail.requestfirst|Solicitare de preț de la
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Preț la cerere
+nimbits-pricerequests.mail.street|Stradă
+nimbits-pricerequests.mail.subject|Preț la cerere
+nimbits-pricerequests.mail.subjectcart|Solicitare coș de cumpărături
+nimbits-pricerequests.mail.subjectshopowner|Preț la cerere
+nimbits-pricerequests.mail.subjectshopownercart|Solicitare coș de cumpărături
+nimbits-pricerequests.mail.zipcode|Cod poștal
+nimbits-pricerequests.popup.city|Oraș
+nimbits-pricerequests.popup.closebutton|Închidere
+nimbits-pricerequests.popup.company|Companie
+nimbits-pricerequests.popup.country|Țară
+nimbits-pricerequests.popup.dataprivacytext|"Am citit, am înțeles și sunt de acord cu <a href=""/privacy"" target=""_blank"" rel=""noreferrer noopener""> Politica de confidențialitate </a>."
+nimbits-pricerequests.popup.desiredprice|Preț dorit în 
+nimbits-pricerequests.popup.entervalidcity|Introduceți un oraș valid.
+nimbits-pricerequests.popup.entervalidcountry|Introduceți o țară validă.
+nimbits-pricerequests.popup.entervalidhousenumber|Introduceți un număr de casă valid.
+nimbits-pricerequests.popup.entervalidmail|Introduceți o adresă de e-mail validă.
+nimbits-pricerequests.popup.entervalidstreet|Introduceți o stradă validă.
+nimbits-pricerequests.popup.entervalidzipcode|Introduceți un cod poștal valid.
+nimbits-pricerequests.popup.genderm|Dl.
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Doamnă
+nimbits-pricerequests.popup.housenumber|Număr casă
+nimbits-pricerequests.popup.mail|Adresă de e-mail
+nimbits-pricerequests.popup.name|Nume
+nimbits-pricerequests.popup.optional|(opțional)
+nimbits-pricerequests.popup.phonenumber|Telefon
+nimbits-pricerequests.popup.popupTitle|Solicitați o ofertă
+nimbits-pricerequests.popup.product|Produs(e) în această solicitare:
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Solicitare
+nimbits-pricerequests.popup.requestbutton|Solicitare
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|Câmpurile marcate cu * sunt obligatorii.
+nimbits-pricerequests.popup.salutation|Salutare
+nimbits-pricerequests.popup.street|Stradă
+nimbits-pricerequests.popup.surname|Nume
+nimbits-pricerequests.popup.text|Solicitați o ofertă pentru produsele alese
+nimbits-pricerequests.popup.zipcode|Cod poștal
+nimbits-pricerequests.search.text.priceonrequest|Preț la cerere
+nimbits-pricerequests.toasts.error|Solicitarea nu a fost trimisă - a apărut o eroare. Încercați din nou.
+nimbits-pricerequests.toasts.success|Solicitare trimisă cu succes
+priceRequest.newsletterText|Prin prezenta sunt de acord ca TENTE să mă informeze și prin e-mail și telefon despre produsele și evenimentele (de exemplu, aparențele târgurilor comerciale) ale TENTE.
+priceRequest.sendRequestText|Solicitarea va fi transmisă...
+priceRequest.waitText|Vă rugăm să așteptați...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Selectați opțiunea...
+theme.compilation.async.success|Compilație pentru canalul de vânzări %salesChannelName% finalizată
+vdct-simple-events.events.detail.to-event|Către eveniment
+zeobv-store-switcher.switchStoreLabel|Comutare magazin

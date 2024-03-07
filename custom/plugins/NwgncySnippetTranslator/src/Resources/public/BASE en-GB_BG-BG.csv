@@ -1,0 +1,564 @@
+LanguagePack bg-BG|Превод
+account.doubleOptinAccountAlert|Вашият клиентски акаунт все още не е активиран. Изпратихме имейл за потвърждение, съдържащ връзка за активиране. Моля, проверете входящата си поща и кликнете върху връзката, за да завършите регистрацията!
+account.downloadFileButton|Изтегляне
+account.downloadItemColumnDate|Дата
+account.downloadItemColumnTitle|Файл
+account.faxLabel|Факс
+account.faxPlaceholder|Въведете факс
+account.homepageLabel|Начална страница
+account.homepagePlaceholder|Въведете URL адрес на началната страница
+account.passwordNotIdentical|Въведените от Вас пароли не съвпадат.
+account.personalTypePlaceholder|Изберете...
+account.profileCurrentMailPlaceholder|Въведете имейл адрес...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Щракнете тук</a>, за да изтриете всички Ваши лични данни."
+account.profilePasswordCreateNewPlaceholder|Въведете нова парола...
+account.profilePasswordCurrentPlaceholder|Въведете текущата парола...
+acrisFilter.buttonFiltersHide|Показване на по-малко филтри
+acrisFilter.buttonFilterShowHideLabel|Показване на повече или по-малко филтри
+acrisFilter.buttonFiltersShow|Показване на повече филтри
+acrisFilter.buttonHeaderSearchAllCategories|Всички категории
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Незабавно налично
+acrisFilter.filterCategoriesDisplayName|Категории
+acrisFilter.filterRangeActiveMaxLabel|Собственост %displayName% до
+acrisFilter.filterRangeActiveMinLabel|Собственост %displayName% от
+acrisFilter.filterRangeSliderFrom|от
+acrisFilter.filterRangeSliderTo|към
+acrisFilter.filterSearchPlaceholder|Търсене...
+card.card-image|Изображение на %name%
+card.linkTitle|Отворете %url% в нов раздел
+cbaxLexicon.page.ajax.linkDescription|Към речника
+cbaxLexicon.page.banner.alt|Банер
+cbaxLexicon.page.boxKeyword.moreRead|Прочетете повече
+cbaxLexicon.page.breadcrumb.name|Лексикон
+cbaxLexicon.page.content.headline|Съдържание
+cbaxLexicon.page.content.metaDescription|Съдържание на описанието на Lexicon Meta
+cbaxLexicon.page.content.metaKeywords|Съдържание на ключови думи за Lexicon Meta
+cbaxLexicon.page.content.metaTitle|Съдържание
+cbaxLexicon.page.filter.button|Навигация на Lexicon
+cbaxLexicon.page.filter.headline|Навигация на Lexicon
+cbaxLexicon.page.index.metaDescription|Индекс на описание на Lexicon Meta
+cbaxLexicon.page.index.metaKeywords|Индекс на Lexicon Meta ключови думи
+cbaxLexicon.page.index.metaTitle|Лексикон
+cbaxLexicon.page.listing.entryHeadline|Публикации в тази категория енциклопедия
+cbaxLexicon.page.listing.metaDescription09|Списък с описание на Lexicon Meta 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Описание на Lexicon Meta Списък А
+cbaxLexicon.page.listing.metaDescriptionB|Описание на Lexicon Meta Списък B
+cbaxLexicon.page.listing.metaDescriptionC|Списък с описание на Lexicon Meta C
+cbaxLexicon.page.listing.metaDescriptionD|Списък с описание на Lexicon Meta D
+cbaxLexicon.page.listing.metaDescriptionE|Списък с описание на Lexicon Meta E
+cbaxLexicon.page.listing.metaDescriptionF|Описание на Lexicon Meta Списък F
+cbaxLexicon.page.listing.metaDescriptionG|Списък с описание на Lexicon Meta G
+cbaxLexicon.page.listing.metaDescriptionH|Описание на Lexicon Meta Списък H
+cbaxLexicon.page.listing.metaDescriptionI|Описание на Lexicon Meta Списък I
+cbaxLexicon.page.listing.metaDescriptionJ|Описание на Lexicon Meta Списък J
+cbaxLexicon.page.listing.metaDescriptionK|Описание на Lexicon Meta Списък K
+cbaxLexicon.page.listing.metaDescriptionL|Описание на Lexicon Meta Списък L
+cbaxLexicon.page.listing.metaDescriptionM|Описание на Lexicon Meta Списък M
+cbaxLexicon.page.listing.metaDescriptionN|Списък с описание на Lexicon Meta N
+cbaxLexicon.page.listing.metaDescriptionO|Описание на Lexicon Meta Списък O
+cbaxLexicon.page.listing.metaDescriptionP|Списък с описание на Lexicon Meta P
+cbaxLexicon.page.listing.metaDescriptionQ|Списък с описание на Lexicon Meta Q
+cbaxLexicon.page.listing.metaDescriptionR|Списък с описание на Lexicon Meta R
+cbaxLexicon.page.listing.metaDescriptionS|Описание на Lexicon Meta Списък S
+cbaxLexicon.page.listing.metaDescriptionT|Списък с описание на Lexicon Meta T
+cbaxLexicon.page.listing.metaDescriptionU|Описание на Lexicon Meta Списък U
+cbaxLexicon.page.listing.metaDescriptionV|Списък с описание на Lexicon Meta V
+cbaxLexicon.page.listing.metaDescriptionW|Списък с описание на Lexicon Meta W
+cbaxLexicon.page.listing.metaDescriptionX|Описание на Lexicon Meta Списък X
+cbaxLexicon.page.listing.metaDescriptionY|Описание на Lexicon Meta Списък Y
+cbaxLexicon.page.listing.metaDescriptionZ|Описание на Lexicon Meta Списък Z
+cbaxLexicon.page.listing.metaKeywords09|Списък с ключови думи за Lexicon Meta 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Ключови думи за Lexicon Meta, изброени с А
+cbaxLexicon.page.listing.metaKeywordsB|Списък с ключови думи за Lexicon Meta B
+cbaxLexicon.page.listing.metaKeywordsC|Списък с ключови думи за Lexicon Meta C
+cbaxLexicon.page.listing.metaKeywordsD|Списък с ключови думи за Lexicon Meta D
+cbaxLexicon.page.listing.metaKeywordsE|Списък с ключови думи за Lexicon Meta E
+cbaxLexicon.page.listing.metaKeywordsF|Списък с ключови думи за Lexicon Meta F
+cbaxLexicon.page.listing.metaKeywordsG|Списък с ключови думи за Lexicon Meta G
+cbaxLexicon.page.listing.metaKeywordsH|Списък с ключови думи за Lexicon Meta H
+cbaxLexicon.page.listing.metaKeywordsI|Ключови думи на Lexicon Meta, изброяващи I
+cbaxLexicon.page.listing.metaKeywordsJ|Списък с ключови думи за Lexicon Meta J
+cbaxLexicon.page.listing.metaKeywordsK|Списък с ключови думи за Lexicon Meta K
+cbaxLexicon.page.listing.metaKeywordsL|Списък с ключови думи за Lexicon Meta L
+cbaxLexicon.page.listing.metaKeywordsM|Списък с ключови думи за Lexicon Meta M
+cbaxLexicon.page.listing.metaKeywordsN|Списък с ключови думи за Lexicon Meta N
+cbaxLexicon.page.listing.metaKeywordsO|Списък с ключови думи за Lexicon Meta O
+cbaxLexicon.page.listing.metaKeywordsP|Списък с ключови думи за Lexicon Meta P
+cbaxLexicon.page.listing.metaKeywordsQ|Списък с ключови думи за Lexicon Meta Q
+cbaxLexicon.page.listing.metaKeywordsR|Списък с ключови думи за Lexicon Meta R
+cbaxLexicon.page.listing.metaKeywordsS|Списък с ключови думи за Lexicon Meta S
+cbaxLexicon.page.listing.metaKeywordsT|Ключови думи за Lexicon Meta, изброяващи T
+cbaxLexicon.page.listing.metaKeywordsU|Ключови думи на Lexicon Meta, които ни изброяват
+cbaxLexicon.page.listing.metaKeywordsV|Списък с ключови думи за Lexicon Meta V
+cbaxLexicon.page.listing.metaKeywordsW|Списък с ключови думи за Lexicon Meta W
+cbaxLexicon.page.listing.metaKeywordsX|Ключови думи за Lexicon Meta, изброяващи X
+cbaxLexicon.page.listing.metaKeywordsY|Ключови думи за Lexicon Meta, изброяващи Y
+cbaxLexicon.page.listing.metaKeywordsZ|Ключови думи на Lexicon Meta, изброяващи Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|А
+cbaxLexicon.page.listing.metaTitleB|Б
+cbaxLexicon.page.listing.metaTitleC|В
+cbaxLexicon.page.listing.metaTitleD|Г
+cbaxLexicon.page.listing.metaTitleE|Д
+cbaxLexicon.page.listing.metaTitleF|Е
+cbaxLexicon.page.listing.metaTitleG|Ж
+cbaxLexicon.page.listing.metaTitleH|З
+cbaxLexicon.page.listing.metaTitleI|Аз
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|М
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|О
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|В
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|Т
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Съдържание
+cbaxLexicon.page.navigation.linkIndex|Начална страница
+cbaxLexicon.page.pagination.toOverview|За общ преглед
+cbaxLexicon.page.sidebar.title|Лексикон:
+checkout.confirmRevocationReminder|Вече сте декларирали, че се отказвате от правото на оттегляне.
+checkout.confirmRevocationTerms|Искам незабавен достъп до цифровото съдържание и потвърждавам, че по този начин се отказвам от правото си да отменя.
+checkout.confirmTermsReminderText|"Вече приехте <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""общи условия"">общи условия</a>."
+checkout.confirmTermsText|"Прочетох и приех <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""общи условия"">общи условия</a>."
+checkout.lineItemUnitPriceDescriptor|единица
+checkout.merchant-not-selected|Моля, изберете Вашия местен търговец, за да продължите с плащането.
+checkout.or|или
+CmsElements.callToAction.elementError|Този елемент не е наличен за страничната лента. Моля, изберете друг <p class='h5 my-2'>Обаждане към действие</p> за Вашата странична лента.
+CmsElements.counter.days|ДНИ
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|Не сте качили валидно видео. Проверете настройките на елемента.
+CmsElements.htmlVideo.hint.headline|Грешен формат / Няма видео
+CmsElements.placeholder.label|Смяна на елемент
+CmsElements.shopTheLook.addAllProducts|Добавяне на продукти в количката за пазаруване
+CmsElements.shopTheLook.totalDiscount|Спестявания:
+component.cms.imageGallery.sliderDotLabel|Показване на изображение %index% от %total%
+component.cms.vimeo.privacyNoticeText|Като гледате видеото, Вие се съгласявате, че Вашите данни ще бъдат прехвърлени в %platform% и че сте прочели <a data-ajax-modal="true" data-url="%url%" href="%url%" title="Политика за поверителност">Политика за поверителност</a>.
+component.product.quantitySelect.decrease|Намаляване на количеството
+component.product.quantitySelect.increase|Увеличаване на количеството
+component.product.quantitySelect.label|Количество
+contact.newsletterSubscribe|С настоящото се съгласявам, че TENTE може също да ме информира по имейл и по телефона за продукти и събития (напр. търговски панаири) на TENTE.
+contact.privacyNoticeText|Избирайки "Продължаване", Вие потвърждавате, че сте прочели и сте съгласни с нашето <a data-ajax-modal="true" data-url="%privacyUrl%" href="%privacyUrl%" title="Информация за защита на данните">информация за защита на данните</a>.
+cookie.groupComfortFeaturesYoutubeVideo|Видео в YouTube
+cookie.messageText|"Този уебсайт използва бисквитки, за да гарантира възможно най-доброто изживяване. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Повече информация"">Повече информация...</a>"
+detail.acrisProductDownloadBtnText|Изтегляне
+detail.acrisProductDownloadNoPreview|Няма предварителен преглед
+detail.acrisProductDownloadTabLabel|Изтегляния
+detail.acrisProductDownloadTitle|Изтегляния
+detail.acrisProductLinkTabLabel|Връзки
+detail.acrisProductLinkTitle|Връзки
+detail.buyOnline|Купете онлайн
+detail.cadService.downloadBtn|Изтегляне
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Тип файл
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Можете да изтеглите строителни данни за този продукт в различен формат
+detail.cadService.login|"Моля, <a href=""%url%"">Login</a>, за да видите CAD файловете"
+detail.cadService.title|CAD услуга
+detail.contactText|"Все още не сте намерили правилния продукт, имате специални изисквания или се интересувате от индивидуални решения? <a target=""_blank"" href=""%url%"" title=""Kontaktformular"" rel=""noreferrer noopener"">Свържете се с нас</a>."
+detail.ean|ЪГЪЛ
+detail.orderNumber|Номер на продукта
+detail.orText|Или
+detail.performance.atrittion|Разяснение
+detail.performance.movement|Шум от движение
+detail.performance.resistance|Устойчив на корозия
+detail.performance.roll|Производителност на ролката
+detail.priceOnRequestText|на пакет плюс ДДС<br />В рамките на 24 часа, готови за изпращане
+detail.priceOnRequestTitle|Цена при поискване
+detail.properties.fitting|Поставяне на технически данни
+detail.properties.housing|Вилка технически данни
+detail.properties.label.downloads|Изтегляния
+detail.properties.label.feature|Функции на продукта
+detail.properties.label.fitting|Прилягане
+detail.properties.label.housing|Вилка
+detail.properties.label.performance|Изпълнение
+detail.properties.label.wheel|Колело
+detail.properties.performance|Изпълнение
+detail.properties.wheel|Колело за технически данни
+detail.qte|Количество
+detail.reviewFormContentPlaceholder|Въведете Вашия преглед...
+detail.sendQuoteRequest|Изпращане на заявка за оферта
+detail.tabs.downloads|Изтегляния
+detail.tabs.features|Функции
+detail.tabs.performance|Изпълнение
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|Количеството (%количеството) е неправилно.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|"Поръчката с номер на поръчка ""%orderNumber%"" вече е платена и не може да бъде редактирана след това."
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Тази поръчка не може да бъде намерена.
+error.merchant-not-selected|Моля, изберете Вашия местен търговец, за да продължите с плащането.
+error.VIOLATION::ZIP_CODE_INVALID|Въведеният от Вас пощенски код няма правилния формат.
+footer.excludeVatText|"* Всички цени са с изключение на ДДС плюс <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">транспортни разходи</a> и възможни такси за доставка, ако не е посочено друго."
+footer.includeVatText|"* Всички цени вкл. ДДС плюс <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">транспортни разходи</a> и възможни такси за доставка, ако не е посочено друго."
+footer.serviceContactText|"Или чрез нашата <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Формуляр за контакт"">формуляр за контакт</a>."
+footer.socialMediaHeadline|Социално
+general.contactUs|Свържете се с нас
+general.contactUsLink|/контакт
+general.loginRegister|Влизане / регистриране
+general.privacyNoticeText|"Като се абонирате за бюлетина, Вие приемате нашата <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Политика за поверителност"">Политика за поверителност</a>, както и нашата <a data-ajax-modal=""true"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""Условия"">terms and conditions</a>."
+global.default.activate|Активиране
+global.default.cancel|Отказ
+global.default.confirm|Потвърждаване
+global.default.deactivate|Деактивиране
+global.default.delete|Изтриване
+global.default.edit|Редактиране
+global.default.noteRequiredFields|Полетата, отбелязани със звездичка (*), са задължителни.
+global.default.save|Запазване
+listing.downloadText|Изтегляне
+moorl-creator.aboutTheCreator|За създателя
+moorl-creator.aboutTheCreators|За създателите
+moorl-creator.creator|Създател
+moorl-creator.creators|Създатели
+moorl-creator.donate|Дарение
+moorl-creator.follow|Следвайте
+moorl-creator.link|Начална страница
+moorl-creator.productsOf|Продукти от
+moorl-creator.readMore|Прочетете повече...
+moorl-foundation.buttons.acceptCookie|Приемане на бисквитка
+moorl-foundation.buttons.addMerchantButtonText|Нов търговец
+moorl-foundation.buttons.administrationButtonText|Администриране
+moorl-foundation.buttons.cancelButtonText|Отказ
+moorl-foundation.buttons.exportButtonText|Експортиране на CSV
+moorl-foundation.buttons.exportButtonTitle|Изтегляне на вашия CSV
+moorl-foundation.buttons.getLocButtonText|Получаване на позиции от OpenStreetMap
+moorl-foundation.buttons.importButtonText|Импортиране на CSV
+moorl-foundation.buttons.importButtonTitle|Качване на вашия CSV
+moorl-foundation.buttons.mediaFolder|Запазване на изображения в тази папка
+moorl-foundation.buttons.newButtonText|Нов
+moorl-foundation.buttons.openMapButtonText|Отваряне на карта
+moorl-foundation.buttons.openNewWindowButtonText|Отваряне в нов прозорец
+moorl-foundation.buttons.overwriteText|Презаписване на съществуващи редове с данни (трябва да се зададе произходId).
+moorl-foundation.buttons.placeIdLink|Маршрут на плана
+moorl-foundation.buttons.refreshButtonText|Презареждане
+moorl-foundation.buttons.saveButtonText|Запазване
+moorl-foundation.buttons.selectLocButtonText|Избор
+moorl-foundation.buttons.startImportButtonText|Стартиране на импортиране
+moorl-foundation.card.address|Адрес
+moorl-foundation.card.company|Компания
+moorl-foundation.card.contact|Контакт
+moorl-foundation.card.legend|Легенда
+moorl-foundation.card.openingHours|Работно време
+moorl-foundation.card.person|Лице за контакт
+moorl-foundation.customerUpload.checkToDelete|Проверка за изтриване
+moorl-foundation.customerUpload.dictDefaultMessage|Плъзнете файловете тук, за да ги качите
+moorl-foundation.customerUpload.useAsCover|Използвайте като капак
+moorl-foundation.days.closed|Затворен
+moorl-foundation.days.friday|Петък
+moorl-foundation.days.monday|Понеделник
+moorl-foundation.days.saturday|Събота
+moorl-foundation.days.sunday|Неделя
+moorl-foundation.days.thursday|Четвъртък
+moorl-foundation.days.today|Днес
+moorl-foundation.days.tuesday|Вторник
+moorl-foundation.days.wednesday|Сряда
+moorl-foundation.general.selectedItems|Избрани елементи
+moorl-foundation.general.share|Споделяне
+moorl-foundation.general.subTotal|Междинна сума
+moorl-foundation.general.toc|Съдържание
+moorl-foundation.label.accountCard|Акаунт
+moorl-foundation.label.addressCard|Адрес
+moorl-foundation.label.generalCard|Общи
+moorl-foundation.label.locationCard|Местоположение
+moorl-foundation.label.markerCard|Маркер
+moorl-foundation.label.metaCard|Мета
+moorl-foundation.label.relationsCard|Отношения и филтри
+moorl-foundation.label.visibilityCard|Видимост
+moorl-foundation.listing.filter.categories|Категории
+moorl-foundation.listing.filter.country|Държава
+moorl-foundation.listing.filter.distance|Разстояние
+moorl-foundation.listing.filter.firstChar|Индекс
+moorl-foundation.listing.filter.inRadiusOf|в радиус от
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|МИ
+moorl-foundation.listing.filter.myLocation|Използване на моето местоположение
+moorl-foundation.listing.filter.navigation|Категории
+moorl-foundation.listing.filter.radius|Търсене на пощенски код
+moorl-foundation.listing.filter.search|Търсене на текст
+moorl-foundation.listing.filter.tags|Етикети
+moorl-foundation.listing.filter.zipcodeCity|Пощенски код / Град
+moorl-foundation.properties.active|Активен
+moorl-foundation.properties.additionalAddressLine1|Адресен ред 1
+moorl-foundation.properties.additionalAddressLine2|Адресен ред 2
+moorl-foundation.properties.articles|Статии
+moorl-foundation.properties.author|Автор
+moorl-foundation.properties.categories|Категории
+moorl-foundation.properties.city|Град
+moorl-foundation.properties.closed|Затворен
+moorl-foundation.properties.cmsPage|CMS страница
+moorl-foundation.properties.cmsPageId|ИД на страницата на CMS
+moorl-foundation.properties.company|Компания
+moorl-foundation.properties.content|Съдържание
+moorl-foundation.properties.country|Държава
+moorl-foundation.properties.countryCode|Код на държава
+moorl-foundation.properties.countryId|Държава
+moorl-foundation.properties.createdAt|Създадено в
+moorl-foundation.properties.customerGroupId|Клиентска група
+moorl-foundation.properties.customerNumber|Клиентски номер
+moorl-foundation.properties.date|Дата
+moorl-foundation.properties.department|Отдел
+moorl-foundation.properties.description|Описание
+moorl-foundation.properties.distance|Разстояние
+moorl-foundation.properties.email|Имейл
+moorl-foundation.properties.enableComments|Активиране на коментари
+moorl-foundation.properties.firstName|Собствено име
+moorl-foundation.properties.from|От
+moorl-foundation.properties.highlight|Маркирайте
+moorl-foundation.properties.image|Статия
+moorl-foundation.properties.info|Информация
+moorl-foundation.properties.inRadiusOf|в радиус от
+moorl-foundation.properties.invisible|Невидими
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|Фамилно име
+moorl-foundation.properties.location|Позиция
+moorl-foundation.properties.locationLat|географска ширина
+moorl-foundation.properties.locationLon|Дължина
+moorl-foundation.properties.locked|Заключен
+moorl-foundation.properties.logo|Лого
+moorl-foundation.properties.marker|Маркер
+moorl-foundation.properties.markerId|Маркер
+moorl-foundation.properties.markerSettings|Настройки на маркера
+moorl-foundation.properties.markerSettingsExample|Можете да копирате този пример, за да коригирате настройките на персонализирания маркер.
+moorl-foundation.properties.markerSettingsLink|Пример за персонализиран маркер на листовката
+moorl-foundation.properties.markerShadow|Маркерна сянка
+moorl-foundation.properties.markerShadowId|Сянка на маркера
+moorl-foundation.properties.media|Медия
+moorl-foundation.properties.mediaId|ИД на носител
+moorl-foundation.properties.merchant|Търговец
+moorl-foundation.properties.merchantUrl|URL адрес на търговец
+moorl-foundation.properties.metaDescription|Мета описание
+moorl-foundation.properties.metaTitle|Мета заглавие
+moorl-foundation.properties.name|Име
+moorl-foundation.properties.openingHours|Работно време
+moorl-foundation.properties.originId|ИД на произход
+moorl-foundation.properties.phoneNumber|Телефон
+moorl-foundation.properties.priority|Приоритет
+moorl-foundation.properties.productManufacturers|Идентификационни номера на производителя
+moorl-foundation.properties.products|Продукти
+moorl-foundation.properties.radius|Радиус
+moorl-foundation.properties.repeat|Повтаряне
+moorl-foundation.properties.salesChannel|Канал за продажби
+moorl-foundation.properties.salesChannelId|Канал за продажби
+moorl-foundation.properties.search|Търсене
+moorl-foundation.properties.shopUrl|URL адрес на магазин
+moorl-foundation.properties.showFrom|Показване от
+moorl-foundation.properties.showUntil|Показване до
+moorl-foundation.properties.slug|Плъзгащ се
+moorl-foundation.properties.sticky|Лепкави
+moorl-foundation.properties.street|Улица
+moorl-foundation.properties.streetNumber|Номер
+moorl-foundation.properties.tags|Имена/идентификационни номера на етикети
+moorl-foundation.properties.teaser|Тийзър
+moorl-foundation.properties.title|Заглавие
+moorl-foundation.properties.until|До
+moorl-foundation.properties.updatedAt|Актуализиран на
+moorl-foundation.properties.vatId|ДДС-ИД
+moorl-foundation.properties.zipcode|Пощенски код
+moorl-foundation.search.headline|"{0} Няма съвпадения за "%searchTerm%" | {1} Един мач за "%searchTerm%" | ]1,Inf[ %count% съвпадения за "%searchTerm%""
+moorl-foundation.search.missingConfiguration|Липсва конфигурация за този списък!
+moorl-foundation.search.moreButton|Още
+moorl-foundation.search.noListingSlotFound|Тази страница няма елемент за изброяване. Проверете настройките на списъка си и изберете "Автоматични елементи"
+moorl-foundation.search.notAvailable|Не е налично
+moorl-foundation.search.product|Продукти
+moorl-location-map.cookieDescription|Ние използваме OpenStreetMap като доставчик на плочки, за да Ви покажем визуално местоположението на нашите магазини и търговци.
+moorl-location-map.cookieHint|Моля, приемете бисквитката, за да използвате желаната функция.
+moorl-location-map.cookieName|Карти на местоположението
+moorl-magazine.articles|Статии в блога
+moorl-magazine.author|Автор
+moorl-magazine.authors|Автори
+moorl-magazine.back|Назад
+moorl-magazine.backToOverview|Назад към общ преглед
+moorl-magazine.categories|Категории
+moorl-magazine.categoryAll|Всички категории
+moorl-magazine.commentArea|Зона за коментари
+moorl-magazine.commentAreaDisabled|Коментарите са деактивирани за тази статия
+moorl-magazine.commentError|Моля, уверете се, че сте попълнили всички полета правилно
+moorl-magazine.commentReview|Коментарът Ви ще бъде публикуван след преглед.
+moorl-magazine.commentSuccess|Благодаря за коментара!
+moorl-magazine.date|Дата
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|Имейл
+moorl-magazine.emailPlaceholder|Въведете Вашия имейл адрес
+moorl-magazine.name|Име
+moorl-magazine.namePlaceholder|Въведете името си
+moorl-magazine.next|Следващо
+moorl-magazine.page|Страница
+moorl-magazine.pageDescription|Lorem ipsum dolor sit amet, consetetur садипсиращ елит, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Във vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, няма морски takimata sanctus est Lorem ipsum dolor, седнал амет. Lorem ipsum dolor sit amet, consetetur садипсиращ елит, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Във vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, без морски takimata sanctus est Lorem ipsum dolor, седнал амет.
+moorl-magazine.pageTitle|Моят грациозен блог
+moorl-magazine.posts|Публикации в блога
+moorl-magazine.products|Свързани продукти
+moorl-magazine.readMore|Прочетете повече
+moorl-magazine.recentComments|Последни коментари
+moorl-magazine.relatedArticles|Свързани публикации в блога
+moorl-magazine.search|Търсене
+moorl-magazine.searchFor|Търсене на...
+moorl-magazine.sendComment|Изпратете коментара си
+moorl-magazine.similarArticles|Подобни публикации в блога
+moorl-magazine.sticky|Завързани
+moorl-magazine.tags|Етикети
+moorl-magazine.writeComment|Напишете коментар
+moorl-magazine.wroteOn|написа на
+moorl-magazine.yourComment|Вашият коментар
+moorl-magazine.yourCommentPlaceholder|Въведете коментара си тук
+moorl-merchant-finder.allCategories|Всички категории
+moorl-merchant-finder.allCountries|Всички държави
+moorl-merchant-finder.allManufacturers|Всички производители
+moorl-merchant-finder.allowMerchantCustomerContact|Позволявам на избрания от мен търговец да се свърже с мен по телефона или по имейл.
+moorl-merchant-finder.allResults|-- Изберете --
+moorl-merchant-finder.allTags|Всички етикети
+moorl-merchant-finder.are|са 
+moorl-merchant-finder.available|Налично
+moorl-merchant-finder.backToOverview|Назад към общ преглед
+moorl-merchant-finder.call|Обаждане
+moorl-merchant-finder.cancel|Отказ
+moorl-merchant-finder.categories|Категории
+moorl-merchant-finder.checkAvailability|Проверка на наличността
+moorl-merchant-finder.chose|Избор
+moorl-merchant-finder.choseMerchant|Изберете търговец
+moorl-merchant-finder.choseMerchantToProceed|Моля, изберете Вашия местен търговец, за да продължите с плащането
+moorl-merchant-finder.close|Затваряне
+moorl-merchant-finder.commentToMerchant|Изпращане на коментар до търговеца
+moorl-merchant-finder.country|Държава
+moorl-merchant-finder.deliveryTime|Време за доставка
+moorl-merchant-finder.deliveryTimeUnknown|Неизвестни - Продуктите ще бъдат заявени по поръчка
+moorl-merchant-finder.description|Описание
+moorl-merchant-finder.desiredDate|Желана дата на вземане
+moorl-merchant-finder.desiredTime|Желано време за вземане
+moorl-merchant-finder.displayOnMap|Показване на картата
+moorl-merchant-finder.distance|Разстояние
+moorl-merchant-finder.emptyResultMessage|Не са открити търговци
+moorl-merchant-finder.findMerchants|Намерете търговци
+moorl-merchant-finder.forTheSearch|за търсенето 
+moorl-merchant-finder.forTheSearchZipcode|в пощенски код и обкръжаваща дистанция 
+moorl-merchant-finder.highlight|Съвет
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|Зареждане...
+moorl-merchant-finder.manufacturers|Производители
+moorl-merchant-finder.merchant|Търговец
+moorl-merchant-finder.merchants|Търговци
+moorl-merchant-finder.merchantUrl|Уебсайт
+moorl-merchant-finder.more|Още
+moorl-merchant-finder.myLocation|Използване на текущото ми местоположение
+moorl-merchant-finder.mySelection|Моят избор
+moorl-merchant-finder.noMerchantSelected|Продуктът не е наличен. Не е избран търговец.
+moorl-merchant-finder.none|нито един
+moorl-merchant-finder.openingHours|Работно време
+moorl-merchant-finder.outOfStock|Продуктът не е наличен. Избраният от Вас търговец не разполага с този продукт на склад.
+moorl-merchant-finder.phoneNumber|Телефон
+moorl-merchant-finder.pickupDateSet|Часът на вземане е зададен
+moorl-merchant-finder.productAvailability|Наличност на продукта
+moorl-merchant-finder.productNotAvailable|Продуктът не е наличен. Моля, свържете се с отдела за поддръжка на магазина за повече информация.
+moorl-merchant-finder.radius|Радиус
+moorl-merchant-finder.resetSelection|Нулиране на избора
+moorl-merchant-finder.resultsFound|намерени резултати от преброяване
+moorl-merchant-finder.save|Запазване
+moorl-merchant-finder.search|Търсене
+moorl-merchant-finder.searchFor|Търсене на
+moorl-merchant-finder.searchLocation|Търсене на местоположение
+moorl-merchant-finder.searchRules.hasLogo|Търговец с лого
+moorl-merchant-finder.searchRules.hasPriority|Приоритетен търговец
+moorl-merchant-finder.searchRules.isHighlighted|Първокласен търговец
+moorl-merchant-finder.searchRules.isNotHighlighted|Нормален търговец
+moorl-merchant-finder.selectedMerchant|Избран търговец
+moorl-merchant-finder.sendMail|Поща
+moorl-merchant-finder.shop|Пазарувайте
+moorl-merchant-finder.shopUrl|Посетете магазина
+moorl-merchant-finder.stockInfo|Информация за запасите
+moorl-merchant-finder.tags|Етикети
+moorl-merchant-finder.thereAre|има 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|пощенски код, град
+moorl-merchant-finder.zipcodeCityEnter|Въведете пощенски код или град и натиснете Enter
+nimbits-pricerequests.cart.cartRequestButton|Заявка за оферта
+nimbits-pricerequests.cart.dontAddByProductNumber|Този продукт не може да бъде добавен в количката.
+nimbits-pricerequests.detail.available|Налично
+nimbits-pricerequests.detail.button.openrequestform|Заявка за оферта
+nimbits-pricerequests.detail.restock|"{1} Налично след 1 ден|]1,Inf[Налично след %restockTime% дни"
+nimbits-pricerequests.detail.text.priceonrequest|Цена при поискване
+nimbits-pricerequests.fail.alert|Заявката не е изпратена - възникна грешка. Моля, опитайте отново.
+nimbits-pricerequests.finish.alert|Заявката е изпратена успешно
+nimbits-pricerequests.finish.buttonBack|Назад към магазина
+nimbits-pricerequests.listing.button.openrequestform|Заявка за оферта
+nimbits-pricerequests.listing.text.priceonrequest|Цена при поискване
+nimbits-pricerequests.mail.address|Адрес
+nimbits-pricerequests.mail.amount|Сума
+nimbits-pricerequests.mail.article|Статия
+nimbits-pricerequests.mail.city|Град
+nimbits-pricerequests.mail.comment|Коментар на клиентите
+nimbits-pricerequests.mail.company|Компания
+nimbits-pricerequests.mail.country|Държава
+nimbits-pricerequests.mail.customersendername|Цена по заявка
+nimbits-pricerequests.mail.housenumber|Номер на къща
+nimbits-pricerequests.mail.mail|Поща
+nimbits-pricerequests.mail.name|Име
+nimbits-pricerequests.mail.ordernumber|Номер на поръчката
+nimbits-pricerequests.mail.price|Цена
+nimbits-pricerequests.mail.pricegross|Вх. Данък
+nimbits-pricerequests.mail.pricegrosssum|Вх. Данъчна сума
+nimbits-pricerequests.mail.pricenet|Изключение. Данък
+nimbits-pricerequests.mail.pricenetsum|Изключение. Данъчна сума
+nimbits-pricerequests.mail.requestfirst|Заявка за цена от
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Цена по заявка
+nimbits-pricerequests.mail.street|Улица
+nimbits-pricerequests.mail.subject|Цена по заявка
+nimbits-pricerequests.mail.subjectcart|Заявка за количка
+nimbits-pricerequests.mail.subjectshopowner|Цена по заявка
+nimbits-pricerequests.mail.subjectshopownercart|Заявка за количка
+nimbits-pricerequests.mail.zipcode|Пощенски код
+nimbits-pricerequests.popup.city|Град
+nimbits-pricerequests.popup.closebutton|Затваряне
+nimbits-pricerequests.popup.company|Компания
+nimbits-pricerequests.popup.country|Държава
+nimbits-pricerequests.popup.dataprivacytext|"Прочетох, разбрах и се съгласявам с целта <a href=""/поверителност"" target=""_blank"" rel=""noreferrer noopener""> Политика за поверителност </a>."
+nimbits-pricerequests.popup.desiredprice|Желана цена в 
+nimbits-pricerequests.popup.entervalidcity|Моля, въведете валиден град.
+nimbits-pricerequests.popup.entervalidcountry|Моля, въведете валидна държава.
+nimbits-pricerequests.popup.entervalidhousenumber|Моля, въведете валиден домашен номер.
+nimbits-pricerequests.popup.entervalidmail|Моля, въведете валиден имейл адрес.
+nimbits-pricerequests.popup.entervalidstreet|Моля, въведете валидна улица.
+nimbits-pricerequests.popup.entervalidzipcode|Моля, въведете валиден пощенски код.
+nimbits-pricerequests.popup.genderm|Г-н
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Г-жа
+nimbits-pricerequests.popup.housenumber|Номер на къща
+nimbits-pricerequests.popup.mail|Адрес по пощата
+nimbits-pricerequests.popup.name|Име
+nimbits-pricerequests.popup.optional|(по избор)
+nimbits-pricerequests.popup.phonenumber|Телефон
+nimbits-pricerequests.popup.popupTitle|Заявка за оферта
+nimbits-pricerequests.popup.product|Продукт(и) в тази заявка:
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Заявка
+nimbits-pricerequests.popup.requestbutton|Заявка
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|Полетата, маркирани с *, са задължителни.
+nimbits-pricerequests.popup.salutation|Поздрав
+nimbits-pricerequests.popup.street|Улица
+nimbits-pricerequests.popup.surname|Фамилно име
+nimbits-pricerequests.popup.text|Поискайте оферта за избраните продукти
+nimbits-pricerequests.popup.zipcode|Пощенски код
+nimbits-pricerequests.search.text.priceonrequest|Цена при поискване
+nimbits-pricerequests.toasts.error|Заявката не е изпратена - възникна грешка. Моля, опитайте отново.
+nimbits-pricerequests.toasts.success|Заявката е изпратена успешно
+priceRequest.newsletterText|С настоящото се съгласявам, че TENTE може също да ме информира по имейл и по телефона за продукти и събития (напр. търговски панаири) на TENTE.
+priceRequest.sendRequestText|Заявката ще бъде предадена...
+priceRequest.waitText|Моля, изчакайте...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Изберете опция...
+theme.compilation.async.success|Състав за канал за продажби %salesChannelName% завършен
+vdct-simple-events.events.detail.to-event|Към събитието
+zeobv-store-switcher.switchStoreLabel|Превключване на магазин
