@@ -1,0 +1,564 @@
+LanguagePack zh-CN|翻译
+account.doubleOptinAccountAlert|您的客户账户尚未激活。我们已发送一封包含激活链接的确认电子邮件。请检查您的收件箱，然后点击链接完成注册！
+account.downloadFileButton|下载
+account.downloadItemColumnDate|日期
+account.downloadItemColumnTitle|文件
+account.faxLabel|传真
+account.faxPlaceholder|输入传真
+account.homepageLabel|主页
+account.homepagePlaceholder|输入主页 URL
+account.passwordNotIdentical|您输入的密码不匹配。
+account.personalTypePlaceholder|选择...
+account.profileCurrentMailPlaceholder|输入电子邮件地址...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">点击此处</a>删除您的所有个人数据。"
+account.profilePasswordCreateNewPlaceholder|输入新密码...
+account.profilePasswordCurrentPlaceholder|输入当前密码...
+acrisFilter.buttonFiltersHide|显示较少的筛选器
+acrisFilter.buttonFilterShowHideLabel|显示更多或更少的筛选器
+acrisFilter.buttonFiltersShow|显示更多筛选器
+acrisFilter.buttonHeaderSearchAllCategories|所有类别
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|立即可用
+acrisFilter.filterCategoriesDisplayName|类别
+acrisFilter.filterRangeActiveMaxLabel|属性 %displayName% 到
+acrisFilter.filterRangeActiveMinLabel|属性 %displayName% 来自
+acrisFilter.filterRangeSliderFrom|从
+acrisFilter.filterRangeSliderTo|至
+acrisFilter.filterSearchPlaceholder|搜索...
+card.card-image|%name% 的图像
+card.linkTitle|在新选项卡中打开 %url%
+cbaxLexicon.page.ajax.linkDescription|到词典
+cbaxLexicon.page.banner.alt|横幅
+cbaxLexicon.page.boxKeyword.moreRead|阅读更多
+cbaxLexicon.page.breadcrumb.name|词汇
+cbaxLexicon.page.content.headline|目录
+cbaxLexicon.page.content.metaDescription|Lexicon Meta 描述内容
+cbaxLexicon.page.content.metaKeywords|Lexicon Meta 关键字内容
+cbaxLexicon.page.content.metaTitle|目录
+cbaxLexicon.page.filter.button|词汇导航
+cbaxLexicon.page.filter.headline|词汇导航
+cbaxLexicon.page.index.metaDescription|词汇元描述索引
+cbaxLexicon.page.index.metaKeywords|Lexicon Meta 关键字索引
+cbaxLexicon.page.index.metaTitle|词汇
+cbaxLexicon.page.listing.entryHeadline|此百科全书类别中的帖子
+cbaxLexicon.page.listing.metaDescription09|词汇元描述列表 0-9
+cbaxLexicon.page.listing.metaDescriptionA|词汇元描述列表 A
+cbaxLexicon.page.listing.metaDescriptionB|词汇元描述列表 B
+cbaxLexicon.page.listing.metaDescriptionC|词汇元描述列表 C
+cbaxLexicon.page.listing.metaDescriptionD|词汇元描述列表 D
+cbaxLexicon.page.listing.metaDescriptionE|Lexicon Meta 描述列表 E
+cbaxLexicon.page.listing.metaDescriptionF|词汇元描述列表 F
+cbaxLexicon.page.listing.metaDescriptionG|Lexicon Meta 描述列表 G
+cbaxLexicon.page.listing.metaDescriptionH|词汇元描述列表 H
+cbaxLexicon.page.listing.metaDescriptionI|Lexicon Meta 描述列表 I
+cbaxLexicon.page.listing.metaDescriptionJ|Lexicon Meta 描述列表 J
+cbaxLexicon.page.listing.metaDescriptionK|词汇元描述列表 K
+cbaxLexicon.page.listing.metaDescriptionL|Lexicon Meta 描述列表 L
+cbaxLexicon.page.listing.metaDescriptionM|词汇元描述列表 M
+cbaxLexicon.page.listing.metaDescriptionN|Lexicon Meta 描述列表 N
+cbaxLexicon.page.listing.metaDescriptionO|Lexicon Meta 描述列表 O
+cbaxLexicon.page.listing.metaDescriptionP|Lexicon Meta 描述列表 P
+cbaxLexicon.page.listing.metaDescriptionQ|Lexicon Meta 描述列表 Q
+cbaxLexicon.page.listing.metaDescriptionR|Lexicon Meta 描述列表 R
+cbaxLexicon.page.listing.metaDescriptionS|Lexicon Meta 描述列表 S
+cbaxLexicon.page.listing.metaDescriptionT|词汇元描述列表 T
+cbaxLexicon.page.listing.metaDescriptionU|Lexicon Meta 描述列表 U
+cbaxLexicon.page.listing.metaDescriptionV|词汇元描述列表 V
+cbaxLexicon.page.listing.metaDescriptionW|Lexicon Meta 描述列表 W
+cbaxLexicon.page.listing.metaDescriptionX|Lexicon Meta 描述列表 X
+cbaxLexicon.page.listing.metaDescriptionY|词汇元描述列表 Y
+cbaxLexicon.page.listing.metaDescriptionZ|词汇元描述列表 Z
+cbaxLexicon.page.listing.metaKeywords09|Lexicon Meta 关键词列表 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Lexicon Meta 关键词列表 A
+cbaxLexicon.page.listing.metaKeywordsB|Lexicon Meta 关键词列表 B
+cbaxLexicon.page.listing.metaKeywordsC|Lexicon Meta 关键词列表 C
+cbaxLexicon.page.listing.metaKeywordsD|Lexicon Meta 关键词列表 D
+cbaxLexicon.page.listing.metaKeywordsE|Lexicon Meta 关键词列表 E
+cbaxLexicon.page.listing.metaKeywordsF|Lexicon Meta 关键词列表 F
+cbaxLexicon.page.listing.metaKeywordsG|Lexicon Meta 关键词列表 G
+cbaxLexicon.page.listing.metaKeywordsH|Lexicon Meta 关键词列表 H
+cbaxLexicon.page.listing.metaKeywordsI|Lexicon Meta 关键词列表 I
+cbaxLexicon.page.listing.metaKeywordsJ|Lexicon Meta 关键词列表 J
+cbaxLexicon.page.listing.metaKeywordsK|Lexicon Meta 关键词列表 K
+cbaxLexicon.page.listing.metaKeywordsL|Lexicon Meta 关键词列表 L
+cbaxLexicon.page.listing.metaKeywordsM|Lexicon Meta 关键词列表 M
+cbaxLexicon.page.listing.metaKeywordsN|Lexicon Meta 关键词列表 N
+cbaxLexicon.page.listing.metaKeywordsO|Lexicon Meta 关键词列表 O
+cbaxLexicon.page.listing.metaKeywordsP|Lexicon Meta 关键词列表 P
+cbaxLexicon.page.listing.metaKeywordsQ|Lexicon Meta 关键词列表 Q
+cbaxLexicon.page.listing.metaKeywordsR|Lexicon Meta 关键词列表 R
+cbaxLexicon.page.listing.metaKeywordsS|Lexicon Meta 关键词列表 S
+cbaxLexicon.page.listing.metaKeywordsT|Lexicon Meta 关键词列表 T
+cbaxLexicon.page.listing.metaKeywordsU|Lexicon Meta 关键词列表 U
+cbaxLexicon.page.listing.metaKeywordsV|Lexicon Meta 关键词列表 V
+cbaxLexicon.page.listing.metaKeywordsW|Lexicon Meta 关键词列表 W
+cbaxLexicon.page.listing.metaKeywordsX|Lexicon Meta 关键词列表 X
+cbaxLexicon.page.listing.metaKeywordsY|Lexicon Meta 关键词列表 Y
+cbaxLexicon.page.listing.metaKeywordsZ|Lexicon Meta 关键词列表 Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|我
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Q
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|目录
+cbaxLexicon.page.navigation.linkIndex|起始页
+cbaxLexicon.page.pagination.toOverview|概述
+cbaxLexicon.page.sidebar.title|词汇：
+checkout.confirmRevocationReminder|您已声明放弃退出权。
+checkout.confirmRevocationTerms|我希望立即访问数字内容，并且我确认，因此我放弃取消的权利。
+checkout.confirmTermsReminderText|"您已接受<a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""通用条款和条件"">通用条款和条件</a>。"
+checkout.confirmTermsText|"我已阅读并接受<a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""通用条款和条件"">通用条款和条件</a>。"
+checkout.lineItemUnitPriceDescriptor|单位
+checkout.merchant-not-selected|请选择您的本地商家以继续结账。
+checkout.or|或
+CmsElements.callToAction.elementError|此元素不适用于侧边栏。请为您的侧边栏选择另一个 <p class='h5 my-2'>Call to Action</p>。
+CmsElements.counter.days|天
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|您尚未上传有效的视频。检查元素的设置。
+CmsElements.htmlVideo.hint.headline|格式错误/无视频
+CmsElements.placeholder.label|更换元件
+CmsElements.shopTheLook.addAllProducts|将产品添加到购物车
+CmsElements.shopTheLook.totalDiscount|节省：
+component.cms.imageGallery.sliderDotLabel|显示图像 %index%，共 %total%
+component.cms.vimeo.privacyNoticeText|"观看视频，即表示您同意您的数据将被传输到 %platform%，并且您已阅读 <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""隐私政策"">隐私政策</a>。"
+component.product.quantitySelect.decrease|减少数量
+component.product.quantitySelect.increase|增加数量
+component.product.quantitySelect.label|数量
+contact.newsletterSubscribe|本人特此同意，TENTE 也可以通过电子邮件和电话将 TENTE 的产品和事件（例如，展会外观）告知本人。
+contact.privacyNoticeText|"选择“继续”，即表示您确认已阅读并同意我们的<a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""数据保护信息"">数据保护信息</a>。"
+cookie.groupComfortFeaturesYoutubeVideo|YouTube 视频
+cookie.messageText|"本网站使用 Cookie 来确保获得最佳体验。<a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""更多信息"">更多信息...</a>"
+detail.acrisProductDownloadBtnText|下载
+detail.acrisProductDownloadNoPreview|无预览
+detail.acrisProductDownloadTabLabel|下载
+detail.acrisProductDownloadTitle|下载
+detail.acrisProductLinkTabLabel|链接
+detail.acrisProductLinkTitle|链接
+detail.buyOnline|在线购买
+detail.cadService.downloadBtn|下载
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|文件类型
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|您可以下载不同格式的本产品的构造数据
+detail.cadService.login|"请<a href=""%url%"">登录</a>查看 CAD 文件"
+detail.cadService.title|CAD 服务
+detail.contactText|"尚未找到合适的产品、有特殊要求或您对个别解决方案感兴趣吗？<a href=""%url%"" title=""Kontaktformular"">联系我们</a>。"
+detail.ean|EAN
+detail.orderNumber|产品编号
+detail.orText|或
+detail.performance.atrittion|特征
+detail.performance.movement|运动噪音
+detail.performance.resistance|耐腐蚀性
+detail.performance.roll|轧制性能
+detail.priceOnRequestText|每件加增值税<br />24 小时内即可发货
+detail.priceOnRequestTitle|应要求提供价格
+detail.properties.fitting|技术数据拟合
+detail.properties.housing|技术数据支架
+detail.properties.label.downloads|下载
+detail.properties.label.feature|产品特性
+detail.properties.label.fitting|接头
+detail.properties.label.housing|支架
+detail.properties.label.performance|绩效
+detail.properties.label.wheel|轮子
+detail.properties.performance|绩效
+detail.properties.wheel|技术数据轮子
+detail.qte|数量
+detail.reviewFormContentPlaceholder|输入您的评论...
+detail.sendQuoteRequest|发送报价请求
+detail.tabs.downloads|下载
+detail.tabs.features|特性
+detail.tabs.performance|绩效
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|数量 （%quantity%） 不正确。
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|订单编号为“%orderNumber%”的订单已支付，之后无法编辑。
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|无法找到此订单。
+error.merchant-not-selected|请选择您的本地商家以继续结账。
+error.VIOLATION::ZIP_CODE_INVALID|您输入的邮政编码格式不正确。
+footer.excludeVatText|"* 不含所有价格。如未另行说明，增值税加 <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">运费</a>和可能的运费。"
+footer.includeVatText|"* 所有价格均包含 如未另行说明，增值税加 <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">运费</a>和可能的运费。"
+footer.serviceContactText|"或者通过我们的<a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Contact form"">联系表</a>。"
+footer.socialMediaHeadline|社交
+general.contactUs|联系我们
+general.contactUsLink|/联系
+general.loginRegister|登录/注册
+general.privacyNoticeText|"订阅新闻通讯即表示您接受我们的<a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""隐私政策"">隐私政策</a>以及我们的<a data-ajax-modal=""true"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""条款和条件"">条款和条件</a>。"
+global.default.activate|激活
+global.default.cancel|取消
+global.default.confirm|确认
+global.default.deactivate|停用
+global.default.delete|删除
+global.default.edit|编辑
+global.default.noteRequiredFields|标有星号 （*） 的字段为必填字段。
+global.default.save|保存
+listing.downloadText|下载
+moorl-creator.aboutTheCreator|关于创建者
+moorl-creator.aboutTheCreators|关于创作者
+moorl-creator.creator|创建者
+moorl-creator.creators|创作者
+moorl-creator.donate|捐赠
+moorl-creator.follow|关注
+moorl-creator.link|主页
+moorl-creator.productsOf|产品
+moorl-creator.readMore|阅读更多...
+moorl-foundation.buttons.acceptCookie|接受 Cookie
+moorl-foundation.buttons.addMerchantButtonText|新商户
+moorl-foundation.buttons.administrationButtonText|给药
+moorl-foundation.buttons.cancelButtonText|取消
+moorl-foundation.buttons.exportButtonText|导出 CSV
+moorl-foundation.buttons.exportButtonTitle|下载您的 CSV
+moorl-foundation.buttons.getLocButtonText|通过 OpenStreetMap 获取职位
+moorl-foundation.buttons.importButtonText|导入 CSV
+moorl-foundation.buttons.importButtonTitle|上传您的 CSV
+moorl-foundation.buttons.mediaFolder|将图像保存到此文件夹中
+moorl-foundation.buttons.newButtonText|新
+moorl-foundation.buttons.openMapButtonText|打开地图
+moorl-foundation.buttons.openNewWindowButtonText|在新窗口中打开
+moorl-foundation.buttons.overwriteText|覆盖现有数据行（需要设置originId）。
+moorl-foundation.buttons.placeIdLink|计划路线
+moorl-foundation.buttons.refreshButtonText|重新加载
+moorl-foundation.buttons.saveButtonText|保存
+moorl-foundation.buttons.selectLocButtonText|选择
+moorl-foundation.buttons.startImportButtonText|开始导入
+moorl-foundation.card.address|地址
+moorl-foundation.card.company|公司
+moorl-foundation.card.contact|联系人
+moorl-foundation.card.legend|图例
+moorl-foundation.card.openingHours|营业时间
+moorl-foundation.card.person|联系人
+moorl-foundation.customerUpload.checkToDelete|选中以删除
+moorl-foundation.customerUpload.dictDefaultMessage|将文件拖到此处上传
+moorl-foundation.customerUpload.useAsCover|用作盖子
+moorl-foundation.days.closed|已关闭
+moorl-foundation.days.friday|周五
+moorl-foundation.days.monday|周一
+moorl-foundation.days.saturday|周六
+moorl-foundation.days.sunday|周日
+moorl-foundation.days.thursday|周四
+moorl-foundation.days.today|今天
+moorl-foundation.days.tuesday|周二
+moorl-foundation.days.wednesday|周三
+moorl-foundation.general.selectedItems|所选项目
+moorl-foundation.general.share|分享
+moorl-foundation.general.subTotal|小计
+moorl-foundation.general.toc|目录
+moorl-foundation.label.accountCard|账户
+moorl-foundation.label.addressCard|地址
+moorl-foundation.label.generalCard|一般
+moorl-foundation.label.locationCard|位置
+moorl-foundation.label.markerCard|标记
+moorl-foundation.label.metaCard|元
+moorl-foundation.label.relationsCard|关系和筛选器
+moorl-foundation.label.visibilityCard|可见性
+moorl-foundation.listing.filter.categories|类别
+moorl-foundation.listing.filter.country|国家/地区
+moorl-foundation.listing.filter.distance|距离
+moorl-foundation.listing.filter.firstChar|指数
+moorl-foundation.listing.filter.inRadiusOf|半径为
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|MI
+moorl-foundation.listing.filter.myLocation|使用我的位置
+moorl-foundation.listing.filter.navigation|类别
+moorl-foundation.listing.filter.radius|搜索邮政编码
+moorl-foundation.listing.filter.search|搜索文本
+moorl-foundation.listing.filter.tags|标签
+moorl-foundation.listing.filter.zipcodeCity|邮政编码/城市
+moorl-foundation.properties.active|活动
+moorl-foundation.properties.additionalAddressLine1|地址行 1
+moorl-foundation.properties.additionalAddressLine2|地址行 2
+moorl-foundation.properties.articles|文章
+moorl-foundation.properties.author|作者
+moorl-foundation.properties.categories|类别
+moorl-foundation.properties.city|城市
+moorl-foundation.properties.closed|已关闭
+moorl-foundation.properties.cmsPage|CMS 页面
+moorl-foundation.properties.cmsPageId|CMS 页面 ID
+moorl-foundation.properties.company|公司
+moorl-foundation.properties.content|内容
+moorl-foundation.properties.country|国家/地区
+moorl-foundation.properties.countryCode|国家代码
+moorl-foundation.properties.countryId|国家/地区
+moorl-foundation.properties.createdAt|创建于
+moorl-foundation.properties.customerGroupId|客户组
+moorl-foundation.properties.customerNumber|客户编号
+moorl-foundation.properties.date|日期
+moorl-foundation.properties.department|部门
+moorl-foundation.properties.description|描述
+moorl-foundation.properties.distance|距离
+moorl-foundation.properties.email|电子邮件
+moorl-foundation.properties.enableComments|启用注释
+moorl-foundation.properties.firstName|名字
+moorl-foundation.properties.from|从
+moorl-foundation.properties.highlight|突出显示
+moorl-foundation.properties.image|文章
+moorl-foundation.properties.info|信息
+moorl-foundation.properties.inRadiusOf|半径为
+moorl-foundation.properties.invisible|不可见
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|姓氏
+moorl-foundation.properties.location|职位
+moorl-foundation.properties.locationLat|纬度
+moorl-foundation.properties.locationLon|经度
+moorl-foundation.properties.locked|锁定
+moorl-foundation.properties.logo|徽标
+moorl-foundation.properties.marker|标记
+moorl-foundation.properties.markerId|标记
+moorl-foundation.properties.markerSettings|标记设置
+moorl-foundation.properties.markerSettingsExample|您可以复制此示例以调整自定义标记设置。
+moorl-foundation.properties.markerSettingsLink|传单自定义标记示例
+moorl-foundation.properties.markerShadow|标记阴影
+moorl-foundation.properties.markerShadowId|标记阴影
+moorl-foundation.properties.media|媒体
+moorl-foundation.properties.mediaId|介质 ID
+moorl-foundation.properties.merchant|商户
+moorl-foundation.properties.merchantUrl|商户 URL
+moorl-foundation.properties.metaDescription|元描述
+moorl-foundation.properties.metaTitle|元标题
+moorl-foundation.properties.name|名称
+moorl-foundation.properties.openingHours|营业时间
+moorl-foundation.properties.originId|起运地 ID
+moorl-foundation.properties.phoneNumber|电话
+moorl-foundation.properties.priority|优先级
+moorl-foundation.properties.productManufacturers|制造商 ID
+moorl-foundation.properties.products|产品
+moorl-foundation.properties.radius|半径
+moorl-foundation.properties.repeat|重复
+moorl-foundation.properties.salesChannel|销售渠道
+moorl-foundation.properties.salesChannelId|销售渠道
+moorl-foundation.properties.search|搜索
+moorl-foundation.properties.shopUrl|购买 URL
+moorl-foundation.properties.showFrom|显示自
+moorl-foundation.properties.showUntil|显示至
+moorl-foundation.properties.slug|缝隙
+moorl-foundation.properties.sticky|粘性
+moorl-foundation.properties.street|街道
+moorl-foundation.properties.streetNumber|编号
+moorl-foundation.properties.tags|标签名称/ID
+moorl-foundation.properties.teaser|预告片
+moorl-foundation.properties.title|标题
+moorl-foundation.properties.until|直至
+moorl-foundation.properties.updatedAt|更新时间：
+moorl-foundation.properties.vatId|增值税-ID
+moorl-foundation.properties.zipcode|邮政编码
+moorl-foundation.search.headline|"{0} ""%searchTerm%"" | {1} 没有匹配项 ""%searchTerm%"" | 】1，Inf【 %count% 匹配项 ""%searchTerm%"""
+moorl-foundation.search.missingConfiguration|缺少此列表的配置！
+moorl-foundation.search.moreButton|更多
+moorl-foundation.search.noListingSlotFound|此页面没有列表元素。检查您的列表设置并选择“自动项目”
+moorl-foundation.search.notAvailable|不可用
+moorl-foundation.search.product|产品
+moorl-location-map.cookieDescription|我们使用 OpenStreetMap 作为瓷砖提供商，直观地向您展示我们的商店和商家的位置。
+moorl-location-map.cookieHint|请接受 Cookie 以使用所需的功能。
+moorl-location-map.cookieName|位置图
+moorl-magazine.articles|博客文章
+moorl-magazine.author|作者
+moorl-magazine.authors|作者
+moorl-magazine.back|背面
+moorl-magazine.backToOverview|返回概览
+moorl-magazine.categories|类别
+moorl-magazine.categoryAll|所有类别
+moorl-magazine.commentArea|备注区域
+moorl-magazine.commentAreaDisabled|已禁用此文章的注释
+moorl-magazine.commentError|请确保正确填写所有字段
+moorl-magazine.commentReview|您的评论将在审核后发布。
+moorl-magazine.commentSuccess|感谢您的评论！
+moorl-magazine.date|日期
+moorl-magazine.dateFormat|F jS \a\t g：ia
+moorl-magazine.email|电子邮件
+moorl-magazine.emailPlaceholder|输入您的电子邮件地址
+moorl-magazine.name|名称
+moorl-magazine.namePlaceholder|输入您的姓名
+moorl-magazine.next|下一个
+moorl-magazine.page|页面
+moorl-magazine.pageDescription|Lorem ipsum dolor 坐着吃饭，安慰蜷缩长绅士，sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat，sed diam voluptua。在 vero eos et accusam et justo duo dolores etea 反驳。Stet clita kasd gubergren，无海洋圣地塔基马塔 est Lorem ipsum dolor 坐着。Lorem ipsum dolor 坐着吃饭，安慰蜷缩长绅士，sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat，sed diam voluptua。在 vero eos et accusam et justo duo dolores etea 反驳。Stet clita kasd gubergren，无海洋圣地塔基马塔 est Lorem ipsum dolor 坐着。
+moorl-magazine.pageTitle|我的优雅博客
+moorl-magazine.posts|博客文章
+moorl-magazine.products|相关产品
+moorl-magazine.readMore|阅读更多
+moorl-magazine.recentComments|近期评论
+moorl-magazine.relatedArticles|相关博客文章
+moorl-magazine.search|搜索
+moorl-magazine.searchFor|搜索...
+moorl-magazine.sendComment|提交您的评论
+moorl-magazine.similarArticles|类似的博客文章
+moorl-magazine.sticky|固定
+moorl-magazine.tags|标签
+moorl-magazine.writeComment|撰写评论
+moorl-magazine.wroteOn|写在
+moorl-magazine.yourComment|您的评论
+moorl-magazine.yourCommentPlaceholder|在此输入您的评论
+moorl-merchant-finder.allCategories|所有类别
+moorl-merchant-finder.allCountries|所有国家/地区
+moorl-merchant-finder.allManufacturers|所有制造商
+moorl-merchant-finder.allowMerchantCustomerContact|我允许选定的商家通过电话或电子邮件与我联系。
+moorl-merchant-finder.allResults|-- 选择 --
+moorl-merchant-finder.allTags|所有标签
+moorl-merchant-finder.are|是 
+moorl-merchant-finder.available|可用
+moorl-merchant-finder.backToOverview|返回概览
+moorl-merchant-finder.call|呼叫
+moorl-merchant-finder.cancel|取消
+moorl-merchant-finder.categories|类别
+moorl-merchant-finder.checkAvailability|检查可用性
+moorl-merchant-finder.chose|选择
+moorl-merchant-finder.choseMerchant|选择商家
+moorl-merchant-finder.choseMerchantToProceed|请选择您的当地商户以继续结账
+moorl-merchant-finder.close|关闭
+moorl-merchant-finder.commentToMerchant|向商家发送评论
+moorl-merchant-finder.country|国家/地区
+moorl-merchant-finder.deliveryTime|交付时间
+moorl-merchant-finder.deliveryTimeUnknown|未知 - 订单中将请求产品
+moorl-merchant-finder.description|描述
+moorl-merchant-finder.desiredDate|所需取车日期
+moorl-merchant-finder.desiredTime|所需取车时间
+moorl-merchant-finder.displayOnMap|在地图上显示
+moorl-merchant-finder.distance|距离
+moorl-merchant-finder.emptyResultMessage|未找到商家
+moorl-merchant-finder.findMerchants|查找商家
+moorl-merchant-finder.forTheSearch|搜索 
+moorl-merchant-finder.forTheSearchZipcode|在邮政编码和距离 公里的环境中 
+moorl-merchant-finder.highlight|提示
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|正在加载...
+moorl-merchant-finder.manufacturers|制造商
+moorl-merchant-finder.merchant|商户
+moorl-merchant-finder.merchants|商户
+moorl-merchant-finder.merchantUrl|网站
+moorl-merchant-finder.more|更多
+moorl-merchant-finder.myLocation|使用我的当前位置
+moorl-merchant-finder.mySelection|我的选择
+moorl-merchant-finder.noMerchantSelected|产品不可用。未选择商家。
+moorl-merchant-finder.none|无
+moorl-merchant-finder.openingHours|营业时间
+moorl-merchant-finder.outOfStock|产品不可用。您选择的商家没有此产品库存。
+moorl-merchant-finder.phoneNumber|电话
+moorl-merchant-finder.pickupDateSet|已设置提车时间
+moorl-merchant-finder.productAvailability|产品可用性
+moorl-merchant-finder.productNotAvailable|产品不可用。请联系商店支持部门了解更多信息。
+moorl-merchant-finder.radius|半径
+moorl-merchant-finder.resetSelection|重置选择
+moorl-merchant-finder.resultsFound|已找到计数结果
+moorl-merchant-finder.save|保存
+moorl-merchant-finder.search|搜索
+moorl-merchant-finder.searchFor|搜索
+moorl-merchant-finder.searchLocation|搜索位置
+moorl-merchant-finder.searchRules.hasLogo|带徽标的商户
+moorl-merchant-finder.searchRules.hasPriority|优先商户
+moorl-merchant-finder.searchRules.isHighlighted|高级商户
+moorl-merchant-finder.searchRules.isNotHighlighted|正常商户
+moorl-merchant-finder.selectedMerchant|所选商户
+moorl-merchant-finder.sendMail|邮件
+moorl-merchant-finder.shop|选购
+moorl-merchant-finder.shopUrl|访问商店
+moorl-merchant-finder.stockInfo|库存信息
+moorl-merchant-finder.tags|标签
+moorl-merchant-finder.thereAre|有 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|邮政编码，城市
+moorl-merchant-finder.zipcodeCityEnter|输入邮政编码或城市并按回车键
+nimbits-pricerequests.cart.cartRequestButton|请求录用
+nimbits-pricerequests.cart.dontAddByProductNumber|此产品无法添加到购物车。
+nimbits-pricerequests.detail.available|可用
+nimbits-pricerequests.detail.button.openrequestform|请求录用
+nimbits-pricerequests.detail.restock|"{1} 1 天内可用|】1，Inf【 %restockTime% 天内可用"
+nimbits-pricerequests.detail.text.priceonrequest|应要求提供价格
+nimbits-pricerequests.fail.alert|请求未发送 - 发生错误。请重试。
+nimbits-pricerequests.finish.alert|请求已成功发送
+nimbits-pricerequests.finish.buttonBack|返回商店
+nimbits-pricerequests.listing.button.openrequestform|请求录用
+nimbits-pricerequests.listing.text.priceonrequest|应要求提供价格
+nimbits-pricerequests.mail.address|地址
+nimbits-pricerequests.mail.amount|金额
+nimbits-pricerequests.mail.article|文章
+nimbits-pricerequests.mail.city|城市
+nimbits-pricerequests.mail.comment|客户评论
+nimbits-pricerequests.mail.company|公司
+nimbits-pricerequests.mail.country|国家/地区
+nimbits-pricerequests.mail.customersendername|应要求提供价格
+nimbits-pricerequests.mail.housenumber|门牌号
+nimbits-pricerequests.mail.mail|邮件
+nimbits-pricerequests.mail.name|名称
+nimbits-pricerequests.mail.ordernumber|订单号
+nimbits-pricerequests.mail.price|价格
+nimbits-pricerequests.mail.pricegross|包括 税费
+nimbits-pricerequests.mail.pricegrosssum|包括 税费总额
+nimbits-pricerequests.mail.pricenet|不包括 税费
+nimbits-pricerequests.mail.pricenetsum|不包括 税费总额
+nimbits-pricerequests.mail.requestfirst|来自 的价格请求
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|应要求提供价格
+nimbits-pricerequests.mail.street|街道
+nimbits-pricerequests.mail.subject|应要求提供价格
+nimbits-pricerequests.mail.subjectcart|购物车请求
+nimbits-pricerequests.mail.subjectshopowner|应要求提供价格
+nimbits-pricerequests.mail.subjectshopownercart|购物车请求
+nimbits-pricerequests.mail.zipcode|邮政编码
+nimbits-pricerequests.popup.city|城市
+nimbits-pricerequests.popup.closebutton|关闭
+nimbits-pricerequests.popup.company|公司
+nimbits-pricerequests.popup.country|国家/地区
+nimbits-pricerequests.popup.dataprivacytext|"我已阅读、理解并同意 <a href=""/privacy"" target=""_blank"" rel=""noreferrer noopener""> 隐私政策 </a>。"
+nimbits-pricerequests.popup.desiredprice|所需价格 
+nimbits-pricerequests.popup.entervalidcity|请输入有效的城市。
+nimbits-pricerequests.popup.entervalidcountry|请输入有效的国家/地区。
+nimbits-pricerequests.popup.entervalidhousenumber|请输入有效的房号。
+nimbits-pricerequests.popup.entervalidmail|请输入有效的电子邮件地址。
+nimbits-pricerequests.popup.entervalidstreet|请输入有效的街道。
+nimbits-pricerequests.popup.entervalidzipcode|请输入有效的邮政编码。
+nimbits-pricerequests.popup.genderm|先生
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|女士
+nimbits-pricerequests.popup.housenumber|门牌号
+nimbits-pricerequests.popup.mail|邮寄地址
+nimbits-pricerequests.popup.name|名称
+nimbits-pricerequests.popup.optional|（可选）
+nimbits-pricerequests.popup.phonenumber|电话
+nimbits-pricerequests.popup.popupTitle|请求录用
+nimbits-pricerequests.popup.product|此请求中的产品（一个或多个）：
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|请求
+nimbits-pricerequests.popup.requestbutton|请求
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|标有 * 的字段为必填字段。
+nimbits-pricerequests.popup.salutation|称呼
+nimbits-pricerequests.popup.street|街道
+nimbits-pricerequests.popup.surname|姓氏
+nimbits-pricerequests.popup.text|为所选产品申请优惠
+nimbits-pricerequests.popup.zipcode|邮政编码
+nimbits-pricerequests.search.text.priceonrequest|应要求提供价格
+nimbits-pricerequests.toasts.error|请求未发送 - 发生错误。请重试。
+nimbits-pricerequests.toasts.success|请求已成功发送
+priceRequest.newsletterText|本人特此同意，TENTE 也可以通过电子邮件和电话将 TENTE 的产品和事件（例如，展会）告知本人。
+priceRequest.sendRequestText|请求将被传输...
+priceRequest.waitText|请稍候...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|选择选项...
+theme.compilation.async.success|已完成销售渠道 %salesChannelName% 的编译
+vdct-simple-events.events.detail.to-event|前往活动
+zeobv-store-switcher.switchStoreLabel|切换商店

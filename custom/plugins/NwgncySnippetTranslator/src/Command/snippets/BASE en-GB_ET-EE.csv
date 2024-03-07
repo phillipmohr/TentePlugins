@@ -1,0 +1,564 @@
+TENTE et-EE|Tõlge
+account.doubleOptinAccountAlert|Teie kliendikonto ei ole veel aktiveeritud. Saatsime kinnitusmeili, mis sisaldab aktiveerimislinki. Palun kontrollige oma postkasti ja klõpsake lingil, et registreerumine lõpule viia!
+account.downloadFileButton|Laadi alla
+account.downloadItemColumnDate|Kuupäev
+account.downloadItemColumnTitle|Fail
+account.faxLabel|Faks
+account.faxPlaceholder|Sisestage faks
+account.homepageLabel|Koduleht
+account.homepagePlaceholder|Sisestage kodulehe URL
+account.passwordNotIdentical|Sisestatud paroolid ei ühti.
+account.personalTypePlaceholder|Valige...
+account.profileCurrentMailPlaceholder|Sisestage e-posti aadress...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modaalne"" data-bs-target=""%target%"">Klõpsake siin</a>, et kustutada kõik oma isikuandmed."
+account.profilePasswordCreateNewPlaceholder|Sisestage uus parool...
+account.profilePasswordCurrentPlaceholder|Sisestage praegune parool...
+acrisFilter.buttonFiltersHide|Kuva vähem filtreid
+acrisFilter.buttonFilterShowHideLabel|Kuva rohkem või vähem filtreid
+acrisFilter.buttonFiltersShow|Kuva rohkem filtreid
+acrisFilter.buttonHeaderSearchAllCategories|Kõik kategooriad
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Kohe saadaval
+acrisFilter.filterCategoriesDisplayName|Kategooriad
+acrisFilter.filterRangeActiveMaxLabel|Kinnisvara %displayName% kuni
+acrisFilter.filterRangeActiveMinLabel|Kinnisvara %displayName% alates
+acrisFilter.filterRangeSliderFrom|alates
+acrisFilter.filterRangeSliderTo|kuni
+acrisFilter.filterSearchPlaceholder|Otsi...
+card.card-image|Pilt %name%
+card.linkTitle|Ava %url% uuel vahekaardil
+cbaxLexicon.page.ajax.linkDescription|Leksikoni juurde
+cbaxLexicon.page.banner.alt|Banner
+cbaxLexicon.page.boxKeyword.moreRead|Loe edasi
+cbaxLexicon.page.breadcrumb.name|Leksikon
+cbaxLexicon.page.content.headline|Sisu tabel
+cbaxLexicon.page.content.metaDescription|Lexicon Meta kirjelduse sisu
+cbaxLexicon.page.content.metaKeywords|Lexicon Meta märksõnade sisu
+cbaxLexicon.page.content.metaTitle|Sisu tabel
+cbaxLexicon.page.filter.button|Leksikoni navigeerimine
+cbaxLexicon.page.filter.headline|Leksikoni navigeerimine
+cbaxLexicon.page.index.metaDescription|Leksikon Meta kirjelduse indeks
+cbaxLexicon.page.index.metaKeywords|Lexicon Meta märksõnade indeks
+cbaxLexicon.page.index.metaTitle|Leksikon
+cbaxLexicon.page.listing.entryHeadline|Selle entsüklopeedia kategooria postitused
+cbaxLexicon.page.listing.metaDescription09|Leksikon Meta kirjelduse loend 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Lexicon Meta kirjeldus, loend A
+cbaxLexicon.page.listing.metaDescriptionB|Lexicon Meta kirjeldus B
+cbaxLexicon.page.listing.metaDescriptionC|Leksikon Meta kirjelduse loend C
+cbaxLexicon.page.listing.metaDescriptionD|Lexicon Meta kirjelduse loend D
+cbaxLexicon.page.listing.metaDescriptionE|Leksikon Meta kirjelduse loend E
+cbaxLexicon.page.listing.metaDescriptionF|Leksikon Meta kirjelduse loend F
+cbaxLexicon.page.listing.metaDescriptionG|Leksikon Meta kirjelduse loend G
+cbaxLexicon.page.listing.metaDescriptionH|Lexicon Meta kirjeldus H
+cbaxLexicon.page.listing.metaDescriptionI|Leksikon Meta kirjeldus I
+cbaxLexicon.page.listing.metaDescriptionJ|Lexicon Meta kirjeldus, loend J
+cbaxLexicon.page.listing.metaDescriptionK|Leksikon Meta kirjeldus K
+cbaxLexicon.page.listing.metaDescriptionL|Leksikon Meta kirjeldus, loetelu L
+cbaxLexicon.page.listing.metaDescriptionM|Lexicon Meta kirjeldus, loend M
+cbaxLexicon.page.listing.metaDescriptionN|Leksikon Meta kirjelduse loend N
+cbaxLexicon.page.listing.metaDescriptionO|Lexicon Meta kirjeldus, mis sisaldab O-d
+cbaxLexicon.page.listing.metaDescriptionP|Leksikon Meta kirjelduse loend P
+cbaxLexicon.page.listing.metaDescriptionQ|Leksikon Meta kirjelduse loend Q
+cbaxLexicon.page.listing.metaDescriptionR|Leksikon Meta kirjelduse loend R
+cbaxLexicon.page.listing.metaDescriptionS|Leksikon Meta kirjelduse loend S
+cbaxLexicon.page.listing.metaDescriptionT|Lexicon Meta kirjelduse loend T
+cbaxLexicon.page.listing.metaDescriptionU|Lexicon Meta kirjeldus, loend U
+cbaxLexicon.page.listing.metaDescriptionV|Leksikon Meta kirjelduse loend V
+cbaxLexicon.page.listing.metaDescriptionW|Lexicon Meta kirjeldus, loend W
+cbaxLexicon.page.listing.metaDescriptionX|Leksikon Meta kirjelduse loend X
+cbaxLexicon.page.listing.metaDescriptionY|Lexicon Meta kirjeldus, loetelu Y
+cbaxLexicon.page.listing.metaDescriptionZ|Lexicon Meta kirjeldus, loend Z
+cbaxLexicon.page.listing.metaKeywords09|Lexicon Meta märksõnade loend 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Lexicon Meta märksõnad, mis loetlevad A
+cbaxLexicon.page.listing.metaKeywordsB|Lexicon Meta märksõnade loend B
+cbaxLexicon.page.listing.metaKeywordsC|Lexicon Meta võtmesõnad, loend C
+cbaxLexicon.page.listing.metaKeywordsD|Lexicon Meta märksõnad D
+cbaxLexicon.page.listing.metaKeywordsE|Lexicon Meta märksõnad E
+cbaxLexicon.page.listing.metaKeywordsF|Lexicon Meta võtmesõnade loend F
+cbaxLexicon.page.listing.metaKeywordsG|Lexicon Meta märksõnad, mis loetlevad G
+cbaxLexicon.page.listing.metaKeywordsH|Lexicon Meta märksõnad, mis loetlevad H
+cbaxLexicon.page.listing.metaKeywordsI|Lexicon Meta võtmesõnad I
+cbaxLexicon.page.listing.metaKeywordsJ|Lexicon Meta märksõnad J
+cbaxLexicon.page.listing.metaKeywordsK|Lexicon Meta märksõnad K-d
+cbaxLexicon.page.listing.metaKeywordsL|Lexicon Meta märksõnad, nimekiri L
+cbaxLexicon.page.listing.metaKeywordsM|Lexicon Meta märksõnad, mis loetlevad M
+cbaxLexicon.page.listing.metaKeywordsN|Lexicon Meta võtmesõnad, loend N
+cbaxLexicon.page.listing.metaKeywordsO|Lexicon Meta märksõnad O
+cbaxLexicon.page.listing.metaKeywordsP|Lexicon Meta märksõnad, loend P
+cbaxLexicon.page.listing.metaKeywordsQ|Lexicon Meta võtmesõnad Q
+cbaxLexicon.page.listing.metaKeywordsR|Lexicon Meta märksõnad R-i nimekiri
+cbaxLexicon.page.listing.metaKeywordsS|Lexicon Meta märksõnad, loend S
+cbaxLexicon.page.listing.metaKeywordsT|Lexicon Meta märksõnade loend T
+cbaxLexicon.page.listing.metaKeywordsU|Lexicon Meta võtmesõnad, loend U
+cbaxLexicon.page.listing.metaKeywordsV|Lexicon Meta märksõnad V
+cbaxLexicon.page.listing.metaKeywordsW|Lexicon Meta märksõnad W
+cbaxLexicon.page.listing.metaKeywordsX|Lexicon Meta märksõnad X
+cbaxLexicon.page.listing.metaKeywordsY|Lexicon Meta märksõnad, mis loetlevad Y
+cbaxLexicon.page.listing.metaKeywordsZ|Lexicon Meta võtmesõnad, loend Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|Mina
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Q
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Sisu tabel
+cbaxLexicon.page.navigation.linkIndex|Algusleht
+cbaxLexicon.page.pagination.toOverview|Ülevaateks
+cbaxLexicon.page.sidebar.title|Leksikon:
+checkout.confirmRevocationReminder|Olete juba teatanud, et loobute taganemisõigusest.
+checkout.confirmRevocationTerms|Soovin kohest juurdepääsu digitaalsele sisule ja tunnistan, et loobun seetõttu oma õigusest tühistada.
+checkout.confirmTermsReminderText|"Olete juba aktsepteerinud <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""üldtingimused"">üldised tingimused</a>."
+checkout.confirmTermsText|"Olen <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""üldtingimused"">üldtingimused</a>."
+checkout.lineItemUnitPriceDescriptor|seade
+checkout.merchant-not-selected|Palun valige kassas jätkamiseks oma kohalik kaupmees.
+checkout.or|või
+CmsElements.callToAction.elementError|See element ei ole külgriba jaoks saadaval. Palun valige oma külgriba jaoks teine <p class="h5 my-2">Kutsu tegutsema</p>.
+CmsElements.counter.days|PÄEV
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|Te ei ole üles laadinud kehtivat videot. Kontrollige elemendi sätteid.
+CmsElements.htmlVideo.hint.headline|Vale formaat / video puudub
+CmsElements.placeholder.label|Vahetage element välja
+CmsElements.shopTheLook.addAllProducts|Lisage tooteid ostukorvi
+CmsElements.shopTheLook.totalDiscount|Säästud:
+component.cms.imageGallery.sliderDotLabel|Kuva pilt %index% %total%
+component.cms.vimeo.privacyNoticeText|"Video vaatamisega nõustute, et teie andmed edastatakse %platform% -le ja et olete lugenud <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Privaatsuspoliitika"">Privaatsuspoliitika</a>."
+component.product.quantitySelect.decrease|Vähendage kogust
+component.product.quantitySelect.increase|Suurendage kogust
+component.product.quantitySelect.label|Kogus
+contact.newsletterSubscribe|Käesolevaga nõustun, et TENTE võib mind e-posti ja telefoni teel teavitada ka TENTE toodetest ja sündmustest (nt messi õiglased esinemised).
+contact.privacyNoticeText|"Valides nuppu Jätka, kinnitate, et olete lugenud ja nõustute meie <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Andmekaitseteave"">Andmekaitseteave</a>."
+cookie.groupComfortFeaturesYoutubeVideo|YouTube'i video
+cookie.messageText|"See veebisait kasutab küpsiseid parima võimaliku kogemuse tagamiseks. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Lisateave"">Lisateave...</a>"
+detail.acrisProductDownloadBtnText|Laadi alla
+detail.acrisProductDownloadNoPreview|Eelvaateid ei ole
+detail.acrisProductDownloadTabLabel|Allalaadimised
+detail.acrisProductDownloadTitle|Allalaadimised
+detail.acrisProductLinkTabLabel|Lingid
+detail.acrisProductLinkTitle|Lingid
+detail.buyOnline|Osta veebist
+detail.cadService.downloadBtn|Laadi alla
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Faili tüüp
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Selle toote ehitusandmeid saate alla laadida erinevas vormingus
+detail.cadService.login|"Palun <a href=""%url%"">Login</a> CAD-failide vaatamiseks"
+detail.cadService.title|CAD teenus
+detail.contactText|"Kas te ei ole veel leidnud õiget toodet, teil on erinõuded või olete huvitatud üksikutest lahendustest? <a href=""%url%"" title=""Kontaktformulaarne"">Võtke meiega ühendust</a>."
+detail.ean|EAN
+detail.orderNumber|Toote number
+detail.orText|või
+detail.performance.atrittion|Atriteerimine
+detail.performance.movement|Liikumismüra
+detail.performance.resistance|Korrosioonikindlus
+detail.performance.roll|Rulli jõudlus
+detail.priceOnRequestText|ühiku kohta pluss käibemaks<br />24 tunni jooksul valmis saatmiseks
+detail.priceOnRequestTitle|Hind nõudmisel
+detail.properties.fitting|Tehnilised andmed
+detail.properties.housing|Tehnilised andmed Korpus
+detail.properties.label.downloads|Allalaadimised
+detail.properties.label.feature|Toote funktsioonid
+detail.properties.label.fitting|Paigaldamine
+detail.properties.label.housing|Korpus
+detail.properties.label.performance|Jõudlus
+detail.properties.label.wheel|Ratas
+detail.properties.performance|Jõudlus
+detail.properties.wheel|Tehnilised Ratas
+detail.qte|Kogus
+detail.reviewFormContentPlaceholder|Sisestage oma ülevaade...
+detail.sendQuoteRequest|Saada pakkumise taotlus
+detail.tabs.downloads|Allalaadimised
+detail.tabs.features|Funktsioonid
+detail.tabs.performance|Jõudlus
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|Kogus (% kogusest%) on vale.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|Tellimus numbriga „%orderNumber%“ oli juba tasutud ja seda ei saa hiljem muuta.
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Seda tellimust ei leitud.
+error.merchant-not-selected|Palun valige kassas jätkamiseks oma kohalik kaupmees.
+error.VIOLATION::ZIP_CODE_INVALID|Sisestatud postiindeksil ei ole õiget vormingut.
+footer.excludeVatText|"* Kõik hinnad on välja arvatud. Käibemaks pluss <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">esitamiskulud</a> ja võimalikud kohaletoimetamise tasud, kui pole märgitud teisiti."
+footer.includeVatText|"* Kõik hinnad sh. Käibemaks pluss <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">esitamiskulud</a> ja võimalikud kohaletoimetamise tasud, kui pole märgitud teisiti."
+footer.serviceContactText|"Või meie <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Kontaktvorm"">kontaktvorm</a>."
+footer.socialMediaHeadline|Sotsiaalne
+general.contactUs|Võtke meiega ühendust
+general.contactUsLink|/kontakt
+general.loginRegister|Logige sisse/registreerige
+general.privacyNoticeText|"Uudiskirja tellimisel nõustute meie <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Privacy policy"">privacy policy</a>, samuti meie <a data-ajax-modal=""tõe"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""tingimused"">tingimused</a>."
+global.default.activate|Aktiveerige
+global.default.cancel|Tühista
+global.default.confirm|Kinnita
+global.default.deactivate|Deaktiveerimine
+global.default.delete|Kustuta
+global.default.edit|Muuda
+global.default.noteRequiredFields|Tärnidega (*) tähistatud väljad on kohustuslikud.
+global.default.save|Salvesta
+listing.downloadText|Laadi alla
+moorl-creator.aboutTheCreator|Looja kohta
+moorl-creator.aboutTheCreators|Loojate kohta
+moorl-creator.creator|Looja
+moorl-creator.creators|Loojad
+moorl-creator.donate|Annetamine
+moorl-creator.follow|Jälgi
+moorl-creator.link|Koduleht
+moorl-creator.productsOf|Tooted
+moorl-creator.readMore|Loe lähemalt...
+moorl-foundation.buttons.acceptCookie|Küpsise aktsepteerimine
+moorl-foundation.buttons.addMerchantButtonText|Uus kaupmees
+moorl-foundation.buttons.administrationButtonText|Haldus
+moorl-foundation.buttons.cancelButtonText|Tühista
+moorl-foundation.buttons.exportButtonText|Ekspordi CSV
+moorl-foundation.buttons.exportButtonTitle|Laadige alla CSV
+moorl-foundation.buttons.getLocButtonText|AvaStreetMap'i positsioonid
+moorl-foundation.buttons.importButtonText|Impordi CSV
+moorl-foundation.buttons.importButtonTitle|Laadige CSV üles
+moorl-foundation.buttons.mediaFolder|Salvesta pildid sellesse kausta
+moorl-foundation.buttons.newButtonText|Uus
+moorl-foundation.buttons.openMapButtonText|Avage kaart
+moorl-foundation.buttons.openNewWindowButtonText|Ava uues aknas
+moorl-foundation.buttons.overwriteText|Kirjutage olemasolevad andmekogumid üle (originId tuleb määrata).
+moorl-foundation.buttons.placeIdLink|Plaani marsruut
+moorl-foundation.buttons.refreshButtonText|Laadi uuesti
+moorl-foundation.buttons.saveButtonText|Salvesta
+moorl-foundation.buttons.selectLocButtonText|Koor
+moorl-foundation.buttons.startImportButtonText|Alusta importi
+moorl-foundation.card.address|Aadress
+moorl-foundation.card.company|Ettevõte
+moorl-foundation.card.contact|Kontakt
+moorl-foundation.card.legend|Legend
+moorl-foundation.card.openingHours|Lahtiolekuajad
+moorl-foundation.card.person|Kontaktisik
+moorl-foundation.customerUpload.checkToDelete|Kontrollige, kas kustutada
+moorl-foundation.customerUpload.dictDefaultMessage|Lohistage faile üleslaadimiseks siia
+moorl-foundation.customerUpload.useAsCover|Kasutage kattena
+moorl-foundation.days.closed|Suletud
+moorl-foundation.days.friday|Reede
+moorl-foundation.days.monday|Esmaspäev
+moorl-foundation.days.saturday|Laupäev
+moorl-foundation.days.sunday|Pühapäev
+moorl-foundation.days.thursday|Neljapäev
+moorl-foundation.days.today|Täna
+moorl-foundation.days.tuesday|Teisipäev
+moorl-foundation.days.wednesday|Kolmapäev
+moorl-foundation.general.selectedItems|Valitud üksused
+moorl-foundation.general.share|Jaga
+moorl-foundation.general.subTotal|Subtotaalne
+moorl-foundation.general.toc|Sisu tabel
+moorl-foundation.label.accountCard|Konto
+moorl-foundation.label.addressCard|Aadress
+moorl-foundation.label.generalCard|Üldine
+moorl-foundation.label.locationCard|Asukoht
+moorl-foundation.label.markerCard|Marker
+moorl-foundation.label.metaCard|Meta
+moorl-foundation.label.relationsCard|Suhted ja filtrid
+moorl-foundation.label.visibilityCard|Nähtavus
+moorl-foundation.listing.filter.categories|Kategooriad
+moorl-foundation.listing.filter.country|Riik
+moorl-foundation.listing.filter.distance|Kaugus
+moorl-foundation.listing.filter.firstChar|Indeks
+moorl-foundation.listing.filter.inRadiusOf|raadiuses
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|MI
+moorl-foundation.listing.filter.myLocation|Kasuta minu asukohta
+moorl-foundation.listing.filter.navigation|Kategooriad
+moorl-foundation.listing.filter.radius|Otsi postiindeksit
+moorl-foundation.listing.filter.search|Otsi teksti
+moorl-foundation.listing.filter.tags|Sildid
+moorl-foundation.listing.filter.zipcodeCity|Postiindeks / linn
+moorl-foundation.properties.active|Aktiivne
+moorl-foundation.properties.additionalAddressLine1|Aadressi rida 1
+moorl-foundation.properties.additionalAddressLine2|Aadressi rida 2
+moorl-foundation.properties.articles|Artiklid
+moorl-foundation.properties.author|Autor
+moorl-foundation.properties.categories|Kategooriad
+moorl-foundation.properties.city|Linn
+moorl-foundation.properties.closed|Suletud
+moorl-foundation.properties.cmsPage|CMSi leht
+moorl-foundation.properties.cmsPageId|CMS-i lehe ID
+moorl-foundation.properties.company|Ettevõte
+moorl-foundation.properties.content|Sisu
+moorl-foundation.properties.country|Riik
+moorl-foundation.properties.countryCode|Riigikood
+moorl-foundation.properties.countryId|Riik
+moorl-foundation.properties.createdAt|Loodud
+moorl-foundation.properties.customerGroupId|Kliendirühm
+moorl-foundation.properties.customerNumber|Kliendi number
+moorl-foundation.properties.date|Kuupäev
+moorl-foundation.properties.department|Osakond
+moorl-foundation.properties.description|Kirjeldus
+moorl-foundation.properties.distance|Kaugus
+moorl-foundation.properties.email|E-post
+moorl-foundation.properties.enableComments|Luba kommentaarid
+moorl-foundation.properties.firstName|Eesnimi
+moorl-foundation.properties.from|Alates
+moorl-foundation.properties.highlight|Tõstke esile
+moorl-foundation.properties.image|Artikkel
+moorl-foundation.properties.info|Teave
+moorl-foundation.properties.inRadiusOf|raadiuses
+moorl-foundation.properties.invisible|Nähtamatu
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|Viimane nimi
+moorl-foundation.properties.location|Asukoht
+moorl-foundation.properties.locationLat|Latitude
+moorl-foundation.properties.locationLon|Pikkus
+moorl-foundation.properties.locked|Lukustatud
+moorl-foundation.properties.logo|Logo
+moorl-foundation.properties.marker|Marker
+moorl-foundation.properties.markerId|Marker
+moorl-foundation.properties.markerSettings|Markeri sätted
+moorl-foundation.properties.markerSettingsExample|Selle näite saate kopeerida, et kohandada kohandatud markeri sätteid.
+moorl-foundation.properties.markerSettingsLink|Leafleti kohandatud markeri näide
+moorl-foundation.properties.markerShadow|Markeri vari
+moorl-foundation.properties.markerShadowId|Markeri varjud
+moorl-foundation.properties.media|Meedia
+moorl-foundation.properties.mediaId|Meedia ID
+moorl-foundation.properties.merchant|Kaupmees
+moorl-foundation.properties.merchantUrl|Kaupmehe URL
+moorl-foundation.properties.metaDescription|Meta kirjeldus
+moorl-foundation.properties.metaTitle|Meta pealkiri
+moorl-foundation.properties.name|Nimi
+moorl-foundation.properties.openingHours|Lahtiolekuajad
+moorl-foundation.properties.originId|Päritolu ID
+moorl-foundation.properties.phoneNumber|Telefon
+moorl-foundation.properties.priority|Prioriteet
+moorl-foundation.properties.productManufacturers|Tootja ID-d
+moorl-foundation.properties.products|Tooted
+moorl-foundation.properties.radius|kodarluu
+moorl-foundation.properties.repeat|Korrake
+moorl-foundation.properties.salesChannel|Müügikanal
+moorl-foundation.properties.salesChannelId|Müügikanal
+moorl-foundation.properties.search|Otsi
+moorl-foundation.properties.shopUrl|Osta URL
+moorl-foundation.properties.showFrom|Kuva alates
+moorl-foundation.properties.showUntil|Näita kuni
+moorl-foundation.properties.slug|Slug
+moorl-foundation.properties.sticky|Sticky
+moorl-foundation.properties.street|Tänav
+moorl-foundation.properties.streetNumber|Number
+moorl-foundation.properties.tags|Sildi nimed/ID-d
+moorl-foundation.properties.teaser|Teaser
+moorl-foundation.properties.title|Pealkiri
+moorl-foundation.properties.until|Kuni
+moorl-foundation.properties.updatedAt|Uuendatud
+moorl-foundation.properties.vatId|Käibemaksukohustuslase ID
+moorl-foundation.properties.zipcode|Zip-kood
+moorl-foundation.search.headline|"{0} Puudub vaste „%searchTerm%“ kohta | {1} Üks vaste „%searchTerm%“ kohta | ]1,Inf[%kontsentratsiooni% vasted „%searchTerm%“ puhul"
+moorl-foundation.search.missingConfiguration|Selle loendi konfiguratsioon puudub!
+moorl-foundation.search.moreButton|Rohkem
+moorl-foundation.search.noListingSlotFound|Sellel lehel ei ole loendielementi. Kontrollige oma loendi sätteid ja valige „Automaatsed üksused”
+moorl-foundation.search.notAvailable|Ei ole saadaval
+moorl-foundation.search.product|Tooted
+moorl-location-map.cookieDescription|Kasutame OpenStreetMap'i plaatide pakkujana, et näidata teile visuaalselt meie kaupluste ja kaupmeeste asukohta.
+moorl-location-map.cookieHint|Palun nõustuge küpsisega, et kasutada soovitud funktsiooni.
+moorl-location-map.cookieName|Asukohakaardid
+moorl-magazine.articles|Blogi artiklid
+moorl-magazine.author|Autor
+moorl-magazine.authors|Autorid
+moorl-magazine.back|Tagasi
+moorl-magazine.backToOverview|Tagasi ülevaate juurde
+moorl-magazine.categories|Kategooriad
+moorl-magazine.categoryAll|Kõik kategooriad
+moorl-magazine.commentArea|Kommentaari ala
+moorl-magazine.commentAreaDisabled|Kommentaarid on selle artikli jaoks keelatud
+moorl-magazine.commentError|Veenduge, et olete kõik väljad õigesti täitnud
+moorl-magazine.commentReview|Teie kommentaar avaldatakse pärast ülevaatamist.
+moorl-magazine.commentSuccess|Aitäh kommentaari eest!
+moorl-magazine.date|Kuupäev
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|E-post
+moorl-magazine.emailPlaceholder|Sisestage oma e-posti aadress
+moorl-magazine.name|Nimi
+moorl-magazine.namePlaceholder|Sisestage oma nimi
+moorl-magazine.next|Järgmine
+moorl-magazine.page|Lehekülg
+moorl-magazine.pageDescription|Lorem ipsum dolor istub amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Kell vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, meri takimata sanctus est Lorem ipsum dolor istuda amet. Lorem ipsum dolor istub amet, konsetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Kell vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, meri takimata sanctus est Lorem ipsum dolor istuda amet.
+moorl-magazine.pageTitle|Minu imeline blogi
+moorl-magazine.posts|Blogi postitused
+moorl-magazine.products|Seotud tooted
+moorl-magazine.readMore|Loe edasi
+moorl-magazine.recentComments|Hiljutised kommentaarid
+moorl-magazine.relatedArticles|Seotud blogipostitused
+moorl-magazine.search|Otsi
+moorl-magazine.searchFor|Otsi...
+moorl-magazine.sendComment|Esitage oma kommentaar
+moorl-magazine.similarArticles|Sarnased blogipostitused
+moorl-magazine.sticky|Pinned
+moorl-magazine.tags|Sildid
+moorl-magazine.writeComment|Kirjutage kommentaar
+moorl-magazine.wroteOn|kirjutas
+moorl-magazine.yourComment|Teie kommentaar
+moorl-magazine.yourCommentPlaceholder|Sisestage oma kommentaar siia
+moorl-merchant-finder.allCategories|Kõik kategooriad
+moorl-merchant-finder.allCountries|Kõik riigid
+moorl-merchant-finder.allManufacturers|Kõik tootjad
+moorl-merchant-finder.allowMerchantCustomerContact|Luban oma valitud kaupmehel minuga telefoni või e-posti teel ühendust võtta.
+moorl-merchant-finder.allResults|-- Valige ---
+moorl-merchant-finder.allTags|Kõik sildid
+moorl-merchant-finder.are|on 
+moorl-merchant-finder.available|Saadaval
+moorl-merchant-finder.backToOverview|Tagasi ülevaate juurde
+moorl-merchant-finder.call|Kõne
+moorl-merchant-finder.cancel|Tühista
+moorl-merchant-finder.categories|Kategooriad
+moorl-merchant-finder.checkAvailability|Kontrollige kättesaadavust
+moorl-merchant-finder.chose|Koor
+moorl-merchant-finder.choseMerchant|Valige kaupmees
+moorl-merchant-finder.choseMerchantToProceed|Palun valige kassas jätkamiseks kohalik kaupmees
+moorl-merchant-finder.close|Sulge
+moorl-merchant-finder.commentToMerchant|Saatke kaupmehele kommentaar
+moorl-merchant-finder.country|Riik
+moorl-merchant-finder.deliveryTime|Tarneaeg
+moorl-merchant-finder.deliveryTimeUnknown|Teadmata – tooteid küsitakse tellimuse alusel
+moorl-merchant-finder.description|Kirjeldus
+moorl-merchant-finder.desiredDate|Soovitud kättesaamise kuupäev
+moorl-merchant-finder.desiredTime|Soovitud pealekorjeaeg
+moorl-merchant-finder.displayOnMap|Kuva kaardil
+moorl-merchant-finder.distance|Kaugus
+moorl-merchant-finder.emptyResultMessage|Kaupmehed ei leitud
+moorl-merchant-finder.findMerchants|Leidke kaupmehed
+moorl-merchant-finder.forTheSearch|otsingu jaoks 
+moorl-merchant-finder.forTheSearchZipcode|postiindeksis ja kaugkmomeetrite ümbruses 
+moorl-merchant-finder.highlight|Näpunäide
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|Laadimine...
+moorl-merchant-finder.manufacturers|Tootjad
+moorl-merchant-finder.merchant|Kaupmees
+moorl-merchant-finder.merchants|Kaupmehed
+moorl-merchant-finder.merchantUrl|Veebisait
+moorl-merchant-finder.more|Rohkem
+moorl-merchant-finder.myLocation|Kasuta minu praegust asukohta
+moorl-merchant-finder.mySelection|Minu valik
+moorl-merchant-finder.noMerchantSelected|Toode pole saadaval. Ühtegi kaupmeest ei ole valitud.
+moorl-merchant-finder.none|mitte ühtegi
+moorl-merchant-finder.openingHours|Lahtiolekuajad
+moorl-merchant-finder.outOfStock|Toode pole saadaval. Teie valitud kaupmehel ei ole seda toodet laos.
+moorl-merchant-finder.phoneNumber|Telefon
+moorl-merchant-finder.pickupDateSet|Pealekorjeaeg on seatud
+moorl-merchant-finder.productAvailability|Toote saadavus
+moorl-merchant-finder.productNotAvailable|Toode pole saadaval. Lisateabe saamiseks võtke ühendust kaupluse klienditoega.
+moorl-merchant-finder.radius|kodarluu
+moorl-merchant-finder.resetSelection|Lähtesta valik
+moorl-merchant-finder.resultsFound|loenduse tulemused leitud
+moorl-merchant-finder.save|Salvesta
+moorl-merchant-finder.search|Otsi
+moorl-merchant-finder.searchFor|Otsi
+moorl-merchant-finder.searchLocation|Otsi asukohta
+moorl-merchant-finder.searchRules.hasLogo|Kaupmees logoga
+moorl-merchant-finder.searchRules.hasPriority|Prioriteetne kaupmees
+moorl-merchant-finder.searchRules.isHighlighted|Premium kaupmees
+moorl-merchant-finder.searchRules.isNotHighlighted|Tavaline kaupmees
+moorl-merchant-finder.selectedMerchant|Valitud kaupmees
+moorl-merchant-finder.sendMail|E-post
+moorl-merchant-finder.shop|Osta
+moorl-merchant-finder.shopUrl|Külastage poodi
+moorl-merchant-finder.stockInfo|Varude teave
+moorl-merchant-finder.tags|Sildid
+moorl-merchant-finder.thereAre|On olemas 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|sihtnumber, linn
+moorl-merchant-finder.zipcodeCityEnter|Sisestage sihtnumber või linn ja vajutage sisestusnuppu
+nimbits-pricerequests.cart.cartRequestButton|Taotluse pakkumine
+nimbits-pricerequests.cart.dontAddByProductNumber|Seda toodet ei saa ostukorvi lisada.
+nimbits-pricerequests.detail.available|Saadaval
+nimbits-pricerequests.detail.button.openrequestform|Taotluse pakkumine
+nimbits-pricerequests.detail.restock|"{1} Saadaval 1 päeva jooksul|]1,Inf[saadaval %restockTime% päevades"
+nimbits-pricerequests.detail.text.priceonrequest|Hind nõudmisel
+nimbits-pricerequests.fail.alert|Taotlust ei saadetud – ilmnes viga. Palun proovige uuesti.
+nimbits-pricerequests.finish.alert|Taotlus edukalt saadetud
+nimbits-pricerequests.finish.buttonBack|Tagasi poodi
+nimbits-pricerequests.listing.button.openrequestform|Taotluse pakkumine
+nimbits-pricerequests.listing.text.priceonrequest|Nõudmise hind
+nimbits-pricerequests.mail.address|Aadress
+nimbits-pricerequests.mail.amount|Summa
+nimbits-pricerequests.mail.article|Artikkel
+nimbits-pricerequests.mail.city|Linn
+nimbits-pricerequests.mail.comment|Klientide kommentaar
+nimbits-pricerequests.mail.company|Ettevõte
+nimbits-pricerequests.mail.country|Riik
+nimbits-pricerequests.mail.customersendername|Taotluse hind
+nimbits-pricerequests.mail.housenumber|Majanumber
+nimbits-pricerequests.mail.mail|E-post
+nimbits-pricerequests.mail.name|Nimi
+nimbits-pricerequests.mail.ordernumber|Tellimuse number
+nimbits-pricerequests.mail.price|Hind
+nimbits-pricerequests.mail.pricegross|Incl. Maksustamine
+nimbits-pricerequests.mail.pricegrosssum|Incl. Maksusumma
+nimbits-pricerequests.mail.pricenet|Välja arvatud. Maksustamine
+nimbits-pricerequests.mail.pricenetsum|Välja arvatud. Maksusumma
+nimbits-pricerequests.mail.requestfirst|Hinnataotlus alates
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Taotluse hind
+nimbits-pricerequests.mail.street|Tänav
+nimbits-pricerequests.mail.subject|Taotluse hind
+nimbits-pricerequests.mail.subjectcart|Carti taotlus
+nimbits-pricerequests.mail.subjectshopowner|Taotluse hind
+nimbits-pricerequests.mail.subjectshopownercart|Carti taotlus
+nimbits-pricerequests.mail.zipcode|Zip-kood
+nimbits-pricerequests.popup.city|Linn
+nimbits-pricerequests.popup.closebutton|Sulge
+nimbits-pricerequests.popup.company|Ettevõte
+nimbits-pricerequests.popup.country|Riik
+nimbits-pricerequests.popup.dataprivacytext|"Olen lugenud, mõistnud ja nõustun <a href=""/privacy"" target=""_blank"" rel=""noreferrer noopener""> Privaatsuspoliitikaga </a>."
+nimbits-pricerequests.popup.desiredprice|Soovitud hind 
+nimbits-pricerequests.popup.entervalidcity|Palun sisestage kehtiv linn.
+nimbits-pricerequests.popup.entervalidcountry|Palun sisestage kehtiv riik.
+nimbits-pricerequests.popup.entervalidhousenumber|Palun sisestage kehtiv majanumber.
+nimbits-pricerequests.popup.entervalidmail|Sisestage kehtiv e-posti aadress.
+nimbits-pricerequests.popup.entervalidstreet|Palun sisestage kehtiv tänav.
+nimbits-pricerequests.popup.entervalidzipcode|Palun sisestage kehtiv sihtnumber.
+nimbits-pricerequests.popup.genderm|Hr
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|proua
+nimbits-pricerequests.popup.housenumber|Majanumber
+nimbits-pricerequests.popup.mail|Postiaadress
+nimbits-pricerequests.popup.name|Nimi
+nimbits-pricerequests.popup.optional|(valikuline)
+nimbits-pricerequests.popup.phonenumber|Telefon
+nimbits-pricerequests.popup.popupTitle|Taotluse pakkumine
+nimbits-pricerequests.popup.product|Toode(ed) selles taotluses:
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Taotlus
+nimbits-pricerequests.popup.requestbutton|Taotlus
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|*-ga tähistatud väljad on kohustuslikud.
+nimbits-pricerequests.popup.salutation|Palgastamine
+nimbits-pricerequests.popup.street|Tänav
+nimbits-pricerequests.popup.surname|Surnimi
+nimbits-pricerequests.popup.text|Taotlege valitud toodete pakkumist
+nimbits-pricerequests.popup.zipcode|Zip-kood
+nimbits-pricerequests.search.text.priceonrequest|Nõudmise hind
+nimbits-pricerequests.toasts.error|Taotlust ei saadetud – ilmnes viga. Palun proovige uuesti.
+nimbits-pricerequests.toasts.success|Taotlus edukalt saadetud
+priceRequest.newsletterText|Käesolevaga nõustun, et TENTE võib mind e-posti ja telefoni teel teavitada ka TENTE toodetest ja sündmustest (nt messi õiglased esinemised).
+priceRequest.sendRequestText|Taotlus edastatakse...
+priceRequest.waitText|Palun oodake...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Valige suvand...
+theme.compilation.async.success|Müügikanali %salesChannelName% koostamine lõpetatud
+vdct-simple-events.events.detail.to-event|Sündmusele
+zeobv-store-switcher.switchStoreLabel|Vaheta poodi

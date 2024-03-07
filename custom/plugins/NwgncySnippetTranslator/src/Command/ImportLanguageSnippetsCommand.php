@@ -58,10 +58,6 @@ class ImportLanguageSnippetsCommand extends Command
 
         $files = $fileSystemPublic->listContents('bundles/nwgncysnippettranslator', true);
 
-
-
-
-
         $result = (string)$fileSystemPublic->has('bundles/nwgncysnippettranslator');
         $io->text($result);
 
@@ -71,149 +67,86 @@ class ImportLanguageSnippetsCommand extends Command
 
         $foundRootFiles = (string)count($rootFilesArr);
         $io->text('Found files in root: ' . $foundRootFiles);
-
-        if (!empty($rootFilesArr)) {
-
-            $stopReading = 0;
-            $stopReadingAfter = 10;
-            foreach ($rootFilesArr as $file) {
-                
-                $data = $file->jsonSerialize();
-
-                $type = $data['type'];
-                // $io->text( $type);
-                if ($type == 'dir') {
-
-
-                    $needle   = 'are';
-                    $path = $file->jsonSerialize()['path'];
-                    if (strpos($path, 'nwgncy') !== false) {
-                        $io->text( $file->jsonSerialize()['path']);
-                    }
-
-                    
-                }
-
-                if ($stopReading == $stopReadingAfter) {
-                    // break;
-                }
-                $stopReading++;
-                // if ($file->isDir()) {
-
-                //     $io->text($file->path());
-
-                //     $stopReading++;
-                // }
-                // if ($stopReading == $stopReadingAfter) {
-                //     break;
-                // }
-
-            }
-        }
-
-        exit;
         
 
+        $currentDir = dirname(__FILE__);
+        $translationFilesFolder = dirname(__FILE__) . '/snippets';
 
-
-
-        $filesArr = $files->toArray();
-
+        $io->text($translationFilesFolder);
         $currentSnippetList = $translationHelper->getSnippetsForImport($context);
-
         $countUpdated = 0;
         $countNew = 0;
-        $foundFiles = (string)count($filesArr);
-        $io->text('Found files: ' . $foundFiles);
 
-        if (!empty($filesArr)) {
-            $stopReading = 0;
-            $stopReadingAfter = 30;
-            foreach ($filesArr as $file) {
-                $data = $file->jsonSerialize();
+        if (is_dir($translationFilesFolder)) {
+            $items = glob($translationFilesFolder . '/*');
+            foreach ($items as $item) {
+                if (is_file($item)) {
 
-                $io->text($data['type']);
-                $io->text($data['path']);
-                if (!$file->isDir()) {
-                    $path = $data['path'];
-                    try {
-                        $fileStream = $fileSystemPublic->readStream($path);
-                    } catch (\Exception $e) {
-                        $io->text($e->getMessage());
-                    }
+                    $file = fopen($item,"r");
 
-                }
-                if ($stopReading == $stopReadingAfter) {
-                    break;
-                }
-                $stopReading++;
-                // if (!$file->isDir()) {
-                    
-                //     $fileStream = $fileSystemPublic->readStream($file->path());
-                //     $line = 0;
-                //     while ($data = fgetcsv($fileStream, null, '|')) {
+                    $line = 0;
+                    while ($data = fgetcsv($file, null, '|')) {
 
-                //         if ($line == 0) {
+                        if ($line == 0) {
 
-                //             $languagePackName = $data[0];
+                            $languagePackName = $data[0];
 
-                //             if (isset($languagesNameId[$languagePackName])) {
-                //                 $io->text('Found Packagename: ' . $languagePackName);
-                //             } else {
-                //                 $io->error('No language pack found for: ' . $languagePackName);
-                //                 exit;
-                //             }
-                //             // $io->text($languagePackName);
-                //             // break;
-                //             $languagePackId = $languagesNameId[$languagePackName];
-                //             $snippets = $currentSnippetList[$languagePackId];
-                //             $line++;
-                //             continue;
-     
-                //         }
-                //         $translationKey = $data[0];
-                //         $translation = rtrim($data[1]);
-
-                //         $translation = str_replace("'", '"', $translation);
-
-                //         $currentData = $snippets[$translationKey];
-
-                //         $author = $currentData['author'];
-                //         $snippetId = $currentData['id'];
-                //         $currentTranslation = $currentData['value'];
-
-                //         if ($currentTranslation == $translation) {
-                //             // $io->text('Same value new: ' . $translation);
-                //             // $io->text('Same value current: ' . $currentTranslation);
-                //             continue;
-                //         }
-
-                //         if (empty($author)) {
-                //             $author = 'System';
-                //         }
+                            if (isset($languagesNameId[$languagePackName])) {
+                                $io->text('Found Packagename: ' . $languagePackName);
+                            } else {
+                                $io->error('No language pack found for: ' . $languagePackName);
+                                exit;
+                            }
+                            // $io->text($languagePackName);
+                            // break;
+                            $languagePackId = $languagesNameId[$languagePackName];
+                            $snippets = $currentSnippetList[$languagePackId];
+                            $line++;
+                            continue;
     
-                //         $io->text($languagePackName . ' Importing translation for key: ' . $translationKey . ' Translation: ' . $translation);
-                //         // $translation = str_replace('target="blank"', 'target="_blank"', $translation);
+                        }
+                        $translationKey = $data[0];
+                        $translation = rtrim($data[1]);
 
-                //         if (empty($snippetId)) {
-                //             $countNew++;
-                //             $translationHelper->createSnippet($languagePackId, $translationKey, $translation, $author, $context);
-                //         } else {
-                //             // $io->text('Current: ' . $currentTranslation);
-                //             // $io->text('Updated: ' . $languagePackName . ' Translationkey ' . $translationKey . ' Translation: ' . $translation . ' ID' . $snippetId);
-                //             // $io->text('Updated: ' . $translation);
+                        $translation = str_replace("'", '"', $translation);
+
+                        $currentData = $snippets[$translationKey];
+
+                        $author = $currentData['author'];
+                        $snippetId = $currentData['id'];
+                        $currentTranslation = $currentData['value'];
+
+                        if ($currentTranslation == $translation) {
+                            // $io->text('Same value new: ' . $translation);
+                            // $io->text('Same value current: ' . $currentTranslation);
+                            continue;
+                        }
+
+                        if (empty($author)) {
+                            $author = 'System';
+                        }
+    
+                        $io->text($languagePackName . ' Importing translation for key: ' . $translationKey . ' Translation: ' . $translation);
+                        // $translation = str_replace('target="blank"', 'target="_blank"', $translation);
+
+                        if (empty($snippetId)) {
+                            $countNew++;
+                            $translationHelper->createSnippet($languagePackId, $translationKey, $translation, $author, $context);
+                        } else {
+                            // $io->text('Current: ' . $currentTranslation);
+                            // $io->text('Updated: ' . $languagePackName . ' Translationkey ' . $translationKey . ' Translation: ' . $translation . ' ID' . $snippetId);
+                            // $io->text('Updated: ' . $translation);
                             
-                //             $countUpdated++;
-                //             $translationHelper->updateSnippet($snippetId, $languagePackId, $translationKey, $translation, $author, $context);
-                //         }
+                            $countUpdated++;
+                            $translationHelper->updateSnippet($snippetId, $languagePackId, $translationKey, $translation, $author, $context);
+                        }
 
 
-                //     }
- 
-                // }
- 
+                    }
+                }
             }
         }
+
         $io->success('Imported into DB: ' . $countNew);
         $io->success('Updated: ' . $countUpdated);
         return 0;

@@ -1,0 +1,564 @@
+LanguagePack nl-NL|Vertaling|LanguagePack nl-BE
+account.doubleOptinAccountAlert|Uw klantaccount is nog niet geactiveerd. We hebben een bevestigingsmail gestuurd met een activeringslink. Controleer uw inbox en klik op de link om de aanmelding te voltooien!|
+account.downloadFileButton|Downloaden|
+account.downloadItemColumnDate|Datum|
+account.downloadItemColumnTitle|Bestand|
+account.faxLabel|Fax|
+account.faxPlaceholder|Fax invoeren|
+account.homepageLabel|Startpagina|
+account.homepagePlaceholder|URL startpagina invoeren|
+account.passwordNotIdentical|De wachtwoorden die u hebt ingevoerd komen niet overeen.|
+account.personalTypePlaceholder|Selecteer...|
+account.profileCurrentMailPlaceholder|E-mailadres invoeren...|
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Klik hier</a> om al uw persoonsgegevens te verwijderen."|
+account.profilePasswordCreateNewPlaceholder|Nieuw wachtwoord invoeren...|
+account.profilePasswordCurrentPlaceholder|Huidig wachtwoord invoeren...|
+acrisFilter.buttonFiltersHide|Minder filters weergeven|
+acrisFilter.buttonFilterShowHideLabel|Meer of minder filters weergeven|
+acrisFilter.buttonFiltersShow|Meer filters weergeven|
+acrisFilter.buttonHeaderSearchAllCategories|Alle categorieën|
+acrisFilter.filter.labelAfter|)|
+acrisFilter.filter.labelBefore|(|
+acrisFilter.filterAvailabilityDisplayName|Onmiddellijk beschikbaar|
+acrisFilter.filterCategoriesDisplayName|Categorieën|
+acrisFilter.filterRangeActiveMaxLabel|Eigenschap %displayName% naar|
+acrisFilter.filterRangeActiveMinLabel|Eigenschap %displayName% van|
+acrisFilter.filterRangeSliderFrom|van|
+acrisFilter.filterRangeSliderTo|naar|
+acrisFilter.filterSearchPlaceholder|Zoeken...|
+card.card-image|Afbeelding van %name%|
+card.linkTitle|Open %url% in nieuw tabblad|
+cbaxLexicon.page.ajax.linkDescription|Naar het lexicon|
+cbaxLexicon.page.banner.alt|Banner|
+cbaxLexicon.page.boxKeyword.moreRead|Lees meer|
+cbaxLexicon.page.breadcrumb.name|Lexicon|
+cbaxLexicon.page.content.headline|Inhoudsopgave|
+cbaxLexicon.page.content.metaDescription|Inhoud Lexicon Meta-beschrijving|
+cbaxLexicon.page.content.metaKeywords|Inhoud Lexicon Meta-trefwoorden|
+cbaxLexicon.page.content.metaTitle|Inhoudsopgave|
+cbaxLexicon.page.filter.button|Lexicon-navigatie|
+cbaxLexicon.page.filter.headline|Lexicon-navigatie|
+cbaxLexicon.page.index.metaDescription|Lexicon Meta Description Index|
+cbaxLexicon.page.index.metaKeywords|Lexicon Meta Keywords Index|
+cbaxLexicon.page.index.metaTitle|Lexicon|
+cbaxLexicon.page.listing.entryHeadline|Berichten in deze categorie encyclopedie|
+cbaxLexicon.page.listing.metaDescription09|Lijst met Lexicon Meta-beschrijvingen 0-9|
+cbaxLexicon.page.listing.metaDescriptionA|Beschrijving Lexicon Meta Lijst A|
+cbaxLexicon.page.listing.metaDescriptionB|Lijst met Lexicon Meta-beschrijvingen B|
+cbaxLexicon.page.listing.metaDescriptionC|Lijst met Lexicon Meta-beschrijvingen C|
+cbaxLexicon.page.listing.metaDescriptionD|Lijst met Lexicon Meta-beschrijvingen D|
+cbaxLexicon.page.listing.metaDescriptionE|Lijst met Lexicon Meta-beschrijvingen E|
+cbaxLexicon.page.listing.metaDescriptionF|Lijst met Lexicon Meta-beschrijvingen F|
+cbaxLexicon.page.listing.metaDescriptionG|Lijst met Lexicon Meta-beschrijvingen G|
+cbaxLexicon.page.listing.metaDescriptionH|Lijst met Lexicon Meta-beschrijvingen H|
+cbaxLexicon.page.listing.metaDescriptionI|Beschrijving Lexicon Meta Lijst I|
+cbaxLexicon.page.listing.metaDescriptionJ|Lijst met Lexicon Meta-beschrijvingen J|
+cbaxLexicon.page.listing.metaDescriptionK|Lijst met Lexicon Meta-beschrijvingen K|
+cbaxLexicon.page.listing.metaDescriptionL|Lijst met Lexicon Meta-beschrijvingen L|
+cbaxLexicon.page.listing.metaDescriptionM|Lijst met Lexicon Meta-beschrijvingen M|
+cbaxLexicon.page.listing.metaDescriptionN|Lexicon Meta Beschrijving Lijst N|
+cbaxLexicon.page.listing.metaDescriptionO|Lijst met Lexicon Meta-beschrijvingen O|
+cbaxLexicon.page.listing.metaDescriptionP|Lijst met Lexicon Meta-beschrijvingen P|
+cbaxLexicon.page.listing.metaDescriptionQ|Lijst met Lexicon Meta-beschrijvingen Q|
+cbaxLexicon.page.listing.metaDescriptionR|Lijst met Lexicon Meta-beschrijvingen R|
+cbaxLexicon.page.listing.metaDescriptionS|Lijst met Lexicon Meta-beschrijvingen S|
+cbaxLexicon.page.listing.metaDescriptionT|Lijst met Lexicon Meta-beschrijvingen T|
+cbaxLexicon.page.listing.metaDescriptionU|Lexicon Meta Beschrijving Lijst U|
+cbaxLexicon.page.listing.metaDescriptionV|Lijst met Lexicon Meta-beschrijvingen V|
+cbaxLexicon.page.listing.metaDescriptionW|Lijst met Lexicon Meta-beschrijvingen W|
+cbaxLexicon.page.listing.metaDescriptionX|Lijst met Lexicon Meta-beschrijvingen X|
+cbaxLexicon.page.listing.metaDescriptionY|Lijst met Lexicon Meta-beschrijvingen Y|
+cbaxLexicon.page.listing.metaDescriptionZ|Lijst met Lexicon Meta-beschrijvingen Z|
+cbaxLexicon.page.listing.metaKeywords09|Lijst met Lexicon Meta-trefwoorden 0-9|
+cbaxLexicon.page.listing.metaKeywordsA|Lexicon Meta-trefwoorden lijst A|
+cbaxLexicon.page.listing.metaKeywordsB|Lijst met Lexicon Meta-trefwoorden B|
+cbaxLexicon.page.listing.metaKeywordsC|Lijst met Lexicon Meta-trefwoorden C|
+cbaxLexicon.page.listing.metaKeywordsD|Lijst met Lexicon Meta-trefwoorden D|
+cbaxLexicon.page.listing.metaKeywordsE|Lijst met Lexicon Meta-trefwoorden E|
+cbaxLexicon.page.listing.metaKeywordsF|Lijst met Lexicon Meta-trefwoorden F|
+cbaxLexicon.page.listing.metaKeywordsG|Lijst met Lexicon Meta-trefwoorden G|
+cbaxLexicon.page.listing.metaKeywordsH|Lijst met Lexicon Meta-trefwoorden H|
+cbaxLexicon.page.listing.metaKeywordsI|Lijst met Lexicon Meta-trefwoorden I|
+cbaxLexicon.page.listing.metaKeywordsJ|Lijst met Lexicon Meta-trefwoorden J|
+cbaxLexicon.page.listing.metaKeywordsK|Lijst met Lexicon Meta-trefwoorden K|
+cbaxLexicon.page.listing.metaKeywordsL|Lijst met Lexicon Meta-trefwoorden L|
+cbaxLexicon.page.listing.metaKeywordsM|Lijst met Lexicon Meta-trefwoorden M|
+cbaxLexicon.page.listing.metaKeywordsN|Lijst met Lexicon Meta-trefwoorden N|
+cbaxLexicon.page.listing.metaKeywordsO|Lijst met Lexicon Meta-trefwoorden O|
+cbaxLexicon.page.listing.metaKeywordsP|Lijst met Lexicon Meta-trefwoorden P|
+cbaxLexicon.page.listing.metaKeywordsQ|Lijst met Lexicon Meta-trefwoorden Q|
+cbaxLexicon.page.listing.metaKeywordsR|Lijst met Lexicon Meta-trefwoorden R|
+cbaxLexicon.page.listing.metaKeywordsS|Lijst met Lexicon Meta-trefwoorden S|
+cbaxLexicon.page.listing.metaKeywordsT|T-shirt met Lexicon Meta-trefwoorden|
+cbaxLexicon.page.listing.metaKeywordsU|Lexicon Meta trefwoorden lijst U|
+cbaxLexicon.page.listing.metaKeywordsV|Lijst met Lexicon Meta-trefwoorden V|
+cbaxLexicon.page.listing.metaKeywordsW|Lijst met Lexicon Meta-trefwoorden W|
+cbaxLexicon.page.listing.metaKeywordsX|Lijst met Lexicon Meta-trefwoorden X|
+cbaxLexicon.page.listing.metaKeywordsY|Lijst met Lexicon Meta-trefwoorden Y|
+cbaxLexicon.page.listing.metaKeywordsZ|Lexicon Meta trefwoorden lijst Z|
+cbaxLexicon.page.listing.metaTitle09|0-9|
+cbaxLexicon.page.listing.metaTitleA|A|
+cbaxLexicon.page.listing.metaTitleB|B|
+cbaxLexicon.page.listing.metaTitleC|C|
+cbaxLexicon.page.listing.metaTitleD|D|
+cbaxLexicon.page.listing.metaTitleE|E|
+cbaxLexicon.page.listing.metaTitleF|F|
+cbaxLexicon.page.listing.metaTitleG|G|
+cbaxLexicon.page.listing.metaTitleH|H|
+cbaxLexicon.page.listing.metaTitleI|Ik|
+cbaxLexicon.page.listing.metaTitleJ|J|
+cbaxLexicon.page.listing.metaTitleK|K|
+cbaxLexicon.page.listing.metaTitleL|L|
+cbaxLexicon.page.listing.metaTitleM|M|
+cbaxLexicon.page.listing.metaTitleN|N|
+cbaxLexicon.page.listing.metaTitleO|O|
+cbaxLexicon.page.listing.metaTitleP|P|
+cbaxLexicon.page.listing.metaTitleQ|V|
+cbaxLexicon.page.listing.metaTitleR|R|
+cbaxLexicon.page.listing.metaTitleS|S|
+cbaxLexicon.page.listing.metaTitleT|T|
+cbaxLexicon.page.listing.metaTitleU|U|
+cbaxLexicon.page.listing.metaTitleV|V|
+cbaxLexicon.page.listing.metaTitleW|W|
+cbaxLexicon.page.listing.metaTitleX|X|
+cbaxLexicon.page.listing.metaTitleY|Y|
+cbaxLexicon.page.listing.metaTitleZ|Z|
+cbaxLexicon.page.navigation.linkContent|Inhoudsopgave|
+cbaxLexicon.page.navigation.linkIndex|Startpagina|
+cbaxLexicon.page.pagination.toOverview|Naar overzicht|
+cbaxLexicon.page.sidebar.title|Lexicon:|
+checkout.confirmRevocationReminder|U hebt al verklaard dat u afstand doet van het herroepingsrecht.|
+checkout.confirmRevocationTerms|Ik wil onmiddellijke toegang tot de digitale inhoud en ik erken dat ik hierbij afstand doe van mijn recht om te annuleren.|
+checkout.confirmTermsReminderText|"U hebt de <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""algemene voorwaarden"">algemene voorwaarden</a> al geaccepteerd."|
+checkout.confirmTermsText|"Ik heb de <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""algemene voorwaarden"">algemene voorwaarden</a> gelezen en aanvaard."|
+checkout.lineItemUnitPriceDescriptor|eenheid|
+checkout.merchant-not-selected|Kies je lokale handelaar om verder te gaan met afrekenen.|
+checkout.or|of|
+CmsElements.callToAction.elementError|Dit element is niet beschikbaar voor de zijbalk. Selecteer een andere <p class='h5 my-2'>Call to Action</p> voor uw zijbalk.|
+CmsElements.counter.days|DAGEN|
+CmsElements.counter.hours|HRS|
+CmsElements.counter.seconds|SEC|
+CmsElements.htmlVideo.hint.content|U hebt geen geldige video geüpload. Controleer de instellingen van het element.|
+CmsElements.htmlVideo.hint.headline|Verkeerd formaat / Geen video|
+CmsElements.placeholder.label|Element vervangen|
+CmsElements.shopTheLook.addAllProducts|Producten toevoegen aan winkelwagen|
+CmsElements.shopTheLook.totalDiscount|Besparingen:|
+component.cms.imageGallery.sliderDotLabel|Afbeelding %index% van %total% weergeven|
+component.cms.vimeo.privacyNoticeText|"Door de video te bekijken gaat u ermee akkoord dat uw gegevens worden overgedragen naar %platform% en dat u het <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Privacybeleid"">Privacybeleid</a> hebt gelezen."|
+component.product.quantitySelect.decrease|Hoeveelheid verlagen|
+component.product.quantitySelect.increase|Hoeveelheid verhogen|
+component.product.quantitySelect.label|Hoeveelheid|
+contact.newsletterSubscribe|Ik ga er hierbij mee akkoord dat TENTE mij ook per e-mail en telefoon kan informeren over producten en evenementen (bijv. optredens op handelsbeurzen) van TENTE.|
+contact.privacyNoticeText|"Door Doorgaan te selecteren, bevestigt u dat u onze <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Gegevensbeschermingsinformatie"">gegevensbeschermingsinformatie</a> hebt gelezen en ermee akkoord gaat."|
+cookie.groupComfortFeaturesYoutubeVideo|YouTube-video|
+cookie.messageText|"Deze website maakt gebruik van cookies om de best mogelijke ervaring te garanderen. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Meer informatie"">Meer informatie...</a>"|
+detail.acrisProductDownloadBtnText|Downloaden|
+detail.acrisProductDownloadNoPreview|Geen voorbeeld|
+detail.acrisProductDownloadTabLabel|Downloads|
+detail.acrisProductDownloadTitle|Downloads|
+detail.acrisProductLinkTabLabel|Links|
+detail.acrisProductLinkTitle|Links|
+detail.buyOnline|Online kopen|
+detail.cadService.downloadBtn|Downloaden|
+detail.cadService.fileFormatPdf|PDF|
+detail.cadService.fileFormatplaceholder|Bestandstype|
+detail.cadService.fileFormatStep|STEP-2.14|
+detail.cadService.headline|U kunt bouwgegevens voor dit product in een ander formaat downloaden|
+detail.cadService.login|"<a href=""%url%"">Login</a> om de CAD-bestanden te zien"|
+detail.cadService.title|CAD-service|
+detail.contactText|"Heb je nog niet het juiste product gevonden, heb je speciale eisen of ben je geïnteresseerd in individuele oplossingen? <a href=""%url%"" title=""Kontaktformular"">Neem contact met ons op</a>."|
+detail.ean|EAN|
+detail.orderNumber|Productnummer|
+detail.orText|Of|
+detail.performance.atrittion|Atrittie|
+detail.performance.movement|Bewegingsgeluid|
+detail.performance.resistance|Corrosiebestendigheid|
+detail.performance.roll|Rolprestaties|
+detail.priceOnRequestText|per stuk plus BTW<br />Binnen 24 uur klaar voor verzending|
+detail.priceOnRequestTitle|Prijs op verzoek|
+detail.properties.fitting|Fitting van technische gegevens|
+detail.properties.housing|Technische Behuizing|
+detail.properties.label.downloads|Downloads|
+detail.properties.label.feature|Productkenmerken|
+detail.properties.label.fitting|Fitting|
+detail.properties.label.housing|Behuizing|
+detail.properties.label.performance|Prestaties|
+detail.properties.label.wheel|Wiel|
+detail.properties.performance|Prestaties|
+detail.properties.wheel|Technisch Wiel|
+detail.qte|Hoeveelheid|
+detail.reviewFormContentPlaceholder|Voer uw beoordeling in...|
+detail.sendQuoteRequest|Offerteaanvraag verzenden|
+detail.tabs.downloads|Downloads|
+detail.tabs.features|Functies|
+detail.tabs.performance|Prestaties|
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|De hoeveelheid (%hoeveelheid%) is onjuist.|
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|"De bestelling met het bestelnummer ""%orderNumber%"" is al betaald en kan daarna niet meer worden bewerkt."|
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Deze bestelling kon niet worden gevonden.|
+error.merchant-not-selected|Kies je lokale handelaar om verder te gaan met afrekenen.|
+error.VIOLATION::ZIP_CODE_INVALID|De ingevoerde postcode heeft niet de juiste indeling.|
+footer.excludeVatText|"* Alle prijzen excl. BTW plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">verzendkosten</a> en eventuele verzendkosten, indien niet anders vermeld."|
+footer.includeVatText|"* Alle prijzen incl. BTW plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">verzendkosten</a> en eventuele verzendkosten, indien niet anders vermeld."|
+footer.serviceContactText|"Of via ons <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Contactformulier"">contactformulier</a>."|
+footer.socialMediaHeadline|Sociaal|
+general.contactUs|Neem contact met ons op|
+general.contactUsLink|/contactpersoon|
+general.loginRegister|Inloggen/registreren|
+general.privacyNoticeText|"Door u aan te melden voor de nieuwsbrief accepteert u ons <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Privacybeleid"">privacybeleid</a> evenals ons <a data-ajax-modal=""true"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""algemene voorwaarden"">algemene voorwaarden</a>."|
+global.default.activate|Activeren|
+global.default.cancel|Annuleren|
+global.default.confirm|Bevestigen|
+global.default.deactivate|Deactiveren|
+global.default.delete|Verwijderen|
+global.default.edit|Bewerken|
+global.default.noteRequiredFields|Velden gemarkeerd met sterretjes (*) zijn verplicht.|
+global.default.save|Opslaan|
+listing.downloadText|Downloaden|
+moorl-creator.aboutTheCreator|Over de maker|
+moorl-creator.aboutTheCreators|Over de makers|
+moorl-creator.creator|Maker|
+moorl-creator.creators|Makers|
+moorl-creator.donate|Doneren|
+moorl-creator.follow|Volgen|
+moorl-creator.link|Startpagina|
+moorl-creator.productsOf|Producten van|
+moorl-creator.readMore|Lees meer...|
+moorl-foundation.buttons.acceptCookie|Cookie accepteren|
+moorl-foundation.buttons.addMerchantButtonText|Nieuwe verkoper|
+moorl-foundation.buttons.administrationButtonText|Administratie|
+moorl-foundation.buttons.cancelButtonText|Annuleren|
+moorl-foundation.buttons.exportButtonText|CSV exporteren|
+moorl-foundation.buttons.exportButtonTitle|Download uw CSV|
+moorl-foundation.buttons.getLocButtonText|Functies ophalen via OpenStreetMap|
+moorl-foundation.buttons.importButtonText|CSV importeren|
+moorl-foundation.buttons.importButtonTitle|Upload uw CSV|
+moorl-foundation.buttons.mediaFolder|Beelden opslaan in deze map|
+moorl-foundation.buttons.newButtonText|Nieuw|
+moorl-foundation.buttons.openMapButtonText|Kaart openen|
+moorl-foundation.buttons.openNewWindowButtonText|Openen in nieuw venster|
+moorl-foundation.buttons.overwriteText|Bestaande gegevensrijen overschrijven (originId moet worden ingesteld).|
+moorl-foundation.buttons.placeIdLink|Route plannen|
+moorl-foundation.buttons.refreshButtonText|Opnieuw laden|
+moorl-foundation.buttons.saveButtonText|Opslaan|
+moorl-foundation.buttons.selectLocButtonText|Kies|
+moorl-foundation.buttons.startImportButtonText|Import starten|
+moorl-foundation.card.address|Adres|
+moorl-foundation.card.company|Bedrijf|
+moorl-foundation.card.contact|Contactpersoon|
+moorl-foundation.card.legend|Legende|
+moorl-foundation.card.openingHours|Openingstijden|
+moorl-foundation.card.person|Contactpersoon|
+moorl-foundation.customerUpload.checkToDelete|Aanvinken om te verwijderen|
+moorl-foundation.customerUpload.dictDefaultMessage|Sleep bestanden hierheen om te uploaden|
+moorl-foundation.customerUpload.useAsCover|Gebruiken als afdekking|
+moorl-foundation.days.closed|Gesloten|
+moorl-foundation.days.friday|Vrijdag|
+moorl-foundation.days.monday|Maandag|
+moorl-foundation.days.saturday|Zaterdag|
+moorl-foundation.days.sunday|Zondag|
+moorl-foundation.days.thursday|Donderdag|
+moorl-foundation.days.today|Vandaag|
+moorl-foundation.days.tuesday|Dinsdag|
+moorl-foundation.days.wednesday|Woensdag|
+moorl-foundation.general.selectedItems|Geselecteerde items|
+moorl-foundation.general.share|Delen|
+moorl-foundation.general.subTotal|Subtotaal|
+moorl-foundation.general.toc|Inhoudsopgave|
+moorl-foundation.label.accountCard|Rekening|
+moorl-foundation.label.addressCard|Adres|
+moorl-foundation.label.generalCard|Algemeen|
+moorl-foundation.label.locationCard|Locatie|
+moorl-foundation.label.markerCard|Markering|
+moorl-foundation.label.metaCard|Meta|
+moorl-foundation.label.relationsCard|Relaties en filters|
+moorl-foundation.label.visibilityCard|Zichtbaarheid|
+moorl-foundation.listing.filter.categories|Categorieën|
+moorl-foundation.listing.filter.country|Land|
+moorl-foundation.listing.filter.distance|Afstand|
+moorl-foundation.listing.filter.firstChar|Index|
+moorl-foundation.listing.filter.inRadiusOf|in de straal van|
+moorl-foundation.listing.filter.km|KM|
+moorl-foundation.listing.filter.mi|MI|
+moorl-foundation.listing.filter.myLocation|Mijn locatie gebruiken|
+moorl-foundation.listing.filter.navigation|Categorieën|
+moorl-foundation.listing.filter.radius|Postcode zoeken|
+moorl-foundation.listing.filter.search|Tekst zoeken|
+moorl-foundation.listing.filter.tags|Tags|
+moorl-foundation.listing.filter.zipcodeCity|Postcode/plaats|
+moorl-foundation.properties.active|Actief|
+moorl-foundation.properties.additionalAddressLine1|Adresregel 1|
+moorl-foundation.properties.additionalAddressLine2|Adresregel 2|
+moorl-foundation.properties.articles|Artikelen|
+moorl-foundation.properties.author|Auteur|
+moorl-foundation.properties.categories|Categorieën|
+moorl-foundation.properties.city|Stad|
+moorl-foundation.properties.closed|Gesloten|
+moorl-foundation.properties.cmsPage|CMS-pagina|
+moorl-foundation.properties.cmsPageId|CMS pagina-ID|
+moorl-foundation.properties.company|Bedrijf|
+moorl-foundation.properties.content|Inhoud|
+moorl-foundation.properties.country|Land|
+moorl-foundation.properties.countryCode|Landcode|
+moorl-foundation.properties.countryId|Land|
+moorl-foundation.properties.createdAt|Aangemaakt op|
+moorl-foundation.properties.customerGroupId|Klantgroep|
+moorl-foundation.properties.customerNumber|Klantnummer|
+moorl-foundation.properties.date|Datum|
+moorl-foundation.properties.department|Afdeling|
+moorl-foundation.properties.description|Beschrijving|
+moorl-foundation.properties.distance|Afstand|
+moorl-foundation.properties.email|E-mail|
+moorl-foundation.properties.enableComments|Opmerkingen inschakelen|
+moorl-foundation.properties.firstName|Voornaam|
+moorl-foundation.properties.from|Van|
+moorl-foundation.properties.highlight|Markeren|
+moorl-foundation.properties.image|Artikel|
+moorl-foundation.properties.info|Info|
+moorl-foundation.properties.inRadiusOf|in de straal van|
+moorl-foundation.properties.invisible|Onzichtbaar|
+moorl-foundation.properties.km|KM|
+moorl-foundation.properties.lastName|Achternaam|
+moorl-foundation.properties.location|Positie|
+moorl-foundation.properties.locationLat|Breedtegraad|
+moorl-foundation.properties.locationLon|Lengtegraad|
+moorl-foundation.properties.locked|Vergrendeld|
+moorl-foundation.properties.logo|Logo|
+moorl-foundation.properties.marker|Markering|
+moorl-foundation.properties.markerId|Markering|
+moorl-foundation.properties.markerSettings|Markeringsinstellingen|
+moorl-foundation.properties.markerSettingsExample|U kunt dit voorbeeld kopiëren om uw aangepaste markeringsinstellingen aan te passen.|
+moorl-foundation.properties.markerSettingsLink|Voorbeeld aangepaste markering bijsluiter|
+moorl-foundation.properties.markerShadow|Marker schaduw|
+moorl-foundation.properties.markerShadowId|Schaduw markering|
+moorl-foundation.properties.media|Media|
+moorl-foundation.properties.mediaId|Media-ID|
+moorl-foundation.properties.merchant|Handelaar|
+moorl-foundation.properties.merchantUrl|URL verkoper|
+moorl-foundation.properties.metaDescription|Meta beschrijving|
+moorl-foundation.properties.metaTitle|Meta-titel|
+moorl-foundation.properties.name|Naam|
+moorl-foundation.properties.openingHours|Openingstijden|
+moorl-foundation.properties.originId|Herkomst-ID|
+moorl-foundation.properties.phoneNumber|Telefoon|
+moorl-foundation.properties.priority|Prioriteit|
+moorl-foundation.properties.productManufacturers|Fabrikant-ID's|
+moorl-foundation.properties.products|Producten|
+moorl-foundation.properties.radius|Radius|
+moorl-foundation.properties.repeat|Herhalen|
+moorl-foundation.properties.salesChannel|Verkoopkanaal|
+moorl-foundation.properties.salesChannelId|Verkoopkanaal|
+moorl-foundation.properties.search|Zoeken|
+moorl-foundation.properties.shopUrl|URL winkelen|
+moorl-foundation.properties.showFrom|Weergeven van|
+moorl-foundation.properties.showUntil|Weergeven tot|
+moorl-foundation.properties.slug|Slug|
+moorl-foundation.properties.sticky|Kleverig|
+moorl-foundation.properties.street|Straat|
+moorl-foundation.properties.streetNumber|Nummer|
+moorl-foundation.properties.tags|Namen/ID's labelen|
+moorl-foundation.properties.teaser|Teaser|
+moorl-foundation.properties.title|Titel|
+moorl-foundation.properties.until|Tot|
+moorl-foundation.properties.updatedAt|Bijgewerkt om|
+moorl-foundation.properties.vatId|BTW-ID|
+moorl-foundation.properties.zipcode|Postcode|
+moorl-foundation.search.headline|"{0} Geen overeenkomsten voor ""%searchTerm%"" | {1} Eén overeenkomst voor ""%searchTerm%"" | ]1,Inf[ %count% overeenkomsten voor ""%searchTerm%"""|
+moorl-foundation.search.missingConfiguration|Ontbrekende configuratie voor deze lijst!|
+moorl-foundation.search.moreButton|Meer|
+moorl-foundation.search.noListingSlotFound|"Deze pagina heeft geen vermeldingselement. Controleer uw lijstinstellingen en kies ""Automatische items"""|
+moorl-foundation.search.notAvailable|Niet beschikbaar|
+moorl-foundation.search.product|Producten|
+moorl-location-map.cookieDescription|We gebruiken OpenStreetMap als tegelprovider om u visueel de locatie van onze winkels en verkopers te tonen.|
+moorl-location-map.cookieHint|Accepteer de cookie om de gewenste functie te gebruiken.|
+moorl-location-map.cookieName|Locatiekaarten|
+moorl-magazine.articles|Artikelen in blogs|
+moorl-magazine.author|Auteur|
+moorl-magazine.authors|Auteurs|
+moorl-magazine.back|Terug|
+moorl-magazine.backToOverview|Terug naar overzicht|
+moorl-magazine.categories|Categorieën|
+moorl-magazine.categoryAll|Alle categorieën|
+moorl-magazine.commentArea|Opmerkingen gebied|
+moorl-magazine.commentAreaDisabled|Opmerkingen zijn uitgeschakeld voor dit artikel|
+moorl-magazine.commentError|Zorg ervoor dat u alle velden correct hebt ingevuld|
+moorl-magazine.commentReview|Uw opmerking wordt na beoordeling vrijgegeven.|
+moorl-magazine.commentSuccess|Bedankt voor uw opmerking!|
+moorl-magazine.date|Datum|
+moorl-magazine.dateFormat|F jS \a\t g:ia|
+moorl-magazine.email|E-mail|
+moorl-magazine.emailPlaceholder|Voer uw e-mailadres in|
+moorl-magazine.name|Naam|
+moorl-magazine.namePlaceholder|Voer uw naam in|
+moorl-magazine.next|Volgende|
+moorl-magazine.page|Pagina|
+moorl-magazine.pageDescription|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Bij vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, geen zee takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Bij vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, geen zee takimata sanctus est Lorem ipsum dolor sit amet.|
+moorl-magazine.pageTitle|Mijn gracieuze blog|
+moorl-magazine.posts|Blogberichten|
+moorl-magazine.products|Gerelateerde producten|
+moorl-magazine.readMore|Lees meer|
+moorl-magazine.recentComments|Recente opmerkingen|
+moorl-magazine.relatedArticles|Gerelateerde blogberichten|
+moorl-magazine.search|Zoeken|
+moorl-magazine.searchFor|Zoeken naar...|
+moorl-magazine.sendComment|Uw opmerking indienen|
+moorl-magazine.similarArticles|Vergelijkbare blogberichten|
+moorl-magazine.sticky|Vastgepind|
+moorl-magazine.tags|Tags|
+moorl-magazine.writeComment|Schrijf een opmerking|
+moorl-magazine.wroteOn|geschreven op|
+moorl-magazine.yourComment|Uw opmerking|
+moorl-magazine.yourCommentPlaceholder|Voer hier uw opmerking in|
+moorl-merchant-finder.allCategories|Alle categorieën|
+moorl-merchant-finder.allCountries|Alle landen|
+moorl-merchant-finder.allManufacturers|Alle fabrikanten|
+moorl-merchant-finder.allowMerchantCustomerContact|Ik geef mijn geselecteerde partner toestemming om telefonisch of per e-mail contact met mij op te nemen.|
+moorl-merchant-finder.allResults|-- Selecteer --|
+moorl-merchant-finder.allTags|Alle tags|
+moorl-merchant-finder.are|zijn |
+moorl-merchant-finder.available|Beschikbaar|
+moorl-merchant-finder.backToOverview|Terug naar overzicht|
+moorl-merchant-finder.call|Bellen|
+moorl-merchant-finder.cancel|Annuleren|
+moorl-merchant-finder.categories|Categorieën|
+moorl-merchant-finder.checkAvailability|Beschikbaarheid controleren|
+moorl-merchant-finder.chose|Kies|
+moorl-merchant-finder.choseMerchant|Kies een partner|
+moorl-merchant-finder.choseMerchantToProceed|Kies je lokale handelaar om verder te gaan met afrekenen|
+moorl-merchant-finder.close|Sluiten|
+moorl-merchant-finder.commentToMerchant|Stuur een opmerking naar de partner|
+moorl-merchant-finder.country|Land|
+moorl-merchant-finder.deliveryTime|Levertijd|
+moorl-merchant-finder.deliveryTimeUnknown|Onbekend - Producten worden op bestelling aangevraagd|
+moorl-merchant-finder.description|Beschrijving|
+moorl-merchant-finder.desiredDate|Gewenste ophaaldatum|
+moorl-merchant-finder.desiredTime|Gewenste ophaaltijd|
+moorl-merchant-finder.displayOnMap|Weergeven op kaart|
+moorl-merchant-finder.distance|Afstand|
+moorl-merchant-finder.emptyResultMessage|Geen verkopers gevonden|
+moorl-merchant-finder.findMerchants|Verkopers zoeken|
+moorl-merchant-finder.forTheSearch|voor de zoekopdracht |
+moorl-merchant-finder.forTheSearchZipcode|in zipcode en afstand km omgeving |
+moorl-merchant-finder.highlight|Tip|
+moorl-merchant-finder.km|KM|
+moorl-merchant-finder.loading|Bezig met laden...|
+moorl-merchant-finder.manufacturers|Fabrikanten|
+moorl-merchant-finder.merchant|Handelaar|
+moorl-merchant-finder.merchants|Handelaren|
+moorl-merchant-finder.merchantUrl|Website|
+moorl-merchant-finder.more|Meer|
+moorl-merchant-finder.myLocation|Mijn huidige locatie gebruiken|
+moorl-merchant-finder.mySelection|Mijn selectie|
+moorl-merchant-finder.noMerchantSelected|Product niet beschikbaar. Geen verkoper geselecteerd.|
+moorl-merchant-finder.none|geen|
+moorl-merchant-finder.openingHours|Openingstijden|
+moorl-merchant-finder.outOfStock|Product niet beschikbaar. Je geselecteerde handelaar heeft dit product niet op voorraad.|
+moorl-merchant-finder.phoneNumber|Telefoon|
+moorl-merchant-finder.pickupDateSet|Ophaaltijd is ingesteld|
+moorl-merchant-finder.productAvailability|Beschikbaarheid van het product|
+moorl-merchant-finder.productNotAvailable|Product niet beschikbaar. Neem contact op met de winkelondersteuning voor meer informatie.|
+moorl-merchant-finder.radius|Radius|
+moorl-merchant-finder.resetSelection|Selectie resetten|
+moorl-merchant-finder.resultsFound|resultaten telling gevonden|
+moorl-merchant-finder.save|Opslaan|
+moorl-merchant-finder.search|Zoeken|
+moorl-merchant-finder.searchFor|Zoeken naar|
+moorl-merchant-finder.searchLocation|Locatie zoeken|
+moorl-merchant-finder.searchRules.hasLogo|Handelaar met logo|
+moorl-merchant-finder.searchRules.hasPriority|Voorrangsverkoper|
+moorl-merchant-finder.searchRules.isHighlighted|Premium-handelaar|
+moorl-merchant-finder.searchRules.isNotHighlighted|Normale verkoper|
+moorl-merchant-finder.selectedMerchant|Geselecteerde verkoper|
+moorl-merchant-finder.sendMail|E-mail|
+moorl-merchant-finder.shop|Shop|
+moorl-merchant-finder.shopUrl|Bezoek de winkel|
+moorl-merchant-finder.stockInfo|Informatie over aandelen|
+moorl-merchant-finder.tags|Tags|
+moorl-merchant-finder.thereAre|er zijn |
+moorl-merchant-finder.www|WWW|
+moorl-merchant-finder.zipcodeCity|postcode, stad|
+moorl-merchant-finder.zipcodeCityEnter|Typ een postcode of plaats en druk op Enter|
+nimbits-pricerequests.cart.cartRequestButton|Vraag een aanbod aan|
+nimbits-pricerequests.cart.dontAddByProductNumber|Dit product kan niet aan de winkelwagen worden toegevoegd.|
+nimbits-pricerequests.detail.available|Beschikbaar|
+nimbits-pricerequests.detail.button.openrequestform|Vraag een aanbod aan|
+nimbits-pricerequests.detail.restock|"{1} Beschikbaar over 1 dag|]1,Inf[ Beschikbaar over %restockTime% dagen"|
+nimbits-pricerequests.detail.text.priceonrequest|Prijs op verzoek|
+nimbits-pricerequests.fail.alert|Aanvraag is niet verzonden - er is een fout opgetreden. Probeer het opnieuw.|
+nimbits-pricerequests.finish.alert|Aanvraag succesvol verzonden|
+nimbits-pricerequests.finish.buttonBack|Terug naar de winkel|
+nimbits-pricerequests.listing.button.openrequestform|Vraag een aanbod aan|
+nimbits-pricerequests.listing.text.priceonrequest|Prijs op verzoek|
+nimbits-pricerequests.mail.address|Adres|
+nimbits-pricerequests.mail.amount|Bedrag|
+nimbits-pricerequests.mail.article|Artikel|
+nimbits-pricerequests.mail.city|Stad|
+nimbits-pricerequests.mail.comment|Opmerkingen van klanten|
+nimbits-pricerequests.mail.company|Bedrijf|
+nimbits-pricerequests.mail.country|Land|
+nimbits-pricerequests.mail.customersendername|Prijs op verzoek|
+nimbits-pricerequests.mail.housenumber|Huisnummer|
+nimbits-pricerequests.mail.mail|E-mail|
+nimbits-pricerequests.mail.name|Naam|
+nimbits-pricerequests.mail.ordernumber|Bestelnummer|
+nimbits-pricerequests.mail.price|Prijs|
+nimbits-pricerequests.mail.pricegross|Incl. Belasting|
+nimbits-pricerequests.mail.pricegrosssum|Incl. Belastingsom|
+nimbits-pricerequests.mail.pricenet|Excl. Belasting|
+nimbits-pricerequests.mail.pricenetsum|Excl. Belastingsom|
+nimbits-pricerequests.mail.requestfirst|Prijsaanvraag van|
+nimbits-pricerequests.mail.requestsecond|:|
+nimbits-pricerequests.mail.shopownersendername|Prijs op verzoek|
+nimbits-pricerequests.mail.street|Straat|
+nimbits-pricerequests.mail.subject|Prijs op verzoek|
+nimbits-pricerequests.mail.subjectcart|Verzoek winkelwagen|
+nimbits-pricerequests.mail.subjectshopowner|Prijs op verzoek|
+nimbits-pricerequests.mail.subjectshopownercart|Verzoek winkelwagen|
+nimbits-pricerequests.mail.zipcode|Postcode|
+nimbits-pricerequests.popup.city|Stad|
+nimbits-pricerequests.popup.closebutton|Sluiten|
+nimbits-pricerequests.popup.company|Bedrijf|
+nimbits-pricerequests.popup.country|Land|
+nimbits-pricerequests.popup.dataprivacytext|"Ik heb het <a href=""/privacy"" target=""_blank"" rel=""noreferrer noopener""> Privacybeleid </a> gelezen, begrepen en ga ermee akkoord."|
+nimbits-pricerequests.popup.desiredprice|Gewenste prijs in |
+nimbits-pricerequests.popup.entervalidcity|Voer een geldige plaats in.|
+nimbits-pricerequests.popup.entervalidcountry|Voer een geldig land in.|
+nimbits-pricerequests.popup.entervalidhousenumber|Voer een geldig huisnummer in.|
+nimbits-pricerequests.popup.entervalidmail|Voer een geldig e-mailadres in.|
+nimbits-pricerequests.popup.entervalidstreet|Voer een geldige straat in.|
+nimbits-pricerequests.popup.entervalidzipcode|Voer een geldige postcode in.|
+nimbits-pricerequests.popup.genderm|Dhr.|
+nimbits-pricerequests.popup.gendern|Mx|
+nimbits-pricerequests.popup.genderw|Mevr.|
+nimbits-pricerequests.popup.housenumber|Huisnummer|
+nimbits-pricerequests.popup.mail|Postadres|
+nimbits-pricerequests.popup.name|Naam|
+nimbits-pricerequests.popup.optional|(optioneel)|
+nimbits-pricerequests.popup.phonenumber|Telefoon|
+nimbits-pricerequests.popup.popupTitle|Vraag een aanbod aan|
+nimbits-pricerequests.popup.product|Product(en) in deze aanvraag:|
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x |
+nimbits-pricerequests.popup.request|Verzoek|
+nimbits-pricerequests.popup.requestbutton|Verzoek|
+nimbits-pricerequests.popup.required|*|
+nimbits-pricerequests.popup.requiredtext|Velden gemarkeerd met * zijn verplicht.|
+nimbits-pricerequests.popup.salutation|Aanhef|
+nimbits-pricerequests.popup.street|Straat|
+nimbits-pricerequests.popup.surname|Achternaam|
+nimbits-pricerequests.popup.text|Vraag een aanbieding aan voor de gekozen producten|
+nimbits-pricerequests.popup.zipcode|Postcode|
+nimbits-pricerequests.search.text.priceonrequest|Prijs op verzoek|
+nimbits-pricerequests.toasts.error|Aanvraag is niet verzonden - er is een fout opgetreden. Probeer het opnieuw.|
+nimbits-pricerequests.toasts.success|Aanvraag succesvol verzonden|
+priceRequest.newsletterText|Ik ga er hierbij mee akkoord dat TENTE mij ook per e-mail en telefoon kan informeren over producten en evenementen (bijv. optredens op handelsbeurzen) van TENTE.|
+priceRequest.sendRequestText|Aanvraag wordt verzonden...|
+priceRequest.waitText|Een ogenblik geduld...|
+socialMedia.facebook|https://www.facebook.com/tenteworld|
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de|
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/|
+socialMedia.twitter|https://twitter.com/tenteworld|
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh|
+socialMedia.youtube|https://www.youtube.com/TENTEinternational|
+swagCmsExtensions.form.component.select.defaultPlaceholder|Selecteer optie...|
+theme.compilation.async.success|Compilatie voor verkoopkanaal %salesChannelName% voltooid|
+vdct-simple-events.events.detail.to-event|Naar het evenement|
+zeobv-store-switcher.switchStoreLabel|Winkel wisselen|

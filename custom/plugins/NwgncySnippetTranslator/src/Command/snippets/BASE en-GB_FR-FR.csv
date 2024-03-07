@@ -1,0 +1,564 @@
+LanguagePack fr-FR|Traduction
+account.doubleOptinAccountAlert|Votre compte client n’a pas encore été activé. Nous avons envoyé un e-mail de confirmation contenant un lien d’activation. Veuillez vérifier votre boîte de réception et cliquer sur le lien pour terminer l’inscription!
+account.downloadFileButton|Télécharger
+account.downloadItemColumnDate|Date
+account.downloadItemColumnTitle|Fichier
+account.faxLabel|Fax
+account.faxPlaceholder|Saisir le fax
+account.homepageLabel|Page d’accueil
+account.homepagePlaceholder|Saisir l’URL de la page d’accueil
+account.passwordNotIdentical|Les mots de passe que vous avez saisis ne correspondent pas.
+account.personalTypePlaceholder|Sélectionner...
+account.profileCurrentMailPlaceholder|Saisir l’adresse e-mail...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Cliquez ici</a> pour supprimer toutes vos données personnelles."
+account.profilePasswordCreateNewPlaceholder|Saisir un nouveau mot de passe...
+account.profilePasswordCurrentPlaceholder|Saisir le mot de passe actuel...
+acrisFilter.buttonFiltersHide|Afficher moins de filtres
+acrisFilter.buttonFilterShowHideLabel|Afficher plus ou moins de filtres
+acrisFilter.buttonFiltersShow|Afficher plus de filtres
+acrisFilter.buttonHeaderSearchAllCategories|Toutes les catégories
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Immédiatement disponible
+acrisFilter.filterCategoriesDisplayName|Catégories
+acrisFilter.filterRangeActiveMaxLabel|Propriété%displayName% à
+acrisFilter.filterRangeActiveMinLabel|Propriété%displayName% de
+acrisFilter.filterRangeSliderFrom|à partir de
+acrisFilter.filterRangeSliderTo|à
+acrisFilter.filterSearchPlaceholder|Rechercher...
+card.card-image|Image de%name%
+card.linkTitle|Ouvrir%url% dans un nouvel onglet
+cbaxLexicon.page.ajax.linkDescription|Au lexique
+cbaxLexicon.page.banner.alt|Bannière
+cbaxLexicon.page.boxKeyword.moreRead|En savoir plus
+cbaxLexicon.page.breadcrumb.name|Lexique
+cbaxLexicon.page.content.headline|Table des matières
+cbaxLexicon.page.content.metaDescription|Contenu de la méta description du Lexique
+cbaxLexicon.page.content.metaKeywords|Contenu des méta-mots-clés Lexicon
+cbaxLexicon.page.content.metaTitle|Table des matières
+cbaxLexicon.page.filter.button|Navigation Lexicon
+cbaxLexicon.page.filter.headline|Navigation Lexicon
+cbaxLexicon.page.index.metaDescription|Index de méta description Lexicon
+cbaxLexicon.page.index.metaKeywords|Index des méta-mots-clés Lexicon
+cbaxLexicon.page.index.metaTitle|Lexique
+cbaxLexicon.page.listing.entryHeadline|Publications dans cette catégorie d’encyclopédie
+cbaxLexicon.page.listing.metaDescription09|Liste de métadescription Lexicon 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Liste de métadescription Lexicon A
+cbaxLexicon.page.listing.metaDescriptionB|Liste de métadescription Lexicon B
+cbaxLexicon.page.listing.metaDescriptionC|Lexicon Meta Description Listing C
+cbaxLexicon.page.listing.metaDescriptionD|Liste de métadescription Lexicon D
+cbaxLexicon.page.listing.metaDescriptionE|Liste de métadescription Lexicon E
+cbaxLexicon.page.listing.metaDescriptionF|Liste de métadescription Lexicon F
+cbaxLexicon.page.listing.metaDescriptionG|Liste de métadescription Lexicon G
+cbaxLexicon.page.listing.metaDescriptionH|Liste de métadescription Lexicon H
+cbaxLexicon.page.listing.metaDescriptionI|Lexicon Meta Description Listing I
+cbaxLexicon.page.listing.metaDescriptionJ|Liste de métadescription Lexicon J
+cbaxLexicon.page.listing.metaDescriptionK|Liste de métadescription Lexicon K
+cbaxLexicon.page.listing.metaDescriptionL|Liste de métadescription Lexicon L
+cbaxLexicon.page.listing.metaDescriptionM|Lexicon Meta Description Listing M
+cbaxLexicon.page.listing.metaDescriptionN|Liste de métadescription Lexicon N
+cbaxLexicon.page.listing.metaDescriptionO|Lexicon Meta Description Listing O
+cbaxLexicon.page.listing.metaDescriptionP|Liste de métadescription Lexicon P
+cbaxLexicon.page.listing.metaDescriptionQ|Lexicon Meta Description Listing Q
+cbaxLexicon.page.listing.metaDescriptionR|Lexicon Meta Description Listing R
+cbaxLexicon.page.listing.metaDescriptionS|Lexicon Meta Description Listing S
+cbaxLexicon.page.listing.metaDescriptionT|Lexicon Meta Description Listing T
+cbaxLexicon.page.listing.metaDescriptionU|Liste de métadescription Lexicon U
+cbaxLexicon.page.listing.metaDescriptionV|Liste de métadescription Lexicon V
+cbaxLexicon.page.listing.metaDescriptionW|Lexicon Meta Description Listing W
+cbaxLexicon.page.listing.metaDescriptionX|Liste de métadescription Lexicon X
+cbaxLexicon.page.listing.metaDescriptionY|Liste de métadescription Lexicon Y
+cbaxLexicon.page.listing.metaDescriptionZ|Lexicon Meta Description Listing Z
+cbaxLexicon.page.listing.metaKeywords09|Liste des méta-mots-clés Lexicon 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Liste des méta-mots-clés Lexicon A
+cbaxLexicon.page.listing.metaKeywordsB|Liste des méta-mots-clés Lexicon B
+cbaxLexicon.page.listing.metaKeywordsC|Liste des méta-mots-clés Lexicon C
+cbaxLexicon.page.listing.metaKeywordsD|Liste des méta-mots-clés Lexicon D
+cbaxLexicon.page.listing.metaKeywordsE|Liste des méta-mots-clés Lexicon E
+cbaxLexicon.page.listing.metaKeywordsF|Liste des méta-mots-clés Lexicon F
+cbaxLexicon.page.listing.metaKeywordsG|Liste des méta-mots-clés Lexicon G
+cbaxLexicon.page.listing.metaKeywordsH|Liste des méta-mots-clés Lexicon H
+cbaxLexicon.page.listing.metaKeywordsI|Liste des méta-mots-clés Lexicon I
+cbaxLexicon.page.listing.metaKeywordsJ|Liste des méta-mots-clés Lexicon J
+cbaxLexicon.page.listing.metaKeywordsK|Liste des méta-mots-clés Lexicon K
+cbaxLexicon.page.listing.metaKeywordsL|Liste des méta-mots-clés Lexicon L
+cbaxLexicon.page.listing.metaKeywordsM|Liste des méta-mots-clés Lexicon M
+cbaxLexicon.page.listing.metaKeywordsN|Liste des méta-mots-clés Lexicon N
+cbaxLexicon.page.listing.metaKeywordsO|Liste des méta-mots-clés Lexicon O
+cbaxLexicon.page.listing.metaKeywordsP|Liste des méta-mots-clés Lexicon P
+cbaxLexicon.page.listing.metaKeywordsQ|Liste des méta-mots-clés Lexicon Q
+cbaxLexicon.page.listing.metaKeywordsR|Liste des méta-mots-clés Lexicon R
+cbaxLexicon.page.listing.metaKeywordsS|Liste des méta-mots-clés Lexicon S
+cbaxLexicon.page.listing.metaKeywordsT|Liste des méta-mots-clés Lexicon T
+cbaxLexicon.page.listing.metaKeywordsU|Liste des méta-mots-clés Lexicon U
+cbaxLexicon.page.listing.metaKeywordsV|Liste des méta-mots-clés Lexicon V
+cbaxLexicon.page.listing.metaKeywordsW|Liste des méta-mots-clés Lexicon W
+cbaxLexicon.page.listing.metaKeywordsX|Liste des méta-mots-clés Lexicon X
+cbaxLexicon.page.listing.metaKeywordsY|Liste des méta-mots-clés Lexicon Y
+cbaxLexicon.page.listing.metaKeywordsZ|Liste des méta-mots-clés Lexicon Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|Je
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Q
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Table des matières
+cbaxLexicon.page.navigation.linkIndex|Page de démarrage
+cbaxLexicon.page.pagination.toOverview|Vers la vue d’ensemble
+cbaxLexicon.page.sidebar.title|Lexique:
+checkout.confirmRevocationReminder|Vous avez déjà déclaré renoncer au droit de rétractation.
+checkout.confirmRevocationTerms|Je souhaite accéder immédiatement au contenu numérique et je reconnais que je renonce ainsi à mon droit d’annulation.
+checkout.confirmTermsReminderText|"Vous avez déjà accepté les <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""conditions générales"">conditions générales</a>."
+checkout.confirmTermsText|"J’ai lu et j’accepte les <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""conditions générales"">conditions générales</a>."
+checkout.lineItemUnitPriceDescriptor|unité
+checkout.merchant-not-selected|Veuillez choisir votre commerçant local pour procéder au paiement.
+checkout.or|ou
+CmsElements.callToAction.elementError|Cet élément n’est pas disponible pour la barre latérale. Veuillez sélectionner un autre <p class='h5 my-2'>Appel à l'action</p> pour votre barre latérale.
+CmsElements.counter.days|JOURS
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|Vous n’avez pas téléchargé de vidéo valide. Vérifiez les paramètres de l’élément.
+CmsElements.htmlVideo.hint.headline|Mauvais format / Pas de vidéo
+CmsElements.placeholder.label|Remplacer l’élément
+CmsElements.shopTheLook.addAllProducts|Ajouter des produits au panier
+CmsElements.shopTheLook.totalDiscount|Économies:
+component.cms.imageGallery.sliderDotLabel|Afficher l'image %index% de %total%
+component.cms.vimeo.privacyNoticeText|"En regardant la vidéo, vous acceptez que vos données soient transférées à%platform% et que vous ayez lu la <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Politique de confidentialité"">Politique de confidentialité</a>."
+component.product.quantitySelect.decrease|Diminuer la quantité
+component.product.quantitySelect.increase|Augmenter la quantité
+component.product.quantitySelect.label|Quantité
+contact.newsletterSubscribe|J’accepte par la présente que TENTE puisse également m’informer par e-mail et par téléphone des produits et événements (par ex., apparitions au salon commercial) de TENTE.
+contact.privacyNoticeText|"En sélectionnant Continuer, vous confirmez avoir lu et accepté notre <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Data protection information"">data protection information</a>."
+cookie.groupComfortFeaturesYoutubeVideo|Vidéo YouTube
+cookie.messageText|"Ce site Web utilise des cookies pour garantir la meilleure expérience possible. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Plus de informations"">Plus de informations...</a>"
+detail.acrisProductDownloadBtnText|Télécharger
+detail.acrisProductDownloadNoPreview|Aucun aperçu
+detail.acrisProductDownloadTabLabel|Téléchargements
+detail.acrisProductDownloadTitle|Téléchargements
+detail.acrisProductLinkTabLabel|Liens
+detail.acrisProductLinkTitle|Liens
+detail.buyOnline|Acheter en ligne
+detail.cadService.downloadBtn|Télécharger
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Type de fichier
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Vous pouvez télécharger les données de construction pour ce produit dans un format différent
+detail.cadService.login|"Veuillez <a href=""%url%"">Connexion</a> pour voir les fichiers CAO"
+detail.cadService.title|Service CAO
+detail.contactText|"Vous n’avez pas encore trouvé le bon produit, vous avez des exigences spéciales ou vous êtes intéressé par des solutions individuelles? <a href=""%url%"" title=""Kontaktformular"">Contactez-nous</a>."
+detail.ean|EAN
+detail.orderNumber|Numéro de produit
+detail.orText|Ou
+detail.performance.atrittion|Atrition
+detail.performance.movement|Bruit de mouvement
+detail.performance.resistance|Résistance à la corrosion
+detail.performance.roll|Performance du rouleau
+detail.priceOnRequestText|par article plus TVA<br />Dans 24 heures, prêt à être expédié
+detail.priceOnRequestTitle|Prix sur demande
+detail.properties.fitting|Ajustement des données techniques
+detail.properties.housing|Données techniques Chape
+detail.properties.label.downloads|Téléchargements
+detail.properties.label.feature|Caractéristiques du produit
+detail.properties.label.fitting|Raccord
+detail.properties.label.housing|Chape
+detail.properties.label.performance|Performance
+detail.properties.label.wheel|Roue
+detail.properties.performance|Performance
+detail.properties.wheel|Données techniques Roue
+detail.qte|Quantité
+detail.reviewFormContentPlaceholder|Saisissez votre avis...
+detail.sendQuoteRequest|Envoyer une demande de devis
+detail.tabs.downloads|Téléchargements
+detail.tabs.features|Caractéristiques
+detail.tabs.performance|Performance
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|La quantité (%quantity%) est incorrecte.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|La commande portant le numéro de commande «%orderNumber%» a déjà été payée et ne peut pas être modifiée par la suite.
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Cette commande est introuvable.
+error.merchant-not-selected|Veuillez choisir votre commerçant local pour procéder au paiement.
+error.VIOLATION::ZIP_CODE_INVALID|Le format du code postal que vous avez saisi n'est pas correct.
+footer.excludeVatText|"* Tous les prix hors TVA plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">frais d’expédition</a> et frais de livraison éventuels, sauf indication contraire."
+footer.includeVatText|"* Tous les prix incluent TVA plus <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">frais d’expédition</a> et frais de livraison éventuels, sauf indication contraire."
+footer.serviceContactText|"Ou via notre <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Formulaire de contact"">formulaire de contact</a>."
+footer.socialMediaHeadline|Social
+general.contactUs|Contactez-nous
+general.contactUsLink|/contact
+general.loginRegister|Connexion / Inscription
+general.privacyNoticeText|"En vous abonnant à la newsletter, vous acceptez notre <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Politique de confidentialité"">politique de confidentialité</a> ainsi que nos <a data-ajax-modal=""true"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""conditions générales"">conditions générales</a>."
+global.default.activate|Activer
+global.default.cancel|Annuler
+global.default.confirm|Confirmer
+global.default.deactivate|Désactiver
+global.default.delete|Supprimer
+global.default.edit|Modifier
+global.default.noteRequiredFields|Les champs marqués d’astérisques (*) sont obligatoires.
+global.default.save|Enregistrer
+listing.downloadText|Télécharger
+moorl-creator.aboutTheCreator|À propos du créateur
+moorl-creator.aboutTheCreators|À propos des créateurs
+moorl-creator.creator|Créateur
+moorl-creator.creators|Créateurs
+moorl-creator.donate|Faire un don
+moorl-creator.follow|Suivre
+moorl-creator.link|Page d’accueil
+moorl-creator.productsOf|Produits de
+moorl-creator.readMore|En savoir plus...
+moorl-foundation.buttons.acceptCookie|Accepter le cookie
+moorl-foundation.buttons.addMerchantButtonText|Nouveau commerçant
+moorl-foundation.buttons.administrationButtonText|Administration
+moorl-foundation.buttons.cancelButtonText|Annuler
+moorl-foundation.buttons.exportButtonText|Exporter CSV
+moorl-foundation.buttons.exportButtonTitle|Télécharger votre fichier CSV
+moorl-foundation.buttons.getLocButtonText|Obtenir des postes par OpenStreetMap
+moorl-foundation.buttons.importButtonText|Importer CSV
+moorl-foundation.buttons.importButtonTitle|Télécharger votre fichier CSV
+moorl-foundation.buttons.mediaFolder|Enregistrer les images dans ce dossier
+moorl-foundation.buttons.newButtonText|Nouveau
+moorl-foundation.buttons.openMapButtonText|Ouvrir la carte
+moorl-foundation.buttons.openNewWindowButtonText|Ouvrir dans une nouvelle fenêtre
+moorl-foundation.buttons.overwriteText|Remplacer les lignes de données existantes (originId doit être défini).
+moorl-foundation.buttons.placeIdLink|Planifier l’itinéraire
+moorl-foundation.buttons.refreshButtonText|Recharger
+moorl-foundation.buttons.saveButtonText|Enregistrer
+moorl-foundation.buttons.selectLocButtonText|Choisi
+moorl-foundation.buttons.startImportButtonText|Démarrer l’importation
+moorl-foundation.card.address|Adresse
+moorl-foundation.card.company|Société.
+moorl-foundation.card.contact|Contact
+moorl-foundation.card.legend|Légende
+moorl-foundation.card.openingHours|Heures d’ouverture
+moorl-foundation.card.person|Personne à contacter
+moorl-foundation.customerUpload.checkToDelete|Cocher pour supprimer
+moorl-foundation.customerUpload.dictDefaultMessage|Faites glisser les fichiers ici pour les télécharger
+moorl-foundation.customerUpload.useAsCover|Utiliser comme couverture
+moorl-foundation.days.closed|Fermé
+moorl-foundation.days.friday|Vendredi
+moorl-foundation.days.monday|Lundi
+moorl-foundation.days.saturday|Samedi
+moorl-foundation.days.sunday|Dimanche
+moorl-foundation.days.thursday|Jeudi
+moorl-foundation.days.today|Aujourd’hui
+moorl-foundation.days.tuesday|Mardi
+moorl-foundation.days.wednesday|Mercredi
+moorl-foundation.general.selectedItems|Éléments sélectionnés
+moorl-foundation.general.share|Partager
+moorl-foundation.general.subTotal|Sous-total
+moorl-foundation.general.toc|Table des matières
+moorl-foundation.label.accountCard|Compte
+moorl-foundation.label.addressCard|Adresse
+moorl-foundation.label.generalCard|Généralités
+moorl-foundation.label.locationCard|Emplacement
+moorl-foundation.label.markerCard|Marqueur
+moorl-foundation.label.metaCard|Méta
+moorl-foundation.label.relationsCard|Relations et filtres
+moorl-foundation.label.visibilityCard|Visibilité
+moorl-foundation.listing.filter.categories|Catégories
+moorl-foundation.listing.filter.country|Pays
+moorl-foundation.listing.filter.distance|Distance
+moorl-foundation.listing.filter.firstChar|Index
+moorl-foundation.listing.filter.inRadiusOf|dans le rayon de
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|IM
+moorl-foundation.listing.filter.myLocation|Utiliser mon emplacement
+moorl-foundation.listing.filter.navigation|Catégories
+moorl-foundation.listing.filter.radius|Rechercher un code postal
+moorl-foundation.listing.filter.search|Texte de recherche
+moorl-foundation.listing.filter.tags|Balises
+moorl-foundation.listing.filter.zipcodeCity|Code postal / Ville
+moorl-foundation.properties.active|Actif
+moorl-foundation.properties.additionalAddressLine1|Ligne d’adresse 1
+moorl-foundation.properties.additionalAddressLine2|Ligne d’adresse 2
+moorl-foundation.properties.articles|Articles
+moorl-foundation.properties.author|Auteur
+moorl-foundation.properties.categories|Catégories
+moorl-foundation.properties.city|Ville
+moorl-foundation.properties.closed|Fermé
+moorl-foundation.properties.cmsPage|Page CMS
+moorl-foundation.properties.cmsPageId|ID de page CMS
+moorl-foundation.properties.company|Société.
+moorl-foundation.properties.content|SOMMAIRE
+moorl-foundation.properties.country|Pays
+moorl-foundation.properties.countryCode|Code pays
+moorl-foundation.properties.countryId|Pays
+moorl-foundation.properties.createdAt|Créé à
+moorl-foundation.properties.customerGroupId|Groupe de clients
+moorl-foundation.properties.customerNumber|Numéro de client
+moorl-foundation.properties.date|Date
+moorl-foundation.properties.department|Département
+moorl-foundation.properties.description|Description
+moorl-foundation.properties.distance|Distance
+moorl-foundation.properties.email|E-mail
+moorl-foundation.properties.enableComments|Activer les commentaires
+moorl-foundation.properties.firstName|Prénom
+moorl-foundation.properties.from|À partir de
+moorl-foundation.properties.highlight|Surligner
+moorl-foundation.properties.image|Article
+moorl-foundation.properties.info|Informations
+moorl-foundation.properties.inRadiusOf|dans le rayon de
+moorl-foundation.properties.invisible|Invisible
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|Nom de famille
+moorl-foundation.properties.location|Position
+moorl-foundation.properties.locationLat|Latitude
+moorl-foundation.properties.locationLon|Longitude
+moorl-foundation.properties.locked|Verrouillé
+moorl-foundation.properties.logo|Logo
+moorl-foundation.properties.marker|Marqueur
+moorl-foundation.properties.markerId|Marqueur
+moorl-foundation.properties.markerSettings|Paramètres du marqueur
+moorl-foundation.properties.markerSettingsExample|Vous pouvez copier cet exemple pour ajuster vos paramètres de marqueur personnalisés.
+moorl-foundation.properties.markerSettingsLink|Exemple de marqueur personnalisé de la notice
+moorl-foundation.properties.markerShadow|Ombre de marqueur
+moorl-foundation.properties.markerShadowId|Ombre de marqueur
+moorl-foundation.properties.media|Médias
+moorl-foundation.properties.mediaId|ID du support
+moorl-foundation.properties.merchant|Commerçant
+moorl-foundation.properties.merchantUrl|URL du marchand
+moorl-foundation.properties.metaDescription|Méta description
+moorl-foundation.properties.metaTitle|Méta-titre
+moorl-foundation.properties.name|Nom
+moorl-foundation.properties.openingHours|Heures d’ouverture
+moorl-foundation.properties.originId|ID d’origine
+moorl-foundation.properties.phoneNumber|Téléphone
+moorl-foundation.properties.priority|Priorité
+moorl-foundation.properties.productManufacturers|Identifiants du fabricant
+moorl-foundation.properties.products|Produits
+moorl-foundation.properties.radius|Rayon
+moorl-foundation.properties.repeat|Répéter
+moorl-foundation.properties.salesChannel|Canal de vente
+moorl-foundation.properties.salesChannelId|Canal de vente
+moorl-foundation.properties.search|Rechercher
+moorl-foundation.properties.shopUrl|URL de la boutique
+moorl-foundation.properties.showFrom|Afficher à partir de
+moorl-foundation.properties.showUntil|Afficher jusqu’à
+moorl-foundation.properties.slug|Colle
+moorl-foundation.properties.sticky|Collant
+moorl-foundation.properties.street|Rue
+moorl-foundation.properties.streetNumber|Numéro
+moorl-foundation.properties.tags|Noms/ID des balises
+moorl-foundation.properties.teaser|Teaser
+moorl-foundation.properties.title|Titre
+moorl-foundation.properties.until|Jusqu’au
+moorl-foundation.properties.updatedAt|Mis à jour à
+moorl-foundation.properties.vatId|ID TVA
+moorl-foundation.properties.zipcode|Code postal
+moorl-foundation.search.headline|"{0} Aucune correspondance pour ""%searchTerm%"" | {1} Une correspondance pour ""%searchTerm%"" | ]1,Inf[%count% correspondances pour ""%searchTerm%"""
+moorl-foundation.search.missingConfiguration|Configuration manquante pour cette liste!
+moorl-foundation.search.moreButton|Plus
+moorl-foundation.search.noListingSlotFound|Cette page n’a pas d’élément de liste. Vérifiez vos paramètres de liste et choisissez «Articles automatiques»
+moorl-foundation.search.notAvailable|Non disponible
+moorl-foundation.search.product|Produits
+moorl-location-map.cookieDescription|Nous utilisons OpenStreetMap en tant que fournisseur de tuiles pour vous montrer visuellement l’emplacement de nos magasins et commerçants.
+moorl-location-map.cookieHint|Veuillez accepter le cookie pour utiliser la fonction souhaitée.
+moorl-location-map.cookieName|Cartes de localisation
+moorl-magazine.articles|Articles de blog
+moorl-magazine.author|Auteur
+moorl-magazine.authors|Auteurs
+moorl-magazine.back|Arrière
+moorl-magazine.backToOverview|Retour à la présentation
+moorl-magazine.categories|Catégories
+moorl-magazine.categoryAll|Toutes les catégories
+moorl-magazine.commentArea|Zone de commentaire
+moorl-magazine.commentAreaDisabled|Les commentaires sont désactivés pour cet article
+moorl-magazine.commentError|Veuillez vous assurer que vous avez correctement rempli tous les champs
+moorl-magazine.commentReview|Votre commentaire sera publié après examen.
+moorl-magazine.commentSuccess|Merci pour votre commentaire!
+moorl-magazine.date|Date
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|E-mail
+moorl-magazine.emailPlaceholder|Saisissez votre adresse e-mail
+moorl-magazine.name|Nom
+moorl-magazine.namePlaceholder|Saisissez votre nom
+moorl-magazine.next|Suivant
+moorl-magazine.page|Page
+moorl-magazine.pageDescription|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Chez vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, pas de takimata sanctus est Lorem ipsum dolor assis amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Chez vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, pas de takimata sanctus est Lorem ipsum dolor assis amet.
+moorl-magazine.pageTitle|Mon blog Graceful
+moorl-magazine.posts|Publications sur le blog
+moorl-magazine.products|Produits associés
+moorl-magazine.readMore|En savoir plus
+moorl-magazine.recentComments|Commentaires récents
+moorl-magazine.relatedArticles|Publications de blog associées
+moorl-magazine.search|Rechercher
+moorl-magazine.searchFor|Rechercher...
+moorl-magazine.sendComment|Envoyez votre commentaire
+moorl-magazine.similarArticles|Articles de blog similaires
+moorl-magazine.sticky|Épinglé
+moorl-magazine.tags|Balises
+moorl-magazine.writeComment|Rédiger un commentaire
+moorl-magazine.wroteOn|écrit le
+moorl-magazine.yourComment|Votre commentaire
+moorl-magazine.yourCommentPlaceholder|Saisissez votre commentaire ici
+moorl-merchant-finder.allCategories|Toutes les catégories
+moorl-merchant-finder.allCountries|Tous les pays
+moorl-merchant-finder.allManufacturers|Tous les fabricants
+moorl-merchant-finder.allowMerchantCustomerContact|J’autorise le commerçant que j’ai sélectionné à me contacter par téléphone ou par e-mail.
+moorl-merchant-finder.allResults|-- Sélectionner --
+moorl-merchant-finder.allTags|Toutes les balises
+moorl-merchant-finder.are|sont 
+moorl-merchant-finder.available|Disponible
+moorl-merchant-finder.backToOverview|Retour à la présentation
+moorl-merchant-finder.call|Appeler
+moorl-merchant-finder.cancel|Annuler
+moorl-merchant-finder.categories|Catégories
+moorl-merchant-finder.checkAvailability|Vérifier la disponibilité
+moorl-merchant-finder.chose|Choisi
+moorl-merchant-finder.choseMerchant|Choisir un commerçant
+moorl-merchant-finder.choseMerchantToProceed|Veuillez choisir votre commerçant local pour procéder au paiement
+moorl-merchant-finder.close|Fermer
+moorl-merchant-finder.commentToMerchant|Envoyer un commentaire au vendeur
+moorl-merchant-finder.country|Pays
+moorl-merchant-finder.deliveryTime|Délai de livraison
+moorl-merchant-finder.deliveryTimeUnknown|Inconnu - Les produits seront demandés à la commande
+moorl-merchant-finder.description|Description
+moorl-merchant-finder.desiredDate|Date de prise en charge souhaitée
+moorl-merchant-finder.desiredTime|Heure de prise en charge souhaitée
+moorl-merchant-finder.displayOnMap|Afficher sur la carte
+moorl-merchant-finder.distance|Distance
+moorl-merchant-finder.emptyResultMessage|Aucun commerçant trouvé
+moorl-merchant-finder.findMerchants|Trouver des commerçants
+moorl-merchant-finder.forTheSearch|pour la recherche 
+moorl-merchant-finder.forTheSearchZipcode|en code postal et distance km environnante 
+moorl-merchant-finder.highlight|Conseil
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|Chargement en cours...
+moorl-merchant-finder.manufacturers|Fabricants
+moorl-merchant-finder.merchant|Commerçant
+moorl-merchant-finder.merchants|Marchands
+moorl-merchant-finder.merchantUrl|Site Web
+moorl-merchant-finder.more|Plus
+moorl-merchant-finder.myLocation|Utiliser mon emplacement actuel
+moorl-merchant-finder.mySelection|Ma sélection
+moorl-merchant-finder.noMerchantSelected|Produit non disponible. Aucun commerçant sélectionné.
+moorl-merchant-finder.none|aucun
+moorl-merchant-finder.openingHours|Heures d’ouverture
+moorl-merchant-finder.outOfStock|Produit non disponible. Le commerçant que vous avez sélectionné n’a pas ce produit en stock.
+moorl-merchant-finder.phoneNumber|Téléphone
+moorl-merchant-finder.pickupDateSet|L’heure de prise en charge a été définie
+moorl-merchant-finder.productAvailability|Disponibilité des produits
+moorl-merchant-finder.productNotAvailable|Produit non disponible. Veuillez contacter l’assistance de la boutique pour plus d’informations.
+moorl-merchant-finder.radius|Rayon
+moorl-merchant-finder.resetSelection|Réinitialiser la sélection
+moorl-merchant-finder.resultsFound|résultats de comptage trouvés
+moorl-merchant-finder.save|Enregistrer
+moorl-merchant-finder.search|Rechercher
+moorl-merchant-finder.searchFor|Rechercher
+moorl-merchant-finder.searchLocation|Rechercher un emplacement
+moorl-merchant-finder.searchRules.hasLogo|Commerçant avec logo
+moorl-merchant-finder.searchRules.hasPriority|Commerçant prioritaire
+moorl-merchant-finder.searchRules.isHighlighted|Commerçant premium
+moorl-merchant-finder.searchRules.isNotHighlighted|Marchand normal
+moorl-merchant-finder.selectedMerchant|Marchand sélectionné
+moorl-merchant-finder.sendMail|Courrier
+moorl-merchant-finder.shop|Acheter
+moorl-merchant-finder.shopUrl|Visiter la boutique
+moorl-merchant-finder.stockInfo|Informations sur le stock
+moorl-merchant-finder.tags|Balises
+moorl-merchant-finder.thereAre|il y a 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|code postal, ville
+moorl-merchant-finder.zipcodeCityEnter|Saisissez un code postal ou une ville et appuyez sur Entrée
+nimbits-pricerequests.cart.cartRequestButton|Demander une offre
+nimbits-pricerequests.cart.dontAddByProductNumber|Ce produit ne peut pas être ajouté au panier.
+nimbits-pricerequests.detail.available|Disponible
+nimbits-pricerequests.detail.button.openrequestform|Demander une offre
+nimbits-pricerequests.detail.restock|"{1} Disponible en 1 jour|]1,Inf[ Disponible en%restockTime% jours"
+nimbits-pricerequests.detail.text.priceonrequest|Prix sur demande
+nimbits-pricerequests.fail.alert|La demande n'a pas été envoyée - une erreur s'est produite. Veuillez réessayer.
+nimbits-pricerequests.finish.alert|Demande envoyée avec succès
+nimbits-pricerequests.finish.buttonBack|Retour à la boutique
+nimbits-pricerequests.listing.button.openrequestform|Demander une offre
+nimbits-pricerequests.listing.text.priceonrequest|Prix sur demande
+nimbits-pricerequests.mail.address|Adresse
+nimbits-pricerequests.mail.amount|Montant
+nimbits-pricerequests.mail.article|Article
+nimbits-pricerequests.mail.city|Ville
+nimbits-pricerequests.mail.comment|Commentaires des clients
+nimbits-pricerequests.mail.company|Société.
+nimbits-pricerequests.mail.country|Pays
+nimbits-pricerequests.mail.customersendername|Prix sur demande
+nimbits-pricerequests.mail.housenumber|Numéro de maison
+nimbits-pricerequests.mail.mail|Courrier
+nimbits-pricerequests.mail.name|Nom
+nimbits-pricerequests.mail.ordernumber|Numéro de commande
+nimbits-pricerequests.mail.price|Prix
+nimbits-pricerequests.mail.pricegross|Incluant Taxe
+nimbits-pricerequests.mail.pricegrosssum|Incluant Somme fiscale
+nimbits-pricerequests.mail.pricenet|Hors Taxe
+nimbits-pricerequests.mail.pricenetsum|Hors Somme fiscale
+nimbits-pricerequests.mail.requestfirst|Demande de prix de
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Prix sur demande
+nimbits-pricerequests.mail.street|Rue
+nimbits-pricerequests.mail.subject|Prix sur demande
+nimbits-pricerequests.mail.subjectcart|Demande de panier
+nimbits-pricerequests.mail.subjectshopowner|Prix sur demande
+nimbits-pricerequests.mail.subjectshopownercart|Demande de panier
+nimbits-pricerequests.mail.zipcode|Code postal
+nimbits-pricerequests.popup.city|Ville
+nimbits-pricerequests.popup.closebutton|Fermer
+nimbits-pricerequests.popup.company|Société.
+nimbits-pricerequests.popup.country|Pays
+nimbits-pricerequests.popup.dataprivacytext|"J’ai lu, compris et j’accepte la <a href=""/privacy"" target=""_blank"" rel=""noreferrer noopener""> Politique de confidentialité </a>."
+nimbits-pricerequests.popup.desiredprice|Prix souhaité en 
+nimbits-pricerequests.popup.entervalidcity|Veuillez saisir une ville valide.
+nimbits-pricerequests.popup.entervalidcountry|Veuillez saisir un pays valide.
+nimbits-pricerequests.popup.entervalidhousenumber|Veuillez saisir un numéro de maison valide.
+nimbits-pricerequests.popup.entervalidmail|Veuillez saisir une adresse e-mail valide.
+nimbits-pricerequests.popup.entervalidstreet|Veuillez saisir une rue valide.
+nimbits-pricerequests.popup.entervalidzipcode|Veuillez saisir un code postal valide.
+nimbits-pricerequests.popup.genderm|M.
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Mme
+nimbits-pricerequests.popup.housenumber|Numéro de maison
+nimbits-pricerequests.popup.mail|Adresse postale
+nimbits-pricerequests.popup.name|Nom
+nimbits-pricerequests.popup.optional|(facultatif)
+nimbits-pricerequests.popup.phonenumber|Téléphone
+nimbits-pricerequests.popup.popupTitle|Demander une offre
+nimbits-pricerequests.popup.product|Produit(s) dans cette demande:
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Demande
+nimbits-pricerequests.popup.requestbutton|Demande
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|Les champs marqués d’un * sont obligatoires.
+nimbits-pricerequests.popup.salutation|Salutation
+nimbits-pricerequests.popup.street|Rue
+nimbits-pricerequests.popup.surname|Nom
+nimbits-pricerequests.popup.text|Demander une offre pour les produits choisis
+nimbits-pricerequests.popup.zipcode|Code postal
+nimbits-pricerequests.search.text.priceonrequest|Prix sur demande
+nimbits-pricerequests.toasts.error|La demande n'a pas été envoyée - une erreur s'est produite. Veuillez réessayer.
+nimbits-pricerequests.toasts.success|Demande envoyée avec succès
+priceRequest.newsletterText|J’accepte par la présente que TENTE puisse également m’informer par e-mail et par téléphone des produits et événements (par ex., apparitions au salon commercial) de TENTE.
+priceRequest.sendRequestText|La demande sera transmise...
+priceRequest.waitText|Veuillez patienter...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Sélectionner une option...
+theme.compilation.async.success|Compilation pour le canal de vente%salesChannelName% terminée
+vdct-simple-events.events.detail.to-event|À l’événement
+zeobv-store-switcher.switchStoreLabel|Changer de magasin

@@ -1,0 +1,564 @@
+LanguagePack nn-NO|Oversettelse
+account.doubleOptinAccountAlert|Kundekontoen din er ikke aktivert ennå. Vi har sendt en e-postbekreftelse med en aktiveringskobling. Sjekk innboksen din og klikk på koblingen for å fullføre registreringen!
+account.downloadFileButton|Last ned
+account.downloadItemColumnDate|Dato
+account.downloadItemColumnTitle|Fil
+account.faxLabel|Faks
+account.faxPlaceholder|Angi faks
+account.homepageLabel|Hjemmeside
+account.homepagePlaceholder|Angi hjemmeside-URL
+account.passwordNotIdentical|Passordene du har angitt samsvarer ikke.
+account.personalTypePlaceholder|Velg ...
+account.profileCurrentMailPlaceholder|Angi e-postadresse ...
+account.profileDeleteText|"<a href=""%target%"" data-bs-toggle=""modal"" data-bs-target=""%target%"">Klikk her</a> for å slette alle dine personopplysninger."
+account.profilePasswordCreateNewPlaceholder|Angi nytt passord ...
+account.profilePasswordCurrentPlaceholder|Angi gjeldende passord ...
+acrisFilter.buttonFiltersHide|Vis færre filtre
+acrisFilter.buttonFilterShowHideLabel|Vis flere eller færre filtre
+acrisFilter.buttonFiltersShow|Vis flere filtre
+acrisFilter.buttonHeaderSearchAllCategories|Alle kategorier
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|Umiddelbart tilgjengelig
+acrisFilter.filterCategoriesDisplayName|Kategorier
+acrisFilter.filterRangeActiveMaxLabel|Egenskap %displayName% til
+acrisFilter.filterRangeActiveMinLabel|Eiendom %displayName% fra
+acrisFilter.filterRangeSliderFrom|fra
+acrisFilter.filterRangeSliderTo|til
+acrisFilter.filterSearchPlaceholder|Søk ...
+card.card-image|Bilde av %name%
+card.linkTitle|Åpne %url% i ny fane
+cbaxLexicon.page.ajax.linkDescription|Til leksikonet
+cbaxLexicon.page.banner.alt|Banner
+cbaxLexicon.page.boxKeyword.moreRead|Les mer
+cbaxLexicon.page.breadcrumb.name|Lexicon
+cbaxLexicon.page.content.headline|Innholdsfortegnelse
+cbaxLexicon.page.content.metaDescription|Lexicon Meta Beskrivelse Innhold
+cbaxLexicon.page.content.metaKeywords|Innhold i Lexicon Meta-stikkord
+cbaxLexicon.page.content.metaTitle|Innholdsfortegnelse
+cbaxLexicon.page.filter.button|Navigasjon i Lexicon
+cbaxLexicon.page.filter.headline|Navigasjon i Lexicon
+cbaxLexicon.page.index.metaDescription|Lexicon Meta Beskrivelsesindeks
+cbaxLexicon.page.index.metaKeywords|Indeks for Lexicon Meta-stikkord
+cbaxLexicon.page.index.metaTitle|Lexicon
+cbaxLexicon.page.listing.entryHeadline|Innlegg i denne encyklopedi-kategorien
+cbaxLexicon.page.listing.metaDescription09|Lexicon Meta Beskrivelse Liste 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Lexicon Meta Beskrivelse Liste A
+cbaxLexicon.page.listing.metaDescriptionB|Lexicon Meta Beskrivelse Liste B
+cbaxLexicon.page.listing.metaDescriptionC|Lexicon Meta Beskrivelse Liste C
+cbaxLexicon.page.listing.metaDescriptionD|Lexicon Meta Beskrivelse Oppføring D
+cbaxLexicon.page.listing.metaDescriptionE|Lexicon Meta Beskrivelse Liste E
+cbaxLexicon.page.listing.metaDescriptionF|Lexicon Meta Beskrivelse Liste F
+cbaxLexicon.page.listing.metaDescriptionG|Lexicon Meta Beskrivelse Oppføring G
+cbaxLexicon.page.listing.metaDescriptionH|Lexicon Meta Beskrivelse Oppføring H
+cbaxLexicon.page.listing.metaDescriptionI|Lexicon Meta Beskrivelse Oppføring I
+cbaxLexicon.page.listing.metaDescriptionJ|Lexicon Meta Beskrivelse Liste J
+cbaxLexicon.page.listing.metaDescriptionK|Lexicon Meta Beskrivelse Oppføring K
+cbaxLexicon.page.listing.metaDescriptionL|Lexicon Meta Beskrivelse Oppføring L
+cbaxLexicon.page.listing.metaDescriptionM|Lexicon Meta Beskrivelse Oppføring M
+cbaxLexicon.page.listing.metaDescriptionN|Lexicon Meta Beskrivelse Liste N
+cbaxLexicon.page.listing.metaDescriptionO|Lexicon Meta Beskrivelse Oppføring O
+cbaxLexicon.page.listing.metaDescriptionP|Lexicon Meta Beskrivelse Liste P
+cbaxLexicon.page.listing.metaDescriptionQ|Lexicon Meta Beskrivelse Oppføring Q
+cbaxLexicon.page.listing.metaDescriptionR|Lexicon Meta Beskrivelse Oppføring R
+cbaxLexicon.page.listing.metaDescriptionS|Lexicon Meta Beskrivelse Liste S
+cbaxLexicon.page.listing.metaDescriptionT|Lexicon Meta Beskrivelse Oppføring T
+cbaxLexicon.page.listing.metaDescriptionU|Lexicon Meta Beskrivelse Oppføring U
+cbaxLexicon.page.listing.metaDescriptionV|Lexicon Meta Beskrivelse Liste V
+cbaxLexicon.page.listing.metaDescriptionW|Lexicon Meta Beskrivelse Liste W
+cbaxLexicon.page.listing.metaDescriptionX|Lexicon Meta Beskrivelse Oppføring X
+cbaxLexicon.page.listing.metaDescriptionY|Lexicon Meta Beskrivelse Liste Y
+cbaxLexicon.page.listing.metaDescriptionZ|Lexicon Meta Beskrivelse Oppføring Z
+cbaxLexicon.page.listing.metaKeywords09|Liste over Lexicon Meta-stikkord 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Lexicon Meta-stikkord Oppføring A
+cbaxLexicon.page.listing.metaKeywordsB|Lexicon Meta-stikkord oppføring B
+cbaxLexicon.page.listing.metaKeywordsC|Lexicon Meta-stikkord oppføring C
+cbaxLexicon.page.listing.metaKeywordsD|Oppføring av Lexicon Meta-stikkord D
+cbaxLexicon.page.listing.metaKeywordsE|Lexicon Meta-stikkord oppføring E
+cbaxLexicon.page.listing.metaKeywordsF|Oppføring av Lexicon Meta-stikkord F
+cbaxLexicon.page.listing.metaKeywordsG|Lexicon Meta-stikkord Oppføring G
+cbaxLexicon.page.listing.metaKeywordsH|Lexicon Meta-stikkord Oppføring H
+cbaxLexicon.page.listing.metaKeywordsI|Lexicon Meta-stikkord Oppføring I
+cbaxLexicon.page.listing.metaKeywordsJ|Lexicon Meta-stikkord Oppføring J
+cbaxLexicon.page.listing.metaKeywordsK|Lexicon Meta-stikkord Oppføring K
+cbaxLexicon.page.listing.metaKeywordsL|Oppføring av Lexicon Meta-stikkord L
+cbaxLexicon.page.listing.metaKeywordsM|Oppføring av Lexicon Meta-stikkord M
+cbaxLexicon.page.listing.metaKeywordsN|Lexicon Meta-stikkord Oppføring N
+cbaxLexicon.page.listing.metaKeywordsO|Lexicon Meta-stikkord Oppføring O
+cbaxLexicon.page.listing.metaKeywordsP|Oppføring av Lexicon Meta-stikkord P
+cbaxLexicon.page.listing.metaKeywordsQ|Oppføring av Lexicon Meta-stikkord Q
+cbaxLexicon.page.listing.metaKeywordsR|Lexicon Meta-stikkord Oppføring R
+cbaxLexicon.page.listing.metaKeywordsS|Lexicon Meta-stikkord Oppføring S
+cbaxLexicon.page.listing.metaKeywordsT|Oppføring av Lexicon Meta-stikkord T
+cbaxLexicon.page.listing.metaKeywordsU|Lexicon Meta-stikkord oppføring U
+cbaxLexicon.page.listing.metaKeywordsV|Lexicon Meta-stikkord oppføring V
+cbaxLexicon.page.listing.metaKeywordsW|Oppføring av Lexicon Meta-stikkord W
+cbaxLexicon.page.listing.metaKeywordsX|Lexicon Meta-stikkord Oppføring X
+cbaxLexicon.page.listing.metaKeywordsY|Lexicon Meta-stikkord oppføring Y
+cbaxLexicon.page.listing.metaKeywordsZ|Lexicon Meta-stikkord Oppføring Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|Jeg
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Q
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|Innholdsfortegnelse
+cbaxLexicon.page.navigation.linkIndex|Startside
+cbaxLexicon.page.pagination.toOverview|Til oversikt
+cbaxLexicon.page.sidebar.title|Lexicon:
+checkout.confirmRevocationReminder|Du har allerede erklært at du fraskriver deg angreretten.
+checkout.confirmRevocationTerms|Jeg vil ha umiddelbar tilgang til det digitale innholdet, og jeg erkjenner at jeg dermed fraskriver meg retten til å kansellere.
+checkout.confirmTermsReminderText|"Du har allerede godtatt <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""generelle vilkår og betingelser"">generelle vilkår og betingelser</a>."
+checkout.confirmTermsText|"Jeg har lest og godtatt <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""generelle vilkår og betingelser"">generelle vilkår</a>."
+checkout.lineItemUnitPriceDescriptor|enhet
+checkout.merchant-not-selected|Velg din lokale forhandler for å fortsette kassen.
+checkout.or|eller
+CmsElements.callToAction.elementError|Dette elementet er ikke tilgjengelig for sidepanelet. Velg en annen <p class='h5 my-2'>Call to Action</p> for sidepanelet.
+CmsElements.counter.days|DAGER
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|Du har ikke lastet opp en gyldig video. Kontroller innstillingene for elementet.
+CmsElements.htmlVideo.hint.headline|Feil format / Ingen video
+CmsElements.placeholder.label|Erstatt element
+CmsElements.shopTheLook.addAllProducts|Legg til produkter i handlekurven
+CmsElements.shopTheLook.totalDiscount|Sparing:
+component.cms.imageGallery.sliderDotLabel|Vis bilde %indeks% av %total%
+component.cms.vimeo.privacyNoticeText|"Ved å se videoen godtar du at dataene dine vil bli overført til %platform% og at du har lest <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Privacy policy"">Privacy policy</a>."
+component.product.quantitySelect.decrease|Reduser antall
+component.product.quantitySelect.increase|Øk antall
+component.product.quantitySelect.label|Antall
+contact.newsletterSubscribe|Jeg samtykker herved i at TENTE også kan informere meg via e-post og telefon om produkter og arrangementer (f.eks. messeopptredener) av TENTE.
+contact.privacyNoticeText|"Ved å velge fortsett bekrefter du at du har lest og godtar vår <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Data protection information"">data protection information</a>."
+cookie.groupComfortFeaturesYoutubeVideo|YouTube-video
+cookie.messageText|"Dette nettstedet bruker informasjonskapsler for å sikre best mulig opplevelse. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Mer informasjon"">Mer informasjon...</a>"
+detail.acrisProductDownloadBtnText|Last ned
+detail.acrisProductDownloadNoPreview|Ingen forhåndsvisning
+detail.acrisProductDownloadTabLabel|Nedlastinger
+detail.acrisProductDownloadTitle|Nedlastinger
+detail.acrisProductLinkTabLabel|Lenker
+detail.acrisProductLinkTitle|Lenker
+detail.buyOnline|Kjøp på nett
+detail.cadService.downloadBtn|Last ned
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|Filtype
+detail.cadService.fileFormatStep|STEP-2.14
+detail.cadService.headline|Du kan laste ned konstruksjonsdata for dette produktet i et annet format
+detail.cadService.login|"<a href=""%url%"">Login</a> for å se CAD-filene"
+detail.cadService.title|CAD-tjeneste
+detail.contactText|"Har du ikke funnet det rette produktet ennå, har spesielle krav eller er du interessert i individuelle løsninger? <a href=""%url%"" title=""Kontaktformular"">Kontakt oss</a>."
+detail.ean|EAN
+detail.orderNumber|Produktnummer
+detail.orText|Eller
+detail.performance.atrittion|Atrittion
+detail.performance.movement|Bevegelsesstøy
+detail.performance.resistance|Rustbeskyttelse
+detail.performance.roll|Rulleytelse
+detail.priceOnRequestText|per kolli pluss MVA<br />Om 24 timer klar for frakt
+detail.priceOnRequestTitle|Pris på forespørsel
+detail.properties.fitting|Tilpasning av tekniske data
+detail.properties.housing|Teknisk Gaffel
+detail.properties.label.downloads|Nedlastinger
+detail.properties.label.feature|Produktfunksjoner
+detail.properties.label.fitting|Montering
+detail.properties.label.housing|Gaffel
+detail.properties.label.performance|Ytelse
+detail.properties.label.wheel|Hjul
+detail.properties.performance|Ytelse
+detail.properties.wheel|Hjul for tekniske data
+detail.qte|Antall
+detail.reviewFormContentPlaceholder|Skriv inn anmeldelsen din ...
+detail.sendQuoteRequest|Send tilbudsforespørsel
+detail.tabs.downloads|Nedlastinger
+detail.tabs.features|Funksjoner
+detail.tabs.performance|Ytelse
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|Mengden (%kvantitet %) er feil.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|Ordren med ordrenummeret %orderNumber% ble allerede betalt og kan ikke redigeres etterpå.
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|Denne ordren ble ikke funnet.
+error.merchant-not-selected|Velg din lokale forhandler for å fortsette kassen.
+error.VIOLATION::ZIP_CODE_INVALID|Postnummeret du har oppgitt har ikke riktig format.
+footer.excludeVatText|"* Alle priser ekskl. MVA pluss <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">forsendelseskostnader</a> og mulige leveringskostnader, hvis ikke annet er oppgitt."
+footer.includeVatText|"* Alle priser inkl. MVA pluss <a data-ajax-modal=""true"" href=""%url%"" data-url=""%url%"">forsendelseskostnader</a> og mulige leveringskostnader, hvis ikke annet er oppgitt."
+footer.serviceContactText|"Eller via vår <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""Kontaktskjema"">kontaktskjema</a>."
+footer.socialMediaHeadline|Sosial
+general.contactUs|Kontakt oss
+general.contactUsLink|/kontakt
+general.loginRegister|Logg inn / registrer deg
+general.privacyNoticeText|"Ved å abonnere på nyhetsbrevet godtar du våre <a data-ajax-modal=""true"" data-url=""%privacyUrl%"" href=""%privacyUrl%"" title=""Privacy policy"">retningslinjer for personvern</a> samt våre <a data-ajax-modal=""true"" data-url=""%tosUrl%"" href=""%tosUrl%"" title=""vilkår og betingelser"">vilkår</a>."
+global.default.activate|Aktiver
+global.default.cancel|Avbryt
+global.default.confirm|Bekreft
+global.default.deactivate|Deaktiver
+global.default.delete|Slett
+global.default.edit|Rediger
+global.default.noteRequiredFields|Felt merket med stjerner (*) er obligatoriske.
+global.default.save|Lagre
+listing.downloadText|Last ned
+moorl-creator.aboutTheCreator|Om skaperen
+moorl-creator.aboutTheCreators|Om skaperne
+moorl-creator.creator|Skaper
+moorl-creator.creators|Skapere
+moorl-creator.donate|Doner
+moorl-creator.follow|Følg
+moorl-creator.link|Hjemmeside
+moorl-creator.productsOf|Produkter fra
+moorl-creator.readMore|Les mer ...
+moorl-foundation.buttons.acceptCookie|Godta informasjonskapsel
+moorl-foundation.buttons.addMerchantButtonText|Ny forhandler
+moorl-foundation.buttons.administrationButtonText|Administrasjon
+moorl-foundation.buttons.cancelButtonText|Avbryt
+moorl-foundation.buttons.exportButtonText|Eksporter CSV
+moorl-foundation.buttons.exportButtonTitle|Last ned CSV
+moorl-foundation.buttons.getLocButtonText|Få stillinger av OpenStreetMap
+moorl-foundation.buttons.importButtonText|Importer CSV
+moorl-foundation.buttons.importButtonTitle|Last opp CSV-filen din
+moorl-foundation.buttons.mediaFolder|Lagre bilder i denne mappen
+moorl-foundation.buttons.newButtonText|Nytt
+moorl-foundation.buttons.openMapButtonText|Åpne kart
+moorl-foundation.buttons.openNewWindowButtonText|Åpne i nytt vindu
+moorl-foundation.buttons.overwriteText|Overskriv eksisterende datarader (opprinnelses-ID må angis).
+moorl-foundation.buttons.placeIdLink|Planlegg rute
+moorl-foundation.buttons.refreshButtonText|Last inn på nytt
+moorl-foundation.buttons.saveButtonText|Lagre
+moorl-foundation.buttons.selectLocButtonText|Velg
+moorl-foundation.buttons.startImportButtonText|Start import
+moorl-foundation.card.address|Adresse
+moorl-foundation.card.company|Selskap
+moorl-foundation.card.contact|Kontakt
+moorl-foundation.card.legend|Legend
+moorl-foundation.card.openingHours|Åpningstider
+moorl-foundation.card.person|Kontaktperson
+moorl-foundation.customerUpload.checkToDelete|Merk av for å slette
+moorl-foundation.customerUpload.dictDefaultMessage|Dra filer hit for å laste opp
+moorl-foundation.customerUpload.useAsCover|Bruk som deksel
+moorl-foundation.days.closed|Stengt
+moorl-foundation.days.friday|Fredag
+moorl-foundation.days.monday|Mandag
+moorl-foundation.days.saturday|Lørdag
+moorl-foundation.days.sunday|Søndag
+moorl-foundation.days.thursday|Torsdag
+moorl-foundation.days.today|I dag
+moorl-foundation.days.tuesday|Tirsdag
+moorl-foundation.days.wednesday|Onsdag
+moorl-foundation.general.selectedItems|Valgte elementer
+moorl-foundation.general.share|Del
+moorl-foundation.general.subTotal|Samlet
+moorl-foundation.general.toc|Innholdsfortegnelse
+moorl-foundation.label.accountCard|Konto
+moorl-foundation.label.addressCard|Adresse
+moorl-foundation.label.generalCard|Generelt
+moorl-foundation.label.locationCard|Plassering
+moorl-foundation.label.markerCard|Markør
+moorl-foundation.label.metaCard|Meta
+moorl-foundation.label.relationsCard|Relasjoner og filtre
+moorl-foundation.label.visibilityCard|Synlighet
+moorl-foundation.listing.filter.categories|Kategorier
+moorl-foundation.listing.filter.country|Land
+moorl-foundation.listing.filter.distance|Avstand
+moorl-foundation.listing.filter.firstChar|Indeks
+moorl-foundation.listing.filter.inRadiusOf|i radius av
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|MI
+moorl-foundation.listing.filter.myLocation|Bruk plasseringen min
+moorl-foundation.listing.filter.navigation|Kategorier
+moorl-foundation.listing.filter.radius|Søk etter postnummer
+moorl-foundation.listing.filter.search|Søk tekst
+moorl-foundation.listing.filter.tags|Tagger
+moorl-foundation.listing.filter.zipcodeCity|Postnummer/by
+moorl-foundation.properties.active|Aktiv
+moorl-foundation.properties.additionalAddressLine1|Adresselinje 1
+moorl-foundation.properties.additionalAddressLine2|Adresselinje 2
+moorl-foundation.properties.articles|Artikler
+moorl-foundation.properties.author|Forfatter
+moorl-foundation.properties.categories|Kategorier
+moorl-foundation.properties.city|By
+moorl-foundation.properties.closed|Stengt
+moorl-foundation.properties.cmsPage|CMS-side
+moorl-foundation.properties.cmsPageId|CMS-side-ID
+moorl-foundation.properties.company|Selskap
+moorl-foundation.properties.content|Innhold
+moorl-foundation.properties.country|Land
+moorl-foundation.properties.countryCode|Landskode
+moorl-foundation.properties.countryId|Land
+moorl-foundation.properties.createdAt|Opprettet på
+moorl-foundation.properties.customerGroupId|Kundegruppe
+moorl-foundation.properties.customerNumber|Kundenummer
+moorl-foundation.properties.date|Dato
+moorl-foundation.properties.department|Avdeling
+moorl-foundation.properties.description|Beskrivelse
+moorl-foundation.properties.distance|Avstand
+moorl-foundation.properties.email|E-post
+moorl-foundation.properties.enableComments|Aktiver kommentarer
+moorl-foundation.properties.firstName|Fornavn
+moorl-foundation.properties.from|Fra
+moorl-foundation.properties.highlight|Høydepunkt
+moorl-foundation.properties.image|Artikkel
+moorl-foundation.properties.info|Informasjon
+moorl-foundation.properties.inRadiusOf|i radius av
+moorl-foundation.properties.invisible|Usynlig
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|Etternavn
+moorl-foundation.properties.location|Posisjon
+moorl-foundation.properties.locationLat|Breddegrad
+moorl-foundation.properties.locationLon|Lengdegrad
+moorl-foundation.properties.locked|Låst
+moorl-foundation.properties.logo|Logo
+moorl-foundation.properties.marker|Markør
+moorl-foundation.properties.markerId|Markør
+moorl-foundation.properties.markerSettings|Innstillinger for markør
+moorl-foundation.properties.markerSettingsExample|Du kan kopiere dette eksempelet for å justere dine egendefinerte markørinnstillinger.
+moorl-foundation.properties.markerSettingsLink|Eksempel på egendefinert markør i brosjyre
+moorl-foundation.properties.markerShadow|Markørskygge
+moorl-foundation.properties.markerShadowId|Markør skygge
+moorl-foundation.properties.media|Medier
+moorl-foundation.properties.mediaId|Medie-ID
+moorl-foundation.properties.merchant|Forhandler
+moorl-foundation.properties.merchantUrl|Forhandler-URL
+moorl-foundation.properties.metaDescription|Meta beskrivelse
+moorl-foundation.properties.metaTitle|Meta-tittel
+moorl-foundation.properties.name|Navn
+moorl-foundation.properties.openingHours|Åpningstider
+moorl-foundation.properties.originId|Opprinnelses-ID
+moorl-foundation.properties.phoneNumber|Telefon
+moorl-foundation.properties.priority|Prioritet
+moorl-foundation.properties.productManufacturers|Produsent-ID-er
+moorl-foundation.properties.products|Produkter
+moorl-foundation.properties.radius|Radius
+moorl-foundation.properties.repeat|Gjenta
+moorl-foundation.properties.salesChannel|Salgskanal
+moorl-foundation.properties.salesChannelId|Salgskanal
+moorl-foundation.properties.search|Søk
+moorl-foundation.properties.shopUrl|Butikk-URL
+moorl-foundation.properties.showFrom|Vis fra
+moorl-foundation.properties.showUntil|Vis til
+moorl-foundation.properties.slug|Slug
+moorl-foundation.properties.sticky|Klistrete
+moorl-foundation.properties.street|Gate
+moorl-foundation.properties.streetNumber|Antall
+moorl-foundation.properties.tags|Taggnavn/ID-er
+moorl-foundation.properties.teaser|Teaser
+moorl-foundation.properties.title|Tittel
+moorl-foundation.properties.until|Inntil
+moorl-foundation.properties.updatedAt|Oppdatert kl.
+moorl-foundation.properties.vatId|MVA-ID
+moorl-foundation.properties.zipcode|Postnummer
+moorl-foundation.search.headline|"{0} Ingen treff for ""%searchTerm%"" | {1} Én kamp for ""%searchTerm%"" | ]1,Inf[ %count% treff for ""%searchTerm%"""
+moorl-foundation.search.missingConfiguration|Mangler konfigurasjon for denne listen!
+moorl-foundation.search.moreButton|Mer
+moorl-foundation.search.noListingSlotFound|Denne siden har ikke et oppføringselement. Sjekk oppføringsinnstillingene dine og velg «Automatiske elementer»
+moorl-foundation.search.notAvailable|Ikke tilgjengelig
+moorl-foundation.search.product|Produkter
+moorl-location-map.cookieDescription|Vi bruker OpenStreetMap som flisleverandør for å vise deg visuelt plasseringen av våre butikker og forhandlere.
+moorl-location-map.cookieHint|Godta informasjonskapselen for å bruke ønsket funksjon.
+moorl-location-map.cookieName|Stedskart
+moorl-magazine.articles|Blogg artikler
+moorl-magazine.author|Forfatter
+moorl-magazine.authors|Forfattere
+moorl-magazine.back|Tilbake
+moorl-magazine.backToOverview|Tilbake til oversikt
+moorl-magazine.categories|Kategorier
+moorl-magazine.categoryAll|Alle kategorier
+moorl-magazine.commentArea|Kommentarområde
+moorl-magazine.commentAreaDisabled|Kommentarer er deaktivert for denne artikkelen
+moorl-magazine.commentError|Sørg for at du har fylt ut alle feltene riktig
+moorl-magazine.commentReview|Kommentaren din vil bli publisert etter gjennomgang.
+moorl-magazine.commentSuccess|Takk for kommentaren din!
+moorl-magazine.date|Dato
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|E-post
+moorl-magazine.emailPlaceholder|Skriv inn e-postadressen din
+moorl-magazine.name|Navn
+moorl-magazine.namePlaceholder|Skriv inn navnet ditt
+moorl-magazine.next|Neste
+moorl-magazine.page|Side
+moorl-magazine.pageDescription|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. På vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, ingen sjøtakimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. På vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, ingen sjøtakimata sanctus est Lorem ipsum dolor sit amet.
+moorl-magazine.pageTitle|Min grasiøse blogg
+moorl-magazine.posts|Blogginnlegg
+moorl-magazine.products|Relaterte produkter
+moorl-magazine.readMore|Les mer
+moorl-magazine.recentComments|Nylige kommentarer
+moorl-magazine.relatedArticles|Relaterte blogginnlegg
+moorl-magazine.search|Søk
+moorl-magazine.searchFor|Søk etter ...
+moorl-magazine.sendComment|Send inn kommentaren din
+moorl-magazine.similarArticles|Lignende blogginnlegg
+moorl-magazine.sticky|Festet
+moorl-magazine.tags|Tagger
+moorl-magazine.writeComment|Skriv en kommentar
+moorl-magazine.wroteOn|skrev på
+moorl-magazine.yourComment|Din kommentar
+moorl-magazine.yourCommentPlaceholder|Skriv inn kommentaren din her
+moorl-merchant-finder.allCategories|Alle kategorier
+moorl-merchant-finder.allCountries|Alle land
+moorl-merchant-finder.allManufacturers|Alle produsenter
+moorl-merchant-finder.allowMerchantCustomerContact|Jeg lar den valgte forhandleren kontakte meg via telefon eller e-post.
+moorl-merchant-finder.allResults|-- Velg --
+moorl-merchant-finder.allTags|Alle tagger
+moorl-merchant-finder.are|er 
+moorl-merchant-finder.available|Tilgjengelig
+moorl-merchant-finder.backToOverview|Tilbake til oversikt
+moorl-merchant-finder.call|Ring
+moorl-merchant-finder.cancel|Avbryt
+moorl-merchant-finder.categories|Kategorier
+moorl-merchant-finder.checkAvailability|Sjekk tilgjengelighet
+moorl-merchant-finder.chose|Velg
+moorl-merchant-finder.choseMerchant|Velg en forhandler
+moorl-merchant-finder.choseMerchantToProceed|Velg din lokale forhandler for å fortsette kassen
+moorl-merchant-finder.close|Lukk
+moorl-merchant-finder.commentToMerchant|Send en kommentar til selgeren
+moorl-merchant-finder.country|Land
+moorl-merchant-finder.deliveryTime|Leveringstid
+moorl-merchant-finder.deliveryTimeUnknown|Ukjent – produkter vil bli forespurt ved bestilling
+moorl-merchant-finder.description|Beskrivelse
+moorl-merchant-finder.desiredDate|Ønsket hentedato
+moorl-merchant-finder.desiredTime|Ønsket hentetid
+moorl-merchant-finder.displayOnMap|Vis på kart
+moorl-merchant-finder.distance|Avstand
+moorl-merchant-finder.emptyResultMessage|Ingen forhandlere funnet
+moorl-merchant-finder.findMerchants|Finn forhandlere
+moorl-merchant-finder.forTheSearch|for søket 
+moorl-merchant-finder.forTheSearchZipcode|i zipcode og avstand km omgivelser 
+moorl-merchant-finder.highlight|Tips
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|Laster inn ...
+moorl-merchant-finder.manufacturers|Produsenter
+moorl-merchant-finder.merchant|Forhandler
+moorl-merchant-finder.merchants|Forhandlere
+moorl-merchant-finder.merchantUrl|Nettsted
+moorl-merchant-finder.more|Mer
+moorl-merchant-finder.myLocation|Bruk min nåværende posisjon
+moorl-merchant-finder.mySelection|Mitt valg
+moorl-merchant-finder.noMerchantSelected|Produktet er ikke tilgjengelig. Ingen selger valgt.
+moorl-merchant-finder.none|ingen
+moorl-merchant-finder.openingHours|Åpningstider
+moorl-merchant-finder.outOfStock|Produktet er ikke tilgjengelig. Den valgte selgeren har ikke dette produktet på lager.
+moorl-merchant-finder.phoneNumber|Telefon
+moorl-merchant-finder.pickupDateSet|Hentetid er angitt
+moorl-merchant-finder.productAvailability|Produkttilgjengelighet
+moorl-merchant-finder.productNotAvailable|Produktet er ikke tilgjengelig. Kontakt butikksupport for mer informasjon.
+moorl-merchant-finder.radius|Radius
+moorl-merchant-finder.resetSelection|Tilbakestill valg
+moorl-merchant-finder.resultsFound|antall resultater funnet
+moorl-merchant-finder.save|Lagre
+moorl-merchant-finder.search|Søk
+moorl-merchant-finder.searchFor|Søk etter
+moorl-merchant-finder.searchLocation|Søk etter sted
+moorl-merchant-finder.searchRules.hasLogo|Forhandler med logo
+moorl-merchant-finder.searchRules.hasPriority|Prioritert forhandler
+moorl-merchant-finder.searchRules.isHighlighted|Premium forhandler
+moorl-merchant-finder.searchRules.isNotHighlighted|Normal forhandler
+moorl-merchant-finder.selectedMerchant|Valgt forhandler
+moorl-merchant-finder.sendMail|E-post
+moorl-merchant-finder.shop|Kjøp
+moorl-merchant-finder.shopUrl|Besøk butikken
+moorl-merchant-finder.stockInfo|Lagerinformasjon
+moorl-merchant-finder.tags|Tagger
+moorl-merchant-finder.thereAre|det finnes 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|postnummer, by
+moorl-merchant-finder.zipcodeCityEnter|Skriv inn et postnummer eller en by og trykk på enter
+nimbits-pricerequests.cart.cartRequestButton|Be om et tilbud
+nimbits-pricerequests.cart.dontAddByProductNumber|Dette produktet kan ikke legges til i handlekurven.
+nimbits-pricerequests.detail.available|Tilgjengelig
+nimbits-pricerequests.detail.button.openrequestform|Be om et tilbud
+nimbits-pricerequests.detail.restock|"{1} Tilgjengelig om 1 dag|]1,Inf[ Tilgjengelig om %restockTime% dager"
+nimbits-pricerequests.detail.text.priceonrequest|Pris på forespørsel
+nimbits-pricerequests.fail.alert|Forespørselen ble ikke sendt – det oppstod en feil. Prøv igjen.
+nimbits-pricerequests.finish.alert|Forespørsel sendt
+nimbits-pricerequests.finish.buttonBack|Tilbake til butikken
+nimbits-pricerequests.listing.button.openrequestform|Be om et tilbud
+nimbits-pricerequests.listing.text.priceonrequest|Pris på forespørsel
+nimbits-pricerequests.mail.address|Adresse
+nimbits-pricerequests.mail.amount|Beløp
+nimbits-pricerequests.mail.article|Artikkel
+nimbits-pricerequests.mail.city|By
+nimbits-pricerequests.mail.comment|Kunder kommenterer
+nimbits-pricerequests.mail.company|Selskap
+nimbits-pricerequests.mail.country|Land
+nimbits-pricerequests.mail.customersendername|Pris på forespørsel
+nimbits-pricerequests.mail.housenumber|Husnummer
+nimbits-pricerequests.mail.mail|E-post
+nimbits-pricerequests.mail.name|Navn
+nimbits-pricerequests.mail.ordernumber|Bestillingsnummer
+nimbits-pricerequests.mail.price|Pris
+nimbits-pricerequests.mail.pricegross|Inkl. Skatt
+nimbits-pricerequests.mail.pricegrosssum|Inkl. Skattesum
+nimbits-pricerequests.mail.pricenet|Ekskl. Skatt
+nimbits-pricerequests.mail.pricenetsum|Ekskl. Skattesum
+nimbits-pricerequests.mail.requestfirst|Prisforespørsel fra
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|Pris på forespørsel
+nimbits-pricerequests.mail.street|Gate
+nimbits-pricerequests.mail.subject|Pris på forespørsel
+nimbits-pricerequests.mail.subjectcart|Forespørsel om handlevogn
+nimbits-pricerequests.mail.subjectshopowner|Pris på forespørsel
+nimbits-pricerequests.mail.subjectshopownercart|Forespørsel om handlevogn
+nimbits-pricerequests.mail.zipcode|Postnummer
+nimbits-pricerequests.popup.city|By
+nimbits-pricerequests.popup.closebutton|Lukk
+nimbits-pricerequests.popup.company|Selskap
+nimbits-pricerequests.popup.country|Land
+nimbits-pricerequests.popup.dataprivacytext|"Jeg har lest, forstått og godtar <a href=""/privacy"" target=""_blank"" rel=""noreferrer noopener""> Retningslinjer for personvern </a>."
+nimbits-pricerequests.popup.desiredprice|Ønsket pris i 
+nimbits-pricerequests.popup.entervalidcity|Angi en gyldig by.
+nimbits-pricerequests.popup.entervalidcountry|Angi et gyldig land.
+nimbits-pricerequests.popup.entervalidhousenumber|Skriv inn et gyldig husnummer.
+nimbits-pricerequests.popup.entervalidmail|Skriv inn en gyldig e-postadresse.
+nimbits-pricerequests.popup.entervalidstreet|Angi en gyldig gate.
+nimbits-pricerequests.popup.entervalidzipcode|Skriv inn et gyldig postnummer.
+nimbits-pricerequests.popup.genderm|Herr
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|Fru
+nimbits-pricerequests.popup.housenumber|Husnummer
+nimbits-pricerequests.popup.mail|Postadresse
+nimbits-pricerequests.popup.name|Navn
+nimbits-pricerequests.popup.optional|(valgfritt)
+nimbits-pricerequests.popup.phonenumber|Telefon
+nimbits-pricerequests.popup.popupTitle|Be om et tilbud
+nimbits-pricerequests.popup.product|Produkt(er) i denne forespørselen:
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|Forespørsel
+nimbits-pricerequests.popup.requestbutton|Forespørsel
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|Felt merket med * er obligatoriske.
+nimbits-pricerequests.popup.salutation|Hilsen
+nimbits-pricerequests.popup.street|Gate
+nimbits-pricerequests.popup.surname|Etternavn
+nimbits-pricerequests.popup.text|Be om et tilbud for de valgte produktene
+nimbits-pricerequests.popup.zipcode|Postnummer
+nimbits-pricerequests.search.text.priceonrequest|Pris på forespørsel
+nimbits-pricerequests.toasts.error|Forespørselen ble ikke sendt – det oppstod en feil. Prøv igjen.
+nimbits-pricerequests.toasts.success|Forespørsel sendt
+priceRequest.newsletterText|Jeg samtykker herved i at TENTE også kan informere meg via e-post og telefon om produkter og arrangementer (f.eks. messeopptredener) av TENTE.
+priceRequest.sendRequestText|Forespørselen vil bli overført ...
+priceRequest.waitText|Vent litt ...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|Velg alternativ ...
+theme.compilation.async.success|Kompilering for salgskanal %salesChannelName% fullført
+vdct-simple-events.events.detail.to-event|Til arrangementet
+zeobv-store-switcher.switchStoreLabel|Bytt butikk

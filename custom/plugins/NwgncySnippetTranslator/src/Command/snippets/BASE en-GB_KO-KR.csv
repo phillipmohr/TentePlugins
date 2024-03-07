@@ -1,0 +1,564 @@
+LanguagePack ko-KR|번역
+account.doubleOptinAccountAlert|고객 계정이 아직 활성화되지 않았습니다. 활성화 링크가 포함된 확인 이메일을 보냈습니다. 받은 편지함을 확인하고 링크를 클릭하여 등록을 완료하십시오!
+account.downloadFileButton|다운로드
+account.downloadItemColumnDate|날짜
+account.downloadItemColumnTitle|파일
+account.faxLabel|팩스
+account.faxPlaceholder|팩스 입력
+account.homepageLabel|홈페이지
+account.homepagePlaceholder|홈페이지 URL 입력
+account.passwordNotIdentical|입력한 암호가 일치하지 않습니다.
+account.personalTypePlaceholder|선택...
+account.profileCurrentMailPlaceholder|이메일 주소 입력...
+account.profileDeleteText|<a href= -%target% - data-bs-toggle= - 모달 - data-bs-target= -%target% ->여기를 클릭</a>하여 모든 개인 데이터를 삭제하십시오.
+account.profilePasswordCreateNewPlaceholder|새 암호 입력...
+account.profilePasswordCurrentPlaceholder|현재 암호 입력...
+acrisFilter.buttonFiltersHide|더 적은 필터 표시
+acrisFilter.buttonFilterShowHideLabel|더 많거나 적은 필터 표시
+acrisFilter.buttonFiltersShow|더 많은 필터 표시
+acrisFilter.buttonHeaderSearchAllCategories|모든 범주
+acrisFilter.filter.labelAfter|)
+acrisFilter.filter.labelBefore|(
+acrisFilter.filterAvailabilityDisplayName|즉시 이용 가능
+acrisFilter.filterCategoriesDisplayName|카테고리
+acrisFilter.filterRangeActiveMaxLabel|속성 %displayName% ~
+acrisFilter.filterRangeActiveMinLabel|속성 %displayName% 시작
+acrisFilter.filterRangeSliderFrom|시작
+acrisFilter.filterRangeSliderTo|~
+acrisFilter.filterSearchPlaceholder|검색...
+card.card-image|%name% 이미지
+card.linkTitle|새 탭에서 %url% 열기
+cbaxLexicon.page.ajax.linkDescription|렉시콘으로
+cbaxLexicon.page.banner.alt|배너
+cbaxLexicon.page.boxKeyword.moreRead|자세히 보기
+cbaxLexicon.page.breadcrumb.name|Lexicon
+cbaxLexicon.page.content.headline|목차
+cbaxLexicon.page.content.metaDescription|Lexicon Meta 설명 내용
+cbaxLexicon.page.content.metaKeywords|Lexicon Meta 키워드 콘텐츠
+cbaxLexicon.page.content.metaTitle|목차
+cbaxLexicon.page.filter.button|Lexicon 탐색
+cbaxLexicon.page.filter.headline|Lexicon 탐색
+cbaxLexicon.page.index.metaDescription|Lexicon Meta 설명 인덱스
+cbaxLexicon.page.index.metaKeywords|Lexicon Meta 키워드 인덱스
+cbaxLexicon.page.index.metaTitle|Lexicon
+cbaxLexicon.page.listing.entryHeadline|이 백과사전 범주의 게시물
+cbaxLexicon.page.listing.metaDescription09|Lexicon Meta 설명 목록 0-9
+cbaxLexicon.page.listing.metaDescriptionA|Lexicon Meta 설명 목록 A
+cbaxLexicon.page.listing.metaDescriptionB|Lexicon Meta 설명 목록 B
+cbaxLexicon.page.listing.metaDescriptionC|Lexicon Meta 설명 목록 C
+cbaxLexicon.page.listing.metaDescriptionD|Lexicon Meta 설명 목록 D
+cbaxLexicon.page.listing.metaDescriptionE|Lexicon Meta 설명 목록 E
+cbaxLexicon.page.listing.metaDescriptionF|Lexicon Meta 설명 목록 F
+cbaxLexicon.page.listing.metaDescriptionG|Lexicon Meta 설명 목록 G
+cbaxLexicon.page.listing.metaDescriptionH|Lexicon Meta 설명 목록 H
+cbaxLexicon.page.listing.metaDescriptionI|Lexicon Meta 설명 목록 I
+cbaxLexicon.page.listing.metaDescriptionJ|Lexicon Meta 설명 목록 J
+cbaxLexicon.page.listing.metaDescriptionK|Lexicon Meta 설명 목록 K
+cbaxLexicon.page.listing.metaDescriptionL|Lexicon Meta 설명 목록 L
+cbaxLexicon.page.listing.metaDescriptionM|Lexicon Meta 설명 목록 M
+cbaxLexicon.page.listing.metaDescriptionN|Lexicon Meta 설명 목록 N
+cbaxLexicon.page.listing.metaDescriptionO|Lexicon Meta 설명 목록 O
+cbaxLexicon.page.listing.metaDescriptionP|Lexicon Meta 설명 목록 P
+cbaxLexicon.page.listing.metaDescriptionQ|Lexicon Meta 설명 목록 Q
+cbaxLexicon.page.listing.metaDescriptionR|Lexicon Meta 설명 목록 R
+cbaxLexicon.page.listing.metaDescriptionS|Lexicon Meta 설명 목록 S
+cbaxLexicon.page.listing.metaDescriptionT|Lexicon Meta 설명 목록 T
+cbaxLexicon.page.listing.metaDescriptionU|Lexicon Meta 설명 목록 U
+cbaxLexicon.page.listing.metaDescriptionV|Lexicon Meta 설명 목록 V
+cbaxLexicon.page.listing.metaDescriptionW|Lexicon Meta 설명 목록 W
+cbaxLexicon.page.listing.metaDescriptionX|Lexicon Meta 설명 목록 X
+cbaxLexicon.page.listing.metaDescriptionY|Lexicon Meta 설명 목록 Y
+cbaxLexicon.page.listing.metaDescriptionZ|Lexicon Meta 설명 목록 Z
+cbaxLexicon.page.listing.metaKeywords09|Lexicon Meta 키워드 목록 0-9
+cbaxLexicon.page.listing.metaKeywordsA|Lexicon Meta 키워드 목록 A
+cbaxLexicon.page.listing.metaKeywordsB|Lexicon Meta 키워드 목록 B
+cbaxLexicon.page.listing.metaKeywordsC|Lexicon Meta 키워드 목록 C
+cbaxLexicon.page.listing.metaKeywordsD|Lexicon Meta 키워드 목록 D
+cbaxLexicon.page.listing.metaKeywordsE|Lexicon Meta 키워드 목록 E
+cbaxLexicon.page.listing.metaKeywordsF|Lexicon Meta 키워드 목록 F
+cbaxLexicon.page.listing.metaKeywordsG|Lexicon Meta 키워드 목록 G
+cbaxLexicon.page.listing.metaKeywordsH|Lexicon Meta 키워드 목록 H
+cbaxLexicon.page.listing.metaKeywordsI|Lexicon Meta 키워드 목록 I
+cbaxLexicon.page.listing.metaKeywordsJ|Lexicon Meta 키워드 목록 J
+cbaxLexicon.page.listing.metaKeywordsK|Lexicon Meta 키워드 목록 K
+cbaxLexicon.page.listing.metaKeywordsL|Lexicon Meta 키워드 목록 L
+cbaxLexicon.page.listing.metaKeywordsM|Lexicon Meta 키워드 목록 M
+cbaxLexicon.page.listing.metaKeywordsN|Lexicon Meta 키워드 목록 N
+cbaxLexicon.page.listing.metaKeywordsO|Lexicon Meta 키워드 목록 O
+cbaxLexicon.page.listing.metaKeywordsP|Lexicon Meta 키워드 목록 P
+cbaxLexicon.page.listing.metaKeywordsQ|Lexicon Meta 키워드 목록 Q
+cbaxLexicon.page.listing.metaKeywordsR|Lexicon Meta 키워드 목록 R
+cbaxLexicon.page.listing.metaKeywordsS|Lexicon Meta 키워드 목록 S
+cbaxLexicon.page.listing.metaKeywordsT|Lexicon Meta 키워드 목록 T
+cbaxLexicon.page.listing.metaKeywordsU|Lexicon Meta 키워드 목록 U
+cbaxLexicon.page.listing.metaKeywordsV|Lexicon Meta 키워드 목록 V
+cbaxLexicon.page.listing.metaKeywordsW|Lexicon Meta 키워드 목록 W
+cbaxLexicon.page.listing.metaKeywordsX|Lexicon Meta 키워드 목록 X
+cbaxLexicon.page.listing.metaKeywordsY|Lexicon Meta 키워드 목록 Y
+cbaxLexicon.page.listing.metaKeywordsZ|Lexicon Meta 키워드 목록 Z
+cbaxLexicon.page.listing.metaTitle09|0-9
+cbaxLexicon.page.listing.metaTitleA|A
+cbaxLexicon.page.listing.metaTitleB|B
+cbaxLexicon.page.listing.metaTitleC|C
+cbaxLexicon.page.listing.metaTitleD|D
+cbaxLexicon.page.listing.metaTitleE|E
+cbaxLexicon.page.listing.metaTitleF|F
+cbaxLexicon.page.listing.metaTitleG|G
+cbaxLexicon.page.listing.metaTitleH|H
+cbaxLexicon.page.listing.metaTitleI|나
+cbaxLexicon.page.listing.metaTitleJ|J
+cbaxLexicon.page.listing.metaTitleK|K
+cbaxLexicon.page.listing.metaTitleL|L
+cbaxLexicon.page.listing.metaTitleM|M
+cbaxLexicon.page.listing.metaTitleN|N
+cbaxLexicon.page.listing.metaTitleO|O
+cbaxLexicon.page.listing.metaTitleP|P
+cbaxLexicon.page.listing.metaTitleQ|Q
+cbaxLexicon.page.listing.metaTitleR|R
+cbaxLexicon.page.listing.metaTitleS|S
+cbaxLexicon.page.listing.metaTitleT|T
+cbaxLexicon.page.listing.metaTitleU|U
+cbaxLexicon.page.listing.metaTitleV|V
+cbaxLexicon.page.listing.metaTitleW|W
+cbaxLexicon.page.listing.metaTitleX|X
+cbaxLexicon.page.listing.metaTitleY|Y
+cbaxLexicon.page.listing.metaTitleZ|Z
+cbaxLexicon.page.navigation.linkContent|목차
+cbaxLexicon.page.navigation.linkIndex|시작 페이지
+cbaxLexicon.page.pagination.toOverview|개요로
+cbaxLexicon.page.sidebar.title|Lexicon:
+checkout.confirmRevocationReminder|귀하는 이미 철회 권리를 포기한다고 선언했습니다.
+checkout.confirmRevocationTerms|본인은 디지털 콘텐츠에 즉시 액세스하기를 원하며, 이에 따라 취소 권리를 포기함을 인정합니다.
+checkout.confirmTermsReminderText|귀하는 이미 <a data-ajax-modal='true' data-url='%url%' href='%url%' title='일반 이용 약관'>일반 이용 약관</a>에 동의하셨습니다.
+checkout.confirmTermsText|본인은 <a data-ajax-modal='true' data-url='%url%' href='%url%' title='일반 이용 약관'>일반 이용 약관</a>을 읽고 이에 동의합니다.
+checkout.lineItemUnitPriceDescriptor|단위
+checkout.merchant-not-selected|결제를 진행하려면 현지 판매자를 선택하십시오.
+checkout.or|또는
+CmsElements.callToAction.elementError|이 요소는 사이드바에 사용할 수 없습니다. 사이드바에 대해 다른 <p class='h5 my-2'>Call to Action</p>을 선택하십시오.
+CmsElements.counter.days|일
+CmsElements.counter.hours|HRS
+CmsElements.counter.seconds|SEC
+CmsElements.htmlVideo.hint.content|유효한 비디오를 업로드하지 않았습니다. 요소의 설정을 확인하십시오.
+CmsElements.htmlVideo.hint.headline|잘못된 형식/동영상 없음
+CmsElements.placeholder.label|부품 교체
+CmsElements.shopTheLook.addAllProducts|장바구니에 제품 추가
+CmsElements.shopTheLook.totalDiscount|저축액:
+component.cms.imageGallery.sliderDotLabel|이미지 %index%/%total% 표시
+component.cms.vimeo.privacyNoticeText|동영상을 시청함으로써 귀하는 귀하의 데이터가 %platform%로 전송되고 <a data-ajax-modal='true' data-url='%url%' href='%url%' title='개인정보 보호정책'>개인정보 보호정책</a>을 읽었음에 동의하게 됩니다.
+component.product.quantitySelect.decrease|수량 감소
+component.product.quantitySelect.increase|수량 증가
+component.product.quantitySelect.label|수량
+contact.newsletterSubscribe|본인은 TENTE가 또한 TENTE의 제품 및 행사(예: 무역박람회 출연)에 대해 이메일 및 전화로 본인에게 알릴 수 있음에 동의합니다.
+contact.privacyNoticeText|계속을 선택함으로써 귀하는 당사의 <a data-ajax-modal=''true' data-url='%privacyUrl%' href='%privacyUrl%' title='Data protection information'>데이터 보호 정보</a>를 읽고 이에 동의함을 확인합니다.
+cookie.groupComfortFeaturesYoutubeVideo|YouTube 비디오
+cookie.messageText|이 웹사이트는 가능한 최상의 경험을 보장하기 위해 쿠키를 사용합니다. <a data-ajax-modal=""true"" data-url=""%url%"" href=""%url%"" title=""More information"">자세한 정보...</a>
+detail.acrisProductDownloadBtnText|다운로드
+detail.acrisProductDownloadNoPreview|미리보기 없음
+detail.acrisProductDownloadTabLabel|다운로드
+detail.acrisProductDownloadTitle|다운로드
+detail.acrisProductLinkTabLabel|링크
+detail.acrisProductLinkTitle|링크
+detail.buyOnline|온라인 구매
+detail.cadService.downloadBtn|다운로드
+detail.cadService.fileFormatPdf|PDF
+detail.cadService.fileFormatplaceholder|파일 유형
+detail.cadService.fileFormatStep|STEP-2
+detail.cadService.headline|이 제품에 대한 건설 데이터를 다른 형식으로 다운로드할 수 있습니다.
+detail.cadService.login|CAD 파일을 보려면 <a href= - %url% ->로그인</a>하십시오.
+detail.cadService.title|CAD 서비스
+detail.contactText|아직 올바른 제품을 찾지 못했거나, 특별한 요구 사항이 있거나, 개별 솔루션에 관심이 있으십니까? <a href= - %url% - title= - Kontaktformular ->연락처</a>.
+detail.ean|EAN
+detail.orderNumber|제품 번호
+detail.orText|또는
+detail.performance.atrittion|감원
+detail.performance.movement|움직임 소음
+detail.performance.resistance|부식방지
+detail.performance.roll|롤 성능
+detail.priceOnRequestText|개당 + VAT<br />24시간 내 배송 준비 완료
+detail.priceOnRequestTitle|요청 시 가격
+detail.properties.fitting|기술 데이터 피팅
+detail.properties.housing|기술 데이터 하우징
+detail.properties.label.downloads|다운로드
+detail.properties.label.feature|제품 특징
+detail.properties.label.fitting|피팅
+detail.properties.label.housing|하우징
+detail.properties.label.performance|성능
+detail.properties.label.wheel|휠
+detail.properties.performance|성능
+detail.properties.wheel|기술 데이터 휠
+detail.qte|수량
+detail.reviewFormContentPlaceholder|리뷰 입력...
+detail.sendQuoteRequest|견적 요청 보내기
+detail.tabs.downloads|다운로드
+detail.tabs.features|기능
+detail.tabs.performance|성능
+error.CHECKOUT__CART_INVALID_LINE_ITEM_QUANTITY|수량(%quantity%)이 올바르지 않습니다.
+error.CHECKOUT__ORDER_ORDER_ALREADY_PAID|주문 번호가 '%orderNumber%'인 주문은 이미 결제되었으며 나중에 편집할 수 없습니다.
+error.CHECKOUT__ORDER_ORDER_NOT_FOUND|이 주문을 찾을 수 없습니다.
+error.merchant-not-selected|결제를 진행하려면 현지 판매자를 선택하십시오.
+error.VIOLATION::ZIP_CODE_INVALID|입력하신 우편번호의 형식이 올바르지 않습니다.
+footer.excludeVatText|* 모든 가격 제외. 달리 명시되지 않은 경우 VAT + <a data-ajax-modal='true' href='%url%'' data-url='%url%'>배송 비용</a> 및 가능한 배송 요금.
+footer.includeVatText|* 모든 가격 포함 달리 명시되지 않은 경우 VAT + <a data-ajax-modal='true' href='%url%'' data-url='%url%'>배송 비용</a> 및 가능한 배송 요금.
+footer.serviceContactText|또는 당사의 <a data-ajax-modal='true' data-url='%url%' href='%url%' title='연락처 양식'>연락처 양식</a>을 통해
+footer.socialMediaHeadline|소셜
+general.contactUs|문의하기
+general.contactUsLink|/연락처
+general.loginRegister|로그인/등록
+general.privacyNoticeText|뉴스레터를 구독함으로써 귀하는 당사의 <a data-ajax-modal=''true' data-url='%privacyUrl%' href='%privacyUrl%' title='Privacy policy'>개인정보 보호정책</a>뿐만 아니라 당사의 <a data-ajax-modal=''true' data-url='%tosUrl%' href='%tosUrl% ' title=' 이용 약관'>이용 약관에 동의하게 됩니다.</a>
+global.default.activate|활성화
+global.default.cancel|취소
+global.default.confirm|확인
+global.default.deactivate|비활성화
+global.default.delete|삭제
+global.default.edit|편집
+global.default.noteRequiredFields|별표(*)가 표시된 필드는 필수입니다.
+global.default.save|저장
+listing.downloadText|다운로드
+moorl-creator.aboutTheCreator|크리에이터 정보
+moorl-creator.aboutTheCreators|크리에이터 정보
+moorl-creator.creator|크리에이터
+moorl-creator.creators|크리에이터
+moorl-creator.donate|기부
+moorl-creator.follow|팔로우
+moorl-creator.link|홈페이지
+moorl-creator.productsOf|제품
+moorl-creator.readMore|자세히 보기...
+moorl-foundation.buttons.acceptCookie|쿠키 수락
+moorl-foundation.buttons.addMerchantButtonText|신규 가맹점
+moorl-foundation.buttons.administrationButtonText|투여
+moorl-foundation.buttons.cancelButtonText|취소
+moorl-foundation.buttons.exportButtonText|CSV 내보내기
+moorl-foundation.buttons.exportButtonTitle|CSV 다운로드
+moorl-foundation.buttons.getLocButtonText|OpenStreetMap으로 포지션 가져오기
+moorl-foundation.buttons.importButtonText|CSV 가져오기
+moorl-foundation.buttons.importButtonTitle|CSV 업로드
+moorl-foundation.buttons.mediaFolder|이 폴더에 이미지 저장
+moorl-foundation.buttons.newButtonText|신규
+moorl-foundation.buttons.openMapButtonText|맵 열기
+moorl-foundation.buttons.openNewWindowButtonText|새 창에서 열기
+moorl-foundation.buttons.overwriteText|기존 데이터 행을 덮어씁니다(originId를 설정해야 함).
+moorl-foundation.buttons.placeIdLink|경로 계획
+moorl-foundation.buttons.refreshButtonText|재로드
+moorl-foundation.buttons.saveButtonText|저장
+moorl-foundation.buttons.selectLocButtonText|선택
+moorl-foundation.buttons.startImportButtonText|가져오기 시작
+moorl-foundation.card.address|주소
+moorl-foundation.card.company|회사
+moorl-foundation.card.contact|연락처
+moorl-foundation.card.legend|범례
+moorl-foundation.card.openingHours|영업 시간
+moorl-foundation.card.person|연락 담당자
+moorl-foundation.customerUpload.checkToDelete|삭제하려면 체크
+moorl-foundation.customerUpload.dictDefaultMessage|업로드할 파일을 여기로 드래그합니다
+moorl-foundation.customerUpload.useAsCover|커버로 사용
+moorl-foundation.days.closed|닫힘
+moorl-foundation.days.friday|금요일
+moorl-foundation.days.monday|월요일
+moorl-foundation.days.saturday|토요일
+moorl-foundation.days.sunday|일요일
+moorl-foundation.days.thursday|목요일
+moorl-foundation.days.today|오늘
+moorl-foundation.days.tuesday|화요일
+moorl-foundation.days.wednesday|수요일
+moorl-foundation.general.selectedItems|선택한 항목
+moorl-foundation.general.share|공유
+moorl-foundation.general.subTotal|소계
+moorl-foundation.general.toc|목차
+moorl-foundation.label.accountCard|계정
+moorl-foundation.label.addressCard|주소
+moorl-foundation.label.generalCard|일반
+moorl-foundation.label.locationCard|위치
+moorl-foundation.label.markerCard|마커
+moorl-foundation.label.metaCard|메타
+moorl-foundation.label.relationsCard|관계 및 필터
+moorl-foundation.label.visibilityCard|가시성
+moorl-foundation.listing.filter.categories|카테고리
+moorl-foundation.listing.filter.country|국가
+moorl-foundation.listing.filter.distance|거리
+moorl-foundation.listing.filter.firstChar|색인
+moorl-foundation.listing.filter.inRadiusOf|반경
+moorl-foundation.listing.filter.km|KM
+moorl-foundation.listing.filter.mi|미시간
+moorl-foundation.listing.filter.myLocation|내 위치 사용
+moorl-foundation.listing.filter.navigation|카테고리
+moorl-foundation.listing.filter.radius|우편번호 검색
+moorl-foundation.listing.filter.search|텍스트 검색
+moorl-foundation.listing.filter.tags|태그
+moorl-foundation.listing.filter.zipcodeCity|우편번호/도시
+moorl-foundation.properties.active|활성
+moorl-foundation.properties.additionalAddressLine1|주소 라인 1
+moorl-foundation.properties.additionalAddressLine2|주소 라인 2
+moorl-foundation.properties.articles|기사
+moorl-foundation.properties.author|작성자
+moorl-foundation.properties.categories|카테고리
+moorl-foundation.properties.city|도시
+moorl-foundation.properties.closed|닫힘
+moorl-foundation.properties.cmsPage|CMS 페이지
+moorl-foundation.properties.cmsPageId|CMS 페이지 ID
+moorl-foundation.properties.company|회사
+moorl-foundation.properties.content|콘텐츠
+moorl-foundation.properties.country|국가
+moorl-foundation.properties.countryCode|국가 코드
+moorl-foundation.properties.countryId|국가
+moorl-foundation.properties.createdAt|생성 위치
+moorl-foundation.properties.customerGroupId|고객 그룹
+moorl-foundation.properties.customerNumber|고객 번호
+moorl-foundation.properties.date|날짜
+moorl-foundation.properties.department|부서
+moorl-foundation.properties.description|설명
+moorl-foundation.properties.distance|거리
+moorl-foundation.properties.email|이메일
+moorl-foundation.properties.enableComments|의견 활성화
+moorl-foundation.properties.firstName|이름
+moorl-foundation.properties.from|시작
+moorl-foundation.properties.highlight|하이라이트
+moorl-foundation.properties.image|기사
+moorl-foundation.properties.info|정보
+moorl-foundation.properties.inRadiusOf|반경
+moorl-foundation.properties.invisible|보이지 않음
+moorl-foundation.properties.km|KM
+moorl-foundation.properties.lastName|성
+moorl-foundation.properties.location|위치
+moorl-foundation.properties.locationLat|위도
+moorl-foundation.properties.locationLon|경도
+moorl-foundation.properties.locked|잠김
+moorl-foundation.properties.logo|로고
+moorl-foundation.properties.marker|마커
+moorl-foundation.properties.markerId|마커
+moorl-foundation.properties.markerSettings|마커 설정
+moorl-foundation.properties.markerSettingsExample|이 예를 복사하여 사용자 정의 마커 설정을 조정할 수 있습니다.
+moorl-foundation.properties.markerSettingsLink|리플렛 사용자 지정 마커 예
+moorl-foundation.properties.markerShadow|마커 그림자
+moorl-foundation.properties.markerShadowId|마커 섀도우
+moorl-foundation.properties.media|미디어
+moorl-foundation.properties.mediaId|미디어 ID
+moorl-foundation.properties.merchant|가맹점
+moorl-foundation.properties.merchantUrl|가맹점 URL
+moorl-foundation.properties.metaDescription|메타 설명
+moorl-foundation.properties.metaTitle|메타 제목
+moorl-foundation.properties.name|이름
+moorl-foundation.properties.openingHours|영업 시간
+moorl-foundation.properties.originId|출발지 ID
+moorl-foundation.properties.phoneNumber|전화
+moorl-foundation.properties.priority|우선순위
+moorl-foundation.properties.productManufacturers|제조업체 ID
+moorl-foundation.properties.products|제품
+moorl-foundation.properties.radius|반경
+moorl-foundation.properties.repeat|반복
+moorl-foundation.properties.salesChannel|판매 채널
+moorl-foundation.properties.salesChannelId|판매 채널
+moorl-foundation.properties.search|검색
+moorl-foundation.properties.shopUrl|URL 쇼핑
+moorl-foundation.properties.showFrom|다음에서 표시
+moorl-foundation.properties.showUntil|까지 표시
+moorl-foundation.properties.slug|슬러그
+moorl-foundation.properties.sticky|끈적임
+moorl-foundation.properties.street|거리
+moorl-foundation.properties.streetNumber|번호
+moorl-foundation.properties.tags|태그 이름/ID
+moorl-foundation.properties.teaser|티저
+moorl-foundation.properties.title|제목
+moorl-foundation.properties.until|까지
+moorl-foundation.properties.updatedAt|업데이트 날짜:
+moorl-foundation.properties.vatId|VAT-ID
+moorl-foundation.properties.zipcode|우편번호
+moorl-foundation.search.headline|"{0} 일치 항목 없음: '%searchTerm%' | {1} 일치 항목 없음: '%searchTerm%' | ]1,Inf[ %count% 일치 항목: '%searchTerm%'"
+moorl-foundation.search.missingConfiguration|이 목록에 대한 구성이 누락되었습니다!
+moorl-foundation.search.moreButton|더 보기
+moorl-foundation.search.noListingSlotFound|"이 페이지에는 목록 요소가 없습니다. 목록 설정을 확인하고 \""자동 항목\""을 선택합니다."
+moorl-foundation.search.notAvailable|사용할 수 없음
+moorl-foundation.search.product|제품
+moorl-location-map.cookieDescription|OpenStreetMap을 타일 제공업체로 사용하여 매장과 가맹점의 위치를 시각적으로 보여줍니다.
+moorl-location-map.cookieHint|원하는 기능을 사용하려면 쿠키를 수락하십시오.
+moorl-location-map.cookieName|위치 맵
+moorl-magazine.articles|블로그 기사
+moorl-magazine.author|작성자
+moorl-magazine.authors|저자
+moorl-magazine.back|뒤로
+moorl-magazine.backToOverview|개요로 돌아가기
+moorl-magazine.categories|카테고리
+moorl-magazine.categoryAll|모든 범주
+moorl-magazine.commentArea|의견 영역
+moorl-magazine.commentAreaDisabled|이 문서에 대한 주석이 비활성화되었습니다.
+moorl-magazine.commentError|모든 필드를 올바르게 입력했는지 확인하십시오.
+moorl-magazine.commentReview|귀하의 의견은 검토 후 공개됩니다.
+moorl-magazine.commentSuccess|의견을 주셔서 감사합니다!
+moorl-magazine.date|날짜
+moorl-magazine.dateFormat|F jS \a\t g:ia
+moorl-magazine.email|이메일
+moorl-magazine.emailPlaceholder|이메일 주소 입력
+moorl-magazine.name|이름
+moorl-magazine.namePlaceholder|이름 입력
+moorl-magazine.next|다음
+moorl-magazine.page|페이지
+moorl-magazine.pageDescription|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua, 로렘 이프섬 돌러 시트 아메트, 콘세터 세이프싱 엘리트라, 세드 디암 노니 에이르모드 템포 인비던트 유 인비던트 유 인테, 돌로어 마그나 알리쿠이암 에라, 세드 디암 부투투아. vero eos et accusam et justo duo dolores et ea rebum에서. Stet clita kasd gubergren, 바다 타키마타 산트러스 에스트 로렘 이프섬 돌러 시트 아메트. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua, 로렘 이프섬 돌러 시트 아메트, 콘세터 세이프싱 엘리트라, 세드 디암 노니 에이르모드 템포 인비던트 유 인비던트 유 인테, 돌로어 마그나 알리쿠이암 에라, 세드 디암 부투투아. vero eos et accusam et justo duo dolores et ea rebum에서. Stet clita kasd gubergren, 바다 타키마타 산트러스 에스트 로렘 이프섬 돌러 시트 아메트.
+moorl-magazine.pageTitle|My Graceful 블로그
+moorl-magazine.posts|블로그 게시물
+moorl-magazine.products|관련 제품
+moorl-magazine.readMore|자세히 보기
+moorl-magazine.recentComments|최근 의견
+moorl-magazine.relatedArticles|관련 블로그 게시물
+moorl-magazine.search|검색
+moorl-magazine.searchFor|검색...
+moorl-magazine.sendComment|의견 제출
+moorl-magazine.similarArticles|유사한 블로그 게시물
+moorl-magazine.sticky|고정
+moorl-magazine.tags|태그
+moorl-magazine.writeComment|의견 작성
+moorl-magazine.wroteOn|작성일
+moorl-magazine.yourComment|귀하의 의견
+moorl-magazine.yourCommentPlaceholder|여기에 의견을 입력하십시오.
+moorl-merchant-finder.allCategories|모든 범주
+moorl-merchant-finder.allCountries|모든 국가
+moorl-merchant-finder.allManufacturers|모든 제조업체
+moorl-merchant-finder.allowMerchantCustomerContact|선택한 가맹점이 전화 또는 이메일로 본인에게 연락하는 것을 허용합니다.
+moorl-merchant-finder.allResults|-- 선택 --
+moorl-merchant-finder.allTags|모든 태그
+moorl-merchant-finder.are|다음과 같습니다.
+moorl-merchant-finder.available|사용 가능
+moorl-merchant-finder.backToOverview|개요로 돌아가기
+moorl-merchant-finder.call|통화
+moorl-merchant-finder.cancel|취소
+moorl-merchant-finder.categories|카테고리
+moorl-merchant-finder.checkAvailability|이용 가능 여부 확인
+moorl-merchant-finder.chose|선택
+moorl-merchant-finder.choseMerchant|가맹점 선택
+moorl-merchant-finder.choseMerchantToProceed|결제를 진행하려면 현지 판매자를 선택하십시오.
+moorl-merchant-finder.close|닫기
+moorl-merchant-finder.commentToMerchant|가맹점에 의견 보내기
+moorl-merchant-finder.country|국가
+moorl-merchant-finder.deliveryTime|배송 시간
+moorl-merchant-finder.deliveryTimeUnknown|알 수 없음 - 주문 시 제품이 요청됨
+moorl-merchant-finder.description|설명
+moorl-merchant-finder.desiredDate|원하는 픽업 날짜
+moorl-merchant-finder.desiredTime|원하는 픽업 시간
+moorl-merchant-finder.displayOnMap|지도에 표시
+moorl-merchant-finder.distance|거리
+moorl-merchant-finder.emptyResultMessage|가맹점을 찾을 수 없음
+moorl-merchant-finder.findMerchants|가맹점 찾기
+moorl-merchant-finder.forTheSearch|검색 
+moorl-merchant-finder.forTheSearchZipcode|우편번호 및 거리 km 주변 
+moorl-merchant-finder.highlight|팁
+moorl-merchant-finder.km|KM
+moorl-merchant-finder.loading|로드 중...
+moorl-merchant-finder.manufacturers|제조업체
+moorl-merchant-finder.merchant|가맹점
+moorl-merchant-finder.merchants|가맹점
+moorl-merchant-finder.merchantUrl|웹사이트
+moorl-merchant-finder.more|더 보기
+moorl-merchant-finder.myLocation|현재 위치 사용
+moorl-merchant-finder.mySelection|내 선택
+moorl-merchant-finder.noMerchantSelected|제품을 사용할 수 없습니다. 선택된 판매자가 없습니다.
+moorl-merchant-finder.none|없음
+moorl-merchant-finder.openingHours|영업 시간
+moorl-merchant-finder.outOfStock|제품을 사용할 수 없습니다. 선택하신 판매자는 이 제품을 재고로 보유하고 있지 않습니다.
+moorl-merchant-finder.phoneNumber|전화
+moorl-merchant-finder.pickupDateSet|픽업 시간이 설정되었습니다.
+moorl-merchant-finder.productAvailability|제품 가용성
+moorl-merchant-finder.productNotAvailable|제품을 사용할 수 없습니다. 자세한 내용은 매장 지원 부서에 문의하십시오.
+moorl-merchant-finder.radius|반경
+moorl-merchant-finder.resetSelection|선택 재설정
+moorl-merchant-finder.resultsFound|카운트 결과 찾음
+moorl-merchant-finder.save|저장
+moorl-merchant-finder.search|검색
+moorl-merchant-finder.searchFor|검색
+moorl-merchant-finder.searchLocation|위치 검색
+moorl-merchant-finder.searchRules.hasLogo|로고 디테일 머천트
+moorl-merchant-finder.searchRules.hasPriority|우선 가맹점
+moorl-merchant-finder.searchRules.isHighlighted|프리미엄 가맹점
+moorl-merchant-finder.searchRules.isNotHighlighted|일반 가맹점
+moorl-merchant-finder.selectedMerchant|선택한 가맹점
+moorl-merchant-finder.sendMail|우편
+moorl-merchant-finder.shop|쇼핑하기
+moorl-merchant-finder.shopUrl|매장 방문
+moorl-merchant-finder.stockInfo|재고 정보
+moorl-merchant-finder.tags|태그
+moorl-merchant-finder.thereAre|여기에는 
+moorl-merchant-finder.www|WWW
+moorl-merchant-finder.zipcodeCity|우편번호, 도시
+moorl-merchant-finder.zipcodeCityEnter|우편번호 또는 도시를 입력하고 Enter를 누르십시오
+nimbits-pricerequests.cart.cartRequestButton|제안 요청
+nimbits-pricerequests.cart.dontAddByProductNumber|이 제품은 장바구니에 추가할 수 없습니다.
+nimbits-pricerequests.detail.available|사용 가능
+nimbits-pricerequests.detail.button.openrequestform|제안 요청
+nimbits-pricerequests.detail.restock|"{1} 1일 후에 사용 가능|]1,Inf[ %restockTime%일 후에 사용 가능"
+nimbits-pricerequests.detail.text.priceonrequest|요청 시 가격
+nimbits-pricerequests.fail.alert|요청이 전송되지 않았습니다. 오류가 발생했습니다. 다시 시도하십시오.
+nimbits-pricerequests.finish.alert|요청이 성공적으로 전송되었습니다.
+nimbits-pricerequests.finish.buttonBack|매장으로 돌아가기
+nimbits-pricerequests.listing.button.openrequestform|제안 요청
+nimbits-pricerequests.listing.text.priceonrequest|요청 시 가격
+nimbits-pricerequests.mail.address|주소
+nimbits-pricerequests.mail.amount|금액
+nimbits-pricerequests.mail.article|기사
+nimbits-pricerequests.mail.city|도시
+nimbits-pricerequests.mail.comment|고객 의견
+nimbits-pricerequests.mail.company|회사
+nimbits-pricerequests.mail.country|국가
+nimbits-pricerequests.mail.customersendername|요청 시 가격
+nimbits-pricerequests.mail.housenumber|하우스 번호
+nimbits-pricerequests.mail.mail|우편
+nimbits-pricerequests.mail.name|이름
+nimbits-pricerequests.mail.ordernumber|주문 번호
+nimbits-pricerequests.mail.price|가격
+nimbits-pricerequests.mail.pricegross|포함 세금
+nimbits-pricerequests.mail.pricegrosssum|포함 세금 합계
+nimbits-pricerequests.mail.pricenet|제외 세금
+nimbits-pricerequests.mail.pricenetsum|제외 세금 합계
+nimbits-pricerequests.mail.requestfirst|가격 요청
+nimbits-pricerequests.mail.requestsecond|:
+nimbits-pricerequests.mail.shopownersendername|요청 시 가격
+nimbits-pricerequests.mail.street|거리
+nimbits-pricerequests.mail.subject|요청 시 가격
+nimbits-pricerequests.mail.subjectcart|카트 요청
+nimbits-pricerequests.mail.subjectshopowner|요청 시 가격
+nimbits-pricerequests.mail.subjectshopownercart|카트 요청
+nimbits-pricerequests.mail.zipcode|우편번호
+nimbits-pricerequests.popup.city|도시
+nimbits-pricerequests.popup.closebutton|닫기
+nimbits-pricerequests.popup.company|회사
+nimbits-pricerequests.popup.country|국가
+nimbits-pricerequests.popup.dataprivacytext|본인은 <a href=가정/개인정보 보호 대상=가정 정보 보호 정책 </a>을 읽고 이해했으며 이에 동의합니다.
+nimbits-pricerequests.popup.desiredprice|원하는 가격 
+nimbits-pricerequests.popup.entervalidcity|유효한 도시를 입력하십시오.
+nimbits-pricerequests.popup.entervalidcountry|유효한 국가를 입력하십시오.
+nimbits-pricerequests.popup.entervalidhousenumber|유효한 집 번호를 입력하십시오.
+nimbits-pricerequests.popup.entervalidmail|유효한 이메일 주소를 입력하십시오.
+nimbits-pricerequests.popup.entervalidstreet|유효한 거리를 입력하십시오.
+nimbits-pricerequests.popup.entervalidzipcode|유효한 우편번호를 입력하십시오.
+nimbits-pricerequests.popup.genderm|미스터
+nimbits-pricerequests.popup.gendern|Mx
+nimbits-pricerequests.popup.genderw|미스
+nimbits-pricerequests.popup.housenumber|하우스 번호
+nimbits-pricerequests.popup.mail|우편 주소
+nimbits-pricerequests.popup.name|이름
+nimbits-pricerequests.popup.optional|(선택 사항)
+nimbits-pricerequests.popup.phonenumber|전화
+nimbits-pricerequests.popup.popupTitle|제안 요청
+nimbits-pricerequests.popup.product|이 요청의 제품(들):
+nimbits-pricerequests.popup.quantityProductTitleSeperator|x 
+nimbits-pricerequests.popup.request|요청
+nimbits-pricerequests.popup.requestbutton|요청
+nimbits-pricerequests.popup.required|*
+nimbits-pricerequests.popup.requiredtext|*로 표시된 필드는 필수입니다.
+nimbits-pricerequests.popup.salutation|인사말
+nimbits-pricerequests.popup.street|거리
+nimbits-pricerequests.popup.surname|성
+nimbits-pricerequests.popup.text|선택한 제품에 대한 제안 요청
+nimbits-pricerequests.popup.zipcode|우편번호
+nimbits-pricerequests.search.text.priceonrequest|요청 시 가격
+nimbits-pricerequests.toasts.error|요청이 전송되지 않았습니다. 오류가 발생했습니다. 다시 시도하십시오.
+nimbits-pricerequests.toasts.success|요청이 성공적으로 전송되었습니다.
+priceRequest.newsletterText|본인은 TENTE가 또한 TENTE의 제품 및 행사(예: 무역박람회 출연)에 대해 이메일 및 전화로 본인에게 알릴 수 있음에 동의합니다.
+priceRequest.sendRequestText|요청이 전송됩니다...
+priceRequest.waitText|기다려 주십시오...
+socialMedia.facebook|https://www.facebook.com/tenteworld
+socialMedia.instagram|https://www.instagram.com/tente_australia/?hl=de
+socialMedia.linkedin|https://www.linkedin.com/company//tente-rollen-gmbh/
+socialMedia.twitter|https://twitter.com/tenteworld
+socialMedia.xing|https://www.xing.com/pages/tenteinternationalgmbh
+socialMedia.youtube|https://www.youtube.com/TENTEinternational
+swagCmsExtensions.form.component.select.defaultPlaceholder|옵션 선택...
+theme.compilation.async.success|영업 채널 %salesChannelName%에 대한 컴파일 완료
+vdct-simple-events.events.detail.to-event|이벤트로 이동
+zeobv-store-switcher.switchStoreLabel|매장 전환
