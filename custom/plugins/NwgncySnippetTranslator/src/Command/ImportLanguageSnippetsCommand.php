@@ -57,8 +57,39 @@ class ImportLanguageSnippetsCommand extends Command
         $fileSystemPublic = $writerHelper->getShopwareFileSystemPublic();
 
         $files = $fileSystemPublic->listContents('bundles/nwgncysnippettranslator', true);
-        $filesArr = $files->toArray();
+
+
+        $result = (string)$fileSystemPublic->has('bundles/nwgncysnippettranslator');
+        $io->text($result);
+
+        $rootFiles = $fileSystemPublic->listContents('/', true);
+
+        $rootFilesArr = $rootFiles->toArray();
+
+        $foundRootFiles = (string)count($rootFilesArr);
+        $io->text('Found files in root: ' . $foundRootFiles);
+        if (!empty($rootFilesArr)) {
+
+            $stopReading = 0;
+            $stopReadingAfter = 10;
+            foreach ($rootFilesArr as $file) {
+
+                if ($file->isDir()) {
+
+                    $io->text($file->path());
+
+                    $stopReading++;
+                }
+                if ($stopReading == $stopReadingAfter) {
+                    break;
+                }
+
+            }
+        }
+
+        exit;
         
+        $filesArr = $files->toArray();
 
         $currentSnippetList = $translationHelper->getSnippetsForImport($context);
 
