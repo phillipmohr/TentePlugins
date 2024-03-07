@@ -59,44 +59,64 @@ class ImportLanguageSnippetsCommand extends Command
         $files = $fileSystemPublic->listContents('bundles/nwgncysnippettranslator', true);
 
 
-        // $result = (string)$fileSystemPublic->has('bundles/nwgncysnippettranslator');
-        // $io->text($result);
 
-        // $rootFiles = $fileSystemPublic->listContents('/', true);
 
-        // $rootFilesArr = $rootFiles->toArray();
 
-        // $foundRootFiles = (string)count($rootFilesArr);
-        // $io->text('Found files in root: ' . $foundRootFiles);
+        $result = (string)$fileSystemPublic->has('bundles/nwgncysnippettranslator');
+        $io->text($result);
 
-        // if (!empty($rootFilesArr)) {
+        $rootFiles = $fileSystemPublic->listContents('/bundles', true);
 
-        //     $stopReading = 0;
-        //     $stopReadingAfter = 10;
-        //     foreach ($rootFilesArr as $file) {
-        //         $io->text( $file->jsonSerialize()['path']);
+        $rootFilesArr = $rootFiles->toArray();
+
+        $foundRootFiles = (string)count($rootFilesArr);
+        $io->text('Found files in root: ' . $foundRootFiles);
+
+        if (!empty($rootFilesArr)) {
+
+            $stopReading = 0;
+            $stopReadingAfter = 10;
+            foreach ($rootFilesArr as $file) {
                 
+                $data = $file->jsonSerialize();
+
+                $type = $data['type'];
+                // $io->text( $type);
+                if ($type == 'dir') {
 
 
-        //         if ($stopReading == $stopReadingAfter) {
-        //             break;
-        //         }
-        //         $stopReading++;
-        //         // if ($file->isDir()) {
+                    $needle   = 'are';
+                    $path = $file->jsonSerialize()['path'];
+                    if (strpos($path, 'nwgncy') !== false) {
+                        $io->text( $file->jsonSerialize()['path']);
+                    }
 
-        //         //     $io->text($file->path());
+                    
+                }
 
-        //         //     $stopReading++;
-        //         // }
-        //         // if ($stopReading == $stopReadingAfter) {
-        //         //     break;
-        //         // }
+                if ($stopReading == $stopReadingAfter) {
+                    // break;
+                }
+                $stopReading++;
+                // if ($file->isDir()) {
 
-        //     }
-        // }
+                //     $io->text($file->path());
 
-        // exit;
+                //     $stopReading++;
+                // }
+                // if ($stopReading == $stopReadingAfter) {
+                //     break;
+                // }
+
+            }
+        }
+
+        exit;
         
+
+
+
+
         $filesArr = $files->toArray();
 
         $currentSnippetList = $translationHelper->getSnippetsForImport($context);
