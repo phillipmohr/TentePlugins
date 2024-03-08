@@ -9,8 +9,12 @@
 @import "./components/button.scss";
 @import "./components/alert.scss";
 @import "./components/newsletter-section.scss";
+
+@import "./page/register";
 @import "./page/product-detail.scss";
+
 @import "./components/switcher-modal";
 @import "./components/aside";
 @import "./components/cart";
 @import "./components/price-request";
+@import "./components/form-submit-loader";

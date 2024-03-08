@@ -157,7 +157,8 @@ class RegisterRouteDecorator extends AbstractRegisterRoute
             'id' => $customer['id'],
             'customFields' => [
                 'customer_homepage' => $data->get('homepage'),
-                'customer_fax' => $data->get('fax')
+                'customer_fax' => $data->get('fax'),
+                'customer_newsletter_registration' => ($data->get('newsletter') == 1) ? true : false
             ]
         ]], $context->getContext());
 

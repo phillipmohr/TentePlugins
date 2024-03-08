@@ -49,9 +49,9 @@
 {% block page_product_detail_buy_container %}
     <div class="row">
         <div class="col-12 col-md-7 buy-widget-container-header">
-            <h3>{{ "detail.buyOnline"|trans }}</h3>
+            {# <h3>{{ "detail.buyOnline"|trans }}</h3> #}
             <h2>{{ "detail.priceOnRequestTitle"|trans }}</h2>
-            <p>{{ "detail.priceOnRequestText"|trans|raw }}</p>
+            {# <p>{{ "detail.priceOnRequestText"|trans|raw }}</p> #}
         </div>
         <div class="col-12 col-md-5">
             {{ parent() }}
@@ -67,9 +67,9 @@
             aria-label="{{ "detail.addProduct"|trans|striptags }}">
         {{ "detail.addProduct"|trans|sw_sanitize }}
     </button>
-    <b class="fs-5 fw-bold text-uppercase">{{ "detail.orText"|trans|sw_sanitize }}</b>
+    {# <b class="fs-5 fw-bold text-uppercase">{{ "detail.orText"|trans|sw_sanitize }}</b> #}
 
-    {% set nbporcustomtext = page.product.translated.customFields.custom_nimbits_priceonrequest_customtext %}
+    {# {% set nbporcustomtext = page.product.translated.customFields.custom_nimbits_priceonrequest_customtext %}
 
     {% set por_btn_visible = page.product.extensions.nimbits_por_product_ruleset.por_btn_visible %}
     {% set por_dont_show_price = page.product.extensions.nimbits_por_product_ruleset.por_dont_show_price %}
@@ -120,6 +120,6 @@
 
         <input name="nb_pricerequest_lineitems" type="hidden" value="{{ nbPriceRequestItems|json_encode() }}"/>
 
-    {% endif %}
+    {% endif %} #}
     </div>
 {% endblock %}

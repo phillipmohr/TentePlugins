@@ -1,0 +1,14 @@
+.contact-form {
+     &.is-loading {
+          min-height: 300px;
+          display: flex;
+     }
+
+     .loading-component-container {
+          margin: auto;
+          height: 100%;
+          h5 {
+               text-align: center;
+          }
+     }
+}

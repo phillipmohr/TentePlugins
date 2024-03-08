@@ -139,13 +139,13 @@ class ProductConfiguratorController extends StorefrontController
 
         $criteria = new Criteria();
         foreach ($optionIdsArray as $optionId) {
-            $criteria->addFilter(new ContainsFilter('optionIds', $optionId));
+            $criteria->addFilter(new ContainsFilter('propertyIds', $optionId));
         }
         if (!empty($commonMinAndMaxAvailableOptionIds)) {
             $orFilters = [];
-            foreach ($commonMinAndMaxAvailableOptionIds as $propertyGroupId => $optionIds) {
-                foreach ($optionIds as $optionId) {
-                    $orFilters[] = new ContainsFilter('optionIds', $optionId);
+            foreach ($commonMinAndMaxAvailableOptionIds as $propertyGroupId => $propertyIds) {
+                foreach ($propertyIds as $optionId) {
+                    $orFilters[] = new ContainsFilter('propertyIds', $optionId);
                 }
             }
             if (count($orFilters) > 0) {
@@ -157,13 +157,11 @@ class ProductConfiguratorController extends StorefrontController
         $availableOptionIds = [];
         foreach ($products as $product) {
             if ($product instanceof ProductEntity) {
-                $productParentId = $product->getParentId();
-                if ($productParentId !== null) {
-                    if (in_array($productParentId, $visibleProductsIds)) {
-                        $productOptions = $product->getOptionIds();
-                        if (is_array($productOptions)) {
-                            $availableOptionIds = array_merge($availableOptionIds, $productOptions);
-                        }
+                $productId = $product->getId();
+                if (in_array($productId, $visibleProductsIds)) {
+                    $productOptions = $product->getPropertyIds();
+                    if (is_array($productOptions)) {
+                        $availableOptionIds = array_merge($availableOptionIds, $productOptions);
                     }
                 }
             }

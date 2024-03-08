@@ -1,9 +1,21 @@
 {% sw_extends '@Storefront/storefront/element/cms-element-form/form-types/contact-form.html.twig' %}
 {% block cms_form_contact %}
-    <form action="{{ path(action) }}"
+    <form class="contact-form" action="{{ path(action) }}"
           method="post"
+          data-form-submit-loader="true"
           data-form-validation="true">
-
+        {# <template data-contact-form-submit-loader></template> #}
+            {% block cms_form_contact_loading_component %}
+               <div class="loading-component-container d-none">
+                    <div class="content">
+                         <h5>{{ "priceRequest.sendRequestText"|trans }}</h5>
+                         <div class="loading-spinner">
+                              {% sw_include '@Storefront/storefront/component/widgets/loading-spinner.html.twig' %}
+                         </div>
+                         <h5>{{ "priceRequest.waitText"|trans }}</h5>
+                    </div>
+               </div>
+          {% endblock %}
         <div class="form-content">
         <div class="row g-2">
             {% block cms_form_contact_select_salutation %}
@@ -191,13 +203,14 @@
 
         {% block cms_form_contact_privacy %}
             {% sw_include '@Storefront/storefront/element/cms-element-form/form-components/cms-element-form-privacy.html.twig'
-                with { 'requiresTermsOfService': false }
+                with { 'requiresTermsOfService': true }
             %}
         {% endblock %}
 
+
+
         {% block cms_form_contact_newsletter_subscribe %}
             {% sw_include '@Storefront/storefront/element/cms-element-form/form-components/cms-element-form-newsletter-subscribe.html.twig'
-                with { 'requiresTermsOfService': false }
             %}
         {% endblock %}
         

@@ -56,7 +56,7 @@ class ProductFinderController extends StorefrontController
 
         $criteria = new Criteria();
         foreach ($optionIdsArray as $optionId) {
-            $criteria->addFilter(new ContainsFilter('optionIds', $optionId));
+            $criteria->addFilter(new ContainsFilter('propertyIds', $optionId));
         }
 
         $products = $this->productRepository->search($criteria, $context)->getEntities();
@@ -64,16 +64,16 @@ class ProductFinderController extends StorefrontController
         $availableOptionIds = [];
         foreach ($products as $product) {
             if ($product instanceof ProductEntity) {
-                $productParentId = $product->getParentId();
-                if ($productParentId !== null) {
-                    if (in_array($productParentId, $visibleProductsIds)) {
-                        $productOptions = $product->getOptionIds();
-                        if (is_array($productOptions)) {
-                            $availableOptionIds = array_merge($availableOptionIds, $productOptions);
-                        }
+                $productId = $product->getId();
+                if (in_array($productId, $visibleProductsIds)) {
+                    $productOptions = $product->getPropertyIds();
+                    if (is_array($productOptions)) {
+                        $availableOptionIds = array_merge($availableOptionIds, $productOptions);
                     }
                 }
             }
+
+            
         }
         $availableOptionIds = array_unique($availableOptionIds);
     

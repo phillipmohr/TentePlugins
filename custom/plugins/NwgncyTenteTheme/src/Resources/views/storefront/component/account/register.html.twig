@@ -1,0 +1,29 @@
+{% sw_extends '@Storefront/storefront/component/account/register.html.twig' %}
+
+
+{% block component_account_register_address %}
+    {{ parent() }}
+
+    {% block tente_newsletter_at_register_newsletter %}
+        <div class="register-newsletter">
+            {% block tente_newsletter_at_register_newsletter_control %}
+                <div class="form-check">
+                    {% block tente_newsletter_at_register_newsletter_label %}
+                        <input type="checkbox"
+                            class="form-check-input"
+                            id="newsletter"
+                            name="newsletter"
+                            value="1"
+                            {% if data.get('newsletter') %}checked{% endif %}>
+                    {% endblock %}
+
+                    {% block tente_newsletter_at_register_newsletter_checkbox %}
+                        <label class="custom-control-label no-validation" for="newsletter">
+                            {{ 'priceRequest.newsletterText'|trans|raw }}
+                        </label>
+                    {% endblock %}
+                </div>
+            {% endblock %}
+        </div>
+    {% endblock %}
+{% endblock %}

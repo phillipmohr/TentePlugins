@@ -18,7 +18,6 @@ export default class PriceRequestSubmitLoaderPlugin extends Plugin {
             // Prevent form submission if not all required fields are filled
             if (!this._areAllRequiredFieldsFilled()) {
                 e.preventDefault(); // Prevent the form from submitting
-                alert('Please fill in all required fields.'); // Inform the user (Consider using a more user-friendly notification method)
                 return; // Stop further execution
             }
 

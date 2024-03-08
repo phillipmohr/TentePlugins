@@ -1,0 +1,13 @@
+{
+     "nwgncy-products-configurator": {
+          "label": {
+               "configurator": "Productconfigurator",
+               "category": "Categorie",
+               "show-only": "Toon alleen producten",
+               "reset": "Herstel filter",
+               "reset-filters": "Herstel filters",
+               "search": "Vrije tekst zoekopdracht",
+               "resultCount": "Uw selectie: %count% producten."
+          }
+     }
+}
