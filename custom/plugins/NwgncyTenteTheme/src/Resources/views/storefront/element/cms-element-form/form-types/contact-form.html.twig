@@ -2,9 +2,7 @@
 {% block cms_form_contact %}
     <form class="contact-form" action="{{ path(action) }}"
           method="post"
-          data-form-submit-loader="true"
           data-form-validation="true">
-        {# <template data-contact-form-submit-loader></template> #}
             {% block cms_form_contact_loading_component %}
                <div class="loading-component-container d-none">
                     <div class="content">
@@ -19,13 +17,6 @@
         <div class="form-content">
         <div class="row g-2">
             {% block cms_form_contact_select_salutation %}
-                {% sw_include '@Storefront/storefront/element/cms-element-form/form-components/cms-element-form-select-salutation.html.twig'
-                    with {
-                    additionalClass: 'col-md-4 d-none',
-                    required: true,
-                    isContact: true
-                }
-                %}
             {% endblock %}
 
             {% block cms_form_contact_input_first_name %}
@@ -203,14 +194,18 @@
 
         {% block cms_form_contact_privacy %}
             {% sw_include '@Storefront/storefront/element/cms-element-form/form-components/cms-element-form-privacy.html.twig'
-                with { 'requiresTermsOfService': true }
+                with { 
+                    'requiresTermsOfService': true,
+                    'required': true
+                }
             %}
         {% endblock %}
 
-
-
         {% block cms_form_contact_newsletter_subscribe %}
             {% sw_include '@Storefront/storefront/element/cms-element-form/form-components/cms-element-form-newsletter-subscribe.html.twig'
+                with { 
+                    'required': false
+                }
             %}
         {% endblock %}
         

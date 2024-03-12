@@ -62,12 +62,13 @@ class ContactFormRouteDecorator extends AbstractContactFormRoute
           $this->validateContactForm($data, $context);
 
           $countryData = $data->get('country');
-          $countryDataExploded = explode('|', $countryData);
-          if (count($countryDataExploded) == 2) {
-               list($countryName, $countryIso) = $countryDataExploded;
-               $data->set('country', $countryName);
-          } else {
-               $countryIso = '';
+          $countryIso = '';
+          if ($countryData) {
+               $countryDataExploded = explode('|', $countryData);
+               if (count($countryDataExploded) == 2) {
+                    list($countryName, $countryIso) = $countryDataExploded;
+                    $data->set('country', $countryName);
+               }
           }
           $data->set('countryIso', $countryIso);
 
@@ -76,13 +77,6 @@ class ContactFormRouteDecorator extends AbstractContactFormRoute
           }
 
           $mailConfigs = $this->getMailConfigs($context, $data->get('slotId'), $data->get('navigationId'), $data->get('entityName'));
-
-          $salutationCriteria = new Criteria([$data->get('salutationId')]);
-          $salutationSearchResult = $this->salutationRepository->search($salutationCriteria, $context->getContext());
-
-          if ($salutationSearchResult->count() !== 0) {
-               $data->set('salutation', $salutationSearchResult->first());
-          }
 
           if (empty($mailConfigs['receivers'])) {
                $mailConfigs['receivers'][] = $this->systemConfigService->get('core.basicInformation.email', $context->getSalesChannel()->getId());

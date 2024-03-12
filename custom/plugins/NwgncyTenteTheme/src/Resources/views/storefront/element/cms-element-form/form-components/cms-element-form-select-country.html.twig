@@ -1,7 +1,7 @@
 {% block cms_form_select_country_content %}
     {% set countries = getCountries(context) %}
     <div class="form-group {{ additionalClass }}">
-        <label class="form-label" for="form-country">{{ "address.countryLabel"|trans|sw_sanitize }}</label>
+        <label class="form-label" for="form-country">{{ "address.countryLabel"|trans|sw_sanitize }} {{ "general.required"|trans }}</label>
         <select class="country-select form-select{% if formViolations.getViolations( '/country' ) %} is-invalid{% endif %}"
             id="form-country"
             name="country"

@@ -46,7 +46,7 @@
         </service>
 
         <service id="Nwgncy\CrmConnector\Core\Content\ContactForm\SalesChannel\ContactFormRouteDecorator" decorates="Shopware\Core\Content\ContactForm\SalesChannel\ContactFormRoute" public="true">
-            <argument type="service" id="Shopware\Core\Content\ContactForm\Validation\ContactFormValidationFactory"/>
+            <argument type="service" id="Nwgncy\CrmConnector\Core\Content\ContactForm\Validation\ContactFormValidationFactory"/>
             <argument type="service" id="Shopware\Core\Framework\Validation\DataValidator"/>
             <argument type="service" id="Symfony\Contracts\EventDispatcher\EventDispatcherInterface"/>
             <argument type="service" id="Shopware\Core\System\SystemConfig\SystemConfigService"/>
@@ -58,6 +58,11 @@
             <argument type="service" id="Symfony\Component\HttpFoundation\RequestStack" />
             <argument type="service" id="shopware.rate_limiter" />
             <argument type="service" id="Nwgncy\CrmConnector\Core\Content\ContactForm\SalesChannel\ContactFormRouteDecorator.inner"/>
+        </service>
+
+        <service id="Nwgncy\CrmConnector\Core\Content\ContactForm\Validation\ContactFormValidationFactory"  public="true">
+            <argument type="service" id="Symfony\Contracts\EventDispatcher\EventDispatcherInterface"/>
+            <argument type="service" id="Shopware\Core\System\SystemConfig\SystemConfigService"/>
         </service>
 
         <service id="Nwgncy\CrmConnector\Twig\TenteCrmConnectorTwigFunctions" public="true">
