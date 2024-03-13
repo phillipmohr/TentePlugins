@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Produktu konfigurators",
+            "category": "Kategorija",
+            "show-only": "Rādīt tikai produktus",
+            "reset": "Atiestatīt filtru",
+            "reset-filters": "Atiestatīt filtrus",
+            "search": "Brīvā teksta meklēšana",
+            "resultCount": "Jūsu izvēle: %skaits% Produkti."
+        }
+    }
+}

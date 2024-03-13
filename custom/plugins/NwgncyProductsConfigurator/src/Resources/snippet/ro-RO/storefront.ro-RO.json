@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Configurator de produse",
+            "category": "Categorie",
+            "show-only": "Afișați numai produsele",
+            "reset": "Resetați filtrul",
+            "reset-filters": "Resetați filtrele",
+            "search": "Căutare text liber",
+            "resultCount": "Selectia ta: %count% Produse."
+        }
+    }
+}

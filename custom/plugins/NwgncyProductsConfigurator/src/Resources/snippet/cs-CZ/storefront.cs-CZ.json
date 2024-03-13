@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Konfigurátor produktů",
+            "category": "Kategorie",
+            "show-only": "Zobrazit pouze produkty",
+            "reset": "Resetovat filtr",
+            "reset-filters": "Resetovat filtry",
+            "search": "Volné textové vyhledávání",
+            "resultCount": "Váš výběr: %count% Produkty."
+        }
+    }
+}

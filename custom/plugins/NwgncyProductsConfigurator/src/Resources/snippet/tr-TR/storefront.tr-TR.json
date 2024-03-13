@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Ürün Konfigüratörü",
+            "category": "Kategori",
+            "show-only": "Yalnızca ürünleri göster",
+            "reset": "Filtreyi sıfırla",
+            "reset-filters": "Filtreleri sıfırla",
+            "search": "Serbest metin araması",
+            "resultCount": "Seçiminiz: %count% Ürünler."
+        }
+    }
+}

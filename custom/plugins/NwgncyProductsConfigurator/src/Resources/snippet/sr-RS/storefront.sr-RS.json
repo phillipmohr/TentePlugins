@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Конфигуратор производа",
+            "category": "Категорија",
+            "show-only": "Прикажи само производе",
+            "reset": "Ресетујте филтер",
+            "reset-filters": "Ресетујте филтере",
+            "search": "Бесплатна претрага текста",
+            "resultCount": "Ваш избор: %count% производа."
+        }
+    }
+}

@@ -1,5 +1,5 @@
 <?php declare(strict_types=1);
-
+ 
 namespace Nwgncy\ProductsConfigurator\Twig;
 
 use Nwgncy\ProductsConfigurator\Utils\CommonFunctions;

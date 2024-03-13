@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Cấu hình sản phẩm",
+            "category": "Loại",
+            "show-only": "Chỉ hiển thị sản phẩm",
+            "reset": "Đặt lại bộ lọc",
+            "reset-filters": "Đặt lại bộ lọc",
+            "search": "Tìm kiếm văn bản miễn phí",
+            "resultCount": "Lựa chọn của bạn: %count% Sản phẩm."
+        }
+    }
+}

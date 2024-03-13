@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Διαμορφωτής προϊόντων",
+            "category": "Κατηγορία",
+            "show-only": "Εμφάνιση μόνο προϊόντων",
+            "reset": "Επαναφορά φίλτρου",
+            "reset-filters": "Επαναφορά φίλτρων",
+            "search": "Αναζήτηση ελεύθερου κειμένου",
+            "resultCount": "Η επιλογή σας: %count% Προϊόντα."
+        }
+    }
+}

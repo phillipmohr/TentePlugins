@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "उत्पाद विन्यासकर्ता",
+            "category": "कोटि",
+            "show-only": "केवल उत्पाद दिखाएं",
+            "reset": "फ़िल्टर रीसेट करें",
+            "reset-filters": "फ़िल्टर रीसेट करें",
+            "search": "नि: शुल्क पाठ खोज",
+            "resultCount": "आपका चयन: %count% उत्पाद."
+        }
+    }
+}

@@ -1,5 +1,5 @@
 {% block block_products_configurator %}
- {% if page.header.navigation.active.customFields.nwgncy_is_the_main_products_category %}
+ {% if page.header.navigation.active.customFields.is_main_products_category %}
      {% set element = block.slots.getSlot('productsConfigurator') %}
      <div class="container" data-cms-element-id="{{ element.id }}">
           <div class="filter-toggle-container">

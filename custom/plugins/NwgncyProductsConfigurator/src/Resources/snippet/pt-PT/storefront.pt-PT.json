@@ -1,13 +1,13 @@
 {
-     "nwgncy-products-configurator": {
-          "label": {
-               "configurator": "Configurador de Produtos",
-               "category": "Categoria",
-               "show-only": "Mostrar apenas produtos",
-               "reset": "Redefinir filtro",
-               "reset-filters": "Redefinir filtros",
-               "search": "Pesquisa de texto livre",
-               "resultCount": "Sua seleção: %count% Produtos."
-          }
-     }
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Configurador de Produtos",
+            "category": "Categoria",
+            "show-only": "Mostrar apenas produtos",
+            "reset": "Redefinir filtro",
+            "reset-filters": "Redefinir filtros",
+            "search": "Pesquisa de texto livre",
+            "resultCount": "Sua seleção: %count% Produtos."
+        }
+    }
 }

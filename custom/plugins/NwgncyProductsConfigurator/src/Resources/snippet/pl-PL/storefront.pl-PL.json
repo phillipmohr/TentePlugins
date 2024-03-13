@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Konfigurator produktów",
+            "category": "Kategoria",
+            "show-only": "Pokaż tylko produkty",
+            "reset": "Zresetuj filtr",
+            "reset-filters": "Resetowanie filtrów",
+            "search": "Wyszukiwanie tekstowe",
+            "resultCount": "Twój wybór: %count% Produkty."
+        }
+    }
+}

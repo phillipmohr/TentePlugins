@@ -1,13 +1,13 @@
 {
-     "nwgncy-products-configurator": {
-          "label": {
-               "configurator": "Productconfigurator",
-               "category": "Categorie",
-               "show-only": "Toon alleen producten",
-               "reset": "Herstel filter",
-               "reset-filters": "Herstel filters",
-               "search": "Vrije tekst zoekopdracht",
-               "resultCount": "Uw selectie: %count% producten."
-          }
-     }
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Producten Configurator",
+            "category": "Categorie",
+            "show-only": "Toon alleen producten",
+            "reset": "Filter resetten",
+            "reset-filters": "Filters resetten",
+            "search": "Vrije tekst zoeken",
+            "resultCount": "Uw selectie: %count% Producten."
+        }
+    }
 }

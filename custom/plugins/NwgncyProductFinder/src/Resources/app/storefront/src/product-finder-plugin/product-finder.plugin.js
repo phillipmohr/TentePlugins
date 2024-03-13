@@ -3,7 +3,7 @@ import DomAccess from 'src/helper/dom-access.helper';
 import HttpClient from 'src/service/http-client.service';
 
 export default class ProductFinderPlugin extends Plugin {
-     static options = {
+     static options = { 
           blockContainerSelector: '.cms-block-nwgncy-product-finder',
           finderFormSelector: '#product-finder-form',
           categoryFieldSelector: '.js-product-finder-category-field',
@@ -27,8 +27,8 @@ export default class ProductFinderPlugin extends Plugin {
           this._selectedCategoryOption = DomAccess.querySelector(blockContainer, this.options.activeCategoryFieldSelector);
           this._selectedCategoryOptionId = this._selectedCategoryOption?.querySelector('input')?.value ?? null;
           this._propertyOptionsGroups = DomAccess.querySelectorAll(blockContainer, this.options.propertyOptionsGroupsFieldSelector);
-          this._propertyOptions = DomAccess.querySelectorAll(blockContainer, this.options.propertyOptionsFieldSelector);
-          this._propertyOptionsInputs = DomAccess.querySelectorAll(blockContainer, this.options.propertyOptionSelector);
+          this._propertyOptions = DomAccess.querySelectorAll(blockContainer, this.options.propertyOptionsFieldSelector, false);
+          this._propertyOptionsInputs = DomAccess.querySelectorAll(blockContainer, this.options.propertyOptionSelector, false);
           this._findButton = DomAccess.querySelector(blockContainer, this.options.findButton);
           this._minMaxOptionsGroups = DomAccess.querySelectorAll(blockContainer, this.options.minMaxOptionsGroupsFieldSelector);
 
@@ -88,27 +88,30 @@ export default class ProductFinderPlugin extends Plugin {
                     element.classList.toggle('open');
                });
           });
+          
+          if (this._propertyOptions !== false) {
+               
+               this._propertyOptions.forEach(element => {
+                    const input = element.querySelector('input');
+                    input.addEventListener('change', event => {
+                         if (input.checked) {
+                              const selectedValue = input.value;
+                              const propertyGroupId = input.name;
+                              const selectedInputName = input.getAttribute('data-option-name');
+                              this._selectedPropertyOptions[propertyGroupId] = selectedValue;
 
-          this._propertyOptions.forEach(element => {
-               const input = element.querySelector('input');
-               input.addEventListener('change', event => {
-                    if (input.checked) {
-                         const selectedValue = input.value;
-                         const propertyGroupId = input.name;
-                         const selectedInputName = input.getAttribute('data-option-name');
-                         this._selectedPropertyOptions[propertyGroupId] = selectedValue;
-
-                         const parentPropertyGroupLabel = document.querySelector('.js-property-group-label-name[data-property-group="' + propertyGroupId + '"]');
-                         if (parentPropertyGroupLabel) {
-                              parentPropertyGroupLabel.innerHTML = selectedInputName;
+                              const parentPropertyGroupLabel = document.querySelector('.js-property-group-label-name[data-property-group="' + propertyGroupId + '"]');
+                              if (parentPropertyGroupLabel) {
+                                   parentPropertyGroupLabel.innerHTML = selectedInputName;
+                              }
+                              const parentPropertyContainer = document.querySelector('.js-product-finder-property-option-group-field[data-property-group="' + propertyGroupId + '"]');
+                              if (parentPropertyContainer) {
+                                   parentPropertyContainer.classList.remove('open');
+                              }
                          }
-                         const parentPropertyContainer = document.querySelector('.js-product-finder-property-option-group-field[data-property-group="' + propertyGroupId + '"]');
-                         if (parentPropertyContainer) {
-                              parentPropertyContainer.classList.remove('open');
-                         }
-                    }
+                    });
                });
-          });
+          }
           this._minMaxOptionsGroups.forEach(element => {
                const groupId = element.getAttribute('data-property-group');
                let sliderOne = element.querySelector(".nwgncy-finder-slider-1");

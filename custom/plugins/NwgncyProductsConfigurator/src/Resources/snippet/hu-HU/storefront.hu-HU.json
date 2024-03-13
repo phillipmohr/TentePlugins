@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Termékkonfigurátor",
+            "category": "Kategória",
+            "show-only": "Csak a termékek megjelenítése",
+            "reset": "Szűrő visszaállítása",
+            "reset-filters": "Szűrők visszaállítása",
+            "search": "Szabad szöveges keresés",
+            "resultCount": "Az Ön választása: %count% Products."
+        }
+    }
+}

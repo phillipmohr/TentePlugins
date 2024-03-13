@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+      "label": {
+        "configurator": "产品配置器",
+        "category": "类别",
+        "show-only": "只显示产品",
+        "reset": "重置过滤器",
+        "reset-filters": "重置过滤器",
+        "search": "自由文本搜索",
+        "resultCount": "您的选择：%count% 个产品。"
+      }
+    }
+  }

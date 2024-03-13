@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Konfigurator Produk",
+            "category": "Golongan",
+            "show-only": "Hanya tampilkan produk",
+            "reset": "Setel ulang filter",
+            "reset-filters": "Setel ulang filter",
+            "search": "Pencarian teks gratis",
+            "resultCount": "Pilihan Anda: %count% Produk."
+        }
+    }
+}

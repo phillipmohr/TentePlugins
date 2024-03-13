@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Конфигуратор продуктов",
+            "category": "Категория",
+            "show-only": "Показать только продукты",
+            "reset": "Сброс фильтра",
+            "reset-filters": "Сброс фильтров",
+            "search": "Свободный текстовый поиск",
+            "resultCount": "Ваш выбор: %count% Продукты."
+        }
+    }
+}

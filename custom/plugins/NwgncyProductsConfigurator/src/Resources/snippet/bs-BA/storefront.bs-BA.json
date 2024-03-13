@@ -1,0 +1,13 @@
+{
+     "nwgncy-products-configurator": {
+         "label": {
+             "configurator": "Konfigurator proizvoda",
+             "category": "Kategorija",
+             "show-only": "Prikaži samo proizvode",
+             "reset": "Vrati filter za resetovanje",
+             "reset-filters": "Vrati filtere na zadano",
+             "search": "Besplatno pretraživanje teksta",
+             "resultCount": "Vaš izbor: %count% Proizvodi."
+         }
+     }
+ }

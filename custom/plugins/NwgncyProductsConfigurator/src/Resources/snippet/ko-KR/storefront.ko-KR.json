@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "제품 구성기",
+            "category": "범주",
+            "show-only": "제품만 표시",
+            "reset": "필터 재설정",
+            "reset-filters": "필터 재설정",
+            "search": "무료 텍스트 검색",
+            "resultCount": "선택: %count% 제품."
+        }
+    }
+}

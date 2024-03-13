@@ -15,7 +15,8 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Sorting\FieldSorting;
 use Shopware\Core\System\SalesChannel\SalesChannelContext;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
-
+use Symfony\Component\Filesystem\Filesystem;
+ 
 class ProductFinderFunctions extends AbstractExtension
 {
      private EntityRepository $propertyGroupRepository;
@@ -100,15 +101,38 @@ class ProductFinderFunctions extends AbstractExtension
      }
 
      public function getMainProductsCategoryUrl(SalesChannelContext $salesChannelContext) {
+
           $context  = $salesChannelContext->getContext();
-          $criteria = new Criteria();
+
           $trueCustomFieldSelector = [true, 'true', 1, '1'];
+
+          $criteria = new Criteria();
+          $criteria->addAssociation('seoUrls');
           $criteria->addFilter(new EqualsAnyFilter('customFields.nwgncy_is_the_main_products_category', $trueCustomFieldSelector));
+
           $categoryResult = $this->categoryRepository->search($criteria, $context)->first();
-          if ($categoryResult instanceof CategoryEntity) {
-               return $categoryResult->getTranslation('name') ?? '';
+
+          $seoUrls = $categoryResult->getSeoUrls();
+
+          $salesChannelId = $context->getSource()->getSalesChannelId();
+          $languageId = $context->getLanguageId();
+          $filteredSeoUrls = $seoUrls->filterByProperty('salesChannelId', $salesChannelId)->filterByProperty('languageId', $languageId);
+
+          $foundUrls = $filteredSeoUrls->count();
+
+          if ($foundUrls > 1) {
+               $name = $filteredSeoUrls->getAt(1)->getSeoPathInfo();
+          } else if ($foundUrls == 1) {
+               $name = $filteredSeoUrls->first()->getSeoPathInfo();
+          } else {
+               $name = $categoryResult->getTranslation('name') ?? '';
           }
-          return '';
+
+          if (preg_match('/[^\\p{Common}\\p{Latin}]/u', $name)) {
+               $name = $filteredSeoUrls->first()->getSeoPathInfo();
+          } 
+
+          return str_replace('/', '', $name);
      }
 
      public function getUnitByGroupId(string $propertyGroupId, SalesChannelContext $salesChannelContext) {

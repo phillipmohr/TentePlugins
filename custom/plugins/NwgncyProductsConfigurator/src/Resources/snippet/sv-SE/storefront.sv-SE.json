@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Produkter Konfigurator",
+            "category": "Kategori",
+            "show-only": "Visa endast produkter",
+            "reset": "Återställ filter",
+            "reset-filters": "Återställa filter",
+            "search": "Fritextsökning",
+            "resultCount": "Ditt val: %count% Produkter."
+        }
+    }
+}

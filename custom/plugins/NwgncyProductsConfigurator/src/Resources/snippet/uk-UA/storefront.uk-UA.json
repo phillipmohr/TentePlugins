@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Конфігуратор продуктів",
+            "category": "Категорія",
+            "show-only": "Показувати лише товари",
+            "reset": "Скинути фільтр",
+            "reset-filters": "Скидання фільтрів",
+            "search": "Безкоштовний текстовий пошук",
+            "resultCount": "Ваш вибір: %count% Товари."
+        }
+    }
+}

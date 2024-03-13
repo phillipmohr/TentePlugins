@@ -1,13 +1,13 @@
 {
      "nwgncy-products-configurator": {
-          "label": {
-               "configurator": "Configuratore di prodotti",
-               "category": "Categoria",
-               "show-only": "Mostra solo prodotti",
-               "reset": "Ripristina filtro",
-               "reset-filters": "Ripristina filtri",
-               "search": "Ricerca testo libero",
-               "resultCount": "La tua selezione: %count% prodotti."
-          }
+         "label": {
+             "configurator": "Configuratore di prodotti",
+             "category": "Categoria",
+             "show-only": "Mostra solo prodotti",
+             "reset": "Ripristina filtro",
+             "reset-filters": "Ripristina filtri",
+             "search": "Ricerca testo libero",
+             "resultCount": "La tua selezione: %count% prodotti."
+         }
      }
-}
+ }

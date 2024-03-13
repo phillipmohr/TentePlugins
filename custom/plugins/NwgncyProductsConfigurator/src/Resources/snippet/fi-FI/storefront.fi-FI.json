@@ -1,0 +1,13 @@
+{
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Tuotekonfiguraattori",
+            "category": "Luokka",
+            "show-only": "Näytä vain tuotteet",
+            "reset": "Nollaa suodatin",
+            "reset-filters": "Palauta suodattimet",
+            "search": "Vapaa tekstihaku",
+            "resultCount": "Valintasi: %count% Tuotteet."
+        }
+    }
+}
