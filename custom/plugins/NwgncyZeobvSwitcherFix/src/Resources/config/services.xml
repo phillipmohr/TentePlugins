@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="NwgncyZeobvSwitcherFix\Service\HreflangService" public="true">
+            <argument type="service" id="router.default"/>
+            <argument type="service" id="seo_url.repository"/>
+            <argument type="service" id="sales_channel_domain.repository"/>
+            <argument type="service" id="zeobv_store_switcher_domain.repository"/>
+            <argument type="service" id="Doctrine\DBAL\Connection"/> 
+        </service>
+
+
+        <service id="zeobv.store_switcher.service.hreflang_service"
+                class="NwgncyZeobvSwitcherFix\Service\HreflangService" public="true">
+            <argument type="service" id="router.default"/>
+            <argument type="service" id="seo_url.repository"/>
+            <argument type="service" id="sales_channel_domain.repository"/>
+            <argument type="service" id="zeobv_store_switcher_domain.repository"/>
+            <argument type="service" id="Doctrine\DBAL\Connection"/> 
+        </service>
+
+        <service id="Zeobv\StoreSwitcher\Storefront\Subscriber\StorefrontSubscriber" 
+                class="NwgncyZeobvSwitcherFix\Subscriber\StorefrontSubscriber">
+            <argument type="service" id="zeobv.store_switcher.service.config_service" />
+            <argument type="service" id="NwgncyZeobvSwitcherFix\Service\HreflangService" />
+            <argument type="service" id="zeobv.store_switcher.service.location_service" />
+            <argument type="service" id="zeobv_store_switcher_domain.repository" />
+            <argument type="service" id="locale.repository" />
+            <argument type="service" id="product.repository" />
+
+            <tag name="kernel.event_subscriber"/>
+        </service>
+
+
+    </services>
+</container>

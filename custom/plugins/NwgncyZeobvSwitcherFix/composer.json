@@ -1,0 +1,27 @@
+{
+    "name": "nwgncy-zeobv-switcher-fix/nwgncy-zeobv-switcher-fix",
+    "description": "Fixes a perfomance problem",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "6.5.*"
+    },
+    "extra": {
+        "shopware-plugin-class": "NwgncyZeobvSwitcherFix\\NwgncyZeobvSwitcherFix",
+        "label": {
+            "de-DE": "Fixes a perfomance problem",
+            "en-GB": "Fixes a perfomance problem"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "NwgncyZeobvSwitcherFix\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NwgncyZeobvSwitcherFix\\Tests\\": "tests/"
+        }
+    }
+}
