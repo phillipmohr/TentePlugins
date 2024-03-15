@@ -76,7 +76,7 @@ export default class FormCmsHandler extends Plugin {
         this.$emitter.publish('beforeSubmit');
         this.sendAjaxFormSubmit();
         if (this.el.classList.contains('contact-form')) {
-            if (this.validateForm()) {
+            if (this._validateForm()) {
                 this._showLoadingComponent();
             }
         }
@@ -89,6 +89,20 @@ export default class FormCmsHandler extends Plugin {
         if (formContent && loadingComponent) {
             formContent.classList.add('d-none');
             loadingComponent.classList.remove('d-none');
+        }
+        const confirmDiv = this._block.querySelector('.confirm-alert');
+        if (confirmDiv) {
+            confirmDiv.remove();
+        }
+    }
+
+    _hideLoadingComponent() {
+        const formContent = this.el.querySelector('.form-content');
+        const loadingComponent = this.el.querySelector('.loading-component-container');
+        this.el.classList.remove('is-loading');
+        if (formContent && loadingComponent) {
+            formContent.classList.remove('d-none');
+            loadingComponent.classList.add('d-none');
         }
     }
 
@@ -104,6 +118,9 @@ export default class FormCmsHandler extends Plugin {
                     changeContent = false;
                 }
                 content += response[i].alert;
+            }
+            if (!changeContent && this.el.classList.contains('contact-form')) {
+                this._hideLoadingComponent();
             }
 
             this._createResponse(changeContent, content);
@@ -133,7 +150,7 @@ export default class FormCmsHandler extends Plugin {
         });
     }
 
-    validateForm() {
+    _validateForm() {
         const form = this.el;
         const fieldsToValidate = ['email', 'subject', 'comment', 'company', 'country', 'state', 'city', 'zip', 'street', 'firstName', 'lastName'];
         
