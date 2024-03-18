@@ -1,0 +1,27 @@
+{
+    "name": "nwgncy-tente-optimizer/nwgncy-tente-optimizer",
+    "description": "Adds perfomance fixes",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "6.5.*"
+    },
+    "extra": {
+        "shopware-plugin-class": "NwgncyTenteOptimizer\\NwgncyTenteOptimizer",
+        "label": {
+            "de-DE": "Adds perfomance fixes",
+            "en-GB": "Adds perfomance fixes"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "NwgncyTenteOptimizer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NwgncyTenteOptimizer\\Tests\\": "tests/"
+        }
+    }
+}

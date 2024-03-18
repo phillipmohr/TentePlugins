@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace NwgncyAcrisProductDownloadsCSFix\Subscriber;
+namespace NwgncyTenteOptimizer\Subscriber;
 
 use Shopware\Storefront\Page\Product\ProductPageCriteriaEvent;
 use Shopware\Storefront\Page\Product\ProductPageLoadedEvent;

@@ -4,9 +4,9 @@ use Shopware\Core\TestBootstrapper;
 
 $loader = (new TestBootstrapper())
     ->addCallingPlugin()
-    ->addActivePlugins('NwgncyZeobvSwitcherFix')
+    ->addActivePlugins('NwgncyTenteOptimizer')
     ->setForceInstallPlugins(true)
     ->bootstrap()
     ->getClassLoader();
 
-$loader->addPsr4('NwgncyZeobvSwitcherFix\\Tests\\', __DIR__);
+$loader->addPsr4('NwgncyTenteOptimizer\\Tests\\', __DIR__);

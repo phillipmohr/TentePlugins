@@ -16,7 +16,7 @@
         <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak"/>
     </php>
     <testsuites>
-        <testsuite name="NwgncyAcrisProductDownloadsCSFix Testsuite">
+        <testsuite name="NwgncyTenteOptimizer Testsuite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

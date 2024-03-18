@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace NwgncyZeobvSwitcherFix;
+namespace NwgncyTenteOptimizer;
 
 use Shopware\Core\Framework\Plugin;
 use Shopware\Core\Framework\Plugin\Context\ActivateContext;
@@ -9,7 +9,7 @@ use Shopware\Core\Framework\Plugin\Context\InstallContext;
 use Shopware\Core\Framework\Plugin\Context\UninstallContext;
 use Shopware\Core\Framework\Plugin\Context\UpdateContext;
 
-class NwgncyZeobvSwitcherFix extends Plugin
+class NwgncyTenteOptimizer extends Plugin
 {
     public function install(InstallContext $installContext): void
     {
