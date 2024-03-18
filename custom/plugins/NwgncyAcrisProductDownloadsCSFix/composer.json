@@ -1,0 +1,27 @@
+{
+    "name": "nwgncy-acris-product-downloads-c-s-fix/nwgncy-acris-product-downloads-c-s-fix",
+    "description": "Perfomance Fix for AcrisProductDownloadsCS",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "6.5.*"
+    },
+    "extra": {
+        "shopware-plugin-class": "NwgncyAcrisProductDownloadsCSFix\\NwgncyAcrisProductDownloadsCSFix",
+        "label": {
+            "de-DE": "Perfomance Fix for AcrisProductDownloadsCS",
+            "en-GB": "Perfomance Fifor AcrisProductDownloadsCS"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "NwgncyAcrisProductDownloadsCSFix\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NwgncyAcrisProductDownloadsCSFix\\Tests\\": "tests/"
+        }
+    }
+}
