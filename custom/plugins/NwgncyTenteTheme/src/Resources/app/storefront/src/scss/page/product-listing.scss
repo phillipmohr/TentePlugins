@@ -1,62 +1,38 @@
 
-.productbox .data-list {
-    margin: 0;
-    padding-left: 15px;
-    list-style-type: none;
-    line-height: 1em;
-    display: inline-block;
+.productbox {
+	.data-list {
+		margin: 0;
+		padding-left: 15px;
+		list-style-type: none;
+		line-height: 1em;
+		display: inline-block;
+		.data-list--item {
+			float: left;
+			width: 100px;
+			&::before {
+				margin-top: -7px;
+				margin-right: 10px;
+				margin-left: -20px;
+				float: left;
+			}
+			p {
+				margin-top: 5px;
+			}
+		}
+		.data-list--item.diameter {
+			&::before {
+				content: url("#{$sw-asset-public-url}/bundles/nwgncytentetheme/assets/img/icon_diameter.png");
+			}
+		}
+		.data-list--item.load {
+			&::before {
+				content: url("#{$sw-asset-public-url}/bundles/nwgncytentetheme/assets/img/icon_load.png");
+			}
+		}
+		.data-list--item.height {
+			&::before {
+				content: url("#{$sw-asset-public-url}/bundles/nwgncytentetheme/assets/img/icon_height.png");
+			}
+		}
+	}
 }
-
-.productbox .data-list .data-list--item {
-    float: left;
-    width: 100px;
-}
-
-.productbox .data-list .data-list--item::before {
-    margin-top: -7px;
-    margin-right: 10px;
-    margin-left: -20px;
-    float: left;
-}
-
-.productbox .data-list .data-list--item p {
-    margin-top: 5px;
-}
-
-.productbox .data-list .data-list--item.diameter::before {
-    content: url("#{$sw-asset-public-url}/bundles/nwgncytentetheme/assets/img/icon_diameter.png");
-}
-
-.productbox .data-list .data-list--item.load::before {
-    content: url("#{$sw-asset-public-url}/bundles/nwgncytentetheme/assets/img/icon_load.png");
-}
-
-.productbox .data-list .data-list--item.height::before {
-    content: url("#{$sw-asset-public-url}/bundles/nwgncytentetheme/assets/img/icon_height.png");
-}
- 
-@media (min-width: 576px) {
-    .productbox .column:nth-child(3) {
-        border-bottom: 1px solid #e2f1fa;
-    }
-
-    .productbox .column.productbox-image {
-        flex-basis: 25%;
-    }
-
-    .productbox .column.productbox-data {
-        flex-basis: 25%;
-    }
-
-    .productbox .column.productbox-cta {
-        flex-basis: 100%;
-        padding-top: 4%;
-        padding-bottom: 4%;
-    }
-
-    .productbox .column.productbox-data,
-    .productbox .column.productbox-desc {
-        padding-top: 0;
-    }
-}
-
