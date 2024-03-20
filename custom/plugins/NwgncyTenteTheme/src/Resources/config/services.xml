@@ -31,6 +31,10 @@
         <service id="Nwgncy\TenteTheme\Subscriber\MediaFileSubscriber">
             <tag name="kernel.event_subscriber"/>
         </service>
+        
+        <service id="Nwgncy\TenteTheme\Subscriber\ProductListingSubscriber">
+            <tag name="kernel.event_subscriber"/>
+        </service>
 
         <service id="Nwgncy\TenteTheme\Core\Content\Media\TypeDetector\StpFileTypeDetector">
             <tag name="shopware.media_type.detector" priority="10"/>

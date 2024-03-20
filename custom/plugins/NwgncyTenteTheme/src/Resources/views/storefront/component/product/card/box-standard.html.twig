@@ -5,4 +5,96 @@
     {% else %}
         {% sw_include '@Storefront/storefront/component/product/card/action.html.twig' %}
     {% endif %}
+{% endblock %} 
+
+
+{% block component_product_box_name %}
+
+    {% set wheelDiameter = '' %}
+    {% set housing = '' %}
+
+    {% for group in product.sortedProperties %}
+
+    {% set optionFirst = group.options|first %}
+
+        {% if group.id == '018a69ebc42f734d83ada36ef58ca4bf' %}
+            {% set wheelDiameterOption = group.options|first %}
+            {% set wheelDiameter = wheelDiameterOption.translated.name %}
+        {% endif %}
+
+        {% if group.id == '018a6991df5b7bd9abf73dd967e88d92' %}
+            {% set housingOption = group.options|first %}
+            {% set housing = housingOption.translated.name %}
+        {% endif %}
+
+    {% endfor %}
+
+    {% set newName = housing  ~ ' ' ~ wheelDiameter %}
+
+    <a href="{{ seoUrl('frontend.detail.page', {'productId': id}) }}"
+        class="product-name"
+        title="{{ newName }}">
+        {{ newName }}
+    </a>
+
+    <div class="product-name-sku"><p>{{ "listing.productName" | trans ~  ': ' ~ product.productNumber ~ ', ' ~  name }}</p></div>
+
+    {# 018a69ebc42f734d83ada36ef58ca4bf attr_wheel_diameter #}
+    {# 018b5bfc7cc37993adf91443abd11be6 attr_load_capacity_productfinder || Load capacity (static)  #}
+    {# 018ad6ed3c6772e2b3a67e99e6409f53 attr_overall_height  #}
+    {# 018a6991df5b7bd9abf73dd967e88d92 attr_housing_type  #}
+    {# attr_load_capacity_productfinder #}
+    {# Load capacity (static) #}
+
+
+{% endblock %}
+
+{% block component_product_box_description %}
+
+    {% set wheelDiameter = '' %}
+    {% set load = '' %}
+    {% set overallHeight = '' %}
+
+    {% for group in product.sortedProperties %}
+
+        {% if group.id == '018a69ebc42f734d83ada36ef58ca4bf' %}
+            {% set wheelDiameterOption = group.options|first %}
+            {% set wheelDiameter = wheelDiameterOption.translated.name %}
+        {% endif %}
+
+        {% if group.id == '018b5bfc7cc37993adf91443abd11be6' %}
+            {% set loadOption = group.options|first %}
+            {% set load = loadOption.translated.name %}
+        {% endif %}
+
+        {% if group.id == '018ad6ed3c6772e2b3a67e99e6409f53' %}
+            {% set overallHeightOption = group.options|first %}
+            {% set overallHeight = overallHeightOption.translated.name %}
+        {% endif %}
+
+    {% endfor %}
+
+<div class="productbox">
+
+    <div class="column productbox-data">
+        <ul class="data-list">
+            {% if wheelDiameter is not empty %}
+                <li class="data-list--item diameter">
+                    <p>{{ wheelDiameter }}</p>
+                </li>
+            {% endif %}
+            {% if load is not empty %}
+                <li class="data-list--item load">
+                    <p>{{ load }}</p>
+                </li>
+            {% endif %}
+            {% if overallHeight is not empty %}  
+                <li class="data-list--item height">
+                    <p>{{ overallHeight }}</p>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</div>
+    {{ parent() }}
 {% endblock %}

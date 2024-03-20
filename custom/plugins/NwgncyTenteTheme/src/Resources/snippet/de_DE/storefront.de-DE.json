@@ -18,7 +18,8 @@
     },
     "listing": {
         "boxProductDetails": "More technical data",
-        "downloadText": "Download"
+        "downloadText": "Download",
+        "productName": "Artikelbezeichnung"
     },
     "detail": {
         "addProduct": "In den Warenkorb",
