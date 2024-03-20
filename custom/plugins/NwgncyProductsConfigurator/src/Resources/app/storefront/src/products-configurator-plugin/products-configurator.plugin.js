@@ -63,6 +63,9 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._selectedCategoryOption = null;
           this._searchQuery = "";
 
+          this._fetchDefaultCategory = false;
+          this._defaultCategoryPropertyId = '';
+
           this._toggleButton = DomAccess.querySelector(document, this.options.toggleButtonSelector);
           this._contentContainer = DomAccess.querySelector(document, this.options.contentContainerSelector);
           this._loaderContainer = DomAccess.querySelector(document, this.options.loaderContainerSelector);
@@ -90,8 +93,9 @@ export default class ProductConfiguratorPlugin extends Plugin {
           if (this.listing?._urlFilterParams) {
                this._initUrlSelectedProperties(this.listing._urlFilterParams);
           }
-
+          this.refreshListing();
           this.fetchAvailableOptions();
+          
      }
 
      /**
@@ -302,6 +306,16 @@ export default class ProductConfiguratorPlugin extends Plugin {
       
           Object.assign(allParamsObject, minPropertiesObject, maxPropertiesObject);
 
+          if (this._fetchDefaultCategory) {
+
+               if (allParamsObject.properties !== undefined) {
+                    let props = allParamsObject.properties;
+                    allParamsObject.properties = props+'|'+this._defaultCategoryPropertyId;
+               } else {
+                    allParamsObject.properties = this._defaultCategoryPropertyId;
+               }
+          }
+
           this.listing.changeListing(true, { p: 1, ...allParamsObject });
      }      
 
@@ -341,6 +355,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
                     }
                }
           }
+          
           if (urlFilterParams?.search) {
                const paramsSearch = urlFilterParams.search;
                this.listing.options.filterUrl = this._searchUrls.filter;
@@ -450,10 +465,15 @@ export default class ProductConfiguratorPlugin extends Plugin {
      }
 
      availableOptionsHandler(response) {
+
           try {
                const responseObject = JSON.parse(response);
                if (responseObject) {
                     const availableOptionIds = responseObject.availableOptionIds;
+
+                    const selectDefaultCategory = responseObject.selectDefaultCategory;
+                    const defaultCategoryPropertyId = responseObject.defaultCategoryId;
+
                     if (availableOptionIds && Array.isArray(availableOptionIds)) {
                          this._propertySelectsOptionsExceptReset.forEach(option => {
                               if (!availableOptionIds.includes(option.value)) {
@@ -471,7 +491,24 @@ export default class ProductConfiguratorPlugin extends Plugin {
                                    option.style.display = 'block'; 
                               }
                          });
+
+                         this._categories.forEach(radioSelect => {
+  
+                              if (!availableOptionIds.includes(radioSelect.value)) {
+                                   radioSelect.checked = false;
+                              } else {
+                                   radioSelect.checked = true;
+                              }
+
+                         });
+
                          this.toggleMeasuredSelectsVisibility();
+
+                         if (selectDefaultCategory == true) {
+                              this._fetchDefaultCategory = true;
+                              this._defaultCategoryPropertyId = defaultCategoryPropertyId;
+                              this.refreshListing();
+                         }
                     }
                }
           } catch (error) {

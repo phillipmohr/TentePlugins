@@ -17,6 +17,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Shopware\Core\Content\Product\ProductEntity;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\ContainsFilter;
+use Symfony\Component\Filesystem\Filesystem;
 
 /**
  * @Route(defaults={"_routeScope"={"storefront"}})
@@ -49,6 +50,8 @@ class ProductConfiguratorController extends StorefrontController
 
         $initialMinValues = [];
         $initialMaxValues = [];
+        $selectDefaultCategory = false;
+        $defaultCategoryId = '';
 
         if ($minKeyValuesPairsQuery) {
             $minKeyValuesPairs = json_decode(urldecode($minKeyValuesPairsQuery), true);
@@ -125,6 +128,35 @@ class ProductConfiguratorController extends StorefrontController
             if ($optionsIdsQueryParamExploded) {
                 $optionIdsArray = $optionsIdsQueryParamExploded;
             }
+        } 
+    
+        $categoryPropertyCriteria = new Criteria();
+        $categoryPropertyCriteria->addFilter(new EqualsFilter('groupId', $this->getCategoryPropertyGroupId()));
+        $categoryPropertyOptions = $this->propertyGroupOptionRepository->search($categoryPropertyCriteria, $context)->getEntities();
+    
+        $categoryPropertyOptionIds = $categoryPropertyOptions->getIds();
+    
+        if (!empty($optionIdsArray)) {
+            
+            $foundCategoryProperty = false;
+            foreach ($categoryPropertyOptionIds as $categoryPropertyOptionId) {
+                
+                if (in_array($categoryPropertyOptionId, $optionIdsArray)) {
+                    $foundCategoryProperty = true;
+                    break;
+                }
+            }
+
+            if (!$foundCategoryProperty) {
+                $defaultCategoryId = $this->getPreselectCategoryPropertyId();
+                array_push($optionIdsArray, $defaultCategoryId);
+                $selectDefaultCategory = true;
+            }
+
+        } else {
+            $defaultCategoryId = $this->getPreselectCategoryPropertyId();
+            array_push($optionIdsArray, $defaultCategoryId);
+            $selectDefaultCategory = true;
         }
 
         $visibleProductsIds = [];
@@ -152,6 +184,7 @@ class ProductConfiguratorController extends StorefrontController
                 $criteria->addFilter(new OrFilter($orFilters));
             }
         }
+
         $products = $this->productRepository->search($criteria, $context)->getEntities();
 
         $availableOptionIds = [];
@@ -176,7 +209,22 @@ class ProductConfiguratorController extends StorefrontController
 
         $availableOptionIdsValues = array_values($availableOptionIds);
 
-        return new JsonResponse(["availableOptionIds" => $availableOptionIdsValues]);
+        return new JsonResponse([
+            "availableOptionIds" => $availableOptionIdsValues,
+            "selectDefaultCategory" => $selectDefaultCategory,
+            "defaultCategoryId" => $defaultCategoryId
+        
+        ]);
+        
+    }
+
+    public function getPreselectCategoryPropertyId(): String
+    {
+        return '018a6a875d9b77a88cc7edab549b33ce';
+    }
+    public function getCategoryPropertyGroupId(): String
+    {
+        return '018a6a86ccd0746d879ac44523974aa3';
     }
 
 }
