@@ -156,7 +156,6 @@ class ProductConfiguratorController extends StorefrontController
         } else {
             $defaultCategoryId = $this->getPreselectCategoryPropertyId();
             array_push($optionIdsArray, $defaultCategoryId);
-            $selectDefaultCategory = true;
         }
 
         $visibleProductsIds = [];

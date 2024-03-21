@@ -10,9 +10,9 @@
 			float: left;
 			width: 100px;
 			&::before {
-				margin-top: -7px;
+				margin-top: -5px;
 				margin-right: 10px;
-				margin-left: -20px;
+				margin-left: -15px;
 				float: left;
 			}
 			p {
@@ -35,4 +35,20 @@
 			}
 		}
 	}
+}
+
+.has-element-loader .cms-element-product-listing {
+    .productbox,
+	.product-name-sku {
+        display: none;
+    }
+
+    .productbox,
+	.product-name-sku {
+        border-radius: $border-radius;
+        color: transparent;
+        animation: skeletonShimmer 1.5s linear 0s infinite normal forwards running;
+        background: linear-gradient(to right, $gray-300 8%, $gray-100 18%, $gray-300 28%);
+        background-size: 800px 100px;
+    }
 }

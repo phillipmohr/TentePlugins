@@ -306,16 +306,15 @@ export default class ProductConfiguratorPlugin extends Plugin {
       
           Object.assign(allParamsObject, minPropertiesObject, maxPropertiesObject);
 
-          if (this._fetchDefaultCategory) {
-
-               if (allParamsObject.properties !== undefined) {
-                    let props = allParamsObject.properties;
-                    allParamsObject.properties = props+'|'+this._defaultCategoryPropertyId;
-               } else {
-                    allParamsObject.properties = this._defaultCategoryPropertyId;
-               }
+          if (allParamsObject.properties === undefined) {
+               allParamsObject.properties = '018a6a875d9b77a88cc7edab549b33ce';
           }
 
+          if (this._fetchDefaultCategory) {
+               allParamsObject.properties = allParamsObject.properties+'|018a6a875d9b77a88cc7edab549b33ce';
+               this._fetchDefaultCategory = false;
+          }
+          
           this.listing.changeListing(true, { p: 1, ...allParamsObject });
      }      
 
@@ -560,6 +559,8 @@ export default class ProductConfiguratorPlugin extends Plugin {
 
      _searchHandler() {
           const searchQuery = this._searchInput.value;
+          
+          
           this._searchQuery = searchQuery;
           if (searchQuery) {
                this.listing.options.filterUrl = this._searchUrls.filter;
@@ -569,6 +570,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
                this.listing.options.filterUrl = this._defaultDataAndFilterUrls.filter;
                this.listing.options.dataUrl = this._defaultDataAndFilterUrls.data;
           }
+          
           this.startLoading();
 
           this.refreshListing();
