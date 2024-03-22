@@ -21,17 +21,17 @@
 		}
 		.data-list--item.diameter {
 			&::before {
-				content: url("#{$sw-asset-public-url}/bundles/nwgncytentetheme/assets/img/icon_diameter.png");
+				content: url("/bundles/nwgncytentetheme/assets/img/icon_diameter.png");
 			}
 		}
 		.data-list--item.load {
 			&::before {
-				content: url("#{$sw-asset-public-url}/bundles/nwgncytentetheme/assets/img/icon_load.png");
+				content: url("/bundles/nwgncytentetheme/assets/img/icon_load.png");
 			}
 		}
 		.data-list--item.height {
 			&::before {
-				content: url("#{$sw-asset-public-url}/bundles/nwgncytentetheme/assets/img/icon_height.png");
+				content: url("/bundles/nwgncytentetheme/assets/img/icon_height.png");
 			}
 		}
 	}
