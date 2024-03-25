@@ -22,27 +22,28 @@
             {% set wheelDiameter = wheelDiameterOption.translated.name %}
         {% endif %}
 
-        {% if group.id == '018a6991df5b7bd9abf73dd967e88d92' %}
-            {% set housingOption = group.options|first %}
-            {% set housing = housingOption.translated.name %}
+        {% if group.id == '018e3d0b831f76f0bb5ec6a787c4bc46' %}
+            {% set productTypeOption = group.options|first %}
+            {% set productType = productTypeOption.translated.name %}
         {% endif %}
 
     {% endfor %}
 
-    {% set newName = housing  ~ ' ' ~ wheelDiameter %}
+    {% set newName = productType  ~ ' ' ~ wheelDiameter %}
 
     <a href="{{ seoUrl('frontend.detail.page', {'productId': id}) }}"
         class="product-name"
         title="{{ newName }}">
         {{ newName }}
     </a>
-
-    <div class="product-name-sku"><p>{{ "listing.productName" | trans ~  ': ' ~ product.productNumber ~ ', ' ~  name }}</p></div>
+ 
+    <div class="product-name-sku"><p>{{ "listing.productName" | trans ~  ': ' ~ product.productNumber }}</p></div>
 
     {# 018a69ebc42f734d83ada36ef58ca4bf attr_wheel_diameter #}
     {# 018b5bfc7cc37993adf91443abd11be6 attr_load_capacity_productfinder || Load capacity (static)  #}
     {# 018ad6ed3c6772e2b3a67e99e6409f53 attr_overall_height  #}
     {# 018a6991df5b7bd9abf73dd967e88d92 attr_housing_type  #}
+    {# 018e3d0b831f76f0bb5ec6a787c4bc46 attr_product_type  #}
     {# attr_load_capacity_productfinder #}
     {# Load capacity (static) #}
 

@@ -52,6 +52,10 @@
             {# <h3>{{ "detail.buyOnline"|trans }}</h3> #}
             <h2>{{ "detail.priceOnRequestTitle"|trans }}</h2>
             {# <p>{{ "detail.priceOnRequestText"|trans|raw }}</p> #}
+
+        </div>
+        <div class="col-12 col-md-7 product-detail-delivery-information">
+            {% sw_include '@Storefront/storefront/component/delivery-information.html.twig' %}
         </div>
         <div class="col-12 col-md-5">
             {{ parent() }}
