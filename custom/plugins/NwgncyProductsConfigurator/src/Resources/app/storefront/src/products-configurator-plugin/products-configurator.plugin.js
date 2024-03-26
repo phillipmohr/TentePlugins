@@ -45,9 +45,10 @@ export default class ProductConfiguratorPlugin extends Plugin {
           );
 
           this._searchUrls = {
-               filter: "/widgets/search/filter",
-               data: "/widgets/search"
+               filter: window.router['widgets.search.filter'],
+               data: window.router['widgets.search.pagelet.v2']
           }
+          
           this._defaultDataAndFilterUrls = {
                filter: this.listing.options?.filterUrl,
                data: this.listing.options?.dataUrl,
