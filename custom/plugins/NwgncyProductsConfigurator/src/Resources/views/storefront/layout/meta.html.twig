@@ -3,7 +3,7 @@
 {% block layout_head_javascript_router %}
     {{ parent() }}
     <script>
-        window.router['widgets.search.pagelet.v2'] = '{{ path('widgets.search.pagelet.v2') }}',
-        window.router['widgets.search.filter'] = '{{ path('widgets.search.filter') }}',
+        window.router['widgets.search.pagelet.v2'] = '{{ path('widgets.search.pagelet.v2') }}';
+        window.router['widgets.search.filter'] = '{{ path('widgets.search.filter') }}';
     </script>
 {% endblock %}
