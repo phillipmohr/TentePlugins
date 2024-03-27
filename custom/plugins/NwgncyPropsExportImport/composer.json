@@ -1,0 +1,27 @@
+{
+    "name": "nwgncy-props-export-import/nwgncy-props-export-import",
+    "description": "Skeleton plugin",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "6.5.*"
+    },
+    "extra": {
+        "shopware-plugin-class": "NwgncyPropsExportImport\\NwgncyPropsExportImport",
+        "label": {
+            "de-DE": "Skeleton plugin",
+            "en-GB": "Skeleton plugin"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "NwgncyPropsExportImport\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NwgncyPropsExportImport\\Tests\\": "tests/"
+        }
+    }
+}
