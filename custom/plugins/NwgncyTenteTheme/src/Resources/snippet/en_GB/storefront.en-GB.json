@@ -39,7 +39,17 @@
                 "wheel": "Wheel",
                 "fitting": "Fitting",
                 "performance": "Performance",
-                "feature": "Product Features"
+                "feature": "Product Features",
+                "awards": "Awards",
+                "coreAttributes": "Core attributes",
+                "batteryCharger": "Battery charger",
+                "batteryHolder": "Battery holder",
+                "batteryCable": "Battery cable",
+                "battery": "Battery",
+                "controlUnit": "Control unit",
+                "driveUnit": "Drive unit",
+                "handleSet": "Handle set",
+                "mountingKitForHandles": "Mounting kit for handles"
             }
         },
         "tabs": {
