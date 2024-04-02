@@ -48,7 +48,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
                filter: window.router['widgets.search.filter'],
                data: window.router['widgets.search.pagelet.v2']
           }
-          
+
           this._defaultDataAndFilterUrls = {
                filter: this.listing.options?.filterUrl,
                data: this.listing.options?.dataUrl,
@@ -76,7 +76,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._measuredPropertyMinSelects = DomAccess.querySelectorAll(this._contentContainer, this.options.measuredPropertyMinSelectSelector);
           this._measuredPropertyMaxSelects = DomAccess.querySelectorAll(this._contentContainer, this.options.measuredPropertyMaxSelectSelector);
           this._propertySelects = DomAccess.querySelectorAll(this._contentContainer, this.options.propertySelectSelector);
-          this._propertyCheckboxes = DomAccess.querySelectorAll(this._contentContainer, this.options.propertyCheckboxSelector);
+          this._propertyCheckboxes = DomAccess.querySelectorAll(this._contentContainer, this.options.propertyCheckboxSelector, false);
           this._measuredPropertySelectsOptionsMin = DomAccess.querySelectorAll(this._contentContainer, this.options.measuredPropertySelectOptionMinSelector);
           this._measuredPropertySelectsOptionsMax = DomAccess.querySelectorAll(this._contentContainer, this.options.measuredPropertySelectOptionMaxSelector);
           this._propertySelectsOptions = DomAccess.querySelectorAll(this._contentContainer, this.options.propertySelectOptionSelector);
@@ -195,21 +195,23 @@ export default class ProductConfiguratorPlugin extends Plugin {
                     this.fetchAvailableOptions();
                });
           });
+          if (this._propertyCheckboxes !== false) {
 
-          this._propertyCheckboxes.forEach(item => {
-               item.addEventListener('change', event => {
-                    const value = item.value;
-                    if (item.checked) {
-                         if (!this._selectedPropertyCheckboxOptions.includes(value)) {
-                              this._selectedPropertyCheckboxOptions.push(value);
+               this._propertyCheckboxes.forEach(item => {
+                    item.addEventListener('change', event => {
+                         const value = item.value;
+                         if (item.checked) {
+                              if (!this._selectedPropertyCheckboxOptions.includes(value)) {
+                                   this._selectedPropertyCheckboxOptions.push(value);
+                              }
+                         } else {
+                              this._selectedPropertyCheckboxOptions = this._selectedPropertyCheckboxOptions.filter(option => option !== value);
                          }
-                    } else {
-                         this._selectedPropertyCheckboxOptions = this._selectedPropertyCheckboxOptions.filter(option => option !== value);
-                    }
-                    this.refreshListing();
-                    this.fetchAvailableOptions();
+                         this.refreshListing();
+                         this.fetchAvailableOptions();
+                    });
                });
-          });
+          }
           
           this._configuratorForm.addEventListener('submit', event => {
                event.preventDefault();
@@ -232,9 +234,13 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._selectInputs.forEach(select => {
                select.selectedIndex = 0;
           });
-          this._propertyCheckboxes.forEach(checkbox => {
-               checkbox.checked = false;
-          });
+          
+          if (this._propertyCheckboxes !== false) {
+               this._propertyCheckboxes.forEach(checkbox => {
+                    checkbox.checked = false;
+               });
+          }
+
           this._categories.forEach(radio => {
                radio.checked = false;
           });
@@ -298,13 +304,16 @@ export default class ProductConfiguratorPlugin extends Plugin {
           
                Object.assign(maxPropertiesObject, Object.fromEntries(maxMeasuredOptionsParams));
           }
+
           if (this._searchQuery) {
                const searchQueryObject = {
                     search: this._searchQuery
                }
                Object.assign(allParamsObject, searchQueryObject);
           }
-      
+          console.log(this._searchQuery);
+          console.log(allParamsObject);
+          
           Object.assign(allParamsObject, minPropertiesObject, maxPropertiesObject);
 
           if (allParamsObject.properties === undefined) {
@@ -315,7 +324,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
                allParamsObject.properties = allParamsObject.properties+'|018a6a875d9b77a88cc7edab549b33ce';
                this._fetchDefaultCategory = false;
           }
-          
+
           this.listing.changeListing(true, { p: 1, ...allParamsObject });
      }      
 
@@ -334,17 +343,20 @@ export default class ProductConfiguratorPlugin extends Plugin {
                               this._selectedPropertyOptions[parentSelectId] = option.value;
                          }
                     });
+                    
+                    if (this._propertyCheckboxes !== false) {
 
-                    const propertyCheckboxOptions = this._propertyCheckboxes;
-                    const matchingPropertyCheckboxOptions = Array.from(propertyCheckboxOptions).filter(checkbox => initialUrlPropertiesOptionsArr.includes(checkbox.value));
-                    matchingPropertyCheckboxOptions.forEach(checkbox => {
-                         const value = checkbox.value;
-                         checkbox.checked = true;
-                         if (!this._selectedPropertyCheckboxOptions.includes(value)) {
-                              this._selectedPropertyCheckboxOptions.push(value);
-                         }
-                    });
+                         const propertyCheckboxOptions = this._propertyCheckboxes;
+                         const matchingPropertyCheckboxOptions = Array.from(propertyCheckboxOptions).filter(checkbox => initialUrlPropertiesOptionsArr.includes(checkbox.value));
+                         matchingPropertyCheckboxOptions.forEach(checkbox => {
+                              const value = checkbox.value;
+                              checkbox.checked = true;
+                              if (!this._selectedPropertyCheckboxOptions.includes(value)) {
+                                   this._selectedPropertyCheckboxOptions.push(value);
+                              }
+                         });
 
+                    }
 
                     const categoryOptions = this._categories;
                     const matchingCategoryOption = Array.from(categoryOptions).find(radio => initialUrlPropertiesOptionsArr.includes(radio.value));
