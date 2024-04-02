@@ -311,8 +311,6 @@ export default class ProductConfiguratorPlugin extends Plugin {
                }
                Object.assign(allParamsObject, searchQueryObject);
           }
-          console.log(this._searchQuery);
-          console.log(allParamsObject);
           
           Object.assign(allParamsObject, minPropertiesObject, maxPropertiesObject);
 
@@ -343,7 +341,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
                               this._selectedPropertyOptions[parentSelectId] = option.value;
                          }
                     });
-                    
+
                     if (this._propertyCheckboxes !== false) {
 
                          const propertyCheckboxOptions = this._propertyCheckboxes;
