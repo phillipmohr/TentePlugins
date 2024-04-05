@@ -90,6 +90,13 @@ class ImportPropertyGroupTranslations extends Command
                 ];
             }
 
+            $searchResult = $this->property->getPropertyGroupById($context, $groupId);
+
+            if ($searchResult->getTotal() == 0) {
+                $this->io->info('Property group with ID ' . $groupId . ' not found');
+                continue;
+            }
+
             $result = $this->property->updatePropertyGroupTranslationByGroupId($context, $groupId, $translationsArr);
 
             if (count($result->getErrors()) > 0) { 

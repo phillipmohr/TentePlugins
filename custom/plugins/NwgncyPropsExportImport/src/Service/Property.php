@@ -56,6 +56,14 @@ class Property
         return $this->propertyGroup->search($criteria, $context);
     }
     
+    public function getPropertyGroupById($context, $groupId)
+    {
+          $criteria = (new Criteria())
+            ->addFilter(new EqualsFilter('id', $groupId));
+
+        return $this->propertyGroup->search($criteria, $context);
+    }
+    
     public function updatePropertyGroupTranslationByGroupId($context, $groupId, $translations)
     {
 
@@ -65,9 +73,9 @@ class Property
                 'translations' => $translations
             ]
         ];
-        $result = $this->propertyGroup->update($data, $context);
-        return $result;
+        return $this->propertyGroup->update($data, $context);
     }
+
     public function updatePropertyGroupTranslation($context, $groupId, $languageId, $translation)
     {
         $result = $this->propertyGroupTranslation->update([
@@ -94,6 +102,4 @@ class Property
     
         return $result;
     }
-
-
 }
