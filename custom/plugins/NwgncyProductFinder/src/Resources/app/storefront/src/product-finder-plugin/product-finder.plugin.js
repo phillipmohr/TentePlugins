@@ -89,7 +89,7 @@ export default class ProductFinderPlugin extends Plugin {
                });
           });
           
-          if (this._propertyOptions !== false) {
+          if (this._propertyOptions) {
                
                this._propertyOptions.forEach(element => {
                     const input = element.querySelector('input');
