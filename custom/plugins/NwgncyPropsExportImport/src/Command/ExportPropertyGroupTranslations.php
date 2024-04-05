@@ -20,7 +20,7 @@ class ExportPropertyGroupTranslations extends Command
     // Provides a description, printed out in bin/console
     protected function configure(): void
     {
-        $this->setDescription('Exports property group translations.');
+        $this->setDescription('Exports Property Group Translations.');
     }
     public function __construct(
         Property $property,
@@ -37,7 +37,7 @@ class ExportPropertyGroupTranslations extends Command
     {
 
         $io = new ShopwareStyle($input, $output);
-        $io->info('Starting export');
+        $io->info('Starting Export');
 
         $context = Context::createDefaultContext();
 

@@ -12,15 +12,18 @@ class Property
 {
     protected $propertyGroup;
 
-    protected $propertyGroupOption;
+    protected $propertyGroupOption; 
+    protected $propertyGroupTranslation; 
 
     public function __construct(
         EntityRepository $propertyGroup,
-        EntityRepository $propertyGroupOption
+        EntityRepository $propertyGroupOption,
+        EntityRepository $propertyGroupTranslation
     )
     {
         $this->propertyGroup = $propertyGroup;
         $this->propertyGroupOption = $propertyGroupOption;
+        $this->propertyGroupTranslation = $propertyGroupTranslation;
     }
 
     public function getAllPropertyGroupOptions($context)
@@ -44,4 +47,53 @@ class Property
             
         return $this->propertyGroup->search($criteria, $context);
     }
+    public function getPropertyGroupTranslations($context, $groupId)
+    {
+          $criteria = (new Criteria())
+            ->addAssociation('translations')
+            ->addFilter(new EqualsFilter('id', $groupId));
+
+        return $this->propertyGroup->search($criteria, $context);
+    }
+    
+    public function updatePropertyGroupTranslationByGroupId($context, $groupId, $translations)
+    {
+
+        $data = [
+            [
+                'id' => $groupId,
+                'translations' => $translations
+            ]
+        ];
+        $result = $this->propertyGroup->update($data, $context);
+        return $result;
+    }
+    public function updatePropertyGroupTranslation($context, $groupId, $languageId, $translation)
+    {
+        $result = $this->propertyGroupTranslation->update([
+            [
+                'property_group_id' => $groupId,
+                'language_id' => $languageId,
+                'name' => $translation
+            ]
+        ], $context);
+
+        return $result;
+    }
+
+    public function createPropertyGroupTranslation($context, $groupId, $languageId, $translation)
+    {
+
+        $data = [
+            'property_group_id' => $groupId,
+            'language_id' => $languageId,
+            'name' => $translation
+        ];
+
+        $result =  $this->propertyGroupTranslation->create([$data], $context);
+    
+        return $result;
+    }
+
+
 }

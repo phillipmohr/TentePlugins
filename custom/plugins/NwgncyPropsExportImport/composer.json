@@ -2,7 +2,7 @@
     "name": "nwgncy-props-export-import/nwgncy-props-export-import",
     "description": "Skeleton plugin",
     "type": "shopware-platform-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "require": {
         "shopware/core": "6.5.*"

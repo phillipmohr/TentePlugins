@@ -12,18 +12,21 @@
             <tag name="console.command"/>
         </service>
 
+        <service id="NwgncyPropsExportImport\Command\ImportPropertyGroupTranslations">
+            <argument type="service" id="NwgncyPropsExportImport\Service\Property"/>
+            <argument type="service" id="NwgncyPropsExportImport\Service\Language"/>
+            <tag name="console.command"/>
+        </service>
 
         <service id="NwgncyPropsExportImport\Service\Property" public="true">
             <argument type="service" id="property_group.repository"/>
             <argument type="service" id="property_group_option.repository"/>
+            <argument type="service" id="property_group_translation.repository"/>
         </service>
 
         <service id="NwgncyPropsExportImport\Service\Language" public="true">
             <argument type="service" id="language.repository"/>
         </service>
-
-
-
 
     </services>
 </container> 
