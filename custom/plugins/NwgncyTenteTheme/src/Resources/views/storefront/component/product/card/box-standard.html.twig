@@ -7,15 +7,13 @@
     {% endif %}
 {% endblock %} 
 
-
 {% block component_product_box_name %}
 
     {% set wheelDiameter = '' %}
+    {% set productType = '' %}
     {% set housing = '' %}
 
     {% for group in product.sortedProperties %}
-
-    {% set optionFirst = group.options|first %}
 
         {% if group.id == '018a69ebc42f734d83ada36ef58ca4bf' %}
             {% set wheelDiameterOption = group.options|first %}
