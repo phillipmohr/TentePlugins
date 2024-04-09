@@ -28,5 +28,12 @@
             <argument type="service" id="language.repository"/>
         </service>
 
+        <service id="NwgncyPropsExportImport\Subscriber\EntityWriteSubscriber">
+            <argument type="service" id="NwgncyPropsExportImport\Service\Property"/>
+            <argument type="service" id="NwgncyPropsExportImport\Service\Language"/>
+            <tag name="kernel.event_subscriber"/>
+        </service>
+
+
     </services>
 </container> 

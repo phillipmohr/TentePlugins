@@ -13,8 +13,11 @@ use Shopware\Core\Framework\Context;
 class ImportPropertyGroupTranslations extends Command
 {
     protected $io;
+
     protected $property;
+
     protected $language;
+
     // Command name
     protected static $defaultName = 'property-group-translations:import';
     // Provides a description, printed out in bin/console
@@ -22,6 +25,7 @@ class ImportPropertyGroupTranslations extends Command
     {
         $this->setDescription('Imports Property Group Translations.');
     }
+    
     public function __construct(
         Property $property,
         Language $language
@@ -96,7 +100,7 @@ class ImportPropertyGroupTranslations extends Command
                 $this->io->info('Property group with ID ' . $groupId . ' not found');
                 continue;
             }
-
+ 
             $result = $this->property->updatePropertyGroupTranslationByGroupId($context, $groupId, $translationsArr);
 
             if (count($result->getErrors()) > 0) { 
