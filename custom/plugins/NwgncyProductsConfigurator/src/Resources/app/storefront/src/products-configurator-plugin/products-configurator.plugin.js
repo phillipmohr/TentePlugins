@@ -126,6 +126,8 @@ export default class ProductConfiguratorPlugin extends Plugin {
                     const fullId = item.id;
                     const id = fullId.replace('configurator-property-group-', '').replace('-min', '');
 
+                    const selectMaxId = fullId.replace('-min', '-max');
+
                     if (selectedOption.classList.contains('reset')) {
 
                          item.querySelectorAll('option:not(.reset)').forEach(function(option) {
@@ -133,11 +135,15 @@ export default class ProductConfiguratorPlugin extends Plugin {
                          });
 
                          delete this._selectedMinMeasuredPropertyOptions[id];
-
+                         delete this._selectedMaxMeasuredPropertyOptions[id];
                     } else {
+
+
+
                          const parsedSelectedValue = this.parseNumberFromString(selectedValue);
                          if (parsedSelectedValue !== null) {
                               this._selectedMinMeasuredPropertyOptions[id] = parsedSelectedValue;
+                              this.addMissingRangeFilter(id, '#' + selectMaxId, 'max'); 
                          }
                     }
                     
@@ -153,6 +159,8 @@ export default class ProductConfiguratorPlugin extends Plugin {
                     const fullId = item.id;
                     const id = fullId.replace('configurator-property-group-', '').replace('-max', '');
 
+                    const selectMinId = fullId.replace('-max', '-min');
+
                     if (selectedOption.classList.contains('reset')) {
 
                          item.querySelectorAll('option:not(.reset)').forEach(function(option) {
@@ -160,11 +168,13 @@ export default class ProductConfiguratorPlugin extends Plugin {
                          });
 
                          delete this._selectedMaxMeasuredPropertyOptions[id];
+                         delete this._selectedMinMeasuredPropertyOptions[id];
 
                     } else {
                          const parsedSelectedValue = this.parseNumberFromString(selectedValue);
                          if (parsedSelectedValue !== null) {
                               this._selectedMaxMeasuredPropertyOptions[id] = parsedSelectedValue;
+                              this.addMissingRangeFilter(id, '#' + selectMinId, 'max'); 
                          }
                     }
                     this.refreshListing();
@@ -271,6 +281,30 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._buildRequest(pushHistory, overrideParams);
      }
 
+     addMissingRangeFilter(propertyGroupId, selectdId, type) {
+          
+          const selectEl = DomAccess.querySelector(document, selectdId, false);
+
+          if (selectEl) {
+                         
+               const choosenVal = selectEl.selectedIndex;
+               if (choosenVal === undefined || choosenVal == 0 ) {
+                    const lastOption = selectEl.options[selectEl.options.length - 1];
+                    const lastOptionValue = lastOption.value;
+                    const parsedOptionValue = this.parseNumberFromString(lastOptionValue);
+                    
+                    if (parsedOptionValue !== null) {
+
+                         if (type == 'max') {
+                              this._selectedMaxMeasuredPropertyOptions[propertyGroupId] = parsedOptionValue;
+                         } else {
+                              this._selectedMinMeasuredPropertyOptions[propertyGroupId] = parsedOptionValue;
+                         }
+                    }
+               }
+          }
+     }
+
      refreshListing() {
           const minPropertiesObject = {};
           const maxPropertiesObject = {};
@@ -290,7 +324,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           if (delimitedPropertiesString) {
               allParamsObject.properties = delimitedPropertiesString;
           }
-      
+          
           if (this._selectedMinMeasuredPropertyOptions) {
                const minMeasuredOptionsParams = Object.entries(this._selectedMinMeasuredPropertyOptions)
                     .map(([id, value]) => [`min-property[${id}]`, value]);
@@ -298,7 +332,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
                Object.assign(minPropertiesObject, Object.fromEntries(minMeasuredOptionsParams));
           }
       
-          if (this._selectedMaxMeasuredPropertyOptions) {
+          if (this._selectedMaxMeasuredPropertyOptions) {  
                const maxMeasuredOptionsParams = Object.entries(this._selectedMaxMeasuredPropertyOptions)
                     .map(([id, value]) => [`max-property[${id}]`, value]);
           
