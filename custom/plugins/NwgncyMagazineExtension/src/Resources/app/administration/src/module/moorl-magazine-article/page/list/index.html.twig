@@ -1,0 +1,70 @@
+<sw-page class="moorl-magazine-article-list">
+    <template #search-bar>
+        <sw-search-bar
+                initial-search-type="moorl_magazine_article"
+                :initial-search="term"
+                @search="onSearch"
+        />
+    </template>
+
+    <template slot="smart-bar-header">
+        <h2>
+            {{ $tc('moorl-magazine.general.article') }}
+        </h2>
+    </template>
+
+    <template slot="smart-bar-actions">
+        <sw-button variant="primary" :routerLink="{ name: 'moorl.magazine.article.create' }">
+            {{ $tc('moorl-magazine.buttons.newButtonText') }}
+        </sw-button>
+
+        <moorl-demo-button pluginName="MoorlMagazine" @on-finish="getList"/>
+    </template>
+
+    <template #language-switch>
+        <sw-language-switch @on-change="changeLanguage"></sw-language-switch>
+    </template>
+
+    <sw-sidebar slot="sidebar">
+        <sw-sidebar-item
+                icon="regular-redo"
+                :title="$tc('moorl-magazine.buttons.refreshButtonText')"
+                @click="getList"
+        />
+    </sw-sidebar>
+
+    <template slot="content">
+        <sw-entity-listing
+                v-if="entitySearchable"
+                detailRoute="moorl.magazine.article.detail"
+                :items="items"
+                :repository="repository"
+                :showSelection="true"
+                :columns="columns"
+                :is-loading="isLoading"
+                :criteria-limit="limit"
+                :sort-by="currentSortBy"
+                :sort-direction="sortDirection"
+                :disable-data-fetching="true"
+                @select-item="updateSelection"
+                @update-records="updateTotal"
+                @page-change="onPageChange"
+                @column-sort="onSortColumn"
+                @update-records="updateTotal"
+        >
+            <template #column-date="{ item }">
+                {{ item.date|date() }}
+            </template>
+
+            <template #preview-title="{ item }">
+                <sw-media-preview-v2 :source="item.media"/>
+            </template>
+
+            <template #more-actions="{ item }">
+                <sw-context-menu-item @click="onDuplicate(item)">
+                    {{ $tc('sw-product.list.buttonDuplicate') }}
+                </sw-context-menu-item>
+            </template>
+        </sw-entity-listing>
+    </template>
+</sw-page>

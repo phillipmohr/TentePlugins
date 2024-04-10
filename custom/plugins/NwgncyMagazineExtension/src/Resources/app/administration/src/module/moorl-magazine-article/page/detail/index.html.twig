@@ -1,0 +1,303 @@
+<sw-page class="moorl-magazine-article-detail">
+    <template slot="smart-bar-actions">
+        <sw-button :routerLink="{ name: 'moorl.magazine.article.list' }">
+            {{ $tc('moorl-magazine.buttons.cancelButtonText') }}
+        </sw-button>
+
+        <sw-button-process
+                :isLoading="isLoading"
+                :processSuccess="processSuccess"
+                variant="primary"
+                @process-finish="saveFinish"
+                @click="onClickSave">
+            {{ $tc('moorl-magazine.buttons.saveButtonText') }}
+        </sw-button-process>
+    </template>
+
+    <template #language-switch>
+        <sw-language-switch
+                slot="language-switch"
+                :disabled="item && item.isNew()"
+                @on-change="onChangeLanguage"
+        />
+    </template>
+
+    <template slot="content">
+        <sw-card-view v-if="item">
+            <sw-tabs defaultItem="general">
+                <template slot-scope="{ active }">
+                    {% block moorl_magazine_article_detail_tabs %}
+                        <sw-tabs-item name="general" :activeTab="active">
+                            {{ $tc('moorl-magazine.label.generalCard') }}
+                        </sw-tabs-item>
+
+                        <sw-tabs-item name="layout" :activeTab="active" :disabled="item && item.isNew()">
+                            {{ $tc('moorl-magazine.label.layoutCard') }}
+                        </sw-tabs-item>
+
+                        <sw-tabs-item name="assignment" :activeTab="active" :disabled="item && item.isNew()">
+                            {{ $tc('moorl-magazine.label.relationsCard') }}
+                        </sw-tabs-item>
+                    {% endblock %}
+                </template>
+
+                <template slot="content" slot-scope="{ active }">
+                    {% block moorl_magazine_article_detail_content %}
+                        <moorl-layout-card
+                                v-bind="{ item, cmsPage, isLoading, pageTypes }"
+                                v-if="active === 'layout'"
+                        />
+
+                        <sw-cms-page-form
+                                v-if="active === 'layout' && cmsPage"
+                                :page="cmsPage"
+                        />
+
+                        <sw-card v-if="active === 'general'" :isLoading="isLoading" :title="$tc('moorl-magazine.label.generalCard')">
+                            <sw-datepicker dateType="datetime" :label="$tc('moorl-magazine.properties.date')" size="default" v-model="item.date"></sw-datepicker>
+
+                            <div class="sw-field">
+                                <sw-upload-listener
+                                        :uploadTag="item.id"
+                                        autoUpload
+                                        @media-upload-finish="setMediaItem">
+                                </sw-upload-listener>
+                                <sw-media-upload-v2
+                                        :uploadTag="item.id"
+                                        defaultFolder="moorl_magazine_article"
+                                        :source="item.mediaId"
+                                        :allowMultiSelect="false"
+                                        :label="$tc('moorl-magazine.properties.logo')"
+                                        variant="regular"
+                                        @sw-media-upload-media-upload-success="setMediaItem"
+                                        @media-drop="onDropMedia"
+                                        @media-upload-sidebar-open="onOpenMediaModal"
+                                        @media-upload-remove-image="onUnlinkMedia">
+                                </sw-media-upload-v2>
+                            </div>
+
+                            <sw-field :label="$tc('moorl-magazine.properties.name')"
+                                      v-model="item.name"
+                                      required
+                                      validation="required">
+                            </sw-field>
+
+                            <sw-language-info :entityDescription="item.name"></sw-language-info>
+
+                            <div class="moorl-link-field">
+                                <sw-entity-single-select
+                                        :label="$tc('moorl-magazine.properties.creator')"
+                                        entity="moorl_creator"
+                                        show-clearable-button
+                                        v-model="item.creatorId">
+                                </sw-entity-single-select>
+
+                                <router-link v-if="item.creatorId"
+                                             target="_blank"
+                                             rel="noopener"
+                                             :to="{ name: 'moorl.creator.detail', params: { id: item.creatorId } }">
+                                    {{ $tc('moorl-magazine.buttons.editButtonText') }}
+                                </router-link>
+                            </div>
+
+                            <sw-textarea-field :label="$tc('moorl-magazine.properties.teaser')"
+                                               v-model="item.teaser"
+                                               required
+                                               validation="required">
+                            </sw-textarea-field>
+
+                            <div class="moorl-link-field">
+                                <sw-entity-single-select
+                                        :label="$tc('moorl-magazine.properties.contentCmsPage')"
+                                        :helpText="$tc('moorl-magazine.notification.contentCmsPage')"
+                                        entity="cms_page"
+                                        show-clearable-button
+                                        v-model="item.contentCmsPageId">
+                                </sw-entity-single-select>
+
+                                <router-link v-if="item.contentCmsPageId"
+                                             target="_blank"
+                                             rel="noopener"
+                                             :to="{ name: 'sw.cms.detail', params: { id: item.contentCmsPageId } }">
+                                    {{ $tc('moorl-magazine.buttons.editButtonText') }}
+                                </router-link>
+                            </div>
+
+                            <sw-text-editor v-if="!item.contentCmsPageId"
+                                            :label="$tc('moorl-magazine.properties.content')"
+                                            v-model="item.content"
+                                            :allowInlineDataMapping="true"
+                                            required
+                                            validation="required"
+                                            ref="contentEditor">
+                            </sw-text-editor>
+
+                            <sw-field type="switch" bordered :label="$tc('moorl-magazine.properties.hideComments')" v-model="item.hideComments"></sw-field>
+                        </sw-card>
+
+                        <sw-card v-if="active === 'general'" :isLoading="isLoading" :title="$tc('moorl-magazine.label.visibilityCard')">
+                            <sw-container columns="1fr 1fr 1fr" gap="30px">
+                                <sw-field type="switch"
+                                          bordered
+                                          :label="$tc('moorl-magazine.properties.active')"
+                                          v-model="item.active"></sw-field>
+
+                                <sw-field type="switch"
+                                          bordered
+                                          :label="$tc('moorl-magazine.properties.sticky')"
+                                          v-model="item.sticky"></sw-field>
+
+                                <sw-field type="switch"
+                                          bordered
+                                          :label="$tc('moorl-magazine.properties.invisible')"
+                                          v-model="item.invisible"></sw-field>
+                            </sw-container>
+
+                            <sw-container columns="1fr 1fr" gap="30px">
+                                <sw-datepicker dateType="date"
+                                               :label="$tc('moorl-magazine.properties.showFrom')"
+                                               size="default"
+                                               v-model="item.showFrom"></sw-datepicker>
+
+                                <sw-datepicker
+                                        dateType="date"
+                                        :label="$tc('moorl-magazine.properties.showUntil')"
+                                        size="default"
+                                        v-model="item.showUntil"
+                                />
+                            </sw-container>
+
+                            <sw-alert variant="info">
+                                {{ $tc('moorl-magazine.notification.linkedSwCategories') }}
+                            </sw-alert>
+
+                            <sw-inherit-wrapper v-model="item.swCategories"
+                                                isAssociation
+                                                :label="$tc('sw-product.categoryForm.labelCategory')">
+                                <template #content="{ currentValue }">
+                                    <sw-category-tree-field
+                                            :categoriesCollection="currentValue ? currentValue : []"
+                                            :placeholder="$tc('sw-product.categoryForm.placeholderCategory')"
+                                    />
+                                </template>
+                            </sw-inherit-wrapper>
+
+                            <sw-alert variant="info">
+                                {{ $tc('moorl-magazine.notification.linkedSalesChannels') }}
+                            </sw-alert>
+
+                            <sw-entity-many-to-many-select
+                                    :label="$tc('moorl-magazine.properties.salesChannels')"
+                                    :localMode="true"
+                                    labelProperty="name"
+                                    v-model="item.salesChannels"
+                            />
+
+                            <sw-alert variant="info">
+                                {{ $tc('moorl-magazine.notification.linkedCustomerGroups') }}
+                            </sw-alert>
+
+                            <sw-entity-many-to-many-select
+                                    :label="$tc('moorl-magazine.properties.customerGroups')"
+                                    :localMode="true"
+                                    labelProperty="name"
+                                    v-model="item.customerGroups"
+                            />
+                        </sw-card>
+
+                        <sw-card v-if="active === 'general'" :isLoading="isLoading" :title="$tc('moorl-magazine.label.metaCard')">
+                            <sw-field :label="$tc('moorl-magazine.properties.metaTitle')" v-model="item.metaTitle"/>
+
+                            <sw-textarea-field
+                                    :label="$tc('moorl-magazine.properties.metaDescription')"
+                                    v-model="item.metaDescription"
+                            />
+
+                            <sw-field :label="$tc('moorl-magazine.properties.seoUrl')" v-model="item.seoUrl"/>
+
+                            <sw-language-info :entityDescription="item.seoUrl"/>
+                        </sw-card>
+
+                        <sw-card v-if="active === 'assignment'" :isLoading="isLoading" :title="$tc('moorl-magazine.label.relationsCard')">
+                            <sw-entity-many-to-many-select
+                                    :localMode="true"
+                                    :label="$tc('moorl-magazine.properties.categories')"
+                                    v-model="item.categories"
+                                    valueProperty="id"
+                                    labelProperty="name">
+                            </sw-entity-many-to-many-select>
+
+                            <sw-entity-multi-select
+                                    :label="$tc('moorl-foundation.properties.products')"
+                                    labelProperty="productNumber"
+                                    v-model="item.products"
+                                    :context="searchContext"
+                                    :criteria="searchCriteria">
+                                <template #result-item="{ item, index }">
+                                    <slot name="result-item" v-bind="{ item, index }">
+                                        <li is="sw-select-result" v-bind="{ item, index }">
+                                            <span class="sw-select-result__result-item-text">
+                                                <sw-product-variant-info :variations="item.variation">
+                                                    {{ item.productNumber }} - {{ item.translated.name || item.name }}
+                                                </sw-product-variant-info>
+                                            </span>
+                                        </li>
+                                    </slot>
+                                </template>
+                            </sw-entity-multi-select>
+
+                            <sw-entity-many-to-many-select
+                                    :localMode="true"
+                                    :label="$tc('moorl-foundation.properties.attachments')"
+                                    v-model="item.medias"
+                                    valueProperty="id"
+                                    labelProperty="fileName">
+                            </sw-entity-many-to-many-select>
+
+                            <sw-entity-tag-select
+                                    :label="$tc('sw-customer.baseForm.labelTags')"
+                                    v-model="item.tags">
+                            </sw-entity-tag-select>
+                        </sw-card>
+
+                        <sw-card v-if="active === 'general'" :isLoading="isLoading" :title="$tc('moorl-foundation.label.customCard')">
+                            <sw-container columns="1fr" gap="0 30px">
+                            <sw-field type="switch" bordered :label="$tc('moorl-magazine.properties.hideLanguage')" v-model="item.hideLanguage"></sw-field>
+                            </sw-container>
+                            <sw-container columns="1fr 1fr" gap="0 30px">
+                                <sw-field :label="$tc('moorl-foundation.properties.custom1')" v-model="item.custom1"/>
+                                <sw-field :label="$tc('moorl-foundation.properties.custom2')" v-model="item.custom2"/>
+                                <sw-field :label="$tc('moorl-foundation.properties.custom3')" v-model="item.custom3"/>
+                                <sw-field :label="$tc('moorl-foundation.properties.custom4')" v-model="item.custom4"/>
+                            </sw-container>
+                        </sw-card>
+                    {% endblock %}
+                </template>
+            </sw-tabs>
+        </sw-card-view>
+
+        <sw-media-modal-v2
+                variant="regular"
+                v-if="mediaModalIsOpen"
+                :caption="$tc('sw-cms.elements.general.config.caption.mediaUpload')"
+                :allowMultiSelect="false"
+                @media-upload-remove-image="onUnlinkMedia"
+                @media-modal-selection-change="onSelectionChanges"
+                @modal-close="onCloseModal">
+        </sw-media-modal-v2>
+    </template>
+
+    <template slot="sidebar">
+        <sw-sidebar :propagateWidth="true">
+            <sw-sidebar-media-item
+                    ref="mediaSidebarItem"
+                    :initialFolderId="defaultMediaFolderId">
+                <template slot="context-menu-items" slot-scope="media">
+                    <sw-context-menu-item @click="copyMediaHtmlToClipboard(media.mediaItem)">
+                        {{ $tc('moorl-magazine.buttons.copyMediaHtmlToClipboard') }}
+                    </sw-context-menu-item>
+                </template>
+            </sw-sidebar-media-item>
+        </sw-sidebar>
+    </template>
+</sw-page>

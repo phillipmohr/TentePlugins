@@ -1,0 +1,124 @@
+<sw-page class="moorl-magazine-article-list">
+    <template #search-bar>
+        <sw-search-bar
+                initial-search-type="moorl_magazine_article"
+                :initial-search="term"
+                @search="onSearch"
+        />
+    </template>
+
+    <template slot="smart-bar-header">
+        <h2>
+            {{ $tc('moorl-magazine.general.article') }}
+        </h2>
+    </template>
+
+    <template slot="smart-bar-actions">
+        <sw-button variant="primary" :routerLink="{ name: 'moorl.magazine.article.create' }">
+            {{ $tc('moorl-magazine.buttons.newButtonText') }}
+        </sw-button>
+    </template>
+
+    <template #language-switch>
+        <sw-language-switch @on-change="changeLanguage"></sw-language-switch>
+    </template>
+
+    <sw-sidebar slot="sidebar">
+        <sw-sidebar-item
+                icon="regular-redo"
+                :title="$tc('moorl-magazine.buttons.refreshButtonText')"
+                @click="getList"
+        />
+
+        <sw-sidebar-item
+                icon="regular-cloud-upload"
+                :title="$tc('moorl-magazine.buttons.importButtonText')"
+                @click="onOpenImportModal"
+        />
+    </sw-sidebar>
+
+    <template slot="content">
+        <sw-entity-listing
+                v-if="entitySearchable"
+                detailRoute="moorl.magazine.article.detail"
+                :items="items"
+                :repository="repository"
+                :showSelection="true"
+                :columns="columns"
+                :is-loading="isLoading"
+                :criteria-limit="limit"
+                :sort-by="currentSortBy"
+                :sort-direction="sortDirection"
+                :disable-data-fetching="true"
+                @select-item="updateSelection"
+                @update-records="updateTotal"
+                @page-change="onPageChange"
+                @column-sort="onSortColumn"
+                @update-records="updateTotal"
+        >
+            <template #column-date="{ item }">
+                {{ item.date|date() }}
+            </template>
+
+            <template #preview-title="{ item }">
+                <sw-media-preview-v2 :source="item.media"/>
+            </template>
+
+            <template #more-actions="{ item }">
+                <sw-context-menu-item @click="onDuplicate(item)">
+                    {{ $tc('sw-product.list.buttonDuplicate') }}
+                </sw-context-menu-item>
+            </template>
+        </sw-entity-listing>
+
+        <sw-modal v-if="showImportModal"
+                  @modal-close="onCloseImportModal"
+                  :title="$tc('moorl-magazine.importAssistant.title')"
+                  variant="default">
+
+            <p style="margin-bottom: 20px">
+                {{ $tc('moorl-magazine.importAssistant.description') }}
+            </p>
+
+            <sw-field :label="$tc('moorl-magazine.importAssistant.wordpressFeedUrl')"
+                      v-model="wordpress.feedUrl"></sw-field>
+
+            <sw-field :label="$tc('moorl-magazine.importAssistant.wordpressFeedPrefix')"
+                      v-model="wordpress.feedPrefix"></sw-field>
+
+            <sw-field type="switch" bordered :label="$tc('moorl-magazine.importAssistant.feedMediaFromCover')" v-model="wordpress.feedMediaFromCover"></sw-field>
+
+            <sw-field type="switch" bordered :label="$tc('moorl-magazine.importAssistant.feedMediaFromContent')" v-model="wordpress.feedMediaFromContent"></sw-field>
+
+            <sw-field type="switch" bordered :label="$tc('moorl-magazine.importAssistant.feedRemoveAttr')" v-model="wordpress.feedRemoveAttr"></sw-field>
+
+            <sw-button v-if="wordpress.feedUrl"
+                       @click="onClickTestConnection"
+                       size="small"
+                       style="margin-bottom: 20px">
+                {{ $tc('moorl-magazine.importAssistant.testConnection') }}
+            </sw-button>
+
+            <template v-if="wordpress.feedStatus">
+                <p>{{ wordpress.feedStatus }}</p>
+            </template>
+
+            <template v-if="wordpress.data.posts.length > 0">
+                <p>{{ $tc('moorl-magazine.importAssistant.categories') }}: {{ wordpress.data.categories.length }}</p>
+                <p>{{ $tc('moorl-magazine.importAssistant.posts') }}: {{ wordpress.data.posts.length }}</p>
+            </template>
+
+            <template #modal-footer>
+                <sw-button @click="onCloseImportModal" size="small">
+                    {{ $tc('moorl-magazine.buttons.cancelButtonText') }}
+                </sw-button>
+                <sw-button v-if="wordpress.data.posts.length > 0"
+                           @click="onClickStartImport"
+                           variant="primary"
+                           size="small">
+                    {{ $tc('moorl-magazine.buttons.startImportButtonText') }}
+                </sw-button>
+            </template>
+        </sw-modal>
+    </template>
+</sw-page>

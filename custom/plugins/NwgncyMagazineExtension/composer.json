@@ -1,0 +1,18 @@
+{
+  "name": "nwgncy/magazine-extension",
+  "description": "Tente Magazine plugin extension",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Nwgncy\\MagazineExtension\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Nwgncy\\MagazineExtension\\NwgncyMagazineExtension",
+    "label": {
+      "de-DE": "Tente Magazine plugin extension",
+      "en-GB": "Tente Magazine plugin extension"
+    }
+  }
+}
