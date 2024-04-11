@@ -75,6 +75,7 @@
 
             .product-detail-name {
                 margin-bottom: 0;
+                max-width: 250px;
             }
 
             h4 {
@@ -317,9 +318,6 @@
         }
     }
 
-    .product-detail-headline {
-        max-width: 445px;
-    }
     @include media-breakpoint-down(md) {
         .product-detail-headline {
             margin-bottom: 0;
