@@ -26,6 +26,7 @@ header.header-main {
                 justify-content: space-between;
                 align-items: center;
                 padding: 0 0.4rem;
+
             }
             .top-bar-nav-text {
                 color: #fff;
@@ -33,6 +34,9 @@ header.header-main {
             }
             .dropdown-toggle::after {
                 color: #fff;
+            }
+            .btn {
+                width: fit-content;
             }
             .top-bar-nav-btn.btn {
                 color: #fff;
