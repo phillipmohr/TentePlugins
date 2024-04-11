@@ -3,17 +3,24 @@
 {% block page_product_detail_headline_inner %}
     {% block page_product_detail_name_container %}
         <div class="product-detail-name-container">
-            {% block page_product_detail_name %}
-                <h1 class="product-detail-name"
-                    itemprop="name">
-                    {{ page.product.translated.name }}
-                </h1>
-            {% endblock %}
-            {% block page_product_detail_product_number %}
-                <h4 class="product-detail-product-number">
-                    {{ page.product.productNumber }}
-                </h4>
-            {% endblock %}
+            <div class="d-flex">
+                <div class="product-detail-name-container-icon">
+                    <img src="/bundles/nwgncytentetheme/assets/img/icon_tente.jpg" />
+                </div>
+                <div class="product-detail-name-container-text">
+                    {% block page_product_detail_name %}
+                        <h1 class="product-detail-name"
+                            itemprop="name">
+                            {{ page.product.translated.name }}
+                        </h1>
+                    {% endblock %}
+                    {% block page_product_detail_product_number %}
+                        <h4 class="product-detail-product-number">
+                            {{ page.product.productNumber }}
+                        </h4>
+                    {% endblock %}
+                </div>
+            </div>
         </div>
     {% endblock %}
 {% endblock %}
