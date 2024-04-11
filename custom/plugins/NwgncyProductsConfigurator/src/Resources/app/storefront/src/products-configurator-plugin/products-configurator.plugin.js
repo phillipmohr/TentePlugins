@@ -280,7 +280,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._selectedCategoryOption = null;
           this._searchQuery = "";
           this._searchInput.value = "";
-          
+          this._selectedCadOption = null;
 
           this.listing.options.filterUrl = this._defaultDataAndFilterUrls.filter;
           this.listing.options.dataUrl = this._defaultDataAndFilterUrls.data;
