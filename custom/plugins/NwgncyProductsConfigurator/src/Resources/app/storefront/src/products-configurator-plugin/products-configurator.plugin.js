@@ -268,6 +268,10 @@ export default class ProductConfiguratorPlugin extends Plugin {
                     checkbox.checked = false;
                });
           }
+          
+          this._cadCheckbox.forEach(checkbox => {
+               checkbox.checked = false;
+          });
 
           this._categories.forEach(radio => {
                radio.checked = false;
