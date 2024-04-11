@@ -317,6 +317,9 @@
         }
     }
 
+    .product-detail-headline {
+        max-width: 445px;
+    }
     @include media-breakpoint-down(md) {
         .product-detail-headline {
             margin-bottom: 0;
