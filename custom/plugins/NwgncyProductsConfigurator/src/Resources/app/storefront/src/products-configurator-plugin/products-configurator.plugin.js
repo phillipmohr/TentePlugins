@@ -13,6 +13,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           measuredPropertyMaxSelectSelector: '.js-configurator-measured-property.max',
           propertySelectSelector: '.js-configurator-property',
           propertyCheckboxSelector: '.js-configurator-property-checkbox',
+          cadCheckboxSelector: '.js-configurator-cad-checkbox',
           measuredPropertySelectOptionMinSelector: '.js-configurator-measured-property.min option',
           measuredPropertySelectOptionMaxSelector: '.js-configurator-measured-property.max option',
           measuredPropertySelectOptionsExceptResetSelector: '.js-configurator-measured-property option:not(.reset)',
@@ -62,6 +63,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._selectedMaxMeasuredPropertyOptions = {};
           this._selectedPropertyCheckboxOptions = [];
           this._selectedCategoryOption = null;
+          this._selectedCadOption = null;
           this._searchQuery = "";
 
           this._fetchDefaultCategory = false;
@@ -77,6 +79,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._measuredPropertyMaxSelects = DomAccess.querySelectorAll(this._contentContainer, this.options.measuredPropertyMaxSelectSelector);
           this._propertySelects = DomAccess.querySelectorAll(this._contentContainer, this.options.propertySelectSelector);
           this._propertyCheckboxes = DomAccess.querySelectorAll(this._contentContainer, this.options.propertyCheckboxSelector, false);
+          this._cadCheckbox = DomAccess.querySelectorAll(this._contentContainer, this.options.cadCheckboxSelector);
           this._measuredPropertySelectsOptionsMin = DomAccess.querySelectorAll(this._contentContainer, this.options.measuredPropertySelectOptionMinSelector);
           this._measuredPropertySelectsOptionsMax = DomAccess.querySelectorAll(this._contentContainer, this.options.measuredPropertySelectOptionMaxSelector);
           this._propertySelectsOptions = DomAccess.querySelectorAll(this._contentContainer, this.options.propertySelectOptionSelector);
@@ -222,6 +225,21 @@ export default class ProductConfiguratorPlugin extends Plugin {
                     });
                });
           }
+          this._cadCheckbox.forEach(item => {
+               item.addEventListener('change', event => {
+                    const value = item.value;
+                    if (item.checked) {
+                         this._selectedCadOption = true;
+                    } else {
+                         this._selectedCadOption = null;
+                    }
+                    this.refreshListing();
+                    this.fetchAvailableOptions();
+               });
+          });
+
+
+
           
           this._configuratorForm.addEventListener('submit', event => {
                event.preventDefault();
@@ -355,6 +373,10 @@ export default class ProductConfiguratorPlugin extends Plugin {
           if (this._fetchDefaultCategory) {
                allParamsObject.properties = allParamsObject.properties+'|018a6a875d9b77a88cc7edab549b33ce';
                this._fetchDefaultCategory = false;
+          }
+
+          if (this._selectedCadOption) {
+               allParamsObject.hasCadFile = '1';
           }
 
           this.listing.changeListing(true, { p: 1, ...allParamsObject });

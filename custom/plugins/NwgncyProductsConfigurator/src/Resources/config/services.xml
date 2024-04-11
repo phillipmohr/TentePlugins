@@ -5,12 +5,14 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
+
         <service id="Nwgncy\ProductsConfigurator\Twig\ProductConfiguratorFunctions" public="true">
             <argument type="service" id="category.repository" />
             <argument type="service" id="property_group.repository" />
             <argument type="service" id="property_group_option.repository" />
             <tag name="twig.extension"/>
         </service>
+
         <service id="Nwgncy\ProductsConfigurator\Storefront\Controller\ProductConfiguratorController" public="true">
             <argument type="service" id="property_group_option.repository" />
             <argument type="service" id="product.repository" />
@@ -19,5 +21,11 @@
                 <argument type="service" id="service_container"/>
             </call>
         </service>
+
+        <service id="Nwgncy\ProductsConfigurator\Subscriber\ProductListingCriteriaSubscriber">
+            <tag name="kernel.event_subscriber"/>
+            <argument id="acris_product_download.repository" type="service" />
+        </service>
+
     </services>
 </container>
