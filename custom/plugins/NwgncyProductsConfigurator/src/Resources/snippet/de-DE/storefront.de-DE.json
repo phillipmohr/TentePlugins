@@ -8,7 +8,8 @@
                "reset-filters": "Filter zurücksetzen",
                "search": "Freie Textsuche",
                "resultCount": "Ihre Auswahl: %count% Produkte.",
-               "cad-link": "CAD Link"
+               "cad-link": "CAD Link",
+               "fast-delivery": "Lieferung 24 Stunden"
           }
      }
 }
