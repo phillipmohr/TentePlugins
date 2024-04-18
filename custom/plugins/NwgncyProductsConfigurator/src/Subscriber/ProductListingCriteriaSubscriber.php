@@ -65,6 +65,10 @@ class ProductListingCriteriaSubscriber implements EventSubscriberInterface
                     $result->remove($idToRemove);
                 }
     
+            } else {
+                foreach ($resultProductIds as $idToRemove) {
+                    $result->remove($idToRemove);
+                }  
             }
     
         }
