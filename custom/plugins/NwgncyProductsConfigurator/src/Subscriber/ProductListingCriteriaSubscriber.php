@@ -8,28 +8,66 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsAnyFilter;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\Filesystem\Filesystem;
+use Shopware\Core\Content\Product\Events\ProductListingResultEvent;
 
 class ProductListingCriteriaSubscriber implements EventSubscriberInterface
 {
     private EntityRepository $downloadRepository;
 
+    private EntityRepository $shippingTimeRepository;
+
     public function __construct(
-        EntityRepository $downloadRepository
+        EntityRepository $downloadRepository,
+        EntityRepository $shippingTimeRepository
     )
     {
         $this->downloadRepository = $downloadRepository;
+        $this->shippingTimeRepository = $shippingTimeRepository;
     }
 
     public static function getSubscribedEvents(): array
     {
         return [
-            ProductListingCriteriaEvent::class => 'onProductListingCriteria'
+            // ProductListingCriteriaEvent::class => 'onProductListingCriteria',
+            ProductListingResultEvent::class => 'filterResult'
         ];
     }
-
-    public function onProductListingCriteria(ProductListingCriteriaEvent $event)
+    public function filterResult(ProductListingResultEvent $event)
     {
+
+        $result = $event->getResult();
         $request = $event->getRequest();
+        $salesChannelContext = $event->getSalesChannelContext();
+        $salesChannelId = $salesChannelContext->getSalesChannel()->getId();
+
+
+        if ($result->getTotal() == 0) {
+            return false;
+        }
+
+        $resultProductIds = $result->getIds();
+
+        if ($request->query->get('fastDelivery', false)) {
+
+            $shippingTimeCriteria = new Criteria();
+            $shippingTimeCriteria->addFilter(new EqualsFilter('salesChannelId', $salesChannelId));
+            $shippingTimeCriteria->addFilter(new EqualsFilter('shippingTime', 1));
+            $shippingTimeCollection = $this->shippingTimeRepository->search($shippingTimeCriteria, $event->getContext());
+
+            if ($shippingTimeCollection->getTotal() > 0) {
+
+                $shippingTimeProductIds = $shippingTimeCollection->getEntities()->getProductIds();
+    
+                $idsToRemove = array_diff($resultProductIds, $shippingTimeProductIds);
+    
+                foreach ($idsToRemove as $idToRemove) {
+                    $result->remove($idToRemove);
+                }
+    
+            }
+    
+        }
 
         if ($request->query->get('hasCadFile', false)) {
 
@@ -48,12 +86,28 @@ class ProductListingCriteriaSubscriber implements EventSubscriberInterface
                 }
                 $productsWithFiles = array_unique($productsWithFiles);
 
-                $criteria = $event->getCriteria();
+                $idsToRemove = array_diff($resultProductIds, $productsWithFiles);
 
-                $criteria->addFilter(
-                    new EqualsAnyFilter('product.id', $productsWithFiles)
-                );
+                foreach ($idsToRemove as $idToRemove) {
+                    $result->remove($idToRemove);
+                }
             }
         }
+    }
+
+    public function onProductListingCriteria(ProductListingCriteriaEvent $event)
+    {
+        $request = $event->getRequest();
+
+
+        // $fsObject = new Filesystem();
+
+        // $filePath = '/var/www/html/tentecom/public/onProductListingCriteria.html';
+        // $fsObject->touch($filePath);
+        // $fsObject->chmod($filePath, 0777);
+        // $fsObject->appendToFile($filePath, @\Kint::dump($event));
+
+
+        
     }
 }

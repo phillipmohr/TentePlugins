@@ -62,6 +62,16 @@
                                                                     <td><span>{{ "detail.orderNumber"|trans }}:</span></td>
                                                                     <td class="sm-text-right">{{ page.product.productNumber }}</td>
                                                                 </tr>
+                                                                {% if page.extensions.fastDeliveryAvailable is defined %}
+
+                                                                    {% set deliveryAvailable = page.extensions.fastDeliveryAvailable %}
+                                                                    {% if deliveryAvailable.fastDeliveryAvailable  %}
+                                                                        <tr>
+                                                                            <td><span>{{ "nwgncy-shipping-time.product-detail.stockProgramm"|trans }}:</span></td>
+                                                                            <td class="sm-text-right">{{ "nwgncy-shipping-time.product-detail.fastDeliveryAvailable"|trans }}</td>
+                                                                        </tr>
+                                                                    {% endif %}
+                                                                {% endif %}
                                                             </table>
 
 

@@ -21,10 +21,11 @@
                 <argument type="service" id="service_container"/>
             </call>
         </service>
-
+ 
         <service id="Nwgncy\ProductsConfigurator\Subscriber\ProductListingCriteriaSubscriber">
             <tag name="kernel.event_subscriber"/>
-            <argument id="acris_product_download.repository" type="service" />
+            <argument type="service" id="acris_product_download.repository" />
+            <argument type="service" id="nwgncy_product_shipping_time.repository"/>
         </service>
 
     </services>

@@ -14,6 +14,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           propertySelectSelector: '.js-configurator-property',
           propertyCheckboxSelector: '.js-configurator-property-checkbox',
           cadCheckboxSelector: '.js-configurator-cad-checkbox',
+          fastDeliveryCheckboxSelector: '.js-configurator-fast-delivery-checkbox',
           measuredPropertySelectOptionMinSelector: '.js-configurator-measured-property.min option',
           measuredPropertySelectOptionMaxSelector: '.js-configurator-measured-property.max option',
           measuredPropertySelectOptionsExceptResetSelector: '.js-configurator-measured-property option:not(.reset)',
@@ -31,7 +32,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           searchButtonSelector: '.js-configurator-search-button',
           configuratorFormSelector: '#configurator-form',
      };
-
+ 
      init() {
           this._client = new HttpClient();
           const parentFilterPanelElement = DomAccess.querySelector(document, this.options.parentFilterPanelSelector);
@@ -64,6 +65,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._selectedPropertyCheckboxOptions = [];
           this._selectedCategoryOption = null;
           this._selectedCadOption = null;
+          this._selectedFastDeliveryOption = null;
           this._searchQuery = "";
 
           this._fetchDefaultCategory = false;
@@ -80,6 +82,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._propertySelects = DomAccess.querySelectorAll(this._contentContainer, this.options.propertySelectSelector);
           this._propertyCheckboxes = DomAccess.querySelectorAll(this._contentContainer, this.options.propertyCheckboxSelector, false);
           this._cadCheckbox = DomAccess.querySelectorAll(this._contentContainer, this.options.cadCheckboxSelector);
+          this._fastDeliveryCheckbox = DomAccess.querySelectorAll(this._contentContainer, this.options.fastDeliveryCheckboxSelector);
           this._measuredPropertySelectsOptionsMin = DomAccess.querySelectorAll(this._contentContainer, this.options.measuredPropertySelectOptionMinSelector);
           this._measuredPropertySelectsOptionsMax = DomAccess.querySelectorAll(this._contentContainer, this.options.measuredPropertySelectOptionMaxSelector);
           this._propertySelectsOptions = DomAccess.querySelectorAll(this._contentContainer, this.options.propertySelectOptionSelector);
@@ -227,11 +230,24 @@ export default class ProductConfiguratorPlugin extends Plugin {
           }
           this._cadCheckbox.forEach(item => {
                item.addEventListener('change', event => {
-                    const value = item.value;
+
                     if (item.checked) {
                          this._selectedCadOption = true;
                     } else {
                          this._selectedCadOption = null;
+                    }
+                    this.refreshListing();
+                    this.fetchAvailableOptions();
+               });
+          });
+
+          this._fastDeliveryCheckbox.forEach(item => {
+               item.addEventListener('change', event => {
+
+                    if (item.checked) {
+                         this._selectedFastDeliveryOption = true;
+                    } else {
+                         this._selectedFastDeliveryOption = null;
                     }
                     this.refreshListing();
                     this.fetchAvailableOptions();
@@ -273,6 +289,10 @@ export default class ProductConfiguratorPlugin extends Plugin {
                checkbox.checked = false;
           });
 
+          this._fastDeliveryCheckbox.forEach(checkbox => {
+               checkbox.checked = false;
+          });
+
           this._categories.forEach(radio => {
                radio.checked = false;
           });
@@ -285,6 +305,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._searchQuery = "";
           this._searchInput.value = "";
           this._selectedCadOption = null;
+          this._selectedFastDeliveryOption = null;
 
           this.listing.options.filterUrl = this._defaultDataAndFilterUrls.filter;
           this.listing.options.dataUrl = this._defaultDataAndFilterUrls.data;
@@ -383,11 +404,16 @@ export default class ProductConfiguratorPlugin extends Plugin {
                allParamsObject.hasCadFile = '1';
           }
 
+          if (this._selectedFastDeliveryOption) {
+               allParamsObject.fastDelivery = '1';
+          }
+
           this.listing.changeListing(true, { p: 1, ...allParamsObject });
      }      
 
      _initUrlSelectedProperties(urlFilterParams) {
           var refreshListing = false;
+
           if (urlFilterParams?.properties) {
                const initialUrlPropertiesOptionsArr = urlFilterParams.properties.split('|');
                if (initialUrlPropertiesOptionsArr) {
@@ -425,7 +451,29 @@ export default class ProductConfiguratorPlugin extends Plugin {
                     }
                }
           }
-          
+
+          if (urlFilterParams?.fastDelivery) {
+               this._fastDeliveryCheckbox.forEach(checkbox => {
+                    checkbox.checked = true;
+               });
+               this._selectedFastDeliveryOption = true;
+          } else {
+               this._fastDeliveryCheckbox.forEach(checkbox => {
+                    checkbox.checked = false;
+               });
+          }
+
+          if (urlFilterParams?.hasCadFile) {
+               this._cadCheckbox.forEach(checkbox => {
+                    checkbox.checked = true;
+               });
+               this._selectedCadOption = true;
+          } else {
+               this._cadCheckbox.forEach(checkbox => {
+                    checkbox.checked = false;
+               });
+          }
+
           if (urlFilterParams?.search) {
                const paramsSearch = urlFilterParams.search;
                this.listing.options.filterUrl = this._searchUrls.filter;
