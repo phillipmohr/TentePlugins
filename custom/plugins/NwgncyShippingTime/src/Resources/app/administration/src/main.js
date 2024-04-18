@@ -1,0 +1,2 @@
+import './extension';
+import './component';

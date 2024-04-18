@@ -1,0 +1,8 @@
+{% block sw_product_detail_content_tabs_general %}
+    {% parent %}
+    <sw-tabs-item v-if="product"
+                  :route="{ name: 'sw.product.detail.nst' }"
+                  :title="$tc('nwgncy-shipping-time.general.mainMenuItemGeneral')">
+        {{ $tc('nwgncy-shipping-time.general.mainMenuItemGeneral') }}
+    </sw-tabs-item>
+{% endblock %}

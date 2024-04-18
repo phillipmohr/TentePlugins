@@ -1,0 +1,22 @@
+{
+    "global": {
+        "entities": {
+            "nwgncy_shipping_time": "Lieferzeiten"
+        }
+    },
+    "nwgncy-shipping-time": {
+        "general": {
+            "mainMenuItemGeneral": "Lieferzeiten"
+        },
+        "label": {
+            "deliveryTimeBySalesChannel": "Lieferzeiten per Saleschannel",
+            "updateAllDeliveryTimes": "Lieferzeiten für jeden Saleschannel updaten"
+        },
+        "options": {
+            "shippingTimeOne": "Lieferbar innerhalb von 24 Stunden: Nein",
+            "shippingTimeTwo": "Lieferbar innerhalb von 24 Stunden: Ja",
+            "shippingTimeThree": "Lieferzeiten 3 Tage",
+            "shippingTimeFour": "Lieferzeiten 4 Tage"
+        }
+    }
+}

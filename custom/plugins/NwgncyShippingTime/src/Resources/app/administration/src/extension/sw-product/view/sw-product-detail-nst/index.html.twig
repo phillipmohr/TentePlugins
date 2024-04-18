@@ -1,0 +1,12 @@
+<div class="sw-product-detail-base">
+    <sw-card v-if="product && product.id"
+             :isLoading="isLoading"
+             :title="$tc('nwgncy-shipping-time.label.deliveryTimeBySalesChannel')"
+             class="moorl-entity-grid">
+        <shipping-time-entity-grid entity="nwgncy_product_shipping_time"
+                           :defaultItem="{ productId: product.id }"
+                           :isLoading="isLoading">
+        </shipping-time-entity-grid>
+    </sw-card>
+</div>
+ 

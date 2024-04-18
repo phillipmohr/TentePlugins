@@ -1,0 +1,27 @@
+{
+    "name": "nwgncy-shipping-time/nwgncy-shipping-time",
+    "description": "Product Shipping Time Estimation per Sales Channel",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "6.5.*"
+    },
+    "extra": {
+        "shopware-plugin-class": "NwgncyShippingTime\\NwgncyShippingTime",
+        "label": {
+            "de-DE": "Product Shipping Time Estimation per Sales Channel",
+            "en-GB": "Product Shipping Time Estimation per Sales Channel"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "NwgncyShippingTime\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NwgncyShippingTime\\Tests\\": "tests/"
+        }
+    }
+}

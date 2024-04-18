@@ -1,0 +1,53 @@
+<div v-if="salesChannels && shippingItemsLoaded">
+
+    <sw-container slot="grid" rows="auto auto">
+        <sw-card-section>
+
+            <sw-container
+                columns="1fr 1fr"
+                gap="0 32px"
+            >
+
+                <sw-single-select
+                    :disabled="isLoading"
+                    :isLoading="isLoading"
+                    :disableSearchFunction="true"
+                    :label="$tc('nwgncy-shipping-time.label.updateAllDeliveryTimes')"
+                    :options="shippingTimeOptions"
+                    {% if VUE3 %}
+                    @update:value="updateShippingTimeForEverySalesChannel($event)"
+                    {% else %}
+                    @change="updateShippingTimeForEverySalesChannel($event)"
+                    {% endif %}
+                >
+                </sw-single-select>
+            </sw-container>
+            <div v-for="salesChannel in salesChannels">
+
+                <sw-container
+                    columns="1fr 1fr"
+                    gap="0 32px"
+                >
+
+                    <sw-single-select
+                        :disableSearchFunction="true"
+                        :disabled="isLoading"
+                        :key="salesChannel.id"
+                        v-model="salesChannelsValuesForSelects[salesChannel.id]"
+                        :label="salesChannel.name || salesChannel.translated.name"
+                        {# salesChannel.name || $tc('saleschannel.translation', { label: salesChannel.name }) #}
+                        :options="shippingTimeOptions"
+                        {% if VUE3 %}
+                        @update:value="optionSelected($event, salesChannel)"
+                        {% else %}
+                        @change="optionSelected($event, salesChannel)"
+                        {% endif %}
+                    >
+                    </sw-single-select>
+
+                </sw-container>
+
+            </div>
+        </sw-card-section>
+    </sw-container>
+</div>
