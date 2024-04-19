@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Этот товар готов к отправке в течение 24 часов.",
+            "stockProgramm": "Программа хранения"
+        },
+        "configurator": {
+            "stockProgramm": "Программа хранения"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Tento tovar je pripravený na odoslanie do 24 hodín",
+            "stockProgramm": "Program na ukladanie"
+        },
+        "configurator": {
+            "stockProgramm": "Program na ukladanie"
+        }
+    }
+}

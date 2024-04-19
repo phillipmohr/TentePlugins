@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "该商品可在 24 小时内发货",
+            "stockProgramm": "存储程序"
+        },
+        "configurator": {
+            "stockProgramm": "存储程序"
+        }
+    }
+}

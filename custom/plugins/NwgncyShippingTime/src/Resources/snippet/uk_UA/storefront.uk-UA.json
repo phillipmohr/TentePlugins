@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Цей товар готовий до відправлення протягом 24 годин",
+            "stockProgramm": "Програма зберігання"
+        },
+        "configurator": {
+            "stockProgramm": "Програма зберігання"
+        }
+    }
+}

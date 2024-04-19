@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Αυτό το προϊόν είναι έτοιμο για αποστολή εντός 24 ωρών",
+            "stockProgramm": "Πρόγραμμα αποθήκευσης"
+        },
+        "configurator": {
+            "stockProgramm": "Πρόγραμμα αποθήκευσης"
+        }
+    }
+}

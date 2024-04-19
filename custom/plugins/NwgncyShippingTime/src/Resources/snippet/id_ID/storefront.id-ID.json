@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Barang ini siap dikirim dalam waktu 24 jam",
+            "stockProgramm": "Program penyimpanan"
+        },
+        "configurator": {
+            "stockProgramm": "Program penyimpanan"
+        }
+    }
+}

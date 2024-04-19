@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Ez a tétel 24 órán belül szállításra kész",
+            "stockProgramm": "Tároló program"
+        },
+        "configurator": {
+            "stockProgramm": "Tároló program"
+        }
+    }
+}

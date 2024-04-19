@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Mặt hàng này đã sẵn sàng để vận chuyển trong vòng 24 giờ",
+            "stockProgramm": "Chương trình lưu trữ"
+        },
+        "configurator": {
+            "stockProgramm": "Chương trình lưu trữ"
+        }
+    }
+}

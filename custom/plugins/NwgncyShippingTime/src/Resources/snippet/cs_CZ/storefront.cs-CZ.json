@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Toto zboží je připraveno k odeslání do 24 hodin",
+            "stockProgramm": "Program úložiště"
+        },
+        "configurator": {
+            "stockProgramm": "Program úložiště"
+        }
+    }
+}

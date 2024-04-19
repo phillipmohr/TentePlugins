@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Denne vare er klar til at sendes inden for 24 timer",
+            "stockProgramm": "Opbevaringsprogram"
+        },
+        "configurator": {
+            "stockProgramm": "Opbevaringsprogram"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Bu ürün 24 saat içinde gönderilmeye hazırdır",
+            "stockProgramm": "Depolama programı"
+        },
+        "configurator": {
+            "stockProgramm": "Depolama programı"
+        }
+    }
+}

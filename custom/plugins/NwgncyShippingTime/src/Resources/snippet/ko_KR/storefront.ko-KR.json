@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "이 상품은 24시간 이내에 배송 준비가 되어 있습니다.",
+            "stockProgramm": "저장 프로그램"
+        },
+        "configurator": {
+            "stockProgramm": "저장 프로그램"
+        }
+    }
+}

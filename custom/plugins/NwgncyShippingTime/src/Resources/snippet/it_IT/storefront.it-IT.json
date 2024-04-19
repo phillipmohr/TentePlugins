@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Questo articolo è pronto per la spedizione entro 24 ore",
+            "stockProgramm": "Programma di archiviazione"
+        },
+        "configurator": {
+            "stockProgramm": "Programma di archiviazione"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Ovaj artikl spreman je za slanje u roku od 24 sata",
+            "stockProgramm": "Program skladištenja"
+        },
+        "configurator": {
+            "stockProgramm": "Program skladištenja"
+        }
+    }
+}

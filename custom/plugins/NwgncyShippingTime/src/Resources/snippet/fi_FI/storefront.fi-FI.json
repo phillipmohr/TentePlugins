@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Tämä tuote on valmis lähetettäväksi 24 tunnin sisällä",
+            "stockProgramm": "Tallennusohjelma"
+        },
+        "configurator": {
+            "stockProgramm": "Tallennusohjelma"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Този артикул е готов за изпращане в рамките на 24 часа",
+            "stockProgramm": "Програма за съхранение"
+        },
+        "configurator": {
+            "stockProgramm": "Програма за съхранение"
+        }
+    }
+}

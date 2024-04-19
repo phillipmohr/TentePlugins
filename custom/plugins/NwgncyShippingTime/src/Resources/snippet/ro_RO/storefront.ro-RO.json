@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Acest articol este gata de livrare în 24 de ore",
+            "stockProgramm": "Program de stocare"
+        },
+        "configurator": {
+            "stockProgramm": "Program de stocare"
+        }
+    }
+}

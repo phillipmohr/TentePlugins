@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "यह आइटम 24 घंटे के भीतर शिपिंग के लिए तैयार है",
+            "stockProgramm": "भंडारण कार्यक्रम"
+        },
+        "configurator": {
+            "stockProgramm": "भंडारण कार्यक्रम"
+        }
+    }
+}

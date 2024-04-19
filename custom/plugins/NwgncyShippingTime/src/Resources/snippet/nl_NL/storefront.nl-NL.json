@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Dit artikel is binnen 24 uur gereed voor verzending",
+            "stockProgramm": "Opslagprogramma"
+        },
+        "configurator": {
+            "stockProgramm": "Opslagprogramma"
+        }
+    }
+}

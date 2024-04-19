@@ -1,0 +1,11 @@
+{
+    "nwgncy-shipping-time": {
+        "product-detail": {
+            "fastDeliveryAvailable": "Denna vara är redo att skickas inom 24 timmar",
+            "stockProgramm": "Lagringsprogram"
+        },
+        "configurator": {
+            "stockProgramm": "Lagringsprogram"
+        }
+    }
+}
