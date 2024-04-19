@@ -1,7 +1,7 @@
 {
   "name": "nwgncy/tente-theme",
   "description": "Tente custom theme by Newwwagency",
-  "version": "1.7.5",
+  "version": "1.7.6",
   "type": "shopware-platform-plugin",
   "license": "MIT",
   "autoload": {

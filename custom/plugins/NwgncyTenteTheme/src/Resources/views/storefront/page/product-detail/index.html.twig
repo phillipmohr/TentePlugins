@@ -53,29 +53,42 @@
 
                                                     {% block page_product_detail_info_container %}
                                                         <div class="product-detail-info-container">
-                                                            <table>
-                                                                <tr>
-                                                                    <td><span>{{ "detail.ean"|trans }}:</span></td>
-                                                                    <td class="sm-text-right">{{ page.product.ean }}</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><span>{{ "detail.orderNumber"|trans }}:</span></td>
-                                                                    <td class="sm-text-right">{{ page.product.productNumber }}</td>
-                                                                </tr>
-                                                                {% if page.extensions.fastDeliveryAvailable is defined %}
+                                                            <div class="product--ean">
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        {{ "detail.ean"|trans }}:
+                                                                    </div>
+                                                                    <div class="col sm-text-right">
+                                                                        {{ page.product.ean }}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product--ordernumber">
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        {{ "detail.orderNumber"|trans }}:
+                                                                    </div>
+                                                                    <div class="col sm-text-right">
+                                                                        {{ page.product.productNumber }}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            {% if page.extensions.fastDeliveryAvailable is defined %}
 
-                                                                    {% set deliveryAvailable = page.extensions.fastDeliveryAvailable %}
-                                                                    {% if deliveryAvailable.fastDeliveryAvailable  %}
-                                                                        <tr>
-                                                                            <td><span>{{ "nwgncy-shipping-time.product-detail.stockProgramm"|trans }}:</span></td>
-                                                                            <td class="sm-text-right">{{ "nwgncy-shipping-time.product-detail.fastDeliveryAvailable"|trans }}</td>
-                                                                        </tr>
-                                                                    {% endif %}
+                                                                {% set deliveryAvailable = page.extensions.fastDeliveryAvailable %}
+                                                                {% if deliveryAvailable.fastDeliveryAvailable  %}
+                                                                    <div class="product--ordernumber">
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                {{ "nwgncy-shipping-time.product-detail.stockProgramm"|trans }}:
+                                                                            </div>
+                                                                            <div class="col sm-text-right">
+                                                                                {{ "nwgncy-shipping-time.product-detail.fastDeliveryAvailable"|trans }}
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 {% endif %}
-                                                            </table>
-
-
-
+                                                            {% endif %}
 
                                                             {% block page_product_detail_contact %}
                                                             {% set contactUsID = getContactPageID(context) %}
