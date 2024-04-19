@@ -13,6 +13,16 @@
 						</h4>
 						<div class="tente-downloads-container">
 
+                            {% if page.product.translated.customFields["product_datasheet_url"] is defined %}
+                                <ul class="acris-downloads-list">
+                                    <li class="acris-downloads-list-item">
+                                        <a href="{{ page.product.translated.customFields['product_datasheet_url'] }}" target="_blank">
+                                            <img src="/bundles/nwgncytentetheme/assets/img/pdf.png" width="20" /> {{ page.product.translated.customFields['product_datasheet_url'] }}
+                                        </a>
+                                    </li>
+                                </ul>
+                            {% endif %}
+
 
 							{% for downloadTab in page.product.extension('acrisDownloadTabs').elements %}
 								{% if downloadTab.internalId == 'downloadgroup_1' %}

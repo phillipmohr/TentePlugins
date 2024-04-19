@@ -79,7 +79,7 @@
                         {% block page_product_detail_tabs_navigation_description %}{% endblock %}
                         {% block page_product_detail_tabs_navigation_downloads %}
 
-                            {% if page.product.extensions.acrisDownloadTabs.elements %}
+                            {% if page.product.extensions.acrisDownloadTabs.elements or page.product.translated.customFields["product_datasheet_url"] is defined %}
                                 <li class="nav-item">
                                     <a
                                         class="nav-link product-detail-tab-navigation-link"
@@ -430,7 +430,7 @@
                         {% block page_product_detail_tabs_content_description %} {% endblock %}
 
                         {% block page_product_detail_tabs_content_downloads %}
-                            {% if page.product.extensions.acrisDownloadTabs.elements %}
+                            {% if page.product.extensions.acrisDownloadTabs.elements or page.product.translated.customFields["product_datasheet_url"] is defined %}
                                 <div class="accordion-item nav-item">
                                     <button class="nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#tab-downloads-pane" aria-expanded="true" aria-controls="tab-downloads-pane">
                                         <span>{{ "detail.tabs.downloads"|trans|sw_sanitize }}</span>
