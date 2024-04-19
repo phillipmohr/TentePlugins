@@ -1,13 +1,15 @@
 {
-     "nwgncy-products-configurator": {
-         "label": {
-             "configurator": "Products Configurator",
-             "category": "Category",
-             "show-only": "Show only products",
-             "reset": "Reset filter",
-             "reset-filters": "Reset filters",
-             "search": "Free text search",
-             "resultCount": "Your selection: %count% Products."
-         }
-     }
- }
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Products Configurator",
+            "category": "Category",
+            "show-only": "Show only products",
+            "reset": "Reset filter",
+            "reset-filters": "Reset filters",
+            "search": "Free text search",
+            "resultCount": "Your selection: %count% Products.",
+            "cad-link": "CAD Link",
+            "fast-delivery": "Delivery in 24 hours"
+        }
+    }
+}

@@ -1,13 +1,15 @@
 {
     "nwgncy-products-configurator": {
         "label": {
-            "configurator": "Produkter Konfigurator",
+            "configurator": "Produktkonfigurator",
             "category": "Kategori",
             "show-only": "Visa endast produkter",
             "reset": "Återställ filter",
-            "reset-filters": "Återställa filter",
+            "reset-filters": "Återställ filter",
             "search": "Fritextsökning",
-            "resultCount": "Ditt val: %count% Produkter."
+            "resultCount": "Ditt val: %count% produkter.",
+            "cad-link": "CAD-länk",
+            "fast-delivery": "Leverans inom 24 timmar"
         }
     }
 }

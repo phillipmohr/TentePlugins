@@ -1,13 +1,15 @@
 {
-     "nwgncy-products-configurator": {
-         "label": {
-             "configurator": "Konfigurator proizvoda",
-             "category": "Kategorija",
-             "show-only": "Prikaži samo proizvode",
-             "reset": "Vrati filter za resetovanje",
-             "reset-filters": "Vrati filtere na zadano",
-             "search": "Besplatno pretraživanje teksta",
-             "resultCount": "Vaš izbor: %count% Proizvodi."
-         }
-     }
- }
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Konfigurator proizvoda",
+            "category": "Kategorija",
+            "show-only": "Prikaži samo proizvode",
+            "reset": "Resetirajte filter",
+            "reset-filters": "Resetujte filtere",
+            "search": "Besplatno pretraživanje teksta",
+            "resultCount": "Vaš izbor: %count% proizvoda.",
+            "cad-link": "CAD Link",
+            "fast-delivery": "Dostava u roku od 24 sata"
+        }
+    }
+}

@@ -1,13 +1,15 @@
 {
     "nwgncy-products-configurator": {
         "label": {
-            "configurator": "Konfigurator Produk",
-            "category": "Golongan",
-            "show-only": "Hanya tampilkan produk",
-            "reset": "Setel ulang filter",
+            "configurator": "Konfigurasi Produk",
+            "category": "Kategori",
+            "show-only": "Tampilkan hanya produk",
+            "reset": "Setel ulang penyaring",
             "reset-filters": "Setel ulang filter",
             "search": "Pencarian teks gratis",
-            "resultCount": "Pilihan Anda: %count% Produk."
+            "resultCount": "Pilihan Anda: %count% Produk.",
+            "cad-link": "Tautan CAD",
+            "fast-delivery": "Pengiriman dalam 24 jam"
         }
     }
 }

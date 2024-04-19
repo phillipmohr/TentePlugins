@@ -6,11 +6,11 @@
     },
     "nwgncy-shipping-time": {
         "general": {
-            "mainMenuItemGeneral": "Lieferzeiten"
+            "mainMenuItemGeneral": "Lagerprogramm"
         },
         "label": {
-            "deliveryTimeBySalesChannel": "Lieferzeiten per Saleschannel",
-            "updateAllDeliveryTimes": "Lieferzeiten für jeden Saleschannel updaten"
+            "deliveryTimeBySalesChannel": "Lagerprogramm per Saleschannel",
+            "updateAllDeliveryTimes": "Lagerprogramm für jeden Saleschannel updaten"
         },
         "options": {
             "shippingTimeOne": "Lieferbar innerhalb von 24 Stunden: Nein",

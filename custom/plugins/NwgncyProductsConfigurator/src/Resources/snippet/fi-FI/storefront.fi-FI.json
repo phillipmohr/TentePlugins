@@ -1,13 +1,15 @@
 {
     "nwgncy-products-configurator": {
         "label": {
-            "configurator": "Tuotekonfiguraattori",
-            "category": "Luokka",
+            "configurator": "Tuotteiden konfiguraattori",
+            "category": "Kategoria",
             "show-only": "Näytä vain tuotteet",
             "reset": "Nollaa suodatin",
-            "reset-filters": "Palauta suodattimet",
+            "reset-filters": "Nollaa suodattimet",
             "search": "Vapaa tekstihaku",
-            "resultCount": "Valintasi: %count% Tuotteet."
+            "resultCount": "Valintasi: %count% tuotteita.",
+            "cad-link": "CAD-linkki",
+            "fast-delivery": "Toimitus 24 tunnin sisällä"
         }
     }
 }

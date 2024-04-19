@@ -1,13 +1,15 @@
 {
     "nwgncy-products-configurator": {
         "label": {
-            "configurator": "Ürün Konfigüratörü",
+            "configurator": "Ürün Yapılandırıcısı",
             "category": "Kategori",
             "show-only": "Yalnızca ürünleri göster",
             "reset": "Filtreyi sıfırla",
             "reset-filters": "Filtreleri sıfırla",
             "search": "Serbest metin araması",
-            "resultCount": "Seçiminiz: %count% Ürünler."
+            "resultCount": "Seçiminiz: %count% Ürünler.",
+            "cad-link": "CAD Bağlantısı",
+            "fast-delivery": "24 saat içinde teslimat"
         }
     }
 }

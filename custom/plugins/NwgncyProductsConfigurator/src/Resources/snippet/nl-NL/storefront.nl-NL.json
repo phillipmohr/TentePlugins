@@ -1,13 +1,15 @@
 {
     "nwgncy-products-configurator": {
         "label": {
-            "configurator": "Producten Configurator",
+            "configurator": "Productenconfigurator",
             "category": "Categorie",
             "show-only": "Toon alleen producten",
-            "reset": "Filter resetten",
-            "reset-filters": "Filters resetten",
-            "search": "Vrije tekst zoeken",
-            "resultCount": "Uw selectie: %count% Producten."
+            "reset": "Filter opnieuw instellen",
+            "reset-filters": "Filters opnieuw instellen",
+            "search": "Gratis tekst zoeken",
+            "resultCount": "Uw selectie: %count% Producten.",
+            "cad-link": "CAD-link",
+            "fast-delivery": "Levering binnen 24 uur"
         }
     }
 }

@@ -3,11 +3,13 @@
         "label": {
             "configurator": "Konfigurator proizvoda",
             "category": "Kategorija",
-            "show-only": "Pokaži samo proizvode",
-            "reset": "Vrati izvorni filtar",
-            "reset-filters": "Vraćanje izvornih filtara",
+            "show-only": "Prikaži samo proizvode",
+            "reset": "Resetiraj filter",
+            "reset-filters": "Resetiraj filtere",
             "search": "Besplatno pretraživanje teksta",
-            "resultCount": "Vaš odabir: %count% Proizvodi."
+            "resultCount": "Vaš odabir: %count% proizvoda.",
+            "cad-link": "CAD veza",
+            "fast-delivery": "Isporuka za 24 sata"
         }
     }
 }

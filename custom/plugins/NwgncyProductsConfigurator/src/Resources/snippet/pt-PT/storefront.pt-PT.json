@@ -7,7 +7,9 @@
             "reset": "Redefinir filtro",
             "reset-filters": "Redefinir filtros",
             "search": "Pesquisa de texto livre",
-            "resultCount": "Sua seleção: %count% Produtos."
+            "resultCount": "Sua seleção: %count% Produtos.",
+            "cad-link": "Ligação CAD",
+            "fast-delivery": "Entrega em 24 horas"
         }
     }
 }

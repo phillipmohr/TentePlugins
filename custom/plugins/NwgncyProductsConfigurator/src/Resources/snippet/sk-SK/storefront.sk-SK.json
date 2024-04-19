@@ -4,10 +4,12 @@
             "configurator": "Konfigurátor produktov",
             "category": "Kategória",
             "show-only": "Zobraziť iba produkty",
-            "reset": "Obnoviť filter",
-            "reset-filters": "Obnoviť filtre",
-            "search": "Voľné textové vyhľadávanie",
-            "resultCount": "Váš výber: %count% Produkty."
+            "reset": "Resetovať filter",
+            "reset-filters": "Obnovte filtre",
+            "search": "Bezplatné vyhľadávanie textu",
+            "resultCount": "Váš výber: %count% Produkty.",
+            "cad-link": "CAD prepojenie",
+            "fast-delivery": "Doručenie do 24 hodín"
         }
     }
 }

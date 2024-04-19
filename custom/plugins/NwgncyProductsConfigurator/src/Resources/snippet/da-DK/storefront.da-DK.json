@@ -1,13 +1,15 @@
 {
     "nwgncy-products-configurator": {
         "label": {
-            "configurator": "Produkter Konfigurator",
+            "configurator": "Produktkonfigurator",
             "category": "Kategori",
             "show-only": "Vis kun produkter",
             "reset": "Nulstil filter",
             "reset-filters": "Nulstil filtre",
             "search": "Fritekstsøgning",
-            "resultCount": "Dit valg: %count% Produkter."
+            "resultCount": "Dit valg: %count% produkter.",
+            "cad-link": "CAD-link",
+            "fast-delivery": "Levering indenfor 24 timer"
         }
     }
 }

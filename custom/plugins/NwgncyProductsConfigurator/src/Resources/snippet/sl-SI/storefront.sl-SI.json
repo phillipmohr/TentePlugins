@@ -1,13 +1,15 @@
 {
     "nwgncy-products-configurator": {
         "label": {
-            "configurator": "Orodje za konfiguracijo izdelkov",
+            "configurator": "Konfigurator izdelkov",
             "category": "Kategorija",
             "show-only": "Pokaži samo izdelke",
             "reset": "Ponastavi filter",
-            "reset-filters": "Ponastavitev filtrov",
-            "search": "Prosto iskanje po besedilu",
-            "resultCount": "Vaš izbor: %count% izdelkov."
+            "reset-filters": "Ponastavi filtre",
+            "search": "Brezplačno iskanje po besedilu",
+            "resultCount": "Vaša izbira: %count% izdelkov.",
+            "cad-link": "Povezava CAD",
+            "fast-delivery": "Dostava v 24 urah"
         }
     }
 }

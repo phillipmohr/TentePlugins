@@ -6,8 +6,10 @@
             "show-only": "Zobrazit pouze produkty",
             "reset": "Resetovat filtr",
             "reset-filters": "Resetovat filtry",
-            "search": "Volné textové vyhledávání",
-            "resultCount": "Váš výběr: %count% Produkty."
+            "search": "Zdarma textové vyhledávání",
+            "resultCount": "Váš výběr: %count% Produkty.",
+            "cad-link": "CAD odkaz",
+            "fast-delivery": "Doručení do 24 hodin"
         }
     }
 }

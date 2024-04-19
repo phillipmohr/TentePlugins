@@ -1,13 +1,15 @@
 {
     "nwgncy-products-configurator": {
         "label": {
-            "configurator": "Продукти Конфигуратор",
+            "configurator": "Конфигуратор на продукти",
             "category": "Категория",
             "show-only": "Показване само на продукти",
-            "reset": "Нулиране на филтъра",
-            "reset-filters": "Нулиране на филтри",
-            "search": "Свободно търсене на текст",
-            "resultCount": "Вашият избор: %count% Продукти."
+            "reset": "Нулирайте филтъра",
+            "reset-filters": "Нулирайте филтрите",
+            "search": "Безплатно търсене на текст",
+            "resultCount": "Вашият избор: %count% продукти.",
+            "cad-link": "CAD връзка",
+            "fast-delivery": "Доставка за 24 часа"
         }
     }
 }

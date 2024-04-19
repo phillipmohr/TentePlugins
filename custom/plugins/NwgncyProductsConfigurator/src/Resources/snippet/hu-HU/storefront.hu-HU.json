@@ -1,13 +1,15 @@
 {
     "nwgncy-products-configurator": {
         "label": {
-            "configurator": "Termékkonfigurátor",
+            "configurator": "Termékek konfigurátora",
             "category": "Kategória",
             "show-only": "Csak a termékek megjelenítése",
             "reset": "Szűrő visszaállítása",
             "reset-filters": "Szűrők visszaállítása",
             "search": "Szabad szöveges keresés",
-            "resultCount": "Az Ön választása: %count% Products."
+            "resultCount": "Az Ön választása: %count% Termékek.",
+            "cad-link": "CAD link",
+            "fast-delivery": "Szállítás 24 órán belül"
         }
     }
 }

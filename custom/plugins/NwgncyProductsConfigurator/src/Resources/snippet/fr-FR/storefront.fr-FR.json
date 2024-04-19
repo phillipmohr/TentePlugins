@@ -1,13 +1,15 @@
 {
-     "nwgncy-products-configurator": {
-         "label": {
-             "configurator": "Configurateur de produits",
-             "category": "Catégorie",
-             "show-only": "Afficher uniquement les produits",
-             "reset": "Réinitialiser le filtre",
-             "reset-filters": "Réinitialiser les filtres",
-             "search": "Recherche texte libre",
-             "resultCount": "Votre sélection : %count% produits."
-         }
-     }
- }
+    "nwgncy-products-configurator": {
+        "label": {
+            "configurator": "Configurateur de produits",
+            "category": "Catégorie",
+            "show-only": "Afficher uniquement les produits",
+            "reset": "Réinitialiser le filtre",
+            "reset-filters": "Réinitialiser les filtres",
+            "search": "Recherche de texte libre",
+            "resultCount": "Votre sélection : %count% Produits.",
+            "cad-link": "Lien CAO",
+            "fast-delivery": "Livraison en 24 heures"
+        }
+    }
+}

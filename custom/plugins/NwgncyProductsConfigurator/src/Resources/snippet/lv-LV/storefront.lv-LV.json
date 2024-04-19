@@ -6,8 +6,10 @@
             "show-only": "Rādīt tikai produktus",
             "reset": "Atiestatīt filtru",
             "reset-filters": "Atiestatīt filtrus",
-            "search": "Brīvā teksta meklēšana",
-            "resultCount": "Jūsu izvēle: %skaits% Produkti."
+            "search": "Bezmaksas teksta meklēšana",
+            "resultCount": "Jūsu izvēle: %count% Produkti.",
+            "cad-link": "CAD saite",
+            "fast-delivery": "Piegāde 24 stundu laikā"
         }
     }
 }
