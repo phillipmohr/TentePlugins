@@ -84,6 +84,7 @@ class ProductFinderFunctions extends AbstractExtension
                     $elementArray = [
                          'id' => $element->getId(),
                          'name' => $name,
+                         'position' => $element->getPosition(),
                     ];
                     if ($isMeasure) {
                          $parsedValue = CommonFunctions::parsefloatFromString($name);
@@ -96,6 +97,12 @@ class ProductFinderFunctions extends AbstractExtension
                     $nameB = $b['name'] ?? '';
                     return strnatcmp($nameA, $nameB);
                });
+
+               if ($propertyGroupId == '018a6a86ccd0746d879ac44523974aa3') {
+                    usort($propertyGroupOptions, function ($a, $b) {
+                         return $a['position'] > $b['position']; 
+                    });
+               }
           }
           return $propertyGroupOptions;
      }

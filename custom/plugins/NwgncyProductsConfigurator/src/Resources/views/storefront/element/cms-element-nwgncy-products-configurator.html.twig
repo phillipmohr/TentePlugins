@@ -6,6 +6,7 @@
                 <span class="category">{{ "nwgncy-products-configurator.label.category" | trans }}</span>
                 {% set categoryGroupId = element.config.categoryPropertyGroup.value %}
                 {% set categoryOptions = getPropertyOptionsByGroupId(categoryGroupId, true, context) %}
+                {# {{dump(categoryOptions)}} #}
                 {% for categoryOption in categoryOptions %}
                     <div class="field">
                         {% set name = categoryOption.name %}
@@ -62,20 +63,65 @@
             {% endfor %}
             </div>
         {% endif %}
+ 
+        {% set hasPropertyFittingType = false %}
+        {% set hasPropertyBearing = false %}
+        {% set stackColumns = false %}
+        {% set stackColumnsTemplateIncluded = false %}
+        {% set propertyGroupIdBearing = '018b5c9117967cc2bd1ed1086cb43aaf' %}
+        {% set propertyGroupIdFitting = '018d1c7d7cbb73ffb593826bfaf77314' %}
+
         {% for propertyGroupId in element.config.propertyGroups.value %}
-            {% set name = getPropertyGroupName(propertyGroupId, context) %}
-            {% set selectName = 'configurator-property-' ~ name %}
-            {% set id = 'configurator-property-group-' ~ propertyGroupId %}
-            {% set propertyGroupOptions = getPropertyOptionsByGroupId(propertyGroupId, false, context) %}
-            <div class="field">
-                <label for="{{ id }}">{{ name }}</label>
-                <select name="{{ selectName }}" id="{{ id }}" multiple class="js-configurator-property">
-                    <option class="reset" value="">{{ "nwgncy-products-configurator.label.reset" | trans }}</option>
-                    {% for option in propertyGroupOptions %}
-                        <option value="{{ option.id }}">{{ option.name }}</option>
-                    {% endfor %}
-                </select>
-            </div>
+
+            {% if propertyGroupId == propertyGroupIdFitting %} 
+                {% set hasPropertyFittingType = true %}
+            {% endif %}
+
+            {% if propertyGroupId == propertyGroupIdBearing %} 
+                {% set hasPropertyBearing = true %}
+            {% endif %}
+
+        {% endfor %}
+
+        {% if hasPropertyFittingType && hasPropertyBearing %} 
+                {% set stackColumns = true %}
+        {% endif %}
+     
+
+        {% for propertyGroupId in element.config.propertyGroups.value %}
+
+            {% if stackColumns && (propertyGroupId == propertyGroupIdBearing || propertyGroupId == propertyGroupIdFitting) %} 
+            
+                {% if stackColumns && stackColumnsTemplateIncluded == false  %}
+                    {% sw_include '@NwgncyProductsConfigurator/storefront/element/stacked-fields.html.twig' with {
+                        propsToStack: [propertyGroupIdBearing, propertyGroupIdFitting]
+                        } 
+                    %}
+                    {% set stackColumnsTemplateIncluded = true %}
+                {% endif %}
+            {% else %}
+
+                {% set name = getPropertyGroupName(propertyGroupId, context) %}
+                {% set selectName = 'configurator-property-' ~ name %}
+                {% set id = 'configurator-property-group-' ~ propertyGroupId %}
+                {% set propertyGroupOptions = getPropertyOptionsByGroupId(propertyGroupId, false, context) %}
+
+                <div class="field">
+                    <label for="{{ id }}">{{ name }}</label>
+                    <select name="{{ selectName }}" id="{{ id }}" multiple class="js-configurator-property">
+                        <option class="reset" value="">{{ "nwgncy-products-configurator.label.reset" | trans }}</option>
+                        {% for option in propertyGroupOptions %}
+                            <option value="{{ option.id }}">{{ option.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+            {% endif %}
+
+            
+
+
+
         {% endfor %}
     </div> 
     <div class="checkboxes">
@@ -90,7 +136,7 @@
                     <input name="checkbox-option" id="{{ id }}" type="checkbox" value="{{ option.id }}" class="js-configurator-property-checkbox">
                     <label for="{{ id }}">{{ option.name }}</label>
                 </div>
-            {% endfor %}
+            {% endfor %} 
             <div class="field">
                 {% set id = 'configurator-checkbox-option-has-cad-files' %}
                 <input name="checkbox-option" id="has-cad-files" type="checkbox" value="has-cad-files" class="js-configurator-cad-checkbox">

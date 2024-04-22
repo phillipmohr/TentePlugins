@@ -1,0 +1,23 @@
+{% block sw_cms_element_nwgncy_products_configurator_stacked_fields %}
+
+        <div class="field">
+            {% for propertyGroupId in propsToStack %}
+                {% set name = getPropertyGroupName(propertyGroupId, context) %}
+                {% set selectName = 'configurator-property-' ~ name %}
+                {% set id = 'configurator-property-group-' ~ propertyGroupId %}
+                {% set propertyGroupOptions = getPropertyOptionsByGroupId(propertyGroupId, false, context) %}
+                <label for="{{ id }}">{{ name }}</label>
+                <div class="stacked-row">
+                    
+                    <select name="{{ selectName }}" id="{{ id }}" multiple class="js-configurator-property">
+                        <option class="reset" value="">{{ "nwgncy-products-configurator.label.reset" | trans }}</option>
+                        {% for option in propertyGroupOptions %}
+                            <option value="{{ option.id }}">{{ option.name }}</option>
+                        {% endfor %}
+                    </select>
+
+                </div>
+            {% endfor %}
+        </div>
+{% endblock %}
+

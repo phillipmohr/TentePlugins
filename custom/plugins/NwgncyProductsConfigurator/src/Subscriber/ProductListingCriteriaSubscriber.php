@@ -59,16 +59,23 @@ class ProductListingCriteriaSubscriber implements EventSubscriberInterface
 
                 $shippingTimeProductIds = $shippingTimeCollection->getEntities()->getProductIds();
     
+                $shippingTimeProductIds = [];
+                $resultProductIds = [];
+
                 $idsToRemove = array_diff($resultProductIds, $shippingTimeProductIds);
-    
-                foreach ($idsToRemove as $idToRemove) {
-                    $result->remove($idToRemove);
+                
+                if (!empty($idsToRemove)) {
+                    foreach ($idsToRemove as $idToRemove) {
+                        $result->remove($idToRemove);
+                    }
                 }
     
             } else {
+
                 foreach ($resultProductIds as $idToRemove) {
                     $result->remove($idToRemove);
-                }  
+                } 
+
             }
     
         }
@@ -92,9 +99,16 @@ class ProductListingCriteriaSubscriber implements EventSubscriberInterface
 
                 $idsToRemove = array_diff($resultProductIds, $productsWithFiles);
 
-                foreach ($idsToRemove as $idToRemove) {
-                    $result->remove($idToRemove);
+                if (!empty($idsToRemove)) {
+                    foreach ($idsToRemove as $idToRemove) {
+                        $result->remove($idToRemove);
+                    }
                 }
+
+            } else {
+                foreach ($resultProductIds as $idToRemove) {
+                    $result->remove($idToRemove);
+                } 
             }
         }
     }
