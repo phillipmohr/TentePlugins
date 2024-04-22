@@ -5,6 +5,9 @@
             "fileFormatPdf": "PDF",
             "fileFormatStep": "STEP-2.14",
             "downloadBtn": "Download"
+        },
+        "download": {
+            "datasheet": "Datasheet"
         }
     }
 }
