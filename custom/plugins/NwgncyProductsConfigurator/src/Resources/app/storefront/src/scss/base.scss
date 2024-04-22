@@ -204,6 +204,15 @@ $custom-breakpoint-665: 1100px;
           letter-spacing: 1.2px;
           height: 45px;
      }
+     .stacked-row {
+          display: flex;
+          flex-direction: row;
+          flex: 1;
+  
+          select {
+               width: 100%;
+          }
+     }
 }
 .nwgncy-pagination-container {
      margin-bottom: 30px;
@@ -422,4 +431,3 @@ $custom-breakpoint-665: 1100px;
           }
      }
 }
-
