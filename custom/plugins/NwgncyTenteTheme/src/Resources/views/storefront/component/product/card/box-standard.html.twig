@@ -1,5 +1,21 @@
 {% sw_extends '@parent/storefront/component/product/card/box-standard.html.twig' %}
 
+
+{% block component_product_box %}
+    {% if product %}
+        {% set name = product.translated.name %}
+        {% set id = product.id %}
+        {% set cover = product.cover.media %}
+        {% set variation = product.variation %}
+        {% set displayParent = product.variantListingConfig.displayParent and product.parentId === null %}
+        <div class="card product-box {% if product.translated.customFields.product_download_is %}product-box-download{% endif %} box-{{ layout }}">
+            {% block component_product_box_content %}
+                {{ parent() }}
+            {% endblock %}
+        </div>
+    {% endif %}
+{% endblock %}
+
 {% block component_product_box_action %}
 
 
@@ -33,10 +49,16 @@
     <a href="{{ seoUrl('frontend.detail.page', {'productId': id}) }}"
         class="product-name"
         title="{{ newName }}">
-        {{ newName }}
+        {% if product.translated.customFields.product_download_is %}
+            {{ product.translated.name }} 
+        {% else %}
+            {{ newName }}
+        {% endif %}
     </a>
  
-    <div class="product-name-sku"><p>{{ product.productNumber }}</p></div>
+    {% if product.translated.customFields.product_download_is is null %}
+        <div class="product-name-sku"><p>{{ product.productNumber }}</p></div>
+    {% endif %}
 
     {# 018a69ebc42f734d83ada36ef58ca4bf attr_wheel_diameter #}
     {# 018b5bfc7cc37993adf91443abd11be6 attr_load_capacity_productfinder || Load capacity (static)  #}

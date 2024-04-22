@@ -28,6 +28,15 @@
 }
 
 .product-box {
+
+    &.product-box-download {
+        .product-variant-characteristics {
+            display: none;
+        }
+        .product-price-info {
+            margin-top: 0;
+        }
+    }
     .product-action {
         display: none;
     }
