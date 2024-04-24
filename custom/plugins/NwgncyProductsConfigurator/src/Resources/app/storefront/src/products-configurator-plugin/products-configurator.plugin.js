@@ -102,7 +102,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           }
           this.refreshListing();
           this.fetchAvailableOptions();
-          
+
      }
 
      /**
@@ -136,17 +136,34 @@ export default class ProductConfiguratorPlugin extends Plugin {
 
                     if (selectedOption.classList.contains('reset')) {
 
+                         
                          item.querySelectorAll('option:not(.reset)').forEach(function(option) {
                               option.selected = false;
                          });
 
-                         delete this._selectedMinMeasuredPropertyOptions[id];
-                         delete this._selectedMaxMeasuredPropertyOptions[id];
+                         // if the MIN gets reset
+                         // but MAX is still set to something
+                         // the minimum MIN has to be choosen
+                         if (this._selectedMaxMeasuredPropertyOptions[id]) {
+
+                              if (item.options[1]) {
+                                   let firstOption = item.options[1].value;
+                                   let parsedFirstOptionValue = this.parseNumberFromString(firstOption);
+
+                                   this._selectedMinMeasuredPropertyOptions[id] = parsedFirstOptionValue; 
+                              } else {
+                                   delete this._selectedMinMeasuredPropertyOptions[id];
+                              }
+
+                         } else {
+                              // if also MIN is not set, delete/reset it
+                              delete this._selectedMinMeasuredPropertyOptions[id];
+                         }
+
                     } else {
 
-
-
                          const parsedSelectedValue = this.parseNumberFromString(selectedValue);
+                         
                          if (parsedSelectedValue !== null) {
                               this._selectedMinMeasuredPropertyOptions[id] = parsedSelectedValue;
                               this.addMissingRangeFilter(id, '#' + selectMaxId, 'max'); 
@@ -160,6 +177,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
 
           this._measuredPropertyMaxSelects.forEach(item => {
                item.addEventListener('change', event => {
+
                     const selectedOption = item.options[item.selectedIndex];
                     const selectedValue = selectedOption.value;
                     const fullId = item.id;
@@ -173,14 +191,25 @@ export default class ProductConfiguratorPlugin extends Plugin {
                               option.selected = false;
                          });
 
-                         delete this._selectedMaxMeasuredPropertyOptions[id];
-                         delete this._selectedMinMeasuredPropertyOptions[id];
+                         // if the MAX gets reset
+                         // but MIN is still set to something
+                         // the last MAX option has to be choosen
+                         if (this._selectedMinMeasuredPropertyOptions[id]) {
+                              let lastOption = item.options[item.options.length - 1].value;
+                              let parsedLastOptionValue = this.parseNumberFromString(lastOption);
+
+                              this._selectedMaxMeasuredPropertyOptions[id] = parsedLastOptionValue; 
+                         } else {
+                              // if also MIN is not set, delete/reset it
+                              delete this._selectedMaxMeasuredPropertyOptions[id];
+                         }
 
                     } else {
                          const parsedSelectedValue = this.parseNumberFromString(selectedValue);
+                         
                          if (parsedSelectedValue !== null) {
                               this._selectedMaxMeasuredPropertyOptions[id] = parsedSelectedValue;
-                              this.addMissingRangeFilter(id, '#' + selectMinId, 'max'); 
+                              this.addMissingRangeFilter(id, '#' + selectMinId, 'min'); 
                          }
                     }
                     this.refreshListing();
@@ -325,23 +354,37 @@ export default class ProductConfiguratorPlugin extends Plugin {
      }
 
      addMissingRangeFilter(propertyGroupId, selectdId, type) {
-          
-          const selectEl = DomAccess.querySelector(document, selectdId, false);
 
+          // if the max is choosen, I need every value below, but not above
+          let selectEl = DomAccess.querySelector(document, selectdId, false);
+          let optionValue;
           if (selectEl) {
                          
-               const choosenVal = selectEl.selectedIndex;
+               let choosenVal = selectEl.selectedIndex;
                if (choosenVal === undefined || choosenVal == 0 ) {
-                    const lastOption = selectEl.options[selectEl.options.length - 1];
-                    const lastOptionValue = lastOption.value;
-                    const parsedOptionValue = this.parseNumberFromString(lastOptionValue);
+
+                    // if type 'min' we add the LAST value from the max select
+                    // if type 'max' we add the FIRST value from the min select
+                    if (type == 'min') {
+                         let firstOption = selectEl.options[1];
+                         optionValue = firstOption.value;
+                         
+                      } else {
+                         let lastOption = selectEl.options[selectEl.options.length - 1];
+                         optionValue = lastOption.value;
+                    }
+                    
+                    let parsedOptionValue = this.parseNumberFromString(optionValue);
+
                     
                     if (parsedOptionValue !== null) {
 
-                         if (type == 'max') {
-                              this._selectedMaxMeasuredPropertyOptions[propertyGroupId] = parsedOptionValue;
-                         } else {
+                         // if type 'min' we add the selecteded option to the MIN option array
+                         // if type 'max' we add the selecteded option to the MAX option array
+                         if (type == 'min') {
                               this._selectedMinMeasuredPropertyOptions[propertyGroupId] = parsedOptionValue;
+                         } else {
+                              this._selectedMaxMeasuredPropertyOptions[propertyGroupId] = parsedOptionValue;
                          }
                     }
                }
@@ -407,7 +450,6 @@ export default class ProductConfiguratorPlugin extends Plugin {
           if (this._selectedFastDeliveryOption) {
                allParamsObject.fastDelivery = '1';
           }
-
           this.listing.changeListing(true, { p: 1, ...allParamsObject });
      }      
 
@@ -588,24 +630,42 @@ export default class ProductConfiguratorPlugin extends Plugin {
                const responseObject = JSON.parse(response);
                if (responseObject) {
                     const availableOptionIds = responseObject.availableOptionIds;
-
+                    const that = this;
                     const selectDefaultCategory = responseObject.selectDefaultCategory;
                     const defaultCategoryPropertyId = responseObject.defaultCategoryId;
 
                     if (availableOptionIds && Array.isArray(availableOptionIds)) {
+
                          this._propertySelectsOptionsExceptReset.forEach(option => {
                               if (!availableOptionIds.includes(option.value)) {
+
                                    option.style.display = 'none';
                                    option.selected = false;
                               } else {
                                    option.style.display = 'block'; 
                               }
                          });
+                         
                          this._measuredPropertySelectsOptionsExceptReset.forEach(option => {
+                              
                               if (!availableOptionIds.includes(option.id)) {
+
+                                   if (option.selected) {
+                                   
+                                        let parentSelectId = option.parentNode.id;
+                                        let propertyGroupId = parentSelectId
+                                             .replace('configurator-property-group-', '')
+                                             .replace('-max', '')
+                                             .replace('-min', '');
+                                        
+                                        delete that._selectedMaxMeasuredPropertyOptions[propertyGroupId];
+                                        delete that._selectedMinMeasuredPropertyOptions[propertyGroupId];
+                                   }
+
                                    option.style.display = 'none';
                                    option.selected = false;
                               } else {
+
                                    option.style.display = 'block'; 
                               }
                          });
