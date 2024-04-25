@@ -19,6 +19,18 @@ export default class ProductFinderPlugin extends Plugin {
 
      init() {
           this._client = new HttpClient();
+
+          this.initElements();
+
+          this._registerEvents();
+
+          this._isLoading = true;
+
+          this.fetchAvailableOptions();
+     }
+
+     initElements() {
+
           const blockContainer = DomAccess.querySelector(document, this.options.blockContainerSelector);
           this._finderForm = DomAccess.querySelector(blockContainer, this.options.finderFormSelector);
           this._categoryFields = DomAccess.querySelectorAll(blockContainer, this.options.categoryFieldSelector);
@@ -45,11 +57,6 @@ export default class ProductFinderPlugin extends Plugin {
           }
           this._selectedPropertyOptions = {};
 
-          this._registerEvents();
-
-          this._isLoading = true;
-
-          this.fetchAvailableOptions();
      }
 
      /**
@@ -75,7 +82,7 @@ export default class ProductFinderPlugin extends Plugin {
                     }
                });
           });
-
+          
           this._propertyOptionsGroups.forEach(element => {
                const label = element.querySelector('.property-group-label');
                label.addEventListener('click', () => {
@@ -128,6 +135,7 @@ export default class ProductFinderPlugin extends Plugin {
                let sliderTrack = element.querySelector(".nwgncy-finder-slider-track");
 
                const stepVal = Array.from(element.querySelector(".nwgncy-finder-slider-number").options, option => option.value);
+               
                displayValOne.textContent = stepVal[sliderOne.value];
                displayValTwo.textContent = stepVal[sliderTwo.value];
 
@@ -268,16 +276,48 @@ export default class ProductFinderPlugin extends Plugin {
                window.location.href = targetUrl;
           });
      }
+
      fetchAvailableOptions() {
           var queryString = "";
           var categoryOptionIdEncoded = "";
           if (this._selectedCategoryOptionValue) {
                categoryOptionIdEncoded = encodeURIComponent(this._selectedCategoryOptionValue);
           }
-          if (categoryOptionIdEncoded) {
-               var queryString = `options=${categoryOptionIdEncoded}`;
+
+          const selectPropertyGroups = DomAccess.querySelectorAll(document, '.select-prop-group-id', false);
+          const selectPropertyGroupIds = [];
+          let selectPropertyGroupsQueryString = '';
+          
+          if (selectPropertyGroups) {
+               selectPropertyGroups.forEach(function(select) {
+                    let propertyGroupId = select.getAttribute('data-property-group');
+                    selectPropertyGroupIds.push(propertyGroupId);
+               });
+
+               selectPropertyGroupsQueryString = 'selectPropertyGroups=' + selectPropertyGroupIds.join(',');
+               
           }
 
+          const sliderPropertyGroups = DomAccess.querySelectorAll(document, '.measure-prop-group-id', false);
+          const sliderPropertyGroupIds = [];
+          let sliderPropertyGroupsQueryString = '';
+
+          if (sliderPropertyGroups) {
+               sliderPropertyGroups.forEach(function(slider) {
+                    let propertyGroupId = slider.getAttribute('data-property-group');
+                    sliderPropertyGroupIds.push(propertyGroupId);
+               });
+
+               sliderPropertyGroupsQueryString = 'sliderPropertyGroups=' + sliderPropertyGroupIds.join(',');
+
+          }
+
+
+          if (categoryOptionIdEncoded) {
+               var queryString = `options=${categoryOptionIdEncoded}&${selectPropertyGroupsQueryString}&${sliderPropertyGroupsQueryString}`;
+          }
+         
+          
           const salesChannelBaseUrl = this._finderForm.getAttribute('data-sc-base-url');
           var baseUrl = "";
           if (salesChannelBaseUrl) {
@@ -296,7 +336,31 @@ export default class ProductFinderPlugin extends Plugin {
      availableOptionsHandler(response) {
           try {
                const responseObject = JSON.parse(response);
-               if (responseObject && responseObject.availableOptionIds && Array.isArray(responseObject.availableOptionIds)) {
+
+               if (responseObject) {
+
+                    const sliderTemplate = responseObject.sliderTemplate;
+
+                    
+                    let htmlReplace = '';
+                    sliderTemplate.forEach(function(element) {
+                         let key = Object.keys(element)[0];
+                         let html = element[key];
+                         htmlReplace = htmlReplace + html;
+                    });
+
+                     
+                    const section = DomAccess.querySelector(document, this.options.propertyOptionsGroupsContainerSelector);
+
+                    section.innerHTML = htmlReplace;
+
+                    this.initElements();
+                    this._registerEvents();
+
+                    if (responseObject.availableOptionIds && Array.isArray(responseObject.availableOptionIds)) {
+                         
+                    }
+
                     const availableOptionIds = responseObject.availableOptionIds;
                     this._propertyOptionsGroups.forEach(propertyGroupField => {
                          var availableOptionsCount = 0;
@@ -315,12 +379,17 @@ export default class ProductFinderPlugin extends Plugin {
                               propertyGroupField.style.display = 'flex';
                          }
                     });
+
                     this._minMaxOptionsGroups.forEach(propertyGroupField => {
+
                          var availableOptionsCount = 0;
                          const groupId = propertyGroupField.getAttribute('data-property-group');
                          const propertyGroupFieldOptions = propertyGroupField.querySelectorAll('.nwgncy-finder-slider-number option');
+
                          propertyGroupFieldOptions.forEach(inputElement => {
                               const inputElementId = inputElement.id;
+                              
+                              
                               if (availableOptionIds.includes(inputElementId)) {
                                    availableOptionsCount++;
                               }
@@ -333,6 +402,7 @@ export default class ProductFinderPlugin extends Plugin {
                               propertyGroupField.style.display = 'flex';
                          }
                     });
+
                }
           } catch (error) {
           }
@@ -391,6 +461,13 @@ export default class ProductFinderPlugin extends Plugin {
           const diffToOne = Math.abs(value - sliderOneValue);
           const diffToTwo = Math.abs(value - sliderTwoValue);
           return diffToOne < diffToTwo;
+     }
+
+     prepareGroupIdQuery(propertyGroupsIds, name) {
+          return propertyGroupsIds.map(function(propertyGroup) {
+               return name+'[]=' + encodeURIComponent(propertyGroup);
+          }).join('&');
+
      }
 
      slideOne(element, event, param, dash, sliderTrack, sliderOne, sliderTwo,  sliderOne1, stepVal, displayValTwo) {

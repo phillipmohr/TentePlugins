@@ -14,9 +14,20 @@
         <service id="Nwgncy\ProductFinder\Storefront\Controller\ProductFinderController" public="true">
             <argument type="service" id="product.repository" />
             <argument type="service" id="product_visibility.repository" />
+            <argument type="service" id="Nwgncy\ProductFinder\Service\Property"/>
             <call method="setContainer">
                 <argument type="service" id="service_container"/>
             </call>
         </service>
+            
+        <service id="Nwgncy\ProductFinder\Service\Property" public="true">
+            <argument type="service" id="property_group.repository"/>
+            <argument type="service" id="property_group_option.repository"/>
+            <argument type="service" id="property_group_translation.repository"/>
+        </service>
+
+
+
+
     </services>
 </container>

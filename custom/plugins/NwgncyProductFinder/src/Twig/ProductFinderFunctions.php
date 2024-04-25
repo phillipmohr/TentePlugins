@@ -50,7 +50,6 @@ class ProductFinderFunctions extends AbstractExtension
           }
           return '';
      }
-
      public function getPropertyGroupOptionsByIds(array $propertyGroupOptionIds, SalesChannelContext $salesChannelContext): array
      {
           $context = $salesChannelContext->getContext();
@@ -70,10 +69,19 @@ class ProductFinderFunctions extends AbstractExtension
           return $propertyGroupOptionNames;
      }
 
-     public function getPropertyOptionsByGroupId(String $propertyGroupId, bool $isMeasure, SalesChannelContext $salesChannelContext) {
+     public function getPropertyOptionsByGroupId(String $propertyGroupId, bool $isMeasure, SalesChannelContext $salesChannelContext, $activeLanguageId = false) {
           $context = $salesChannelContext->getContext();
+          $languageId = $context->getSalesChannel()->getLanguageId();
+
+
           $propertyGroupOptionCriteria = new Criteria();
           $propertyGroupOptionCriteria->addFilter(new EqualsFilter('groupId', $propertyGroupId));
+          $propertyGroupOptionCriteria->addAssociation('translations');
+
+          if ($activeLanguageId) {
+               $propertyGroupOptionCriteria->addFilter(new EqualsFilter('translations.languageId', $activeLanguageId));
+          }
+          
           $propertyGroupPropertiesResult = $this->propertyGroupOptionRepository->search($propertyGroupOptionCriteria, $context);
           $propertyGroupPropertiesEntities = $propertyGroupPropertiesResult->getEntities();
           $propertyGroupOptions = [];

@@ -1,5 +1,19 @@
 {% block sw_cms_element_nwgncy_product_finder %}
     <form id="product-finder-form" name="product-finder" data-available-options-route="{{ path('storefront.product-finder.available-options.get') }}" data-sc-base-url="{{ app.request.attributes.get('sw-sales-channel-base-url') }}">
+        
+            {% if element.config.propertyGroups.value %}    
+                {% for propertyGroupId in element.config.propertyGroups.value %}
+                    <div style="display:none;" class="select-prop-group-id" data-property-group="{{ propertyGroupId }}" ></div>
+                {% endfor %}
+            {% endif %}
+        
+            {% if element.config.measuredPropertyGroups.value %}    
+            
+                {% for propertyGroupId in element.config.measuredPropertyGroups.value %}
+                    <div style="display:none;"  class="measure-prop-group-id" data-property-group="{{ propertyGroupId }}" ></div>
+                {% endfor %}
+            {% endif %}
+        
         <div class="finder-row">
             <div class="section categories">
             {% set categoryOptionsIds = element.config.categoryPropertyGroupOptions.value ?? [] %}
@@ -20,12 +34,15 @@
                 </div>
                 <div class="section property-options">
                 {% if element.config.propertyGroups.value %}    
+
+
+
                     {% for propertyGroupId in element.config.propertyGroups.value %}
                         {% set name = getPropertyGroupName(propertyGroupId, context) %}
                         {% set id = 'product-finder-property-group-' ~ propertyGroupId %}
 
                         {% set propertyGroupOptions = getPropertyOptionsByGroupId(propertyGroupId, true, context) %}
-                        <div class="field js-product-finder-property-option-group-field" data-property-group="{{ propertyGroupId }}">
+                        <div class="field js-product-finder-property-option-group-field" data-property-group="{{ propertyGroupId }}" data-element-type="select">
                             <label class="property-group-label" for="{{ id }}">
                                 <span>
                                     <span class='js-property-group-label-name' data-property-group="{{ propertyGroupId }}">{{ name }}</span> {% sw_icon 'arrow-medium-down' style { 'size': 'xs', 'pack': 'solid'} %}
@@ -47,6 +64,7 @@
                 {% endif %}
                 {# other property groups with options #}
                 {% if element.config.measuredPropertyGroups.value %}    
+                
                     {% for propertyGroupId in element.config.measuredPropertyGroups.value %}
                         {% set name = getPropertyGroupName(propertyGroupId, context) %}
                         {% set id = 'product-finder-property-group-' ~ propertyGroupId %}
@@ -54,7 +72,7 @@
                         {% set maxId = id ~ '-max' %}
                         {% set propertyGroupOptions = getPropertyOptionsByGroupId(propertyGroupId, true, context) %}
                         {% set propertyGroupUnit = getUnitByGroupId(propertyGroupId, context) %}
-                        <div class="field js-product-finder-property-option-group-field js-product-finder-property-option-group-slider-field"  data-property-group="{{ propertyGroupId }}">
+                        <div class="field js-product-finder-property-option-group-field js-product-finder-property-option-group-slider-field"  data-property-group="{{ propertyGroupId }}" data-element-type="slider">
                             <label class="property-group-label" for="{{ id }}">
                                 <span>{{ name }} {% sw_icon 'arrow-medium-down' style { 'size': 'xs', 'pack': 'solid'} %}
                                 </span>
@@ -81,6 +99,7 @@
                                         </div>
 
                                         <datalist class="nwgncy-finder-slider-number">
+                                        
                                             {% for option in propertyGroupOptions %}
                                                 <option id="{{ option.id }}" value="{{ option.parsedValue }}"></option> 
                                             {% endfor %}
