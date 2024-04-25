@@ -20,6 +20,22 @@ export default class ProductFinderPlugin extends Plugin {
      init() {
           this._client = new HttpClient();
 
+          this._selectedMinMeasuredPropertyOptions = {};
+          this._selectedMaxMeasuredPropertyOptions = {};
+          this._selectedPropertyIds = {};
+          this._selectedPropertyOptions = {};
+          this._defaultSelectOptionIds = [];
+          this._defaultSelectOptionIdsQuery = '';
+          this._propertyInputOptionIds = DomAccess.querySelectorAll(document, this.options.propertyOptionSelector, false);
+
+          if (this._propertyInputOptionIds) {
+               
+               this._propertyInputOptionIds.forEach((element) => {
+                    this._defaultSelectOptionIds.push(element.value);
+               });
+               this._defaultSelectOptionIdsQuery = '&defaultPropertyIds=' + this._defaultSelectOptionIds.join(',');
+          }
+          
           this.initElements();
 
           this._registerEvents();
@@ -44,8 +60,6 @@ export default class ProductFinderPlugin extends Plugin {
           this._findButton = DomAccess.querySelector(blockContainer, this.options.findButton);
           this._minMaxOptionsGroups = DomAccess.querySelectorAll(blockContainer, this.options.minMaxOptionsGroupsFieldSelector);
 
-          this._selectedMinMeasuredPropertyOptions = {};
-          this._selectedMaxMeasuredPropertyOptions = {};
 
           const defaultActiveCategoryField = DomAccess.querySelector(blockContainer, this.options.activeCategoryFieldSelector);
           this._selectedCategoryOptionValue = null;
@@ -55,7 +69,7 @@ export default class ProductFinderPlugin extends Plugin {
                     this._selectedCategoryOptionValue = defaultActiveCategoryFieldInput.value;
                }
           }
-          this._selectedPropertyOptions = {};
+         
 
      }
 
@@ -77,8 +91,11 @@ export default class ProductFinderPlugin extends Plugin {
                          this._selectedCategoryOption = element;
                          this._selectedCategoryOptionId = clickedValue;
                          this._selectedCategoryOptionValue = clickedValue;
+
+                         this._selectedPropertyOptions = {};
                          this.startLoading();
                          this.fetchAvailableOptions();
+                         
                     }
                });
           });
@@ -101,6 +118,7 @@ export default class ProductFinderPlugin extends Plugin {
                this._propertyOptions.forEach(element => {
                     const input = element.querySelector('input');
                     input.addEventListener('change', event => {
+
                          if (input.checked) {
                               const selectedValue = input.value;
                               const propertyGroupId = input.name;
@@ -115,6 +133,8 @@ export default class ProductFinderPlugin extends Plugin {
                               if (parentPropertyContainer) {
                                    parentPropertyContainer.classList.remove('open');
                               }
+                              this.startLoading();
+                              this.fetchAvailableOptions();
                          }
                     });
                });
@@ -231,6 +251,8 @@ export default class ProductFinderPlugin extends Plugin {
           this._findButton.addEventListener('click', event => {
                var queryString = "";
                const allPropertySelectValues = Object.values(this._selectedPropertyOptions).flat();
+
+               
                if (this._selectedCategoryOptionValue) {
                     allPropertySelectValues.push(this._selectedCategoryOptionValue);
                }
@@ -238,6 +260,7 @@ export default class ProductFinderPlugin extends Plugin {
                if (delimitedPropertiesString) {
                     queryString = 'properties=' + encodeURIComponent(delimitedPropertiesString);
                }
+
 
                var minMaxParams = [];
 
@@ -311,13 +334,24 @@ export default class ProductFinderPlugin extends Plugin {
                sliderPropertyGroupsQueryString = 'sliderPropertyGroups=' + sliderPropertyGroupIds.join(',');
 
           }
-
+        
 
           if (categoryOptionIdEncoded) {
                var queryString = `options=${categoryOptionIdEncoded}&${selectPropertyGroupsQueryString}&${sliderPropertyGroupsQueryString}`;
           }
-         
+          let selectedPropertiesQueryString = '';
           
+          if (this._selectedPropertyOptions) {
+               const selectProperties = Object.values(this._selectedPropertyOptions).flat();
+               selectedPropertiesQueryString += '&selectedProperties=' + selectProperties.join(',');
+               queryString = queryString + selectedPropertiesQueryString;
+
+          }
+
+          if (this._defaultSelectOptionIdsQuery != '') {
+               queryString += this._defaultSelectOptionIdsQuery;
+          }
+
           const salesChannelBaseUrl = this._finderForm.getAttribute('data-sc-base-url');
           var baseUrl = "";
           if (salesChannelBaseUrl) {

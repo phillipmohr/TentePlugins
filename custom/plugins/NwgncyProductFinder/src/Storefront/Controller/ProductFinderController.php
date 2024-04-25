@@ -48,6 +48,8 @@ class ProductFinderController extends StorefrontController
         $optionsIdsQueryParam = $request->get('options');
         $propertyGroupsParamSelect = $request->get('selectPropertyGroups', false);
         $propertyGroupsParamSlider = $request->get('sliderPropertyGroups', false);
+        $selectedPropertiesParam = $request->get('selectedProperties', false);
+        $defaultPropertyIds = $request->get('defaultPropertyIds', false);
         
         $optionIdsArray = [];
         if ($optionsIdsQueryParam) {
@@ -71,6 +73,19 @@ class ProductFinderController extends StorefrontController
         foreach ($optionIdsArray as $optionId) {
             $criteria->addFilter(new ContainsFilter('propertyIds', $optionId));
         }
+        $selectedProperties = false;
+        if ($selectedPropertiesParam) {
+            $selectedProperties = explode(',',$selectedPropertiesParam);
+            foreach ($selectedProperties as $optionId) {
+                $criteria->addFilter(new ContainsFilter('propertyIds', $optionId));
+            }
+        }
+
+        $defaultPropertyOptionIds = [];
+        if ($defaultPropertyIds) {
+            $defaultPropertyOptionIds = explode(',',$defaultPropertyIds);
+        }
+
 
         $products = $this->productRepository->search($criteria, $context)->getEntities();
  
@@ -102,7 +117,7 @@ class ProductFinderController extends StorefrontController
     
                 
                 foreach ($groups as $propertyGroup) {
-                    $template[] = $this->prepareSelect($propertyGroup, $availableOptionIds);
+                    $template[] = $this->prepareSelect($propertyGroup, $availableOptionIds, $selectedProperties, $defaultPropertyOptionIds);
 
                     
                 }
@@ -212,26 +227,60 @@ class ProductFinderController extends StorefrontController
         return [$groupId => $html];
     }
 
-    public function prepareSelect($propertyGroup, $availableOptions)
+    public function prepareSelect($propertyGroup, $availableOptions, $selectedProperties, $defaultPropertyOptionIds)
     {
-       
+        // $filePath = '/var/www/html/tentecom/public/2prepareSelect.html';
+
+        // $fsObject = new Filesystem();
+        // $fsObject->touch($filePath);
+        // $fsObject->chmod($filePath, 0777);
+        
+
         $options = $propertyGroup->getOptions();
         $optionsIds = $options->getIds();
         $filteredIds = array_intersect($optionsIds, $availableOptions);
-        
+
+        $filteredIds = array_merge($filteredIds, $defaultPropertyOptionIds);
+
+        // $fsObject->appendToFile($filePath, @\Kint::dump($filteredIds));
         $html = '';
 
         $groupName = $propertyGroup->getName();
         $groupId = $propertyGroup->getId();
-
-
 
         $divGroupId = 'product-finder-property-group-' . $groupId;
 
         $display = '';
         $optionElements = [];
         if (empty($filteredIds)) {
-            $display = 'style="display: none;"';
+            return [$groupId => $html];
+        }
+
+        $filteredOptions = $options->getList($filteredIds);
+        $propertyGroupOptions = $filteredOptions->getElements();
+        $optionElements = $this->prepareOptions($propertyGroupOptions);
+
+        if ($selectedProperties) {
+            
+            foreach ($filteredOptions as $option) {
+                
+                $filteredOptionId = $option->getId();
+                if (in_array($filteredOptionId, $selectedProperties)) {
+                    $optionName = $option->getTranslated('name');
+
+                    if ($optionName) {
+                        $groupName = $optionName['name'];
+                    } else {
+                        $groupName = $option->getName();
+                    }
+
+
+
+                }
+
+            }
+
+
         }
 
         $html .= '<div class="field js-product-finder-property-option-group-field"  data-property-group="' . $groupId . '" ' . $display . ' data-element-type="select">';
@@ -242,11 +291,10 @@ class ProductFinderController extends StorefrontController
             $html .= '</label>';
                 $html .= '<div class="dropdown-content">';
                     $html .= '<div class="options-list">';
-                    if (!empty($filteredIds)) {
 
-                        $filteredOptions = $options->getList($filteredIds);
-                        $propertyGroupOptions = $filteredOptions->getElements();
-                        $optionElements = $this->prepareOptions($propertyGroupOptions);
+                    // if (!empty($filteredIds)) {
+
+
                         foreach ($optionElements as $optionElement) {
                             $optionDomId = 'finder-group-option-' . $optionElement['id'];
      
@@ -256,7 +304,7 @@ class ProductFinderController extends StorefrontController
                             $html .= '</div>';
 
                         }
-                    }
+                    // }
                     // $html .= '</div>';
                 $html .= '</div>';
             $html .= '</div>';
