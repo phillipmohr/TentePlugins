@@ -10,10 +10,10 @@ export default class NwgncyLoginRedirectPlugin extends Plugin {
         if (window.redirectData) {
 
             this.storage = CookieStorageHelper;
-
-            if (!this._isLoginPage() && !this._isAccountHomePage()) {
+            
+            if (this._isLoginPage() || this._isRegisterAccountPage()) {
                 this._setRedirectDataToForm();
-            } else {
+            } else if (!this._isAccountHomePage() && !this._isLogoutPage()) {
                 this._saveCurrentRoute();
             }
         }
@@ -39,7 +39,8 @@ export default class NwgncyLoginRedirectPlugin extends Plugin {
         }
 
         currentUrlData = JSON.parse(currentUrlData);
-
+        console.log(currentUrlData);
+        
         const redirectParamInput = DomAccess.querySelectorAll(document, 'input[name="redirectParameters"]', false);
         const redirectToInput = DomAccess.querySelectorAll(document, 'input[name="redirectTo"]', false);
         
@@ -67,10 +68,18 @@ export default class NwgncyLoginRedirectPlugin extends Plugin {
     }
 
     _isLoginPage() {
-        return window.redirectData['currentUrl'] !== 'frontend.account.login.page';
+        return window.redirectData['currentUrl'] === 'frontend.account.login.page';
+    }
+
+    _isLogoutPage() {
+        return window.redirectData['currentUrl'] === 'frontend.account.logout.page';
     }
 
     _isAccountHomePage() {
-        return window.redirectData['currentUrl'] !== 'frontend.account.home.page';
+        return window.redirectData['currentUrl'] === 'frontend.account.home.page';
+    }
+
+    _isRegisterAccountPage() {
+        return window.redirectData['currentUrl'] === 'frontend.account.register.page';
     }
 }

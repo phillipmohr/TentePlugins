@@ -2,7 +2,7 @@
     "name": "nwgncy-login-redirect/nwgncy-login-redirect",
     "description": "Redirect customer to previous page after login",
     "type": "shopware-platform-plugin",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "license": "MIT",
     "require": {
         "shopware/core": "6.5.*"
