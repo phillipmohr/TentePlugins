@@ -1,0 +1,7 @@
+{
+  "nwgncy-login-redirect": {
+    "cookieName": "Umleitung nach Login",
+    "cookieDescription": "Wir speichern besuchte Seiten, um nach dem Login wieder auf die Seite umzuleiten, von der Sie kamen",
+    "cookieHint": "Bitte akzeptieren Sie das Cookie um die gewünschte Funktion zu nutzen."
+  }
+}

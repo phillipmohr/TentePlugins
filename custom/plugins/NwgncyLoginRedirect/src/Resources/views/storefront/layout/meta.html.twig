@@ -1,0 +1,23 @@
+{% sw_extends '@Storefront/storefront/layout/meta.html.twig' %}
+
+{% block layout_head_javascript_router %}
+
+    {{ parent() }}
+
+    {% set redirectParams = {} %}
+
+    {% for key, value in app.request.attributes.get('_route_params') %}
+
+        {% if key != '_httpCache' and  key != '_noStore' %}
+            {% set redirectParams = redirectParams|merge({ (key): value }) %}
+        {% endif %}
+        
+    {% endfor %}
+
+    <script>
+        window.redirectData = [];
+        window.redirectData['currentUrl'] = '{{ app.request.attributes.get('_route') }}'; 
+        window.redirectData['currentUrlParams'] = {{ redirectParams|json_encode|raw }};
+    </script>
+
+{% endblock %}

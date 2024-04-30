@@ -1,0 +1,7 @@
+{
+    "nwgncy-login-redirect": {
+      "cookieName": "Redirect after login",
+      "cookieDescription": "We save visited pages in order to redirect you back to the page you came from after you log in",
+      "cookieHint": "Please accept the cookie to use the desired function."
+    }
+  }
