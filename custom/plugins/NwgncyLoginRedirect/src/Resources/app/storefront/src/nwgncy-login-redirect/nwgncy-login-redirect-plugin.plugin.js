@@ -1,6 +1,7 @@
 import Plugin from 'src/plugin-system/plugin.class';
-import Storage from 'src/helper/storage/storage.helper';
+// import Storage from 'src/helper/storage/storage.helper';
 import DomAccess from 'src/helper/dom-access.helper';
+import CookieStorageHelper from 'src/helper/storage/cookie-storage.helper';
 
 export default class NwgncyLoginRedirectPlugin extends Plugin {
 
@@ -8,7 +9,7 @@ export default class NwgncyLoginRedirectPlugin extends Plugin {
         
         if (window.redirectData) {
 
-            this.storage = Storage;
+            this.storage = CookieStorageHelper;
 
             if (!this._isLoginPage() && !this._isAccountHomePage()) {
                 this._setRedirectDataToForm();
