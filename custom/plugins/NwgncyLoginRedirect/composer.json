@@ -1,8 +1,8 @@
 {
     "name": "nwgncy-login-redirect/nwgncy-login-redirect",
-    "description": "Skeleton plugin",
+    "description": "Redirect customer to previous page after login",
     "type": "shopware-platform-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "require": {
         "shopware/core": "6.5.*"
@@ -10,18 +10,13 @@
     "extra": {
         "shopware-plugin-class": "NwgncyLoginRedirect\\NwgncyLoginRedirect",
         "label": {
-            "de-DE": "Skeleton plugin",
-            "en-GB": "Skeleton plugin"
+            "de-DE": "Redirect customer to previous page after login",
+            "en-GB": "Redirect customer to previous page after login"
         }
     },
     "autoload": {
         "psr-4": {
             "NwgncyLoginRedirect\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "NwgncyLoginRedirect\\Tests\\": "tests/"
         }
     }
 }
