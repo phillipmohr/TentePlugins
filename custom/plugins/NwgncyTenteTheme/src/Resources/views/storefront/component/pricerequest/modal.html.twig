@@ -270,7 +270,11 @@
                <div class="custom-control custom-checkbox nbpr-checkbox">
                     <input type="checkbox" class="custom-control-input" id="priceOnRequestCheck1" required>
                     <label class="custom-control-label"
-                              for="priceOnRequestCheck1">{{ 'nimbits-pricerequests.popup.dataprivacytext'|trans|raw }}{{ 'nimbits-pricerequests.popup.required'|trans }}</label>
+                              for="priceOnRequestCheck1">
+                                {{ "general.privacyNoticeTextShort"|trans({
+                                                                '%privacyUrl%': seoUrl('frontend.navigation.page', { navigationId: '018ad749433076b4836e9caff4368800' })
+                                                            })|raw }}
+                              {{ 'nimbits-pricerequests.popup.required'|trans }}</label>
                </div>
 
                 <div class="custom-control custom-checkbox nbpr-checkbox">

@@ -4,7 +4,8 @@
         "contactUsLink": "/kontakt",
         "privacyNoticeText": "Durch die Anmeldung unseres Newsletters stimmen Sie unseren <a data-ajax-modal=\"true\" data-url=\"%privacyUrl%\" href=\"%privacyUrl%\" title=\"Datenschutzbestimmungen\">Datenschutzbestimmungen</a> sowie unseren <a data-ajax-modal=\"true\" data-url=\"%tosUrl%\" href=\"%tosUrl%\" title=\"AGB\">AGBs</a> zu.",
         "categories": "Navigation",
-        "loginRegister": "Login / Registrieren"
+        "loginRegister": "Login / Registrieren",
+        "privacyNoticeTextShort": "Ich habe die <a href=\"%privacyUrl%\" target=\"_blank\">Datenschutzerklärung</a> gelesen, verstanden und stimme zu."
     },
     "topBar": {
         "location": "Location"
