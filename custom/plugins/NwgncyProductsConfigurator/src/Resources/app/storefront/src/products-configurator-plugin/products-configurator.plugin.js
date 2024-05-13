@@ -31,8 +31,9 @@ export default class ProductConfiguratorPlugin extends Plugin {
           searchInputSelector: '.js-configurator-search-input',
           searchButtonSelector: '.js-configurator-search-button',
           configuratorFormSelector: '#configurator-form',
+          propertyGroupIdsListSelector: '#propertyGroupIds',
      };
- 
+
      init() {
           this._client = new HttpClient();
           const parentFilterPanelElement = DomAccess.querySelector(document, this.options.parentFilterPanelSelector);
@@ -62,6 +63,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._selectedPropertyOptions = {};
           this._selectedMinMeasuredPropertyOptions = {};
           this._selectedMaxMeasuredPropertyOptions = {};
+          this._allPropertyGroupIds = [];
           this._selectedPropertyCheckboxOptions = [];
           this._selectedCategoryOption = null;
           this._selectedCadOption = null;
@@ -95,14 +97,16 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._searchInput = DomAccess.querySelector(this._contentContainer, this.options.searchInputSelector);
           this._searchButton = DomAccess.querySelector(this._contentContainer, this.options.searchButtonSelector);
           this._configuratorForm = DomAccess.querySelector(this._contentContainer, this.options.configuratorFormSelector);
+          this._propertyGroupIdsList = DomAccess.querySelector(this._contentContainer, this.options.propertyGroupIdsListSelector);
+
+          this._allPropertyGroupIds = JSON.parse(this._propertyGroupIdsList.dataset.propertyGroupIdsList);
+          
           this._registerEvents();
 
           if (this.listing?._urlFilterParams) {
                this._initUrlSelectedProperties(this.listing._urlFilterParams);
           }
-          this.refreshListing();
           this.fetchAvailableOptions();
-
      }
 
      /**
@@ -119,10 +123,24 @@ export default class ProductConfiguratorPlugin extends Plugin {
                     if (event.target.checked) {
                          const value = event.target.value;
                          this._selectedCategoryOption = value;
+
+                         this._selectedMinMeasuredPropertyOptions = {};
+                         this._selectedMaxMeasuredPropertyOptions = {};
+                         this._selectedPropertyOptions = {};
+                         
+                         this._selectInputs.forEach(select => {
+                              select.selectedIndex = 0;
+                         });
+                         if (this._propertyCheckboxes !== false) {
+                              this._propertyCheckboxes.forEach(checkbox => {
+                                   checkbox.checked = false;
+                              });
+                         }
+
                          this.refreshListing();
                          this.fetchAvailableOptions();
                     }
-               });
+               }); 
           });
 
           this._measuredPropertyMinSelects.forEach(item => {
@@ -133,26 +151,32 @@ export default class ProductConfiguratorPlugin extends Plugin {
                     const id = fullId.replace('configurator-property-group-', '').replace('-min', '');
 
                     const selectMaxId = fullId.replace('-min', '-max');
-
+                    console.log(selectedOption.classList.contains('reset'));
+                    
                     if (selectedOption.classList.contains('reset')) {
 
                          
                          item.querySelectorAll('option:not(.reset)').forEach(function(option) {
                               option.selected = false;
                          });
-
+                         console.log(this._selectedMaxMeasuredPropertyOptions[id]);
                          // if the MIN gets reset
                          // but MAX is still set to something
                          // the minimum MIN has to be choosen
                          if (this._selectedMaxMeasuredPropertyOptions[id]) {
+                              const maxSelect = DomAccess.querySelector(this._contentContainer,'#'+selectMaxId);
+                              const selectedIndex = maxSelect.selectedIndex;
+                              // find the selected MAX property.
+                              // if its selected value is reset, remove it from _selectedMaxMeasuredPropertyOptions
 
-                              if (item.options[1]) {
+
+                              if (item.options[1] && selectedIndex !== 0 && selectedIndex !== undefined) {
                                    let firstOption = item.options[1].value;
                                    let parsedFirstOptionValue = this.parseNumberFromString(firstOption);
-
                                    this._selectedMinMeasuredPropertyOptions[id] = parsedFirstOptionValue; 
                               } else {
                                    delete this._selectedMinMeasuredPropertyOptions[id];
+                                   delete this._selectedMaxMeasuredPropertyOptions[id];
                               }
 
                          } else {
@@ -195,14 +219,29 @@ export default class ProductConfiguratorPlugin extends Plugin {
                          // but MIN is still set to something
                          // the last MAX option has to be choosen
                          if (this._selectedMinMeasuredPropertyOptions[id]) {
-                              let lastOption = item.options[item.options.length - 1].value;
-                              let parsedLastOptionValue = this.parseNumberFromString(lastOption);
+                              // let lastOption = item.options[item.options.length - 1].value;
+                              // let parsedLastOptionValue = this.parseNumberFromString(lastOption);
 
-                              this._selectedMaxMeasuredPropertyOptions[id] = parsedLastOptionValue; 
+                              // this._selectedMaxMeasuredPropertyOptions[id] = parsedLastOptionValue; 
+                              const minSelect = DomAccess.querySelector(this._contentContainer,'#'+selectMinId);
+                              const selectedIndex = minSelect.selectedIndex;
+                              // find the selected MAX property.
+                              // if its selected value is reset, remove it from _selectedMaxMeasuredPropertyOptions
+                              if (selectedIndex !== 0 && selectedIndex !== undefined) {
+                                   let lastOption = item.options[item.options.length - 1].value;
+                                   let parsedLastOptionValue = this.parseNumberFromString(lastOption);
+     
+                                   this._selectedMaxMeasuredPropertyOptions[id] = parsedLastOptionValue; 
+                              } else {
+                                   delete this._selectedMinMeasuredPropertyOptions[id];
+                                   delete this._selectedMaxMeasuredPropertyOptions[id];
+                              }
+
                          } else {
                               // if also MIN is not set, delete/reset it
                               delete this._selectedMaxMeasuredPropertyOptions[id];
                          }
+                         
 
                     } else {
                          const parsedSelectedValue = this.parseNumberFromString(selectedValue);
@@ -283,8 +322,6 @@ export default class ProductConfiguratorPlugin extends Plugin {
                });
           });
 
-
-
           
           this._configuratorForm.addEventListener('submit', event => {
                event.preventDefault();
@@ -353,29 +390,39 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._buildRequest(pushHistory, overrideParams);
      }
 
-     addMissingRangeFilter(propertyGroupId, selectdId, type) {
+     addMissingRangeFilter(propertyGroupId, selectedId, type) {
 
           // if the max is choosen, I need every value below, but not above
-          let selectEl = DomAccess.querySelector(document, selectdId, false);
-          let optionValue;
+          let selectEl = DomAccess.querySelector(document, selectedId, false);
+
           if (selectEl) {
-                         
+
+               const filteredOptions = [];
+                    selectEl.querySelectorAll('option').forEach(option => {
+                        
+                    if (option.style.display === 'block' || option.style.display === undefined  && !option.classList.contains('reset')) {
+                         filteredOptions.push(option);
+                    }
+               });
+               let optionValue;
+
                let choosenVal = selectEl.selectedIndex;
                if (choosenVal === undefined || choosenVal == 0 ) {
 
                     // if type 'min' we add the LAST value from the max select
                     // if type 'max' we add the FIRST value from the min select
                     if (type == 'min') {
-                         let firstOption = selectEl.options[1];
+                         // let firstOption = selectEl.options[1];
+                         let firstOption = filteredOptions[0];
                          optionValue = firstOption.value;
                          
                       } else {
-                         let lastOption = selectEl.options[selectEl.options.length - 1];
+                         // let lastOption = selectEl.options[selectEl.options.length - 1];
+                         let lastOption = filteredOptions[filteredOptions.length - 1];
                          optionValue = lastOption.value;
                     }
                     
                     let parsedOptionValue = this.parseNumberFromString(optionValue);
-
                     
                     if (parsedOptionValue !== null) {
 
@@ -481,7 +528,6 @@ export default class ProductConfiguratorPlugin extends Plugin {
                                    this._selectedPropertyCheckboxOptions.push(value);
                               }
                          });
-
                     }
 
                     const categoryOptions = this._categories;
@@ -556,7 +602,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           }
      }
 
-     fetchAvailableOptions() {
+     fetchAvailableOptionsOld() { 
           const minValuesObj = {};
           const maxValuesObj = {};
 
@@ -623,9 +669,100 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this.startLoading();
           this._client.get(url, this.availableOptionsHandler.bind(this));
      }
+     fetchAvailableOptions() {
+          const minPropertiesObject = {};
+          const maxPropertiesObject = {};
+          const allParamsObject = {};
+
+          const allPropertySelectValues = Object.values(this._selectedPropertyOptions).flat();
+          const allPropertyValuesSet = new Set(allPropertySelectValues.concat(this._selectedPropertyCheckboxOptions));
+          
+          if (this._selectedCategoryOption !== null) {
+               allPropertyValuesSet.add(this._selectedCategoryOption);
+          }
+
+          const allPropertyValues = Array.from(allPropertyValuesSet);
+
+          const delimitedPropertiesString = allPropertyValues.filter(value => value !== '').join('|');
+      
+          if (delimitedPropertiesString) {
+              allParamsObject.properties = delimitedPropertiesString;
+          }
+          
+          if (this._selectedMinMeasuredPropertyOptions) {
+               const minMeasuredOptionsParams = Object.entries(this._selectedMinMeasuredPropertyOptions)
+                    .map(([id, value]) => [`min-property[${id}]`, value]);
+          
+               Object.assign(minPropertiesObject, Object.fromEntries(minMeasuredOptionsParams));
+          }
+      
+          if (this._selectedMaxMeasuredPropertyOptions) {  
+               const maxMeasuredOptionsParams = Object.entries(this._selectedMaxMeasuredPropertyOptions)
+                    .map(([id, value]) => [`max-property[${id}]`, value]);
+          
+               Object.assign(maxPropertiesObject, Object.fromEntries(maxMeasuredOptionsParams));
+          }
+
+          if (this._searchQuery) {
+               const searchQueryObject = {
+                    search: this._searchQuery
+               }
+               Object.assign(allParamsObject, searchQueryObject);
+          }
+          
+          Object.assign(allParamsObject, minPropertiesObject, maxPropertiesObject);
+
+          if (allParamsObject.properties === undefined) {
+               allParamsObject.properties = '018a6a875d9b77a88cc7edab549b33ce';
+          }
+
+          if (this._fetchDefaultCategory) {
+               allParamsObject.properties = allParamsObject.properties+'|018a6a875d9b77a88cc7edab549b33ce';
+               this._fetchDefaultCategory = false;
+          }
+
+          if (this._selectedCadOption) {
+               allParamsObject.hasCadFile = '1';
+          }
+
+          if (this._selectedFastDeliveryOption) {
+               allParamsObject.fastDelivery = '1';
+          }
+          allParamsObject.confiGroupIds = this._allPropertyGroupIds;
+
+          let query = new URLSearchParams(allParamsObject);
+          
+          let queryString = query.toString();
+
+          const salesChannelBaseUrl = this._configuratorForm.getAttribute('data-sc-base-url');
+          var baseUrl = "";
+          if (salesChannelBaseUrl) {
+               baseUrl = salesChannelBaseUrl;
+          }
+          const formAction = this._configuratorForm.getAttribute('action');
+          var controllerUrl = "/";
+          if (formAction) {
+               controllerUrl = formAction;
+          }
+          const url = `${baseUrl}${controllerUrl}?${queryString}`;
+
+          let currentTime = new Date();
+          let minutes = currentTime.getMinutes();
+          let seconds = currentTime.getSeconds();
+          let milliseconds = currentTime.getMilliseconds();
+          
+          this.startLoading();
+          this._client.get(url, this.availableOptionsHandler.bind(this));
+
+          // this.listing.changeListing(true, { p: 1, ...allParamsObject });
+     }
 
      availableOptionsHandler(response) {
-
+          let currentTime = new Date();
+          let minutes = currentTime.getMinutes();
+          let seconds = currentTime.getSeconds();
+          let milliseconds = currentTime.getMilliseconds();
+          
           try {
                const responseObject = JSON.parse(response);
                if (responseObject) {
@@ -681,18 +818,55 @@ export default class ProductConfiguratorPlugin extends Plugin {
                          });
 
                          this.toggleMeasuredSelectsVisibility();
-
+                           
                          if (selectDefaultCategory == true) {
                               this._fetchDefaultCategory = true;
                               this._defaultCategoryPropertyId = defaultCategoryPropertyId;
-                              this.refreshListing();
                          }
                     }
                }
           } catch (error) {
           }
+          currentTime = new Date();
+          minutes = currentTime.getMinutes();
+          seconds = currentTime.getSeconds();
+          milliseconds = currentTime.getMilliseconds();
+          
           this.stopLoading();
      }
+     _buildRequest(pushHistory = true, overrideParams = {}) {
+          const mapped = this._mapFilters(filters);
+  
+          Object.keys(this.options.params).forEach((key) => {
+               mapped[key] = this.options.params[key];
+          });
+
+          Object.entries(overrideParams).forEach(([paramKey, paramValue]) => {
+              mapped[paramKey] = paramValue;
+          });
+  
+          return querystring.stringify(mapped);
+     }
+
+     _mapFilters(filters) {
+          const mapped = {};
+          Object.keys(filters).forEach((key) => {
+              let value = filters[key];
+  
+              if (Array.isArray(value)) {
+                  value = value.join('|');
+              }
+  
+              const string = `${value}`;
+              if (string.length) {
+                  mapped[key] = value;
+              }
+          });
+  
+          return mapped;
+      }
+
+
      startLoading() {
           this._configuratorForm.style.opacity = 0;
           this._configuratorForm.style.pointerEvents = 'none';
@@ -704,7 +878,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
                this._configuratorForm.style.opacity = 1;
                this._configuratorForm.style.pointerEvents = 'unset';
                this._loaderContainer.style.opacity = 0;
-          }, 200);
+          }, 100);
      }
 
      parseNumberFromString(input) {
@@ -728,12 +902,30 @@ export default class ProductConfiguratorPlugin extends Plugin {
      }
      
      toggleMeasuredSelectsVisibility() {
+
+          let that = this;
           this._measuredPropertySelects.forEach(select => {
                select.parentNode.parentNode.style.display = Array.from(select.options).filter(option => !option.classList.contains("reset"))
                .every(option => option.style.display == 'none') ? 'none' : 'block';
+               
+               let fieldParent = select.closest('.field');
+               if (fieldParent.style.display == 'none') {
+                    let selectId = select.id;
+                    let propertyGroupId = selectId
+                    .replace('configurator-property-group-', '')
+                    .replace('-max', '')
+                    .replace('-min', '');
+
+                    delete that._selectedMaxMeasuredPropertyOptions[propertyGroupId];
+                    delete that._selectedMinMeasuredPropertyOptions[propertyGroupId];
+
+               }
+
           });
           const measuredFields = this._measuredPropertySelectContainer.querySelectorAll('.field');
           this._measuredPropertySelectContainer.style.display =  Array.from(measuredFields).every(field => field.style.display == 'none') ? 'none' : 'flex';
+
+
      }
 
      _searchHandler() {

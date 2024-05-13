@@ -16,7 +16,11 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\ContainsFilter;
 use Symfony\Component\Filesystem\Filesystem;
 use Nwgncy\ProductFinder\Service\Property;
 use Nwgncy\ProductFinder\Utils\CommonFunctions;
-
+use Doctrine\DBAL\Connection;
+use Shopware\Core\Framework\Uuid\Uuid;
+use Shopware\Core\Framework\DataAbstractionLayer\Doctrine\FetchModeHelper;
+use Shopware\Core\Framework\DataAbstractionLayer\Dbal\QueryBuilder;
+use Doctrine\DBAL\ArrayParameterType;
 /**
  * @Route(defaults={"_routeScope"={"storefront"}})
 */
@@ -28,11 +32,15 @@ class ProductFinderController extends StorefrontController
     
     private Property $property;
 
+    private Connection $connection;
+    
     public function __construct(
+        Connection $connection,
         EntityRepository $productRepository,
         EntityRepository $productVisibilityRepository,
         Property $property,
     ) {
+        $this->connection = $connection;
         $this->productRepository = $productRepository;
         $this->productVisibilityRepository = $productVisibilityRepository;
         $this->property = $property;
@@ -43,150 +51,394 @@ class ProductFinderController extends StorefrontController
     */
     public function getAvailableOptionsForFinder(Request $request, SalesChannelContext $salesChannelContext): JsonResponse
     {
+        // $this->logTime('start', true);
+        // $filePath = '/var/www/html/tentecom/public/getAvailableOptionsForFinder.html';
+        // $fsObject = new Filesystem();
+        // $fsObject->touch($filePath);
+        // $fsObject->chmod($filePath, 0777);
+        // $fsObject->dumpFile($filePath, @\Kint::dump('new'));
         $context = $salesChannelContext->getContext();
         $salesChannelId = $salesChannelContext->getSalesChannelId();
         $optionsIdsQueryParam = $request->get('options');
-        $propertyGroupsParamSelect = $request->get('selectPropertyGroups', false);
-        $propertyGroupsParamSlider = $request->get('sliderPropertyGroups', false);
-        $selectedPropertiesParam = $request->get('selectedProperties', false);
-        $defaultPropertyIds = $request->get('defaultPropertyIds', false);
+        $propertyGroupsParamSelect = $request->get('selectPropertyGroups', []);
+        $propertyGroupsParamSlider = $request->get('sliderPropertyGroups', []);
+        $selectedPropertiesParam = $request->get('selectedProperties', []);
+        $defaultPropertyIds = $request->get('defaultPropertyIds', []);
         
-        $optionIdsArray = [];
-        if ($optionsIdsQueryParam) {
-            $optionsIdsQueryParamExploded = explode('|', $optionsIdsQueryParam);
-            if ($optionsIdsQueryParamExploded) {
-                $optionIdsArray = $optionsIdsQueryParamExploded;
-            }
-        }
+        $propertyGroupIds = [];
+        foreach ([$propertyGroupsParamSelect => ',', $propertyGroupsParamSlider => ','] as $query => $delimter) {
+            $propertyGroupIds = array_unique(array_merge($propertyGroupIds, $this->queryToArray($query, $delimter)));
+        }        
 
-        $visibleProductsIds = [];
-        $visibilityCriteria = new Criteria();
-        $visibilityCriteria->addFilter(new EqualsFilter('salesChannelId', $salesChannelId));
-        $salesChannelVisibleProducts = $this->productVisibilityRepository->search($visibilityCriteria, $context)->getEntities();
-        foreach ($salesChannelVisibleProducts as $productVisibility) {
-            if ($productVisibility instanceof ProductVisibilityEntity) {
-                $visibleProductsIds[] = $productVisibility->getProductId();
-            }
-        }
 
-        $criteria = new Criteria();
-        foreach ($optionIdsArray as $optionId) {
-            $criteria->addFilter(new ContainsFilter('propertyIds', $optionId));
-        }
+        $propertyGroupsData = $this->getPropertyGroupTranslations($salesChannelContext, $propertyGroupIds);
+ 
+        $optionalProps = $this->getPropertiesByGroupIds($salesChannelContext, $propertyGroupIds);
+
+        $selectedPropertiesArr = $this->queryToArray($selectedPropertiesParam, '|');
+        $optionsIdsQueryArr = $this->queryToArray($optionsIdsQueryParam, '|');
+
+        $mandatoryProps = array_merge($selectedPropertiesArr, $optionsIdsQueryArr);
+        
+        $filteredProductIds = $this->filterProductsByPropertyIds($salesChannelContext, $mandatoryProps, $optionalProps);
+
+        $propertyIds = $this->getPropertiesByProductsIds($filteredProductIds, $propertyGroupIds);
+
+        $propertiesByGroupId = $this->getPropertiesTranslations($salesChannelContext, $propertyIds, $propertyGroupIds);
+
         $selectedProperties = false;
         if ($selectedPropertiesParam) {
             $selectedProperties = explode(',',$selectedPropertiesParam);
-            foreach ($selectedProperties as $optionId) {
-                $criteria->addFilter(new ContainsFilter('propertyIds', $optionId));
-            }
         }
 
-        $defaultPropertyOptionIds = [];
-        if ($defaultPropertyIds) {
-            $defaultPropertyOptionIds = explode(',',$defaultPropertyIds);
-        }
-
-
-        $products = $this->productRepository->search($criteria, $context)->getEntities();
- 
-        $availableOptionIds = [];
-        foreach ($products as $product) {
-            if ($product instanceof ProductEntity) {
-                $productId = $product->getId();
-                if (in_array($productId, $visibleProductsIds)) {
-                    $productOptions = $product->getPropertyIds();
-                    if (is_array($productOptions)) {
-                        $availableOptionIds = array_merge($availableOptionIds, $productOptions);
-                    }
-                }
-            }
-           
-        }
-
-        $availableOptionIds = array_unique($availableOptionIds);
-        
-        
         $template = [];
         if ($propertyGroupsParamSelect) {
-            $selectIds = explode(',',$propertyGroupsParamSelect);
+            $selectGroupIds = explode(',',$propertyGroupsParamSelect);
 
-            $propertySelectGroups = $this->property->getPropertyGroupsById($context, $selectIds);
-
-            if ($propertySelectGroups->getTotal() > 0) {
-                $groups = $propertySelectGroups->getElements();
-    
+            foreach ($selectGroupIds as $groupId) {
                 
-                foreach ($groups as $propertyGroup) {
-                    $template[] = $this->prepareSelect($propertyGroup, $availableOptionIds, $selectedProperties, $defaultPropertyOptionIds);
+                if (isset($propertiesByGroupId[$groupId])) {
 
-                    
+                    $options = $this->getSelectOptionsByGroupId($salesChannelContext, $groupId);
+                    $groupName = $propertyGroupsData[$groupId];
+                    $template[] = $this->prepareSelect($groupId, $groupName, $options, $selectedProperties);
                 }
-
             }
         }
+
         if ($propertyGroupsParamSlider) {
             $sliderIds = explode(',',$propertyGroupsParamSlider);
-            $propertySliderGroups = $this->property->getPropertyGroupsById($context, $sliderIds);
 
-            if ($propertySliderGroups->getTotal() > 0) {
-                $groups = $propertySliderGroups->getElements();
-                foreach ($groups as $propertyGroup) {
-                    $template[] = $this->prepareSlider($propertyGroup, $availableOptionIds);
+            foreach ($sliderIds as $groupId) {
+                
+                if (isset($propertiesByGroupId[$groupId])) {
+                    $options = $propertiesByGroupId[$groupId];
+                    $groupName = $propertyGroupsData[$groupId];
+                    $template[] = $this->prepareSlider($groupId, $groupName, $options, $selectedProperties);
                 }
             }
         } 
 
-
-        if (count($availableOptionIds) < 1) {
-            $availableOptionIds = $optionIdsArray;
+        $availableOptions = [];
+        foreach ($propertyIds as $id) {
+            $availableOptions[] = strtolower($id);
         }
 
-        $availableOptionIdsValues = array_values($availableOptionIds);
-
-        return new JsonResponse(
-            [
-                "availableOptionIds" => $availableOptionIdsValues,
-                "sliderTemplate" => $template
-            ]);
+        return new JsonResponse([
+            "availableOptionIds" => $availableOptions,
+            "sliderTemplate" => $template
+        ]);
     }
 
-    public function prepareSlider($propertyGroup, $availableOptions)
+    public function getPropertiesByProductsIds($productIds, $configuratorPropertyGroupIds)
     {
 
+        $query = new QueryBuilder($this->connection);
+
+        $query->select([
+            'DISTINCT HEX(product_property.property_group_option_id) as propertyId'
+        ]);
+
+        $query->from('product_property', 'product_property');
+        $query->join('product_property', 'property_group_option', 'property_group_option', 'product_property.property_group_option_id = property_group_option.id');
+        $query->where('product_id IN (:productIds)');
+        $query->andWhere('property_group_option.property_group_id IN (:propertyGroupIds)');
+        $query->setParameter('productIds', Uuid::fromHexToBytesList($productIds), ArrayParameterType::BINARY);
+        $query->setParameter('propertyGroupIds', Uuid::fromHexToBytesList($configuratorPropertyGroupIds), ArrayParameterType::BINARY);
+
+        $result = $query->executeQuery()->fetchAllAssociative();
+
+        if (!empty($result)) {
+            $ids = [];
+            foreach ($result as $productId) {
+                $ids[] = $productId['propertyId'];
+            }
+            return $ids;
+        }
+        return [];
+    }
+
+    public function getPropertiesByGroupIds($salesChannelContext, $groupIds) {
+
+
+        $query = new QueryBuilder($this->connection);
+        $query->select([
+            'LOWER(HEX(property_group_option.id)) as propertyId'
+        ]);
+
+        $query->from('property_group_option');
+        $query->where('property_group_id IN (:propertyGroupIds)');
+        $query->setParameter('propertyGroupIds', Uuid::fromHexToBytesList($groupIds), ArrayParameterType::BINARY);
+        $result = $query->executeQuery()->fetchAllAssociative();
+
+        if (!empty($result)) {
+            $ids = [];
+            foreach ($result as $productId) {
+                $ids[] = $productId['propertyId'];
+            }
+            return $ids;
+        }
+        return [];
+    }
+
+    
+    public function getPropertyGroupTranslations($salesChannelContext, $propertyGroupIds): array
+    {
+
+        $context = $salesChannelContext->getContext();
+        $languageId = $context->getLanguageId();
+        $fallbackLanguageId = '2FBB5FE2E29A4D70AA5854CE7CE3E20B';
+
+        $query = new QueryBuilder($this->connection);
+
+        $query->select([
+            'LOWER(HEX(id)) as groupId',
+            'COALESCE(property_group_translation_normal.name, property_group_translation_fallback.name) AS name'
+        ]);
+
+        $query->from('property_group', 'pg');
+
+        $query->leftJoin(
+            'pg',
+            'property_group_translation',
+            'property_group_translation_normal',
+            'pg.id = property_group_translation_normal.property_group_id  AND property_group_translation_normal.language_id = :languageId'
+        );
+
+        $query->leftJoin(
+            'pg',
+            'property_group_translation',
+            'property_group_translation_fallback',
+            'pg.id = property_group_translation_fallback.property_group_id  AND property_group_translation_fallback.language_id = :fallbackLanguageId'
+        );
+
+        $query->where('id IN (:propertyGroupIds)');
+
+        $query->setParameter('fallbackLanguageId', hex2bin($fallbackLanguageId));
+        $query->setParameter('languageId', Uuid::fromHexToBytes($languageId));
+        $query->setParameter('propertyGroupIds', Uuid::fromHexToBytesList($propertyGroupIds), ArrayParameterType::BINARY);
+        $result = $query->executeQuery()->fetchAllAssociative();
+
+        $groupData = [];
+        foreach ($result as $data) {
+            $groupData[$data['groupId']] = $data['name'];
+        }
+        return $groupData;
+    }
+
+    public function getSelectOptionsByGroupId($salesChannelContext, $propertyGroupId): array
+    {
+
+        $context = $salesChannelContext->getContext();
+        $languageId = $context->getLanguageId();
+        $fallbackLanguageId = '2FBB5FE2E29A4D70AA5854CE7CE3E20B';
+
+        $query = new QueryBuilder($this->connection);
+
+        $query->select([
+            'LOWER(HEX(property_group_option.id)) AS propertyId',
+            'COALESCE(property_group_option_translation_normal.name, property_group_option_translation_fallback.name) AS name',
+            'COALESCE(property_group_option_translation_normal.position, property_group_option_translation_fallback.position) AS position',
+        ]);
+
+        $query->from('property_group_option');
+
+        $query->leftJoin(
+            'property_group_option',
+            'property_group_option_translation',
+            'property_group_option_translation_normal',
+            'property_group_option.id = property_group_option_translation_normal.property_group_option_id  AND property_group_option_translation_normal.language_id = :languageId'
+        );
+
+        $query->leftJoin(
+            'property_group_option',
+            'property_group_option_translation',
+            'property_group_option_translation_fallback',
+            'property_group_option.id = property_group_option_translation_fallback.property_group_option_id  AND property_group_option_translation_fallback.language_id = :fallbackLanguageId'
+        );
+
+        $query->where('property_group_option.property_group_id = (:propertyGroupId)');
+
+        $query->setParameter('fallbackLanguageId', hex2bin($fallbackLanguageId));
+        $query->setParameter('languageId', Uuid::fromHexToBytes($languageId));
+        $query->setParameter('propertyGroupId', Uuid::fromHexToBytes($propertyGroupId));
+        $result = $query->executeQuery()->fetchAllAssociative();
+
+        return $result;
+
+    }
+    public function getPropertiesTranslations($salesChannelContext, $propertyIds, $propertyGroupIds): array
+    {
+  
+        $context = $salesChannelContext->getContext();
+        $languageId = $context->getLanguageId();
+        $fallbackLanguageId = '2FBB5FE2E29A4D70AA5854CE7CE3E20B';
+
+        $query = new QueryBuilder($this->connection);
+
+        $query->select([
+            'LOWER(HEX(property_group_option.property_group_id)) as groupId',
+            'LOWER(HEX(property_group_option.id)) AS propertyId',
+            'COALESCE(property_group_option_translation_normal.name, property_group_option_translation_fallback.name) AS name',
+            'COALESCE(property_group_option_translation_normal.position, property_group_option_translation_fallback.position) AS position',
+
+        ]);
+
+        $query->from('property_group_option');
+
+        $query->leftJoin(
+            'property_group_option',
+            'property_group_option_translation',
+            'property_group_option_translation_normal',
+            'property_group_option.id = property_group_option_translation_normal.property_group_option_id  AND property_group_option_translation_normal.language_id = :languageId'
+        );
+
+        $query->leftJoin(
+            'property_group_option',
+            'property_group_option_translation',
+            'property_group_option_translation_fallback',
+            'property_group_option.id = property_group_option_translation_fallback.property_group_option_id  AND property_group_option_translation_fallback.language_id = :fallbackLanguageId'
+        );
+
+        $query->where('property_group_option.id IN (:props)');
+        $query->andWhere('property_group_option.property_group_id IN (:propertyGroupIds)');
+
+        $query->setParameter('fallbackLanguageId', hex2bin($fallbackLanguageId));
+        $query->setParameter('languageId', Uuid::fromHexToBytes($languageId));
+        $query->setParameter('props', Uuid::fromHexToBytesList($propertyIds), ArrayParameterType::BINARY);
+        $query->setParameter('propertyGroupIds', Uuid::fromHexToBytesList($propertyGroupIds), ArrayParameterType::BINARY);
+        $results = $query->executeQuery()->fetchAllAssociative();
+
+        $groupedResults = [];
+        foreach ($results as $result) {
+            $groupId = $result['groupId'];
+            unset($result['groupId']);
+            $groupedResults[$groupId][] = $result;
+        }
+        return $groupedResults;
+    }
+
+    public function getVisibleProductsIdsBySalesChannel($salesChannelId): array
+    {
+        $query = new QueryBuilder($this->connection);
+
+        $query->select(['DISTINCT UPPER(HEX(product_visibility.product_id)) as id'])
+              ->from('product_visibility')
+              ->where('HEX(product_visibility.sales_channel_id) = :salesChannelId');
+
+        $query->setParameter('salesChannelId', $salesChannelId);
+
+        $result = $query->executeQuery()->fetchAllAssociative();
+
+        if (!empty($result)) {
+            $ids = [];
+            foreach ($result as $productId) {
+                $ids[] = $productId['id'];
+            }
+            return $ids;
+        }
+        return [];
+    }
+
+    public function filterProductsByPropertyIds($salesChannelContext, $mandatoryProps, $optionalProps)
+    {
+
+        $salesChannelId = $salesChannelContext->getSalesChannelId();
+        $productIdsToFilter = $this->getVisibleProductsIdsBySalesChannel($salesChannelId);
+
+        $query = new QueryBuilder($this->connection);
+
+        $query->select([
+            'LOWER(upper_product.id) AS productId'
+        ]);    
+
+        $query->setParameter('productIds', Uuid::fromHexToBytesList($productIdsToFilter), ArrayParameterType::BINARY);
+        $query->from('(' . $this->getProductFilterSelect() . ')', 'upper_product');
+
+        $propertyIdsSelect = 'upper_product.property_ids';
+
+        if (!empty($mandatoryProps)) {
+
+            $concatWheres = '';
+            $count = 0;
+            foreach ($mandatoryProps as $key => $value) {
+                $bindingKey = (string)$key . '_property';
+    
+                if ($count == 0) {
+                    $concatWheres .= " ( JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) )";
+                } else {
+                    $concatWheres .= " AND ( JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) )";
+                }
+    
+                $query->setParameter($bindingKey, $value);
+                $count++;
+            }
+            $query->where( $concatWheres );
+        }
        
-        $options = $propertyGroup->getOptions();
-        $optionsIds = $options->getIds();
-        $filteredIds = array_intersect($optionsIds, $availableOptions);
-        $filteredOptions = $options->getList($filteredIds);
+        $countOptional = 0;
+        $concatOptional = '';
+        foreach ($optionalProps as $key => $propertyId) {
+            
+            $bindingKey = (string)$key . '_property_optional';
+
+            if ($countOptional == 0) {
+                $concatOptional .= "  JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) ";
+            } else {
+                $concatOptional .= " OR ( JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) )";
+            }
+                    
+            $query->setParameter($bindingKey, $propertyId);
+
+            $countOptional++;
+        }
+
+        $query->andWhere( $concatOptional );
+
+        $result = $query->executeQuery()->fetchAllAssociative();
+
+        $products = [];
+        if (!empty($result)) {
+            foreach ($result as $productId) {
+                $products[] = $productId['productId'];
+            }
+            return $products;
+        }
+        return [];    
+    }
+
+    public function getProductFilterSelect(): string
+    {
+        $subSelect = new QueryBuilder($this->connection);
+
+        $subSelect->select('LOWER(HEX(id)) AS id','property_ids')
+                    ->from('product', 'filtered_products')
+                    ->where('filtered_products.id IN (:productIds)');
+
+        return $subSelect->getSQL();
+    }
+    
+    public function prepareSlider($groupId, $groupName, $options, $selectedProperties)
+    {
+
         $html = '';
 
-        $groupName = $propertyGroup->getTranslation('name');
-        $groupId = $propertyGroup->getId();
-
-        $customFields = $propertyGroup->getCustomFields();
-           
-        if (empty($filteredIds)) {
+        if (empty($options) || count($options) == 1) {
             return [$groupId => $html];
         }
 
-        if (isset($customFields['acris_filter_unit'])) {
-            $propertyGroupUnit = $customFields['acris_filter_unit'];
-        } else {
+        $propertyGroupUnit = CommonFunctions::extractUnit($options[0]['name']);
 
-            $singleOption = $filteredOptions->first();
-            $singleOptionName = $singleOption->getTranslation('name');
-
-            $propertyGroupUnit = CommonFunctions::extractUnit($singleOptionName);
-        }
+        usort($options, function ($a, $b) {
+            $nameA = (float)$a['name']; 
+            $nameB = (float)$b['name'];
+            return $nameA - $nameB;
+        });
 
         $divGroupId = 'product-finder-property-group-' . $groupId;
-        $minId = $divGroupId . '-min';
-        $maxId = $divGroupId . '-max';
                 
-        $propertyGroupOptions = $filteredOptions->getElements();
-        $propertyGroupOptionsTotal = (count($propertyGroupOptions) - 1);
-        $optionElements = $this->prepareOptions($propertyGroupOptions);
-
+        $propertyGroupOptionsTotal = (count($options) - 1);
+        $optionElements = $options;
 
         $html .= '<div class="field js-product-finder-property-option-group-field js-product-finder-property-option-group-slider-field"  data-property-group="' . $groupId . '" data-element-type="slider">';
             $html .= '<label class="property-group-label" for="' . $divGroupId . '">';
@@ -216,7 +468,8 @@ class ProductFinderController extends StorefrontController
 
                         $html .= '<datalist class="nwgncy-finder-slider-number">';
                             foreach ($optionElements as $optionElement) {
-                                $html .= '<option id="' . $optionElement['id'] .'" value="' . $optionElement['parsedValue'] . '"></option>';
+                                $value = CommonFunctions::parsefloatFromString($optionElement['name']);
+                                $html .= '<option id="' . $optionElement['propertyId'] .'" value="' . $value . '"></option>';
                             }
                         $html .= '</datalist>';
                     $html .= '</div>';
@@ -227,60 +480,28 @@ class ProductFinderController extends StorefrontController
         return [$groupId => $html];
     }
 
-    public function prepareSelect($propertyGroup, $availableOptions, $selectedProperties, $defaultPropertyOptionIds)
+    public function prepareSelect($groupId, $groupName, $options, $selectedProperties)
     {
-        // $filePath = '/var/www/html/tentecom/public/2prepareSelect.html';
 
-        // $fsObject = new Filesystem();
-        // $fsObject->touch($filePath);
-        // $fsObject->chmod($filePath, 0777);
-        
-
-        $options = $propertyGroup->getOptions();
-        $optionsIds = $options->getIds();
-        $filteredIds = array_intersect($optionsIds, $availableOptions);
-
-        $filteredIds = array_merge($filteredIds, $defaultPropertyOptionIds);
-
-        // $fsObject->appendToFile($filePath, @\Kint::dump($filteredIds));
         $html = '';
-
-        $groupName = $propertyGroup->getName();
-        $groupId = $propertyGroup->getId();
 
         $divGroupId = 'product-finder-property-group-' . $groupId;
 
         $display = '';
-        $optionElements = [];
-        if (empty($filteredIds)) {
+        if (empty($options) ) {
             return [$groupId => $html];
         }
 
-        $filteredOptions = $options->getList($filteredIds);
-        $propertyGroupOptions = $filteredOptions->getElements();
-        $optionElements = $this->prepareOptions($propertyGroupOptions);
-
         if ($selectedProperties) {
             
-            foreach ($filteredOptions as $option) {
+            foreach ($options as $option) {
                 
-                $filteredOptionId = $option->getId();
-                if (in_array($filteredOptionId, $selectedProperties)) {
-                    $optionName = $option->getTranslated('name');
-
-                    if ($optionName) {
-                        $groupName = $optionName['name'];
-                    } else {
-                        $groupName = $option->getName();
-                    }
-
-
-
+                $optionId = $option['propertyId'];
+                if (in_array($optionId, $selectedProperties)) {
+                    $groupName = $option['name'];
+                    break;
                 }
-
             }
-
-
         }
 
         $html .= '<div class="field js-product-finder-property-option-group-field"  data-property-group="' . $groupId . '" ' . $display . ' data-element-type="select">';
@@ -292,20 +513,16 @@ class ProductFinderController extends StorefrontController
                 $html .= '<div class="dropdown-content">';
                     $html .= '<div class="options-list">';
 
-                    // if (!empty($filteredIds)) {
+                    foreach ($options as $optionElement) {
+                        $optionDomId = 'finder-group-option-' . $optionElement['propertyId'];
+    
+                        $html .= '<div class="js-option-field">';
+                        $html .= '<label class="property-group-option-label" for="' . $optionDomId .'">' . $optionElement['name'] . '</label>';
+                        $html .= '<input class="js-finder-property-option-input" id="' . $optionDomId .'" name="' . $groupId .'" value="' . $optionElement['propertyId'] .'" data-option-name="' . $optionElement['name'] . '" type="radio"/>';
+                        $html .= '</div>';
 
+                    }
 
-                        foreach ($optionElements as $optionElement) {
-                            $optionDomId = 'finder-group-option-' . $optionElement['id'];
-     
-                            $html .= '<div class="js-option-field">';
-                            $html .= '<label class="property-group-option-label" for="' . $optionDomId .'">' . $optionElement['name'] . '</label>';
-                            $html .= '<input class="js-finder-property-option-input" id="' . $optionDomId .'" name="' . $groupId .'" value="' . $optionElement['id'] .'" data-option-name="' . $optionElement['name'] . '" type="radio"/>';
-                            $html .= '</div>';
-
-                        }
-                    // }
-                    // $html .= '</div>';
                 $html .= '</div>';
             $html .= '</div>';
         $html .= '</div>';
@@ -335,5 +552,30 @@ class ProductFinderController extends StorefrontController
        return $propertyGroupOptions;
     }
 
+    public function logTime($message, $first = false)
+    {
+        $currentTimestamp = microtime(true);
+        $timestampString = sprintf('%.6f', $currentTimestamp);
+        $dateTime = \DateTime::createFromFormat('U.u', $timestampString);
+        $timeWithMilliseconds = $dateTime->format('Y-m-d H:i:s.u');
+        $filePath = '/var/www/html/tentecom/public/logTimeFinder.html';
+        $fsObject = new Filesystem();
+        $fsObject->touch($filePath);
+        $fsObject->chmod($filePath, 0777);
+
+        if ($first) {
+            $fsObject->dumpFile($filePath, @\Kint::dump('new'));
+        }
+        $fsObject->appendToFile($filePath, @\Kint::dump($message));
+        $fsObject->appendToFile($filePath, @\Kint::dump($timeWithMilliseconds));
+        
+
+    }
+    public function queryToArray($query, $delimter):array {
+        if(empty($query)) {
+            return [];
+        }
+        return explode($delimter, $query);
+    }
 
 }

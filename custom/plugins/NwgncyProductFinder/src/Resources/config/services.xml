@@ -12,6 +12,7 @@
             <tag name="twig.extension"/>
         </service>
         <service id="Nwgncy\ProductFinder\Storefront\Controller\ProductFinderController" public="true">
+            <argument type="service" id="Doctrine\DBAL\Connection"/>
             <argument type="service" id="product.repository" />
             <argument type="service" id="product_visibility.repository" />
             <argument type="service" id="Nwgncy\ProductFinder\Service\Property"/>
@@ -28,6 +29,6 @@
 
 
 
-
+ 
     </services>
 </container>

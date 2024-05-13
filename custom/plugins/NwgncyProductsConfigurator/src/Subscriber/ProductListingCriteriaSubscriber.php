@@ -128,16 +128,16 @@ class ProductListingCriteriaSubscriber implements EventSubscriberInterface
             $shippingTimeCriteria->addFilter(new EqualsFilter('shippingTime', 1));
             $shippingTimeCollection = $this->shippingTimeRepository->search($shippingTimeCriteria, $event->getContext());
 
+            if ($shippingTimeCollection->getTotal() > 0) {
+                
+                $shippingTimeProductIds = $shippingTimeCollection->getEntities()->getProductIds();
 
-            $shippingTimeProductIds = $shippingTimeCollection->getEntities()->getProductIds();
-
-
-            $criteria->addFilter(
-                new EqualsAnyFilter('product.id', $shippingTimeProductIds)
-            );
-    
+                $criteria->addFilter(
+                    new EqualsAnyFilter('product.id', $shippingTimeProductIds)
+                );
+            }
         }
-        
+
         if ($request->query->get('hasCadFile', false)) {
 
             $productDownloadCriteria = new Criteria();

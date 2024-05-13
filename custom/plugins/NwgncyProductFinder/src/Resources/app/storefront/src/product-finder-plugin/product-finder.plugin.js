@@ -17,7 +17,7 @@ export default class ProductFinderPlugin extends Plugin {
           loadinContainerSelector: '.cms-block-nwgncy-product-finder .loading'
      };
 
-     init() {
+     init() { 
           this._client = new HttpClient();
 
           this._selectedMinMeasuredPropertyOptions = {};
@@ -41,7 +41,7 @@ export default class ProductFinderPlugin extends Plugin {
           this._registerEvents();
 
           this._isLoading = true;
-
+          // this.finishLoading();
           this.fetchAvailableOptions();
      }
 
@@ -370,42 +370,39 @@ export default class ProductFinderPlugin extends Plugin {
      availableOptionsHandler(response) {
           try {
                const responseObject = JSON.parse(response);
-
+               
                if (responseObject) {
 
                     const sliderTemplate = responseObject.sliderTemplate;
-
-                    
+                   
                     let htmlReplace = '';
                     sliderTemplate.forEach(function(element) {
                          let key = Object.keys(element)[0];
+    
                          let html = element[key];
                          htmlReplace = htmlReplace + html;
                     });
-
                      
                     const section = DomAccess.querySelector(document, this.options.propertyOptionsGroupsContainerSelector);
-
+                    
                     section.innerHTML = htmlReplace;
 
                     this.initElements();
                     this._registerEvents();
 
-                    if (responseObject.availableOptionIds && Array.isArray(responseObject.availableOptionIds)) {
-                         
-                    }
-
                     const availableOptionIds = responseObject.availableOptionIds;
+                    
                     this._propertyOptionsGroups.forEach(propertyGroupField => {
                          var availableOptionsCount = 0;
                          const groupId = propertyGroupField.getAttribute('data-property-group');
                          const propertyGroupFieldOptions = propertyGroupField.querySelectorAll('.js-finder-property-option-input');
                          propertyGroupFieldOptions.forEach(inputElement => {
-                              const inputElementValue = inputElement.value;
+                              let inputElementValue = inputElement.value;
                               if (availableOptionIds.includes(inputElementValue)) {
                                    availableOptionsCount++;
                               }
                          });
+
                          if (availableOptionsCount == 0) {
                               propertyGroupField.style.display = 'none';
                               delete this._selectedPropertyOptions[groupId];

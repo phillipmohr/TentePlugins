@@ -14,9 +14,11 @@
         </service>
 
         <service id="Nwgncy\ProductsConfigurator\Storefront\Controller\ProductConfiguratorController" public="true">
+            <argument type="service" id="Doctrine\DBAL\Connection"/>
             <argument type="service" id="property_group_option.repository" />
             <argument type="service" id="product.repository" />
             <argument type="service" id="product_visibility.repository" />
+            <argument type="service" id="NwgncyPropsExportImport\Service\Property"/>
             <call method="setContainer">
                 <argument type="service" id="service_container"/>
             </call>

@@ -2,14 +2,14 @@
 {% block component_pagination_nav %}
     {% set currentPage = ((criteria.offset + 1) / criteria.limit)|round(0, 'ceil') %}
     {# {% set totalEntities = total ? total : entities|length %} #}
-    {% set totalEntities = total ? total : entities.total %}
+     {% set totalEntities = total ? total : entities.total %}
     {% set totalPages = (totalEntities / criteria.limit)|round(0, 'ceil') %}
     {% if isProductConfigurator %}
           {% set paginationIsProductConfigurator = true %}
      {% else %}
           {% set paginationIsProductConfigurator = false %}
     {% endif %}
- 
+
 
     {% set paginationSuffix = '' %}
     {% if paginationLocation %}
