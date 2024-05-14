@@ -14,6 +14,7 @@
         </service>
 
         <service id="Nwgncy\ProductsConfigurator\Storefront\Controller\ProductConfiguratorController" public="true">
+            <argument type="service" id="Shopware\Storefront\Page\Search\SearchPageLoader"/>
             <argument type="service" id="Doctrine\DBAL\Connection"/>
             <argument type="service" id="property_group_option.repository" />
             <argument type="service" id="product.repository" />

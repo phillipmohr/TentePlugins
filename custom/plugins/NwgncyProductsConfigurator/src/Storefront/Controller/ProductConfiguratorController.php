@@ -24,6 +24,7 @@ use Shopware\Core\Framework\DataAbstractionLayer\Doctrine\FetchModeHelper;
 use Shopware\Core\Framework\DataAbstractionLayer\Dbal\QueryBuilder;
 use NwgncyPropsExportImport\Service\Property;
 use Doctrine\DBAL\ArrayParameterType;
+use Shopware\Storefront\Page\Search\SearchPageLoader;
 
 /**
  * @Route(defaults={"_routeScope"={"storefront"}})
@@ -31,11 +32,17 @@ use Doctrine\DBAL\ArrayParameterType;
 class ProductConfiguratorController extends StorefrontController
 {
     private EntityRepository $propertyGroupOptionRepository;
+
     private EntityRepository $productRepository;
+
     private EntityRepository $productVisibilityRepository;
+
     private Connection $connection;
 
+    private SearchPageLoader $searchPageLoader;
+
     public function __construct(
+        SearchPageLoader $searchPageLoader,
         Connection $connection,
         EntityRepository $propertyGroupOptionRepository,
         EntityRepository $productRepository,
@@ -43,6 +50,7 @@ class ProductConfiguratorController extends StorefrontController
         Property $property
         
     ) {
+        $this->searchPageLoader = $searchPageLoader;
         $this->connection = $connection;
         $this->propertyGroupOptionRepository = $propertyGroupOptionRepository;
         $this->productRepository = $productRepository;
@@ -56,6 +64,11 @@ class ProductConfiguratorController extends StorefrontController
     */
     public function getAvailableOptions(Request $request, SalesChannelContext $salesChannelContext): JsonResponse
     {
+        // $filePath = '/var/www/html/tentecom/public/getAvailableOptions.html';
+        // $fsObject = new Filesystem();
+        // $fsObject->touch($filePath);
+        // $fsObject->chmod($filePath, 0777);
+        // $fsObject->dumpFile($filePath, @\Kint::dump('new'));
 
         $context = $salesChannelContext->getContext();
 
@@ -65,9 +78,9 @@ class ProductConfiguratorController extends StorefrontController
         $minKeyValuesPairsQuery = $request->get('min-property', []);
         $cadFileFilter = $request->get('hasCadFile', false);
         $fastDeliveryFilter = $request->get('fastDelivery', false);
-        
-        $configuratorPropertyGroupIdsQuery = $request->get('confiGroupIds');
+        $search = $request->get('search', false);
 
+        $configuratorPropertyGroupIdsQuery = $request->get('confiGroupIds');
         $configuratorPropertyGroupIds = explode(',', $configuratorPropertyGroupIdsQuery);
 
         $defaultCategoryId = '';
@@ -84,22 +97,31 @@ class ProductConfiguratorController extends StorefrontController
 
         $optionIdsArray = $defaultCategoryOptions['optionsIds'];
         $selectDefaultCategory = $defaultCategoryOptions['selectDefaultCategory'];
+        $currentCategoryId = $defaultCategoryOptions['currentCategoryId'];
 
-        $minMaxProps = $this->getRangedProperties($salesChannelContext, $minKeyValuesPairsQuery, $maxKeyValuesPairsQuery);
-
-        $productIds = $this->getProductIdsBySelectedProperties($salesChannelContext, $optionIdsArray, $minMaxProps, $cadFileFilter, $fastDeliveryFilter);
+        if ($search !== false) {
+            $productIds = $this->search($salesChannelContext, $request);
+        } else {
+            $minMaxProps = $this->getRangedProperties($salesChannelContext, $minKeyValuesPairsQuery, $maxKeyValuesPairsQuery);
+            $productIds = $this->getProductIdsBySelectedProperties($salesChannelContext, $optionIdsArray, $minMaxProps, $cadFileFilter, $fastDeliveryFilter);
+        }
+        
+        // $fsObject->appendToFile($filePath, @\Kint::dump($productIds));
 
         if (empty($productIds)) {
-            $productPropertyIds = $this->getSelectedProps($minMaxProps, $optionIdsArray);
+            $emptyResult = true;
+            $productPropertyIds = [$currentCategoryId];
         } else {
+            $emptyResult = false;
             $productPropertyIds = $this->getPropertiesByProductsIds($productIds, $configuratorPropertyGroupIds);
         }
+        // $fsObject->appendToFile($filePath, @\Kint::dump($productPropertyIds));
 
         return new JsonResponse([
             "availableOptionIds" => $productPropertyIds,
             "selectDefaultCategory" => $selectDefaultCategory,
-            "defaultCategoryId" => $defaultCategoryId
-        
+            "defaultCategoryId" => $defaultCategoryId,
+            "emptyResult" => $emptyResult,
         ]);
         
     }
@@ -162,6 +184,17 @@ class ProductConfiguratorController extends StorefrontController
         return [];
     }
     
+    public function search($context, $request): array
+    {
+        $page = $this->searchPageLoader->load($request, $context);
+        $listing = $page->getListing();
+
+        if ($listing->getTotal() > 0) {
+            return $listing->getEntities()->getIds();
+        }
+        return [];
+    }
+    
     public function getSelectedProps($minMaxProps, $props): array
     {
 
@@ -194,8 +227,9 @@ class ProductConfiguratorController extends StorefrontController
         $categoryPropertyCriteria = new Criteria();
         $categoryPropertyCriteria->addFilter(new EqualsFilter('groupId', $this->getCategoryPropertyGroupId()));
         $categoryPropertyOptions = $this->propertyGroupOptionRepository->search($categoryPropertyCriteria, $context)->getEntities();
-    
         $categoryPropertyOptionIds = $categoryPropertyOptions->getIds();
+        $currentCategoryId = '';
+
 
         if (!empty($optionIds)) {
             
@@ -204,42 +238,49 @@ class ProductConfiguratorController extends StorefrontController
                 
                 if (in_array($categoryPropertyOptionId, $optionIds)) {
                     $foundCategoryProperty = true;
+                    $currentCategoryId = $categoryPropertyOptionId;
                     break;
                 }
             }
 
             if (!$foundCategoryProperty) {
                 $defaultCategoryId = $this->getPreselectCategoryPropertyId();
+                $currentCategoryId = $defaultCategoryId;
                 array_push($optionIds, $defaultCategoryId);
                 $selectDefaultCategory = true;
             }
 
         } else {
             $defaultCategoryId = $this->getPreselectCategoryPropertyId();
+            $currentCategoryId = $defaultCategoryId;
             array_push($optionIds, $defaultCategoryId);
         }
 
         return [
             'selectDefaultCategory' => $selectDefaultCategory,
-            'optionsIds' => $optionIds
+            'optionsIds' => $optionIds,
+            'currentCategoryId' => $currentCategoryId,
         ];
 
     }
     public function getProductsWithFastDelivery($salesChannelId): array
     {
+
+
         $query = new QueryBuilder($this->connection);
 
         $query->select([
-            'LOWER(npst.product_id) AS productId'
-        ]);    
+            'HEX(npst.product_id) AS productId'
+        ]);
+
         $query->from('nwgncy_product_shipping_time', 'npst');
     
-        $query->where('HEX(npst.sales_channel_id) = :salesChannelId')
+        $query->where('npst.sales_channel_id = :salesChannelId')
               ->andWhere('shipping_time = 1');
         
         $query->innerJoin('npst', 'product_visibility', 'pv', 'npst.product_id = pv.product_id AND pv.sales_channel_id = :salesChannelId');
 
-        $query->setParameter('salesChannelId', $salesChannelId);
+        $query->setParameter('salesChannelId', Uuid::fromHexToBytes($salesChannelId));
 
         $result = $query->executeQuery()->fetchAllAssociative();
 
@@ -257,18 +298,22 @@ class ProductConfiguratorController extends StorefrontController
 
     public function getProductsWithCadFile($salesChannelId): array
     {
-        
+        // $filePath = '/var/www/html/tentecom/public/getProductsWithCadFile.html';
+        // $fsObject = new Filesystem();
+        // $fsObject->touch($filePath);
+        // $fsObject->chmod($filePath, 0777);
+        // $fsObject->dumpFile($filePath, @\Kint::dump('new'));
+
         $query = new QueryBuilder($this->connection);
 
         $query->select([
-            'LOWER(apd.product_id) AS productId'
+            'HEX(apd.product_id) AS productId'
         ]);    
         $query->from('acris_product_download', 'apd');
-
-        $query->where('HEX(download_tab_id) = :downloadTabId');
+        $query->where('apd.download_tab_id = :downloadTabId');
         $query->innerJoin('apd', 'product_visibility', 'pv', 'apd.product_id = pv.product_id AND pv.sales_channel_id = :salesChannelId');
-        $query->setParameter('downloadTabId', '018D0D4F63B677A299881E7D9DE7781F');
-        $query->setParameter('salesChannelId', $salesChannelId);
+        $query->setParameter('downloadTabId', Uuid::fromHexToBytes('018D0D4F63B677A299881E7D9DE7781F'));
+        $query->setParameter('salesChannelId', Uuid::fromHexToBytes($salesChannelId));
 
         $result = $query->executeQuery()->fetchAllAssociative();
 
@@ -285,15 +330,30 @@ class ProductConfiguratorController extends StorefrontController
 
     public function getProductIdsBySelectedProperties($salesChannelContext, $propsArr, $minMaxProperties, $cadFileFilter, $fastDeliveryFilter)
     {
+        // $filePath = '/var/www/html/tentecom/public/getProductIdsBySelectedProperties.html';
+        // $fsObject = new Filesystem();
+        // $fsObject->touch($filePath);
+        // $fsObject->chmod($filePath, 0777);
+        // $fsObject->dumpFile($filePath, @\Kint::dump('new'));
+
 
         $salesChannelId = $salesChannelContext->getSalesChannelId();
 
-        if ($cadFileFilter) {
+        $fastDeliveryProductIds = [];
+        $cadFileProductIds = [];
+        $productIdsToFilter = [];
+        if ($cadFileFilter && !$fastDeliveryFilter) {
             $productIdsToFilter = $this->getProductsWithCadFile($salesChannelId);
         }
 
-        if ($fastDeliveryFilter) {
+        if ($fastDeliveryFilter && !$cadFileFilter) {
             $productIdsToFilter = $this->getProductsWithFastDelivery($salesChannelId);
+        }
+
+        if ($fastDeliveryFilter && $cadFileFilter) {
+            $fastDeliveryProductIds = $this->getProductsWithFastDelivery($salesChannelId);
+            $cadFileProductIds = $this->getProductsWithCadFile($salesChannelId);
+            $productIdsToFilter = array_unique(array_intersect($cadFileProductIds, $fastDeliveryProductIds));
         }
 
         if (!$fastDeliveryFilter && !$cadFileFilter) {
@@ -366,7 +426,6 @@ class ProductConfiguratorController extends StorefrontController
             foreach ($result as $productId) {
                 $products[] = $productId['productId'];
             }
-    
             return $products;
         }
         return [];
@@ -381,7 +440,7 @@ class ProductConfiguratorController extends StorefrontController
         if (empty($minProps) && empty($maxProps)) {
             return [];
         }
-// 
+
         $minProperties = array_keys($minProps);
         $maxProperties = array_keys($maxProps);
 
@@ -415,7 +474,6 @@ class ProductConfiguratorController extends StorefrontController
             'property_group_option_translation_fallback',
             'property_group_option.id = property_group_option_translation_fallback.property_group_option_id  AND property_group_option_translation_fallback.language_id = :fallbackLanguageId'
         );
-
 
         $rangeQuery->where('property_group_id IN (:props)');
 

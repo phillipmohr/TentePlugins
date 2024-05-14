@@ -121,21 +121,39 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._categories.forEach(item => {
                item.addEventListener('change', event => {
                     if (event.target.checked) {
+
+                         this._selectedCategoryOption = null;
+
                          const value = event.target.value;
                          this._selectedCategoryOption = value;
 
                          this._selectedMinMeasuredPropertyOptions = {};
                          this._selectedMaxMeasuredPropertyOptions = {};
                          this._selectedPropertyOptions = {};
-                         
-                         this._selectInputs.forEach(select => {
-                              select.selectedIndex = 0;
-                         });
+                         this._selectedCadOption = null;
+                         this._selectedFastDeliveryOption = null;
+                         this._selectedPropertyOptions = {};
+                         this._selectedPropertyCheckboxOptions = [];
+                         this._searchQuery = "";
+                         this._searchInput.value = "";
+
                          if (this._propertyCheckboxes !== false) {
                               this._propertyCheckboxes.forEach(checkbox => {
                                    checkbox.checked = false;
                               });
                          }
+                         
+                         this._cadCheckbox.forEach(checkbox => {
+                              checkbox.checked = false;
+                         });
+               
+                         this._fastDeliveryCheckbox.forEach(checkbox => {
+                              checkbox.checked = false;
+                         });
+ 
+                         this._selectInputs.forEach(select => {
+                              select.selectedIndex = 0;
+                         });
 
                          this.refreshListing();
                          this.fetchAvailableOptions();
@@ -151,7 +169,6 @@ export default class ProductConfiguratorPlugin extends Plugin {
                     const id = fullId.replace('configurator-property-group-', '').replace('-min', '');
 
                     const selectMaxId = fullId.replace('-min', '-max');
-                    console.log(selectedOption.classList.contains('reset'));
                     
                     if (selectedOption.classList.contains('reset')) {
 
@@ -159,7 +176,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
                          item.querySelectorAll('option:not(.reset)').forEach(function(option) {
                               option.selected = false;
                          });
-                         console.log(this._selectedMaxMeasuredPropertyOptions[id]);
+
                          // if the MIN gets reset
                          // but MAX is still set to something
                          // the minimum MIN has to be choosen
@@ -330,13 +347,20 @@ export default class ProductConfiguratorPlugin extends Plugin {
                this._resetFilters();
           });
 
-          this._searchButton.addEventListener('click', event => this._searchHandler());
+          this._searchButton.addEventListener('click', event => {
+
+               this._searchHandler();
+          }
+          
+          );
           this._searchInput.addEventListener('keyup', event => {
                if (event.key === 'Enter') {
+
                     this._searchHandler();
                }
           });
           this._searchInput.addEventListener('blur', event => {
+
                this._searchHandler();
           });
      }
@@ -770,7 +794,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
                     const that = this;
                     const selectDefaultCategory = responseObject.selectDefaultCategory;
                     const defaultCategoryPropertyId = responseObject.defaultCategoryId;
-
+                    const emptyResult = responseObject.emptyResult;
                     if (availableOptionIds && Array.isArray(availableOptionIds)) {
 
                          this._propertySelectsOptionsExceptReset.forEach(option => {
@@ -802,7 +826,6 @@ export default class ProductConfiguratorPlugin extends Plugin {
                                    option.style.display = 'none';
                                    option.selected = false;
                               } else {
-
                                    option.style.display = 'block'; 
                               }
                          });
@@ -817,7 +840,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
 
                          });
 
-                         this.toggleMeasuredSelectsVisibility();
+                         this.toggleMeasuredSelectsVisibility(emptyResult);
                            
                          if (selectDefaultCategory == true) {
                               this._fetchDefaultCategory = true;
@@ -901,13 +924,14 @@ export default class ProductConfiguratorPlugin extends Plugin {
           return Object.keys(obj).length === 0;
      }
      
-     toggleMeasuredSelectsVisibility() {
+     toggleMeasuredSelectsVisibility(emptyResult) {
 
           let that = this;
           this._measuredPropertySelects.forEach(select => {
-               select.parentNode.parentNode.style.display = Array.from(select.options).filter(option => !option.classList.contains("reset"))
-               .every(option => option.style.display == 'none') ? 'none' : 'block';
-               
+               if (!emptyResult) {
+                    select.parentNode.parentNode.style.display = Array.from(select.options).filter(option => !option.classList.contains("reset"))
+                    .every(option => option.style.display == 'none') ? 'none' : 'block';
+               }
                let fieldParent = select.closest('.field');
                if (fieldParent.style.display == 'none') {
                     let selectId = select.id;
@@ -923,8 +947,9 @@ export default class ProductConfiguratorPlugin extends Plugin {
 
           });
           const measuredFields = this._measuredPropertySelectContainer.querySelectorAll('.field');
-          this._measuredPropertySelectContainer.style.display =  Array.from(measuredFields).every(field => field.style.display == 'none') ? 'none' : 'flex';
-
+          if (!emptyResult) {
+               this._measuredPropertySelectContainer.style.display =  Array.from(measuredFields).every(field => field.style.display == 'none') ? 'none' : 'flex';
+          }
 
      }
 
@@ -943,7 +968,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           }
           
           this.startLoading();
-
+          this.fetchAvailableOptions();
           this.refreshListing();
           
           setTimeout(() => {
