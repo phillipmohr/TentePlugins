@@ -26,18 +26,14 @@ export default class ProductFinderPlugin extends Plugin {
           this._selectedPropertyOptions = {};
           this._defaultSelectOptionIds = [];
           this._defaultSelectOptionIdsQuery = '';
-          this._propertyInputOptionIds = DomAccess.querySelectorAll(document, this.options.propertyOptionSelector, false);
 
-          if (this._propertyInputOptionIds) {
-               
-               this._propertyInputOptionIds.forEach((element) => {
-                    this._defaultSelectOptionIds.push(element.value);
-               });
-               this._defaultSelectOptionIdsQuery = '&defaultPropertyIds=' + this._defaultSelectOptionIds.join(',');
-          }
+          this._propertyInputOptionIds = DomAccess.querySelectorAll(document, this.options.propertyOptionSelector, false);
+          this._categoryChange = false;
+
+
           
           this.initElements();
-
+          this.collectDefaultSelectOptions();
           this._registerEvents();
 
           this._isLoading = true;
@@ -89,10 +85,14 @@ export default class ProductFinderPlugin extends Plugin {
      
                          var clickedValue = element.querySelector('input').value;
                          this._selectedCategoryOption = element;
+                         this._categoryChange = true;
                          this._selectedCategoryOptionId = clickedValue;
                          this._selectedCategoryOptionValue = clickedValue;
-
                          this._selectedPropertyOptions = {};
+
+                         // get 
+
+
                          this.startLoading();
                          this.fetchAvailableOptions();
                          
@@ -114,7 +114,7 @@ export default class ProductFinderPlugin extends Plugin {
           });
           
           if (this._propertyOptions) {
-               
+               // the select dropdown inputs
                this._propertyOptions.forEach(element => {
                     const input = element.querySelector('input');
                     input.addEventListener('change', event => {
@@ -337,8 +337,9 @@ export default class ProductFinderPlugin extends Plugin {
         
 
           if (categoryOptionIdEncoded) {
-               var queryString = `options=${categoryOptionIdEncoded}&${selectPropertyGroupsQueryString}&${sliderPropertyGroupsQueryString}`;
+               var queryString = `category=${categoryOptionIdEncoded}&${selectPropertyGroupsQueryString}&${sliderPropertyGroupsQueryString}`;
           }
+
           let selectedPropertiesQueryString = '';
           
           if (this._selectedPropertyOptions) {
@@ -437,6 +438,13 @@ export default class ProductFinderPlugin extends Plugin {
                }
           } catch (error) {
           }
+
+          // if the category change is successfull, add the default select options
+          if (this._categoryChange) {
+               this.collectDefaultSelectOptions();
+               this._categoryChange = false;
+          }
+
           this.finishLoading();
      }
 
@@ -444,6 +452,17 @@ export default class ProductFinderPlugin extends Plugin {
           this._propertyOptionsGroupsContainer.style.display = 'none';
           this._loadingContainer.style.display = 'flex';
           this._isLoading = true;
+     }
+
+     collectDefaultSelectOptions() {
+          if (this._propertyInputOptionIds) {
+               this._defaultSelectOptionIds = [];
+
+               this._propertyInputOptionIds.forEach((element) => {
+                    this._defaultSelectOptionIds.push(element.value);
+               });
+               this._defaultSelectOptionIdsQuery = '&defaultPropertyIds=' + this._defaultSelectOptionIds.join(',');
+          }
      }
      finishLoading () {
           this._propertyOptionsGroupsContainer.style.display = 'flex';

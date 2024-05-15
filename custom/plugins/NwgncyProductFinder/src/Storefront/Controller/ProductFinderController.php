@@ -51,38 +51,47 @@ class ProductFinderController extends StorefrontController
     */
     public function getAvailableOptionsForFinder(Request $request, SalesChannelContext $salesChannelContext): JsonResponse
     {
-        // $this->logTime('start', true);
+
         // $filePath = '/var/www/html/tentecom/public/getAvailableOptionsForFinder.html';
         // $fsObject = new Filesystem();
         // $fsObject->touch($filePath);
         // $fsObject->chmod($filePath, 0777);
         // $fsObject->dumpFile($filePath, @\Kint::dump('new'));
-        $context = $salesChannelContext->getContext();
-        $salesChannelId = $salesChannelContext->getSalesChannelId();
-        $optionsIdsQueryParam = $request->get('options');
+
+
+        // the selected category
+        $categoryIdParam = $request->get('category');
         $propertyGroupsParamSelect = $request->get('selectPropertyGroups', []);
         $propertyGroupsParamSlider = $request->get('sliderPropertyGroups', []);
         $selectedPropertiesParam = $request->get('selectedProperties', []);
-        $defaultPropertyIds = $request->get('defaultPropertyIds', []);
-        
+        // the properties of the select
+        $defaultPropertyIdsParam = $request->get('defaultPropertyIds', []);
+   
+       
         $propertyGroupIds = [];
         foreach ([$propertyGroupsParamSelect => ',', $propertyGroupsParamSlider => ','] as $query => $delimter) {
             $propertyGroupIds = array_unique(array_merge($propertyGroupIds, $this->queryToArray($query, $delimter)));
-        }        
+        }
 
-
+        // translations for select/slider boxes
         $propertyGroupsData = $this->getPropertyGroupTranslations($salesChannelContext, $propertyGroupIds);
  
+        // 
         $optionalProps = $this->getPropertiesByGroupIds($salesChannelContext, $propertyGroupIds);
 
         $selectedPropertiesArr = $this->queryToArray($selectedPropertiesParam, '|');
-        $optionsIdsQueryArr = $this->queryToArray($optionsIdsQueryParam, '|');
+        $categoryId = $this->queryToArray($categoryIdParam, '|');
 
-        $mandatoryProps = array_merge($selectedPropertiesArr, $optionsIdsQueryArr);
-        
+        // the props from selected category + selected options from select box
+        $mandatoryProps = array_merge($selectedPropertiesArr, $categoryId);
+
+        // get productIds by property Ids
         $filteredProductIds = $this->filterProductsByPropertyIds($salesChannelContext, $mandatoryProps, $optionalProps);
 
-        $propertyIds = $this->getPropertiesByProductsIds($filteredProductIds, $propertyGroupIds);
+
+        $propertyIds = $this->getAvailableOptionsByProductId($filteredProductIds, $propertyGroupIds);
+
+
 
         $propertiesByGroupId = $this->getPropertiesTranslations($salesChannelContext, $propertyIds, $propertyGroupIds);
 
@@ -94,15 +103,22 @@ class ProductFinderController extends StorefrontController
         $template = [];
         if ($propertyGroupsParamSelect) {
             $selectGroupIds = explode(',',$propertyGroupsParamSelect);
+            $defaultPropertyIds = explode(',',$defaultPropertyIdsParam);
 
             foreach ($selectGroupIds as $groupId) {
-                
-                if (isset($propertiesByGroupId[$groupId])) {
 
                     $options = $this->getSelectOptionsByGroupId($salesChannelContext, $groupId);
-                    $groupName = $propertyGroupsData[$groupId];
-                    $template[] = $this->prepareSelect($groupId, $groupName, $options, $selectedProperties);
-                }
+                    foreach ($options as $key => $data) {
+                        $propertyId = $data['propertyId'];
+                        if (!in_array($propertyId, $defaultPropertyIds)) {
+                            unset($options[$key]);
+                        }
+                    }
+                    if (!empty($options)) {
+
+                        $groupName = $propertyGroupsData[$groupId];
+                        $template[] = $this->prepareSelect($groupId, $groupName, $options, $selectedProperties);
+                    }
             }
         }
 
@@ -130,7 +146,7 @@ class ProductFinderController extends StorefrontController
         ]);
     }
 
-    public function getPropertiesByProductsIds($productIds, $configuratorPropertyGroupIds)
+    public function getAvailableOptionsByProductId($productIds, $configuratorPropertyGroupIds)
     {
 
         $query = new QueryBuilder($this->connection);
@@ -157,7 +173,6 @@ class ProductFinderController extends StorefrontController
         }
         return [];
     }
-
     public function getPropertiesByGroupIds($salesChannelContext, $groupIds) {
 
 
@@ -357,43 +372,43 @@ class ProductFinderController extends StorefrontController
 
         $propertyIdsSelect = 'upper_product.property_ids';
 
-        if (!empty($mandatoryProps)) {
+        // if (!empty($mandatoryProps)) {
 
-            $concatWheres = '';
-            $count = 0;
-            foreach ($mandatoryProps as $key => $value) {
-                $bindingKey = (string)$key . '_property';
-    
-                if ($count == 0) {
-                    $concatWheres .= " ( JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) )";
-                } else {
-                    $concatWheres .= " AND ( JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) )";
-                }
-    
-                $query->setParameter($bindingKey, $value);
-                $count++;
-            }
-            $query->where( $concatWheres );
-        }
-       
-        $countOptional = 0;
-        $concatOptional = '';
-        foreach ($optionalProps as $key => $propertyId) {
-            
-            $bindingKey = (string)$key . '_property_optional';
+        $concatWheres = '';
+        $count = 0;
+        foreach ($mandatoryProps as $key => $value) {
+            $bindingKey = (string)$key . '_property';
 
-            if ($countOptional == 0) {
-                $concatOptional .= "  JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) ";
+            if ($count == 0) {
+                $concatWheres .= " ( JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) )";
             } else {
-                $concatOptional .= " OR ( JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) )";
+                $concatWheres .= " AND ( JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) )";
             }
-                    
-            $query->setParameter($bindingKey, $propertyId);
 
-            $countOptional++;
+            $query->setParameter($bindingKey, $value);
+            $count++;
         }
+        $query->where( $concatWheres );
+        // }
+       
+        // $countOptional = 0;
+        // $concatOptional = '';
+        // foreach ($optionalProps as $key => $propertyId) {
+            
+        //     $bindingKey = (string)$key . '_property_optional';
 
-        $query->andWhere( $concatOptional );
+        //     if ($countOptional == 0) {
+        //         $concatOptional .= "  JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) ";
+        //     } else {
+        //         $concatOptional .= " OR ( JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) )";
+        //     }
+                    
+        //     $query->setParameter($bindingKey, $propertyId);
+
+        //     $countOptional++;
+        // }
+
+        // $query->andWhere( $concatOptional );
 
         $result = $query->executeQuery()->fetchAllAssociative();
 
@@ -430,9 +445,13 @@ class ProductFinderController extends StorefrontController
         $propertyGroupUnit = CommonFunctions::extractUnit($options[0]['name']);
 
         usort($options, function ($a, $b) {
-            $nameA = (float)$a['name']; 
-            $nameB = (float)$b['name'];
-            return $nameA - $nameB;
+            $nameA = $a['name']; 
+            $nameB = $b['name'];
+            $nameANumbersOnly = preg_replace('/[^0-9,]/', '', $nameA);
+            $nameAClean = str_replace(',', '.', $nameANumbersOnly);
+            $nameBNumbersOnly = preg_replace('/[^0-9,]/', '', $nameB);
+            $nameBClean = str_replace(',', '.', $nameBNumbersOnly);
+            return $nameAClean > $nameBClean ? 1 : -1;
         });
 
         $divGroupId = 'product-finder-property-group-' . $groupId;

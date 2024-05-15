@@ -1,6 +1,7 @@
 {% block sw_cms_element_nwgncy_product_finder %}
+
     <form id="product-finder-form" name="product-finder" data-available-options-route="{{ path('storefront.product-finder.available-options.get') }}" data-sc-base-url="{{ app.request.attributes.get('sw-sales-channel-base-url') }}">
-        
+         
             {% if element.config.propertyGroups.value %}    
                 {% for propertyGroupId in element.config.propertyGroups.value %}
                     <div style="display:none;" class="select-prop-group-id" data-property-group="{{ propertyGroupId }}" ></div>

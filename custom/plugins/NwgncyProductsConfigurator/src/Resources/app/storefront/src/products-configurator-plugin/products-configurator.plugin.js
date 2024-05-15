@@ -107,6 +107,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
                this._initUrlSelectedProperties(this.listing._urlFilterParams);
           }
           this.fetchAvailableOptions();
+          this.refreshListing();
      }
 
      /**

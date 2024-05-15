@@ -99,23 +99,22 @@ class ProductConfiguratorController extends StorefrontController
         $selectDefaultCategory = $defaultCategoryOptions['selectDefaultCategory'];
         $currentCategoryId = $defaultCategoryOptions['currentCategoryId'];
 
+        $availableOptions = [];
         if ($search !== false) {
             $productIds = $this->search($salesChannelContext, $request);
+            $productPropertyIds = $this->getPropertiesByProductsIds($productIds, $configuratorPropertyGroupIds);
         } else {
             $minMaxProps = $this->getRangedProperties($salesChannelContext, $minKeyValuesPairsQuery, $maxKeyValuesPairsQuery);
-            $productIds = $this->getProductIdsBySelectedProperties($salesChannelContext, $optionIdsArray, $minMaxProps, $cadFileFilter, $fastDeliveryFilter);
+            $availableOptions = $this->fetchAvailableOptions($salesChannelContext, $optionIdsArray, $minMaxProps, $cadFileFilter, $fastDeliveryFilter);
         }
-        
-        // $fsObject->appendToFile($filePath, @\Kint::dump($productIds));
-
-        if (empty($productIds)) {
+ 
+        if (empty($availableOptions)) {
             $emptyResult = true;
             $productPropertyIds = [$currentCategoryId];
         } else {
             $emptyResult = false;
-            $productPropertyIds = $this->getPropertiesByProductsIds($productIds, $configuratorPropertyGroupIds);
+            $productPropertyIds = $availableOptions;
         }
-        // $fsObject->appendToFile($filePath, @\Kint::dump($productPropertyIds));
 
         return new JsonResponse([
             "availableOptionIds" => $productPropertyIds,
@@ -266,7 +265,6 @@ class ProductConfiguratorController extends StorefrontController
     public function getProductsWithFastDelivery($salesChannelId): array
     {
 
-
         $query = new QueryBuilder($this->connection);
 
         $query->select([
@@ -298,12 +296,6 @@ class ProductConfiguratorController extends StorefrontController
 
     public function getProductsWithCadFile($salesChannelId): array
     {
-        // $filePath = '/var/www/html/tentecom/public/getProductsWithCadFile.html';
-        // $fsObject = new Filesystem();
-        // $fsObject->touch($filePath);
-        // $fsObject->chmod($filePath, 0777);
-        // $fsObject->dumpFile($filePath, @\Kint::dump('new'));
-
         $query = new QueryBuilder($this->connection);
 
         $query->select([
@@ -322,20 +314,18 @@ class ProductConfiguratorController extends StorefrontController
             foreach ($result as $productId) {
                 $products[] = $productId['productId'];
             }
-    
             return $products;
         }
         return [];
     }
 
-    public function getProductIdsBySelectedProperties($salesChannelContext, $propsArr, $minMaxProperties, $cadFileFilter, $fastDeliveryFilter)
+    public function fetchAvailableOptions($salesChannelContext, $propsArr, $minMaxProperties, $cadFileFilter, $fastDeliveryFilter)
     {
-        // $filePath = '/var/www/html/tentecom/public/getProductIdsBySelectedProperties.html';
+        // $filePath = '/var/www/html/tentecom/public/getProductIdsBySelectedPropertiesProductPropertyTable.html';
         // $fsObject = new Filesystem();
         // $fsObject->touch($filePath);
         // $fsObject->chmod($filePath, 0777);
-        // $fsObject->dumpFile($filePath, @\Kint::dump('new'));
-
+        // $fsObject->dumpFile($filePath, @\Kint::dump('Dumped'));
 
         $salesChannelId = $salesChannelContext->getSalesChannelId();
 
@@ -359,76 +349,67 @@ class ProductConfiguratorController extends StorefrontController
         if (!$fastDeliveryFilter && !$cadFileFilter) {
             $productIdsToFilter = $this->getVisibleProductsIdsBySalesChannel($salesChannelId);
         }
- 
-        $query = new QueryBuilder($this->connection);
 
-        $query->select([
-            'LOWER(upper_product.id) AS productId',
-            'upper_product.property_ids'
-        ]);    
+        $productPropertiesQuery = new QueryBuilder($this->connection);
+        $productPropertiesQuery->select([
+            'LOWER(HEX(id)) AS id',
+            'property_ids AS properties'
+            ])
+            ->from('product', 'product')
+            ->where('product.id IN (:productIds)');
+            // array_agg(tag_id order by tag_id)
+        $productPropertiesQuery->setParameter('productIds', Uuid::fromHexToBytesList($productIdsToFilter), ArrayParameterType::BINARY);
 
-        $query->setParameter('productIds', Uuid::fromHexToBytesList($productIdsToFilter), ArrayParameterType::BINARY);
+        $foundProducts = $productPropertiesQuery->executeQuery()->fetchAllAssociative();
 
-        $query->from('(' . $this->getProductFilterSelect() . ')', 'upper_product');
-        
-        $propertyIdsSelect = 'upper_product.property_ids';
+        $availableOptions = [];
+        $productPropsArr = [];
+        foreach ($foundProducts as $productData) {
+            if (!empty($productData['properties'])) {
+                $productProps = json_decode($productData['properties'], true);
 
-        $concatWheres = '';
-        $count = 0;
-        foreach ($propsArr as $key => $value) {
-            $bindingKey = (string)$key . '_property';
+                // the product needs to have all mandatory properties
+                // otherwise, discard
+                if (count(array_intersect($propsArr, $productProps)) !== count($propsArr)) {
+                    continue;
+                } 
 
-            if ($count == 0) {
-                $concatWheres .= " ( JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) )";
-            } else {
-                $concatWheres .= " AND ( JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) )";
-            }
+                $productPropsFlipped = array_flip($productProps);
+                $hasAllProperties = true;
 
-            $query->setParameter($bindingKey, $value);
-            $count++;
-        }
-        $query->where( $concatWheres );
-          
-        if (!empty($minMaxProperties)) {
+                // the product also has to have at least one of the min/max properties
+                if (!empty($minMaxProperties)) {
 
-            $countBindingKey = 0;
-            $countGroupId = 0;
-            foreach ($minMaxProperties['groupId'] as $groupId => $propertyIds) {
-                
-                $count = 0;
+                    foreach ($minMaxProperties['groupId'] as $groupId => $propertyIds) {
 
-                $concatSecond = '';
-                foreach ($propertyIds as $propertyId => $data) {
-                    
-                    $bindingKey = (string)$countBindingKey . '_property_min_max';
+                        $intersectingKeys = array_intersect_key($propertyIds, $productPropsFlipped);
 
-                    if ($count == 0) {
-                        $concatSecond .= "  JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) ";
-                    } else {
-                        $concatSecond .= " OR ( JSON_CONTAINS(". $propertyIdsSelect .", JSON_ARRAY(:". $bindingKey .")) )";
+                        if (empty($intersectingKeys)) {
+                            $hasAllProperties = false;
+                            break;
+                        }
                     }
-                            
-                    $query->setParameter($bindingKey, $propertyId);
-
-                    $count++;
-                    $countBindingKey++;
                 }
 
-                $query->andWhere( $concatSecond );
-                $countGroupId++;
+                if ($hasAllProperties) {
+                    $foundProductss[] = $productData['id'];
+                    $productPropsArr[] = $productProps;
+
+                }
             }
         }
-
-        $result = $query->executeQuery()->fetchAllAssociative();
-
-        $products = [];
-        if (!empty($result)) {
-            foreach ($result as $productId) {
-                $products[] = $productId['productId'];
-            }
-            return $products;
+        
+        if (empty($productPropsArr)) {
+            return [];
         }
-        return [];
+        $availableOptions = array_unique(array_merge(...$productPropsArr));
+
+        $result = [];
+        foreach ($availableOptions as $key => $value) {
+            $result[] = $value;
+        }
+
+        return $result;
     }
 
     public function getRangedProperties($salesChannelContext, $minProps, $maxProps) {
@@ -500,6 +481,14 @@ class ProductConfiguratorController extends StorefrontController
         return $propsToFilter;
     }
 
+    public function removeNotAssociatedProperties($properties): array
+    {
+        
+        return [];
+
+
+
+    }
     public function getCategoryPropertyGroupId(): String
     {
         return '018a6a86ccd0746d879ac44523974aa3';
@@ -522,8 +511,7 @@ class ProductConfiguratorController extends StorefrontController
         if ($first) {
             $fsObject->dumpFile($filePath, @\Kint::dump('new'));
         }
-        $fsObject->appendToFile($filePath, @\Kint::dump($message));
-        $fsObject->appendToFile($filePath, @\Kint::dump($timeWithMilliseconds));
+        $fsObject->appendToFile($filePath, @\Kint::dump($message . ': ' . $timeWithMilliseconds));
 
     }
 
