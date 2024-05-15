@@ -88,12 +88,11 @@ class ProductFinderController extends StorefrontController
         // get productIds by property Ids
         $filteredProductIds = $this->filterProductsByPropertyIds($salesChannelContext, $mandatoryProps, $optionalProps);
 
-
         $propertyIds = $this->getAvailableOptionsByProductId($filteredProductIds, $propertyGroupIds);
 
-
-
         $propertiesByGroupId = $this->getPropertiesTranslations($salesChannelContext, $propertyIds, $propertyGroupIds);
+
+        
 
         $selectedProperties = false;
         if ($selectedPropertiesParam) {
@@ -103,22 +102,14 @@ class ProductFinderController extends StorefrontController
         $template = [];
         if ($propertyGroupsParamSelect) {
             $selectGroupIds = explode(',',$propertyGroupsParamSelect);
-            $defaultPropertyIds = explode(',',$defaultPropertyIdsParam);
 
             foreach ($selectGroupIds as $groupId) {
 
                     $options = $this->getSelectOptionsByGroupId($salesChannelContext, $groupId);
-                    foreach ($options as $key => $data) {
-                        $propertyId = $data['propertyId'];
-                        if (!in_array($propertyId, $defaultPropertyIds)) {
-                            unset($options[$key]);
-                        }
-                    }
-                    if (!empty($options)) {
+                    $selectOptions = $this->fetchAvailableOptionsForSelect($salesChannelContext, $categoryId[0], $options);
+                    $groupName = $propertyGroupsData[$groupId];
+                    $template[] = $this->prepareSelect($groupId, $groupName, $selectOptions, $selectedProperties);
 
-                        $groupName = $propertyGroupsData[$groupId];
-                        $template[] = $this->prepareSelect($groupId, $groupName, $options, $selectedProperties);
-                    }
             }
         }
 
@@ -196,6 +187,72 @@ class ProductFinderController extends StorefrontController
         return [];
     }
 
+    public function fetchAvailableOptionsForSelect($salesChannelContext, $categoryId, $selectCategoryProps)
+    {
+        $selectProps = [];
+        foreach ($selectCategoryProps as $categoryProps) {
+            $selectProps[] = $categoryProps['propertyId'];
+        }
+
+        // $filePath = '/var/www/html/tentecom/public/getProductIdsBySelectedPropertiesProductPropertyTable.html';
+        // $fsObject = new Filesystem();
+        // $fsObject->touch($filePath);
+        // $fsObject->chmod($filePath, 0777);
+        // $fsObject->dumpFile($filePath, @\Kint::dump('Dumped'));
+        // $fsObject->appendToFile($filePath, @\Kint::dump($categoryId));
+        $salesChannelId = $salesChannelContext->getSalesChannelId();
+        $productIdsToFilter = $this->getVisibleProductsIdsBySalesChannel($salesChannelId);
+
+        $productPropertiesQuery = new QueryBuilder($this->connection);
+        $productPropertiesQuery->select([
+            'LOWER(HEX(id)) AS id',
+            'property_ids AS properties'
+            ])
+            ->from('product', 'product')
+            ->where('product.id IN (:productIds)');
+
+        $productPropertiesQuery->setParameter('productIds', Uuid::fromHexToBytesList($productIdsToFilter), ArrayParameterType::BINARY);
+
+        $foundProducts = $productPropertiesQuery->executeQuery()->fetchAllAssociative();
+        $availableOptions = [];
+        $productPropsArr = [];
+        foreach ($foundProducts as $productData) {
+            if (!empty($productData['properties'])) {
+
+
+                $productProps = json_decode($productData['properties'], true);
+
+                // the product needs to have all mandatory properties
+                // otherwise, discard
+                if (!in_array($categoryId, $productProps)) {
+                    continue;
+                }
+                
+                $intersection = array_intersect($selectProps, $productProps);
+
+                if (!empty($intersection)) {
+                    $productPropsArr[] = $productProps;
+                }
+            }
+        }
+
+        if (empty($productPropsArr)) {
+            return [];
+        }
+        $availableOptions = array_unique(array_merge(...$productPropsArr));
+
+        $result = [];
+        foreach ($availableOptions as $key => $value) {
+            $result[] = $value;
+        }
+
+        foreach ($selectCategoryProps as $key => $categoryProps) {
+            if (!in_array($categoryProps['propertyId'], $result)) {
+                unset($selectCategoryProps[$key]);
+            }
+        }
+        return $selectCategoryProps;
+    }
     
     public function getPropertyGroupTranslations($salesChannelContext, $propertyGroupIds): array
     {
@@ -529,7 +586,7 @@ class ProductFinderController extends StorefrontController
             $html .= '<span class="icon icon-arrow-medium-down icon-xs"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><use xlink:href="#icons-solid-arrow-medium-down" fill="#758CA3" fill-rule="evenodd"></use></svg></span>';
             $html .= '</span></span>';
             $html .= '</label>';
-                $html .= '<div class="dropdown-content">';
+                $html .= '<div class="dropdown-content" >';
                     $html .= '<div class="options-list">';
 
                     foreach ($options as $optionElement) {

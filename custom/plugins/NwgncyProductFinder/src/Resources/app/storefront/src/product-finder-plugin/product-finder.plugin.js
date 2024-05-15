@@ -54,7 +54,7 @@ export default class ProductFinderPlugin extends Plugin {
           this._propertyOptions = DomAccess.querySelectorAll(blockContainer, this.options.propertyOptionsFieldSelector, false);
           this._propertyOptionsInputs = DomAccess.querySelectorAll(blockContainer, this.options.propertyOptionSelector, false);
           this._findButton = DomAccess.querySelector(blockContainer, this.options.findButton);
-          this._minMaxOptionsGroups = DomAccess.querySelectorAll(blockContainer, this.options.minMaxOptionsGroupsFieldSelector);
+          this._minMaxOptionsGroups = DomAccess.querySelectorAll(blockContainer, this.options.minMaxOptionsGroupsFieldSelector, false);
 
 
           const defaultActiveCategoryField = DomAccess.querySelector(blockContainer, this.options.activeCategoryFieldSelector);
@@ -104,6 +104,8 @@ export default class ProductFinderPlugin extends Plugin {
                const label = element.querySelector('.property-group-label');
                label.addEventListener('click', () => {
                     this._propertyOptionsGroups.forEach(el => {
+                         // console.log(el);
+                         
                          if (el !== element) {
                               el.classList.remove('open');
                          }
@@ -139,37 +141,67 @@ export default class ProductFinderPlugin extends Plugin {
                     });
                });
           }
-          this._minMaxOptionsGroups.forEach(element => {
-               const groupId = element.getAttribute('data-property-group');
-               let sliderOne = element.querySelector(".nwgncy-finder-slider-1");
-               let sliderTwo = element.querySelector(".nwgncy-finder-slider-2");
-
-               let displayValOne = element.querySelector(".nwgncy-finder-slider-range1");
-               let displayValTwo = element.querySelector(".nwgncy-finder-slider-range2");
-
-
-               let dash = element.querySelector(".nwgncy-finder-slider-dash");
-               let sliderOne1 = element.querySelectorAll('.nwgncy-finder-slider-buttons span');
-
-
-               let sliderTrack = element.querySelector(".nwgncy-finder-slider-track");
-
-               const stepVal = Array.from(element.querySelector(".nwgncy-finder-slider-number").options, option => option.value);
+          if (this._minMaxOptionsGroups) {
                
-               displayValOne.textContent = stepVal[sliderOne.value];
-               displayValTwo.textContent = stepVal[sliderTwo.value];
+          
+               this._minMaxOptionsGroups.forEach(element => {
+                    const groupId = element.getAttribute('data-property-group');
+                    let sliderOne = element.querySelector(".nwgncy-finder-slider-1");
+                    let sliderTwo = element.querySelector(".nwgncy-finder-slider-2");
 
-               sliderOne1.forEach(button => {
-                    button.addEventListener('click', () => {
-                         if (this.isCloserToSlider(parseInt(button.getAttribute('data-value')), sliderOne.value, sliderTwo.value)) {
-                              sliderOne.value = parseInt(button.getAttribute('data-value'));
-                              displayValOne.textContent = stepVal[sliderOne.value];
-                         } else {
-                              sliderTwo.value = parseInt(button.getAttribute('data-value'));
-                              displayValTwo.textContent = stepVal[sliderTwo.value];
-                         }
-                         this.fillColor(sliderOne, sliderTwo, sliderOne1, dash, sliderTrack, displayValOne, displayValTwo);
+                    let displayValOne = element.querySelector(".nwgncy-finder-slider-range1");
+                    let displayValTwo = element.querySelector(".nwgncy-finder-slider-range2");
 
+
+                    let dash = element.querySelector(".nwgncy-finder-slider-dash");
+                    let sliderOne1 = element.querySelectorAll('.nwgncy-finder-slider-buttons span');
+
+
+                    let sliderTrack = element.querySelector(".nwgncy-finder-slider-track");
+
+                    const stepVal = Array.from(element.querySelector(".nwgncy-finder-slider-number").options, option => option.value);
+                    
+                    displayValOne.textContent = stepVal[sliderOne.value];
+                    displayValTwo.textContent = stepVal[sliderTwo.value];
+
+                    sliderOne1.forEach(button => {
+                         button.addEventListener('click', () => {
+                              if (this.isCloserToSlider(parseInt(button.getAttribute('data-value')), sliderOne.value, sliderTwo.value)) {
+                                   sliderOne.value = parseInt(button.getAttribute('data-value'));
+                                   displayValOne.textContent = stepVal[sliderOne.value];
+                              } else {
+                                   sliderTwo.value = parseInt(button.getAttribute('data-value'));
+                                   displayValTwo.textContent = stepVal[sliderTwo.value];
+                              }
+                              this.fillColor(sliderOne, sliderTwo, sliderOne1, dash, sliderTrack, displayValOne, displayValTwo);
+
+                              const rangeValue1 = element.querySelector('.nwgncy-finder-slider-range1');
+                              const rangeValue2 = element.querySelector('.nwgncy-finder-slider-range2');
+
+                              const rangeValue1Order = rangeValue1?.style?.order;
+
+                              var minValue = '';
+                              var maxValue = '';
+
+                              if (rangeValue1Order == '1') {
+                                   minValue = rangeValue1?.textContent;
+                                   maxValue = rangeValue2?.textContent;
+                              } else if (rangeValue1Order == '3') {
+                                   maxValue = rangeValue1?.textContent;
+                                   minValue = rangeValue2?.textContent;
+                              }
+
+                              if (minValue) {
+                                   this._selectedMinMeasuredPropertyOptions[groupId] = minValue;
+                              }
+                              if (maxValue) {
+                                   this._selectedMaxMeasuredPropertyOptions[groupId] = maxValue;
+                              }
+                         });
+                    });
+
+                    sliderOne.addEventListener('input', e => {
+                         this.slideOne(element, e, 'nwgncy-finder-slider-range1', dash, sliderTrack, sliderOne, sliderTwo, sliderOne1, stepVal, displayValTwo);
                          const rangeValue1 = element.querySelector('.nwgncy-finder-slider-range1');
                          const rangeValue2 = element.querySelector('.nwgncy-finder-slider-range2');
 
@@ -193,61 +225,34 @@ export default class ProductFinderPlugin extends Plugin {
                               this._selectedMaxMeasuredPropertyOptions[groupId] = maxValue;
                          }
                     });
+                    sliderTwo.addEventListener('input', e => {
+                         this.slideTwo(element, e, 'nwgncy-finder-slider-range2', dash, sliderTrack, sliderOne, sliderTwo, sliderOne1, stepVal, displayValOne);
+                         const rangeValue1 = element.querySelector('.nwgncy-finder-slider-range1');
+                         const rangeValue2 = element.querySelector('.nwgncy-finder-slider-range2');
+
+                         const rangeValue1Order = rangeValue1?.style?.order;
+
+                         var minValue = '';
+                         var maxValue = '';
+
+                         if (rangeValue1Order == '1') {
+                              minValue = rangeValue1?.textContent;
+                              maxValue = rangeValue2?.textContent;
+                         } else if (rangeValue1Order == '3') {
+                              maxValue = rangeValue1?.textContent;
+                              minValue = rangeValue2?.textContent;
+                         }
+
+                         if (minValue) {
+                              this._selectedMinMeasuredPropertyOptions[groupId] = minValue;
+                         }
+                         if (maxValue) {
+                              this._selectedMaxMeasuredPropertyOptions[groupId] = maxValue;
+                         }
+                    });
+                    this.setElementOrder(displayValOne, dash, displayValTwo);
                });
-
-               sliderOne.addEventListener('input', e => {
-                    this.slideOne(element, e, 'nwgncy-finder-slider-range1', dash, sliderTrack, sliderOne, sliderTwo, sliderOne1, stepVal, displayValTwo);
-                    const rangeValue1 = element.querySelector('.nwgncy-finder-slider-range1');
-                    const rangeValue2 = element.querySelector('.nwgncy-finder-slider-range2');
-
-                    const rangeValue1Order = rangeValue1?.style?.order;
-
-                    var minValue = '';
-                    var maxValue = '';
-
-                    if (rangeValue1Order == '1') {
-                         minValue = rangeValue1?.textContent;
-                         maxValue = rangeValue2?.textContent;
-                    } else if (rangeValue1Order == '3') {
-                         maxValue = rangeValue1?.textContent;
-                         minValue = rangeValue2?.textContent;
-                    }
-
-                    if (minValue) {
-                         this._selectedMinMeasuredPropertyOptions[groupId] = minValue;
-                    }
-                    if (maxValue) {
-                         this._selectedMaxMeasuredPropertyOptions[groupId] = maxValue;
-                    }
-               });
-               sliderTwo.addEventListener('input', e => {
-                    this.slideTwo(element, e, 'nwgncy-finder-slider-range2', dash, sliderTrack, sliderOne, sliderTwo, sliderOne1, stepVal, displayValOne);
-                    const rangeValue1 = element.querySelector('.nwgncy-finder-slider-range1');
-                    const rangeValue2 = element.querySelector('.nwgncy-finder-slider-range2');
-
-                    const rangeValue1Order = rangeValue1?.style?.order;
-
-                    var minValue = '';
-                    var maxValue = '';
-
-                    if (rangeValue1Order == '1') {
-                         minValue = rangeValue1?.textContent;
-                         maxValue = rangeValue2?.textContent;
-                    } else if (rangeValue1Order == '3') {
-                         maxValue = rangeValue1?.textContent;
-                         minValue = rangeValue2?.textContent;
-                    }
-
-                    if (minValue) {
-                         this._selectedMinMeasuredPropertyOptions[groupId] = minValue;
-                    }
-                    if (maxValue) {
-                         this._selectedMaxMeasuredPropertyOptions[groupId] = maxValue;
-                    }
-               });
-               this.setElementOrder(displayValOne, dash, displayValTwo);
-          });
-
+          }
           this._findButton.addEventListener('click', event => {
                var queryString = "";
                const allPropertySelectValues = Object.values(this._selectedPropertyOptions).flat();
@@ -393,6 +398,7 @@ export default class ProductFinderPlugin extends Plugin {
 
                     const availableOptionIds = responseObject.availableOptionIds;
                     
+                    
                     this._propertyOptionsGroups.forEach(propertyGroupField => {
                          var availableOptionsCount = 0;
                          const groupId = propertyGroupField.getAttribute('data-property-group');
@@ -411,34 +417,37 @@ export default class ProductFinderPlugin extends Plugin {
                               propertyGroupField.style.display = 'flex';
                          }
                     });
+                    if (this._minMaxOptionsGroups) {
+                         this._minMaxOptionsGroups.forEach(propertyGroupField => {
 
-                    this._minMaxOptionsGroups.forEach(propertyGroupField => {
+                              var availableOptionsCount = 0;
+                              const groupId = propertyGroupField.getAttribute('data-property-group');
+                              const propertyGroupFieldOptions = propertyGroupField.querySelectorAll('.nwgncy-finder-slider-number option');
 
-                         var availableOptionsCount = 0;
-                         const groupId = propertyGroupField.getAttribute('data-property-group');
-                         const propertyGroupFieldOptions = propertyGroupField.querySelectorAll('.nwgncy-finder-slider-number option');
-
-                         propertyGroupFieldOptions.forEach(inputElement => {
-                              const inputElementId = inputElement.id;
-                              
-                              
-                              if (availableOptionIds.includes(inputElementId)) {
-                                   availableOptionsCount++;
+                              propertyGroupFieldOptions.forEach(inputElement => {
+                                   const inputElementId = inputElement.id;
+                                   
+                                   
+                                   if (availableOptionIds.includes(inputElementId)) {
+                                        availableOptionsCount++;
+                                   }
+                              });
+                              if (availableOptionsCount == 0) {
+                                   propertyGroupField.style.display = 'none';
+                                   delete this._selectedMinMeasuredPropertyOptions[groupId];
+                                   delete this._selectedMaxMeasuredPropertyOptions[groupId];
+                              } else {
+                                   propertyGroupField.style.display = 'flex';
                               }
                          });
-                         if (availableOptionsCount == 0) {
-                              propertyGroupField.style.display = 'none';
-                              delete this._selectedMinMeasuredPropertyOptions[groupId];
-                              delete this._selectedMaxMeasuredPropertyOptions[groupId];
-                         } else {
-                              propertyGroupField.style.display = 'flex';
-                         }
-                    });
+                    }
 
                }
           } catch (error) {
+               console.log(error);
+               
           }
-
+          
           // if the category change is successfull, add the default select options
           if (this._categoryChange) {
                this.collectDefaultSelectOptions();
