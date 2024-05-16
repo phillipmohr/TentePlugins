@@ -279,13 +279,6 @@
         }
     }
 
-    .product-detail-tabs {
-        @include media-breakpoint-up(sm) {
-            width: fit-content;
-        }
-
-    }
-
     .quantity-selector-group {
 
         .btn {

@@ -11,9 +11,6 @@
                 <h4 class="product-detail-properties-title">{{ "detail.properties.label.downloads"|trans }}</h4>
                 <div class="tente-downloads-container">
 
-                {% if page.product.translated.customFields["product_datasheet_url"] is defined %}
-                {{ dump(page.product.translated.customFields["product_datasheet_url"])}}
-                {% endif %}
                 {% if config('AcrisProductDownloadsCS.config').displayPosition != 'noDisplay' and ((page.product.extensions.acrisDownloads.elements and page.product.extensions.acrisDownloads.elements|length > 0) or (config('AcrisProductDownloadsCS.config').linkDisplayPosition == 'inDownloads' and page.product.extensions.acrisLinks.elements and page.product.extensions.acrisLinks.elements|length > 0)) %}
 
                     {% sw_include '@Storefront/storefront/page/product-detail/acris-downloads/download-tab.html.twig' with {

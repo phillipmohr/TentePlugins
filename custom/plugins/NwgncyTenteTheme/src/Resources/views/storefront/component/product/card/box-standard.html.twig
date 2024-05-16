@@ -19,7 +19,7 @@
 {% block component_product_box_action %}
 
 
-    {% if not (product.translated.customFields.product_download_is and controllerName != "Search") %}
+    {% if not (product.translated.customFields.product_download_is and controllerName not in ["Search", "Product"]) %}
         {% sw_include '@Storefront/storefront/component/product/card/action.html.twig' %}
     {% endif %}
 {% endblock %} 
@@ -49,14 +49,14 @@
     <a href="{{ seoUrl('frontend.detail.page', {'productId': id}) }}"
         class="product-name"
         title="{{ newName }}">
-        {% if product.translated.customFields.product_download_is %}
+        {% if product.translated.customFields.product_download_is and controllerName != 'Product' %}
             {{ product.translated.name }} 
         {% else %}
             {{ newName }}
         {% endif %}
     </a>
  
-    {% if product.translated.customFields.product_download_is is null %}
+    {% if product.translated.customFields.product_download_is is null or controllerName == 'Product' %}
         <div class="product-name-sku"><p>{{ product.productNumber }}</p></div>
     {% endif %}
 

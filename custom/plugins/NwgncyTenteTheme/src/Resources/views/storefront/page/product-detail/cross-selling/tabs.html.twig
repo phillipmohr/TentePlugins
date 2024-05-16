@@ -6,60 +6,55 @@
         {% block page_product_detail_cross_selling_tabs_navigation %} {% endblock %}
 
         {% block page_product_detail_cross_selling_tabs_content %}
-            <div class="card-body">
-                {% block page_product_detail_cross_selling_tabs_content_container %}
-                    {% for item in crossSellings|filter(item => item.total > 0 and item.crossSelling.active == true) %}
-                        {% set id = item.crossSelling.id %}
+            {% for item in crossSellings|filter(item => item.total > 0 and item.crossSelling.active == true) %}
+                {% set id = item.crossSelling.id %}
+                <div class="row mb-5">
+                    <div class="container">
+                    <h3 class="cross-selling-title">{{ item.crossSelling.translated.name }}</h3>
+                        {% set config = {
+                            'title': {
+                                'value': item.crossSelling.name ?: item.crossSelling.translated.name
+                            },
+                            'border': {
+                                'value': false
+                            },
+                            'rotate': {
+                                'value': false
+                            },
+                            'products': {
+                                'value': item.getProducts()
+                            },
+                            'boxLayout': {
+                                'value': 'standard'
+                            },
+                            'elMinWidth': {
+                                'value': '300px'
+                            },
+                            'navigation': {
+                                'value': true
+                            },
+                            'displayMode': {
+                                'value': 'minimal'
+                            },
+                            'verticalAlign': {
+                                'value': 'top'
+                            },
+                        } %}
 
-                        <div class="cross-selling">
-                        <h3 class="cross-selling-title">{{ item.crossSelling.translated.name }}</h3>
-                            <div class="cross-selling-content">
-                                {% set config = {
-                                    'title': {
-                                        'value': item.crossSelling.name ?: item.crossSelling.translated.name
-                                    },
-                                    'border': {
-                                        'value': false
-                                    },
-                                    'rotate': {
-                                        'value': false
-                                    },
+                        {% sw_include "@Storefront/storefront/element/cms-element-product-slider.html.twig" with {
+                            sliderConfig: config,
+                            element: {
+                                'data': {
                                     'products': {
-                                        'value': item.getProducts()
-                                    },
-                                    'boxLayout': {
-                                        'value': 'standard'
-                                    },
-                                    'elMinWidth': {
-                                        'value': '300px'
-                                    },
-                                    'navigation': {
-                                        'value': true
-                                    },
-                                    'displayMode': {
-                                        'value': 'minimal'
-                                    },
-                                    'verticalAlign': {
-                                        'value': 'top'
-                                    },
-                                } %}
-
-                                {% sw_include "@Storefront/storefront/element/cms-element-product-slider.html.twig" with {
-                                    sliderConfig: config,
-                                    element: {
-                                        'data': {
-                                            'products': {
-                                                elements: item.getProducts()
-                                            }
-                                        },
-                                        type: 'product-slider'
+                                        elements: item.getProducts()
                                     }
-                                } %}
-                            </div>
-                        </div>
-                    {% endfor %}
-                {% endblock %}
-            </div>
+                                },
+                                type: 'product-slider'
+                            }
+                        } %}
+                    </div>
+                </div>
+            {% endfor %}
         {% endblock %}
     </div>
 {% endblock %}

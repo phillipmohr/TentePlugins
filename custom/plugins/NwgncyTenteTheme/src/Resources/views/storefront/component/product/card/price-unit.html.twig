@@ -16,7 +16,7 @@
                         <a href="{{ seoUrl('frontend.detail.page', {'productId': id}) }}"
                         class="btn btn-detail btn-primary"
                         title="{{ "listing.boxProductDetails"|trans|striptags }}">
-                            {% if product.translated.customFields.product_download_is %}
+                            {% if product.translated.customFields.product_download_is and controllerName not in ["Search", "Product"] %}
                                 {{ "listing.downloadText"|trans|sw_sanitize }}
                             {% else %}
                                 {{ "listing.boxProductDetails"|trans|sw_sanitize }}
