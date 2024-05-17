@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
  
 namespace Nwgncy\ProductsConfigurator\Twig;
-
+ 
 use Nwgncy\ProductsConfigurator\Utils\CommonFunctions;
 use Shopware\Core\Content\Category\CategoryEntity;
 use Shopware\Core\Content\Property\Aggregate\PropertyGroupOption\PropertyGroupOptionCollection;
@@ -87,6 +87,7 @@ class ProductConfiguratorFunctions extends AbstractExtension
           $propertyGroupPropertiesResult = $this->propertyGroupOptionRepository->search($propertyGroupOptionCriteria, $context);
           $propertyGroupPropertiesEntities = $propertyGroupPropertiesResult->getEntities();
           $propertyGroupOptions = [];
+
           if ($propertyGroupPropertiesEntities instanceof PropertyGroupOptionCollection) {
                $elements = $propertyGroupPropertiesEntities->getElements();
                foreach ($elements as $element) {
@@ -94,6 +95,7 @@ class ProductConfiguratorFunctions extends AbstractExtension
                     $elementArray = [
                          'id' => $element->getId(),
                          'name' => $name,
+                         'position' => $element->getPosition(),
                     ];
                     if ($isMeasure) {
                          $parsedValue = CommonFunctions::parsefloatFromString($name);
@@ -106,7 +108,13 @@ class ProductConfiguratorFunctions extends AbstractExtension
                     $nameB = $b['name'] ?? '';
                     return strnatcmp($nameA, $nameB);
                });
+               if ($propertyGroupId == '018a6a86ccd0746d879ac44523974aa3') {
+                    usort($propertyGroupOptions, function ($a, $b) {
+                         return $a['position'] > $b['position']; 
+                    });
+               }
           }
+
           return $propertyGroupOptions;
      }
 }
