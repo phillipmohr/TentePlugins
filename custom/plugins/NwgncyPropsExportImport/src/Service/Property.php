@@ -47,6 +47,16 @@ class Property
             
         return $this->propertyGroup->search($criteria, $context);
     }
+    public function getPropertiesByProductIds($context, $productIds)
+    {
+ 
+         $criteria = (new Criteria())
+            ->addAssociation('name')
+            ->addAssociation('translations');
+            
+        return $this->propertyGroupOption->search($criteria, $context);
+    }
+
     public function getPropertyGroupTranslations($context, $groupId)
     {
           $criteria = (new Criteria())

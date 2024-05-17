@@ -6,7 +6,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use NwgncyPropsExportImport\Service\Property;
 use NwgncyPropsExportImport\Service\Language;
 use Shopware\Core\Framework\Context;
-
+use Symfony\Component\Filesystem\Filesystem;
 class EntityWriteSubscriber implements EventSubscriberInterface
 {
     protected $property;
@@ -31,23 +31,25 @@ class EntityWriteSubscriber implements EventSubscriberInterface
     public function beforeWrite($event)
     {
 
-        $context = Context::createDefaultContext();
+        
         $request = $event->getRequest()->request;
         $data = $request->all();
 
         if (isset($data['customFields'])) {
+            
+            if (isset($data['customFields']['custom_technical_data_type'])) {
+                $context = Context::createDefaultContext();
+                $groupId = $data['id'];
+                $languagesIdName = $this->language->getLanguagesIdName($context); 
+                $customFields = $data['customFields'];
 
-            $groupId = $data['id'];
-            $languagesIdName = $this->language->getLanguagesIdName($context); 
-            $customFields = $data['customFields'];
-
-            $translationsArr = [];
-            foreach ($languagesIdName as $languageId => $languageName) {
-                $translationsArr[$languageId]['customFields'] = $customFields;
+                $translationsArr = [];
+                foreach ($languagesIdName as $languageId => $languageName) {
+                    $translationsArr[$languageId]['customFields'] = $customFields;
+                }
+        
+                $this->property->updatePropertyGroupTranslationByGroupId($context, $groupId, $translationsArr);
             }
-    
-            $this->property->updatePropertyGroupTranslationByGroupId($context, $groupId, $translationsArr);
-
         }
     }
 }

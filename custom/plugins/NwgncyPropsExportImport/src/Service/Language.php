@@ -47,4 +47,16 @@ class Language
         }
         return $idNameArr;
     }
+
+    public function getLanguageIds($context)
+    {
+        $criteria = new Criteria();
+        $languages = $this->languageRepository->search($criteria, $context);
+
+        $ids = [];
+        foreach ($languages->getElements() as $language) {
+            $ids[] = $language->getId();
+        }
+        return $ids;
+    }
 } 
