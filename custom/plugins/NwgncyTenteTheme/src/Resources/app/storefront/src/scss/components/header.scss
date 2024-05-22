@@ -155,11 +155,13 @@ header.header-main {
   max-height: 400px;
 }
 
-.tenteHeader .cms-element-rhweb-cta-banner .overlay {
+.cms-block-rhweb-cta-banner-basic .cms-element-rhweb-cta-banner .overlay {
   padding: 15px 15px 15px 50px;
   background: linear-gradient(90deg,rgba(50, 60, 105, 1.0),rgba(50, 60, 105, 0.7),rgba(50, 60, 105, 0.01)) !important;
   height: 100% !important;
+  width: 100%;
 }
+
 
 @media (max-width: 575px) {
     .header-actions-col{
