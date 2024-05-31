@@ -1,6 +1,14 @@
 {% block sw_cms_element_nwgncy_products_configurator %}
     {% set propertyGroupIdList = [] %}
-    
+    {% set userAgent = app.request.server.get('HTTP_USER_AGENT') %}
+    {% set isNotIphone = true %}
+
+    {% if userAgent|contains('iPhone') %}
+         {% set isNotIphone = false %}
+    {% endif %}
+
+
+
     <form id="configurator-form" name="products-configurator" action="{{ path('storefront.respective-available-options.get') }}" data-sc-base-url="{{ app.request.attributes.get('sw-sales-channel-base-url') }}">
         <div class="categories-and-search">
             <div class="categories">
@@ -109,9 +117,9 @@
                     {% set id = 'configurator-property-group-' ~ propertyGroupId %}
                     {% set propertyGroupOptions = getPropertyOptionsByGroupId(propertyGroupId, false, context) %}
 
-                    <div class="field">
+                    <div class="field"> 
                         <label for="{{ id }}">{{ name }}</label>
-                        <select name="{{ selectName }}" id="{{ id }}" multiple class="js-configurator-property">
+                        <select name="{{ selectName }}" id="{{ id }}" {% if isNotIphone %} multiple {% endif %} class="js-configurator-property">
                             <option class="reset" value="">{{ "nwgncy-products-configurator.label.reset" | trans }}</option>
                             {% for option in propertyGroupOptions %}
                                 <option value="{{ option.id }}">{{ option.name }}</option>

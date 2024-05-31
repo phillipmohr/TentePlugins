@@ -1017,5 +1017,6 @@ export default class ProductConfiguratorPlugin extends Plugin {
                this.stopLoading();
           }, 200);    
      }
+
         
 }
