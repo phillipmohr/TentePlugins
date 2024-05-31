@@ -8,27 +8,27 @@
         "privacyNoticeTextShort": "Ich habe die <a href=\"%privacyUrl%\" target=\"_blank\">Datenschutzerklärung</a> gelesen, verstanden und stimme zu."
     },
     "customForm": {
-        "firstname": "Firstname",
-        "lastname": "Lastname",
-        "country": "Country",
+        "firstname": "Vorname",
+        "lastname": "Nachname",
+        "country": "Land",
         "department": "Department",
-        "language": "Language",
-        "message": "Message",
-        "phone": "Phone",
-        "email": "Email",
-        "companyName": "Company",
-        "title": "Request"
+        "language": "Sprache",
+        "message": "Nachricht",
+        "phone": "Telefon",
+        "email": "E-Mail",
+        "companyName": "Firma",
+        "title": "Anfrage"
     },
     "customFormError": {
-        "firstname": "Please enter first name",
-        "lastname": "Please enter last name",
-        "country": "Please select country",
-        "department": "Please enter department",
-        "email": "Please enter email",
-        "companyName": "Please enter company name"
+        "firstname": "Bitte Vorname eingeben",
+        "lastname": "Bitte Nachname eingeben",
+        "country": "Bitte Land auswählen",
+        "department": "Bitte Department eingeben",
+        "email": "Bitte E-Mail eingebem",
+        "companyName": "Bitte Firmennamen eingeben"
     },
     "customFormRequestError": {
-        "message": "Something went wrong. Please contact support."
+        "message": "Etwas ist schief gelaufen. Bitte kontaktieren Sie Support."
     },
     "topBar": {
         "location": "Location"
