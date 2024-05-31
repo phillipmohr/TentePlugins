@@ -5,6 +5,7 @@ namespace Nwgncy\TenteTheme\Subscriber;
 
 use Shopware\Core\Content\Product\ProductEvents;
 use Shopware\Core\Content\Product\Events\ProductListingCriteriaEvent;
+use Shopware\Core\Content\Product\Events\ProductSearchCriteriaEvent;
 use Shopware\Core\Content\Product\SalesChannel\SalesChannelProductEntity;
 use Shopware\Core\Framework\Api\Context\SalesChannelApiSource;
 use Shopware\Core\Framework\DataAbstractionLayer\Event\EntityLoadedEvent;
@@ -17,6 +18,8 @@ class ProductListingSubscriber implements EventSubscriberInterface
        return [
            ProductEvents::PRODUCT_LOADED_EVENT => 'onProductsLoaded',
            ProductListingCriteriaEvent::class => 'handleRequest',
+           ProductSearchCriteriaEvent::class => 'handleRequest',
+           ProductEvents::PRODUCT_SUGGEST_RESULT => "onProductsLoaded",
        ];
    }
 
