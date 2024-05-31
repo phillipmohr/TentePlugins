@@ -10,6 +10,8 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Filesystem\Filesystem;
 use Shopware\Core\Content\Product\Events\ProductListingResultEvent;
+use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\OrFilter;
+use Symfony\Component\HttpFoundation\Request;
 
 class ProductListingCriteriaSubscriber implements EventSubscriberInterface
 {
@@ -121,6 +123,38 @@ class ProductListingCriteriaSubscriber implements EventSubscriberInterface
         $salesChannelContext = $event->getSalesChannelContext();
         $salesChannelId = $salesChannelContext->getSalesChannel()->getId();
 
+        $properties = $this->getPropertyIds($request);
+
+        $stainlessPropId = '018e80180fec71ffa6bc1e08fd791ebb';
+        $electricConductingPropId = '018e801211907288993bddfb03923a20';
+
+        if (in_array($stainlessPropId, $properties) && in_array($electricConductingPropId, $properties)) {
+            
+            $postFilters = $criteria->getPostFilters();
+            if (!empty($postFilters)) {
+
+                foreach ($postFilters as $postFilter) {
+    
+                    if ($postFilter->getOperator() === 'AND') {
+    
+                        $newFilterStainless = new OrFilter([
+                            new EqualsAnyFilter('product.optionIds', [$stainlessPropId]),
+                            new EqualsAnyFilter('product.propertyIds', [$stainlessPropId]),
+                        ]);
+            
+                        $newFilterElectric = new OrFilter([
+                            new EqualsAnyFilter('product.optionIds', [$electricConductingPropId]),
+                            new EqualsAnyFilter('product.propertyIds', [$electricConductingPropId]),
+                        ]);
+            
+                        $postFilter->addQuery($newFilterElectric);
+                        $postFilter->addQuery($newFilterStainless);
+                        break;
+                    }
+                }
+            }
+        }
+
         if ($request->query->get('fastDelivery', false)) {
 
             $shippingTimeCriteria = new Criteria();
@@ -163,5 +197,22 @@ class ProductListingCriteriaSubscriber implements EventSubscriberInterface
             }
         }
         
+    }
+
+    private function getPropertyIds(Request $request): array
+    {
+        $ids = $request->query->get('properties', '');
+        if ($request->isMethod(Request::METHOD_POST)) {
+            $ids = $request->request->get('properties', '');
+        }
+
+        if (\is_string($ids)) {
+            $ids = explode('|', $ids);
+        }
+
+        /** @var list<string> $ids */
+        $ids = array_filter((array) $ids);
+
+        return $ids;
     }
 }
