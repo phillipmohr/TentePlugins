@@ -69,6 +69,7 @@ export default class ProductConfiguratorPlugin extends Plugin {
           this._selectedCadOption = null;
           this._selectedFastDeliveryOption = null;
           this._searchQuery = "";
+          this._initialSelectOptions = "";
 
           this._fetchDefaultCategory = false;
           this._defaultCategoryPropertyId = '';
@@ -171,6 +172,18 @@ export default class ProductConfiguratorPlugin extends Plugin {
 
                     const selectMaxId = fullId.replace('-min', '-max');
                     
+
+                    const options = item.options;
+                    const selectedIndex = item.selectedIndex;
+
+                    for (let i = 0; i < options.length; i++) {
+                        options[i].removeAttribute('selected');
+                    }
+                            
+                    if (selectedIndex >= 0) {
+                        options[selectedIndex].setAttribute('selected', 'selected');
+                    }
+
                     if (selectedOption.classList.contains('reset')) {
 
                          
@@ -227,6 +240,17 @@ export default class ProductConfiguratorPlugin extends Plugin {
 
                     const selectMinId = fullId.replace('-max', '-min');
 
+                    const options = item.options;
+                    const selectedIndex = item.selectedIndex;
+
+                    for (let i = 0; i < options.length; i++) {
+                        options[i].removeAttribute('selected');
+                    }
+                            
+                    if (selectedIndex >= 0) {
+                        options[selectedIndex].setAttribute('selected', 'selected');
+                    }
+
                     if (selectedOption.classList.contains('reset')) {
 
                          item.querySelectorAll('option:not(.reset)').forEach(function(option) {
@@ -276,10 +300,23 @@ export default class ProductConfiguratorPlugin extends Plugin {
 
           this._propertySelects.forEach(item => {
                item.addEventListener('change', event => {
+
+                    
                     const selectedOption = item.options[item.selectedIndex];
                     const selectedValue = selectedOption.value;
                     const fullId = item.id;
                     const id = fullId.replace('configurator-property-group-', '');
+
+                    const options = item.options;
+                    const selectedIndex = item.selectedIndex;
+
+                    for (let i = 0; i < options.length; i++) {
+                        options[i].removeAttribute('selected');
+                    }
+                            
+                    if (selectedIndex >= 0) {
+                        options[selectedIndex].setAttribute('selected', 'selected');
+                    }
 
                     if (selectedOption.classList.contains('reset')) {
 
@@ -803,8 +840,10 @@ export default class ProductConfiguratorPlugin extends Plugin {
 
                                    option.style.display = 'none';
                                    option.selected = false;
+                                   option.disabled = true;
                               } else {
                                    option.style.display = 'block'; 
+                                   option.disabled = false;
                               }
                          });
                          
@@ -825,9 +864,11 @@ export default class ProductConfiguratorPlugin extends Plugin {
                                    }
 
                                    option.style.display = 'none';
+                                   option.disabled = true;
                                    option.selected = false;
                               } else {
                                    option.style.display = 'block'; 
+                                   option.disabled = false;
                               }
                          });
 
