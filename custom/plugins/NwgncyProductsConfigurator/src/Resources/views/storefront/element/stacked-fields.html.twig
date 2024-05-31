@@ -9,7 +9,7 @@
                 <label for="{{ id }}">{{ name }}</label>
                 <div class="stacked-row">
                     
-                    <select name="{{ selectName }}" id="{{ id }}" class="js-configurator-property">
+                    <select name="{{ selectName }}" id="{{ id }}" multiple class="js-configurator-property">
                         <option class="reset" value="">{{ "nwgncy-products-configurator.label.reset" | trans }}</option>
                         {% for option in propertyGroupOptions %}
                             <option value="{{ option.id }}">{{ option.name }}</option>
