@@ -5,6 +5,18 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
+
+        <service id="Nwgncy\TenteTheme\Storefront\Controller\CustomFormController" public="true">
+            <argument type="service" id="Swag\CmsExtensions\Form\Route\FormRoute"/>
+            <argument type="service" id="Nwgncy\CrmConnector\Service\CrmService" />
+            <call method="setContainer">
+                <argument type="service" id="service_container"/>
+            </call>
+            <call method="setTwig">
+                <argument type="service" id="twig"/>
+            </call>
+        </service>
+
         <service id="Nwgncy\TenteTheme\Core\Checkout\Customer\SalesChannel\RegisterRouteDecorator" decorates="Shopware\Core\Checkout\Customer\SalesChannel\RegisterRoute" public="true">
             <argument type="service" id="event_dispatcher"/>
             <argument type="service" id="Shopware\Core\System\NumberRange\ValueGenerator\NumberRangeValueGeneratorInterface"/>
@@ -23,6 +35,8 @@
         </service>
 
         <service id="Nwgncy\TenteTheme\Twig\TenteThemeTwigFunctions" public="true">
+            <argument type="service" id="country.repository" />
+            <argument type="service" id="language.repository"/>
             <argument type="service" id="category.repository" />
             <argument type="service" id="landing_page.repository" />
             <tag name="twig.extension"/>

@@ -13,6 +13,53 @@ class SapCrmHandler extends CrmHandlerBase
 {
      const CRM_NAME = "SAP";
 
+
+     public function sendDataFromCustomForms(CrmRecord $record) { 
+
+          
+          try {
+
+               $url = 'https://link.tente.com/u/register.php';
+
+               $httpClientInterface = HttpClient::create();
+               
+               $method = SELF::METHOD_GET;
+
+               $recordDataArr = $record->getCustomFormData();
+               $queryParameters = http_build_query($recordDataArr);
+               $url .= '?' . $queryParameters;
+
+               $response = $httpClientInterface->request($method, $url);
+              
+               
+            //    dd([
+            //        "CRM" => 'Sap',
+            //        "status" => $responseStatusCode,
+            //        "content" => $responseContent,
+            //        "headers" => $responseHeaders,
+            //        "info" => $responseInfo
+            //    ]);
+               
+               $crmResponse = $this->createCrmResponse($response);
+
+               if ($crmResponse->isSuccess()) {
+                   $this->logCrmSuccess(SELF::CRM_NAME, $crmResponse, $record);
+               } else {
+                   $this->logCrmError(SELF::CRM_NAME, new Exception($crmResponse->getMessage(), $response->getStatusCode()), $record);
+               }
+
+              return $crmResponse;
+               
+          } catch (Throwable $th) {
+               $this->logCrmError(SELF::CRM_NAME, $th, $record, 'critical');
+               $crmResponse = new CrmResponse();
+               $crmResponse->setMessage('Internal error');
+               $crmResponse->setSuccess(false);
+
+               return $crmResponse;
+          }
+     }
+
      public function sendData(CrmRecord $record) {
 
           try {

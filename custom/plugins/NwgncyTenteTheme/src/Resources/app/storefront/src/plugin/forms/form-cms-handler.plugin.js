@@ -108,6 +108,13 @@ export default class FormCmsHandler extends Plugin {
 
     _handleResponse(res) {
         const response = JSON.parse(res);
+                
+        if (response.redirect) {
+            var redirectUrl = this._block.querySelector('input[name="redirectUrl"]').value;
+            window.location.replace(redirectUrl);
+            return false;
+        }
+        
         this.$emitter.publish('onFormResponse', res);
 
         if (response.length > 0) {

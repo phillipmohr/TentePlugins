@@ -6,6 +6,29 @@
         "categories": "Navigation",
         "loginRegister": "Login / Register"
     },
+    "customForm": {
+        "firstname": "Firstname",
+        "lastname": "Lastname",
+        "country": "Country",
+        "department": "Department",
+        "language": "Language",
+        "message": "Message",
+        "phone": "Phone",
+        "email": "Email",
+        "companyName": "Company",
+        "title": "Request"
+    },
+    "customFormError": {
+        "firstname": "Please enter first name",
+        "lastname": "Please enter last name",
+        "country": "Please select country",
+        "department": "Please enter department",
+        "email": "Please enter email",
+        "companyName": "Please enter company name"
+    },
+    "customFormRequestError": {
+        "message": "Something went wrong. Please contact support."
+    },
     "topBar": {
         "location": "Location"
     },

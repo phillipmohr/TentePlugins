@@ -1,0 +1,137 @@
+{% sw_extends '@SwagCmsExtensions/storefront/element/cms-element-custom-form.html.twig' %}
+
+    {% block swag_cms_extensions_form_content %}
+
+        {% if form.technicalName|contains('crm_custom_form') %}
+
+            <form action="{{ path('frontend.nwgncy.tente-theme.form.send') }}"
+                    method="post"
+                    data-swag-cms-extensions-form-validation="true">
+
+        {% else %}
+
+            <form action="{{ path(action) }}"
+                    method="post"
+                    data-swag-cms-extensions-form-validation="true">
+
+        {% endif %}
+
+
+            <div class="form-content">
+
+                {% for group in form.groups %}
+                    {% block swag_cms_extensions_form_content_group %}
+                    
+                        {% set countryOptions = getCountryList(context) %}
+                        {% set languageNumber = getLanguageList(context) %}
+                        
+                        <div class="row g-3">
+
+                            {% block swag_cms_extensions_form_content_group_title %}
+                                {% if group.translated.title %}
+                                    <h6 class="col-12">{{ group.translated.title }}</h6>
+                                {% endif %}
+                            {% endblock %}
+
+                            {% if form.technicalName|contains('crm_custom_form') %}
+
+                                {% for field in group.fields %}
+                                    
+                                    {% if not (field.technicalName|contains('crm_hidden')) %}
+
+                                        {% if field.technicalName == 'country' %}
+                                            {% sw_include '@NwgncyCrmConnector/storefront/element/custom-form-elements/form-components/form-component-select-country.html.twig' %}
+                                        {% elseif field.technicalName == 'language' && languageNumber is not empty %}
+                                            {% sw_include '@NwgncyCrmConnector/storefront/element/custom-form-elements/form-components/form-component-select-language.html.twig' %}
+                                        {% else %}
+                                            {% sw_include '@Storefront/storefront/element/custom-form/form-components/form-component-' ~ field.type ~ '.html.twig' %}
+                                        {% endif %}
+                                    {% endif %}
+                                {% endfor %}
+
+
+                            {% else %}
+
+                                {% for field in group.fields %}
+                                    {% if not (field.technicalName|contains('crm_hidden')) %}
+                                        {% sw_include '@Storefront/storefront/element/custom-form/form-components/form-component-' ~ field.type ~ '.html.twig' %}
+                                    {% endif %}
+                                {% endfor %}
+
+                            {% endif %}
+
+                            {% for field in group.fields %}
+                                
+                                {% if not (field.technicalName|contains('crm_hidden')) %}
+
+                                    {% if field.technicalName == 'country' %}
+                                        {% sw_include '@NwgncyCrmConnector/storefront/element/custom-form-elements/form-components/form-component-select-country.html.twig' %}
+                                    {% elseif field.technicalName == 'language' && languageNumber is not empty %}
+                                        {% sw_include '@NwgncyCrmConnector/storefront/element/custom-form-elements/form-components/form-component-select-language.html.twig' %}
+                                    {% else %}
+                                        {% sw_include '@Storefront/storefront/element/custom-form/form-components/form-component-' ~ field.type ~ '.html.twig' %}
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    {% endblock %}
+                {% endfor %}
+
+                {% block swag_cms_extensions_form_content_required_fields_info %}
+                    {% sw_include '@Storefront/storefront/element/cms-element-form/form-components/cms-element-form-info-required.html.twig' %}
+                {% endblock %}
+
+                {% block swag_cms_extensions_form_content_captcha %}
+                    {% sw_include '@Storefront/storefront/component/captcha/base.html.twig' with {
+                        'additionalClass' : 'col-md-12',
+                        'formId': form.id
+                    } %}
+                {% endblock %}
+
+                {% block swag_cms_extensions_form_content_privacy %}
+                    {% sw_include '@Storefront/storefront/element/cms-element-form/form-components/cms-element-form-privacy.html.twig' %}
+                {% endblock %}
+
+                {% block swag_cms_extensions_form_content_submit %}
+                    {% sw_include '@Storefront/storefront/element/cms-element-form/form-components/cms-element-form-submit.html.twig' %}
+                {% endblock %}
+            </div>
+
+
+        {% block swag_cms_extensions_form_content_hidden_fields %}
+            <div class="form-hidden-fields">
+
+                {% for group in form.groups %}
+                    {% for field in group.fields %}
+                        
+                            {% if field.technicalName == 'crm_hidden_sent_data_to_crm' %}
+                                <input type="hidden" name="{{ field.technicalName }}" value="1"/>
+                            {% endif %}
+
+                            {% if field.technicalName == 'crm_hidden_form_request_url' %}
+                                <input name="{{ field.technicalName }}"
+                                        type="hidden"
+                                        value="{{ app.request.attributes.get('sw-original-request-uri') }}"/> 
+                            {% endif %}
+                    {% endfor %}
+                {% endfor %}
+
+                <input type="hidden" name="formId" value="form-{{ form.id }}"/>
+                {% if form.technicalName|contains('crm_custom_form') %}
+                    <input type="hidden" name="redirectUrl" value="{{ seoUrl('frontend.landing.page', { landingPageId: '018e0f1028e274e5ab2f232eef5c0ac6' }) }}"/>
+                {% endif %}
+
+                <input type="submit" class="submit--hidden d-none"/>
+                
+                
+                
+            </div>
+        {% endblock %}
+
+        </form>
+    {% endblock %}
+
+
+
+

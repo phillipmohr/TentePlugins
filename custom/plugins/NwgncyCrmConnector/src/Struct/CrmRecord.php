@@ -2,7 +2,7 @@
 
 namespace Nwgncy\CrmConnector\Struct;
 
-use Shopware\Core\Framework\Struct\Struct;
+use Shopware\Core\Framework\Struct\Struct; 
 
 class CrmRecord extends Struct {
      //Consts
@@ -90,6 +90,8 @@ class CrmRecord extends Struct {
      //Register event missing : gender homepage turnover department origin dccompliance
      //cadrequest is caderequest
 
+
+     
      public function getCompanyName(): string {
           return $this->companyName;
      }
@@ -402,6 +404,20 @@ class CrmRecord extends Struct {
   
      public function setDcTimestamp(string $dcTimestamp): void {
           $this->dcTimestamp = $dcTimestamp;
+     }
+
+     public function getCustomFormData(): array {
+          return [
+               'inp_1' => $this->firstname,
+               'inp_2' => $this->lastname,
+               'inp_3'  => $this->email,
+               'inp_18'  => $this->companyName,
+               'inp_9912'  => $this->department,
+               'inp_45'  => $this->country,
+               'inp_35'  => $this->language,
+               'inp_21'  => $this->phone,
+               'inp_8463'  => $this->information
+          ];
      }
 
      public function getData(): array {

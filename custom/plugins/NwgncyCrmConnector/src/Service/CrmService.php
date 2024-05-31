@@ -56,6 +56,26 @@ class CrmService
         $this->sapCrmHandler = $sapCrmHandler;
     }
 
+    public function processCustomFormEvent($salesChannelContext, $formData) {
+
+        $crmRecord = new CrmRecord();
+
+        $crmRecord->setFirstname($formData['firstname']);
+        $crmRecord->setLastname($formData['lastname']);
+        $crmRecord->setEmail($formData['email']);
+        $crmRecord->setCompanyName($formData['companyname']);
+        $crmRecord->setDepartment($formData['department']);
+        $crmRecord->setCountry($formData['country']);
+        $crmRecord->setLanguage($formData['language']);
+        $crmRecord->setPhone($formData['phone']);
+        $crmRecord->setInformation($formData['information']);
+
+        $crmResponse = $this->sapCrmHandler->sendDataFromCustomForms($crmRecord);
+        
+        return $crmResponse->isSuccess();
+
+}
+
     private function execute(CrmRecord $record)
     {
         $this->sapCrmHandler->sendData($record);
