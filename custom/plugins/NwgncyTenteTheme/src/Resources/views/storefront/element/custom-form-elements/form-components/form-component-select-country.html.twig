@@ -2,7 +2,7 @@
     <div class="col-md-{{ field.width }}">
         {% block swag_cms_extensions_form_component_select_content_label %}
             <label class="form-label" for="form-{{ form.technicalName }}-{{ field.technicalName }}">
-                {{- field.translated.label -}}{% if field.required %} {{- "general.required"|trans -}}{% endif %}
+                {{- field_translated_label -}}{% if field.required %} {{- "general.required"|trans -}}{% endif %}
             </label>
         {% endblock %}
  
@@ -11,7 +11,7 @@
                     id="form-{{ form.technicalName }}-{{ field.technicalName }}"
                     class="form-select contact-select{% if formViolations.getViolations('/' ~ field.technicalName) %} is-invalid{% endif %}"
                     {% if field.required %}required="required"{% endif %}
-                    {% if field.translated.errorMessage %}data-form-validation-error-message="{{ field.translated.errorMessage }}"{% endif %}>
+                    {% if field.translated.errorMessage %}data-form-validation-error-message="{{ field_translated_errorMessage }}"{% endif %}>
 
                 {% for countryName, value in countryOptions %}
 

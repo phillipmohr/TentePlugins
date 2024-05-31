@@ -1,23 +1,34 @@
-{% block swag_cms_extensions_form_component_select_custom_language %}
-    <div style="display:none" class="col-md-{{ field.width }}">
+{% block swag_cms_extensions_form_component_select %}
+    <div class="col-md-{{ field.width }}">
+
         {% block swag_cms_extensions_form_component_select_content_label %}
             <label class="form-label" for="form-{{ form.technicalName }}-{{ field.technicalName }}">
                 {{- field_translated_label -}}{% if field.required %} {{- "general.required"|trans -}}{% endif %}
             </label>
         {% endblock %}
  
-        {% block swag_cms_extensions_form_component_select_content_select_custom_language %}
+        {% block swag_cms_extensions_form_component_select_content_select %}
             <select name="{{ field.technicalName }}"
                     id="form-{{ form.technicalName }}-{{ field.technicalName }}"
                     class="form-select contact-select{% if formViolations.getViolations('/' ~ field.technicalName) %} is-invalid{% endif %}"
                     {% if field.required %}required="required"{% endif %}
                     {% if field.translated.errorMessage %}data-form-validation-error-message="{{ field_translated_errorMessage }}"{% endif %}>
+                <option disabled="disabled"
+                        selected="selected"
+                        value="">
+                    {{ field_translated_placeholder ?: 'swagCmsExtensions.form.component.select.defaultPlaceholder'|trans }}
+                </option>
 
-                    <option value="{{ languageNumber }}" selected="selected">
-                        {{ languageNumber }}
+                {% for key, option in field.translated.config.options %}
+                    {% set valueAttribute = '' %}
+                    {% if field.config.entity is not null or field.translated.config.entity is not null %}
+                        {% set valueAttribute = ' value=' ~ key|default(option) %}
+                    {% endif %}
+
+                    <option{{ valueAttribute }}>
+                        {{ option }}
                     </option>
-
-
+                {% endfor %}
             </select>
 
             {% if formViolations.getViolations('/' ~ field.technicalName) is not empty %}
