@@ -9,6 +9,14 @@ $sw-light-gray: #EAF4FA;
      overflow: visible;
 }
 
+.is-act-home {
+	.cms-page {
+		.cms-section.pos-0 {
+			overflow: visible;
+		}
+	}
+}
+
 .cms-block-nwgncy-product-finder {
      overflow: visible;
      background-color: $sw-dark-blue;
