@@ -72,7 +72,7 @@ class Property
             ->addFilter(new EqualsFilter('id', $groupId));
 
         return $this->propertyGroup->search($criteria, $context);
-    }
+    } 
     
     public function updatePropertyGroupTranslationByGroupId($context, $groupId, $translations)
     {
