@@ -1,4 +1,10 @@
 {% sw_extends '@SwagCmsExtensions/storefront/element/cms-element-custom-form.html.twig' %}
+    {% block swag_cms_extensions_form_title %}
+        <div class="card-title mb-4">
+            {% set form_translated_title = form.translated.title|trans %}
+            {{ form_translated_title }}
+        </div>
+    {% endblock %}
 
     {% block swag_cms_extensions_form_content %}
 
@@ -29,14 +35,19 @@
 
                             {% block swag_cms_extensions_form_content_group_title %}
                                 {% if group.translated.title %}
-                                    <h6 class="col-12">{{ group.translated.title }}</h6>
+                                    {% set group_translated_title = group.translated.title|trans %}
+                                    <h6 class="col-12">{{ group_translated_title }}</h6>
                                 {% endif %}
                             {% endblock %}
 
                             {% if form.technicalName|contains('crm_custom_form') %}
 
                                 {% for field in group.fields %}
-                                    
+
+                                    {% set field_translated_label = field.translated.label|trans %}
+                                    {% set field_translated_placeholder = field.translated.placeholder|trans %}
+                                    {% set field_translated_errorMessage = field.translated.errorMessage|trans %}
+
                                     {% if not (field.technicalName|contains('crm_hidden')) %}
 
                                         {% if field.technicalName == 'country' %}
@@ -44,11 +55,11 @@
                                         {% elseif field.technicalName == 'language' && languageNumber is not empty %}
                                             {% sw_include '@NwgncyCrmConnector/storefront/element/custom-form-elements/form-components/form-component-select-language.html.twig' %}
                                         {% else %}
-                                            {% sw_include '@Storefront/storefront/element/custom-form/form-components/form-component-' ~ field.type ~ '.html.twig' %}
+                                            {% sw_include '@Storefront/storefront/element/custom-form-elements/form-components/form-component-' ~ field.type ~ '.html.twig' %}
                                         {% endif %}
+
                                     {% endif %}
                                 {% endfor %}
-
 
                             {% else %}
 
@@ -59,20 +70,6 @@
                                 {% endfor %}
 
                             {% endif %}
-
-                            {% for field in group.fields %}
-                                
-                                {% if not (field.technicalName|contains('crm_hidden')) %}
-
-                                    {% if field.technicalName == 'country' %}
-                                        {% sw_include '@NwgncyCrmConnector/storefront/element/custom-form-elements/form-components/form-component-select-country.html.twig' %}
-                                    {% elseif field.technicalName == 'language' && languageNumber is not empty %}
-                                        {% sw_include '@NwgncyCrmConnector/storefront/element/custom-form-elements/form-components/form-component-select-language.html.twig' %}
-                                    {% else %}
-                                        {% sw_include '@Storefront/storefront/element/custom-form/form-components/form-component-' ~ field.type ~ '.html.twig' %}
-                                    {% endif %}
-                                {% endif %}
-                            {% endfor %}
 
                         </div>
                     {% endblock %}
