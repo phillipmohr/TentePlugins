@@ -28,14 +28,7 @@ class CustomFormController extends StorefrontController
     public function sendForm(RequestDataBag $data, SalesChannelContext $context): JsonResponse
     {
         $response = [];
-        $fsObject = new Filesystem();
 
-        $filePath = '/var/www/html/tentecom/public/CustomFormController.html';
-        $fsObject->touch($filePath);
-        $fsObject->chmod($filePath, 0777);
-        
-        $fsObject->appendToFile($filePath, @\Kint::dump($data->toRequestDataBag()));
-        $fsObject->appendToFile($filePath, @\Kint::dump($data));
         $crmData = $data->all();
 
         $data->set('country', '018a661385287098beb972cab59280bb');
@@ -47,32 +40,33 @@ class CustomFormController extends StorefrontController
                 ->getResult()
                 ->getSuccessMessage();
 
-            $this->crmService->processCustomFormEvent($context, $crmData);
+            $result = $this->crmService->processCustomFormEvent($context, $crmData);
 
-
-
-            if (!$message) {
-                $message = $this->trans('contact.success');
+            if ($result) {
+                
+                if (!$message) {
+                    $message = $this->trans('contact.success');
+                }
+    
+                $response = [
+                    'redirect' => 'true',
+                    'type' => 'success',
+                    'alert' => $message,
+                ];
+                
+            } else {
+                $response[] = [
+                    'type' => 'danger',
+                    'alert' => $this->trans('customFormRequestError.message')
+                ];
             }
 
-            $response = [
-                'redirect' => 'true',
-                'type' => 'success',
-                'alert' => $message,
-            ];
-            
         } catch (ConstraintViolationException $formViolations) {
             $violations = [];
             foreach ($formViolations->getViolations() as $violation) {
                 $violations[] = $violation->getMessage();
             }
-            $fsObject = new Filesystem();
 
-            $filePath = '/var/www/html/tentecom/public/CustomFormController.html';
-            $fsObject->touch($filePath);
-            $fsObject->chmod($filePath, 0777);
-            
-            $fsObject->appendToFile($filePath, @\Kint::dump($violations));
             $response[] = [
                 'type' => 'danger',
                 'alert' => $this->renderView('@Storefront/storefront/utilities/alert.html.twig', [
@@ -81,7 +75,6 @@ class CustomFormController extends StorefrontController
                 ]),
             ];
         }
-
         return new JsonResponse($response);
     }
 }
