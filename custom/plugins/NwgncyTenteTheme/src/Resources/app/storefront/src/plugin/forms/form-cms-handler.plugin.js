@@ -105,13 +105,13 @@ export default class FormCmsHandler extends Plugin {
             loadingComponent.classList.add('d-none');
         }
     }
-
+ 
     _handleResponse(res) {
         const response = JSON.parse(res);
                 
         if (response.redirect) {
             var redirectUrl = this._block.querySelector('input[name="redirectUrl"]').value;
-            window.location.replace(redirectUrl);
+            window.location.href = redirectUrl;
             return false;
         }
         

@@ -11,6 +11,7 @@
         "lastname": "Lastname",
         "country": "Country",
         "department": "Department",
+        "function": "Function",
         "language": "Language",
         "message": "Message",
         "phone": "Phone",
@@ -18,11 +19,25 @@
         "companyName": "Company",
         "title": "Request"
     },
+    "customFormFunctionOptions" : {
+        "generalManagement": "(General) Management",
+        "ergonomicsHealthSafety": "Ergonomics, Health and Safety",
+        "HrItFinance": "HR, IT or Finance",
+        "maintenance": "Maintenance",
+        "productManagement": "Product Management",
+        "production": "Production",
+        "purchaseSupplyLogistics": "Purchase, Supply, Logistics",
+        "quality": "Quality",
+        "rAndD": "R&D",
+        "salesAndMarketing": "Sales and Marketing",
+        "secretary": "Secretary"
+    },
     "customFormError": {
         "firstname": "Please enter first name",
         "lastname": "Please enter last name",
         "country": "Please select country",
         "department": "Please enter department",
+        "function": "Please select function",
         "email": "Please enter email",
         "companyName": "Please enter company name"
     },

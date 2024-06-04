@@ -2,7 +2,7 @@
 
 namespace Nwgncy\CrmConnector\Struct;
 
-use Shopware\Core\Framework\Struct\Struct; 
+use Shopware\Core\Framework\Struct\Struct;
 
 class CrmRecord extends Struct {
      //Consts
@@ -45,7 +45,10 @@ class CrmRecord extends Struct {
      public const DC_ADVERTISING_CONSENT         = 'dc_advertising_consent';
      public const DC_IP_ADDRESS                  = 'dc_ip_address';
      public const DC_TIMESTAMP                   = 'dc_timestamp';
-
+     public const FORM_REQUEST_URL               = 'form_request_url';
+     public const CUSTOM_FORM_HIDDEN_INPUTS      = 'custom_form_hidden_inputs';
+     public const FUNCTION                       = 'function';
+  
      //properties
      private string $companyName = '';
      private string $language = '';
@@ -86,11 +89,36 @@ class CrmRecord extends Struct {
      private string $dcAdvertisingConsent = 'false';
      private string $dcIpAddress = '';
      private string $dcTimestamp = '';
+     private string $formRequestUrl = '';
+
+     private string $function = '';
+
+     private array $customFormHiddenInputs = [];
+
+     private array $customFormHiddenInputNames = [
+        'CID',
+        'SID',
+        'UID',
+        'f',
+        'p',
+        'a',
+        'el',
+        'llid',
+        'c',
+        'counted',
+        'RID',
+        'mailnow'
+     ];
 
      //Register event missing : gender homepage turnover department origin dccompliance
      //cadrequest is caderequest
-
-
+     public function setFunction(string $function): void {
+          $this->function = $function;
+     }
+     
+     public function getFunction(): string {
+          return $this->function;
+     }
      
      public function getCompanyName(): string {
           return $this->companyName;
@@ -405,14 +433,34 @@ class CrmRecord extends Struct {
      public function setDcTimestamp(string $dcTimestamp): void {
           $this->dcTimestamp = $dcTimestamp;
      }
+  
+     public function setFormRequestUrl(string $formRequestUrl): void {
+          $this->formRequestUrl = $formRequestUrl;
+     }
+  
+     public function getFormRequestUrl(string $formRequestUrl): string {
+          return $this->formRequestUrl;
+     }
+     
+     public function addDataToCustomFormHiddenInputs($name, $value): void {
+          $this->customFormHiddenInputs[$name] = $value;
+     }
 
+     public function getDataToCustomFormHiddenInputs(): array {
+          return $this->customFormHiddenInputs;
+     }
+       
+     public function getCustomFormHiddenInputNames(): array {
+          return $this->customFormHiddenInputNames;
+     }
+       
      public function getCustomFormData(): array {
           return [
                'inp_1' => $this->firstname,
                'inp_2' => $this->lastname,
                'inp_3'  => $this->email,
                'inp_18'  => $this->companyName,
-               'inp_9912'  => $this->department,
+               'inp_9912'  => $this->function,
                'inp_45'  => $this->country,
                'inp_35'  => $this->language,
                'inp_21'  => $this->phone,
@@ -463,4 +511,9 @@ class CrmRecord extends Struct {
                self::DC_TIMESTAMP => $this->dcTimestamp
           );
      }
+
+
+
+
+
 }

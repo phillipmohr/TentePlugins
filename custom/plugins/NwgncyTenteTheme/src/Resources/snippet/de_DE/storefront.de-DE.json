@@ -4,14 +4,14 @@
         "contactUsLink": "/kontakt",
         "privacyNoticeText": "Durch die Anmeldung unseres Newsletters stimmen Sie unseren <a data-ajax-modal=\"true\" data-url=\"%privacyUrl%\" href=\"%privacyUrl%\" title=\"Datenschutzbestimmungen\">Datenschutzbestimmungen</a> sowie unseren <a data-ajax-modal=\"true\" data-url=\"%tosUrl%\" href=\"%tosUrl%\" title=\"AGB\">AGBs</a> zu.",
         "categories": "Navigation",
-        "loginRegister": "Login / Registrieren",
-        "privacyNoticeTextShort": "Ich habe die <a href=\"%privacyUrl%\" target=\"_blank\">Datenschutzerklärung</a> gelesen, verstanden und stimme zu."
+        "loginRegister": "Login / Registrieren"
     },
     "customForm": {
         "firstname": "Vorname",
         "lastname": "Nachname",
         "country": "Land",
         "department": "Department",
+        "function": "Funktion",
         "language": "Sprache",
         "message": "Nachricht",
         "phone": "Telefon",
@@ -19,11 +19,25 @@
         "companyName": "Firma",
         "title": "Anfrage"
     },
+    "customFormFunctionOptions" : {
+        "generalManagement": "(Allgemeines) Management",
+        "ergonomicsHealthSafety": "Ergonomie, Gesundheit und Sicherheit",
+        "HrItFinance": "HR, IT oder Finanzen",
+        "maintenance": "Wartungsarbeiten",
+        "productManagement": "Produktmanagement",
+        "production": "Produktion",
+        "purchaseSupplyLogistics": "Einkauf, Lieferung, Logistik",
+        "quality": "Qualität",
+        "rAndD": "F&E",
+        "salesAndMarketing": "Vertrieb und Marketing",
+        "secretary": "Sekretärin"
+    },
     "customFormError": {
         "firstname": "Bitte Vorname eingeben",
         "lastname": "Bitte Nachname eingeben",
         "country": "Bitte Land auswählen",
         "department": "Bitte Department eingeben",
+        "function": "Bitte Funktion auswählen",
         "email": "Bitte E-Mail eingebem",
         "companyName": "Bitte Firmennamen eingeben"
     },

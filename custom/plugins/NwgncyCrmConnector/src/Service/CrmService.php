@@ -27,6 +27,7 @@ use Shopware\Core\System\Locale\LocaleEntity;
 use Shopware\Core\System\SalesChannel\SalesChannelContext;
 use Symfony\Contracts\EventDispatcher\Event;
 use Throwable;
+use Symfony\Component\Filesystem\Filesystem;
 
 class CrmService
 {
@@ -38,6 +39,8 @@ class CrmService
     private MicrosoftDynamicsCrmHandler $microsoftDynamicsCrmHandler;
     private SapCrmHandler $sapCrmHandler;
 
+    private Country $country;
+
     private $expectedEventTypes = [
         CustomerRegisterEvent::class,
         ContactFormEventDecorated::class,
@@ -45,7 +48,28 @@ class CrmService
         CadFileDownloadEvent::class
     ];
 
-    public function __construct(LoggerInterface $logger, EntityRepository $languageRepository, EntityRepository $localeRepository, EntityRepository $productRepository, EntityRepository $countryRepository, MicrosoftDynamicsCrmHandler $microsoftDynamicsCrmHandler, SapCrmHandler $sapCrmHandler)
+    private $expectedCustomFormFields = [
+        'firstname',
+        'lastname',
+        'email',
+        'companyname',
+        'department',
+        'country',
+        'phone',
+        'information',
+        'crm_hidden_form_request_url'
+    ];
+
+    public function __construct(
+        LoggerInterface $logger,
+        EntityRepository $languageRepository,
+        EntityRepository $localeRepository,
+        EntityRepository $productRepository,
+        EntityRepository $countryRepository,
+        MicrosoftDynamicsCrmHandler $microsoftDynamicsCrmHandler,
+        SapCrmHandler $sapCrmHandler,
+        Country $country
+    )
     {
         $this->logger = $logger;
         $this->languageRepository = $languageRepository;
@@ -54,27 +78,8 @@ class CrmService
         $this->countryRepository = $countryRepository;
         $this->microsoftDynamicsCrmHandler = $microsoftDynamicsCrmHandler;
         $this->sapCrmHandler = $sapCrmHandler;
+        $this->country = $country;
     }
-
-    public function processCustomFormEvent($salesChannelContext, $formData) {
-
-        $crmRecord = new CrmRecord();
-
-        $crmRecord->setFirstname($formData['firstname']);
-        $crmRecord->setLastname($formData['lastname']);
-        $crmRecord->setEmail($formData['email']);
-        $crmRecord->setCompanyName($formData['companyname']);
-        $crmRecord->setDepartment($formData['department']);
-        $crmRecord->setCountry($formData['country']);
-        $crmRecord->setLanguage($formData['language']);
-        $crmRecord->setPhone($formData['phone']);
-        $crmRecord->setInformation($formData['information']);
-
-        $crmResponse = $this->sapCrmHandler->sendDataFromCustomForms($crmRecord);
-        
-        return $crmResponse->isSuccess();
-
-}
 
     private function execute(CrmRecord $record)
     {
@@ -83,11 +88,59 @@ class CrmService
         //Other crm handlers ..
     }
 
+    public function processCustomFormEvent($salesChannelContext, array $formData) {
+
+        // $fsObject = new Filesystem();
+
+        // $filePath = '/var/www/html/tentecom/public/processCustomFormEvent.html';
+        // $fsObject->touch($filePath);
+        // $fsObject->chmod($filePath, 0777);
+        // $fsObject->appendToFile($filePath, @\Kint::dump($formData));
+        // // $fsObject->appendToFile($filePath, @\Kint::dump($form));
+        // // $fsObject->appendToFile($filePath, @\Kint::dump($formData));
+
+        $crmRecord = new CrmRecord();
+
+        $originUrl = $formData['origin_request'];
+        $message = $formData['information'];
+        $message .= '\n\n\n ' . $originUrl;
+
+        $crmRecord->setFirstname($formData['firstname']);
+        $crmRecord->setLastname($formData['lastname']);
+        $crmRecord->setEmail($formData['email']);
+        $crmRecord->setCompanyName($formData['companyname']);
+        $crmRecord->setFunction($formData['function']);
+        $crmRecord->setCountry($formData['country']);
+        $crmRecord->setLanguage($formData['language']);
+        $crmRecord->setPhone($formData['phone']);
+        $crmRecord->setInformation($message);
+
+        foreach ($crmRecord->getCustomFormHiddenInputNames() as $name) {
+            if (isset($formData[$name])) {
+                $crmRecord->addDataToCustomFormHiddenInputs($name, $formData[$name]);
+            }              
+        }
+        $crmRecord->addDataToCustomFormHiddenInputs('subscribePrivacy', 'Data+privacy+policy');
+        $crmRecord->addDataToCustomFormHiddenInputs('subject', 'Contact+Form+Landingpage+Request');
+
+        $crmResponse = $this->sapCrmHandler->sendDataFromCustomForms($crmRecord);
+        
+        return $crmResponse->isSuccess();
+    }
+
+    public function requiredCustomFormFieldsSet(array $formData): bool {
+
+        foreach ($this->expectedCustomFormFields as $fieldName) {
+            if (!isset($formData[$fieldName])) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
     public function processEvent(Event $event)
     {
         try {
-
-
             //defaults
             $crmRecord = new CrmRecord();
             $isValidEvent = false;

@@ -8,16 +8,21 @@ use Nwgncy\CrmConnector\Struct\CrmRecord;
 use Nwgncy\CrmConnector\Struct\CrmResponse;
 use Symfony\Component\HttpClient\HttpClient;
 use Throwable;
+use Symfony\Component\Filesystem\Filesystem;
 
 class SapCrmHandler extends CrmHandlerBase
 {
      const CRM_NAME = "SAP";
 
-
      public function sendDataFromCustomForms(CrmRecord $record) { 
 
           
           try {
+               // $fsObject = new Filesystem();
+
+               // $filePath = '/var/www/html/tentecom/public/sendDataFromCustomForms.html';
+               // $fsObject->touch($filePath);
+               // $fsObject->chmod($filePath, 0777);
 
                $url = 'https://link.tente.com/u/register.php';
 
@@ -25,10 +30,13 @@ class SapCrmHandler extends CrmHandlerBase
                
                $method = SELF::METHOD_GET;
 
-               $recordDataArr = $record->getCustomFormData();
-               $queryParameters = http_build_query($recordDataArr);
-               $url .= '?' . $queryParameters;
+               $recordDataArr = $record->getCustomFormData() + $record->getDataToCustomFormHiddenInputs();
 
+               // $fsObject->appendToFile($filePath, @\Kint::dump($recordDataArr));
+               $queryParameters = http_build_query($recordDataArr);
+               // $fsObject->appendToFile($filePath, @\Kint::dump($queryParameters));
+               $url .= '?' . $queryParameters;
+               // exit;
                $response = $httpClientInterface->request($method, $url);
               
                
@@ -39,9 +47,9 @@ class SapCrmHandler extends CrmHandlerBase
             //        "headers" => $responseHeaders,
             //        "info" => $responseInfo
             //    ]);
-               
+               // $fsObject->appendToFile($filePath, @\Kint::dump($response));
                $crmResponse = $this->createCrmResponse($response);
-
+               // $fsObject->appendToFile($filePath, @\Kint::dump($crmResponse));
                if ($crmResponse->isSuccess()) {
                    $this->logCrmSuccess(SELF::CRM_NAME, $crmResponse, $record);
                } else {
@@ -60,8 +68,8 @@ class SapCrmHandler extends CrmHandlerBase
           }
      }
 
-     public function sendData(CrmRecord $record) {
-
+     public function sendData(CrmRecord $record) { 
+          
           try {
                $requestLeadEndpoint = $this->systemConfigService->get('NwgncyCrmConnector.config.sapRequestLeadEndpoint');
                $cadEndpoint = $this->systemConfigService->get('NwgncyCrmConnector.config.sapCadEndpoint');
@@ -86,7 +94,7 @@ class SapCrmHandler extends CrmHandlerBase
                $recordDataArr = $record->getData();
                $queryParameters = http_build_query($recordDataArr);
                $url .= '?' . $queryParameters;
-               
+
                $response = $httpClientInterface->request($method, $url, $options);
 
 

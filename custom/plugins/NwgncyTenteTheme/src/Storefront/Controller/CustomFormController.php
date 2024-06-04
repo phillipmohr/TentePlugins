@@ -33,6 +33,7 @@ class CustomFormController extends StorefrontController
 
         $data->set('country', '018a661385287098beb972cab59280bb');
         $data->set('language', '018a6613851372a1b113d4f1a582146f');
+        $data->set('function', '018a6613851372a1b113d4f1a582146f');
 
         try {
             $message = $this->formRoute

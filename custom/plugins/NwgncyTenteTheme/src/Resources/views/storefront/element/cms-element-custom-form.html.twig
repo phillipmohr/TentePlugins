@@ -6,6 +6,8 @@
         </div>
     {% endblock %}
 
+
+
     {% block swag_cms_extensions_form_content %}
 
         {% if form.technicalName|contains('crm_custom_form') %}
@@ -21,8 +23,6 @@
                     data-swag-cms-extensions-form-validation="true">
 
         {% endif %}
-
-
             <div class="form-content">
 
                 {% for group in form.groups %}
@@ -54,6 +54,8 @@
                                             {% sw_include '@NwgncyCrmConnector/storefront/element/custom-form-elements/form-components/form-component-select-country.html.twig' %}
                                         {% elseif field.technicalName == 'language' && languageNumber is not empty %}
                                             {% sw_include '@NwgncyCrmConnector/storefront/element/custom-form-elements/form-components/form-component-select-language.html.twig' %}
+                                        {% elseif field.technicalName == 'function' %}
+                                            {% sw_include '@NwgncyCrmConnector/storefront/element/custom-form-elements/form-components/form-component-select-function.html.twig' %}
                                         {% else %}
                                             {% sw_include '@Storefront/storefront/element/custom-form-elements/form-components/form-component-' ~ field.type ~ '.html.twig' %}
                                         {% endif %}
@@ -95,7 +97,6 @@
                 {% endblock %}
             </div>
 
-
         {% block swag_cms_extensions_form_content_hidden_fields %}
             <div class="form-hidden-fields">
 
@@ -116,6 +117,19 @@
 
                 <input type="hidden" name="formId" value="form-{{ form.id }}"/>
                 {% if form.technicalName|contains('crm_custom_form') %}
+                    <input name="CID" type="hidden" value="949847904" /> 
+                    <input name="SID" type="hidden" value="" /> 
+                    <input name="UID" type="hidden" value="" /> 
+                    <input name="f" type="hidden" value="1582" /> 
+                    <input name="p" type="hidden" value="2" /> 
+                    <input name="a" type="hidden" value="r" /> 
+                    <input name="el" type="hidden" value="" /> 
+                    <input name="llid" type="hidden" value="" /> 
+                    <input name="c" type="hidden" value="" /> 
+                    <input name="counted" type="hidden" value="" /> 
+                    <input name="RID" type="hidden" value="" /> 
+                    <input name="mailnow" type="hidden" value="" />
+                    <input name="origin_request" type="hidden" value="{{ app.request.attributes.get('sw-original-request-uri') }}"/> 
                     <input type="hidden" name="redirectUrl" value="{{ seoUrl('frontend.landing.page', { landingPageId: '018e0f1028e274e5ab2f232eef5c0ac6' }) }}"/>
                 {% endif %}
 
@@ -128,7 +142,3 @@
 
         </form>
     {% endblock %}
-
-
-
-
