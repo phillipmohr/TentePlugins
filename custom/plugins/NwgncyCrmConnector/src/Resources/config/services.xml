@@ -10,6 +10,17 @@
             <argument type="service" id="Nwgncy\CrmConnector\Service\CrmService" />
         </service>
 
+
+        <service id="Nwgncy\CrmConnector\Service\Country" public="true">
+            <argument type="service" id="country.repository"/>
+        </service>
+
+       
+        <service id="Nwgncy\CrmConnector\Subscriber\CustomContactFormEventSubscriber">
+            <tag name="kernel.event_subscriber"/>
+            <argument type="service" id="Nwgncy\CrmConnector\Service\CrmService" />
+        </service>
+
         <service id="Nwgncy\CrmConnector\Subscriber\CustomerRegisterEventSubscriber">
             <tag name="kernel.event_subscriber"/>
             <argument type="service" id="Nwgncy\CrmConnector\Service\CrmService" />
@@ -43,6 +54,8 @@
             <argument type="service" id="country.repository" />
             <argument type="service" id="Nwgncy\CrmConnector\Handler\Microsoft\MicrosoftDynamicsCrmHandler" />
             <argument type="service" id="Nwgncy\CrmConnector\Handler\Sap\SapCrmHandler" />
+            <argument type="service" id="Nwgncy\CrmConnector\Service\Country" />
+            
         </service>
 
         <service id="Nwgncy\CrmConnector\Core\Content\ContactForm\SalesChannel\ContactFormRouteDecorator" decorates="Shopware\Core\Content\ContactForm\SalesChannel\ContactFormRoute" public="true">
@@ -67,6 +80,7 @@
 
         <service id="Nwgncy\CrmConnector\Twig\TenteCrmConnectorTwigFunctions" public="true">
             <argument type="service" id="country.repository" />
+            <argument type="service" id="language.repository"/>
             <tag name="twig.extension"/>
         </service>
         
