@@ -16,10 +16,10 @@
         </service>
 
        
-        <service id="Nwgncy\CrmConnector\Subscriber\CustomContactFormEventSubscriber">
+        <!-- <service id="Nwgncy\CrmConnector\Subscriber\CustomContactFormEventSubscriber">
             <tag name="kernel.event_subscriber"/>
             <argument type="service" id="Nwgncy\CrmConnector\Service\CrmService" />
-        </service>
+        </service> -->
 
         <service id="Nwgncy\CrmConnector\Subscriber\CustomerRegisterEventSubscriber">
             <tag name="kernel.event_subscriber"/>

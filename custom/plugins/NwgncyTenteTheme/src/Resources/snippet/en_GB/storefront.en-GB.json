@@ -17,7 +17,9 @@
         "phone": "Phone",
         "email": "Email",
         "companyName": "Company",
-        "title": "Request"
+        "title": "Request",
+        "privacyNoticeText": "By submitting this form you accept our <a data-ajax-modal=\"true\" data-url=\"%privacyUrl%\" href=\"%privacyUrl%\" title=\"Privacy policy\">privacy policy</a> as well as our <a data-ajax-modal=\"true\" data-url=\"%tosUrl%\" href=\"%tosUrl%\" title=\"terms and conditions\">terms and conditions</a>."
+
     },
     "customFormFunctionOptions" : {
         "generalManagement": "(General) Management",

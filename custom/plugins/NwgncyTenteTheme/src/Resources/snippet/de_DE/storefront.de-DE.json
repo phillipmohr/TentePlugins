@@ -17,7 +17,9 @@
         "phone": "Telefon",
         "email": "E-Mail",
         "companyName": "Firma",
-        "title": "Anfrage"
+        "title": "Anfrage",
+        "privacyNoticeText": "Durch Absendung des Formulares stimmen Sie unseren <a data-ajax-modal=\"true\" data-url=\"%privacyUrl%\" href=\"%privacyUrl%\" title=\"Datenschutzbestimmungen\">Datenschutzbestimmungen</a> sowie unseren <a data-ajax-modal=\"true\" data-url=\"%tosUrl%\" href=\"%tosUrl%\" title=\"AGB\">AGBs</a> zu."
+
     },
     "customFormFunctionOptions" : {
         "generalManagement": "(Allgemeines) Management",

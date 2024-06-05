@@ -2,3 +2,46 @@
 
 {% block cms_form_privacy_opt_in_title %}
 {% endblock %}
+
+
+        {% block cms_form_privacy_opt_in_label %}
+
+            {% set useDefaultLegalText = true %}
+            {% if form is defined and form is not null %}
+                
+                {% if form.technicalName|contains('crm_custom_form') %}
+                    {% set useDefaultLegalText = false %}
+                {% endif %}
+                
+            {% endif %}
+ 
+            {% if useDefaultLegalText == true %}
+                <label for="{{ identifierTemplate|format(_key) }}" class="form-check-label">
+                    {% if requiresTermsOfService == true %}
+                        {{ "general.privacyNoticeText"|trans({
+                            '%privacyUrl%': path('frontend.cms.page', { id: config('core.basicInformation.privacyPage') }),
+                            '%tosUrl%': path('frontend.cms.page', { id: config('core.basicInformation.tosPage')} )
+                        })|raw }}
+                    {% else %}
+                        {{ "contact.privacyNoticeText"|trans({
+                            '%privacyUrl%': path('frontend.cms.page', { id: config('core.basicInformation.privacyPage') })
+                        })|raw }}
+                    {% endif %}
+                </label>
+            {% else %}
+                <label for="{{ identifierTemplate|format(_key) }}" class="form-check-label">
+                    {% if requiresTermsOfService == true %}
+                        {{ "customForm.privacyNoticeText"|trans({
+                            '%privacyUrl%': path('frontend.cms.page', { id: config('core.basicInformation.privacyPage') }),
+                            '%tosUrl%': path('frontend.cms.page', { id: config('core.basicInformation.tosPage')} )
+                        })|raw }}
+                    {% else %}
+                        {{ "customForm.privacyNoticeText"|trans({
+                            '%privacyUrl%': path('frontend.cms.page', { id: config('core.basicInformation.privacyPage') })
+                        })|raw }}
+                    {% endif %}
+                </label>
+            {% endif %}
+
+
+        {% endblock %}
