@@ -321,8 +321,8 @@ class TenteThemeTwigFunctions extends AbstractExtension
             $criteria = new Criteria();
             $landings = $this->landingPageRepository->search($criteria, $context)->getElements();
             foreach($landings as $landing) {
-                if(is_array($landing->getCustomFields())) {
-                    if($landing->getCustomFields()['is_contact_landing_page'] == true) {
+                if(is_array($landing->getTranslated()['customFields'])) {
+                    if(array_key_exists('is_contact_landing_page', $landing->getTranslated()['customFields'])) {
                         $contactPageId = $landing->getId();
                     }
                 }

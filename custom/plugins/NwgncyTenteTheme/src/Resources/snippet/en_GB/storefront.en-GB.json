@@ -3,7 +3,7 @@
         "contactUs": "Contact us",
         "contactUsLink": "/contact",
         "privacyNoticeText": "By subscribing to the newsletter you accept our <a data-ajax-modal=\"true\" data-url=\"%privacyUrl%\" href=\"%privacyUrl%\" title=\"Privacy policy\">privacy policy</a> as well as our <a data-ajax-modal=\"true\" data-url=\"%tosUrl%\" href=\"%tosUrl%\" title=\"terms and conditions\">terms and conditions</a>.",
-        "privacyNoticeTextShort": "I accept the <a href=\"%privacyUrl%\" title=\"Privacy\">Privacy Policy</a> and our <a href=\"%tosUrl%\" title=\"General\">General Terms and Conditions</a>.",
+        "privacyNoticeTextShort": "I accept the <a href=\"%privacyUrl%\" target=\"_blank\"  title=\"Privacy\">Privacy Policy</a> and our <a href=\"%tosUrl%\" target=\"_blank\" title=\"General\">General Terms and Conditions</a>.",
         "categories": "Navigation",
         "loginRegister": "Login / Register"
     },
