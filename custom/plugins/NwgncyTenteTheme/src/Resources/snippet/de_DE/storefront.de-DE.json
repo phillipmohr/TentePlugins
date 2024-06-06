@@ -3,6 +3,7 @@
         "contactUs": "Kontaktiere uns",
         "contactUsLink": "/kontakt",
         "privacyNoticeText": "Durch die Anmeldung unseres Newsletters stimmen Sie unseren <a data-ajax-modal=\"true\" data-url=\"%privacyUrl%\" href=\"%privacyUrl%\" title=\"Datenschutzbestimmungen\">Datenschutzbestimmungen</a> sowie unseren <a data-ajax-modal=\"true\" data-url=\"%tosUrl%\" href=\"%tosUrl%\" title=\"AGB\">AGBs</a> zu.",
+        "privacyNoticeTextShort": "Ich akzeptiere die <a href=\"%privacyUrl%\" target=\"_blank\" title=\"Datenschutzrichtlinien\">Datenschutzrichtlinien</a> sowie unsere <a  href=\"%tosUrl%\" target=\"_blank\" title=\"Allgemeine Geschäftsbedingungen\">Allgemeine Geschäftsbedingungen</a>",
         "categories": "Navigation",
         "loginRegister": "Login / Registrieren"
     },
@@ -18,7 +19,7 @@
         "email": "E-Mail",
         "companyName": "Firma",
         "title": "Anfrage",
-        "privacyNoticeText": "Durch Absendung des Formulares stimmen Sie unseren <a data-ajax-modal=\"true\" data-url=\"%privacyUrl%\" href=\"%privacyUrl%\" title=\"Datenschutzbestimmungen\">Datenschutzbestimmungen</a> sowie unseren <a data-ajax-modal=\"true\" data-url=\"%tosUrl%\" href=\"%tosUrl%\" title=\"AGB\">AGBs</a> zu."
+        "privacyNoticeText": "Durch Absendung des Formulares stimmen Sie unseren <a href=\"%privacyUrl%\" title=\"Datenschutzbestimmungen\">Datenschutzbestimmungen</a> sowie unseren <a data-ajax-modal=\"true\" data-url=\"%tosUrl%\" href=\"%tosUrl%\" title=\"AGB\">AGBs</a> zu."
 
     },
     "customFormFunctionOptions" : {

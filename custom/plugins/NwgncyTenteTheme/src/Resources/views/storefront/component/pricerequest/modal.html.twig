@@ -272,8 +272,9 @@
                     <label class="custom-control-label"
                               for="priceOnRequestCheck1">
                                 {{ "general.privacyNoticeTextShort"|trans({
-                                                                '%privacyUrl%': seoUrl('frontend.navigation.page', { navigationId: '018ad749433076b4836e9caff4368800' })
-                                                            })|raw }}
+                                                                '%privacyUrl%': seoUrl('frontend.navigation.page', { navigationId: '018c3e81ac0a73ffaebd3eba358dc2bd' }),
+                                                                '%tosUrl%': seoUrl('frontend.navigation.page', { navigationId: '018c3e81ac0a73ffaebd3eba359a8922' })
+                                                            })|sw_sanitize }}
                               {{ 'nimbits-pricerequests.popup.required'|trans }}</label>
                </div>
 
