@@ -186,6 +186,28 @@ header.header-main {
 }
 
 
+.centred-banner.cms-block-rhweb-cta-banner-basic {
+        .rhweb-heading-cta {
+            font-size: 24px !important;
+            font-weight: 700 !important;
+            color: #ffffff !important;
+        }
+    
+        .cms-element-rhweb-cta-banner {
+            justify-content: center !important;
+            height: auto !important;
+            max-height: 300px !important;
+    
+            .overlay {
+                justify-content: center;
+                height: 100% !important;
+                width: 100%;
+                padding: 15px;
+            }
+        }
+}
+
+
 
 
 @media (max-width: 575px) {
