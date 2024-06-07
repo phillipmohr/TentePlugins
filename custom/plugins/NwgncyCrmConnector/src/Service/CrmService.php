@@ -211,7 +211,13 @@ class CrmService
                                 $crmRecord->setTenteState($countryStateName);
                             }
                         }
+
                         $country = $customerBillingAddress->getCountry();
+
+                        if ($country === null) {
+                            $country = $customerBillingAddress->getCountryId();
+                        }
+                        
                         if ($country instanceof CountryEntity) {
                             $countryCode = $this->getCountryCode($country);
                             if ($countryCode) {
@@ -219,6 +225,7 @@ class CrmService
                                 $crmRecord->setCountry($countryCode);
                             }
                         }
+                        
                         $phone = $customerBillingAddress->getPhoneNumber();
                         if ($phone) {
                             $crmRecord->setPhone($phone);
