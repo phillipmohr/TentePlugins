@@ -176,7 +176,7 @@ class CrmService
                         $crmRecord->setCallingWebsiteCountry($salesChannelCountryCode);
                     }
                 }
-
+ 
 
                 if ($event->getCustomer() instanceof CustomerEntity) {
                     $customer = $event->getCustomer();
@@ -188,6 +188,11 @@ class CrmService
                     $webRequestId = $this->formatWebrequestId($customer->getId());
                     $crmRecord->setWebrequestId($webRequestId);
                     $customerBillingAddress = $customer->getDefaultBillingAddress();
+
+                    if ($customerBillingAddress === null) {
+                        $customerBillingAddress = $customer->getAddresses()->first();
+                    }
+
                     if ($customerBillingAddress instanceof CustomerAddressEntity) {
                         $street = $customerBillingAddress->getStreet();
                         $postalCode = $customerBillingAddress->getZipcode();
