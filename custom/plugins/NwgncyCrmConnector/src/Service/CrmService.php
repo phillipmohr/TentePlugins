@@ -224,6 +224,13 @@ class CrmService
                                 $crmRecord->setCallingWebsiteCountry($countryCode);
                                 $crmRecord->setCountry($countryCode);
                             }
+                        } else if (!empty($country)) {
+
+                            $countryCode = $this->getCountryCodeById($country, $context);
+                            
+                            $crmRecord->setCallingWebsiteCountry($countryCode);
+                            $crmRecord->setCountry($countryCode);
+
                         }
                         
                         $phone = $customerBillingAddress->getPhoneNumber();
