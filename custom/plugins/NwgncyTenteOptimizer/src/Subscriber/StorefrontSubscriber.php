@@ -130,10 +130,11 @@ class StorefrontSubscriber implements EventSubscriberInterface
             }
 
             $sc = $this->locationService->getDefaultTargetDomain($request->getUri(), $countryCode, $event->getSalesChannelContext()->getContext());
+            if($sc and $sc->getUrl()) {
+                $request->cookies->set('tente-sc-url', $sc->getUrl());
+                $visitorScUrl = $sc->getUrl();
+            }
 
-            $request->cookies->set('tente-sc-url', $sc->getUrl());
-
-            $visitorScUrl = $sc->getUrl();
         }
         
         
