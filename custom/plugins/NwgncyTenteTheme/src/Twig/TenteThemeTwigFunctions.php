@@ -302,6 +302,7 @@ class TenteThemeTwigFunctions extends AbstractExtension
           return [
                new TwigFunction('getServiceMenuLeft', [$this, 'getServiceMenuLeft']),
                new TwigFunction('getContactPageID', [$this, 'getContactPageID']),
+               new TwigFunction('getActiveDomainUrl', [$this, 'getActiveDomainUrl']),
                new TwigFunction('getCountryList', [$this, 'getCountryList']),
                new TwigFunction('getLanguageList', [$this, 'getLanguageList']),
           ];
@@ -312,6 +313,19 @@ class TenteThemeTwigFunctions extends AbstractExtension
          return [
              new TwigFilter('contains', [$this, 'contains']),
          ];
+     }
+
+     public function getActiveDomainUrl(SalesChannelContext $salesChannelContext)
+     {
+        $domains = $salesChannelContext->getSalesChannel()->getDomains();
+        
+        foreach ($domains as $domain) {
+            if ($domain->getLanguageId() == $salesChannelContext->getLanguageId()) {
+                return $domain->getUrl();
+            }
+        }
+        
+        return null;
      }
 
      public function getContactPageID(SalesChannelContext $salesChannelContext)

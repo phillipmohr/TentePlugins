@@ -28,14 +28,25 @@
             <argument type="service" id="Doctrine\DBAL\Connection"/> 
         </service>
 
+        <service id="NwgncyTenteOptimizer\Service\LocationService" class="NwgncyTenteOptimizer\Service\LocationService">
+            <argument type="service" id="zeobv.store_switcher.service.location_info_service.location_info_service_factory"/>
+            <argument type="service" id="zeobv.store_switcher.service.config_service"/>
+            <argument type="service" id="sales_channel_domain.repository"/>
+            <argument type="service" id="language.repository"/>
+            <argument type="service" id="locale.repository" />
+        </service>
+
         <service id="Zeobv\StoreSwitcher\Storefront\Subscriber\StorefrontSubscriber" 
                 class="NwgncyTenteOptimizer\Subscriber\StorefrontSubscriber">
+            <argument type="service" id="router.default"/>
             <argument type="service" id="zeobv.store_switcher.service.config_service" />
             <argument type="service" id="NwgncyTenteOptimizer\Service\HreflangService" />
-            <argument type="service" id="zeobv.store_switcher.service.location_service" />
+            <argument type="service" id="NwgncyTenteOptimizer\Service\LocationService" />
             <argument type="service" id="zeobv_store_switcher_domain.repository" />
             <argument type="service" id="locale.repository" />
             <argument type="service" id="product.repository" />
+            <argument type="service" id="Doctrine\DBAL\Connection"/>
+            <argument type="service" id="Shopware\Core\Content\Seo\SeoUrlPlaceholderHandlerInterface" />
             <tag name="kernel.event_subscriber"/>
         </service>
 

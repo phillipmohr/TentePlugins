@@ -3,6 +3,8 @@
         "contactUs": "Kontaktiere uns",
         "contactUsLink": "/kontakt",
         "privacyPageID": "018c3e81ac0a73ffaebd3eba358dc2bd",
+        "privacyPageUrl": "/rechtliches/datenschutzerklaerung/",
+        "termPageUrl": "/rechtliches/allgemeine-geschaeftsbedingungen/",
         "termPageID": "018c3e81ac0a73ffaebd3eba359a8922",
         "privacyNoticeText": "Durch die Anmeldung unseres Newsletters stimmen Sie unseren <a data-ajax-modal=\"true\" data-url=\"%privacyUrl%\" href=\"%privacyUrl%\" title=\"Datenschutzbestimmungen\">Datenschutzbestimmungen</a> sowie unseren <a data-ajax-modal=\"true\" data-url=\"%tosUrl%\" href=\"%tosUrl%\" title=\"AGB\">AGBs</a> zu.",
         "privacyNoticeTextShort": "Ich akzeptiere die <a href=\"%privacyUrl%\" target=\"_blank\" title=\"Datenschutzrichtlinien\">Datenschutzrichtlinien</a> sowie unsere <a  href=\"%tosUrl%\" target=\"_blank\" title=\"Allgemeine Geschäftsbedingungen\">Allgemeine Geschäftsbedingungen</a>",

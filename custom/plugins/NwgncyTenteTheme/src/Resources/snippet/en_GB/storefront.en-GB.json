@@ -2,6 +2,8 @@
     "general": {
         "contactUs": "Contact us",
         "contactUsLink": "/contact",
+        "privacyPageUrl": "/legal-information/privacy-statement/",
+        "termPageUrl": "/legal-information/general-terms-and-conditions/",
         "privacyPageID": "018c3e81ac0a73ffaebd3eba358dc2bd",
         "termPageID": "018c3e81ac0a73ffaebd3eba359a8922",
         "privacyNoticeText": "By subscribing to the newsletter you accept our <a data-ajax-modal=\"true\" data-url=\"%privacyUrl%\" href=\"%privacyUrl%\" title=\"Privacy policy\">privacy policy</a> as well as our <a data-ajax-modal=\"true\" data-url=\"%tosUrl%\" href=\"%tosUrl%\" title=\"terms and conditions\">terms and conditions</a>.",

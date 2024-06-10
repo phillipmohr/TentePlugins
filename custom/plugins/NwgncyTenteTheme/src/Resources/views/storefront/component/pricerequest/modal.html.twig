@@ -267,13 +267,15 @@
                {% endblock %}
 
                {% block nb_priceonrequest_requestform_dataprivacy %}
+                {% set privacyPageUrl = getActiveDomainUrl(context) ~ 'general.privacyPageUrl'|trans %}
+                {% set termPageUrl = getActiveDomainUrl(context) ~ 'general.termPageUrl'|trans %}
                <div class="custom-control custom-checkbox nbpr-checkbox">
                     <input type="checkbox" class="custom-control-input" id="priceOnRequestCheck1" required>
                     <label class="custom-control-label"
                               for="priceOnRequestCheck1">
                                 {{ "general.privacyNoticeTextShort"|trans({
-                                                                '%privacyUrl%': seoUrl('frontend.navigation.page', { navigationId: 'general.privacyPageID'|trans }),
-                                                                '%tosUrl%': seoUrl('frontend.navigation.page', { navigationId: 'general.termPageID'|trans })
+                                                                '%privacyUrl%': privacyPageUrl,
+                                                                '%tosUrl%': termPageUrl
                                                             })|raw }}
                               {{ 'nimbits-pricerequests.popup.required'|trans }}</label>
                </div>

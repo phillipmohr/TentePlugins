@@ -1,20 +1,15 @@
 {% sw_extends '@Storefront/storefront/component/modals/store-switcher.html.twig' %}
 
 {% block zeobv_store_switcher_component_modal_store_switcher %}
-    <div {% if zeobvStoreSwitcher.showStorePickerModal %}data-store-switcher-modal="true"{% endif %}
+    <div
          data-store-switcher-modal-options='{
-            "domainSelectionIsMandatory": {{ zeobvStoreSwitcher.config.domainSelectionIsMandatory ? 1 : 0 }},
+            "domainSelectionIsMandatory": 0,
             "currentStoreId": "{{ context.domainId }}"
          }'
          class="modal fade"
          tabindex="-1"
          aria-hidden="true"
          id="storeSwitcherModal"
-
-            {% if zeobvStoreSwitcher.config.domainSelectionIsMandatory %}
-                data-bs-backdrop="static"
-                data-bs-keyboard="false"
-            {% endif %}
          role="dialog">
         {% block zeobv_store_switcher_component_modal_store_switcher_modal %}
             <div class="modal-dialog modal-dialog-centered switcher-modal-language"

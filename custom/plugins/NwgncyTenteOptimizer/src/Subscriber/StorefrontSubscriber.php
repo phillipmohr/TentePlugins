@@ -17,6 +17,7 @@ use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityCollection;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\EntitySearchResult;
 use Shopware\Storefront\Page\Page;
+use Doctrine\DBAL\Connection;
 use Shopware\Storefront\Pagelet\Header\HeaderPagelet;
 use Shopware\Core\Content\Seo\Hreflang\HreflangCollection;
 use Shopware\Core\System\SalesChannel\SalesChannelEntity;
@@ -24,13 +25,16 @@ use Shopware\Core\Framework\Struct\StructCollection;
 use Shopware\Core\Framework\Struct\ArrayStruct;
 use Shopware\Core\Framework\Context;
 use Shopware\Core\System\Locale\LocaleEntity;
-
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Zeobv\StoreSwitcher\Service\ConfigService;
 use NwgncyTenteOptimizer\Service\HreflangService;
 use Zeobv\StoreSwitcher\Content\StoreSwitcherDomain\StoreSwitcherDomainEntity;
 use Zeobv\StoreSwitcher\Content\StoreSwitcherDomain\StoreSwitcherDomainCollection;
-use Zeobv\StoreSwitcher\Service\LocationService;
+use NwgncyTenteOptimizer\Service\LocationService;
 use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Routing\RouterInterface;
+use Symfony\Component\HttpKernel\Event\ControllerEvent;
+use Shopware\Core\Content\Seo\SeoUrlPlaceholderHandlerInterface;
 
 /**
  * Class StorefrontSubscriber
@@ -39,28 +43,39 @@ use Symfony\Component\Filesystem\Filesystem;
  */
 class StorefrontSubscriber implements EventSubscriberInterface
 {
+    private RouterInterface $router;
     protected configService $configService;
     protected HreflangService $hreflangService;
     protected LocationService $locationService;
     protected EntityRepository $storeSwitcherDomainRepository;
     protected EntityRepository $localeRepository;
     protected EntityRepository $productRepository;
+    protected Connection $connection;
+    protected SeoUrlPlaceholderHandlerInterface $handler;
+    
  
     public function __construct(
+        RouterInterface $router,
         ConfigService $configService,
         HreflangService $hreflangService,
         LocationService $locationService,
         EntityRepository $storeSwitcherDomainRepository,
         EntityRepository $localeRepository,
-        EntityRepository $productRepository
+        EntityRepository $productRepository,
+        Connection $connection,
+        SeoUrlPlaceholderHandlerInterface $handler
     )
     {
+        $this->router = $router;
         $this->configService = $configService;
         $this->hreflangService = $hreflangService;
         $this->locationService = $locationService;
         $this->storeSwitcherDomainRepository = $storeSwitcherDomainRepository;
         $this->localeRepository = $localeRepository;
         $this->productRepository = $productRepository;
+        $this->connection = $connection;
+        $this->handler = $handler;
+        
     }
 
     /**
@@ -78,7 +93,7 @@ class StorefrontSubscriber implements EventSubscriberInterface
     /**
      * @param StorefrontRenderEvent $event
      */
-    public function addStoreSwitcherInfo(StorefrontRenderEvent $event): void
+    public function addStoreSwitcherInfo(StorefrontRenderEvent $event)
     {
         // $fsObject = new Filesystem();
 
@@ -99,8 +114,21 @@ class StorefrontSubscriber implements EventSubscriberInterface
         $configuredStoreSwitcherDomains = $this->getStorePickerOptions($event->getSalesChannelContext());
 
         // $fsObject->appendToFile($filePath, @\Kint::dump(date('h:i:s')));
+        $countryCode = null;
+        
+        if($this->locationService->determineCountryCodeFromRequest($request, $event->getSalesChannelContext())) {
+            $countryCode = $this->locationService->determineCountryCodeFromRequest($request, $event->getSalesChannelContext());
 
-        if ($countryCode = $this->locationService->determineCountryCodeFromRequest($request, $event->getSalesChannelContext())) {
+        } else {
+            $countryCode = $this->locationService->getCountryFromAcceptLanguage();
+        }
+        
+        $sc = $this->locationService->getDefaultTargetDomain($request->getUri(), $countryCode, $event->getSalesChannelContext()->getContext());
+        if($sc and $_SERVER['REQUEST_URI'] == '/') {
+            $this->redirect($sc->getUrl());
+        }
+
+        if ($countryCode) {
             /** @var StoreSwitcherDomainEntity $storeSwitcherDomain */
             foreach ($configuredStoreSwitcherDomains as $storeSwitcherDomain) {
                 if (strtolower($storeSwitcherDomain->getIso()) === strtolower($countryCode)) {
@@ -144,6 +172,15 @@ class StorefrontSubscriber implements EventSubscriberInterface
 
         // $fsObject->appendToFile($filePath, @\Kint::dump(date('h:i:s')));
     }
+
+
+    private function Redirect($url, $permanent = false)
+    {
+        header('Location: ' . $url, true, $permanent ? 301 : 302);
+
+        exit();
+    }
+
 
     /**
      * @param StorefrontRenderEvent $event
