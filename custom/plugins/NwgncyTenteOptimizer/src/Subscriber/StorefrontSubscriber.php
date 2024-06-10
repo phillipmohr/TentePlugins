@@ -114,18 +114,31 @@ class StorefrontSubscriber implements EventSubscriberInterface
         $configuredStoreSwitcherDomains = $this->getStorePickerOptions($event->getSalesChannelContext());
 
         // $fsObject->appendToFile($filePath, @\Kint::dump(date('h:i:s')));
-        $countryCode = null;
-        
-        if($this->locationService->determineCountryCodeFromRequest($request, $event->getSalesChannelContext())) {
-            $countryCode = $this->locationService->determineCountryCodeFromRequest($request, $event->getSalesChannelContext());
+        $visitorScUrl = null;
 
+        if ($request->cookies->has('tente-sc-url')) {
+            $visitorScUrl = $request->cookies->get('tente-sc-url');
         } else {
-            $countryCode = $this->locationService->getCountryFromAcceptLanguage();
+
+            $countryCode = null;
+
+            if($this->locationService->determineCountryCodeFromRequest($request, $event->getSalesChannelContext())) {
+                $countryCode = $this->locationService->determineCountryCodeFromRequest($request, $event->getSalesChannelContext());
+    
+            } else {
+                $countryCode = $this->locationService->getCountryFromAcceptLanguage();
+            }
+
+            $sc = $this->locationService->getDefaultTargetDomain($request->getUri(), $countryCode, $event->getSalesChannelContext()->getContext());
+
+            $request->cookies->set('tente-sc-url', $sc->getUrl());
+
+            $visitorScUrl = $sc->getUrl();
         }
         
-        $sc = $this->locationService->getDefaultTargetDomain($request->getUri(), $countryCode, $event->getSalesChannelContext()->getContext());
-        if($sc and $_SERVER['REQUEST_URI'] == '/') {
-            $this->redirect($sc->getUrl());
+        
+        if($_SERVER['REQUEST_URI'] == '/') {
+            $this->redirect($visitorScUrl);
         }
 
         if ($countryCode) {

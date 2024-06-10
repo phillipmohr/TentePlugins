@@ -15,6 +15,7 @@ use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\System\Language\LanguageEntity;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
+use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\ContainsFilter;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\EntitySearchResult;
 use Shopware\Core\System\SalesChannel\Aggregate\SalesChannelDomain\SalesChannelDomainEntity;
 
@@ -145,27 +146,49 @@ class LocationService
     {
         $languageCode = $this->getPreferredLanguage();
         $url = $baseUrl . $languageCode . '-' . $countryCode;
+        
         $criteria = new Criteria();
         $criteria->addFilter(new EqualsFilter('url', $url));
         $criteria->addFilter(new EqualsFilter('salesChannel.active', true));
         $criteria->addFilter(new EqualsFilter('salesChannel.type.id', Defaults::SALES_CHANNEL_TYPE_STOREFRONT));
-
+        
         /** @var ?SalesChannelDomainEntity $result */
         $result = $this->domainRepository->search($criteria, $context)->first();
         if($result) {
             return $result;
 
         } else {
-            $url = $baseUrl . 'de-DE';
+
+            $urlAlternative = $baseUrl . $languageCode;
+            
             $criteria = new Criteria();
-            $criteria->addFilter(new EqualsFilter('url', $url));
+            $criteria->addFilter(new ContainsFilter('url', $urlAlternative));
             $criteria->addFilter(new EqualsFilter('salesChannel.active', true));
             $criteria->addFilter(new EqualsFilter('salesChannel.type.id', Defaults::SALES_CHANNEL_TYPE_STOREFRONT));
             
             /** @var ?SalesChannelDomainEntity $result */
             $result = $this->domainRepository->search($criteria, $context)->first();
+
+            if($result) {
+
+                return $result;
+
+            } else {
+
+                $defaultUrl = $baseUrl . 'de-DE';
+                
+                $criteria = new Criteria();
+                $criteria->addFilter(new EqualsFilter('url', $defaultUrl));
+                $criteria->addFilter(new EqualsFilter('salesChannel.active', true));
+                $criteria->addFilter(new EqualsFilter('salesChannel.type.id', Defaults::SALES_CHANNEL_TYPE_STOREFRONT));
+                
+                /** @var ?SalesChannelDomainEntity $result */
+                $result = $this->domainRepository->search($criteria, $context)->first();
+
+                return $result;
+
+            }
             
-            return $result;
         }
 
     }
