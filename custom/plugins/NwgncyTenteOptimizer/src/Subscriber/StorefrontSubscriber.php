@@ -35,7 +35,7 @@ use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\HttpKernel\Event\ControllerEvent;
 use Shopware\Core\Content\Seo\SeoUrlPlaceholderHandlerInterface;
-
+use Symfony\Component\HttpFoundation\Cookie;
 /**
  * Class StorefrontSubscriber
  *
@@ -115,12 +115,12 @@ class StorefrontSubscriber implements EventSubscriberInterface
 
         // $fsObject->appendToFile($filePath, @\Kint::dump(date('h:i:s')));
         $visitorScUrl = null;
+        $countryCode = null;
 
-        if ($request->cookies->has('tente-sc-url')) {
-            $visitorScUrl = $request->cookies->get('tente-sc-url');
+        if (isset($_COOKIE['tente-sc-url']) and isset($_COOKIE['tente-country-code'])) {
+            $visitorScUrl = $_COOKIE['tente-sc-url'];
+            $countryCode = $_COOKIE['tente-country-code'];
         } else {
-
-            $countryCode = null;
 
             if($this->locationService->determineCountryCodeFromRequest($request, $event->getSalesChannelContext())) {
                 $countryCode = $this->locationService->determineCountryCodeFromRequest($request, $event->getSalesChannelContext());
@@ -131,10 +131,12 @@ class StorefrontSubscriber implements EventSubscriberInterface
 
             $sc = $this->locationService->getDefaultTargetDomain($request->getUri(), $countryCode, $event->getSalesChannelContext()->getContext());
             if($sc and $sc->getUrl()) {
-                $request->cookies->set('tente-sc-url', $sc->getUrl());
+
+                setcookie('tente-sc-url', $sc->getUrl(), time() + (86400 * 365), "/");
                 $visitorScUrl = $sc->getUrl();
             }
 
+            setcookie('tente-country-code', $countryCode, time() + (86400 * 365), "/");
         }
         
         

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace NwgncyTenteOptimizer\Service;
 
 use Shopware\Core\Defaults;
+use Doctrine\DBAL\Connection;
 use Symfony\Component\HttpFoundation\Request;
 use Zeobv\StoreSwitcher\Service\LocationInfoService\LocationInfoServiceFactory;
 use Zeobv\StoreSwitcher\Service\LocationInfoService\LocationInfoServiceInterface;
@@ -29,7 +30,9 @@ class LocationService
     /**
      * @var LocationInfoServiceFactory
      */
+    protected Connection $connection;
     protected LocationInfoServiceFactory $locationInfoServiceFactory;
+    protected EntityRepository $saleschannelRepository;
     protected EntityRepository $domainRepository;
     protected EntityRepository $languageRepository;
     protected EntityRepository $localeRepository;
@@ -39,14 +42,18 @@ class LocationService
     protected ConfigService $configService;
 
     public function __construct(
+        Connection $connection,
         LocationInfoServiceFactory $locationInfoServiceFactory,
         ConfigService $configService,
+        EntityRepository $saleschannelRepository,
         EntityRepository $domainRepository,
         EntityRepository $languageRepository,
         EntityRepository $localeRepository
     ) {
+        $this->connection = $connection;
         $this->locationInfoServiceFactory = $locationInfoServiceFactory;
         $this->configService = $configService;
+        $this->saleschannelRepository = $saleschannelRepository;
         $this->domainRepository = $domainRepository;
         $this->languageRepository = $languageRepository;
         $this->localeRepository = $localeRepository;
@@ -125,6 +132,15 @@ class LocationService
     }
 
 
+
+    public function getSalesChannelByID(string $salesChannelId)
+    {
+        $criteria = new Criteria([$salesChannelId]);
+        $context = Context::createDefaultContext();
+        dd($this->saleschannelRepository->search($criteria, $context)->first());
+        return $this->saleschannelRepository->search($criteria, $context)->first();
+    }
+
     public function getSalesChannelsDomains(string $salesChannelId, Context $context): EntitySearchResult
     {
         $criteria = new Criteria();
@@ -144,8 +160,9 @@ class LocationService
 
     public function getDefaultTargetDomain(string $baseUrl, string $countryCode, Context $context): ?SalesChannelDomainEntity
     {
+        // dd($countryCode);
         $languageCode = $this->getPreferredLanguage();
-        $url = $baseUrl . $languageCode . '-' . $countryCode;
+        $url = $baseUrl . $languageCode . '-' . strtolower($countryCode);
         
         $criteria = new Criteria();
         $criteria->addFilter(new EqualsFilter('url', $url));
@@ -261,5 +278,20 @@ class LocationService
 
         // If no country code was found, return null
         return null;
+    }
+
+    public function getDefaultSalesChannel(Request $request)
+    {
+        $url = $request->getUri();
+        
+        $query = $this->connection->executeQuery(
+            'SELECT LOWER(HEX(id)) FROM sales_channel_domain WHERE url = ? ORDER BY created_at ASC LIMIT 1',
+            [$url]
+        );
+
+        $result = $query->fetchFirstColumn();
+        if($result) {
+            return $this->getSalesChannelByID($result[0]);
+        }
     }
 }
