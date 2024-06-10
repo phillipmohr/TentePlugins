@@ -29,10 +29,8 @@
         </service>
 
         <service id="NwgncyTenteOptimizer\Service\LocationService" class="NwgncyTenteOptimizer\Service\LocationService">
-            <argument type="service" id="Doctrine\DBAL\Connection"/>
             <argument type="service" id="zeobv.store_switcher.service.location_info_service.location_info_service_factory"/>
             <argument type="service" id="zeobv.store_switcher.service.config_service"/>
-            <argument type="service" id="sales_channel.repository"/>
             <argument type="service" id="sales_channel_domain.repository"/>
             <argument type="service" id="language.repository"/>
             <argument type="service" id="locale.repository" />
