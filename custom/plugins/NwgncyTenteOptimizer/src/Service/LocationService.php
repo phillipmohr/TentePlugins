@@ -222,7 +222,15 @@ class LocationService
             $languages[] = $lang[0];
         }
 
-        return $languages[1];
+        if (!empty($languages[1])) {
+            return $languages[1];
+        } elseif (!empty($languages[0])) {
+            return $languages[0];
+        } else {
+            return 'en';
+        }
+        
+
     }
     public function getCountryFromAcceptLanguage()
     {
