@@ -181,9 +181,9 @@ class CrmService
                 if ($event->getCustomer() instanceof CustomerEntity) {
                     $customer = $event->getCustomer();
                 } else {
-
                     $customer = $salesChannelContext->getCustomer();
                 }
+
                 if ($customer instanceof CustomerEntity) {
                     $webRequestId = $this->formatWebrequestId($customer->getId());
                     $crmRecord->setWebrequestId($webRequestId);
@@ -282,6 +282,26 @@ class CrmService
                 $crmRecord = $this->productInquiryEventHandler($event, $crmRecord, $context);
             }
             if ($event instanceof CadFileDownloadEvent) {
+
+                if (empty($crmRecord->getCompanyName())) {
+
+                    if ($customer instanceof CustomerEntity) {
+  
+                        $customerAddress = $customer->getAddresses();
+                        $addressElements = $customerAddress->getElements();
+
+                        if (!empty($addressElements)) {
+                            foreach ($addressElements as $element) {
+                                $company = $element->getCompany();
+                                if (!empty($company)) {
+                                    $crmRecord->setCompanyName($company);
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+
                 $isValidEvent = true;
                 $crmRecord = $this->cadDownloadEventHandler($event, $crmRecord, $context);
             }
@@ -681,6 +701,11 @@ class CrmService
         $recordInformationMessage .= "\n\n"; // New line
         $recordInformationMessage .= 'File name : ' . $fileName; // Second variable
 
+        // if (isset($dataArray['productName'])) {
+        //     $recordInformationMessage .= "\n\n"; // New line
+        //     $recordInformationMessage .= 'Productname : ' . $dataArray['productName']; 
+        // }
+
         $informationArr = $this->createRecordInformationArr($timestamp, $state, $recordInformationMessage);
         $information = implode("\r\n", $informationArr);
 
@@ -688,7 +713,7 @@ class CrmService
 
         return $crmRecord;
     }
-    
+
     private function formatWebrequestId(string $id): string
     {
         //   return 'M2-' . $id;

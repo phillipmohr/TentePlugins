@@ -94,7 +94,7 @@ class SapCrmHandler extends CrmHandlerBase
                $recordDataArr = $record->getData();
 
                if (!empty($record->getProductName())) {
-                    $recordDataArr['productName'] = $record->getProductName();
+                    $recordDataArr['productname'] = $record->getProductName();
                }
 
                $queryParameters = http_build_query($recordDataArr);
