@@ -117,9 +117,9 @@
 											</div>
 										{% endif %}
 
-
 										<form class="tente-downloads-form tente-pdf-downloads-form d-none" method="post" action="{{ path('storefront.cad-download.pdf.post') }}">
-											<input type="hidden" name="productId" value="{{ page.product.id }}"/>
+											<input type="hidden" name="productId" value="{{ page.product.id }}"/>											
+											<input type="hidden" name="productName" value="{{ page.product.translated['name'] }}"/>
 											<input type="hidden" name="customerId" value="{{ context.customer.id }}"/>
 											<input type="hidden" name="productNumber" value="{{ page.product.productNumber }}"/>
 											<input type="hidden" name="productEan" value="{{ page.product.ean }}"/>
@@ -135,6 +135,7 @@
 
 										<form class="tente-downloads-form tente-stp-downloads-form d-none" method="post" action="{{ path('storefront.cad-download.stp.post') }}">
 											<input type="hidden" name="productId" value="{{ page.product.id }}"/>
+											<input type="hidden" name="productName" value="{{ page.product.translated['name'] }}"/>
 											<input type="hidden" name="customerId" value="{{ context.customer.id }}"/>
 											<input type="hidden" name="productNumber" value="{{ page.product.productNumber }}"/>
 											<input type="hidden" name="productEan" value="{{ page.product.ean }}"/>

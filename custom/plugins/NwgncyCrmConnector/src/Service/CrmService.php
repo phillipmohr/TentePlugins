@@ -666,7 +666,11 @@ class CrmService
         if (isset($dataArray['productEan'])) {
             $crmRecord->setProductEan($dataArray['productEan']);
         }
-
+   
+        if (isset($dataArray['productName'])) {
+            $crmRecord->setProductName($dataArray['productName']);
+        }
+        
         if ($crmRecord->getPostalcode()) {
             $crmRecord->setPlz($crmRecord->getPostalcode());
         }
@@ -684,7 +688,7 @@ class CrmService
 
         return $crmRecord;
     }
-
+    
     private function formatWebrequestId(string $id): string
     {
         //   return 'M2-' . $id;

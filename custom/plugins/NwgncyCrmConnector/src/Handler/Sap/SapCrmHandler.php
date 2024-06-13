@@ -69,7 +69,7 @@ class SapCrmHandler extends CrmHandlerBase
      }
 
      public function sendData(CrmRecord $record) { 
-          
+
           try {
                $requestLeadEndpoint = $this->systemConfigService->get('NwgncyCrmConnector.config.sapRequestLeadEndpoint');
                $cadEndpoint = $this->systemConfigService->get('NwgncyCrmConnector.config.sapCadEndpoint');
@@ -92,11 +92,16 @@ class SapCrmHandler extends CrmHandlerBase
                ];
 
                $recordDataArr = $record->getData();
+
+               if (!empty($record->getProductName())) {
+                    $recordDataArr['productName'] = $record->getProductName();
+               }
+
                $queryParameters = http_build_query($recordDataArr);
                $url .= '?' . $queryParameters;
 
                $response = $httpClientInterface->request($method, $url, $options);
-
+ 
 
             //    $responseStatusCode = $response->getStatusCode();
             //    $responseContent = $response->getContent();

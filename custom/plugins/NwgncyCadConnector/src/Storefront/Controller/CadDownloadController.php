@@ -30,11 +30,14 @@ class CadDownloadController extends StorefrontController
 
         $productId = $request->get('productId');
         $productEan = $request->get('productEan');
+        $productName = $request->get('productName');
+
         $fileFormat = 'pdf';
         $data = [
             "format" => $fileFormat,
             "productNumber" => $productId,
-            "productEan" => $productEan
+            "productEan" => $productEan,
+            "productName" => $productName
         ];
 
         $criteria = new Criteria([$customerId]);
@@ -83,13 +86,16 @@ class CadDownloadController extends StorefrontController
 
         $productId = $request->get('productId');
         $productEan = $request->get('productEan');
+        $productName = $request->get('productName');
+
         $fileFormat = 'step';
         $data = [
             "format" => $fileFormat,
             "productNumber" => $productId,
-            "productEan" => $productEan
+            "productEan" => $productEan,
+            "productName" => $productName
         ];
-
+        
         $criteria = new Criteria([$customerId]);
         $criteria->addAssociation('addresses');
         $criteria->addAssociation('salutation');

@@ -13,6 +13,7 @@ class CrmRecord extends Struct {
      public const PLZ                            = 'plz';
      public const PRODUCT_EAN                    = 'productean';
      public const PRODUCT_NUMBER                 = 'productnumber';
+     public const PRODUCT_NAME                   = 'productname';
      public const CAD_FORMAT                     = 'format';
      public const CITY                           = 'city';
      public const COUNTRY                        = 'country';
@@ -57,6 +58,7 @@ class CrmRecord extends Struct {
      private string $plz = '';
      private string $productnumber = '';
      private string $productean = '';
+     private string $productname = '';
      private string $format = '';
      private string $city = '';
      private string $country = '';
@@ -153,38 +155,46 @@ class CrmRecord extends Struct {
      }
 
 
-        public function setProductNumber(string $Productnumber): void {
-                $this->productnumber = $Productnumber;
-        }
+     public function setProductNumber(string $Productnumber): void {
+               $this->productnumber = $Productnumber;
+     }
 
 
-        public function getProductNumber(): string {
-            return $this->productnumber;
-        }
+     public function getProductNumber(): string {
+          return $this->productnumber;
+     }
+     
+     public function setProductName(string $productname): void {
+          $this->productname = $productname;
+     }
 
-        public function setProductEan(string $Productean): void {
-            $this->productean = $Productean;
-        }
+     public function getProductName(): string {
+          return $this->productname;
+     }
 
-        public function getProductEan(): string {
-            return $this->productean;
-        }
+     public function setProductEan(string $Productean): void {
+          $this->productean = $Productean;
+     }
 
-        public function setPlz(string $plz): void {
-            $this->plz = $plz;
-        }
+     public function getProductEan(): string {
+          return $this->productean;
+     }
 
-        public function getplz(): string {
-            return $this->plz;
-        }
+     public function setPlz(string $plz): void {
+          $this->plz = $plz;
+     }
 
-        public function setCadFileFormat(string $CadFileFormat): void {
-            $this->format = $CadFileFormat;
-        }
+     public function getplz(): string {
+          return $this->plz;
+     }
 
-        public function getCadFileFormat(): string {
-            return $this->format;
-        }
+     public function setCadFileFormat(string $CadFileFormat): void {
+          $this->format = $CadFileFormat;
+     }
+
+     public function getCadFileFormat(): string {
+          return $this->format;
+     }
   
      public function getCity(): string {
           return $this->city;
