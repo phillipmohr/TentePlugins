@@ -99,7 +99,7 @@ class SapCrmHandler extends CrmHandlerBase
 
                $queryParameters = http_build_query($recordDataArr);
                $url .= '?' . $queryParameters;
-
+               
                $response = $httpClientInterface->request($method, $url, $options);
  
 

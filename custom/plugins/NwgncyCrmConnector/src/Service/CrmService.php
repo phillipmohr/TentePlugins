@@ -177,7 +177,6 @@ class CrmService
                     }
                 }
  
-
                 if ($event->getCustomer() instanceof CustomerEntity) {
                     $customer = $event->getCustomer();
                 } else {
@@ -189,7 +188,7 @@ class CrmService
                     $crmRecord->setWebrequestId($webRequestId);
                     $customerBillingAddress = $customer->getDefaultBillingAddress();
 
-                    if ($customerBillingAddress === null) {
+                    if ($customerBillingAddress === null && !empty($customer->getAddresses())) {
                         $customerBillingAddress = $customer->getAddresses()->first();
                     }
 
@@ -282,20 +281,20 @@ class CrmService
                 $crmRecord = $this->productInquiryEventHandler($event, $crmRecord, $context);
             }
             if ($event instanceof CadFileDownloadEvent) {
-
-                if (empty($crmRecord->getCompanyName())) {
+                $currentCompanyName = $crmRecord->getCompanyName();
+                if (empty($currentCompanyName)) {
 
                     if ($customer instanceof CustomerEntity) {
-  
-                        $customerAddress = $customer->getAddresses();
-                        $addressElements = $customerAddress->getElements();
-
-                        if (!empty($addressElements)) {
-                            foreach ($addressElements as $element) {
-                                $company = $element->getCompany();
-                                if (!empty($company)) {
-                                    $crmRecord->setCompanyName($company);
-                                    break;
+                          $customerAddresses = $customer->getAddresses();
+                        if (!empty($customerAddresses)) {
+                            $addressElements = $customerAddresses->getElements();
+                            if (!empty($addressElements)) {
+                                foreach ($addressElements as $element) {
+                                    $company = $element->getCompany();
+                                    if (!empty($company)) {
+                                        $crmRecord->setCompanyName($company);
+                                        break;
+                                    }
                                 }
                             }
                         }
