@@ -143,7 +143,7 @@ class LocationService
     }
 
 
-    public function getDefaultTargetDomain(string $baseUrl, string $countryCode, Context $context): ?SalesChannelDomainEntity
+    public function getDefaultTargetDomain(string $baseUrl, string $countryCode = 'DE', Context $context): ?SalesChannelDomainEntity
     {
         // dd($countryCode);
         $languageCode = $this->getPreferredLanguage();
