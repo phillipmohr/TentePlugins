@@ -214,20 +214,26 @@ class LocationService
         $languages = [];
 
         // Split the string by commas
-        $langs = explode(',', $acceptLanguage);
+        if(is_string($acceptLanguage)) {
 
-        foreach ($langs as $lang) {
-            // Split by semicolon to get the language and optional quality value
-            $lang = explode(';', $lang);
-            $languages[] = $lang[0];
-        }
+            $langs = explode(',', $acceptLanguage);
+    
+            foreach ($langs as $lang) {
+                // Split by semicolon to get the language and optional quality value
+                $lang = explode(';', $lang);
+                $languages[] = $lang[0];
+            }
+    
+            if (!empty($languages[1])) {
+                return $languages[1];
+            } elseif (!empty($languages[0])) {
+                return $languages[0];
+            } else {
+                return 'de';
+            }
 
-        if (!empty($languages[1])) {
-            return $languages[1];
-        } elseif (!empty($languages[0])) {
-            return $languages[0];
         } else {
-            return 'en';
+            return 'de';
         }
         
 
