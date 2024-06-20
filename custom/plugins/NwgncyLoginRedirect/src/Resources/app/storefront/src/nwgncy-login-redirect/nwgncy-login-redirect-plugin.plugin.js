@@ -13,7 +13,7 @@ export default class NwgncyLoginRedirectPlugin extends Plugin {
             
             if (this._isLoginPage() || this._isRegisterAccountPage()) {
                 this._setRedirectDataToForm();
-            } else if (!this._isAccountHomePage() && !this._isLogoutPage()) {
+            } else if (!this._isAccountHomePage() && !this._isLogoutPage() && !this._isForgotPasswordPage()) {
                 this._saveCurrentRoute();
             }
         }
@@ -39,7 +39,6 @@ export default class NwgncyLoginRedirectPlugin extends Plugin {
         }
 
         currentUrlData = JSON.parse(currentUrlData);
-        console.log(currentUrlData);
         
         const redirectParamInput = DomAccess.querySelectorAll(document, 'input[name="redirectParameters"]', false);
         const redirectToInput = DomAccess.querySelectorAll(document, 'input[name="redirectTo"]', false);
@@ -63,7 +62,7 @@ export default class NwgncyLoginRedirectPlugin extends Plugin {
         }
     }
 
-    _getStorageKey() {
+    _getStorageKey() { 
         return 'nwgncy-login-redirect-data';
     }
 
@@ -81,5 +80,9 @@ export default class NwgncyLoginRedirectPlugin extends Plugin {
 
     _isRegisterAccountPage() {
         return window.redirectData['currentUrl'] === 'frontend.account.register.page';
+    }
+
+    _isForgotPasswordPage() {
+        return window.redirectData['currentUrl'] === 'frontend.account.recover.page';
     }
 }
