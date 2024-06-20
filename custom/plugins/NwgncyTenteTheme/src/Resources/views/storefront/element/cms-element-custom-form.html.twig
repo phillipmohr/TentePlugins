@@ -45,6 +45,7 @@
 
                                 {% for field in group.fields %}
 
+                                  
                                     {% set field_translated_label = field.translated.label|trans %}
                                     {% set field_translated_placeholder = field.translated.placeholder|trans %}
                                     {% set field_translated_errorMessage = field.translated.errorMessage|trans %}
@@ -100,7 +101,6 @@
 
         {% block swag_cms_extensions_form_content_hidden_fields %}
             <div class="form-hidden-fields">
-
                 {% for group in form.groups %}
                     {% for field in group.fields %}
                         
@@ -118,10 +118,28 @@
 
                 <input type="hidden" name="formId" value="form-{{ form.id }}"/>
                 {% if form.technicalName|contains('crm_custom_form') %}
+
+                    {% set foundCampainField = false %}
+
+                    {% for group in form.groups %}
+                        {% for field in group.fields %}
+                            {% if field.technicalName|contains('crm_hidden') %}
+                                {% if field.technicalName == 'crm_hidden_campain_id' %}
+                                    {% set foundCampainField = true %}
+                                    <input name="f" type="hidden" value="{{ field.translated.placeholder }}" />
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+
                     <input name="CID" type="hidden" value="949847904" /> 
                     <input name="SID" type="hidden" value="" /> 
                     <input name="UID" type="hidden" value="" /> 
-                    <input name="f" type="hidden" value="1582" /> 
+
+                    {% if foundCampainField == false %}
+                        <input name="f" type="hidden" value="1582" /> 
+                    {% endif %}
+
                     <input name="p" type="hidden" value="2" /> 
                     <input name="a" type="hidden" value="r" /> 
                     <input name="el" type="hidden" value="" /> 
