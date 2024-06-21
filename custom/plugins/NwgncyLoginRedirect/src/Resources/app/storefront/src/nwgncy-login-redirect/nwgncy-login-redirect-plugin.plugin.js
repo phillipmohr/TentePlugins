@@ -13,12 +13,15 @@ export default class NwgncyLoginRedirectPlugin extends Plugin {
             
             if (this._isLoginPage() || this._isRegisterAccountPage()) {
                 this._setRedirectDataToForm();
-            } else if (!this._isAccountHomePage() && !this._isLogoutPage() && !this._isForgotPasswordPage()) {
+            } else if (!this._isAccountHomePage() 
+                && !this._isLogoutPage()
+                && !this._isForgotPasswordPage()
+                && !this._isSetNewPasswordPage()) {
                 this._saveCurrentRoute();
             }
         }
     }
-
+    
     _saveCurrentRoute() {
         const data = {
             currentUrl: window.redirectData['currentUrl'],
@@ -84,5 +87,9 @@ export default class NwgncyLoginRedirectPlugin extends Plugin {
 
     _isForgotPasswordPage() {
         return window.redirectData['currentUrl'] === 'frontend.account.recover.page';
+    }
+
+    _isSetNewPasswordPage() {
+        return window.redirectData['currentUrl'] === 'frontend.account.recover.password.page';
     }
 }
