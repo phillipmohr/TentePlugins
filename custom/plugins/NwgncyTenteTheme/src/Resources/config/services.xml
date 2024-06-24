@@ -35,6 +35,7 @@
         </service>
 
         <service id="Nwgncy\TenteTheme\Twig\TenteThemeTwigFunctions" public="true">
+            <argument type="service" id="sales_channel.repository" />
             <argument type="service" id="country.repository" />
             <argument type="service" id="language.repository"/>
             <argument type="service" id="category.repository" />

@@ -17,6 +17,8 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 
 class TenteThemeTwigFunctions extends AbstractExtension
 {
+    private EntityRepository $salesChannelRepository;
+
      private EntityRepository $categoryRepository;
 
      private EntityRepository $landingPageRepository;
@@ -24,6 +26,7 @@ class TenteThemeTwigFunctions extends AbstractExtension
      private EntityRepository $countryRepository;
      
      private EntityRepository $languageRepository;
+
 
 
      protected $sapCountries = [
@@ -286,11 +289,13 @@ class TenteThemeTwigFunctions extends AbstractExtension
      
 
      public function __construct(
+          EntityRepository $salesChannelRepository, 
           EntityRepository $countryRepository, 
           EntityRepository $languageRepository,
           EntityRepository $categoryRepository,
           EntityRepository $landingPageRepository
      ) {
+          $this->salesChannelRepository = $salesChannelRepository;
           $this->countryRepository = $countryRepository;
           $this->languageRepository = $languageRepository;
           $this->categoryRepository = $categoryRepository;
@@ -300,6 +305,7 @@ class TenteThemeTwigFunctions extends AbstractExtension
      public function getFunctions()
      {
           return [
+               new TwigFunction('getSaleChannelCustomFields', [$this, 'getSaleChannelCustomFields']),
                new TwigFunction('getServiceMenuLeft', [$this, 'getServiceMenuLeft']),
                new TwigFunction('getContactPageID', [$this, 'getContactPageID']),
                new TwigFunction('getActiveDomainUrl', [$this, 'getActiveDomainUrl']),
@@ -327,6 +333,23 @@ class TenteThemeTwigFunctions extends AbstractExtension
         
         return null;
      }
+
+     public function getSaleChannelCustomFields(string $salesChannelContextID, SalesChannelContext $salesChannelContext)
+     {
+        $context = $salesChannelContext->getContext();
+        $criteria = new Criteria([$salesChannelContextID]);
+        $saleschannel = $this->salesChannelRepository->search($criteria, $context)->first();
+        if($saleschannel) {
+            if(is_array($saleschannel->getTranslated()['customFields'])) {
+                return $saleschannel->getTranslated()['customFields'];
+            } else {
+                return null;
+            }
+        } else {
+            return null;
+        }
+     }
+
 
      public function getContactPageID(SalesChannelContext $salesChannelContext)
      {
