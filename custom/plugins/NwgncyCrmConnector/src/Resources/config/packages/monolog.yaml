@@ -1,0 +1,11 @@
+monolog:
+  channels: ['crm_requests']
+  handlers:
+      crmservice:
+          type: rotating_file
+          path: '%kernel.logs_dir%/%kernel.environment%_requests.log'
+          level: "debug"
+          channels: [ "crm_requests"]
+          max_files: 1
+          filename_format: '{filename}-{date}'
+          date_format: Y-m-d

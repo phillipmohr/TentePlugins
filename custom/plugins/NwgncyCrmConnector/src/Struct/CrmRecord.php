@@ -523,7 +523,69 @@ class CrmRecord extends Struct {
      }
 
 
+     public function getDataForLogging(): string {
+          
+          $loggingData = '';
+          $data = array(
+               self::COMPANY_NAME => $this->companyName,
+               self::LANGUAGE => $this->language,
+               self::STREET => $this->street,
+               self::POSTALCODE => $this->postalcode,
+               self::CITY => $this->city,
+               self::COUNTRY => $this->country,
+               self::CAD_REQUEST => $this->cadRequest,
+               self::CATALOG_REQUEST => $this->catalogRequest,
+               self::NEWSLETTER_REQUEST => $this->newsletterRequest,
+               self::PHONE => $this->phone,
+               self::FAX => $this->fax,
+               self::PLZ => $this->plz,
+               self::PRODUCT_EAN => $this->productean,
+               self::PRODUCT_NUMBER => $this->productnumber,
+               self::CAD_FORMAT => $this->format,
+               self::WEBREQUEST_ID => $this->webrequestId,
+               self::CALLING_WEBSITE_COUNTRY => $this->callingWebsiteCountry,
+               self::CAMPAIGN => $this->campaign,
+               self::TENTE_STATE => $this->tenteState,
+               self::TENTE_INQUIRY_PRODUCTS => $this->tenteInquiryProducts,
+               self::TENTE_QUOTE_REQUEST => $this->tenteQuoteRequest,
+               self::TENTE_ONLINE_SHOP_ORDER => $this->tenteOnlineShopOrder,
+               self::TENTE_PHONECALL_REQUEST => $this->tentePhonecallRequest,
+               self::TENTE_MEETING_REQUEST => $this->tenteMeetingRequest,
+               self::TENTE_FREE_TEXT_REQUEST => $this->tenteFreeTextRequest,
+               self::TENTE_USER_ACCOUNT_CREATED => $this->tenteUserAccountCreated,
+               self::INFORMATION => $this->information,
+               self::EMAIL => $this->email,
+               self::FIRSTNAME => $this->firstname,
+               self::LASTNAME => $this->lastname,
+               self::HOMEPAGE => $this->homepage,
+               self::GENDER => $this->gender,
+               self::DEPARTMENT => $this->department,
+               self::ORIGIN => $this->origin,
+               self::TURNOVER => $this->turnover,
+               self::DC_COMPLIANCE => $this->dcCompliance,
+               self::DC_ADVERTISING_CONSENT => $this->dcAdvertisingConsent,
+               self::DC_IP_ADDRESS => $this->dcIpAddress,
+               self::DC_TIMESTAMP => $this->dcTimestamp,
+               self::PRODUCT_NAME => $this->productname,
+               self::FUNCTION => $this->function
+          );
 
+          foreach ($data as $key => $value) {
+               if(!is_array($value) && !is_array($key)) {
+                    $loggingData .= (string)$key . ': ' . (string)$value . '; ';
+               }
+          }
 
+          $loggingData .= implode("; ", $data);
+          $customFormData = $this->getDataToCustomFormHiddenInputs();
 
+          if (!empty($customFormData)) {
+               foreach ($customFormData as $key => $value) {
+                    if(!is_array($value) && !is_array($key)) {
+                         $loggingData .= (string)$key . ': ' . (string)$value . '; ';
+                    }
+               }
+          }
+          return $loggingData;
+     }
 }

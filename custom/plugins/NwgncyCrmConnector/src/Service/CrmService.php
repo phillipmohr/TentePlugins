@@ -8,7 +8,6 @@ use DateTimeInterface;
 use Nimbits\NimbitsPriceOnRequestNext\Events\MailBeforeSendEvent as ProductInquiryBeforeSendEvent;
 use Nwgncy\CrmConnector\Event\CadFileDownloadEvent;
 use Nwgncy\CrmConnector\Event\ContactFormEventDecorated;
-use Nwgncy\CrmConnector\Handler\Microsoft\MicrosoftDynamicsCrmHandler;
 use Nwgncy\CrmConnector\Handler\Sap\SapCrmHandler;
 use Nwgncy\CrmConnector\Struct\CrmRecord;
 use Psr\Log\LoggerInterface;
@@ -36,7 +35,6 @@ class CrmService
     private EntityRepository $localeRepository;
     private EntityRepository $productRepository;
     private EntityRepository $countryRepository;
-    private MicrosoftDynamicsCrmHandler $microsoftDynamicsCrmHandler;
     private SapCrmHandler $sapCrmHandler;
 
     private Country $country;
@@ -66,7 +64,6 @@ class CrmService
         EntityRepository $localeRepository,
         EntityRepository $productRepository,
         EntityRepository $countryRepository,
-        MicrosoftDynamicsCrmHandler $microsoftDynamicsCrmHandler,
         SapCrmHandler $sapCrmHandler,
         Country $country
     )
@@ -76,7 +73,6 @@ class CrmService
         $this->localeRepository = $localeRepository;
         $this->productRepository = $productRepository;
         $this->countryRepository = $countryRepository;
-        $this->microsoftDynamicsCrmHandler = $microsoftDynamicsCrmHandler;
         $this->sapCrmHandler = $sapCrmHandler;
         $this->country = $country;
     }
@@ -84,8 +80,6 @@ class CrmService
     private function execute(CrmRecord $record)
     {
         $this->sapCrmHandler->sendData($record);
-        $this->microsoftDynamicsCrmHandler->sendData($record);
-        //Other crm handlers ..
     }
 
     public function processCustomFormEvent($salesChannelContext, array $formData) {
