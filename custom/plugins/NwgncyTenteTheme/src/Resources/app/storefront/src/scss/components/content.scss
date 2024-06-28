@@ -90,3 +90,17 @@ body {
         }
     }
 }
+
+@media (min-width: 992px) {
+    .cms-element-rhweb-cta-banner .container-content {
+
+        h3.rhweb-heading-cta {
+            font-size: 20px !important;
+            font-weight: 400 !important;
+        }
+        p.container-content-text {
+            font-size: 16px !important;
+            font-weight: 400 !important;
+        }
+    } 
+}

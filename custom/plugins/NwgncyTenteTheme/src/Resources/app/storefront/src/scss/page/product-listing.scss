@@ -52,3 +52,13 @@
         background-size: 800px 100px;
     }
 }
+
+.cms-element-product-listing {
+    .moorl-listing-item-title {
+        height: 50px;
+    }
+
+    .moorl-listing-item-image-or-title .moorl-listing-item-content, .moorl-listing-item-overlay .moorl-listing-item-content {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}
